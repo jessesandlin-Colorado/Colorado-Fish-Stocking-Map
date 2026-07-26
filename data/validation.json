@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-07-26T17:19:18.879895+00:00",
+  "summary": {
+    "stocking_events": 91,
+    "unique_atlas_ids": 73,
+    "matched_waters": 65,
+    "unmatched_events": 14,
+    "historical_events": 91,
+    "new_historical_events": 0,
+    "unknown_region_events": 91
+  },
+  "findings": [
+    {
+      "level": "warning",
+      "code": "unknown-regions",
+      "message": "91 current events have an unknown region."
+    },
+    {
+      "level": "warning",
+      "code": "unmatched-events",
+      "message": "14 current events remain unmatched."
+    }
+  ]
+}
