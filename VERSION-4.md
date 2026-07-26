@@ -35,3 +35,18 @@ Run a second import and confirm `historical_events` does not increase unless CPW
 - `data/validation.json`
 - `data/validation-report.html`
 - `data/match-report.html`
+
+## Version 4.1 reliability update
+
+- Adds 300–500 ms spacing between external requests.
+- Retries temporary failures up to three times with exponential backoff.
+- Caches Atlas JSON responses for 24 hours under `.cache/atlas/`.
+- GitHub Actions restores the cache between scheduled runs.
+- Uses stale cached Atlas responses when the service is temporarily unavailable.
+- Retains previously published water attributes when no cached Atlas response is available.
+- Separates the updater into six clearly logged stages.
+- Adds latest-report counts for the future “What’s new this week?” interface.
+- Hides the species row unless verified species names exist.
+- Disables experimental species probing by default. It can be run manually with
+  `--enable-species-probe`, but should not be used for production until the
+  official source is confirmed.

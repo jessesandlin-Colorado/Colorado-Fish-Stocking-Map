@@ -31,3 +31,21 @@ See `HOSTING.md` for exact GitHub and GitHub Pages instructions.
 - `data/match-report.html`
 
 Official CPW information and regulations always control.
+
+## Reliable and polite data refreshes
+
+The Version 4.1 updater intentionally limits traffic to external services. Atlas
+requests are spaced 300–500 milliseconds apart, retried no more than three times,
+and cached for 24 hours in `.cache/`. If the Atlas is temporarily unavailable,
+the updater can reuse stale cached responses or preserve previously published
+water details instead of erasing them.
+
+Run the normal production update with:
+
+```bash
+python scripts/update_data.py
+```
+
+Species probing is disabled by default because the currently identified public
+layer does not reliably expose species names. The website therefore omits the
+species line rather than presenting a technical error to every visitor.

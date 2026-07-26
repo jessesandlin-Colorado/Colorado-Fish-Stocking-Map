@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-07-26T17:16:55.773083+00:00",
+  "generated_at": "2026-07-26T22:18:18.578628+00:00",
   "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
   "summary": {
     "stocking_events": 91,
@@ -8,8 +8,11 @@
     "matched_waters": 65,
     "unmatched_events": 14,
     "historical_events": 91,
-    "new_historical_events": 0,
-    "unknown_region_events": 91
+    "new_historical_events": 91,
+    "unknown_region_events": 91,
+    "latest_report_date": "2026-07-24",
+    "latest_report_events": 18,
+    "latest_report_unique_waters": 18
   },
   "validation": {
     "critical": 0,
@@ -33,15 +36,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.71807379522038,
       "lng": -106.18571992798094,
       "watercode": "83128",
@@ -64,7 +61,9 @@
       "property_url": "https://cpw.state.co.us/swa/Wrights%20Lake%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-481",
@@ -82,15 +81,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.27124439389082,
       "lng": -106.39371423728836,
       "watercode": "80010",
@@ -113,7 +106,9 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-104",
@@ -134,15 +129,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.83550912140285,
       "lng": -106.58027919596722,
       "watercode": "92510",
@@ -165,7 +154,9 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-149",
@@ -183,15 +174,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.86380658823465,
       "lng": -106.7102610266142,
       "watercode": "92370",
@@ -214,7 +199,9 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-219",
@@ -232,15 +219,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.978119562573845,
       "lng": -104.9662780303164,
       "watercode": "79942",
@@ -263,7 +244,9 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-773",
@@ -281,15 +264,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.93881265079735,
       "lng": -106.60474165245705,
       "watercode": "91796",
@@ -312,7 +289,9 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-124",
@@ -331,15 +310,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.33756240559339,
       "lng": -106.5681036911177,
       "watercode": "91758",
@@ -362,7 +335,9 @@
       "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-759",
@@ -380,15 +355,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.610220471790115,
       "lng": -106.32288573327872,
       "watercode": "79891",
@@ -411,7 +380,9 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-414",
@@ -429,15 +400,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.35577235086876,
       "lng": -106.0758782191044,
       "watercode": "79877",
@@ -460,7 +425,9 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-133",
@@ -478,15 +445,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.933490444000995,
       "lng": -105.01397737804213,
       "watercode": "82711",
@@ -509,7 +470,9 @@
       "property_url": "https://greenmountainfalls.colorado.gov/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-469",
@@ -527,15 +490,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.729408737952454,
       "lng": -105.69061107141643,
       "watercode": "56970",
@@ -558,7 +515,9 @@
       "property_url": "https://georgetown-colorado.org/fishing-in-georgetown-co/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1725",
@@ -576,15 +535,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.314626068637786,
       "lng": -106.06084689001658,
       "watercode": "80307",
@@ -607,7 +560,9 @@
       "property_url": "https://cpw.state.co.us/swa/Alma%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-764",
@@ -626,15 +581,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.71103241699492,
       "lng": -106.23412146450974,
       "watercode": "81909",
@@ -657,7 +606,9 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-545",
@@ -676,15 +627,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.537070827512395,
       "lng": -106.80433063585673,
       "watercode": "88597",
@@ -707,7 +652,9 @@
       "property_url": "https://cpw.state.co.us/swa/Big%20Meadows%20Reservoir%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-46",
@@ -726,15 +673,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.129522647380654,
       "lng": -106.41131611891785,
       "watercode": "70989",
@@ -757,7 +698,9 @@
       "property_url": "https://www.coloradoriverdistrict.org/district-business/wolford-mountain-reservoir/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-765",
@@ -775,15 +718,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.65810162888828,
       "lng": -106.63277900043411,
       "watercode": "70982",
@@ -806,7 +743,9 @@
       "property_url": null,
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-421",
@@ -824,15 +763,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.39076106686138,
       "lng": -107.55418770675382,
       "watercode": "92902",
@@ -855,7 +788,9 @@
       "property_url": "https://www.fs.usda.gov/activity/sanjuan/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-753",
@@ -873,15 +808,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.824404030923276,
       "lng": -107.88493823334736,
       "watercode": "92712",
@@ -904,7 +833,9 @@
       "property_url": "https://www.alltelluride.com/lakes_rivers_falls/trout_lake.php",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-455",
@@ -922,15 +853,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.69093390011591,
       "lng": -105.05072985302066,
       "watercode": "79992",
@@ -953,7 +878,9 @@
       "property_url": "https://cpw.state.co.us/swa/Skaguay%20Reservoir%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-826",
@@ -972,15 +899,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.545620698000626,
       "lng": -106.9501314770602,
       "watercode": "90285",
@@ -1003,7 +924,9 @@
       "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1731",
@@ -1021,15 +944,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.622898978165395,
       "lng": -107.76146032124008,
       "watercode": "21674",
@@ -1052,7 +969,9 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/riflegap",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1606",
@@ -1071,15 +990,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.61124107367126,
       "lng": -106.50165201183599,
       "watercode": "42262",
@@ -1102,7 +1015,9 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-748",
@@ -1120,15 +1035,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.51838404352695,
       "lng": -106.77086498062015,
       "watercode": "91669",
@@ -1151,7 +1060,9 @@
       "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-344",
@@ -1170,15 +1081,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.54373606012939,
       "lng": -106.9203766266167,
       "watercode": "96986",
@@ -1201,7 +1106,9 @@
       "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-74",
@@ -1219,15 +1126,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.6373293985433,
       "lng": -106.53032245469602,
       "watercode": "72657",
@@ -1250,7 +1151,9 @@
       "property_url": "https://www.avon.org/index.aspx?NID=430",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-781",
@@ -1268,15 +1171,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.38688820067261,
       "lng": -106.58720491126203,
       "watercode": "55776",
@@ -1299,7 +1196,9 @@
       "property_url": "https://www.fs.usda.gov/activity/mbr/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-798",
@@ -1317,15 +1216,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.105777557314745,
       "lng": -105.74192240386411,
       "watercode": "68646",
@@ -1348,7 +1241,9 @@
       "property_url": "https://www.fs.usda.gov/activity/arp/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-743",
@@ -1366,15 +1261,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.66403852050542,
       "lng": -107.02626100513842,
       "watercode": "91102",
@@ -1397,7 +1286,9 @@
       "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-533",
@@ -1415,15 +1306,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.61195032936543,
       "lng": -105.84882197477664,
       "watercode": "55598",
@@ -1446,7 +1331,9 @@
       "property_url": "https://www.fs.usda.gov/activity/arp/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-341",
@@ -1464,15 +1351,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.427216048126596,
       "lng": -106.14601746286448,
       "watercode": "79916",
@@ -1495,7 +1376,9 @@
       "property_url": "https://www.fs.usda.gov/recarea/psicc/recreation/fishing/recarea/?recid=12686&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-838",
@@ -1514,15 +1397,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.53040515989236,
       "lng": -106.94748393350875,
       "watercode": "90287",
@@ -1545,7 +1422,9 @@
       "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-426",
@@ -1563,15 +1442,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.914588595411814,
       "lng": -105.03171129764536,
       "watercode": "81745",
@@ -1594,7 +1467,9 @@
       "property_url": "https://coloradosprings.gov/pikes-peak-americas-mountain/page/north-slope-recreation-area",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-484",
@@ -1612,15 +1487,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Warmwater"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.78173716763779,
       "lng": -106.28171868366914,
       "watercode": "81733",
@@ -1643,7 +1512,9 @@
       "property_url": "https://www.fs.usda.gov/recarea/psicc/recreation/fishing/recarea/?recid=12649&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-799",
@@ -1661,15 +1532,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.51494267345596,
       "lng": -106.14450174626539,
       "watercode": "72138",
@@ -1692,7 +1557,9 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-427",
@@ -1710,15 +1577,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.92525493797035,
       "lng": -105.05116545328843,
       "watercode": "82002",
@@ -1741,7 +1602,9 @@
       "property_url": "https://coloradosprings.gov/pikes-peak-americas-mountain/page/north-slope-recreation-area",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-767",
@@ -1759,15 +1622,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.42460732684016,
       "lng": -106.3195815392209,
       "watercode": "65676",
@@ -1790,7 +1647,9 @@
       "property_url": "https://www.fs.usda.gov/recarea/whiteriver/recreation/fishing/recarea/?recid=41447&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-814",
@@ -1808,15 +1667,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.49611385530433,
       "lng": -106.7597615611633,
       "watercode": "92736",
@@ -1839,7 +1692,9 @@
       "property_url": "https://www.fs.usda.gov/recarea/riogrande/recreation/fishing/recarea/?recid=29230&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-111",
@@ -1857,15 +1712,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout, Sub-catchables and Warmwater"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.13998334568189,
       "lng": -104.56151009454065,
       "watercode": "81911",
@@ -1888,7 +1737,9 @@
       "property_url": "https://cpw.state.co.us/placestogo/parks/trinidadlake",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-249",
@@ -1906,15 +1757,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.830946295326946,
       "lng": -105.42227920799216,
       "watercode": "57807",
@@ -1937,7 +1782,9 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/goldengatecanyon",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-830",
@@ -1955,15 +1802,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.146078839603774,
       "lng": -107.13647302921947,
       "watercode": "69840",
@@ -1986,7 +1827,9 @@
       "property_url": "https://www.fs.usda.gov/activity/mbr/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-486",
@@ -2004,15 +1847,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.36566658926559,
       "lng": -106.79839014515483,
       "watercode": "69535",
@@ -2035,7 +1872,9 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-839",
@@ -2053,15 +1892,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.70586959062421,
       "lng": -106.85211006749174,
       "watercode": "93714",
@@ -2084,7 +1917,9 @@
       "property_url": "https://cpw.state.co.us/swa/Roaring%20Judy%20SFU%20(Hatchery)",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-423",
@@ -2102,15 +1937,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Warmwater"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.63216015426101,
       "lng": -107.76365292649061,
       "watercode": "69422",
@@ -2133,7 +1962,9 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/riflegap",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1730",
@@ -2151,15 +1982,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.71996418528731,
       "lng": -106.39789667287697,
       "watercode": "69193",
@@ -2182,7 +2007,9 @@
       "property_url": "https://www.pineyriverranch.com/activities/fishing-2/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-485",
@@ -2200,15 +2027,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.09699731137395,
       "lng": -106.94519964350538,
       "watercode": "68266",
@@ -2231,7 +2052,9 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-343",
@@ -2249,15 +2072,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.12715053884348,
       "lng": -106.61936021914653,
       "watercode": "68076",
@@ -2280,7 +2097,9 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-248",
@@ -2298,15 +2117,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.83410408563664,
       "lng": -105.42969142120047,
       "watercode": "57819",
@@ -2329,7 +2142,9 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/goldengatecanyon",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-791",
@@ -2347,15 +2162,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.837586255915376,
       "lng": -106.99107922455273,
       "watercode": "67151",
@@ -2378,7 +2187,9 @@
       "property_url": "https://www.fs.usda.gov/activity/mbr/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-975",
@@ -2396,15 +2207,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.77311806892825,
       "lng": -107.29964000088422,
       "watercode": "66200",
@@ -2427,7 +2232,9 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-397",
@@ -2445,15 +2252,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout, Sub-catchables and Warmwater"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.92813003141916,
       "lng": -106.61083436717544,
       "watercode": "53974",
@@ -2476,7 +2277,9 @@
       "property_url": "https://www.fs.usda.gov/activity/mbr/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-49",
@@ -2494,15 +2297,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.04283630601494,
       "lng": -107.08294396833772,
       "watercode": "65082",
@@ -2525,7 +2322,9 @@
       "property_url": "https://www.fs.usda.gov/recarea/mbr/recreation/fishing/recarea/?recid=23058&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-844",
@@ -2543,15 +2342,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.75589608248872,
       "lng": -106.48018300687583,
       "watercode": "96722",
@@ -2574,7 +2367,9 @@
       "property_url": "https://www.tincupco.com/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-56",
@@ -2592,15 +2387,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 40.554308687726255,
       "lng": -105.99938646245585,
       "watercode": "55815",
@@ -2623,7 +2412,9 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/stateforest",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1729",
@@ -2641,15 +2432,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.33759547271491,
       "lng": -106.1803246284182,
       "watercode": "36034",
@@ -2672,7 +2457,9 @@
       "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-775",
@@ -2690,15 +2477,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 38.74352120954073,
       "lng": -106.43211272231142,
       "watercode": "91291",
@@ -2721,7 +2502,9 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-106",
@@ -2739,15 +2522,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.973600218290706,
       "lng": -107.28922524519555,
       "watercode": "92130",
@@ -2770,7 +2547,9 @@
       "property_url": "https://lakecity.com/lake-san-cristobal/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-855",
@@ -2788,15 +2567,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.00363573615023,
       "lng": -104.37031467361005,
       "watercode": "82507",
@@ -2819,7 +2592,9 @@
       "property_url": "https://cpw.state.co.us/swa/Lake%20Dorothey%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-315",
@@ -2837,15 +2612,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Warmwater"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.640285752339466,
       "lng": -104.85559125828577,
       "watercode": "52580",
@@ -2868,7 +2637,9 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/cherrycreek",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-364",
@@ -2886,15 +2657,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Warmwater"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.55047695770309,
       "lng": -105.06636558300464,
       "watercode": "54306",
@@ -2917,7 +2682,9 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/Chatfield",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-739",
@@ -2935,15 +2702,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.31691139003899,
       "lng": -105.13856976704035,
       "watercode": "80212",
@@ -2966,7 +2727,9 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-474",
@@ -2984,15 +2747,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.74756752549017,
       "lng": -107.68288729743563,
       "watercode": "91316",
@@ -3015,7 +2772,9 @@
       "property_url": "https://www.molaslake.com/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-740",
@@ -3033,15 +2792,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.32394548292182,
       "lng": -105.14148487739243,
       "watercode": "80123",
@@ -3064,7 +2817,9 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-732",
@@ -3082,15 +2837,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.022042236376315,
       "lng": -107.74270771300296,
       "watercode": "88422",
@@ -3113,7 +2862,9 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-85",
@@ -3131,15 +2882,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Warmwater"
-      },
+      "atlas_species_metadata": {},
       "lat": 39.61059055227754,
       "lng": -104.6631128230422,
       "watercode": "56420",
@@ -3162,7 +2907,9 @@
       "property_url": "https://www.auroragov.org/things_to_do/reservoirs/aurora_reservoir/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-677",
@@ -3180,15 +2927,9 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "not-yet-integrated",
       "species_source_layer": 2,
-      "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
-      },
+      "atlas_species_metadata": {},
       "lat": 37.727812625777204,
       "lng": -107.70888959118825,
       "watercode": "88369",
@@ -3211,7 +2952,9 @@
       "property_url": "https://cpw.state.co.us/swa/Andrews%20Lake%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     }
   ]
 }

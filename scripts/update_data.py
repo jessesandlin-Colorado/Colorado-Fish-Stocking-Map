@@ -10,11 +10,13 @@ import argparse
 import hashlib
 import html as html_lib
 import json
+import os
+import random
 import re
 import sys
 import time
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qs, urlparse
@@ -30,6 +32,89 @@ ATLAS_SPECIES_LAYER = 2
 DATE_RE = re.compile(r"\b(\d{1,2}/\d{1,2}/\d{4})\b")
 REGIONS = {"northeast", "northwest", "southeast", "southwest"}
 CO_BOUNDS = {"south": 36.8, "north": 41.2, "west": -109.2, "east": -101.8}
+
+
+
+class PoliteHttpClient:
+    """Small cached HTTP client with throttling and bounded retries.
+
+    Cache entries are reused for ``cache_ttl_hours`` and can also be used as a
+    stale fallback when the Atlas is temporarily unavailable.
+    """
+
+    def __init__(self, cache_dir: Path, min_delay: float = 0.30, max_delay: float = 0.50, retries: int = 3, cache_ttl_hours: int = 24):
+        self.cache_dir = cache_dir
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        self.min_delay = min_delay
+        self.max_delay = max_delay
+        self.retries = retries
+        self.cache_ttl = timedelta(hours=cache_ttl_hours)
+        self.session = requests.Session()
+        self.session.headers["User-Agent"] = "ColoradoFishMap/4.1 (+https://github.com/jessesandlin-Colorado/colorado-fish-stocking-map)"
+        self._last_request_at = 0.0
+
+    def _cache_path(self, namespace: str, key: str) -> Path:
+        digest = hashlib.sha1(key.encode("utf-8")).hexdigest()
+        folder = self.cache_dir / namespace
+        folder.mkdir(parents=True, exist_ok=True)
+        return folder / f"{digest}.json"
+
+    def _read_cache(self, path: Path) -> dict[str, Any] | None:
+        payload = read_json(path, None)
+        return payload if isinstance(payload, dict) and "data" in payload else None
+
+    def _fresh(self, payload: dict[str, Any]) -> bool:
+        try:
+            saved = datetime.fromisoformat(payload["saved_at"])
+            return datetime.now(timezone.utc) - saved <= self.cache_ttl
+        except (KeyError, TypeError, ValueError):
+            return False
+
+    def _wait(self) -> None:
+        elapsed = time.monotonic() - self._last_request_at
+        required = random.uniform(self.min_delay, self.max_delay)
+        if elapsed < required:
+            time.sleep(required - elapsed)
+
+    def get_json(self, url: str, params: dict[str, Any], namespace: str, cache_key: str, allow_stale: bool = True) -> tuple[dict[str, Any], str]:
+        path = self._cache_path(namespace, cache_key)
+        cached = self._read_cache(path)
+        if cached and self._fresh(cached):
+            return cached["data"], "cache-fresh"
+
+        last_error: Exception | None = None
+        for attempt in range(1, self.retries + 1):
+            try:
+                self._wait()
+                response = self.session.get(url, params=params, timeout=45)
+                self._last_request_at = time.monotonic()
+                response.raise_for_status()
+                data = response.json()
+                write_json(path, {"saved_at": datetime.now(timezone.utc).isoformat(), "url": url, "params": params, "data": data})
+                return data, "network"
+            except (requests.RequestException, ValueError) as exc:
+                last_error = exc
+                if attempt < self.retries:
+                    time.sleep(2 ** (attempt - 1))
+
+        if cached and allow_stale:
+            return cached["data"], "cache-stale"
+        raise RuntimeError(f"Request failed after {self.retries} attempts: {last_error}")
+
+    def get_text(self, url: str) -> str:
+        last_error: Exception | None = None
+        for attempt in range(1, self.retries + 1):
+            try:
+                self._wait()
+                response = self.session.get(url, timeout=45)
+                self._last_request_at = time.monotonic()
+                response.raise_for_status()
+                return response.text
+            except requests.RequestException as exc:
+                last_error = exc
+                if attempt < self.retries:
+                    time.sleep(2 ** (attempt - 1))
+        raise RuntimeError(f"Request failed after {self.retries} attempts: {last_error}")
 
 
 def clean(value: Any) -> str:
@@ -109,8 +194,8 @@ def parse_report(page_html: str) -> list[dict[str, Any]]:
     return unique
 
 
-def arcgis_query(session: requests.Session, service: str, layer_id: int, where: str) -> list[dict[str, Any]]:
-    response = session.get(
+def arcgis_query(client: PoliteHttpClient, service: str, layer_id: int, where: str, cache_key: str) -> tuple[list[dict[str, Any]], str]:
+    payload, source = client.get_json(
         f"{service}/{layer_id}/query",
         params={
             "where": where,
@@ -119,21 +204,21 @@ def arcgis_query(session: requests.Session, service: str, layer_id: int, where: 
             "outSR": "4326",
             "f": "json",
         },
-        timeout=45,
+        namespace="atlas",
+        cache_key=cache_key,
     )
-    response.raise_for_status()
-    payload = response.json()
     if payload.get("error"):
         raise RuntimeError(payload["error"].get("message", "ArcGIS query failed"))
-    return payload.get("features", [])
+    return payload.get("features", []), source
 
 
-def query_atlas(session: requests.Session, uid: int) -> dict[str, Any] | None:
+def query_atlas(client: PoliteHttpClient, uid: int) -> dict[str, Any] | None:
+    errors: list[str] = []
     for layer_id in ATLAS_LAYERS:
         try:
-            features = arcgis_query(session, ATLAS_MAIN, layer_id, f"UNI_ID={uid}")
-        except (requests.RequestException, ValueError, RuntimeError) as exc:
-            print(f"  Warning: layer {layer_id} failed: {exc}")
+            features, source = arcgis_query(client, ATLAS_MAIN, layer_id, f"UNI_ID={uid}", f"main:{layer_id}:{uid}")
+        except RuntimeError as exc:
+            errors.append(f"layer {layer_id}: {exc}")
             continue
         if not features:
             continue
@@ -165,42 +250,33 @@ def query_atlas(session: requests.Session, uid: int) -> dict[str, Any] | None:
             "gold_medal": bool(attrs.get("GoldMedal")),
             "special_opportunity": attrs.get("SUP_Desc") if attrs.get("SUP") else None,
             "atlas_layer": layer_id,
+            "atlas_data_source": source,
+            "atlas_errors": errors,
         }
     return None
 
 
-def query_species_record(session: requests.Session, uid: int) -> dict[str, Any]:
-    """Return official Atlas attributes that accompany its species display layer.
-
-    The public layer currently exposes opportunity/location metadata but no
-    explicit species-name field. We preserve the official record and report an
-    unavailable status instead of fabricating species from water names.
-    """
+def query_species_record(client: PoliteHttpClient, uid: int, enabled: bool = False) -> dict[str, Any]:
+    """Species probing is disabled until CPW's supported source is verified."""
+    if not enabled:
+        return {"status": "not-yet-integrated", "species": []}
     try:
-        features = arcgis_query(session, ATLAS_DATA, ATLAS_SPECIES_LAYER, f"UNI_ID={uid}")
-    except (requests.RequestException, ValueError, RuntimeError) as exc:
-        return {"status": "query-error", "species": [], "error": str(exc)}
+        features, source = arcgis_query(client, ATLAS_DATA, ATLAS_SPECIES_LAYER, f"UNI_ID={uid}", f"species:{uid}")
+    except RuntimeError as exc:
+        return {"status": "temporarily-unavailable", "species": [], "error": str(exc)}
     if not features:
-        return {"status": "no-record", "species": []}
-
+        return {"status": "no-record", "species": [], "data_source": source}
     attrs = features[0].get("attributes", {})
-    possible_fields = (
-        "SPECIES", "SPECIES_NAME", "FISH_SPECIES", "COMMON_NAME", "COM_NAME",
-        "SPP_NAME", "Species", "FishSpecies",
-    )
+    possible_fields = ("SPECIES", "SPECIES_NAME", "FISH_SPECIES", "COMMON_NAME", "COM_NAME", "SPP_NAME", "Species", "FishSpecies")
     names: list[str] = []
     for field in possible_fields:
         value = attrs.get(field)
         if value:
             names.extend(part.strip() for part in re.split(r"[,;/]", str(value)) if part.strip())
     return {
-        "status": "available" if names else "official-layer-has-no-species-name-field",
+        "status": "available" if names else "source-does-not-expose-species-names",
         "species": sorted(set(names)),
-        "atlas_record": {
-            key: attrs.get(key)
-            for key in ("OPP_FAMILY", "OPP_RUSTIC", "OPP_ICE", "HANDI_PIER", "STOCKED", "GoldMedal", "SUP_Desc")
-            if attrs.get(key) not in (None, "")
-        },
+        "data_source": source,
     }
 
 
@@ -275,6 +351,8 @@ def main() -> None:
     parser.add_argument("--output", default=str(Path(__file__).parents[1] / "data"))
     parser.add_argument("--limit", type=int)
     parser.add_argument("--strict", action="store_true", help="Exit non-zero on critical validation findings")
+    parser.add_argument("--enable-species-probe", action="store_true", help="Probe the unverified Atlas species layer")
+    parser.add_argument("--cache-ttl-hours", type=int, default=24)
     args = parser.parse_args()
 
     output = Path(args.output)
@@ -282,18 +360,16 @@ def main() -> None:
     generated_at = datetime.now(timezone.utc).isoformat()
     observed_date = datetime.now(timezone.utc).date().isoformat()
 
-    session = requests.Session()
-    session.headers["User-Agent"] = "ColoradoFishMap/4.0 contact: project-maintainer"
+    client = PoliteHttpClient(Path(__file__).parents[1] / ".cache", cache_ttl_hours=args.cache_ttl_hours)
 
-    print("Downloading CPW report…")
-    response = session.get(CPW, timeout=45)
-    response.raise_for_status()
-    current_events = parse_report(response.text)
+    print("STEP 1/6 — Download CPW stocking report")
+    current_events = parse_report(client.get_text(CPW))
     if args.limit:
         current_events = current_events[: args.limit]
     if not current_events:
         sys.exit("No stocking rows found. CPW markup may have changed.")
 
+    print("STEP 2/6 — Normalize and archive stocking events")
     prior_imports = read_json(output / "import-history.json", [])
     prior_current_count = prior_imports[-1].get("rows_downloaded", 0) if prior_imports else 0
     existing_history = read_json(output / "stocking-history.json", [])
@@ -303,18 +379,27 @@ def main() -> None:
     for event in current_events:
         grouped[event["atlas_id"]].append(event)
 
+    print("STEP 3/6 — Match and enrich Atlas waters")
+    prior_waters_payload = read_json(output / "waters.json", {"waters": []})
+    prior_waters = {w.get("atlas_id"): w for w in prior_waters_payload.get("waters", []) if w.get("atlas_id") is not None}
     matched: list[dict[str, Any]] = []
     unmatched: list[dict[str, Any]] = []
     history_by_id = {item["event_id"]: item for item in history}
 
     for index, (uid, group) in enumerate(grouped.items(), start=1):
         print(f"[{index}/{len(grouped)}] Atlas ID {uid}: {group[0]['name']}")
-        info = query_atlas(session, uid) if uid is not None else None
+        info = query_atlas(client, uid) if uid is not None else None
         if not info or info.get("lat") is None or info.get("lng") is None:
-            unmatched.extend(group)
-            continue
+            prior = prior_waters.get(uid)
+            if prior and prior.get("lat") is not None and prior.get("lng") is not None:
+                info = {key: value for key, value in prior.items() if key not in {"stocking_dates", "latest_report_date", "current_event_count", "historical_event_count", "species", "species_status"}}
+                info["atlas_data_source"] = "prior-published-data"
+                info["atlas_warning"] = "Atlas unavailable; retained previously published location details."
+            else:
+                unmatched.extend(group)
+                continue
 
-        species_result = query_species_record(session, uid)
+        species_result = query_species_record(client, uid, enabled=args.enable_species_probe)
         dates = sorted({item["report_date"] for item in group}, reverse=True)
         base = group[0]
         water = {
@@ -344,7 +429,6 @@ def main() -> None:
             saved["match_confidence"] = 1.0
             saved["watercode"] = info.get("watercode")
             saved["matched_layer"] = info.get("atlas_layer")
-        time.sleep(0.03)
 
     for event in unmatched:
         saved = history_by_id.get(event["event_id"])
@@ -354,6 +438,10 @@ def main() -> None:
     history = sorted(history_by_id.values(), key=lambda x: (x.get("report_date", ""), x.get("name", "")), reverse=True)
     matched.sort(key=lambda item: (item["latest_report_date"], item["name"]), reverse=True)
 
+    print("STEP 4/6 — Build weekly-change summary")
+    latest_date = max((e["report_date"] for e in current_events), default=None)
+    latest_events = [e for e in current_events if e.get("report_date") == latest_date]
+
     summary = {
         "stocking_events": len(current_events),
         "unique_atlas_ids": len(grouped),
@@ -362,7 +450,11 @@ def main() -> None:
         "historical_events": len(history),
         "new_historical_events": new_events,
         "unknown_region_events": sum(1 for event in current_events if event.get("region") == "unknown"),
+        "latest_report_date": latest_date,
+        "latest_report_events": len(latest_events),
+        "latest_report_unique_waters": len({e.get("atlas_id") for e in latest_events}),
     }
+    print("STEP 5/6 — Validate generated data")
     findings = validate(current_events, matched, unmatched, prior_current_count)
     critical_count = sum(1 for finding in findings if finding["level"] == "critical")
     warning_count = sum(1 for finding in findings if finding["level"] == "warning")
@@ -392,6 +484,7 @@ def main() -> None:
         "waters": matched,
     }
 
+    print("STEP 6/6 — Publish JSON and reports")
     write_json(output / "waters.json", payload)
     write_json(output / "unmatched.json", unmatched)
     write_json(output / "stocking-history.json", history)
@@ -401,8 +494,8 @@ def main() -> None:
         output / "species.json",
         {
             "generated_at": generated_at,
-            "status": "partial",
-            "note": "Species names are included only when explicitly returned by the official Atlas service; the current public layer may not expose them as attributes.",
+            "status": "not-yet-integrated" if not args.enable_species_probe else "experimental",
+            "note": "Species display is intentionally disabled until a stable, verified official source is available.",
             "waters_with_species": [
                 {"atlas_id": water["atlas_id"], "name": water["name"], "species": water["species"]}
                 for water in matched
