@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build Version 4 data files from CPW's stocking report and Fishing Atlas.
+"""Build Colorado Fish Stocking Map data from CPW and the Fishing Atlas.
 
-Version 4 adds durable stocking history, import-run auditing, multi-layer Atlas
-matching, richer location attributes, and validation safeguards.
+Version 5 adds production species extraction, persistent species fallbacks,
+manual species overrides, richer validation, and UI-ready summary statistics.
 """
 from __future__ import annotations
 
@@ -30,8 +30,24 @@ ATLAS_DATA = "https://ndismaps.nrel.colostate.edu/arcgis/rest/services/FishingAt
 ATLAS_LAYERS = (59, 61, 63, 65, 67)
 ATLAS_SPECIES_LAYER = 2
 DATE_RE = re.compile(r"\b(\d{1,2}/\d{1,2}/\d{4})\b")
-REGIONS = {"northeast", "northwest", "southeast", "southwest"}
+REGION_LABELS = {"northeast", "northwest", "southeast", "southwest"}
 CO_BOUNDS = {"south": 36.8, "north": 41.2, "west": -109.2, "east": -101.8}
+PROJECT_ROOT = Path(__file__).parents[1]
+DEFAULT_OVERRIDES_PATH = PROJECT_ROOT / "config" / "atlas_overrides.json"
+DEFAULT_SPECIES_OVERRIDES_PATH = PROJECT_ROOT / "config" / "species_overrides.json"
+
+# Species names used only to recognize names in official Atlas-linked HTML.
+# The importer never infers species from habitat, water type, or stocking text.
+KNOWN_COLORADO_SPECIES = (
+    "Arctic char", "Black bullhead", "Black crappie", "Bluegill",
+    "Brook trout", "Brown trout", "Channel catfish", "Common carp",
+    "Cutbow", "Cutthroat trout", "Golden trout", "Grass carp",
+    "Green sunfish", "Kokanee salmon", "Lake trout", "Largemouth bass",
+    "Longnose sucker", "Mountain whitefish", "Northern pike", "Rainbow trout",
+    "Rio Grande chub", "Roundtail chub", "Sacramento perch", "Sauger",
+    "Smallmouth bass", "Splake", "Tiger muskie", "Tiger trout",
+    "Walleye", "White crappie", "White sucker", "Yellow perch"
+)
 
 
 
@@ -116,6 +132,20 @@ class PoliteHttpClient:
                     time.sleep(2 ** (attempt - 1))
         raise RuntimeError(f"Request failed after {self.retries} attempts: {last_error}")
 
+    def get_text_cached(self, url: str, namespace: str = "html", allow_stale: bool = True) -> tuple[str, str]:
+        path = self._cache_path(namespace, url)
+        cached = self._read_cache(path)
+        if cached and self._fresh(cached):
+            return str(cached["data"].get("text", "")), "cache-fresh"
+        try:
+            text = self.get_text(url)
+            write_json(path, {"saved_at": datetime.now(timezone.utc).isoformat(), "url": url, "data": {"text": text}})
+            return text, "network"
+        except RuntimeError:
+            if cached and allow_stale:
+                return str(cached["data"].get("text", "")), "cache-stale"
+            raise
+
 
 def clean(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
@@ -160,8 +190,7 @@ def parse_report(page_html: str) -> list[dict[str, Any]]:
             continue
 
         report_date = datetime.strptime(match.group(1), "%m/%d/%Y").date().isoformat()
-        region = next((cell.lower() for cell in cells if cell.lower() in REGIONS), "unknown")
-        excluded = {"atlas", region, match.group(1)}
+        excluded = {"atlas", match.group(1), *REGION_LABELS}
         name = next(
             (cell for cell in cells if cell and cell.lower() not in excluded and not DATE_RE.fullmatch(cell)),
             cells[0] if cells else "Unknown",
@@ -176,7 +205,6 @@ def parse_report(page_html: str) -> list[dict[str, Any]]:
                 "event_id": event_id,
                 "name": name,
                 "normalized_name": normalized_name(name),
-                "region": region,
                 "report_date": report_date,
                 "source_url": CPW,
                 "atlas_url": url,
@@ -212,72 +240,204 @@ def arcgis_query(client: PoliteHttpClient, service: str, layer_id: int, where: s
     return payload.get("features", []), source
 
 
-def query_atlas(client: PoliteHttpClient, uid: int) -> dict[str, Any] | None:
+def _sql_text(value: str) -> str:
+    return value.replace("'", "''")
+
+
+def _feature_to_water(feature: dict[str, Any], layer_id: int, source: str, errors: list[str], match_method: str, match_score: float) -> dict[str, Any]:
+    attrs = feature.get("attributes", {})
+    geometry = feature.get("geometry", {})
+    return {
+        "lat": geometry.get("y"),
+        "lng": geometry.get("x"),
+        "watercode": attrs.get("WATERCODE"),
+        "atlas_name": attrs.get("FA_NAME") or attrs.get("DOW_NAME"),
+        "alternate_name": attrs.get("FA_NAME2"),
+        "property_name": attrs.get("PROP_NAME"),
+        "county": attrs.get("COUNTYNAME"),
+        "location_type": attrs.get("LOC_TYPE"),
+        "elevation_ft": attrs.get("ELEV_FT") or attrs.get("ELEV_FT_TXT"),
+        "boating": attrs.get("BOATING"),
+        "access_ease": attrs.get("ACCESS_EASE"),
+        "fishing_pressure": attrs.get("FISH_PRESSURE"),
+        "family_friendly": attrs.get("OPP_FAMILY"),
+        "rustic": attrs.get("OPP_RUSTIC"),
+        "ice_fishing": attrs.get("OPP_ICE"),
+        "accessible_pier": attrs.get("HANDI_PIER"),
+        "stocked_description": attrs.get("STOCKED"),
+        "survey_url": attrs.get("SURVEY_URL") or attrs.get("REPORTS_URL"),
+        "driving_url": attrs.get("DRIVING_URL"),
+        "property_url": attrs.get("PROP_URL"),
+        "gold_medal": bool(attrs.get("GoldMedal")),
+        "special_opportunity": attrs.get("SUP_Desc") if attrs.get("SUP") else None,
+        "atlas_layer": layer_id,
+        "atlas_data_source": source,
+        "atlas_errors": errors,
+        "match_method": match_method,
+        "match_score": match_score,
+    }
+
+
+def load_overrides(path: Path) -> dict[str, Any]:
+    payload = read_json(path, {})
+    if not isinstance(payload, dict):
+        return {}
+    return payload.get("waters", payload) if isinstance(payload.get("waters", payload), dict) else {}
+
+
+def query_atlas(client: PoliteHttpClient, uid: int, report_names: list[str], override: dict[str, Any] | None = None) -> dict[str, Any] | None:
+    """Match an Atlas water by ID, reviewed aliases, then an explicit override.
+
+    ID lookup remains authoritative. Name lookup is intentionally conservative:
+    it only accepts a unique result whose Atlas name normalizes to one of the
+    reviewed candidate names. Manual coordinate overrides are the final fallback.
+    """
     errors: list[str] = []
+
     for layer_id in ATLAS_LAYERS:
         try:
             features, source = arcgis_query(client, ATLAS_MAIN, layer_id, f"UNI_ID={uid}", f"main:{layer_id}:{uid}")
         except RuntimeError as exc:
-            errors.append(f"layer {layer_id}: {exc}")
+            errors.append(f"layer {layer_id} ID lookup: {exc}")
             continue
-        if not features:
-            continue
+        if features:
+            return _feature_to_water(features[0], layer_id, source, errors, "atlas-id", 1.0)
 
-        feature = features[0]
-        attrs = feature.get("attributes", {})
-        geometry = feature.get("geometry", {})
-        return {
-            "lat": geometry.get("y"),
-            "lng": geometry.get("x"),
-            "watercode": attrs.get("WATERCODE"),
-            "atlas_name": attrs.get("FA_NAME") or attrs.get("DOW_NAME"),
-            "alternate_name": attrs.get("FA_NAME2"),
-            "property_name": attrs.get("PROP_NAME"),
-            "county": attrs.get("COUNTYNAME"),
-            "location_type": attrs.get("LOC_TYPE"),
-            "elevation_ft": attrs.get("ELEV_FT") or attrs.get("ELEV_FT_TXT"),
-            "boating": attrs.get("BOATING"),
-            "access_ease": attrs.get("ACCESS_EASE"),
-            "fishing_pressure": attrs.get("FISH_PRESSURE"),
-            "family_friendly": attrs.get("OPP_FAMILY"),
-            "rustic": attrs.get("OPP_RUSTIC"),
-            "ice_fishing": attrs.get("OPP_ICE"),
-            "accessible_pier": attrs.get("HANDI_PIER"),
-            "stocked_description": attrs.get("STOCKED"),
-            "survey_url": attrs.get("SURVEY_URL") or attrs.get("REPORTS_URL"),
-            "driving_url": attrs.get("DRIVING_URL"),
-            "property_url": attrs.get("PROP_URL"),
-            "gold_medal": bool(attrs.get("GoldMedal")),
-            "special_opportunity": attrs.get("SUP_Desc") if attrs.get("SUP") else None,
-            "atlas_layer": layer_id,
-            "atlas_data_source": source,
-            "atlas_errors": errors,
-        }
+    override = override or {}
+    candidates = [*report_names, *override.get("aliases", [])]
+    normalized_candidates = {normalized_name(name) for name in candidates if clean(name)}
+    seen_queries: set[tuple[int, str]] = set()
+
+    for candidate in candidates:
+        candidate = clean(candidate)
+        if not candidate:
+            continue
+        for layer_id in ATLAS_LAYERS:
+            query_key = (layer_id, normalized_name(candidate))
+            if query_key in seen_queries:
+                continue
+            seen_queries.add(query_key)
+            escaped = _sql_text(candidate)
+            where = f"FA_NAME='{escaped}' OR FA_NAME2='{escaped}' OR DOW_NAME='{escaped}'"
+            try:
+                features, source = arcgis_query(client, ATLAS_MAIN, layer_id, where, f"name:{layer_id}:{normalized_name(candidate)}")
+            except RuntimeError as exc:
+                errors.append(f"layer {layer_id} name lookup: {exc}")
+                continue
+
+            acceptable = []
+            for feature in features:
+                attrs = feature.get("attributes", {})
+                atlas_names = {
+                    normalized_name(attrs.get("FA_NAME") or ""),
+                    normalized_name(attrs.get("FA_NAME2") or ""),
+                    normalized_name(attrs.get("DOW_NAME") or ""),
+                }
+                if normalized_candidates & atlas_names:
+                    acceptable.append(feature)
+            if len(acceptable) == 1:
+                return _feature_to_water(acceptable[0], layer_id, source, errors, "reviewed-name-alias", 0.98)
+            if len(acceptable) > 1:
+                errors.append(f"layer {layer_id} name lookup for {candidate!r} returned multiple acceptable features")
+
+    if isinstance(override.get("lat"), (int, float)) and isinstance(override.get("lng"), (int, float)):
+        manual = dict(override)
+        manual.pop("aliases", None)
+        manual.setdefault("atlas_name", override.get("canonical_name") or report_names[0])
+        manual.setdefault("alternate_name", None)
+        manual.setdefault("atlas_layer", override.get("atlas_layer"))
+        manual["atlas_data_source"] = "reviewed-manual-override"
+        manual["atlas_errors"] = errors
+        manual["match_method"] = "manual-override"
+        manual["match_score"] = 1.0
+        return manual
+
     return None
 
 
-def query_species_record(client: PoliteHttpClient, uid: int, enabled: bool = False) -> dict[str, Any]:
-    """Species probing is disabled until CPW's supported source is verified."""
-    if not enabled:
-        return {"status": "not-yet-integrated", "species": []}
-    try:
-        features, source = arcgis_query(client, ATLAS_DATA, ATLAS_SPECIES_LAYER, f"UNI_ID={uid}", f"species:{uid}")
-    except RuntimeError as exc:
-        return {"status": "temporarily-unavailable", "species": [], "error": str(exc)}
-    if not features:
-        return {"status": "no-record", "species": [], "data_source": source}
-    attrs = features[0].get("attributes", {})
-    possible_fields = ("SPECIES", "SPECIES_NAME", "FISH_SPECIES", "COMMON_NAME", "COM_NAME", "SPP_NAME", "Species", "FishSpecies")
+def _split_species_values(value: Any) -> list[str]:
+    """Split a field only when it contains plausible human-readable names."""
+    if value is None or isinstance(value, (int, float, bool)):
+        return []
+    text = clean(value)
+    if not text or text.lower().startswith(("http://", "https://")):
+        return []
+    return [clean(part) for part in re.split(r"[,;/|\n]+", text) if clean(part)]
+
+
+def _species_from_attributes(features: list[dict[str, Any]]) -> tuple[list[str], dict[str, Any]]:
+    preferred = re.compile(r"(?:species|common.?name|fish.?name|spp)", re.I)
+    ignored = {"fa_name", "fa_name2", "dow_name", "prop_name", "loc_type", "countyname"}
     names: list[str] = []
-    for field in possible_fields:
-        value = attrs.get(field)
-        if value:
-            names.extend(part.strip() for part in re.split(r"[,;/]", str(value)) if part.strip())
-    return {
-        "status": "available" if names else "source-does-not-expose-species-names",
-        "species": sorted(set(names)),
-        "data_source": source,
-    }
+    examined: set[str] = set()
+    urls: list[str] = []
+    for feature in features:
+        attrs = feature.get("attributes", {})
+        for field, value in attrs.items():
+            field_key = str(field).lower()
+            if field_key in {"spoturl", "species_url", "fish_url"} and clean(value):
+                urls.append(clean(value))
+            if field_key in ignored or not preferred.search(str(field)):
+                continue
+            examined.add(str(field))
+            names.extend(_split_species_values(value))
+    return sorted(set(names), key=str.casefold), {"fields_examined": sorted(examined), "detail_urls": sorted(set(urls))}
+
+
+def _species_from_html(page_html: str) -> list[str]:
+    text = BeautifulSoup(page_html, "html.parser").get_text(" ", strip=True)
+    found = []
+    for species in KNOWN_COLORADO_SPECIES:
+        if re.search(rf"(?<![A-Za-z]){re.escape(species)}(?![A-Za-z])", text, re.I):
+            found.append(species)
+    return found
+
+
+def query_species_record(
+    client: PoliteHttpClient,
+    uid: int,
+    atlas_url: str,
+    override: dict[str, Any] | None = None,
+    prior_species: list[str] | None = None,
+) -> dict[str, Any]:
+    """Collect verified species names from official Atlas records and detail HTML.
+
+    The public layer currently identifies waters but does not consistently expose
+    a plainly named species field. We therefore inspect all species-like fields,
+    follow official detail URLs when present, and retain the last published result
+    during temporary outages. No species are inferred from water type or habitat.
+    """
+    override = override or {}
+    manual = sorted({clean(x) for x in override.get("species", []) if clean(x)}, key=str.casefold)
+    if manual:
+        return {"status": "available", "species": manual, "data_source": "reviewed-manual-override", "atlas_record": {"override": True}}
+
+    errors: list[str] = []
+    try:
+        features, source = arcgis_query(client, ATLAS_DATA, ATLAS_SPECIES_LAYER, f"UNI_ID={uid}", f"species:v2:{uid}")
+    except RuntimeError as exc:
+        features, source = [], "unavailable"
+        errors.append(str(exc))
+
+    names, metadata = _species_from_attributes(features)
+    detail_sources: list[str] = []
+    candidate_urls = [*metadata.get("detail_urls", []), atlas_url]
+    for url in dict.fromkeys(url for url in candidate_urls if clean(url)):
+        try:
+            page, page_source = client.get_text_cached(url, namespace="species-pages")
+            html_names = _species_from_html(page)
+            if html_names:
+                names.extend(html_names)
+                detail_sources.append(f"{url} ({page_source})")
+        except RuntimeError as exc:
+            errors.append(f"detail page {url}: {exc}")
+
+    names = sorted(set(names), key=str.casefold)
+    if names:
+        return {"status": "available", "species": names, "data_source": source, "atlas_record": {**metadata, "detail_sources": detail_sources, "errors": errors}}
+    if prior_species:
+        return {"status": "retained-prior", "species": sorted(set(prior_species), key=str.casefold), "data_source": "prior-published-data", "atlas_record": {**metadata, "errors": errors}}
+    return {"status": "no-species-exposed", "species": [], "data_source": source, "atlas_record": {**metadata, "errors": errors}}
 
 
 def build_history(existing: list[dict[str, Any]], current: list[dict[str, Any]], observed_at: str) -> tuple[list[dict[str, Any]], int]:
@@ -306,11 +466,14 @@ def validate(events: list[dict[str, Any]], waters: list[dict[str, Any]], unmatch
         add("critical", "report-too-small", f"Only {len(events)} report rows were parsed.")
     if prior_count and len(events) < max(10, int(prior_count * 0.35)):
         add("critical", "large-report-drop", f"Report row count fell from {prior_count} to {len(events)}.")
-    unknown_regions = sum(1 for event in events if event.get("region") == "unknown")
-    if unknown_regions:
-        add("warning", "unknown-regions", f"{unknown_regions} current events have an unknown region.")
     if unmatched:
         add("warning", "unmatched-events", f"{len(unmatched)} current events remain unmatched.")
+
+    species_available = sum(1 for water in waters if water.get("species"))
+    if waters and species_available == 0:
+        add("warning", "species-empty", "No matched water contains verified species names; inspect Atlas species extraction.")
+    elif waters and species_available < max(1, int(len(waters) * 0.25)):
+        add("warning", "species-low-coverage", f"Only {species_available} of {len(waters)} matched waters contain species names.")
 
     for water in waters:
         lat, lng = water.get("lat"), water.get("lng")
@@ -331,7 +494,7 @@ def make_validation_html(generated_at: str, summary: dict[str, Any], findings: l
         for item in findings
     )
     water_rows = "".join(
-        f"<tr><td>{html_lib.escape(str(w.get('name', '')))}</td><td>{html_lib.escape(str(w.get('region', '')))}</td>"
+        f"<tr><td>{html_lib.escape(str(w.get('name', '')))}</td>"
         f"<td>{html_lib.escape(str(w.get('latest_report_date', '')))}</td><td>{w.get('atlas_id', '')}</td>"
         f"<td>{html_lib.escape(str(w.get('atlas_name') or ''))}</td><td>{w.get('atlas_layer', '')}</td>"
         f"<td>{html_lib.escape(str(w.get('species_status', '')))}</td></tr>"
@@ -342,7 +505,7 @@ def make_validation_html(generated_at: str, summary: dict[str, Any], findings: l
 <h1>Colorado Fish Stocking Map — Version 4 Validation</h1><p>Generated <code>{html_lib.escape(generated_at)}</code>.</p>
 <h2>Import summary</h2><pre>{html_lib.escape(json.dumps(summary, indent=2))}</pre>
 <h2>Findings</h2><table><thead><tr><th>Level</th><th>Code</th><th>Message</th></tr></thead><tbody>{finding_rows}</tbody></table>
-<h2>Matched waters</h2><table><thead><tr><th>Report name</th><th>Region</th><th>Latest</th><th>Atlas ID</th><th>Atlas name</th><th>Layer</th><th>Species status</th></tr></thead><tbody>{water_rows}</tbody></table>
+<h2>Matched waters</h2><table><thead><tr><th>Report name</th><th>Latest</th><th>Atlas ID</th><th>Atlas name</th><th>Layer</th><th>Species status</th></tr></thead><tbody>{water_rows}</tbody></table>
 </body></html>"""
 
 
@@ -351,8 +514,9 @@ def main() -> None:
     parser.add_argument("--output", default=str(Path(__file__).parents[1] / "data"))
     parser.add_argument("--limit", type=int)
     parser.add_argument("--strict", action="store_true", help="Exit non-zero on critical validation findings")
-    parser.add_argument("--enable-species-probe", action="store_true", help="Probe the unverified Atlas species layer")
     parser.add_argument("--cache-ttl-hours", type=int, default=24)
+    parser.add_argument("--overrides", default=str(DEFAULT_OVERRIDES_PATH), help="Reviewed Atlas aliases and manual coordinate overrides")
+    parser.add_argument("--species-overrides", default=str(DEFAULT_SPECIES_OVERRIDES_PATH), help="Reviewed manual species overrides")
     args = parser.parse_args()
 
     output = Path(args.output)
@@ -360,7 +524,9 @@ def main() -> None:
     generated_at = datetime.now(timezone.utc).isoformat()
     observed_date = datetime.now(timezone.utc).date().isoformat()
 
-    client = PoliteHttpClient(Path(__file__).parents[1] / ".cache", cache_ttl_hours=args.cache_ttl_hours)
+    client = PoliteHttpClient(PROJECT_ROOT / ".cache", cache_ttl_hours=args.cache_ttl_hours)
+    overrides = load_overrides(Path(args.overrides))
+    species_overrides = load_overrides(Path(args.species_overrides))
 
     print("STEP 1/6 — Download CPW stocking report")
     current_events = parse_report(client.get_text(CPW))
@@ -388,7 +554,9 @@ def main() -> None:
 
     for index, (uid, group) in enumerate(grouped.items(), start=1):
         print(f"[{index}/{len(grouped)}] Atlas ID {uid}: {group[0]['name']}")
-        info = query_atlas(client, uid) if uid is not None else None
+        override = overrides.get(str(uid), {}) if uid is not None else {}
+        report_names = sorted({item["name"] for item in group})
+        info = query_atlas(client, uid, report_names, override) if uid is not None else None
         if not info or info.get("lat") is None or info.get("lng") is None:
             prior = prior_waters.get(uid)
             if prior and prior.get("lat") is not None and prior.get("lng") is not None:
@@ -399,22 +567,23 @@ def main() -> None:
                 unmatched.extend(group)
                 continue
 
-        species_result = query_species_record(client, uid, enabled=args.enable_species_probe)
         dates = sorted({item["report_date"] for item in group}, reverse=True)
         base = group[0]
+        species_result = query_species_record(
+            client, uid, base["atlas_url"], species_overrides.get(str(uid), {}), prior_waters.get(uid, {}).get("species", [])
+        )
         water = {
             "key": f"atlas-{uid}",
             "atlas_id": uid,
             "name": base["name"],
             "normalized_name": normalized_name(base["name"]),
-            "region": base["region"],
             "atlas_url": base["atlas_url"],
             "latest_report_date": dates[0],
             "stocking_dates": dates,
             "current_event_count": len(group),
             "historical_event_count": sum(1 for event in history if event.get("atlas_id") == uid),
-            "match_method": "atlas-id",
-            "match_score": 1.0,
+            "match_method": info.get("match_method", "atlas-id"),
+            "match_score": info.get("match_score", 1.0),
             "species": species_result.get("species", []),
             "species_status": species_result.get("status"),
             "species_source_layer": ATLAS_SPECIES_LAYER,
@@ -425,8 +594,8 @@ def main() -> None:
         for event in group:
             saved = history_by_id[event["event_id"]]
             saved["match_status"] = "matched"
-            saved["match_method"] = "atlas-id"
-            saved["match_confidence"] = 1.0
+            saved["match_method"] = water["match_method"]
+            saved["match_confidence"] = water["match_score"]
             saved["watercode"] = info.get("watercode")
             saved["matched_layer"] = info.get("atlas_layer")
 
@@ -449,10 +618,11 @@ def main() -> None:
         "unmatched_events": len(unmatched),
         "historical_events": len(history),
         "new_historical_events": new_events,
-        "unknown_region_events": sum(1 for event in current_events if event.get("region") == "unknown"),
         "latest_report_date": latest_date,
         "latest_report_events": len(latest_events),
         "latest_report_unique_waters": len({e.get("atlas_id") for e in latest_events}),
+        "waters_with_species": sum(1 for water in matched if water.get("species")),
+        "unique_species": len({species for water in matched for species in water.get("species", [])}),
     }
     print("STEP 5/6 — Validate generated data")
     findings = validate(current_events, matched, unmatched, prior_current_count)
@@ -476,7 +646,7 @@ def main() -> None:
     prior_imports = prior_imports[-250:]
 
     payload = {
-        "schema_version": 4,
+        "schema_version": 5,
         "generated_at": generated_at,
         "source_url": CPW,
         "summary": summary,
@@ -494,8 +664,8 @@ def main() -> None:
         output / "species.json",
         {
             "generated_at": generated_at,
-            "status": "not-yet-integrated" if not args.enable_species_probe else "experimental",
-            "note": "Species display is intentionally disabled until a stable, verified official source is available.",
+            "status": "available" if any(water.get("species") for water in matched) else "no-species-exposed",
+            "note": "Species are collected from official Atlas fields/detail pages or reviewed manual overrides; no habitat inference is used.",
             "waters_with_species": [
                 {"atlas_id": water["atlas_id"], "name": water["name"], "species": water["species"]}
                 for water in matched

@@ -1,22 +1,23 @@
 {
-  "schema_version": 4,
-  "generated_at": "2026-07-26T22:18:18.578628+00:00",
+  "schema_version": 5,
+  "generated_at": "2026-07-26T23:12:28.444900+00:00",
   "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
   "summary": {
     "stocking_events": 91,
     "unique_atlas_ids": 73,
-    "matched_waters": 65,
-    "unmatched_events": 14,
+    "matched_waters": 73,
+    "unmatched_events": 0,
     "historical_events": 91,
     "new_historical_events": 91,
-    "unknown_region_events": 91,
     "latest_report_date": "2026-07-24",
     "latest_report_events": 18,
-    "latest_report_unique_waters": 18
+    "latest_report_unique_waters": 18,
+    "waters_with_species": 0,
+    "unique_species": 0
   },
   "validation": {
     "critical": 0,
-    "warnings": 2
+    "warnings": 0
   },
   "waters": [
     {
@@ -24,7 +25,6 @@
       "atlas_id": 680,
       "name": "Wrights Lake",
       "normalized_name": "wrights lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=680",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -66,11 +66,49 @@
       "atlas_errors": []
     },
     {
+      "key": "atlas-298",
+      "atlas_id": 298,
+      "name": "Twin Lakes Reservoir",
+      "normalized_name": "twin lakes reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=298",
+      "latest_report_date": "2026-07-24",
+      "stocking_dates": [
+        "2026-07-24",
+        "2026-07-17"
+      ],
+      "current_event_count": 2,
+      "historical_event_count": 2,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "not-yet-integrated",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {},
+      "canonical_name": "Twin Lakes Lower",
+      "lat": 39.083864,
+      "lng": -106.330866,
+      "county": "Lake",
+      "location_type": "Water Body",
+      "property_name": null,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "stocked_description": "No",
+      "special_regulations": "The bag and possession limit for lake trout is one fish. All lake trout between 22 and 34 inches in length must be returned to the water immediately upon catch.",
+      "atlas_name": "Twin Lakes Lower",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
+    },
+    {
       "key": "atlas-481",
       "atlas_id": 481,
       "name": "Turquoise Lake",
       "normalized_name": "turquoise lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=481",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -111,11 +149,41 @@
       "atlas_errors": []
     },
     {
+      "key": "atlas-472",
+      "atlas_id": 472,
+      "name": "Trujillo Meadows Reservoir",
+      "normalized_name": "trujillo meadows reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=472",
+      "latest_report_date": "2026-07-24",
+      "stocking_dates": [
+        "2026-07-24",
+        "2026-07-10"
+      ],
+      "current_event_count": 2,
+      "historical_event_count": 2,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "not-yet-integrated",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {},
+      "canonical_name": "Trujillo Meadows Reservoir",
+      "lat": 37.051102,
+      "lng": -106.452601,
+      "county": "Conejos",
+      "location_type": "Water Body",
+      "property_name": "Trujillo Meadows SWA",
+      "atlas_name": "Trujillo Meadows Reservoir",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
+    },
+    {
       "key": "atlas-104",
       "atlas_id": 104,
       "name": "Taylor Reservoir",
       "normalized_name": "taylor reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=104",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -163,7 +231,6 @@
       "atlas_id": 149,
       "name": "Spring Creek Reservoir",
       "normalized_name": "spring creek reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=149",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -204,11 +271,42 @@
       "atlas_errors": []
     },
     {
+      "key": "atlas-271",
+      "atlas_id": 271,
+      "name": "Rio Grande Reservoir",
+      "normalized_name": "rio grande reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=271",
+      "latest_report_date": "2026-07-24",
+      "stocking_dates": [
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "current_event_count": 3,
+      "historical_event_count": 3,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "not-yet-integrated",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {},
+      "canonical_name": "Rio Grande Reservoir",
+      "lat": 37.732143,
+      "lng": -107.31255,
+      "county": "Hinsdale",
+      "location_type": "Water Body",
+      "property_name": null,
+      "atlas_name": "Rio Grande Reservoir",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
+    },
+    {
       "key": "atlas-219",
       "atlas_id": 219,
       "name": "Rampart Reservoir",
       "normalized_name": "rampart reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=219",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -253,7 +351,6 @@
       "atlas_id": 773,
       "name": "Pothole Lake #1 (Lower)",
       "normalized_name": "pothole lake 1 lower",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=773",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -298,7 +395,6 @@
       "atlas_id": 124,
       "name": "Platoro Reservoir",
       "normalized_name": "platoro reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=124",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -344,7 +440,6 @@
       "atlas_id": 759,
       "name": "North Fork Reservoir",
       "normalized_name": "north fork reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=759",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -389,7 +484,6 @@
       "atlas_id": 414,
       "name": "Montgomery Reservoir",
       "normalized_name": "montgomery reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=414",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -434,7 +528,6 @@
       "atlas_id": 133,
       "name": "Green Mountain Falls Lake",
       "normalized_name": "green mountain falls lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=133",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -479,7 +572,6 @@
       "atlas_id": 469,
       "name": "Georgetown Lake",
       "normalized_name": "georgetown lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=469",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -524,7 +616,6 @@
       "atlas_id": 1725,
       "name": "Columbia Reservoir",
       "normalized_name": "columbia reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1725",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -569,7 +660,6 @@
       "atlas_id": 764,
       "name": "Chalk Creek Lake",
       "normalized_name": "chalk creek lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=764",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -615,7 +705,6 @@
       "atlas_id": 545,
       "name": "Big Meadows Reservoir",
       "normalized_name": "big meadows reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=545",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -657,11 +746,50 @@
       "atlas_errors": []
     },
     {
+      "key": "atlas-396",
+      "atlas_id": 396,
+      "name": "Beaver Creek Reservoir",
+      "normalized_name": "beaver creek reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=396",
+      "latest_report_date": "2026-07-24",
+      "stocking_dates": [
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-03"
+      ],
+      "current_event_count": 3,
+      "historical_event_count": 3,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "not-yet-integrated",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {},
+      "canonical_name": "Beaver Creek Reservoir",
+      "lat": 37.590778,
+      "lng": -106.660091,
+      "county": "Rio Grande",
+      "location_type": "Water Body",
+      "property_name": null,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "High",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "stocked_description": "Sub-catchables",
+      "special_regulations": "Snagging of kokanee salmon is permitted from October 1 through December 31.",
+      "atlas_name": "Beaver Creek Reservoir",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
+    },
+    {
       "key": "atlas-46",
       "atlas_id": 46,
       "name": "Wolford Mountain Reservoir",
       "normalized_name": "wolford mountain reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=46",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -707,7 +835,6 @@
       "atlas_id": 765,
       "name": "Wilmore Pond",
       "normalized_name": "wilmore pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=765",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -752,7 +879,6 @@
       "atlas_id": 421,
       "name": "Vallecito Reservoir",
       "normalized_name": "vallecito reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=421",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -797,7 +923,6 @@
       "atlas_id": 753,
       "name": "Trout Lake",
       "normalized_name": "trout lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=753",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -842,7 +967,6 @@
       "atlas_id": 455,
       "name": "Skaguay Reservoir",
       "normalized_name": "skaguay reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=455",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -887,7 +1011,6 @@
       "atlas_id": 826,
       "name": "Riverway Pond",
       "normalized_name": "riverway pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=826",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -933,7 +1056,6 @@
       "atlas_id": 1731,
       "name": "Rifle Creek",
       "normalized_name": "rifle creek",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1731",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -978,7 +1100,6 @@
       "atlas_id": 1606,
       "name": "Quartz Creek",
       "normalized_name": "quartz creek",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1606",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1024,7 +1145,6 @@
       "atlas_id": 748,
       "name": "Pass Creek Pond",
       "normalized_name": "pass creek pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=748",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1069,7 +1189,6 @@
       "atlas_id": 344,
       "name": "Pac-Man Lake",
       "normalized_name": "pac man lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=344",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1115,7 +1234,6 @@
       "atlas_id": 74,
       "name": "Nottingham Lake",
       "normalized_name": "nottingham lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=74",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1160,7 +1278,6 @@
       "atlas_id": 781,
       "name": "Muddy Pass lake",
       "normalized_name": "muddy pass lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=781",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1205,7 +1322,6 @@
       "atlas_id": 798,
       "name": "Monarch Lake",
       "normalized_name": "monarch lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=798",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1250,7 +1366,6 @@
       "atlas_id": 743,
       "name": "Love Lake",
       "normalized_name": "love lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=743",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1295,7 +1410,6 @@
       "atlas_id": 533,
       "name": "Lost Lake",
       "normalized_name": "lost lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=533",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1340,7 +1454,6 @@
       "atlas_id": 341,
       "name": "Lake O'Haver",
       "normalized_name": "lake o haver",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=341",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1385,7 +1498,6 @@
       "atlas_id": 838,
       "name": "Gunnison Pond",
       "normalized_name": "gunnison pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=838",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1427,11 +1539,47 @@
       "atlas_errors": []
     },
     {
+      "key": "atlas-804",
+      "atlas_id": 804,
+      "name": "Fairplay Kids Pond",
+      "normalized_name": "fairplay kids pond",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=804",
+      "latest_report_date": "2026-07-17",
+      "stocking_dates": [
+        "2026-07-17"
+      ],
+      "current_event_count": 1,
+      "historical_event_count": 1,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "not-yet-integrated",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {},
+      "canonical_name": "Fairplay Pond",
+      "lat": 39.223049,
+      "lng": -106.003775,
+      "county": "Park",
+      "location_type": "Pond",
+      "property_name": null,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "High",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "stocked_description": "No",
+      "atlas_name": "Fairplay Pond",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
+    },
+    {
       "key": "atlas-426",
       "atlas_id": 426,
       "name": "Crystal Creek Reservoir",
       "normalized_name": "crystal creek reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=426",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1476,7 +1624,6 @@
       "atlas_id": 484,
       "name": "Cottonwood Lake",
       "normalized_name": "cottonwood lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=484",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1521,7 +1668,6 @@
       "atlas_id": 799,
       "name": "Copper Mountain Ponds",
       "normalized_name": "copper mountain ponds",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=799",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1566,7 +1712,6 @@
       "atlas_id": 427,
       "name": "Catamount Reservoir South",
       "normalized_name": "catamount reservoir south",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=427",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1611,7 +1756,6 @@
       "atlas_id": 767,
       "name": "Camp Hale Pond",
       "normalized_name": "camp hale pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=767",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1652,11 +1796,47 @@
       "atlas_errors": []
     },
     {
+      "key": "atlas-999",
+      "atlas_id": 999,
+      "name": "Berry Creek pond",
+      "normalized_name": "berry creek pond",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=999",
+      "latest_report_date": "2026-07-17",
+      "stocking_dates": [
+        "2026-07-17"
+      ],
+      "current_event_count": 1,
+      "historical_event_count": 1,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "not-yet-integrated",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {},
+      "canonical_name": "Berry Creek Pond",
+      "lat": 39.64396,
+      "lng": -106.58644,
+      "county": "Eagle",
+      "location_type": "Pond",
+      "property_name": null,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "stocked_description": "No",
+      "atlas_name": "Berry Creek Pond",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
+    },
+    {
       "key": "atlas-814",
       "atlas_id": 814,
       "name": "Tucker Park Ponds",
       "normalized_name": "tucker park ponds",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=814",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1701,7 +1881,6 @@
       "atlas_id": 111,
       "name": "Trinidad Reservoir",
       "normalized_name": "trinidad reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=111",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1746,7 +1925,6 @@
       "atlas_id": 249,
       "name": "Slough pond",
       "normalized_name": "slough pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=249",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1791,7 +1969,6 @@
       "atlas_id": 830,
       "name": "Sheriff Reservoir",
       "normalized_name": "sheriff reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=830",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1836,7 +2013,6 @@
       "atlas_id": 486,
       "name": "Ruedi Reservoir",
       "normalized_name": "ruedi reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=486",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1881,7 +2057,6 @@
       "atlas_id": 839,
       "name": "Roaring Judy Ponds",
       "normalized_name": "roaring judy ponds",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=839",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1926,7 +2101,6 @@
       "atlas_id": 423,
       "name": "Rifle Gap Reservoir",
       "normalized_name": "rifle gap reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=423",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1967,11 +2141,47 @@
       "atlas_errors": []
     },
     {
+      "key": "atlas-771",
+      "atlas_id": 771,
+      "name": "Pitkin Kids Pond",
+      "normalized_name": "pitkin kids pond",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=771",
+      "latest_report_date": "2026-07-10",
+      "stocking_dates": [
+        "2026-07-10"
+      ],
+      "current_event_count": 1,
+      "historical_event_count": 1,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "not-yet-integrated",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {},
+      "canonical_name": "Pitkin Kids Pond",
+      "lat": 38.612164,
+      "lng": -106.504628,
+      "county": "Gunnison",
+      "location_type": "Pond",
+      "property_name": null,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Low",
+      "family_friendly": "No",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "stocked_description": "No",
+      "atlas_name": "Pitkin Kids Pond",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
+    },
+    {
       "key": "atlas-1730",
       "atlas_id": 1730,
       "name": "Piney Lake",
       "normalized_name": "piney lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1730",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2016,7 +2226,6 @@
       "atlas_id": 485,
       "name": "Maroon Lake",
       "normalized_name": "maroon lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=485",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2061,7 +2270,6 @@
       "atlas_id": 343,
       "name": "Lost Man Reservoir",
       "normalized_name": "lost man reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=343",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2106,7 +2314,6 @@
       "atlas_id": 248,
       "name": "Kriley Pond",
       "normalized_name": "kriley pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=248",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2151,7 +2358,6 @@
       "atlas_id": 791,
       "name": "Hahns Peak Lake",
       "normalized_name": "hahns peak lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=791",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2196,7 +2402,6 @@
       "atlas_id": 975,
       "name": "Deep Lake",
       "normalized_name": "deep lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=975",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2241,7 +2446,6 @@
       "atlas_id": 397,
       "name": "Big Creek Lake, Lower",
       "normalized_name": "big creek lake lower",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=397",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2286,7 +2490,6 @@
       "atlas_id": 49,
       "name": "Bear Lake",
       "normalized_name": "bear lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=49",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2331,7 +2534,6 @@
       "atlas_id": 844,
       "name": "Tincup Pond",
       "normalized_name": "tincup pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=844",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2376,7 +2578,6 @@
       "atlas_id": 56,
       "name": "North Michigan Reservoir",
       "normalized_name": "north michigan reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=56",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2421,7 +2622,6 @@
       "atlas_id": 1729,
       "name": "Mosquito Lake",
       "normalized_name": "mosquito lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1729",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2466,7 +2666,6 @@
       "atlas_id": 775,
       "name": "Mirror Lake",
       "normalized_name": "mirror lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=775",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2511,7 +2710,6 @@
       "atlas_id": 106,
       "name": "Lake San Cristobal",
       "normalized_name": "lake san cristobal",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=106",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2556,7 +2754,6 @@
       "atlas_id": 855,
       "name": "Lake Dorothey",
       "normalized_name": "lake dorothey",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=855",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2601,7 +2798,6 @@
       "atlas_id": 315,
       "name": "Cherry Creek Reservoir",
       "normalized_name": "cherry creek reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=315",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2646,7 +2842,6 @@
       "atlas_id": 364,
       "name": "Chatfield Reservoir",
       "normalized_name": "chatfield reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=364",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2691,7 +2886,6 @@
       "atlas_id": 739,
       "name": "Blue Lake",
       "normalized_name": "blue lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=739",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2736,7 +2930,6 @@
       "atlas_id": 474,
       "name": "Big Molas Lake",
       "normalized_name": "big molas lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=474",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2781,7 +2974,6 @@
       "atlas_id": 740,
       "name": "Bear Lake",
       "normalized_name": "bear lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=740",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2826,7 +3018,6 @@
       "atlas_id": 732,
       "name": "Bailey Reservoir",
       "normalized_name": "bailey reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=732",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2871,7 +3062,6 @@
       "atlas_id": 85,
       "name": "Aurora Reservoir",
       "normalized_name": "aurora reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=85",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2912,11 +3102,42 @@
       "atlas_errors": []
     },
     {
+      "key": "atlas-1432",
+      "atlas_id": 1432,
+      "name": "Animas #2",
+      "normalized_name": "animas 2",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1432",
+      "latest_report_date": "2026-07-03",
+      "stocking_dates": [
+        "2026-07-03"
+      ],
+      "current_event_count": 1,
+      "historical_event_count": 1,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "not-yet-integrated",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {},
+      "canonical_name": "Animas River",
+      "lat": 37.26132,
+      "lng": -107.88358,
+      "county": "La Plata",
+      "location_type": "Stream",
+      "property_name": null,
+      "specific_area": "From the confluence with Lightner Creek to the Rivera Crossing Bridge",
+      "special_regulations": "Fishing is by artificial flies and lures only. There is no bag or possession limit for channel catfish, largemouth bass, smallmouth bass, northern pike, walleye, green sunfish, bluegill, bullhead, yellow perch or crappie. The bag and possession limit and minimum size for trout is two fish, 16 inches in length.",
+      "atlas_name": "Animas River",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
+    },
+    {
       "key": "atlas-677",
       "atlas_id": 677,
       "name": "Andrews Lake",
       "normalized_name": "andrews lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=677",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [

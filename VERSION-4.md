@@ -9,7 +9,7 @@ Version 4 keeps the existing live map architecture while strengthening the data 
 - Multi-layer Fishing Atlas ID matching
 - Richer location and access attributes
 - Explicit match status and confidence on historical events
-- Validation for report-size drops, missing coordinates, locations outside Colorado, unknown regions, and unmatched events
+- Validation for report-size drops, missing coordinates, locations outside Colorado, unmatched events
 - Strict GitHub Actions validation before automatic publication
 - Species data is included only when the official Atlas service explicitly returns a species name
 
