@@ -1,4 +1,6 @@
 {
+  "schema_version": 5,
+  "generated_at": "2026-07-26T23:29:40.299567+00:00",
   "schema_version": 4,
   "generated_at": "2026-07-26T17:19:18.879895+00:00",
   "generated_at": "2026-07-26T14:37:37.273949+00:00",
@@ -6,15 +8,19 @@
   "summary": {
     "stocking_events": 91,
     "unique_atlas_ids": 73,
-    "matched_waters": 65,
-    "unmatched_events": 14,
+    "matched_waters": 73,
+    "unmatched_events": 0,
     "historical_events": 91,
     "new_historical_events": 0,
-    "unknown_region_events": 91
+    "latest_report_date": "2026-07-24",
+    "latest_report_events": 18,
+    "latest_report_unique_waters": 18,
+    "waters_with_species": 0,
+    "unique_species": 0
   },
   "validation": {
     "critical": 0,
-    "warnings": 2
+    "warnings": 1
   },
   "waters": [
     {
@@ -22,7 +28,6 @@
       "atlas_id": 680,
       "name": "Wrights Lake",
       "normalized_name": "wrights lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=680",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -34,14 +39,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=680"
+        ],
+        "errors": []
       },
       "lat": 38.71807379522038,
       "lng": -106.18571992798094,
@@ -65,14 +70,60 @@
       "property_url": "https://cpw.state.co.us/swa/Wrights%20Lake%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
+    },
+    {
+      "key": "atlas-298",
+      "atlas_id": 298,
+      "name": "Twin Lakes Reservoir",
+      "normalized_name": "twin lakes reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=298",
+      "latest_report_date": "2026-07-24",
+      "stocking_dates": [
+        "2026-07-24",
+        "2026-07-17"
+      ],
+      "current_event_count": 2,
+      "historical_event_count": 2,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "no-species-exposed",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=298"
+        ],
+        "errors": []
+      },
+      "canonical_name": "Twin Lakes Lower",
+      "lat": 39.083864,
+      "lng": -106.330866,
+      "county": "Lake",
+      "location_type": "Water Body",
+      "property_name": null,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "stocked_description": "No",
+      "special_regulations": "The bag and possession limit for lake trout is one fish. All lake trout between 22 and 34 inches in length must be returned to the water immediately upon catch.",
+      "atlas_name": "Twin Lakes Lower",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
     },
     {
       "key": "atlas-481",
       "atlas_id": 481,
       "name": "Turquoise Lake",
       "normalized_name": "turquoise lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=481",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -83,14 +134,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=481"
+        ],
+        "errors": []
       },
       "lat": 39.27124439389082,
       "lng": -106.39371423728836,
@@ -114,14 +165,50 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
+    },
+    {
+      "key": "atlas-472",
+      "atlas_id": 472,
+      "name": "Trujillo Meadows Reservoir",
+      "normalized_name": "trujillo meadows reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=472",
+      "latest_report_date": "2026-07-24",
+      "stocking_dates": [
+        "2026-07-24",
+        "2026-07-10"
+      ],
+      "current_event_count": 2,
+      "historical_event_count": 2,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "no-species-exposed",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [],
+        "errors": []
+      },
+      "canonical_name": "Trujillo Meadows Reservoir",
+      "lat": 37.051102,
+      "lng": -106.452601,
+      "county": "Conejos",
+      "location_type": "Water Body",
+      "property_name": "Trujillo Meadows SWA",
+      "atlas_name": "Trujillo Meadows Reservoir",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
     },
     {
       "key": "atlas-104",
       "atlas_id": 104,
       "name": "Taylor Reservoir",
       "normalized_name": "taylor reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=104",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -135,14 +222,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=104"
+        ],
+        "errors": []
       },
       "lat": 38.83550912140285,
       "lng": -106.58027919596722,
@@ -166,14 +253,15 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-149",
       "atlas_id": 149,
       "name": "Spring Creek Reservoir",
       "normalized_name": "spring creek reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=149",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -184,14 +272,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=149"
+        ],
+        "errors": []
       },
       "lat": 38.86380658823465,
       "lng": -106.7102610266142,
@@ -215,14 +303,51 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
+    },
+    {
+      "key": "atlas-271",
+      "atlas_id": 271,
+      "name": "Rio Grande Reservoir",
+      "normalized_name": "rio grande reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=271",
+      "latest_report_date": "2026-07-24",
+      "stocking_dates": [
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-10"
+      ],
+      "current_event_count": 3,
+      "historical_event_count": 3,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "no-species-exposed",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [],
+        "errors": []
+      },
+      "canonical_name": "Rio Grande Reservoir",
+      "lat": 37.732143,
+      "lng": -107.31255,
+      "county": "Hinsdale",
+      "location_type": "Water Body",
+      "property_name": null,
+      "atlas_name": "Rio Grande Reservoir",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
     },
     {
       "key": "atlas-219",
       "atlas_id": 219,
       "name": "Rampart Reservoir",
       "normalized_name": "rampart reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=219",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -233,14 +358,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=219"
+        ],
+        "errors": []
       },
       "lat": 38.978119562573845,
       "lng": -104.9662780303164,
@@ -264,14 +389,15 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-773",
       "atlas_id": 773,
       "name": "Pothole Lake #1 (Lower)",
       "normalized_name": "pothole lake 1 lower",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=773",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -282,14 +408,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=773"
+        ],
+        "errors": []
       },
       "lat": 38.93881265079735,
       "lng": -106.60474165245705,
@@ -313,14 +439,15 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-124",
       "atlas_id": 124,
       "name": "Platoro Reservoir",
       "normalized_name": "platoro reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=124",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -332,14 +459,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=124"
+        ],
+        "errors": []
       },
       "lat": 37.33756240559339,
       "lng": -106.5681036911177,
@@ -363,14 +490,15 @@
       "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-759",
       "atlas_id": 759,
       "name": "North Fork Reservoir",
       "normalized_name": "north fork reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=759",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -381,14 +509,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=759"
+        ],
+        "errors": []
       },
       "lat": 38.610220471790115,
       "lng": -106.32288573327872,
@@ -412,14 +540,15 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-414",
       "atlas_id": 414,
       "name": "Montgomery Reservoir",
       "normalized_name": "montgomery reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=414",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -430,14 +559,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=414"
+        ],
+        "errors": []
       },
       "lat": 39.35577235086876,
       "lng": -106.0758782191044,
@@ -461,14 +590,15 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-133",
       "atlas_id": 133,
       "name": "Green Mountain Falls Lake",
       "normalized_name": "green mountain falls lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=133",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -479,14 +609,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=133"
+        ],
+        "errors": []
       },
       "lat": 38.933490444000995,
       "lng": -105.01397737804213,
@@ -510,14 +640,15 @@
       "property_url": "https://greenmountainfalls.colorado.gov/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-469",
       "atlas_id": 469,
       "name": "Georgetown Lake",
       "normalized_name": "georgetown lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=469",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -528,14 +659,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=469"
+        ],
+        "errors": []
       },
       "lat": 39.729408737952454,
       "lng": -105.69061107141643,
@@ -559,14 +690,15 @@
       "property_url": "https://georgetown-colorado.org/fishing-in-georgetown-co/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1725",
       "atlas_id": 1725,
       "name": "Columbia Reservoir",
       "normalized_name": "columbia reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1725",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -577,14 +709,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1725"
+        ],
+        "errors": []
       },
       "lat": 39.314626068637786,
       "lng": -106.06084689001658,
@@ -608,14 +740,15 @@
       "property_url": "https://cpw.state.co.us/swa/Alma%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-764",
       "atlas_id": 764,
       "name": "Chalk Creek Lake",
       "normalized_name": "chalk creek lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=764",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -627,14 +760,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=764"
+        ],
+        "errors": []
       },
       "lat": 38.71103241699492,
       "lng": -106.23412146450974,
@@ -658,14 +791,15 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-545",
       "atlas_id": 545,
       "name": "Big Meadows Reservoir",
       "normalized_name": "big meadows reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=545",
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
@@ -677,14 +811,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=545"
+        ],
+        "errors": []
       },
       "lat": 37.537070827512395,
       "lng": -106.80433063585673,
@@ -708,14 +842,61 @@
       "property_url": "https://cpw.state.co.us/swa/Big%20Meadows%20Reservoir%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
+    },
+    {
+      "key": "atlas-396",
+      "atlas_id": 396,
+      "name": "Beaver Creek Reservoir",
+      "normalized_name": "beaver creek reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=396",
+      "latest_report_date": "2026-07-24",
+      "stocking_dates": [
+        "2026-07-24",
+        "2026-07-17",
+        "2026-07-03"
+      ],
+      "current_event_count": 3,
+      "historical_event_count": 3,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "no-species-exposed",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=396"
+        ],
+        "errors": []
+      },
+      "canonical_name": "Beaver Creek Reservoir",
+      "lat": 37.590778,
+      "lng": -106.660091,
+      "county": "Rio Grande",
+      "location_type": "Water Body",
+      "property_name": null,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "High",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "stocked_description": "Sub-catchables",
+      "special_regulations": "Snagging of kokanee salmon is permitted from October 1 through December 31.",
+      "atlas_name": "Beaver Creek Reservoir",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
     },
     {
       "key": "atlas-46",
       "atlas_id": 46,
       "name": "Wolford Mountain Reservoir",
       "normalized_name": "wolford mountain reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=46",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -727,14 +908,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=46"
+        ],
+        "errors": []
       },
       "lat": 40.129522647380654,
       "lng": -106.41131611891785,
@@ -758,14 +939,15 @@
       "property_url": "https://www.coloradoriverdistrict.org/district-business/wolford-mountain-reservoir/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-765",
       "atlas_id": 765,
       "name": "Wilmore Pond",
       "normalized_name": "wilmore pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=765",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -776,14 +958,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=765"
+        ],
+        "errors": []
       },
       "lat": 39.65810162888828,
       "lng": -106.63277900043411,
@@ -807,14 +989,15 @@
       "property_url": null,
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-421",
       "atlas_id": 421,
       "name": "Vallecito Reservoir",
       "normalized_name": "vallecito reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=421",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -825,14 +1008,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=421"
+        ],
+        "errors": []
       },
       "lat": 37.39076106686138,
       "lng": -107.55418770675382,
@@ -856,14 +1039,15 @@
       "property_url": "https://www.fs.usda.gov/activity/sanjuan/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-753",
       "atlas_id": 753,
       "name": "Trout Lake",
       "normalized_name": "trout lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=753",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -874,14 +1058,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=753"
+        ],
+        "errors": []
       },
       "lat": 37.824404030923276,
       "lng": -107.88493823334736,
@@ -905,14 +1089,15 @@
       "property_url": "https://www.alltelluride.com/lakes_rivers_falls/trout_lake.php",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-455",
       "atlas_id": 455,
       "name": "Skaguay Reservoir",
       "normalized_name": "skaguay reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=455",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -923,14 +1108,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=455"
+        ],
+        "errors": []
       },
       "lat": 38.69093390011591,
       "lng": -105.05072985302066,
@@ -954,14 +1139,15 @@
       "property_url": "https://cpw.state.co.us/swa/Skaguay%20Reservoir%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-826",
       "atlas_id": 826,
       "name": "Riverway Pond",
       "normalized_name": "riverway pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=826",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -973,14 +1159,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=826"
+        ],
+        "errors": []
       },
       "lat": 38.545620698000626,
       "lng": -106.9501314770602,
@@ -1004,14 +1190,15 @@
       "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1731",
       "atlas_id": 1731,
       "name": "Rifle Creek",
       "normalized_name": "rifle creek",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1731",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1022,14 +1209,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1731"
+        ],
+        "errors": []
       },
       "lat": 39.622898978165395,
       "lng": -107.76146032124008,
@@ -1053,14 +1240,15 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/riflegap",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1606",
       "atlas_id": 1606,
       "name": "Quartz Creek",
       "normalized_name": "quartz creek",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1606",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1072,14 +1260,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1606"
+        ],
+        "errors": []
       },
       "lat": 38.61124107367126,
       "lng": -106.50165201183599,
@@ -1103,14 +1291,15 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-748",
       "atlas_id": 748,
       "name": "Pass Creek Pond",
       "normalized_name": "pass creek pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=748",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1121,14 +1310,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=748"
+        ],
+        "errors": []
       },
       "lat": 37.51838404352695,
       "lng": -106.77086498062015,
@@ -1152,14 +1341,15 @@
       "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-344",
       "atlas_id": 344,
       "name": "Pac-Man Lake",
       "normalized_name": "pac man lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=344",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1171,14 +1361,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=344"
+        ],
+        "errors": []
       },
       "lat": 38.54373606012939,
       "lng": -106.9203766266167,
@@ -1202,14 +1392,15 @@
       "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-74",
       "atlas_id": 74,
       "name": "Nottingham Lake",
       "normalized_name": "nottingham lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=74",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1220,14 +1411,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=74"
+        ],
+        "errors": []
       },
       "lat": 39.6373293985433,
       "lng": -106.53032245469602,
@@ -1251,14 +1442,15 @@
       "property_url": "https://www.avon.org/index.aspx?NID=430",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-781",
       "atlas_id": 781,
       "name": "Muddy Pass lake",
       "normalized_name": "muddy pass lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=781",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1269,14 +1461,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=781"
+        ],
+        "errors": []
       },
       "lat": 40.38688820067261,
       "lng": -106.58720491126203,
@@ -1300,14 +1492,15 @@
       "property_url": "https://www.fs.usda.gov/activity/mbr/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-798",
       "atlas_id": 798,
       "name": "Monarch Lake",
       "normalized_name": "monarch lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=798",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1318,14 +1511,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=798"
+        ],
+        "errors": []
       },
       "lat": 40.105777557314745,
       "lng": -105.74192240386411,
@@ -1349,14 +1542,15 @@
       "property_url": "https://www.fs.usda.gov/activity/arp/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-743",
       "atlas_id": 743,
       "name": "Love Lake",
       "normalized_name": "love lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=743",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1367,14 +1561,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=743"
+        ],
+        "errors": []
       },
       "lat": 37.66403852050542,
       "lng": -107.02626100513842,
@@ -1398,14 +1592,15 @@
       "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-533",
       "atlas_id": 533,
       "name": "Lost Lake",
       "normalized_name": "lost lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=533",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1416,14 +1611,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=533"
+        ],
+        "errors": []
       },
       "lat": 40.61195032936543,
       "lng": -105.84882197477664,
@@ -1447,14 +1642,15 @@
       "property_url": "https://www.fs.usda.gov/activity/arp/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-341",
       "atlas_id": 341,
       "name": "Lake O'Haver",
       "normalized_name": "lake o haver",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=341",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1465,14 +1661,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=341"
+        ],
+        "errors": []
       },
       "lat": 38.427216048126596,
       "lng": -106.14601746286448,
@@ -1496,14 +1692,15 @@
       "property_url": "https://www.fs.usda.gov/recarea/psicc/recreation/fishing/recarea/?recid=12686&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-838",
       "atlas_id": 838,
       "name": "Gunnison Pond",
       "normalized_name": "gunnison pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=838",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1515,14 +1712,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=838"
+        ],
+        "errors": []
       },
       "lat": 38.53040515989236,
       "lng": -106.94748393350875,
@@ -1546,14 +1743,58 @@
       "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
+    },
+    {
+      "key": "atlas-804",
+      "atlas_id": 804,
+      "name": "Fairplay Kids Pond",
+      "normalized_name": "fairplay kids pond",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=804",
+      "latest_report_date": "2026-07-17",
+      "stocking_dates": [
+        "2026-07-17"
+      ],
+      "current_event_count": 1,
+      "historical_event_count": 1,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "no-species-exposed",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=804"
+        ],
+        "errors": []
+      },
+      "canonical_name": "Fairplay Pond",
+      "lat": 39.223049,
+      "lng": -106.003775,
+      "county": "Park",
+      "location_type": "Pond",
+      "property_name": null,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "High",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "stocked_description": "No",
+      "atlas_name": "Fairplay Pond",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
     },
     {
       "key": "atlas-426",
       "atlas_id": 426,
       "name": "Crystal Creek Reservoir",
       "normalized_name": "crystal creek reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=426",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1564,14 +1805,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=426"
+        ],
+        "errors": []
       },
       "lat": 38.914588595411814,
       "lng": -105.03171129764536,
@@ -1595,14 +1836,15 @@
       "property_url": "https://coloradosprings.gov/pikes-peak-americas-mountain/page/north-slope-recreation-area",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-484",
       "atlas_id": 484,
       "name": "Cottonwood Lake",
       "normalized_name": "cottonwood lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=484",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1613,14 +1855,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Warmwater"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=484"
+        ],
+        "errors": []
       },
       "lat": 38.78173716763779,
       "lng": -106.28171868366914,
@@ -1644,14 +1886,15 @@
       "property_url": "https://www.fs.usda.gov/recarea/psicc/recreation/fishing/recarea/?recid=12649&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-799",
       "atlas_id": 799,
       "name": "Copper Mountain Ponds",
       "normalized_name": "copper mountain ponds",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=799",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1662,14 +1905,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=799"
+        ],
+        "errors": []
       },
       "lat": 39.51494267345596,
       "lng": -106.14450174626539,
@@ -1693,14 +1936,15 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-427",
       "atlas_id": 427,
       "name": "Catamount Reservoir South",
       "normalized_name": "catamount reservoir south",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=427",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1711,14 +1955,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=427"
+        ],
+        "errors": []
       },
       "lat": 38.92525493797035,
       "lng": -105.05116545328843,
@@ -1742,14 +1986,15 @@
       "property_url": "https://coloradosprings.gov/pikes-peak-americas-mountain/page/north-slope-recreation-area",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-767",
       "atlas_id": 767,
       "name": "Camp Hale Pond",
       "normalized_name": "camp hale pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=767",
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
@@ -1760,14 +2005,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=767"
+        ],
+        "errors": []
       },
       "lat": 39.42460732684016,
       "lng": -106.3195815392209,
@@ -1791,14 +2036,58 @@
       "property_url": "https://www.fs.usda.gov/recarea/whiteriver/recreation/fishing/recarea/?recid=41447&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
+    },
+    {
+      "key": "atlas-999",
+      "atlas_id": 999,
+      "name": "Berry Creek pond",
+      "normalized_name": "berry creek pond",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=999",
+      "latest_report_date": "2026-07-17",
+      "stocking_dates": [
+        "2026-07-17"
+      ],
+      "current_event_count": 1,
+      "historical_event_count": 1,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "no-species-exposed",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=999"
+        ],
+        "errors": []
+      },
+      "canonical_name": "Berry Creek Pond",
+      "lat": 39.64396,
+      "lng": -106.58644,
+      "county": "Eagle",
+      "location_type": "Pond",
+      "property_name": null,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "stocked_description": "No",
+      "atlas_name": "Berry Creek Pond",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
     },
     {
       "key": "atlas-814",
       "atlas_id": 814,
       "name": "Tucker Park Ponds",
       "normalized_name": "tucker park ponds",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=814",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1809,14 +2098,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=814"
+        ],
+        "errors": []
       },
       "lat": 37.49611385530433,
       "lng": -106.7597615611633,
@@ -1840,14 +2129,15 @@
       "property_url": "https://www.fs.usda.gov/recarea/riogrande/recreation/fishing/recarea/?recid=29230&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-111",
       "atlas_id": 111,
       "name": "Trinidad Reservoir",
       "normalized_name": "trinidad reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=111",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1858,14 +2148,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout, Sub-catchables and Warmwater"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=111"
+        ],
+        "errors": []
       },
       "lat": 37.13998334568189,
       "lng": -104.56151009454065,
@@ -1889,14 +2179,15 @@
       "property_url": "https://cpw.state.co.us/placestogo/parks/trinidadlake",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-249",
       "atlas_id": 249,
       "name": "Slough pond",
       "normalized_name": "slough pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=249",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1907,14 +2198,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=249"
+        ],
+        "errors": []
       },
       "lat": 39.830946295326946,
       "lng": -105.42227920799216,
@@ -1938,14 +2229,15 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/goldengatecanyon",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-830",
       "atlas_id": 830,
       "name": "Sheriff Reservoir",
       "normalized_name": "sheriff reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=830",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -1956,14 +2248,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=830"
+        ],
+        "errors": []
       },
       "lat": 40.146078839603774,
       "lng": -107.13647302921947,
@@ -1987,14 +2279,15 @@
       "property_url": "https://www.fs.usda.gov/activity/mbr/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-486",
       "atlas_id": 486,
       "name": "Ruedi Reservoir",
       "normalized_name": "ruedi reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=486",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2005,14 +2298,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=486"
+        ],
+        "errors": []
       },
       "lat": 39.36566658926559,
       "lng": -106.79839014515483,
@@ -2036,14 +2329,15 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-839",
       "atlas_id": 839,
       "name": "Roaring Judy Ponds",
       "normalized_name": "roaring judy ponds",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=839",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2054,14 +2348,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=839"
+        ],
+        "errors": []
       },
       "lat": 38.70586959062421,
       "lng": -106.85211006749174,
@@ -2085,14 +2379,15 @@
       "property_url": "https://cpw.state.co.us/swa/Roaring%20Judy%20SFU%20(Hatchery)",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-423",
       "atlas_id": 423,
       "name": "Rifle Gap Reservoir",
       "normalized_name": "rifle gap reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=423",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2103,14 +2398,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Warmwater"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=423"
+        ],
+        "errors": []
       },
       "lat": 39.63216015426101,
       "lng": -107.76365292649061,
@@ -2134,14 +2429,58 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/riflegap",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
+    },
+    {
+      "key": "atlas-771",
+      "atlas_id": 771,
+      "name": "Pitkin Kids Pond",
+      "normalized_name": "pitkin kids pond",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=771",
+      "latest_report_date": "2026-07-10",
+      "stocking_dates": [
+        "2026-07-10"
+      ],
+      "current_event_count": 1,
+      "historical_event_count": 1,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "no-species-exposed",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=771"
+        ],
+        "errors": []
+      },
+      "canonical_name": "Pitkin Kids Pond",
+      "lat": 38.612164,
+      "lng": -106.504628,
+      "county": "Gunnison",
+      "location_type": "Pond",
+      "property_name": null,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Low",
+      "family_friendly": "No",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "stocked_description": "No",
+      "atlas_name": "Pitkin Kids Pond",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1730",
       "atlas_id": 1730,
       "name": "Piney Lake",
       "normalized_name": "piney lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1730",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2152,14 +2491,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1730"
+        ],
+        "errors": []
       },
       "lat": 39.71996418528731,
       "lng": -106.39789667287697,
@@ -2183,14 +2522,15 @@
       "property_url": "https://www.pineyriverranch.com/activities/fishing-2/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-485",
       "atlas_id": 485,
       "name": "Maroon Lake",
       "normalized_name": "maroon lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=485",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2201,14 +2541,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=485"
+        ],
+        "errors": []
       },
       "lat": 39.09699731137395,
       "lng": -106.94519964350538,
@@ -2232,14 +2572,15 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-343",
       "atlas_id": 343,
       "name": "Lost Man Reservoir",
       "normalized_name": "lost man reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=343",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2250,14 +2591,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=343"
+        ],
+        "errors": []
       },
       "lat": 39.12715053884348,
       "lng": -106.61936021914653,
@@ -2281,14 +2622,15 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-248",
       "atlas_id": 248,
       "name": "Kriley Pond",
       "normalized_name": "kriley pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=248",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2299,14 +2641,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=248"
+        ],
+        "errors": []
       },
       "lat": 39.83410408563664,
       "lng": -105.42969142120047,
@@ -2330,14 +2672,15 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/goldengatecanyon",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-791",
       "atlas_id": 791,
       "name": "Hahns Peak Lake",
       "normalized_name": "hahns peak lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=791",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2348,14 +2691,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=791"
+        ],
+        "errors": []
       },
       "lat": 40.837586255915376,
       "lng": -106.99107922455273,
@@ -2379,14 +2722,15 @@
       "property_url": "https://www.fs.usda.gov/activity/mbr/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-975",
       "atlas_id": 975,
       "name": "Deep Lake",
       "normalized_name": "deep lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=975",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2397,14 +2741,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=975"
+        ],
+        "errors": []
       },
       "lat": 39.77311806892825,
       "lng": -107.29964000088422,
@@ -2428,14 +2772,15 @@
       "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-397",
       "atlas_id": 397,
       "name": "Big Creek Lake, Lower",
       "normalized_name": "big creek lake lower",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=397",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2446,14 +2791,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout, Sub-catchables and Warmwater"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=397"
+        ],
+        "errors": []
       },
       "lat": 40.92813003141916,
       "lng": -106.61083436717544,
@@ -2477,14 +2822,15 @@
       "property_url": "https://www.fs.usda.gov/activity/mbr/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-49",
       "atlas_id": 49,
       "name": "Bear Lake",
       "normalized_name": "bear lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=49",
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
@@ -2495,14 +2841,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=49"
+        ],
+        "errors": []
       },
       "lat": 40.04283630601494,
       "lng": -107.08294396833772,
@@ -2526,14 +2872,15 @@
       "property_url": "https://www.fs.usda.gov/recarea/mbr/recreation/fishing/recarea/?recid=23058&actid=42",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-844",
       "atlas_id": 844,
       "name": "Tincup Pond",
       "normalized_name": "tincup pond",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=844",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2544,14 +2891,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=844"
+        ],
+        "errors": []
       },
       "lat": 38.75589608248872,
       "lng": -106.48018300687583,
@@ -2575,14 +2922,15 @@
       "property_url": "https://www.tincupco.com/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-56",
       "atlas_id": 56,
       "name": "North Michigan Reservoir",
       "normalized_name": "north michigan reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=56",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2593,14 +2941,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=56"
+        ],
+        "errors": []
       },
       "lat": 40.554308687726255,
       "lng": -105.99938646245585,
@@ -2624,14 +2972,15 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/stateforest",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-1729",
       "atlas_id": 1729,
       "name": "Mosquito Lake",
       "normalized_name": "mosquito lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1729",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2642,14 +2991,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Unsure",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1729"
+        ],
+        "errors": []
       },
       "lat": 38.33759547271491,
       "lng": -106.1803246284182,
@@ -2673,14 +3022,15 @@
       "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-775",
       "atlas_id": 775,
       "name": "Mirror Lake",
       "normalized_name": "mirror lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=775",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2691,14 +3041,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=775"
+        ],
+        "errors": []
       },
       "lat": 38.74352120954073,
       "lng": -106.43211272231142,
@@ -2722,14 +3072,15 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-106",
       "atlas_id": 106,
       "name": "Lake San Cristobal",
       "normalized_name": "lake san cristobal",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=106",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2740,14 +3091,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=106"
+        ],
+        "errors": []
       },
       "lat": 37.973600218290706,
       "lng": -107.28922524519555,
@@ -2771,14 +3122,15 @@
       "property_url": "https://lakecity.com/lake-san-cristobal/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-855",
       "atlas_id": 855,
       "name": "Lake Dorothey",
       "normalized_name": "lake dorothey",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=855",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2789,14 +3141,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=855"
+        ],
+        "errors": []
       },
       "lat": 37.00363573615023,
       "lng": -104.37031467361005,
@@ -2820,14 +3172,15 @@
       "property_url": "https://cpw.state.co.us/swa/Lake%20Dorothey%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-315",
       "atlas_id": 315,
       "name": "Cherry Creek Reservoir",
       "normalized_name": "cherry creek reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=315",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2838,14 +3191,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Warmwater"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=315"
+        ],
+        "errors": []
       },
       "lat": 39.640285752339466,
       "lng": -104.85559125828577,
@@ -2869,14 +3222,15 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/cherrycreek",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-364",
       "atlas_id": 364,
       "name": "Chatfield Reservoir",
       "normalized_name": "chatfield reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=364",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2887,14 +3241,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Warmwater"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=364"
+        ],
+        "errors": []
       },
       "lat": 39.55047695770309,
       "lng": -105.06636558300464,
@@ -2918,14 +3272,15 @@
       "property_url": "https://cpw.state.co.us/placestogo/Parks/Chatfield",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-739",
       "atlas_id": 739,
       "name": "Blue Lake",
       "normalized_name": "blue lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=739",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2936,14 +3291,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=739"
+        ],
+        "errors": []
       },
       "lat": 37.31691139003899,
       "lng": -105.13856976704035,
@@ -2967,14 +3322,15 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-474",
       "atlas_id": 474,
       "name": "Big Molas Lake",
       "normalized_name": "big molas lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=474",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -2985,14 +3341,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=474"
+        ],
+        "errors": []
       },
       "lat": 37.74756752549017,
       "lng": -107.68288729743563,
@@ -3016,14 +3372,15 @@
       "property_url": "https://www.molaslake.com/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-740",
       "atlas_id": 740,
       "name": "Bear Lake",
       "normalized_name": "bear lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=740",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -3034,14 +3391,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "No",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=740"
+        ],
+        "errors": []
       },
       "lat": 37.32394548292182,
       "lng": -105.14148487739243,
@@ -3065,14 +3422,15 @@
       "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-732",
       "atlas_id": 732,
       "name": "Bailey Reservoir",
       "normalized_name": "bailey reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=732",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -3083,14 +3441,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "No",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "No",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=732"
+        ],
+        "errors": []
       },
       "lat": 39.022042236376315,
       "lng": -107.74270771300296,
@@ -3114,14 +3472,15 @@
       "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     },
     {
       "key": "atlas-85",
       "atlas_id": 85,
       "name": "Aurora Reservoir",
       "normalized_name": "aurora reservoir",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=85",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -3132,14 +3491,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Warmwater"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=85"
+        ],
+        "errors": []
       },
       "lat": 39.61059055227754,
       "lng": -104.6631128230422,
@@ -3163,14 +3522,53 @@
       "property_url": "https://www.auroragov.org/things_to_do/reservoirs/aurora_reservoir/",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
+    },
+    {
+      "key": "atlas-1432",
+      "atlas_id": 1432,
+      "name": "Animas #2",
+      "normalized_name": "animas 2",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1432",
+      "latest_report_date": "2026-07-03",
+      "stocking_dates": [
+        "2026-07-03"
+      ],
+      "current_event_count": 1,
+      "historical_event_count": 1,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [],
+      "species_status": "no-species-exposed",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1432"
+        ],
+        "errors": []
+      },
+      "canonical_name": "Animas River",
+      "lat": 37.26132,
+      "lng": -107.88358,
+      "county": "La Plata",
+      "location_type": "Stream",
+      "property_name": null,
+      "specific_area": "From the confluence with Lightner Creek to the Rivera Crossing Bridge",
+      "special_regulations": "Fishing is by artificial flies and lures only. There is no bag or possession limit for channel catfish, largemouth bass, smallmouth bass, northern pike, walleye, green sunfish, bluegill, bullhead, yellow perch or crappie. The bag and possession limit and minimum size for trout is two fish, 16 inches in length.",
+      "atlas_name": "Animas River",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": []
     },
     {
       "key": "atlas-677",
       "atlas_id": 677,
       "name": "Andrews Lake",
       "normalized_name": "andrews lake",
-      "region": "unknown",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=677",
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
@@ -3181,14 +3579,14 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "official-layer-has-no-species-name-field",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
-        "OPP_FAMILY": "Yes",
-        "OPP_RUSTIC": "No",
-        "OPP_ICE": "Yes",
-        "HANDI_PIER": "Yes",
-        "STOCKED": "Catchable trout and Sub-catchables"
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=677"
+        ],
+        "errors": []
       },
       "lat": 37.727812625777204,
       "lng": -107.70888959118825,
@@ -3212,7 +3610,9 @@
       "property_url": "https://cpw.state.co.us/swa/Andrews%20Lake%20SWA",
       "gold_medal": false,
       "special_opportunity": null,
-      "atlas_layer": 59
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": []
     }
   ]
 }

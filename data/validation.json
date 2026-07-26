@@ -1,24 +1,24 @@
 {
+  "generated_at": "2026-07-26T23:29:40.299567+00:00",
   "generated_at": "2026-07-26T17:19:18.879895+00:00",
   "summary": {
     "stocking_events": 91,
     "unique_atlas_ids": 73,
-    "matched_waters": 65,
-    "unmatched_events": 14,
+    "matched_waters": 73,
+    "unmatched_events": 0,
     "historical_events": 91,
     "new_historical_events": 0,
-    "unknown_region_events": 91
+    "latest_report_date": "2026-07-24",
+    "latest_report_events": 18,
+    "latest_report_unique_waters": 18,
+    "waters_with_species": 0,
+    "unique_species": 0
   },
   "findings": [
     {
       "level": "warning",
-      "code": "unknown-regions",
-      "message": "91 current events have an unknown region."
-    },
-    {
-      "level": "warning",
-      "code": "unmatched-events",
-      "message": "14 current events remain unmatched."
+      "code": "species-empty",
+      "message": "No matched water contains verified species names; inspect Atlas species extraction."
     }
   ]
 }
