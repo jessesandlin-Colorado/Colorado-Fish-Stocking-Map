@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-07-26T23:12:28.444900+00:00",
+  "generated_at": "2026-07-26T23:29:40.299567+00:00",
   "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
   "summary": {
     "stocking_events": 91,
@@ -8,7 +8,7 @@
     "matched_waters": 73,
     "unmatched_events": 0,
     "historical_events": 91,
-    "new_historical_events": 91,
+    "new_historical_events": 0,
     "latest_report_date": "2026-07-24",
     "latest_report_events": 18,
     "latest_report_unique_waters": 18,
@@ -17,7 +17,7 @@
   },
   "validation": {
     "critical": 0,
-    "warnings": 0
+    "warnings": 1
   },
   "waters": [
     {
@@ -36,9 +36,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=680"
+        ],
+        "errors": []
+      },
       "lat": 38.71807379522038,
       "lng": -106.18571992798094,
       "watercode": "83128",
@@ -81,9 +87,15 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=298"
+        ],
+        "errors": []
+      },
       "canonical_name": "Twin Lakes Lower",
       "lat": 39.083864,
       "lng": -106.330866,
@@ -119,9 +131,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=481"
+        ],
+        "errors": []
+      },
       "lat": 39.27124439389082,
       "lng": -106.39371423728836,
       "watercode": "80010",
@@ -164,9 +182,13 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [],
+        "errors": []
+      },
       "canonical_name": "Trujillo Meadows Reservoir",
       "lat": 37.051102,
       "lng": -106.452601,
@@ -197,9 +219,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=104"
+        ],
+        "errors": []
+      },
       "lat": 38.83550912140285,
       "lng": -106.58027919596722,
       "watercode": "92510",
@@ -241,9 +269,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=149"
+        ],
+        "errors": []
+      },
       "lat": 38.86380658823465,
       "lng": -106.7102610266142,
       "watercode": "92370",
@@ -287,9 +321,13 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [],
+        "errors": []
+      },
       "canonical_name": "Rio Grande Reservoir",
       "lat": 37.732143,
       "lng": -107.31255,
@@ -317,9 +355,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=219"
+        ],
+        "errors": []
+      },
       "lat": 38.978119562573845,
       "lng": -104.9662780303164,
       "watercode": "79942",
@@ -361,9 +405,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=773"
+        ],
+        "errors": []
+      },
       "lat": 38.93881265079735,
       "lng": -106.60474165245705,
       "watercode": "91796",
@@ -406,9 +456,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=124"
+        ],
+        "errors": []
+      },
       "lat": 37.33756240559339,
       "lng": -106.5681036911177,
       "watercode": "91758",
@@ -450,9 +506,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=759"
+        ],
+        "errors": []
+      },
       "lat": 38.610220471790115,
       "lng": -106.32288573327872,
       "watercode": "79891",
@@ -494,9 +556,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=414"
+        ],
+        "errors": []
+      },
       "lat": 39.35577235086876,
       "lng": -106.0758782191044,
       "watercode": "79877",
@@ -538,9 +606,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=133"
+        ],
+        "errors": []
+      },
       "lat": 38.933490444000995,
       "lng": -105.01397737804213,
       "watercode": "82711",
@@ -582,9 +656,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=469"
+        ],
+        "errors": []
+      },
       "lat": 39.729408737952454,
       "lng": -105.69061107141643,
       "watercode": "56970",
@@ -626,9 +706,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1725"
+        ],
+        "errors": []
+      },
       "lat": 39.314626068637786,
       "lng": -106.06084689001658,
       "watercode": "80307",
@@ -671,9 +757,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=764"
+        ],
+        "errors": []
+      },
       "lat": 38.71103241699492,
       "lng": -106.23412146450974,
       "watercode": "81909",
@@ -716,9 +808,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=545"
+        ],
+        "errors": []
+      },
       "lat": 37.537070827512395,
       "lng": -106.80433063585673,
       "watercode": "88597",
@@ -762,9 +860,15 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=396"
+        ],
+        "errors": []
+      },
       "canonical_name": "Beaver Creek Reservoir",
       "lat": 37.590778,
       "lng": -106.660091,
@@ -801,9 +905,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=46"
+        ],
+        "errors": []
+      },
       "lat": 40.129522647380654,
       "lng": -106.41131611891785,
       "watercode": "70989",
@@ -845,9 +955,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=765"
+        ],
+        "errors": []
+      },
       "lat": 39.65810162888828,
       "lng": -106.63277900043411,
       "watercode": "70982",
@@ -889,9 +1005,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=421"
+        ],
+        "errors": []
+      },
       "lat": 37.39076106686138,
       "lng": -107.55418770675382,
       "watercode": "92902",
@@ -933,9 +1055,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=753"
+        ],
+        "errors": []
+      },
       "lat": 37.824404030923276,
       "lng": -107.88493823334736,
       "watercode": "92712",
@@ -977,9 +1105,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=455"
+        ],
+        "errors": []
+      },
       "lat": 38.69093390011591,
       "lng": -105.05072985302066,
       "watercode": "79992",
@@ -1022,9 +1156,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=826"
+        ],
+        "errors": []
+      },
       "lat": 38.545620698000626,
       "lng": -106.9501314770602,
       "watercode": "90285",
@@ -1066,9 +1206,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1731"
+        ],
+        "errors": []
+      },
       "lat": 39.622898978165395,
       "lng": -107.76146032124008,
       "watercode": "21674",
@@ -1111,9 +1257,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1606"
+        ],
+        "errors": []
+      },
       "lat": 38.61124107367126,
       "lng": -106.50165201183599,
       "watercode": "42262",
@@ -1155,9 +1307,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=748"
+        ],
+        "errors": []
+      },
       "lat": 37.51838404352695,
       "lng": -106.77086498062015,
       "watercode": "91669",
@@ -1200,9 +1358,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=344"
+        ],
+        "errors": []
+      },
       "lat": 38.54373606012939,
       "lng": -106.9203766266167,
       "watercode": "96986",
@@ -1244,9 +1408,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=74"
+        ],
+        "errors": []
+      },
       "lat": 39.6373293985433,
       "lng": -106.53032245469602,
       "watercode": "72657",
@@ -1288,9 +1458,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=781"
+        ],
+        "errors": []
+      },
       "lat": 40.38688820067261,
       "lng": -106.58720491126203,
       "watercode": "55776",
@@ -1332,9 +1508,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=798"
+        ],
+        "errors": []
+      },
       "lat": 40.105777557314745,
       "lng": -105.74192240386411,
       "watercode": "68646",
@@ -1376,9 +1558,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=743"
+        ],
+        "errors": []
+      },
       "lat": 37.66403852050542,
       "lng": -107.02626100513842,
       "watercode": "91102",
@@ -1420,9 +1608,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=533"
+        ],
+        "errors": []
+      },
       "lat": 40.61195032936543,
       "lng": -105.84882197477664,
       "watercode": "55598",
@@ -1464,9 +1658,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=341"
+        ],
+        "errors": []
+      },
       "lat": 38.427216048126596,
       "lng": -106.14601746286448,
       "watercode": "79916",
@@ -1509,9 +1709,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=838"
+        ],
+        "errors": []
+      },
       "lat": 38.53040515989236,
       "lng": -106.94748393350875,
       "watercode": "90287",
@@ -1553,9 +1759,15 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=804"
+        ],
+        "errors": []
+      },
       "canonical_name": "Fairplay Pond",
       "lat": 39.223049,
       "lng": -106.003775,
@@ -1590,9 +1802,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=426"
+        ],
+        "errors": []
+      },
       "lat": 38.914588595411814,
       "lng": -105.03171129764536,
       "watercode": "81745",
@@ -1634,9 +1852,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=484"
+        ],
+        "errors": []
+      },
       "lat": 38.78173716763779,
       "lng": -106.28171868366914,
       "watercode": "81733",
@@ -1678,9 +1902,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=799"
+        ],
+        "errors": []
+      },
       "lat": 39.51494267345596,
       "lng": -106.14450174626539,
       "watercode": "72138",
@@ -1722,9 +1952,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=427"
+        ],
+        "errors": []
+      },
       "lat": 38.92525493797035,
       "lng": -105.05116545328843,
       "watercode": "82002",
@@ -1766,9 +2002,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=767"
+        ],
+        "errors": []
+      },
       "lat": 39.42460732684016,
       "lng": -106.3195815392209,
       "watercode": "65676",
@@ -1810,9 +2052,15 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=999"
+        ],
+        "errors": []
+      },
       "canonical_name": "Berry Creek Pond",
       "lat": 39.64396,
       "lng": -106.58644,
@@ -1847,9 +2095,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=814"
+        ],
+        "errors": []
+      },
       "lat": 37.49611385530433,
       "lng": -106.7597615611633,
       "watercode": "92736",
@@ -1891,9 +2145,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=111"
+        ],
+        "errors": []
+      },
       "lat": 37.13998334568189,
       "lng": -104.56151009454065,
       "watercode": "81911",
@@ -1935,9 +2195,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=249"
+        ],
+        "errors": []
+      },
       "lat": 39.830946295326946,
       "lng": -105.42227920799216,
       "watercode": "57807",
@@ -1979,9 +2245,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=830"
+        ],
+        "errors": []
+      },
       "lat": 40.146078839603774,
       "lng": -107.13647302921947,
       "watercode": "69840",
@@ -2023,9 +2295,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=486"
+        ],
+        "errors": []
+      },
       "lat": 39.36566658926559,
       "lng": -106.79839014515483,
       "watercode": "69535",
@@ -2067,9 +2345,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=839"
+        ],
+        "errors": []
+      },
       "lat": 38.70586959062421,
       "lng": -106.85211006749174,
       "watercode": "93714",
@@ -2111,9 +2395,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=423"
+        ],
+        "errors": []
+      },
       "lat": 39.63216015426101,
       "lng": -107.76365292649061,
       "watercode": "69422",
@@ -2155,9 +2445,15 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=771"
+        ],
+        "errors": []
+      },
       "canonical_name": "Pitkin Kids Pond",
       "lat": 38.612164,
       "lng": -106.504628,
@@ -2192,9 +2488,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1730"
+        ],
+        "errors": []
+      },
       "lat": 39.71996418528731,
       "lng": -106.39789667287697,
       "watercode": "69193",
@@ -2236,9 +2538,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=485"
+        ],
+        "errors": []
+      },
       "lat": 39.09699731137395,
       "lng": -106.94519964350538,
       "watercode": "68266",
@@ -2280,9 +2588,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=343"
+        ],
+        "errors": []
+      },
       "lat": 39.12715053884348,
       "lng": -106.61936021914653,
       "watercode": "68076",
@@ -2324,9 +2638,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=248"
+        ],
+        "errors": []
+      },
       "lat": 39.83410408563664,
       "lng": -105.42969142120047,
       "watercode": "57819",
@@ -2368,9 +2688,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=791"
+        ],
+        "errors": []
+      },
       "lat": 40.837586255915376,
       "lng": -106.99107922455273,
       "watercode": "67151",
@@ -2412,9 +2738,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=975"
+        ],
+        "errors": []
+      },
       "lat": 39.77311806892825,
       "lng": -107.29964000088422,
       "watercode": "66200",
@@ -2456,9 +2788,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=397"
+        ],
+        "errors": []
+      },
       "lat": 40.92813003141916,
       "lng": -106.61083436717544,
       "watercode": "53974",
@@ -2500,9 +2838,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=49"
+        ],
+        "errors": []
+      },
       "lat": 40.04283630601494,
       "lng": -107.08294396833772,
       "watercode": "65082",
@@ -2544,9 +2888,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=844"
+        ],
+        "errors": []
+      },
       "lat": 38.75589608248872,
       "lng": -106.48018300687583,
       "watercode": "96722",
@@ -2588,9 +2938,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=56"
+        ],
+        "errors": []
+      },
       "lat": 40.554308687726255,
       "lng": -105.99938646245585,
       "watercode": "55815",
@@ -2632,9 +2988,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1729"
+        ],
+        "errors": []
+      },
       "lat": 38.33759547271491,
       "lng": -106.1803246284182,
       "watercode": "36034",
@@ -2676,9 +3038,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=775"
+        ],
+        "errors": []
+      },
       "lat": 38.74352120954073,
       "lng": -106.43211272231142,
       "watercode": "91291",
@@ -2720,9 +3088,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=106"
+        ],
+        "errors": []
+      },
       "lat": 37.973600218290706,
       "lng": -107.28922524519555,
       "watercode": "92130",
@@ -2764,9 +3138,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=855"
+        ],
+        "errors": []
+      },
       "lat": 37.00363573615023,
       "lng": -104.37031467361005,
       "watercode": "82507",
@@ -2808,9 +3188,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=315"
+        ],
+        "errors": []
+      },
       "lat": 39.640285752339466,
       "lng": -104.85559125828577,
       "watercode": "52580",
@@ -2852,9 +3238,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=364"
+        ],
+        "errors": []
+      },
       "lat": 39.55047695770309,
       "lng": -105.06636558300464,
       "watercode": "54306",
@@ -2896,9 +3288,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=739"
+        ],
+        "errors": []
+      },
       "lat": 37.31691139003899,
       "lng": -105.13856976704035,
       "watercode": "80212",
@@ -2940,9 +3338,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=474"
+        ],
+        "errors": []
+      },
       "lat": 37.74756752549017,
       "lng": -107.68288729743563,
       "watercode": "91316",
@@ -2984,9 +3388,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=740"
+        ],
+        "errors": []
+      },
       "lat": 37.32394548292182,
       "lng": -105.14148487739243,
       "watercode": "80123",
@@ -3028,9 +3438,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=732"
+        ],
+        "errors": []
+      },
       "lat": 39.022042236376315,
       "lng": -107.74270771300296,
       "watercode": "88422",
@@ -3072,9 +3488,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=85"
+        ],
+        "errors": []
+      },
       "lat": 39.61059055227754,
       "lng": -104.6631128230422,
       "watercode": "56420",
@@ -3116,9 +3538,15 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1432"
+        ],
+        "errors": []
+      },
       "canonical_name": "Animas River",
       "lat": 37.26132,
       "lng": -107.88358,
@@ -3148,9 +3576,15 @@
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [],
-      "species_status": "not-yet-integrated",
+      "species_status": "no-species-exposed",
       "species_source_layer": 2,
-      "atlas_species_metadata": {},
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=677"
+        ],
+        "errors": []
+      },
       "lat": 37.727812625777204,
       "lng": -107.70888959118825,
       "watercode": "88369",
