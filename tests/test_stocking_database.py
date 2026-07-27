@@ -9,7 +9,7 @@ from openpyxl import Workbook
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
 from stocking_database import StockingEvent, event_key, import_source, export_json
-from bootstrap_archive_csv import extract_workbook_rows, validate_summary
+from bootstrap_archive_csv import extract_workbook_rows, validate_records, validate_summary
 
 FIXTURE = Path(__file__).parent / "fixtures" / "archive_sample.html"
 
@@ -48,17 +48,26 @@ def test_export_summary(tmp_path):
     assert json.loads(out.read_text())["summary"]["earliest_date"] == "2014-06-14"
 
 
-def test_workbook_extracts_water_date_and_atlas_id():
+def workbook_blob(rows):
     workbook = Workbook()
     sheet = workbook.active
     sheet.title = "2014"
-    sheet.append(["Date", "Region", "Water"])
-    sheet.append(["06/14/2014", "northeast", "Wrights Lake"])
-    water_cell = sheet["C2"]
-    water_cell.hyperlink = (
+    for row in rows:
+        sheet.append(row)
+    blob = BytesIO()
+    workbook.save(blob)
+    return blob.getvalue()
+
+
+def test_workbook_uses_neighboring_water_name_when_link_label_is_atlas():
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = "2014"
+    sheet.append(["Date", "Region", "Water", "Map"])
+    sheet.append(["06/14/2014", "northeast", "Wrights Lake", "Atlas"])
+    sheet["D2"].hyperlink = (
         "https://ndismaps.nrel.colostate.edu/index.html?app=FishingAtlas&value=680"
     )
-
     blob = BytesIO()
     workbook.save(blob)
 
@@ -74,8 +83,51 @@ def test_workbook_extracts_water_date_and_atlas_id():
     assert raw["atlas_id"] == 680
     assert "value=680" in atlas_url
     assert diagnostics[0]["rows_imported"] == 1
+    assert diagnostics[0]["atlas_rows_missing_water_name"] == 0
+
+
+def test_workbook_still_accepts_descriptive_hyperlink_label():
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.append(["06/14/2014", "northeast", "Wrights Lake"])
+    sheet["C1"].hyperlink = "https://example.test/?value=680"
+    blob = BytesIO()
+    workbook.save(blob)
+
+    rows, _ = extract_workbook_rows(blob.getvalue())
+    assert rows[0][0].water_name == "Wrights Lake"
+
+
+def test_record_validation_rejects_generic_atlas_water_name():
+    record = (
+        StockingEvent("Atlas", "2014-06-14", "Rainbow Trout"),
+        "2014",
+        2,
+        {},
+        680,
+        "https://example.test/?value=680",
+    )
+    with pytest.raises(RuntimeError, match="generic Atlas hyperlink label"):
+        validate_records([record])
 
 
 def test_archive_validation_rejects_incomplete_year_range():
     with pytest.raises(RuntimeError, match="expected years"):
-        validate_summary({"events_by_year": {"2025": 514}, "stocking_events": 514})
+        validate_summary(
+            {
+                "events_by_year": {"2025": 514},
+                "stocking_events": 514,
+                "unique_waters": 1,
+            }
+        )
+
+
+def test_archive_validation_rejects_single_water_snapshot():
+    with pytest.raises(RuntimeError, match="unique waters"):
+        validate_summary(
+            {
+                "events_by_year": {str(year): 50 for year in range(2014, 2026)},
+                "stocking_events": 600,
+                "unique_waters": 1,
+            }
+        )
