@@ -2,8 +2,8 @@
 """Build the fixed 2014-2025 CPW stocking archive from the published XLSX workbook.
 
 The workbook is treated as a one-time historical source. Each imported record uses
-only the official stocking date, displayed water name, and Fishing Atlas link/ID.
-Coordinates and other water metadata remain the responsibility of the Atlas pipeline.
+the official stocking date, water name, and Fishing Atlas link/ID. Coordinates and
+other water metadata remain the responsibility of the Atlas pipeline.
 """
 from __future__ import annotations
 
@@ -37,6 +37,7 @@ DATE_FORMATS = ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%m-%d-%Y")
 HYPERLINK_FORMULA_RE = re.compile(
     r'^=HYPERLINK\(\s*"([^"]+)"\s*[,;]\s*"([^"]*)"\s*\)$', re.I
 )
+GENERIC_LINK_LABELS = {"atlas", "map", "link", "fishing atlas", "view atlas"}
 
 
 def clean(value: object) -> str:
@@ -76,16 +77,48 @@ def parse_date_value(value: object) -> date | None:
 
 
 def hyperlink_from_cell(cell) -> tuple[str | None, str]:
-    """Return hyperlink target and displayed water name from an XLSX cell."""
+    """Return a hyperlink target and its displayed label from an XLSX cell."""
     display = clean(cell.value)
     if cell.hyperlink and cell.hyperlink.target:
         return clean(cell.hyperlink.target), display
-
     if isinstance(cell.value, str):
         match = HYPERLINK_FORMULA_RE.match(cell.value.strip())
         if match:
             return clean(match.group(1)), clean(match.group(2))
     return None, display
+
+
+def plausible_water_name(value: object) -> bool:
+    text = clean(value)
+    lowered = text.casefold()
+    if not text or lowered in REGIONS or lowered in GENERIC_LINK_LABELS:
+        return False
+    if parse_date_value(value) is not None:
+        return False
+    if lowered.startswith(("http://", "https://", "=hyperlink(")):
+        return False
+    if re.fullmatch(r"[\d.,%+-]+", text):
+        return False
+    return bool(re.search(r"[A-Za-z]", text))
+
+
+def water_name_from_row(row, link_index: int, link_label: str) -> str:
+    """Choose the water-name cell associated with an Atlas hyperlink.
+
+    Published CPW workbooks commonly display the hyperlink itself as ``Atlas`` and
+    place the actual water name in the immediately preceding cell. Prefer nearby
+    cells, falling back to the hyperlink label only when it is descriptive.
+    """
+    nearby_indexes = [link_index - 1, link_index + 1, link_index - 2, link_index + 2]
+    for index in nearby_indexes:
+        if 0 <= index < len(row) and plausible_water_name(row[index].value):
+            return clean(row[index].value)
+
+    for index, cell in enumerate(row):
+        if index != link_index and plausible_water_name(cell.value):
+            return clean(cell.value)
+
+    return clean(link_label) if plausible_water_name(link_label) else ""
 
 
 def extract_workbook_rows(blob: bytes) -> tuple[list[tuple[StockingEvent, str, int, dict, int, str]], list[dict]]:
@@ -97,6 +130,7 @@ def extract_workbook_rows(blob: bytes) -> tuple[list[tuple[StockingEvent, str, i
         sheet_rows = 0
         dates_seen = 0
         atlas_links_seen = 0
+        missing_names = 0
 
         for row_number, row in enumerate(sheet.iter_rows(), start=1):
             stocking_date = next((parsed for cell in row if (parsed := parse_date_value(cell.value))), None)
@@ -108,17 +142,20 @@ def extract_workbook_rows(blob: bytes) -> tuple[list[tuple[StockingEvent, str, i
             atlas_url = None
             atlas_id = None
             water_name = ""
-            for cell in row:
-                candidate_url, candidate_name = hyperlink_from_cell(cell)
+            for link_index, cell in enumerate(row):
+                candidate_url, link_label = hyperlink_from_cell(cell)
                 candidate_id = atlas_id_from_url(candidate_url or "")
                 if candidate_id is not None:
                     atlas_url = candidate_url
                     atlas_id = candidate_id
-                    water_name = candidate_name
+                    water_name = water_name_from_row(row, link_index, link_label)
                     atlas_links_seen += 1
                     break
 
-            if atlas_id is None or not water_name:
+            if atlas_id is None:
+                continue
+            if not water_name:
+                missing_names += 1
                 continue
 
             values = [clean(cell.value) for cell in row]
@@ -144,6 +181,7 @@ def extract_workbook_rows(blob: bytes) -> tuple[list[tuple[StockingEvent, str, i
                 "rows_imported": sheet_rows,
                 "date_rows_seen": dates_seen,
                 "atlas_links_seen": atlas_links_seen,
+                "atlas_rows_missing_water_name": missing_names,
             }
         )
 
@@ -156,6 +194,17 @@ def extract_workbook_rows(blob: bytes) -> tuple[list[tuple[StockingEvent, str, i
             seen.add(key)
             unique.append(record)
     return unique, diagnostics
+
+
+def validate_records(records: list[tuple[StockingEvent, str, int, dict, int, str]]) -> None:
+    names = {record[0].water_name.casefold() for record in records}
+    atlas_ids = {record[4] for record in records}
+    if names & GENERIC_LINK_LABELS:
+        raise RuntimeError("Snapshot validation failed: a generic Atlas hyperlink label was imported as a water name")
+    if len(names) < 25:
+        raise RuntimeError(f"Snapshot validation failed: only {len(names)} unique water names were extracted")
+    if len(atlas_ids) < 25:
+        raise RuntimeError(f"Snapshot validation failed: only {len(atlas_ids)} unique Atlas IDs were extracted")
 
 
 def ensure_atlas_columns(conn: sqlite3.Connection) -> None:
@@ -185,6 +234,7 @@ def bootstrap(db: Path, published_url: str) -> dict:
             "Workbook contained no rows with a 2014-2025 stocking date and a Fishing Atlas hyperlink. "
             f"Sheet diagnostics: {json.dumps(diagnostics)}"
         )
+    validate_records(records)
 
     years = sorted({int(record[0].stocking_date[:4]) for record in records})
     missing_years = [year for year in range(FIRST_ARCHIVE_YEAR, LAST_ARCHIVE_YEAR + 1) if year not in years]
@@ -240,6 +290,8 @@ def bootstrap(db: Path, published_url: str) -> dict:
         "source_url": source_url,
         "years_imported": years,
         "rows_seen": len(records),
+        "unique_water_names": len({record[0].water_name.casefold() for record in records}),
+        "unique_atlas_ids": len({record[4] for record in records}),
         "new_events": new_events,
         "duplicates": len(records) - new_events,
         "sheet_diagnostics": diagnostics,
@@ -254,6 +306,10 @@ def validate_summary(summary: dict) -> None:
     if summary.get("stocking_events", 0) <= 514:
         raise RuntimeError(
             f"Snapshot validation failed: only {summary.get('stocking_events', 0)} events were imported"
+        )
+    if summary.get("unique_waters", 0) < 25:
+        raise RuntimeError(
+            f"Snapshot validation failed: only {summary.get('unique_waters', 0)} unique waters were imported"
         )
 
 
