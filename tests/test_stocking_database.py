@@ -2,12 +2,14 @@ from pathlib import Path
 import json
 import sqlite3
 import sys
+from io import BytesIO
 
 import pytest
+from openpyxl import Workbook
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
 from stocking_database import StockingEvent, event_key, import_source, export_json
-from bootstrap_archive_csv import parse_year_sheet, validate_summary
+from bootstrap_archive_csv import extract_workbook_rows, validate_summary
 
 FIXTURE = Path(__file__).parent / "fixtures" / "archive_sample.html"
 
@@ -46,24 +48,34 @@ def test_export_summary(tmp_path):
     assert json.loads(out.read_text())["summary"]["earliest_date"] == "2014-06-14"
 
 
-def test_annual_sheet_extracts_water_date_and_atlas_id():
-    html = """
-    <table><tr>
-      <td>06/14/2014</td><td>northeast</td>
-      <td><a href="https://ndismaps.nrel.colostate.edu/index.html?app=FishingAtlas&value=680">Wrights Lake</a></td>
-    </tr></table>
-    """
-    rows = parse_year_sheet(html, 2014)
+def test_workbook_extracts_water_date_and_atlas_id():
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = "2014"
+    sheet.append(["Date", "Region", "Water"])
+    sheet.append(["06/14/2014", "northeast", "Wrights Lake"])
+    water_cell = sheet["C2"]
+    water_cell.hyperlink = (
+        "https://ndismaps.nrel.colostate.edu/index.html?app=FishingAtlas&value=680"
+    )
+
+    blob = BytesIO()
+    workbook.save(blob)
+
+    rows, diagnostics = extract_workbook_rows(blob.getvalue())
     assert len(rows) == 1
-    event, row_number, raw, atlas_id, atlas_url = rows[0]
+    event, sheet_title, row_number, raw, atlas_id, atlas_url = rows[0]
+    assert sheet_title == "2014"
+    assert row_number == 2
     assert event.water_name == "Wrights Lake"
     assert event.stocking_date == "2014-06-14"
     assert event.region == "northeast"
     assert atlas_id == 680
     assert raw["atlas_id"] == 680
     assert "value=680" in atlas_url
+    assert diagnostics[0]["rows_imported"] == 1
 
 
-def test_archive_validation_rejects_current_year_only_output():
-    with pytest.raises(RuntimeError, match="earliest date"):
-        validate_summary({"earliest_date": "2026-01-16", "stocking_events": 514})
+def test_archive_validation_rejects_incomplete_year_range():
+    with pytest.raises(RuntimeError, match="expected years"):
+        validate_summary({"events_by_year": {"2025": 514}, "stocking_events": 514})
