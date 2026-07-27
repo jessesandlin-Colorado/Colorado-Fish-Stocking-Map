@@ -32,8 +32,10 @@ jobs:
             atlas-cache-${{ runner.os }}-
       - name: Fetch and validate current CPW map data
         run: python scripts/update_data.py --strict
-      - name: Bootstrap historical CPW archive from CSV
-        run: python scripts/bootstrap_archive_csv.py
+      - name: Build fixed 2014-2025 historical snapshot
+        run: python scripts/build_archive_snapshot.py
+      - name: Merge historical snapshot into map data
+        run: python scripts/merge_archive_waters.py
       - name: Run tests
         run: python -m pytest -q
       - name: Commit refreshed data
@@ -43,7 +45,8 @@ jobs:
           git add data/waters.json data/unmatched.json data/match-report.html \
                   data/stocking-history.json data/import-history.json \
                   data/species.json data/validation.json data/validation-report.html \
-                  data/stocking.sqlite3 data/stocking_events.json
+                  data/stocking.sqlite3 data/stocking_events.json \
+                  data/archive-merge-report.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
