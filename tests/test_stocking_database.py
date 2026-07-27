@@ -3,8 +3,11 @@ import json
 import sqlite3
 import sys
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
 from stocking_database import StockingEvent, event_key, import_source, export_json
+from bootstrap_archive_csv import parse_year_sheet, validate_summary
 
 FIXTURE = Path(__file__).parent / "fixtures" / "archive_sample.html"
 
@@ -41,3 +44,26 @@ def test_export_summary(tmp_path):
     assert summary["stocking_events"] == 2
     assert summary["events_by_year"] == {"2014": 1, "2015": 1}
     assert json.loads(out.read_text())["summary"]["earliest_date"] == "2014-06-14"
+
+
+def test_annual_sheet_extracts_water_date_and_atlas_id():
+    html = """
+    <table><tr>
+      <td>06/14/2014</td><td>northeast</td>
+      <td><a href="https://ndismaps.nrel.colostate.edu/index.html?app=FishingAtlas&value=680">Wrights Lake</a></td>
+    </tr></table>
+    """
+    rows = parse_year_sheet(html, 2014)
+    assert len(rows) == 1
+    event, row_number, raw, atlas_id, atlas_url = rows[0]
+    assert event.water_name == "Wrights Lake"
+    assert event.stocking_date == "2014-06-14"
+    assert event.region == "northeast"
+    assert atlas_id == 680
+    assert raw["atlas_id"] == 680
+    assert "value=680" in atlas_url
+
+
+def test_archive_validation_rejects_current_year_only_output():
+    with pytest.raises(RuntimeError, match="earliest date"):
+        validate_summary({"earliest_date": "2026-01-16", "stocking_events": 514})
