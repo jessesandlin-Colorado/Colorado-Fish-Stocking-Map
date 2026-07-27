@@ -32,8 +32,8 @@ jobs:
             atlas-cache-${{ runner.os }}-
       - name: Fetch and validate current CPW map data
         run: python scripts/update_data.py --strict
-      - name: Bootstrap archive and append current report
-        run: python scripts/stocking_database.py all
+      - name: Bootstrap historical CPW archive
+        run: python scripts/stocking_database.py bootstrap
       - name: Run tests
         run: python -m pytest -q
       - name: Commit refreshed data
