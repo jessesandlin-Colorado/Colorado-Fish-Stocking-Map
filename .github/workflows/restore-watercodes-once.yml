@@ -1,0 +1,81 @@
+name: Restore waters and apply recovered watercodes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/restore-watercodes-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore-and-patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore known-good waters.json
+        run: git show 85756a0380d2924bcd320c7efefe81f699455331:data/waters.json > data/waters.json
+
+      - name: Apply seven verified watercodes
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+
+          path = Path('data/waters.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          replacements = {
+              'atlas-298': '80036',
+              'atlas-472': '92724',
+              'atlas-271': '89929',
+              'atlas-396': '88511',
+              'atlas-804': '81531',
+              'atlas-999': '70431',
+              'atlas-771': '91746',
+          }
+
+          updated = []
+          for water in data['waters']:
+              key = water.get('key')
+              if key in replacements:
+                  existing = water.get('watercode')
+                  if existing not in (None, replacements[key]):
+                      raise RuntimeError(f'{key} already has unexpected watercode {existing}')
+                  water['watercode'] = replacements[key]
+                  updated.append(key)
+
+          missing = sorted(set(replacements) - set(updated))
+          if missing:
+              raise RuntimeError(f'Missing expected waters: {missing}')
+          if len(updated) != 7:
+              raise RuntimeError(f'Expected 7 updates, got {len(updated)}')
+
+          path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+      - name: Validate restored data
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          data = json.loads(Path('data/waters.json').read_text(encoding='utf-8'))
+          assert len(data['waters']) == 371
+          expected = {
+              'atlas-298': '80036', 'atlas-472': '92724', 'atlas-271': '89929',
+              'atlas-396': '88511', 'atlas-804': '81531', 'atlas-999': '70431',
+              'atlas-771': '91746'
+          }
+          actual = {w['key']: w.get('watercode') for w in data['waters'] if w.get('key') in expected}
+          assert actual == expected, (actual, expected)
+
+      - name: Commit restored data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/waters.json
+          git commit -m "Restore waters data and add seven recovered watercodes"
+          git push
