@@ -13,10 +13,17 @@
 }
 
 body{background:#fff;color:var(--ink)}
-.topbar{background:#fff;border-bottom:4px solid var(--trout-gold)}
-.eyebrow{color:var(--accent)}
-h1{color:#20211d}
-.subtitle{color:var(--muted)}
+.topbar{
+  background:var(--accent);
+  border-bottom:4px solid var(--trout-gold);
+  padding-top:1.55rem;
+  padding-bottom:1.55rem;
+}
+.eyebrow{color:var(--trout-gold)}
+h1{color:#fff}
+.subtitle{color:rgba(255,255,255,.88)}
+.topbar .source-link{color:#fff}
+.topbar .source-link:hover{color:var(--trout-yellow)}
 .source-link,a{color:var(--accent)}
 .source-link:hover,a:hover{color:#3f4d22}
 
