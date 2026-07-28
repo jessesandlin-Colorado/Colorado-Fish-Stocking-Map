@@ -2,15 +2,30 @@
   if (typeof L === 'undefined' || typeof map === 'undefined' || !map || typeof markerLayer === 'undefined') return;
 
   const RADAR_METADATA_URL = 'https://api.rainviewer.com/public/weather-maps.json';
-  const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
+  const RADAR_REFRESH_INTERVAL_MS = 10 * 60 * 1000;
+  const noWeatherLayer = L.layerGroup().addTo(map);
   const radarGroup = L.layerGroup();
-  let radarTiles = null;
-  let refreshTimer = null;
-  let loading = false;
+  const cloudCoverLayer = L.tileLayer.wms('https://digital.weather.gov/ndfd.conus/wms', {
+    layers: 'ndfd.conus.sky',
+    format: 'image/png',
+    transparent: true,
+    version: '1.3.0',
+    opacity: 0.55,
+    zIndex: 340,
+    attribution: 'Cloud cover forecast © <a href="https://www.weather.gov/" target="_blank" rel="noreferrer">NOAA/NWS</a>'
+  });
 
-  const layerControl = L.control.layers(null, {
-    'Stocked waters': markerLayer,
-    'Weather radar': radarGroup
+  let radarTiles = null;
+  let radarRefreshTimer = null;
+  let radarLoading = false;
+  let cloudErrorShown = false;
+
+  const layerControl = L.control.layers({
+    'No weather': noWeatherLayer,
+    'Weather radar': radarGroup,
+    'Cloud cover forecast': cloudCoverLayer
+  }, {
+    'Stocked waters': markerLayer
   }, {
     collapsed: true,
     position: 'topright'
@@ -21,9 +36,15 @@
     return Array.isArray(frames) && frames.length ? frames[frames.length - 1] : null;
   }
 
+  function selectNoWeather() {
+    if (map.hasLayer(radarGroup)) map.removeLayer(radarGroup);
+    if (map.hasLayer(cloudCoverLayer)) map.removeLayer(cloudCoverLayer);
+    if (!map.hasLayer(noWeatherLayer)) noWeatherLayer.addTo(map);
+  }
+
   async function refreshRadar() {
-    if (loading || !map.hasLayer(radarGroup)) return;
-    loading = true;
+    if (radarLoading || !map.hasLayer(radarGroup)) return;
+    radarLoading = true;
 
     try {
       const response = await fetch(RADAR_METADATA_URL, { cache: 'no-store' });
@@ -49,32 +70,44 @@
     } catch (error) {
       console.warn('Weather radar could not be loaded.', error);
       window.alert('Weather radar is temporarily unavailable. Please try again in a few minutes.');
-      if (map.hasLayer(radarGroup)) map.removeLayer(radarGroup);
+      selectNoWeather();
     } finally {
-      loading = false;
+      radarLoading = false;
     }
   }
 
   function startRadarRefresh() {
     refreshRadar();
-    window.clearInterval(refreshTimer);
-    refreshTimer = window.setInterval(refreshRadar, REFRESH_INTERVAL_MS);
+    window.clearInterval(radarRefreshTimer);
+    radarRefreshTimer = window.setInterval(refreshRadar, RADAR_REFRESH_INTERVAL_MS);
   }
 
   function stopRadarRefresh() {
-    window.clearInterval(refreshTimer);
-    refreshTimer = null;
+    window.clearInterval(radarRefreshTimer);
+    radarRefreshTimer = null;
   }
 
-  map.on('overlayadd', event => {
-    if (event.layer === radarGroup) startRadarRefresh();
+  cloudCoverLayer.on('loading', () => {
+    cloudErrorShown = false;
   });
 
-  map.on('overlayremove', event => {
-    if (event.layer === radarGroup) stopRadarRefresh();
+  cloudCoverLayer.on('tileerror', error => {
+    console.warn('Cloud cover forecast tile could not be loaded.', error);
+    if (cloudErrorShown || !map.hasLayer(cloudCoverLayer)) return;
+    cloudErrorShown = true;
+    window.alert('Cloud cover forecast is temporarily unavailable. Please try again later.');
+    selectNoWeather();
+  });
+
+  map.on('baselayerchange', event => {
+    if (event.layer === radarGroup) {
+      startRadarRefresh();
+    } else {
+      stopRadarRefresh();
+    }
   });
 
   // Stocked waters remain enabled because markerLayer is already on the map.
-  // Weather radar begins disabled and is fetched only after the user selects it.
+  // No weather is selected initially, and weather data loads only when requested.
   layerControl.getContainer().setAttribute('aria-label', 'Map layers');
 })();
