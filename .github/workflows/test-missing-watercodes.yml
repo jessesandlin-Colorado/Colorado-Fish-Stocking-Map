@@ -1,0 +1,70 @@
+name: Test Missing Watercodes
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/recover_missing_watercodes.py"
+      - ".github/workflows/test-missing-watercodes.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test-missing-watercodes:
+    name: Generate recovery report
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip requests
+
+      - name: Run report-only watercode recovery test
+        run: python scripts/recover_missing_watercodes.py
+
+      - name: Show report summary
+        if: always()
+        run: |
+          if [ -f data/watercode-recovery-report.json ]; then
+            python - <<'PY'
+          import json
+          from pathlib import Path
+
+          report = json.loads(Path("data/watercode-recovery-report.json").read_text())
+          summary = {key: value for key, value in report.items() if key != "entries"}
+          print(json.dumps(summary, indent=2))
+          print("\nResults:")
+          for entry in report.get("entries", []):
+              selected = entry.get("selected") or {}
+              print(
+                  f"- {entry.get('name')}: {entry.get('reason')}"
+                  f" | watercode={selected.get('candidate_watercode')}"
+                  f" | names={selected.get('candidate_names')}"
+                  f" | score={selected.get('score')}"
+              )
+          PY
+          else
+            echo "Recovery report was not generated."
+            exit 1
+          fi
+
+      - name: Upload recovery report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: missing-watercode-recovery-report
+          path: data/watercode-recovery-report.json
+          if-no-files-found: error
+          retention-days: 14
