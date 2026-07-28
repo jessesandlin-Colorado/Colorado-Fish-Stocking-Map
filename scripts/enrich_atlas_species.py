@@ -37,6 +37,30 @@ RECOVERED_WATERCODES_BY_ATLAS_ID: dict[int, str] = {
     771: "91746",  # Pitkin Kids Pond
 }
 
+# The Atlas record for Animas #2 resolves to this reviewed Animas River segment,
+# but the record does not expose a WATERCODE or any fish species. Preserve the
+# Atlas details and treat the blank species field as an authoritative empty list
+# rather than reporting the record as an unresolved missing-watercode error.
+REVIEWED_NO_WATERCODE_BY_ATLAS_ID: dict[int, dict[str, Any]] = {
+    1432: {
+        "canonical_name": "Animas River",
+        "atlas_name": "Animas River",
+        "county": "La Plata",
+        "property_name": None,
+        "access_ease": "Easy",
+        "boating": "Non-motorized",
+        "fishing_pressure": "Medium",
+        "stocked_description": "Sub-catchables",
+        "family_friendly": "No",
+        "rustic": "No",
+        "ice_fishing": "No",
+        "species": [],
+        "species_status": "no-species-listed",
+        "species_data_source": "Colorado Fishing Atlas reviewed record",
+        "atlas_data_source": "reviewed-manual-override",
+    }
+}
+
 
 def read_json(path: Path, default: Any) -> Any:
     try:
@@ -57,6 +81,17 @@ def apply_recovered_watercodes(waters: list[dict[str, Any]]) -> int:
         recovered = RECOVERED_WATERCODES_BY_ATLAS_ID.get(atlas_id)
         if recovered and water.get("watercode") in (None, ""):
             water["watercode"] = recovered
+            applied += 1
+    return applied
+
+
+def apply_reviewed_no_watercode_records(waters: list[dict[str, Any]]) -> int:
+    """Apply reviewed Atlas details for records that legitimately lack WATERCODE."""
+    applied = 0
+    for water in waters:
+        reviewed = REVIEWED_NO_WATERCODE_BY_ATLAS_ID.get(water.get("atlas_id"))
+        if reviewed:
+            water.update(reviewed)
             applied += 1
     return applied
 
@@ -114,6 +149,10 @@ def enrich(data_dir: Path) -> dict[str, int]:
     if recovered_watercodes_applied:
         print(f"Applied {recovered_watercodes_applied} recovered watercodes")
 
+    reviewed_no_watercode_applied = apply_reviewed_no_watercode_records(waters)
+    if reviewed_no_watercode_applied:
+        print(f"Applied {reviewed_no_watercode_applied} reviewed no-watercode Atlas records")
+
     session = requests.Session()
     session.headers["User-Agent"] = (
         "ColoradoFishMap/5.1 "
@@ -130,6 +169,9 @@ def enrich(data_dir: Path) -> dict[str, int]:
         watercode = water.get("watercode")
         label = water.get("name") or water.get("atlas_name") or water.get("atlas_id")
         if watercode in (None, ""):
+            if water.get("atlas_id") in REVIEWED_NO_WATERCODE_BY_ATLAS_ID:
+                print(f"[{index}/{len(waters)}] {label}: reviewed Atlas record lists 0 species")
+                continue
             missing_watercode += 1
             water.setdefault("species", [])
             water["species_status"] = "missing-watercode"
@@ -171,7 +213,8 @@ def enrich(data_dir: Path) -> dict[str, int]:
         "source": SPECIES_ENDPOINT,
         "note": (
             "Current species are read from the official Colorado Fishing Atlas "
-            "using key=<WATERCODE>&filename=tblMasterSpecies."
+            "using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records "
+            "without a WATERCODE are preserved separately."
         ),
         "waters_with_species": [
             {
@@ -192,6 +235,7 @@ def enrich(data_dir: Path) -> dict[str, int]:
         "waters_with_species": available,
         "missing_watercode": missing_watercode,
         "recovered_watercodes_applied": recovered_watercodes_applied,
+        "reviewed_no_watercode_applied": reviewed_no_watercode_applied,
         "failed": failed,
     }
 
