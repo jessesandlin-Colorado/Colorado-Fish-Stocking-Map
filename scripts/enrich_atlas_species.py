@@ -24,6 +24,19 @@ PROJECT_ROOT = Path(__file__).parents[1]
 DEFAULT_DATA_DIR = PROJECT_ROOT / "data"
 SPECIES_ENDPOINT = "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx"
 
+# Reviewed matches recovered from the Colorado Fishing Atlas. The normal CPW
+# stocking-data build may recreate these manual-override records without a
+# WATERCODE, so restore the verified value immediately before species lookup.
+RECOVERED_WATERCODES_BY_ATLAS_ID: dict[int, str] = {
+    298: "80036",  # Twin Lakes Reservoir
+    472: "92724",  # Trujillo Meadows Reservoir
+    271: "89929",  # Rio Grande Reservoir
+    396: "88511",  # Beaver Creek Reservoir
+    804: "81531",  # Fairplay Kids Pond
+    999: "70431",  # Berry Creek Pond
+    771: "91746",  # Pitkin Kids Pond
+}
+
 
 def read_json(path: Path, default: Any) -> Any:
     try:
@@ -34,6 +47,18 @@ def read_json(path: Path, default: Any) -> Any:
 
 def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def apply_recovered_watercodes(waters: list[dict[str, Any]]) -> int:
+    """Restore reviewed watercodes when the upstream build omitted them."""
+    applied = 0
+    for water in waters:
+        atlas_id = water.get("atlas_id")
+        recovered = RECOVERED_WATERCODES_BY_ATLAS_ID.get(atlas_id)
+        if recovered and water.get("watercode") in (None, ""):
+            water["watercode"] = recovered
+            applied += 1
+    return applied
 
 
 def parse_species_xml(text: str) -> list[str]:
@@ -84,6 +109,10 @@ def enrich(data_dir: Path) -> dict[str, int]:
     waters = payload.get("waters", []) if isinstance(payload, dict) else []
     if not isinstance(waters, list):
         raise RuntimeError(f"Invalid waters payload in {waters_path}")
+
+    recovered_watercodes_applied = apply_recovered_watercodes(waters)
+    if recovered_watercodes_applied:
+        print(f"Applied {recovered_watercodes_applied} recovered watercodes")
 
     session = requests.Session()
     session.headers["User-Agent"] = (
@@ -162,6 +191,7 @@ def enrich(data_dir: Path) -> dict[str, int]:
         "unique_watercodes_fetched": fetched,
         "waters_with_species": available,
         "missing_watercode": missing_watercode,
+        "recovered_watercodes_applied": recovered_watercodes_applied,
         "failed": failed,
     }
 
