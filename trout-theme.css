@@ -1,0 +1,56 @@
+:root{
+  --ink:#20211d;
+  --muted:#67645a;
+  --paper:#ffffff;
+  --panel:#ffffff;
+  --border:#ddd3b8;
+  --accent:#596b32;
+  --trout-gold:#c9821e;
+  --trout-salmon:#d98b73;
+  --trout-yellow:#eadb86;
+  --trout-cream:#fff9e8;
+  --trout-soft-green:#f2f4e8;
+}
+
+body{background:#fff;color:var(--ink)}
+.topbar{background:#fff;border-bottom:4px solid var(--trout-gold)}
+.eyebrow{color:var(--accent)}
+h1{color:#20211d}
+.subtitle{color:var(--muted)}
+.source-link,a{color:var(--accent)}
+.source-link:hover,a:hover{color:#3f4d22}
+
+.sidebar{background:#fff;border-color:var(--border)}
+.notice{background:var(--trout-soft-green);border-color:#c9cfaa}
+input,select{border-color:var(--border);background:#fff}
+input:focus,select:focus{outline:3px solid rgba(217,139,115,.28);border-color:var(--trout-salmon)}
+
+.chip{border-color:#d7cda9;background:#fff}
+.chip:hover{background:var(--trout-cream);border-color:var(--trout-gold)}
+.chip.active{background:var(--trout-gold);border-color:var(--trout-gold);color:#fff}
+
+.legend{border-color:var(--border)}
+.water-card{border-color:var(--border);box-shadow:0 1px 0 rgba(89,107,50,.05)}
+.water-button{background:#fff}
+.water-button:hover,.water-button:focus-visible{background:var(--trout-cream)}
+.card-species{color:var(--accent)}
+
+.popup-detail{background:var(--accent)}
+.popup-detail:hover{background:var(--trout-gold)}
+.bar-row i{background:linear-gradient(90deg,var(--trout-gold) var(--w),#f0ead7 var(--w))}
+
+.weather-card{background:#fff9e8;border-color:#e1d39d}
+.weather-metric,.popup-weather-item{background:#fffdf5;border-color:#e4d8ad}
+.weather-eyebrow{color:var(--trout-gold)}
+.skeleton{background:linear-gradient(90deg,#eee6c9 25%,#fffaf0 50%,#eee6c9 75%);background-size:200% 100%}
+
+.species-tag{background:#f7e5dc;color:#6d3e32}
+.species-card{background:linear-gradient(135deg,#fff9e8,#f8e5dc);border-color:#e2c9ae}
+.species-card a,.species-link{color:var(--accent)}
+.species-card a:hover,.species-link:hover{color:#7a4b18}
+
+.warning{background:#fff4c9;color:#6b5012;border-left:4px solid var(--trout-yellow)}
+.close{background:#f6ead9}
+dialog{border-color:var(--border)}
+
+::selection{background:var(--trout-salmon);color:#1d1d1a}
