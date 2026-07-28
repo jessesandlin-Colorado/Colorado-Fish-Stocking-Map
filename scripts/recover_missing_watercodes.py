@@ -1,22 +1,15 @@
 #!/usr/bin/env python3
-"""Find official Atlas watercodes for only the waters that are missing them.
+"""Recover Atlas watercodes only for waters that do not already have one.
 
-This is deliberately isolated from the normal stocking and species pipeline:
-
-* records that already contain ``watercode`` are never queried or changed;
-* the default mode is report-only and does not modify ``waters.json``;
-* ``--apply`` accepts only unique, high-confidence matches;
-* ambiguous or weak candidates remain unchanged for manual review.
-
-The script queries the official Colorado Fishing Atlas Watercode Waterbodies and
-Watercode Streams layers by the stored latitude/longitude.  An accepted code can
-then be consumed by the existing ``enrich_atlas_species.py`` script without any
-change to its established behavior for the other waters.
+The default mode is report-only. Existing watercodes are never queried, replaced,
+or otherwise changed. With ``--apply``, only unique high-confidence candidates are
+written to ``data/waters.json``; ambiguous and weak matches remain untouched.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 import time
 from difflib import SequenceMatcher
@@ -78,283 +71,218 @@ def water_names(water: dict[str, Any]) -> list[str]:
     return names
 
 
-def name_score(water: dict[str, Any], attributes: dict[str, Any]) -> float:
+def get_coordinates(water: dict[str, Any]) -> tuple[float, float] | None:
+    coordinate_pairs = (
+        (water.get("longitude"), water.get("latitude")),
+        (water.get("lon"), water.get("lat")),
+        (water.get("lng"), water.get("lat")),
+    )
+    for lon, lat in coordinate_pairs:
+        try:
+            lon_f, lat_f = float(lon), float(lat)
+        except (TypeError, ValueError):
+            continue
+        if -110 <= lon_f <= -101 and 36 <= lat_f <= 42:
+            return lon_f, lat_f
+
+    coordinates = water.get("coordinates")
+    if isinstance(coordinates, (list, tuple)) and len(coordinates) >= 2:
+        try:
+            lon_f, lat_f = float(coordinates[0]), float(coordinates[1])
+        except (TypeError, ValueError):
+            return None
+        if -110 <= lon_f <= -101 and 36 <= lat_f <= 42:
+            return lon_f, lat_f
+    return None
+
+
+def name_similarity(water: dict[str, Any], attributes: dict[str, Any]) -> float:
     left = [normalize_name(name) for name in water_names(water)]
     right = [normalize_name(name) for name in candidate_names(attributes)]
-    left = [name for name in left if name]
-    right = [name for name in right if name]
-    if not left or not right:
-        return 0.0
+    scores = [
+        SequenceMatcher(None, a, b).ratio()
+        for a in left
+        for b in right
+        if a and b
+    ]
+    return max(scores, default=0.0)
 
-    best = 0.0
-    for source in left:
-        for target in right:
-            if source == target:
-                return 1.0
-            if source in target or target in source:
-                best = max(best, 0.92)
-            best = max(best, SequenceMatcher(None, source, target).ratio())
-    return round(best, 4)
+
+def haversine_meters(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
+    radius = 6_371_000.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp = math.radians(lat2 - lat1)
+    dl = math.radians(lon2 - lon1)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * radius * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
 def query_layer(
     session: requests.Session,
-    *,
     layer_id: int,
+    layer_name: str,
+    radius_m: int,
+    lon: float,
     lat: float,
-    lng: float,
-    distance_m: int | None,
-    timeout: int = 45,
 ) -> list[dict[str, Any]]:
-    params: dict[str, Any] = {
+    url = f"{ATLAS_SERVICE}/{layer_id}/query"
+    params = {
         "f": "json",
-        "where": "1=1",
-        "geometry": f"{lng},{lat}",
+        "geometry": f"{lon},{lat}",
         "geometryType": "esriGeometryPoint",
         "inSR": "4326",
         "spatialRel": "esriSpatialRelIntersects",
+        "distance": str(radius_m),
+        "units": "esriSRUnit_Meter",
         "outFields": OUT_FIELDS,
-        "returnGeometry": "false",
-        "returnDistinctValues": "true",
+        "returnGeometry": "true",
+        "outSR": "4326",
     }
-    if distance_m:
-        params["distance"] = distance_m
-        params["units"] = "esriSRUnit_Meter"
-
-    response = session.get(
-        f"{ATLAS_SERVICE}/{layer_id}/query",
-        params=params,
-        timeout=timeout,
-    )
+    response = session.get(url, params=params, timeout=45)
     response.raise_for_status()
     payload = response.json()
     if payload.get("error"):
-        raise RuntimeError(
-            f"Atlas layer {layer_id} returned an error: {payload['error']}"
-        )
-    return [
-        feature.get("attributes", {})
-        for feature in payload.get("features", [])
-        if isinstance(feature, dict) and isinstance(feature.get("attributes"), dict)
-    ]
+        raise RuntimeError(f"Atlas layer {layer_id} error: {payload['error']}")
 
-
-def unique_candidates(features: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    unique: dict[tuple[str, str], dict[str, Any]] = {}
-    for attributes in features:
-        primary = str(attributes.get("WATERCODE") or "").strip()
-        alternate = str(attributes.get("ALT_WATERCODE") or "").strip()
-        if not primary and not alternate:
-            continue
-        unique[(primary, alternate)] = attributes
-    return list(unique.values())
-
-
-def classify_match(
-    water: dict[str, Any],
-    features: list[dict[str, Any]],
-    *,
-    layer_name: str,
-    search_mode: str,
-) -> dict[str, Any]:
-    candidates = []
-    for attributes in unique_candidates(features):
-        primary = str(attributes.get("WATERCODE") or "").strip()
-        alternate = str(attributes.get("ALT_WATERCODE") or "").strip()
-        candidates.append(
+    results: list[dict[str, Any]] = []
+    for feature in payload.get("features", []):
+        attributes = feature.get("attributes") or {}
+        geometry = feature.get("geometry") or {}
+        distance = 0.0
+        if "x" in geometry and "y" in geometry:
+            distance = haversine_meters(lon, lat, float(geometry["x"]), float(geometry["y"]))
+        results.append(
             {
-                "watercode": primary or alternate,
-                "primary_watercode": primary or None,
-                "alternate_watercode": alternate or None,
-                "names": candidate_names(attributes),
-                "name_score": name_score(water, attributes),
+                "layer": layer_name,
+                "layer_id": layer_id,
+                "search_radius_m": radius_m,
+                "attributes": attributes,
+                "distance_m": round(distance, 1),
             }
         )
-    candidates.sort(key=lambda item: item["name_score"], reverse=True)
+    return results
 
-    accepted = None
-    confidence = "none"
-    reason = "No Atlas candidate was found near the stored coordinates."
-    if len(candidates) == 1:
-        top = candidates[0]
-        score = top["name_score"]
-        if search_mode == "intersects" and score >= 0.65:
-            accepted = top
-            confidence = "high"
-            reason = "One intersecting Atlas feature with a compatible name."
-        elif score >= 0.82:
-            accepted = top
-            confidence = "high"
-            reason = "One nearby Atlas feature with a strong name match."
-        else:
-            confidence = "review"
-            reason = "One nearby feature was found, but its name match is weak."
-    elif len(candidates) > 1:
-        top = candidates[0]
-        runner_up = candidates[1]
-        if top["name_score"] >= 0.9 and top["name_score"] - runner_up["name_score"] >= 0.18:
-            accepted = top
-            confidence = "high"
-            reason = "The leading candidate has a clearly stronger name match."
-        else:
-            confidence = "ambiguous"
-            reason = "Multiple plausible Atlas features require manual review."
+
+def choose_candidate(water: dict[str, Any], candidates: list[dict[str, Any]]) -> dict[str, Any]:
+    scored: list[dict[str, Any]] = []
+    for candidate in candidates:
+        attributes = candidate["attributes"]
+        code = attributes.get("WATERCODE") or attributes.get("ALT_WATERCODE")
+        similarity = name_similarity(water, attributes)
+        distance = float(candidate.get("distance_m") or 0)
+        radius = float(candidate.get("search_radius_m") or 1)
+        distance_score = max(0.0, 1.0 - distance / radius)
+        score = 0.8 * similarity + 0.2 * distance_score
+        scored.append(
+            {
+                **candidate,
+                "candidate_watercode": str(code).strip() if code not in (None, "") else None,
+                "candidate_names": candidate_names(attributes),
+                "name_similarity": round(similarity, 3),
+                "score": round(score, 3),
+            }
+        )
+
+    scored.sort(key=lambda item: (item["score"], item["name_similarity"]), reverse=True)
+    valid = [item for item in scored if item["candidate_watercode"]]
+    best = valid[0] if valid else None
+    runner_up = valid[1] if len(valid) > 1 else None
+
+    accepted = bool(
+        best
+        and best["name_similarity"] >= 0.85
+        and best["score"] >= 0.82
+        and (runner_up is None or best["score"] - runner_up["score"] >= 0.08)
+    )
+    if not best:
+        reason = "no candidate with a watercode"
+    elif best["name_similarity"] < 0.85:
+        reason = "best candidate name similarity below 0.85"
+    elif best["score"] < 0.82:
+        reason = "best candidate confidence score below 0.82"
+    elif runner_up and best["score"] - runner_up["score"] < 0.08:
+        reason = "best candidate is not sufficiently distinct from runner-up"
+    else:
+        reason = "unique high-confidence match"
 
     return {
-        "layer": layer_name,
-        "search_mode": search_mode,
-        "confidence": confidence,
+        "accepted": accepted,
         "reason": reason,
-        "accepted_candidate": accepted,
-        "candidates": candidates,
+        "selected": best,
+        "candidates": scored,
     }
 
 
-def find_match(session: requests.Session, water: dict[str, Any]) -> dict[str, Any]:
-    lat = water.get("lat")
-    lng = water.get("lng")
-    if not isinstance(lat, (int, float)) or not isinstance(lng, (int, float)):
-        return {
-            "confidence": "none",
-            "reason": "The record does not have usable coordinates.",
-            "accepted_candidate": None,
-            "candidates": [],
-        }
-
-    attempts: list[dict[str, Any]] = []
-    for layer_id, layer_name, distance_m in LAYERS:
-        exact = query_layer(
-            session,
-            layer_id=layer_id,
-            lat=float(lat),
-            lng=float(lng),
-            distance_m=None,
-        )
-        result = classify_match(
-            water,
-            exact,
-            layer_name=layer_name,
-            search_mode="intersects",
-        )
-        attempts.append(result)
-        if result.get("confidence") == "high":
-            result["attempts"] = attempts
-            return result
-
-        nearby = query_layer(
-            session,
-            layer_id=layer_id,
-            lat=float(lat),
-            lng=float(lng),
-            distance_m=distance_m,
-        )
-        result = classify_match(
-            water,
-            nearby,
-            layer_name=layer_name,
-            search_mode=f"within-{distance_m}m",
-        )
-        attempts.append(result)
-        if result.get("confidence") == "high":
-            result["attempts"] = attempts
-            return result
-        time.sleep(0.15)
-
-    review_attempts = [
-        attempt for attempt in attempts if attempt.get("candidates")
-    ]
-    if review_attempts:
-        best = max(
-            review_attempts,
-            key=lambda attempt: attempt["candidates"][0]["name_score"],
-        )
-        best = dict(best)
-        best["attempts"] = attempts
-        return best
-
-    return {
-        "confidence": "none",
-        "reason": "No waterbody or stream feature was found within the safe search distances.",
-        "accepted_candidate": None,
-        "candidates": [],
-        "attempts": attempts,
-    }
-
-
-def recover(data_dir: Path, *, apply: bool, report_path: Path) -> dict[str, Any]:
+def recover(data_dir: Path, report_path: Path, apply: bool = False) -> dict[str, Any]:
     waters_path = data_dir / "waters.json"
     payload = read_json(waters_path, {})
     waters = payload.get("waters", []) if isinstance(payload, dict) else []
     if not isinstance(waters, list):
         raise RuntimeError(f"Invalid waters payload in {waters_path}")
 
-    missing = [water for water in waters if water.get("watercode") in (None, "")]
     session = requests.Session()
     session.headers["User-Agent"] = (
         "ColoradoFishMap/5.1 "
         "(+https://github.com/jessesandlin-Colorado/Colorado-Fish-Stocking-Map)"
     )
 
-    results: list[dict[str, Any]] = []
+    report_entries: list[dict[str, Any]] = []
     applied = 0
-    for index, water in enumerate(missing, start=1):
-        label = water.get("name") or water.get("atlas_name") or water.get("key")
-        try:
-            match = find_match(session, water)
-        except (requests.RequestException, ValueError, RuntimeError) as exc:
-            match = {
-                "confidence": "error",
-                "reason": str(exc),
-                "accepted_candidate": None,
-                "candidates": [],
-            }
+    skipped_existing = 0
 
-        accepted = match.get("accepted_candidate")
-        did_apply = False
-        if apply and match.get("confidence") == "high" and accepted:
-            # Re-check the invariant immediately before writing.
-            if water.get("watercode") in (None, ""):
-                code = str(accepted["watercode"])
-                water["watercode"] = code
-                water["watercode_recovery"] = {
-                    "source": "Colorado Fishing Atlas Watercode spatial fallback",
-                    "layer": match.get("layer"),
-                    "search_mode": match.get("search_mode"),
-                    "name_score": accepted.get("name_score"),
-                }
-                did_apply = True
-                applied += 1
+    for water in waters:
+        if water.get("watercode") not in (None, ""):
+            skipped_existing += 1
+            continue
 
-        results.append(
-            {
-                "key": water.get("key"),
-                "atlas_id": water.get("atlas_id"),
-                "name": label,
-                "county": water.get("county"),
-                "lat": water.get("lat"),
-                "lng": water.get("lng"),
-                "applied": did_apply,
-                **match,
-            }
-        )
-        print(
-            f"[{index}/{len(missing)}] {label}: "
-            f"{match.get('confidence')}"
-            + (f" -> {accepted.get('watercode')}" if accepted else "")
-        )
-        time.sleep(0.20)
+        label = water.get("name") or water.get("atlas_name") or water.get("atlas_id")
+        coordinates = get_coordinates(water)
+        entry: dict[str, Any] = {
+            "atlas_id": water.get("atlas_id"),
+            "name": label,
+            "stored_names": water_names(water),
+            "coordinates": coordinates,
+        }
+        if coordinates is None:
+            entry.update({"accepted": False, "reason": "missing usable coordinates", "candidates": []})
+            report_entries.append(entry)
+            continue
+
+        lon, lat = coordinates
+        candidates: list[dict[str, Any]] = []
+        errors: list[str] = []
+        for layer_id, layer_name, radius_m in LAYERS:
+            try:
+                candidates.extend(query_layer(session, layer_id, layer_name, radius_m, lon, lat))
+                time.sleep(0.2)
+            except (requests.RequestException, ValueError, RuntimeError) as exc:
+                errors.append(f"{layer_name}: {exc}")
+
+        decision = choose_candidate(water, candidates)
+        entry.update(decision)
+        if errors:
+            entry["query_errors"] = errors
+
+        selected = decision.get("selected") or {}
+        if apply and decision["accepted"] and selected.get("candidate_watercode"):
+            water["watercode"] = selected["candidate_watercode"]
+            water["watercode_recovery_source"] = (
+                f"Fishing Atlas layer {selected['layer_id']} ({selected['layer']})"
+            )
+            water["watercode_recovery_confidence"] = selected["score"]
+            applied += 1
+
+        report_entries.append(entry)
+        print(f"{label}: {decision['reason']}")
 
     report = {
         "mode": "apply" if apply else "report-only",
-        "source": ATLAS_SERVICE,
         "waters_total": len(waters),
-        "waters_already_with_watercode": len(waters) - len(missing),
-        "waters_missing_watercode": len(missing),
-        "high_confidence_matches": sum(
-            1 for result in results if result.get("confidence") == "high"
-        ),
-        "applied": applied,
-        "results": results,
+        "waters_skipped_existing_watercode": skipped_existing,
+        "waters_missing_watercode_tested": len(report_entries),
+        "high_confidence_matches": sum(1 for item in report_entries if item.get("accepted")),
+        "watercodes_applied": applied,
+        "entries": report_entries,
     }
     write_json(report_path, report)
     if apply and applied:
@@ -365,21 +293,14 @@ def recover(data_dir: Path, *, apply: bool, report_path: Path) -> dict[str, Any]
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", default=str(DEFAULT_DATA_DIR))
-    parser.add_argument(
-        "--report",
-        help="Report path; defaults to <data-dir>/watercode-recovery-report.json",
-    )
-    parser.add_argument(
-        "--apply",
-        action="store_true",
-        help="Write only unique high-confidence matches into waters.json.",
-    )
+    parser.add_argument("--report", default=None)
+    parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
     data_dir = Path(args.data_dir)
     report_path = Path(args.report) if args.report else data_dir / DEFAULT_REPORT
-    result = recover(data_dir, apply=args.apply, report_path=report_path)
-    print(json.dumps({key: value for key, value in result.items() if key != "results"}, indent=2))
+    result = recover(data_dir, report_path, apply=args.apply)
+    print(json.dumps({key: value for key, value in result.items() if key != "entries"}, indent=2))
 
 
 if __name__ == "__main__":
