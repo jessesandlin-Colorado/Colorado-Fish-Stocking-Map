@@ -9,10 +9,10 @@
 
   function refreshMap() {
     window.setTimeout(() => {
-      if (window.map && typeof window.map.invalidateSize === 'function') {
-        window.map.invalidateSize();
+      if (typeof map !== 'undefined' && map && typeof map.invalidateSize === 'function') {
+        map.invalidateSize();
       }
-    }, 80);
+    }, 100);
   }
 
   function placeMap() {
