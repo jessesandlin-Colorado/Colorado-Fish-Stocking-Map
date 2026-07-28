@@ -1,1 +1,30 @@
-__PLACEHOLDER__
+{
+  "schema_version": 5,
+  "generated_at": "2026-07-28T05:18:01.262412+00:00",
+  "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
+  "summary": {
+    "stocking_events": 9529,
+    "unique_atlas_ids": 76,
+    "matched_waters": 371,
+    "unmatched_events": 0,
+    "historical_events": 9529,
+    "new_historical_events": 0,
+    "latest_report_date": "2026-07-24",
+    "latest_report_events": 23,
+    "latest_report_unique_waters": 22,
+    "waters_with_species": 363,
+    "unique_species": 34,
+    "current_report_events": 96,
+    "archive_events": 9434,
+    "archive_unique_atlas_ids": 522,
+    "archive_only_waters_added": 295,
+    "archive_unresolved_waters": 151,
+    "archive_earliest_date": "2014-04-22",
+    "archive_latest_date": "2025-12-31"
+  },
+  "validation": {
+    "critical": 0,
+    "warnings": 1
+  },
+  "waters": []
+}
