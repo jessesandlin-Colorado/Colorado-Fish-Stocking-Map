@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T04:55:42.855855+00:00",
+  "generated_at": "2026-07-28T22:33:43.032738+00:00",
   "summary": {
     "stocking_events": 96,
     "unique_atlas_ids": 76,
@@ -10,14 +10,14 @@
     "latest_report_date": "2026-07-24",
     "latest_report_events": 23,
     "latest_report_unique_waters": 22,
-    "waters_with_species": 0,
-    "unique_species": 0
+    "waters_with_species": 68,
+    "unique_species": 24
   },
   "findings": [
     {
-      "level": "warning",
-      "code": "species-empty",
-      "message": "No matched water contains verified species names; inspect Atlas species extraction."
+      "level": "info",
+      "code": "validation-clean",
+      "message": "No validation issues were detected."
     }
   ]
 }

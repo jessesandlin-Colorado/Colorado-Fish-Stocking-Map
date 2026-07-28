@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T05:18:01.262412+00:00",
+  "generated_at": "2026-07-28T22:36:46.046120+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies.",
@@ -15,6 +15,18 @@
       ]
     },
     {
+      "atlas_id": 298,
+      "watercode": "80036",
+      "name": "Twin Lakes Reservoir",
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Lake",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
       "atlas_id": 481,
       "watercode": "80010",
       "name": "Turquoise Lake",
@@ -23,6 +35,17 @@
         "Trout: Lake",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 472,
+      "watercode": "92724",
+      "name": "Trujillo Meadows Reservoir",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
       ]
     },
     {
@@ -53,6 +76,18 @@
         "Trout: Brook",
         "Trout: Brown",
         "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 271,
+      "watercode": "89929",
+      "name": "Rio Grande Reservoir",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Cutthroat",
+        "Trout: Rainbow",
+        "Trout: Splake"
       ]
     },
     {
@@ -184,6 +219,17 @@
       "species": [
         "Trout: Brook",
         "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 396,
+      "watercode": "88511",
+      "name": "Beaver Creek Reservoir",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
         "Trout: Rainbow"
       ]
     },
@@ -348,6 +394,15 @@
       ]
     },
     {
+      "atlas_id": 804,
+      "watercode": "81531",
+      "name": "Fairplay Kids Pond",
+      "species": [
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 426,
       "watercode": "81745",
       "name": "Crystal Creek Reservoir",
@@ -388,6 +443,14 @@
       "atlas_id": 767,
       "watercode": "65676",
       "name": "Camp Hale Pond",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 999,
+      "watercode": "70431",
+      "name": "Berry Creek pond",
       "species": [
         "Trout: Rainbow"
       ]
@@ -472,6 +535,14 @@
         "Sunfish: Bluegill",
         "Sunfish: Green",
         "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 771,
+      "watercode": "91746",
+      "name": "Pitkin Kids Pond",
+      "species": [
         "Trout: Rainbow"
       ]
     },
