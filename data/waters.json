@@ -1,6 +1,6 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-07-28T22:36:46.046120+00:00",
+  "generated_at": "2026-07-29T00:03:59.715055+00:00",
   "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
   "summary": {
     "stocking_events": 9529,
@@ -6573,7 +6573,7 @@
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [],
-      "species_status": "missing-watercode",
+      "species_status": "no-species-listed",
       "species_source_layer": 2,
       "atlas_species_metadata": {
         "fields_examined": [],
@@ -6597,7 +6597,15 @@
       "atlas_errors": [],
       "archive_event_count": 16,
       "archive_first_date": "2017-08-11",
-      "archive_last_date": "2025-11-07"
+      "archive_last_date": "2025-11-07",
+      "access_ease": "Easy",
+      "boating": "Non-motorized",
+      "fishing_pressure": "Medium",
+      "stocked_description": "Sub-catchables",
+      "family_friendly": "No",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "species_data_source": "Colorado Fishing Atlas reviewed record"
     },
     {
       "key": "atlas-677",
