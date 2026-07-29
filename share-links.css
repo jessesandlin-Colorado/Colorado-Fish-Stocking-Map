@@ -47,6 +47,73 @@
   font-size: .78rem;
 }
 
+.site-footer {
+  position: relative;
+  z-index: 1100;
+  border-top: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+.site-footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: .7rem 1rem;
+}
+
+.site-footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.site-footer a,
+.site-footer summary {
+  color: var(--accent);
+  font-weight: 750;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.site-footer a:hover,
+.site-footer summary:hover {
+  text-decoration: underline;
+}
+
+.site-footer details {
+  position: relative;
+}
+
+.site-footer summary {
+  list-style: none;
+}
+
+.site-footer summary::-webkit-details-marker {
+  display: none;
+}
+
+.site-footer details p {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + .65rem);
+  width: min(360px, calc(100vw - 2rem));
+  margin: 0;
+  padding: .8rem;
+  border: 1px solid var(--border);
+  border-radius: .7rem;
+  background: var(--panel);
+  box-shadow: 0 8px 28px rgba(0,0,0,.18);
+  color: var(--muted);
+  line-height: 1.45;
+}
+
 @media (max-width: 520px) {
   .share-water {
     grid-template-columns: 1fr;
@@ -54,5 +121,22 @@
 
   .share-water-button {
     width: 100%;
+  }
+
+  .site-footer-main {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-footer nav {
+    justify-content: flex-start;
+  }
+
+  .site-footer details p {
+    position: fixed;
+    right: 1rem;
+    bottom: 4rem;
+    left: 1rem;
+    width: auto;
   }
 }
