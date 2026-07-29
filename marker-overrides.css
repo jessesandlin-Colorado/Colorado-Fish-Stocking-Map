@@ -1,11 +1,67 @@
 :root{
   --lake-outline:#0165fc;
   --river-outline:#2ecc71;
+  --marker-edge:rgba(24,34,29,.78);
 }
 
 .marker-pin{
-  width:17px;
-  height:17px;
-  border-width:3px;
-  box-shadow:0 1px 4px rgba(0,0,0,.42);
+  position:relative;
+  width:15px;
+  height:15px;
+  border:1px solid var(--marker-edge);
+  border-radius:50%;
+  box-shadow:0 1px 3px rgba(0,0,0,.34);
+  opacity:.94;
+}
+
+.marker-pin::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:-4px;
+  width:5px;
+  height:7px;
+  border:1px solid var(--marker-edge);
+  border-left:0;
+  border-radius:0 5px 5px 0;
+  transform:translateY(-50%);
+  background:var(--lake-outline);
+}
+
+.marker-pin.water-lake::after{
+  background:var(--lake-outline);
+}
+
+.marker-pin.water-river::after{
+  background:var(--river-outline);
+}
+
+.legend .lake-key,
+.legend .river-key{
+  position:relative;
+  border:1px solid var(--marker-edge);
+  background:var(--unknown-stock);
+  overflow:visible;
+}
+
+.legend .lake-key::after,
+.legend .river-key::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:-4px;
+  width:4px;
+  height:6px;
+  border:1px solid var(--marker-edge);
+  border-left:0;
+  border-radius:0 4px 4px 0;
+  transform:translateY(-50%);
+}
+
+.legend .lake-key::after{
+  background:var(--lake-outline);
+}
+
+.legend .river-key::after{
+  background:var(--river-outline);
 }
