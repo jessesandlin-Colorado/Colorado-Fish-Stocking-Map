@@ -3,7 +3,6 @@
 
   const RADAR_METADATA_URL = 'https://api.rainviewer.com/public/weather-maps.json';
   const RADAR_REFRESH_INTERVAL_MS = 10 * 60 * 1000;
-  const OPENWEATHER_API_KEY = ['c59cc4a9', '3610ba0a', '4d6aecf2', 'c0ff5b6f'].join('');
 
   const noWeatherLayer = L.layerGroup().addTo(map);
   const radarGroup = L.layerGroup();
@@ -16,15 +15,15 @@
     zIndex: 340,
     attribution: 'Cloud cover forecast © <a href="https://www.weather.gov/" target="_blank" rel="noreferrer">NOAA/NWS</a>'
   });
-  const windLayer = L.tileLayer(
-    `https://tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid=${OPENWEATHER_API_KEY}`,
-    {
-      opacity: 0.68,
-      maxZoom: 18,
-      zIndex: 345,
-      attribution: 'Wind speed © <a href="https://openweathermap.org/" target="_blank" rel="noreferrer">OpenWeather</a>'
-    }
-  );
+  const windLayer = L.tileLayer.wms('https://digital.weather.gov/ndfd.conus/wms', {
+    layers: 'ndfd.conus.wspd',
+    format: 'image/png',
+    transparent: true,
+    version: '1.3.0',
+    opacity: 0.68,
+    zIndex: 345,
+    attribution: 'Wind speed forecast © <a href="https://www.weather.gov/" target="_blank" rel="noreferrer">NOAA/NWS</a>'
+  });
 
   let radarTiles = null;
   let radarRefreshTimer = null;
@@ -36,7 +35,7 @@
     'No weather': noWeatherLayer,
     'Weather radar': radarGroup,
     'Cloud cover forecast': cloudCoverLayer,
-    'Wind speed': windLayer
+    'Wind speed forecast': windLayer
   }, {
     'Stocked waters': markerLayer
   }, {
@@ -124,12 +123,12 @@
 
   function updateLegend(activeLayer) {
     if (activeLayer === windLayer) {
-      showLegend('Wind speed', [
-        { color: 'rgba(255,255,255,0.9)', label: 'Calm / light' },
-        { color: 'rgba(170,215,235,0.9)', label: 'Moderate' },
-        { color: 'rgba(105,175,205,0.9)', label: 'Strong' },
-        { color: 'rgba(70,110,165,0.95)', label: 'Very strong' }
-      ], 'Relative color scale; darker shading indicates faster wind.');
+      showLegend('Wind speed forecast', [
+        { color: 'rgba(255,255,204,0.9)', label: 'Light wind' },
+        { color: 'rgba(161,218,180,0.9)', label: 'Moderate wind' },
+        { color: 'rgba(65,182,196,0.9)', label: 'Strong wind' },
+        { color: 'rgba(37,52,148,0.95)', label: 'Very strong wind' }
+      ], 'NOAA/NWS sustained 10-meter wind-speed forecast.');
     } else if (activeLayer === cloudCoverLayer) {
       showLegend('Cloud cover forecast', [
         { color: 'rgba(255,255,255,0.45)', label: 'Mostly clear' },
@@ -218,10 +217,10 @@
   });
 
   windLayer.on('tileerror', error => {
-    console.warn('Wind-speed tile could not be loaded.', error);
+    console.warn('Wind-speed forecast tile could not be loaded.', error);
     if (windErrorShown || !map.hasLayer(windLayer)) return;
     windErrorShown = true;
-    window.alert('The wind layer is temporarily unavailable. The OpenWeather key may still be activating; please try again shortly.');
+    window.alert('The NOAA wind-speed forecast layer is temporarily unavailable. Please try again later.');
     selectNoWeather();
   });
 
