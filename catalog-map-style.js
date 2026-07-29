@@ -37,7 +37,7 @@
   };
 
   function stockingLabel(w){
-    return w.latest_report_date?pretty(w.latest_report_date):'No matching stocking history';
+    return w.latest_report_date?`Last stocking date: ${pretty(w.latest_report_date)}`:'No matching stocking history';
   }
 
   detailHtml=function(w){
