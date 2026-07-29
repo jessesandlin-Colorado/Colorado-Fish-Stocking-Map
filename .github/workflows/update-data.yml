@@ -6,6 +6,7 @@ on:
     paths:
       - "scripts/classify_atlas_only_waters.py"
       - "scripts/compare_atlas_inventory.py"
+      - "scripts/import_atlas_catalog.py"
       - ".github/workflows/update-data.yml"
   schedule:
     # Saturday morning after CPW's typical Friday report update.
@@ -45,9 +46,11 @@ jobs:
         run: python scripts/compare_atlas_inventory.py
       - name: Classify Atlas-only waters conservatively
         run: python scripts/classify_atlas_only_waters.py
+      - name: Import cleaned public Fishing Atlas catalog
+        run: python scripts/import_atlas_catalog.py
       - name: Run tests
         run: python -m pytest -q
-      - name: Commit refreshed data and comparison reports
+      - name: Commit refreshed data and catalog reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -60,10 +63,11 @@ jobs:
                   data/atlas-inventory-report.md \
                   data/atlas-inventory-classified.json \
                   data/atlas-only-waters-classified.csv \
-                  data/atlas-only-classification-report.md
+                  data/atlas-only-classification-report.md \
+                  data/atlas-catalog-import-report.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
-            git commit -m "Refresh CPW data and classify Atlas-only waters"
+            git commit -m "Refresh CPW data and import Fishing Atlas catalog"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
