@@ -31,18 +31,10 @@
     const q=state.search.trim().toLowerCase();
     return dataset.waters.filter(w=>{
       const stocked=hasStockingHistory(w);
-      const ageMatches=state.age===9999 || Boolean(w.latest_report_date&&daysOld(w.latest_report_date)<=state.age);
+      const ageMatches=state.age===9999||Boolean(w.latest_report_date&&daysOld(w.latest_report_date)<=state.age);
       return (!state.onlyStocked||stocked)&&(!q||searchable(w).includes(q))&&ageMatches&&(!state.county||w.county===state.county)&&(!state.species||(w.species||[]).includes(state.species))&&(!state.boating||w.boating===state.boating)&&Object.entries(state.flags).every(([k,v])=>!v||w[k]===v);
     });
   };
-
-  const onlyStocked=$('onlyStocked');
-  if(onlyStocked){
-    onlyStocked.addEventListener('change',event=>{
-      state.onlyStocked=event.target.checked;
-      render();
-    });
-  }
 
   function stockingLabel(w){
     return w.latest_report_date?pretty(w.latest_report_date):'No matching stocking history';
@@ -79,4 +71,12 @@
       });
     }
   };
+
+  const onlyStocked=$('onlyStocked');
+  if(onlyStocked){
+    onlyStocked.addEventListener('change',event=>{
+      state.onlyStocked=event.target.checked;
+      render();
+    });
+  }
 })();
