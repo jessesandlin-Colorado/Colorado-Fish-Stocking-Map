@@ -1,0 +1,12 @@
+:root{
+  --fresh:#18864b;
+  --recent:#d5a400;
+  --older:#c9342f;
+  --stale:#6f7772;
+}
+
+/* Stocking recency: green 0–14, yellow 15–30, red 31–60, gray 61+ */
+.marker-pin.fresh,.legend .dot.fresh{background:var(--fresh)}
+.marker-pin.recent,.legend .dot.recent{background:var(--recent)}
+.marker-pin.older,.legend .dot.older{background:var(--older)}
+.marker-pin.stale,.legend .dot.stale{background:var(--stale)}
