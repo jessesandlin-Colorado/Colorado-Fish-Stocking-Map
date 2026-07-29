@@ -51,6 +51,18 @@ input:focus,select:focus{outline:3px solid rgba(217,139,115,.28);border-color:va
 .weather-eyebrow{color:var(--trout-gold)}
 .skeleton{background:linear-gradient(90deg,#eee6c9 25%,#fffaf0 50%,#eee6c9 75%);background-size:200% 100%}
 
+.weather-tip{
+  background:#eef7ff;
+  border:1px solid #cfe5ff;
+  border-radius:8px;
+  padding:10px 12px;
+  margin-bottom:14px;
+  font-size:.9rem;
+  line-height:1.4;
+  color:#1f3b57;
+}
+.weather-tip strong{color:#002868}
+
 .species-tag{background:#f7e5dc;color:#6d3e32}
 .species-card{background:linear-gradient(135deg,#fff9e8,#f8e5dc);border-color:#e2c9ae}
 .species-card a,.species-link{color:var(--accent)}
@@ -203,4 +215,5 @@ dialog{border-color:var(--border)}
   .topbar>div{padding-left:3.9rem}
   .topbar .source-link{margin-left:3.9rem;font-size:.86rem}
   .topbar .subtitle{font-size:.93rem}
+  .weather-tip{font-size:.85rem;padding:8px 10px}
 }
