@@ -1,0 +1,11 @@
+.road-distance strong {
+  white-space: nowrap;
+}
+
+.water-card[data-road-routed="true"] .card-meta {
+  font-weight: 650;
+}
+
+.location-status.error {
+  color: #8b2f24;
+}
