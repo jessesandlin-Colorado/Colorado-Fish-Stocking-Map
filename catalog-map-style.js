@@ -42,8 +42,22 @@
 
   detailHtml=function(w){
     if(w.latest_report_date)return originalDetailHtml(w);
-    const rows=[['County',w.county],['Property',w.property_name],['Type',w.location_type],['Access',w.access_ease],['Boating',w.boating],['Fishing pressure',w.fishing_pressure],['Family friendly',w.family_friendly],['Ice fishing',w.ice_fishing]].filter(([,v])=>v!=null&&v!=='').map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('');
-    return `<h2>${esc(displayName(w))}</h2><p class="catalog-badge">Official Fishing Atlas catalog water</p><h3>Species listed by Fishing Atlas</h3>${speciesVisuals(w)}${weatherSkeleton()}<section class="stocking-unknown"><h3>Stocking history</h3><p><strong>No matching stocking record was found in this project's historical database.</strong></p><p>This does not mean the water has never been stocked. It means no matching record was found in the available 2014–present project archive.</p></section><h3>Water details</h3><dl>${rows}</dl><div class="detail-links"><a href="${esc(w.atlas_url)}" target="_blank" rel="noreferrer">Fishing Atlas ↗</a>${w.driving_url?`<a href="${esc(w.driving_url)}" target="_blank" rel="noreferrer">Directions ↗</a>`:''}${w.property_url?`<a href="${esc(w.property_url)}" target="_blank" rel="noreferrer">Property page ↗</a>`:''}${w.survey_url?`<a href="${esc(w.survey_url)}" target="_blank" rel="noreferrer">Survey/report ↗</a>`:''}</div><p class="warning">Always verify public access, closures, and fishing regulations with CPW and the land manager.</p>`;
+    const rows=[
+      ['County',w.county],
+      ['Property name',w.property_name],
+      ['Type',w.location_type],
+      ['Fishery type',w.fishery_type],
+      ['Elevation',w.elevation_ft?`${w.elevation_ft} ft`:null],
+      ['Ease of access',w.access_ease],
+      ['Boating',w.boating],
+      ['Fishing pressure',w.fishing_pressure],
+      ['Stocked',w.stocked_description],
+      ['Family friendly',w.family_friendly],
+      ['More remote fly fishing',w.rustic],
+      ['Ice fishing',w.ice_fishing],
+      ['Accessible pier',w.accessible_pier]
+    ].filter(([,v])=>v!=null&&v!=='').map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('');
+    return `<h2>${esc(displayName(w))}</h2><p class="catalog-badge">Official Fishing Atlas catalog water</p><h3>Species listed by Fishing Atlas</h3>${speciesVisuals(w)}${weatherSkeleton()}<section class="stocking-unknown"><h3>Stocking history</h3><p><strong>No matching stocking record was found in this project's historical database.</strong></p><p>This does not mean the water has never been stocked. It means no matching record was found in the available 2014–present project archive.</p></section><h3>Water details</h3>${rows?`<dl>${rows}</dl>`:'<p class="muted">No additional Fishing Atlas details were available for this record.</p>'}<div class="detail-links"><a href="${esc(w.atlas_url)}" target="_blank" rel="noreferrer">Fishing Atlas ↗</a>${w.driving_url?`<a href="${esc(w.driving_url)}" target="_blank" rel="noreferrer">Directions ↗</a>`:''}${w.property_url?`<a href="${esc(w.property_url)}" target="_blank" rel="noreferrer">Property page ↗</a>`:''}${w.survey_url?`<a href="${esc(w.survey_url)}" target="_blank" rel="noreferrer">Survey/report ↗</a>`:''}</div><p class="warning">Always verify public access, closures, and fishing regulations with CPW and the land manager.</p>`;
   };
 
   popup=function(w){
