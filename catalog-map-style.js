@@ -25,7 +25,7 @@
   filtered=function(){
     const q=state.search.trim().toLowerCase();
     return dataset.waters.filter(w=>{
-      const ageMatches=state.age===9999?!0||true:(w.latest_report_date&&daysOld(w.latest_report_date)<=state.age);
+      const ageMatches=state.age===9999 || Boolean(w.latest_report_date&&daysOld(w.latest_report_date)<=state.age);
       return (!q||searchable(w).includes(q))&&ageMatches&&(!state.county||w.county===state.county)&&(!state.species||(w.species||[]).includes(state.species))&&(!state.boating||w.boating===state.boating)&&Object.entries(state.flags).every(([k,v])=>!v||w[k]===v);
     });
   };
