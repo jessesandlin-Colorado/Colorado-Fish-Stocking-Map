@@ -1,19 +1,15 @@
 (() => {
   'use strict';
 
-  const MAX_ROUTED_WATERS = 24;
-  const CACHE_PREFIX = 'fishMapRoadMatrix:v1:';
-  const OSRM_BASE = 'https://router.project-osrm.org/table/v1/driving/';
+  const CACHE_PREFIX = 'fishMapRoadRoute:v2:';
+  const OSRM_BASE = 'https://router.project-osrm.org/route/v1/driving/';
+  const routeCache = new Map();
+  const pendingRoutes = new Map();
 
-  let routeOriginKey = '';
-  let routeByWater = new Map();
-  let loadingPromise = null;
-  let lastObservedLocation = '';
-
-  const originalFiltered = filtered;
-  const originalRender = render;
   const originalPopup = popup;
   const originalDetailHtml = detailHtml;
+  const originalShowDetails = showDetails;
+  const originalLoadPopupWeather = loadPopupWeather;
 
   function planningLocation() {
     try {
@@ -30,11 +26,11 @@
   }
 
   function waterKey(water) {
-    return String(water.watercode || water.water_code || water.id || `${water.name}|${water.lat}|${water.lng}`);
+    return String(water.watercode || water.water_code || water.id || water.key || `${water.name}|${water.lat}|${water.lng}`);
   }
 
-  function originKey(location) {
-    return `${location.lat.toFixed(4)},${location.lng.toFixed(4)}`;
+  function routeKey(location, water) {
+    return `${location.lat.toFixed(5)},${location.lng.toFixed(5)}:${waterKey(water)}`;
   }
 
   function formatRoadMiles(meters) {
@@ -53,209 +49,150 @@
   }
 
   function routeLabel(route) {
-    return `${formatRoadMiles(route.distance)} · ${formatDuration(route.duration)}`;
+    return `${formatRoadMiles(route.distance)} · about ${formatDuration(route.duration)}`;
   }
 
-  function routeFor(water) {
-    return routeByWater.get(waterKey(water)) || null;
+  function directionsUrl(location, water) {
+    const origin = encodeURIComponent(`${location.lat},${location.lng}`);
+    const destination = encodeURIComponent(`${water.lat},${water.lng}`);
+    return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}`;
   }
 
-  function setPlannerStatus(message, isError = false) {
-    const status = document.getElementById('locationStatus');
-    if (!status) return;
-    status.textContent = message;
-    status.classList.toggle('error', isError);
-  }
-
-  function validWaterCoordinates(water) {
-    return Number.isFinite(Number(water.lat)) && Number.isFinite(Number(water.lng));
-  }
-
-  function candidateWaters() {
-    return originalFiltered().filter(validWaterCoordinates).slice(0, MAX_ROUTED_WATERS);
-  }
-
-  function cacheKey(location, candidates) {
-    const ids = candidates.map(waterKey).join(',');
-    return `${CACHE_PREFIX}${originKey(location)}:${ids}`;
-  }
-
-  function restoreCache(location, candidates) {
+  function readStoredRoute(key) {
     try {
-      const cached = JSON.parse(sessionStorage.getItem(cacheKey(location, candidates)));
-      if (!cached || !Array.isArray(cached.routes)) return false;
-      routeByWater = new Map(cached.routes.map(item => [String(item.key), item]));
-      routeOriginKey = originKey(location);
-      return true;
+      const stored = JSON.parse(sessionStorage.getItem(`${CACHE_PREFIX}${key}`));
+      if (!stored || !Number.isFinite(stored.distance) || !Number.isFinite(stored.duration)) return null;
+      return stored;
     } catch (error) {
-      return false;
+      return null;
     }
   }
 
-  function saveCache(location, candidates) {
+  function saveRoute(key, route) {
+    routeCache.set(key, route);
     try {
-      sessionStorage.setItem(cacheKey(location, candidates), JSON.stringify({
-        savedAt: Date.now(),
-        routes: [...routeByWater.entries()].map(([key, route]) => ({ key, ...route }))
-      }));
+      sessionStorage.setItem(`${CACHE_PREFIX}${key}`, JSON.stringify(route));
     } catch (error) {
-      // Browsing still works if storage is unavailable.
+      // Routing still works when browser storage is unavailable.
     }
   }
 
-  async function requestRoadMatrix(location, candidates) {
-    const coordinates = [
-      `${location.lng},${location.lat}`,
-      ...candidates.map(water => `${Number(water.lng)},${Number(water.lat)}`)
-    ].join(';');
-    const destinations = candidates.map((water, index) => index + 1).join(';');
-    const url = `${OSRM_BASE}${coordinates}?sources=0&destinations=${destinations}&annotations=duration,distance`;
+  async function requestRoute(location, water) {
+    const coordinates = `${location.lng},${location.lat};${Number(water.lng)},${Number(water.lat)}`;
+    const url = `${OSRM_BASE}${coordinates}?overview=false&alternatives=false&steps=false`;
     const response = await fetch(url, { headers: { Accept: 'application/json' } });
     if (!response.ok) throw new Error(`Routing service returned ${response.status}`);
     const data = await response.json();
-    if (data.code !== 'Ok' || !Array.isArray(data.durations?.[0]) || !Array.isArray(data.distances?.[0])) {
-      throw new Error(data.message || 'Road routes were unavailable');
+    const route = data.routes?.[0];
+    if (data.code !== 'Ok' || !Number.isFinite(route?.distance) || !Number.isFinite(route?.duration)) {
+      throw new Error(data.message || 'A driving route was unavailable');
     }
-
-    const routes = new Map();
-    candidates.forEach((water, index) => {
-      const duration = data.durations[0][index];
-      const distance = data.distances[0][index];
-      if (Number.isFinite(duration) && Number.isFinite(distance)) {
-        routes.set(waterKey(water), { duration, distance });
-      }
-    });
-    return routes;
+    return { distance: route.distance, duration: route.duration };
   }
 
-  async function loadRoadDistances(force = false) {
+  function routeFor(water) {
     const location = planningLocation();
-    if (!location) {
-      routeOriginKey = '';
-      routeByWater.clear();
-      loadingPromise = null;
-      return;
+    if (!location) return null;
+    const key = routeKey(location, water);
+    return routeCache.get(key) || readStoredRoute(key);
+  }
+
+  function loadRoute(water) {
+    const location = planningLocation();
+    if (!location || !Number.isFinite(Number(water.lat)) || !Number.isFinite(Number(water.lng))) {
+      return Promise.resolve(null);
     }
 
-    const nextOriginKey = originKey(location);
-    const candidates = candidateWaters();
-    if (!candidates.length) return;
-    if (!force && nextOriginKey === routeOriginKey && routeByWater.size) return;
-    if (!force && restoreCache(location, candidates)) {
-      setPlannerStatus(`Using ${location.label}. Showing road distance and estimated drive time for the ${routeByWater.size} nearest waters.`);
-      render();
-      return;
+    const key = routeKey(location, water);
+    const cached = routeCache.get(key) || readStoredRoute(key);
+    if (cached) {
+      routeCache.set(key, cached);
+      return Promise.resolve(cached);
     }
-    if (loadingPromise) return loadingPromise;
+    if (pendingRoutes.has(key)) return pendingRoutes.get(key);
 
-    routeOriginKey = nextOriginKey;
-    routeByWater.clear();
-    setPlannerStatus(`Using ${location.label}. Calculating road distance and drive time for the ${candidates.length} nearest waters…`);
-    originalRender();
+    const promise = requestRoute(location, water)
+      .then(route => {
+        saveRoute(key, route);
+        return route;
+      })
+      .finally(() => pendingRoutes.delete(key));
 
-    loadingPromise = requestRoadMatrix(location, candidates)
-      .then(routes => {
-        routeByWater = routes;
-        saveCache(location, candidates);
-        setPlannerStatus(`Using ${location.label}. Showing road distance and estimated drive time for the ${routes.size} nearest waters. Routes: OSRM/OpenStreetMap.`);
-        render();
+    pendingRoutes.set(key, promise);
+    return promise;
+  }
+
+  function routePanel(water, mode, status = 'idle', route = null) {
+    const location = planningLocation();
+    if (!location) return '';
+    const className = mode === 'popup' ? 'popup-route-estimate' : 'detail-route-estimate';
+    const link = `<a href="${directionsUrl(location, water)}" target="_blank" rel="noreferrer">Open directions ↗</a>`;
+
+    if (status === 'loading') {
+      return `<div class="road-distance ${className}" data-route-water="${esc(waterKey(water))}"><span>Drive estimate</span><strong>Calculating route…</strong>${link}</div>`;
+    }
+    if (status === 'ready' && route) {
+      return `<div class="road-distance ${className}" data-route-water="${esc(waterKey(water))}"><span>Drive estimate from ${esc(location.label)}</span><strong>${routeLabel(route)}</strong>${link}</div>`;
+    }
+    if (status === 'error') {
+      return `<div class="road-distance ${className} route-error" data-route-water="${esc(waterKey(water))}"><span>Drive estimate</span><strong>Route unavailable</strong>${link}</div>`;
+    }
+    return `<div class="road-distance ${className}" data-route-water="${esc(waterKey(water))}"><span>Drive estimate from ${esc(location.label)}</span><strong>Open this water to calculate</strong>${link}</div>`;
+  }
+
+  function replaceRoutePanels(water, status, route = null) {
+    const key = waterKey(water);
+    document.querySelectorAll(`[data-route-water="${CSS.escape(key)}"]`).forEach(panel => {
+      const mode = panel.classList.contains('popup-route-estimate') ? 'popup' : 'detail';
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = routePanel(water, mode, status, route);
+      panel.replaceWith(wrapper.firstElementChild);
+    });
+  }
+
+  function calculateAndRender(water) {
+    const cached = routeFor(water);
+    if (cached) {
+      replaceRoutePanels(water, 'ready', cached);
+      return Promise.resolve(cached);
+    }
+
+    replaceRoutePanels(water, 'loading');
+    return loadRoute(water)
+      .then(route => {
+        if (route) replaceRoutePanels(water, 'ready', route);
+        return route;
       })
       .catch(error => {
-        routeByWater.clear();
-        setPlannerStatus(`Using ${location.label}. Road estimates are temporarily unavailable, so results remain sorted by straight-line distance.`, true);
-        console.warn('Road distance lookup failed:', error);
-        originalRender();
-      })
-      .finally(() => {
-        loadingPromise = null;
+        replaceRoutePanels(water, 'error');
+        console.warn('Road route lookup failed:', error);
+        return null;
       });
-
-    return loadingPromise;
   }
 
-  filtered = function filteredByRoadTime() {
-    const waters = originalFiltered();
-    if (!routeByWater.size) return waters;
-    return [...waters].sort((a, b) => {
-      const aRoute = routeFor(a);
-      const bRoute = routeFor(b);
-      if (aRoute && bRoute) return aRoute.duration - bRoute.duration;
-      if (aRoute) return -1;
-      if (bRoute) return 1;
-      return 0;
-    });
-  };
-
-  popup = function popupWithRoadDistance(water) {
+  popup = function popupWithOnDemandRoute(water) {
     const html = originalPopup(water);
-    const route = routeFor(water);
-    const location = planningLocation();
-    if (!route || !location) return html;
-    const replacement = `<p class="location-distance road-distance"><strong>${routeLabel(route)}</strong> from ${esc(location.label)}</p>`;
-    if (html.includes('<p class="location-distance">')) {
-      return html.replace(/<p class="location-distance">[\s\S]*?<\/p>/, replacement);
-    }
-    return html.replace('<div class="popup-weather', `${replacement}<div class="popup-weather`);
+    const panel = routePanel(water, 'popup', routeFor(water) ? 'ready' : 'idle', routeFor(water));
+    if (!panel) return html;
+    return html.replace('<div class="popup-weather', `${panel}<div class="popup-weather`);
   };
 
-  detailHtml = function detailWithRoadDistance(water) {
+  detailHtml = function detailWithOnDemandRoute(water) {
     const html = originalDetailHtml(water);
-    const route = routeFor(water);
-    const location = planningLocation();
-    if (!route || !location) return html;
-    const directions = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(`${location.lat},${location.lng}`)}&destination=${encodeURIComponent(`${water.lat},${water.lng}`)}`;
-    const replacement = `<p class="detail-distance road-distance"><strong>${routeLabel(route)}</strong> from ${esc(location.label)}. <a href="${directions}" target="_blank" rel="noreferrer">Open directions ↗</a></p>`;
-    if (html.includes('<p class="detail-distance">')) {
-      return html.replace(/<p class="detail-distance">[\s\S]*?<\/p>/, replacement);
-    }
-    return html.replace('</h2>', `</h2>${replacement}`);
+    const cached = routeFor(water);
+    const panel = routePanel(water, 'detail', cached ? 'ready' : 'loading', cached);
+    if (!panel) return html;
+    return html.replace('</h2>', `</h2>${panel}`);
   };
 
-  render = function renderWithRoadDistances() {
-    originalRender();
-    if (!routeByWater.size) return;
-    const visible = filtered();
-    document.querySelectorAll('#results .water-card').forEach((card, index) => {
-      const water = visible[index];
-      const route = routeFor(water);
-      const meta = card.querySelector('.card-meta');
-      if (!meta || !route) return;
-      meta.textContent = meta.textContent.replace(/ · [\d.]+ mi away$/, '');
-      meta.textContent += ` · 🚗 ${routeLabel(route)}`;
-      card.dataset.roadRouted = 'true';
-    });
-    const count = document.getElementById('count');
-    const location = planningLocation();
-    if (count && location) count.title = `The routed candidates are sorted by estimated drive time from ${location.label}; remaining waters follow by straight-line distance.`;
+  showDetails = function showDetailsWithOnDemandRoute(water) {
+    originalShowDetails(water);
+    calculateAndRender(water);
   };
 
-  function observePlanningLocation() {
-    const location = planningLocation();
-    const serialized = location ? `${originKey(location)}|${location.label}` : '';
-    if (serialized === lastObservedLocation) return;
-    lastObservedLocation = serialized;
-    if (!location) {
-      routeOriginKey = '';
-      routeByWater.clear();
-      render();
-      return;
-    }
-    window.setTimeout(() => loadRoadDistances(), 0);
-  }
-
-  document.getElementById('clearLocation')?.addEventListener('click', () => {
-    window.setTimeout(observePlanningLocation, 0);
-  });
-  document.getElementById('zipForm')?.addEventListener('submit', () => {
-    window.setTimeout(observePlanningLocation, 500);
-    window.setTimeout(observePlanningLocation, 1500);
-  });
-  document.getElementById('useMyLocation')?.addEventListener('click', () => {
-    window.setTimeout(observePlanningLocation, 500);
-    window.setTimeout(observePlanningLocation, 2000);
-    window.setTimeout(observePlanningLocation, 5000);
-  });
-
-  window.setInterval(observePlanningLocation, 1000);
-  observePlanningLocation();
+  loadPopupWeather = async function loadPopupWeatherAndRoute(water, marker) {
+    const weatherPromise = originalLoadPopupWeather(water, marker);
+    calculateAndRender(water);
+    return weatherPromise;
+  };
 })();
