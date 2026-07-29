@@ -2,6 +2,11 @@ name: Refresh CPW data
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "scripts/classify_atlas_only_waters.py"
+      - "scripts/compare_atlas_inventory.py"
+      - ".github/workflows/update-data.yml"
   schedule:
     # Saturday morning after CPW's typical Friday report update.
     - cron: "30 13 * * 6"
