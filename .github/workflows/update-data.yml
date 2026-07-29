@@ -2,10 +2,6 @@ name: Refresh CPW data
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/compare_atlas_inventory.py"
-      - ".github/workflows/update-data.yml"
   schedule:
     # Saturday morning after CPW's typical Friday report update.
     - cron: "30 13 * * 6"
@@ -18,34 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  compare-atlas:
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-      - run: python -m pip install -r requirements.txt
-      - name: Query Atlas and build comparison reports
-        run: python scripts/compare_atlas_inventory.py
-      - name: Commit comparison reports
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/atlas-inventory-comparison.json \
-                  data/atlas-only-waters-review.csv \
-                  data/atlas-inventory-report.md
-          if git diff --cached --quiet; then
-            echo "No comparison changes"
-          else
-            git commit -m "Update Fishing Atlas inventory comparison"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
-          fi
-
   refresh:
-    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -67,19 +36,24 @@ jobs:
         run: python scripts/merge_archive_waters.py
       - name: Enrich waters with official Fishing Atlas species
         run: python scripts/enrich_atlas_species.py
+      - name: Compare complete Fishing Atlas inventory
+        run: python scripts/compare_atlas_inventory.py
       - name: Run tests
         run: python -m pytest -q
-      - name: Commit refreshed data
+      - name: Commit refreshed data and comparison reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/waters.json data/unmatched.json data/match-report.html \
                   data/stocking-history.json data/import-history.json \
                   data/species.json data/validation.json data/validation-report.html \
-                  data/archive-merge-report.json
+                  data/archive-merge-report.json \
+                  data/atlas-inventory-comparison.json \
+                  data/atlas-only-waters-review.csv \
+                  data/atlas-inventory-report.md
           if git diff --cached --quiet; then
             echo "No data changes"
           else
-            git commit -m "Refresh CPW stocking data"
+            git commit -m "Refresh CPW data and Atlas inventory comparison"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
