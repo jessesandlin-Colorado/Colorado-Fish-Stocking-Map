@@ -1,11 +1,43 @@
+.road-distance {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0.75rem 0;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(35, 91, 68, 0.22);
+  border-radius: 0.7rem;
+  background: rgba(239, 247, 242, 0.92);
+}
+
+.road-distance span {
+  font-size: 0.76rem;
+  color: #52645b;
+}
+
 .road-distance strong {
   white-space: nowrap;
+  color: #173f31;
 }
 
-.water-card[data-road-routed="true"] .card-meta {
-  font-weight: 650;
+.road-distance a {
+  width: fit-content;
+  font-size: 0.82rem;
 }
 
+.popup-route-estimate {
+  margin: 0.55rem 0;
+  padding: 0.55rem 0.65rem;
+}
+
+.popup-route-estimate strong {
+  white-space: normal;
+}
+
+.road-distance.route-error {
+  border-color: rgba(139, 47, 36, 0.28);
+  background: rgba(252, 243, 241, 0.95);
+}
+
+.road-distance.route-error strong,
 .location-status.error {
   color: #8b2f24;
 }
