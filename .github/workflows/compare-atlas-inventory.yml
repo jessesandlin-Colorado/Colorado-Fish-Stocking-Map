@@ -1,0 +1,41 @@
+name: Compare Fishing Atlas inventory
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/compare_atlas_inventory.py"
+      - ".github/workflows/compare-atlas-inventory.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: compare-fishing-atlas-inventory
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Query Atlas and build comparison reports
+        run: python scripts/compare_atlas_inventory.py
+      - name: Commit comparison reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/atlas-inventory-comparison.json \
+                  data/atlas-only-waters-review.csv \
+                  data/atlas-inventory-report.md
+          if git diff --cached --quiet; then
+            echo "No comparison changes"
+          else
+            git commit -m "Update Fishing Atlas inventory comparison"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
