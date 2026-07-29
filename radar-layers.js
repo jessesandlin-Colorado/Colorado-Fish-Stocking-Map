@@ -16,7 +16,7 @@
     attribution: 'Cloud cover forecast © <a href="https://www.weather.gov/" target="_blank" rel="noreferrer">NOAA/NWS</a>'
   });
   const windLayer = L.tileLayer.wms('https://digital.weather.gov/ndfd.conus/wms', {
-    layers: 'ndfd.conus.wspd',
+    layers: 'ndfd.conus.windspd',
     format: 'image/png',
     transparent: true,
     version: '1.3.0',
