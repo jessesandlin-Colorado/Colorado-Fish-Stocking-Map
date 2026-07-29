@@ -3,6 +3,7 @@
  */
 (function(){
   const originalDetailHtml=detailHtml;
+  state.onlyStocked=false;
 
   daysOld=function(date){
     if(!date)return Infinity;
@@ -22,13 +23,26 @@
     return /(stream|river|creek|fork)/.test(text)?'water-river':'water-lake';
   }
 
+  function hasStockingHistory(w){
+    return Boolean(w.latest_report_date||(Array.isArray(w.stocking_dates)&&w.stocking_dates.length)||(w.historical_event_count>0));
+  }
+
   filtered=function(){
     const q=state.search.trim().toLowerCase();
     return dataset.waters.filter(w=>{
+      const stocked=hasStockingHistory(w);
       const ageMatches=state.age===9999 || Boolean(w.latest_report_date&&daysOld(w.latest_report_date)<=state.age);
-      return (!q||searchable(w).includes(q))&&ageMatches&&(!state.county||w.county===state.county)&&(!state.species||(w.species||[]).includes(state.species))&&(!state.boating||w.boating===state.boating)&&Object.entries(state.flags).every(([k,v])=>!v||w[k]===v);
+      return (!state.onlyStocked||stocked)&&(!q||searchable(w).includes(q))&&ageMatches&&(!state.county||w.county===state.county)&&(!state.species||(w.species||[]).includes(state.species))&&(!state.boating||w.boating===state.boating)&&Object.entries(state.flags).every(([k,v])=>!v||w[k]===v);
     });
   };
+
+  const onlyStocked=$('onlyStocked');
+  if(onlyStocked){
+    onlyStocked.addEventListener('change',event=>{
+      state.onlyStocked=event.target.checked;
+      render();
+    });
+  }
 
   function stockingLabel(w){
     return w.latest_report_date?pretty(w.latest_report_date):'No matching stocking history';
