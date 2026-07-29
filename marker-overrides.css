@@ -1,0 +1,11 @@
+:root{
+  --lake-outline:#0165fc;
+  --river-outline:#2ecc71;
+}
+
+.marker-pin{
+  width:17px;
+  height:17px;
+  border-width:3px;
+  box-shadow:0 1px 4px rgba(0,0,0,.42);
+}
