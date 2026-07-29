@@ -1,0 +1,58 @@
+.share-water {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .65rem 1rem;
+  align-items: center;
+  margin: .8rem 0 1rem;
+  padding: .85rem;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  background: #f3f7f4;
+}
+
+.share-water h3 {
+  margin: .08rem 0 0;
+  font-size: 1rem;
+}
+
+.share-water-eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.share-water-button {
+  border: 0;
+  border-radius: .55rem;
+  padding: .65rem .8rem;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.share-water-button:hover {
+  filter: brightness(.94);
+}
+
+.share-water-status {
+  grid-column: 1 / -1;
+  min-height: 1.1em;
+  margin: 0;
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+@media (max-width: 520px) {
+  .share-water {
+    grid-template-columns: 1fr;
+  }
+
+  .share-water-button {
+    width: 100%;
+  }
+}
