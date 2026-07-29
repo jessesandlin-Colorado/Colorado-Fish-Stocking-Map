@@ -67,7 +67,22 @@ jobs:
                   data/atlas-catalog-import-report.json
           if git diff --cached --quiet; then
             echo "No data changes"
-          else
-            git commit -m "Refresh CPW data and import Fishing Atlas catalog"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
+            exit 0
           fi
+
+          git commit -m "Refresh CPW data and import Fishing Atlas catalog"
+
+          # The refresh can run for several minutes. Rebase its generated-data
+          # commit onto any UI or code changes that reached main meanwhile.
+          for attempt in 1 2 3; do
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            echo "Push raced with another update; retrying (${attempt}/3)..."
+            sleep $((attempt * 5))
+          done
+
+          echo "Unable to push refreshed data after 3 attempts."
+          exit 1
