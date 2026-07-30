@@ -38,5 +38,17 @@
     position: 'topleft'
   }).addTo(map);
 
-  control.getContainer().setAttribute('aria-label', 'Base map');
+  const addBathymetryOverlay = layer => {
+    if (layer) control.addOverlay(layer, 'Bathymetry / depth contours');
+  };
+
+  if (window.cofishBathymetry?.layer) {
+    addBathymetryOverlay(window.cofishBathymetry.layer);
+  } else {
+    window.addEventListener('cofish:bathymetry-ready', event => {
+      addBathymetryOverlay(event.detail?.layer);
+    }, { once: true });
+  }
+
+  control.getContainer().setAttribute('aria-label', 'Base map and bathymetry layers');
 })();

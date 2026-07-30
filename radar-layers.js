@@ -34,9 +34,6 @@
   const overlays = {
     'Stocked waters': markerLayer
   };
-  if (window.cofishBathymetry?.layer) {
-    overlays['Bathymetry / depth contours'] = window.cofishBathymetry.layer;
-  }
 
   const layerControl = L.control.layers({
     'No weather': noWeatherLayer,
