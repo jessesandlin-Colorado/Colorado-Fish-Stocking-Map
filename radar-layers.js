@@ -35,7 +35,7 @@
     'Stocked waters': markerLayer
   };
   if (window.cofishBathymetry?.layer) {
-    overlays['Blue Mesa depth contours (2019)'] = window.cofishBathymetry.layer;
+    overlays['Bathymetry / depth contours'] = window.cofishBathymetry.layer;
   }
 
   const layerControl = L.control.layers({
