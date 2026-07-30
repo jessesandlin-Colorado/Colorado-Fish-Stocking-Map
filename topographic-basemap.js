@@ -27,7 +27,7 @@
   usgsTopo.bringToBack();
 
   const baseMaps = {
-    '🏔 USGS Topo (feet)': usgsTopo,
+    '🏔 USGS Topo': usgsTopo,
     '🛰 USGS Imagery': usgsImagery,
     '🛰 USGS Imagery + Topo': usgsImageryTopo
   };

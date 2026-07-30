@@ -1,0 +1,38 @@
+.bathymetry-card {
+  background: #eaf6fb;
+  border: 1px solid #9bc8db;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 0.85rem;
+}
+.bathymetry-card h3 { margin: 0 0 0.35rem; }
+.bathymetry-card p { margin: 0.35rem 0 0.65rem; }
+.bathymetry-button {
+  background: #075985;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.55rem 0.8rem;
+}
+.bathymetry-legend {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  color: #18333f;
+  font: 12px/1.35 system-ui, sans-serif;
+  max-width: 220px;
+  padding: 8px 10px;
+}
+.bathymetry-legend strong, .bathymetry-legend small { display: block; }
+.bathymetry-legend small { margin-top: 4px; }
+.bathymetry-line-sample {
+  border-top: 3px solid #075985;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  width: 28px;
+}
