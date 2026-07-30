@@ -7,6 +7,7 @@ from openpyxl import Workbook
 sys.path.insert(0, str(Path(__file__).parents[1] / "scripts"))
 
 import merge_archive_waters
+import import_atlas_catalog
 from build_archive_snapshot import extract_workbook_rows
 
 
@@ -34,6 +35,28 @@ def test_archive_uses_neighboring_water_name_when_link_label_is_atlas():
     assert event.region == "northeast"
     assert atlas_id == 680
     assert "value=680" in atlas_url
+
+
+def test_catalog_match_clears_stale_unmapped_warning():
+    target = {
+        "name": "Pinewood Reservoir",
+        "stocking_status": "location-not-matched",
+        "match_method": "atlas-id-unresolved",
+        "location_warning": "Location not yet mapped.",
+        "lat": None,
+        "lng": None,
+    }
+    source = {
+        "atlas_id": 284,
+        "lat": 40.362682,
+        "lng": -105.284362,
+    }
+
+    import_atlas_catalog.merge_missing(target, source)
+
+    assert target["stocking_status"] == "matched-to-fishing-atlas"
+    assert target["match_method"] == "atlas-catalog-exact-name"
+    assert "location_warning" not in target
 
 
 def test_merge_adds_archive_dates_and_historical_only_waters(monkeypatch):
