@@ -59,6 +59,102 @@ def test_catalog_match_clears_stale_unmapped_warning():
     assert "location_warning" not in target
 
 
+def test_watercode_alias_consolidation_merges_reordered_lake_name():
+    mapped = {
+        "key": "atlas-795",
+        "atlas_id": 795,
+        "watercode": "54801",
+        "name": "LAKE ESTES",
+        "canonical_name": "Lake Estes",
+        "lat": 40.375619,
+        "lng": -105.493118,
+        "stocking_dates": ["2024-09-12"],
+        "stocking_events": [
+            {
+                "event_id": "older",
+                "stocking_date": "2024-09-12",
+                "water_name": "Lake Estes",
+                "source_kind": "archive",
+            }
+        ],
+        "historical_event_count": 1,
+        "species": ["Rainbow Trout"],
+    }
+    unmapped = {
+        "key": "unmapped-estes",
+        "name": "Estes Lake",
+        "canonical_name": "Estes Lake",
+        "stocking_status": "location-not-matched",
+        "stocking_dates": ["2026-06-19"],
+        "stocking_events": [
+            {
+                "event_id": "newer",
+                "stocking_date": "2026-06-19",
+                "water_name": "Estes Lake",
+                "source_kind": "archive",
+            }
+        ],
+        "historical_event_count": 1,
+        "species": [],
+    }
+
+    waters, count = import_atlas_catalog.consolidate_watercode_aliases(
+        [mapped, unmapped]
+    )
+
+    assert count == 1
+    assert waters == [mapped]
+    assert mapped["watercode"] == "54801"
+    assert mapped["latest_report_date"] == "2026-06-19"
+    assert mapped["historical_event_count"] == 2
+    assert mapped["stocking_name_aliases"] == ["Estes Lake", "LAKE ESTES"]
+
+
+def test_watercode_alias_consolidation_requires_unique_target():
+    unmapped = {
+        "name": "Mirror Lake",
+        "stocking_status": "location-not-matched",
+    }
+    mapped = [
+        {
+            "name": "Lake Mirror",
+            "watercode": str(code),
+            "lat": 40.0,
+            "lng": -105.0,
+        }
+        for code in (1, 2)
+    ]
+
+    waters, count = import_atlas_catalog.consolidate_watercode_aliases(
+        [*mapped, unmapped]
+    )
+
+    assert count == 0
+    assert unmapped in waters
+
+
+def test_watercode_alias_consolidation_rejects_different_regions():
+    mapped = {
+        "name": "LAKE EXAMPLE",
+        "watercode": "123",
+        "lat": 40.0,
+        "lng": -105.0,
+        "stocking_events": [{"region": "northeast"}],
+    }
+    unmapped = {
+        "name": "Example Lake",
+        "stocking_status": "location-not-matched",
+        "stocking_events": [{"region": "southwest"}],
+    }
+
+    waters, count = import_atlas_catalog.consolidate_watercode_aliases(
+        [mapped, unmapped]
+    )
+
+    assert count == 0
+    assert waters == [mapped, unmapped]
+
+
 def test_merge_adds_archive_dates_and_historical_only_waters(monkeypatch):
     waters_payload = {
         "generated_at": "2026-07-27T00:00:00+00:00",
