@@ -84,6 +84,7 @@ def make_water(record: dict[str, Any]) -> dict[str, Any]:
         "atlas_url": atlas_url(atlas_id),
         "latest_report_date": None,
         "stocking_dates": [],
+        "stocking_events": [],
         "historical_event_count": 0,
         "stocking_status": "no-project-stocking-record-found",
         "catalog_source": "Colorado Fishing Atlas",
@@ -147,8 +148,14 @@ def main() -> None:
     waters.sort(key=lambda w: str(w.get("canonical_name") or w.get("name") or "").casefold())
     project["waters"] = waters
     summary = project.setdefault("summary", {})
-    summary["matched_waters"] = len(waters)
+    summary["matched_waters"] = sum(
+        w.get("lat") is not None and w.get("lng") is not None for w in waters
+    )
+    summary["total_waters"] = len(waters)
     summary["stocking_history_waters"] = sum(bool(w.get("stocking_dates")) for w in waters)
+    summary["unmapped_stocking_waters"] = sum(
+        w.get("stocking_status") == "location-not-matched" for w in waters
+    )
     summary["atlas_catalog_only_waters"] = sum(w.get("stocking_status") == "no-project-stocking-record-found" for w in waters)
     summary["atlas_aliases_merged"] = aliases_merged
     summary["atlas_private_records_excluded"] = excluded_private
