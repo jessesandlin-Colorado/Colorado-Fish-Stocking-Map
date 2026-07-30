@@ -42,6 +42,7 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
 
           path = Path("data/stocking_events.json")
@@ -49,7 +50,7 @@ jobs:
           events_2026 = int((payload.get("summary", {}).get("events_by_year", {}) or {}).get("2026", 0))
           needed = events_2026 == 0
           print(f"Committed 2026 archive events: {events_2026}")
-          with Path("$GITHUB_OUTPUT").open("a", encoding="utf-8") as output:
+          with Path(os.environ["GITHUB_OUTPUT"]).open("a", encoding="utf-8") as output:
               output.write(f"needed={'true' if needed else 'false'}\n")
           PY
       - name: Import the published CPW archive once for 2026
