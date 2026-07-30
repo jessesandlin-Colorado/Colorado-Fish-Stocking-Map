@@ -130,6 +130,9 @@
       if (zoom) map.fitBounds(source.bounds, { padding: [24, 24] });
     }
   };
+  window.dispatchEvent(new CustomEvent('cofish:bathymetry-ready', {
+    detail: { layer }
+  }));
 
   const originalDetailHtml = detailHtml;
   detailHtml = function detailWithBathymetry(water) {
