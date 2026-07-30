@@ -4,15 +4,15 @@ This is a conservative second-pass review of waters absent by WATERCODE from the
 Name and coordinate matching is used to catch likely aliases; access classifications remain screening decisions, not legal determinations.
 
 - Atlas-only records reviewed: **857**
-- Public import candidates: **779**
+- Public import candidates: **650**
 
 ## Classification counts
 
 | Classification | Count |
 |---|---:|
-| import-public-confirmed | 779 |
-| hold-likely-existing-water | 65 |
-| exclude-private-review | 13 |
+| import-public-confirmed | 650 |
+| hold-likely-existing-water | 196 |
+| exclude-private-review | 11 |
 
 ## Recommended policy
 

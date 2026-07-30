@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T02:50:43.561846+00:00",
+  "generated_at": "2026-07-30T04:41:20.253247+00:00",
   "sources": {
     "atlas_inventory": "https://ndismaps.nrel.colostate.edu/arcgis/rest/services/FishingAtlas/FishingAtlas_Data/MapServer/2/query",
     "atlas_species": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
@@ -13,10 +13,10 @@
     "score": "0-100 transparent heuristic favoring official species, sportfish, public/access indicators, survey links, and family/access attributes; private indicators are penalized."
   },
   "summary": {
-    "generated_at": "2026-07-30T02:50:43.561846+00:00",
+    "generated_at": "2026-07-30T04:41:20.253247+00:00",
     "atlas_feature_records": 1286,
     "atlas_unique_watercodes": 1200,
-    "project_waters": 371,
+    "project_waters": 764,
     "project_unique_watercodes": 345,
     "atlas_watercodes_already_in_project": 343,
     "atlas_only_unique_watercodes": 857,
