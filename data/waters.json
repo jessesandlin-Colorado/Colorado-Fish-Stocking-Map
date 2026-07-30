@@ -1,13 +1,13 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-07-30T02:01:36.161213+00:00",
+  "generated_at": "2026-07-30T02:45:49.750909+00:00",
   "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
   "summary": {
-    "stocking_events": 9529,
+    "stocking_events": 9613,
     "unique_atlas_ids": 76,
     "matched_waters": 1150,
     "unmatched_events": 0,
-    "historical_events": 9529,
+    "historical_events": 9613,
     "new_historical_events": 0,
     "latest_report_date": "2026-07-24",
     "latest_report_events": 23,
@@ -15,10 +15,13 @@
     "waters_with_species": 370,
     "unique_species": 34,
     "current_report_events": 96,
-    "archive_events": 9434,
+    "archive_events": 9948,
+    "archive_events_matched": 9518,
     "archive_unique_atlas_ids": 522,
     "archive_only_waters_added": 295,
     "archive_unresolved_waters": 151,
+    "archive_unmatched_names": 241,
+    "archive_ambiguous_names": 1,
     "archive_earliest_date": "2014-04-22",
     "archive_latest_date": "2026-06-26",
     "stocking_history_waters": 371,
@@ -2338,6 +2341,7 @@
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
         "2026-07-03",
+        "2026-06-12",
         "2025-08-15",
         "2024-08-01",
         "2024-06-18",
@@ -2377,7 +2381,7 @@
         "2015-06-16"
       ],
       "current_event_count": 1,
-      "historical_event_count": 38,
+      "historical_event_count": 39,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -2419,9 +2423,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 37,
+      "archive_event_count": 38,
       "archive_first_date": "2015-06-16",
-      "archive_last_date": "2025-08-15",
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "88369"
     },
@@ -3763,6 +3767,8 @@
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
         "2026-07-03",
+        "2026-06-12",
+        "2026-03-27",
         "2025-11-21",
         "2025-10-24",
         "2024-12-13",
@@ -3798,7 +3804,7 @@
         "2015-05-05"
       ],
       "current_event_count": 1,
-      "historical_event_count": 34,
+      "historical_event_count": 36,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -3845,9 +3851,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 33,
+      "archive_event_count": 35,
       "archive_first_date": "2015-05-05",
-      "archive_last_date": "2025-11-21",
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56420"
     },
@@ -6682,6 +6688,7 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-05-08",
         "2024-08-29",
         "2024-04-26",
         "2023-06-30",
@@ -6703,7 +6710,7 @@
         "2015-05-26"
       ],
       "current_event_count": 1,
-      "historical_event_count": 20,
+      "historical_event_count": 21,
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [
@@ -6736,9 +6743,9 @@
       "atlas_layer": null,
       "atlas_data_source": "reviewed-manual-override",
       "atlas_errors": [],
-      "archive_event_count": 19,
+      "archive_event_count": 20,
       "archive_first_date": "2015-05-26",
-      "archive_last_date": "2024-08-29",
+      "archive_last_date": "2026-05-08",
       "watercode": "70431",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "70431"
@@ -7203,6 +7210,7 @@
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
         "2026-07-03",
+        "2026-06-12",
         "2025-08-15",
         "2024-08-07",
         "2024-08-01",
@@ -7252,7 +7260,7 @@
         "2015-06-16"
       ],
       "current_event_count": 1,
-      "historical_event_count": 48,
+      "historical_event_count": 49,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -7292,9 +7300,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 47,
+      "archive_event_count": 48,
       "archive_first_date": "2015-06-16",
-      "archive_last_date": "2025-08-15",
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91316"
     },
@@ -7904,6 +7912,8 @@
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
         "2026-07-03",
+        "2026-06-12",
+        "2026-05-22",
         "2025-09-19",
         "2025-08-22",
         "2024-06-12",
@@ -7940,7 +7950,7 @@
         "2015-06-30"
       ],
       "current_event_count": 1,
-      "historical_event_count": 35,
+      "historical_event_count": 37,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -7983,9 +7993,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 34,
+      "archive_event_count": 36,
       "archive_first_date": "2015-06-30",
-      "archive_last_date": "2025-09-19",
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "80212",
       "fishery_type": "Coldwater"
@@ -10713,6 +10723,7 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-19",
         "2025-09-12",
         "2024-08-29",
         "2024-06-12",
@@ -10733,7 +10744,7 @@
         "2015-06-16"
       ],
       "current_event_count": 1,
-      "historical_event_count": 19,
+      "historical_event_count": 20,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -10773,9 +10784,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 18,
+      "archive_event_count": 19,
       "archive_first_date": "2015-06-16",
-      "archive_last_date": "2025-09-12",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "65676"
     },
@@ -11499,6 +11510,7 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-04-17",
         "2022-06-17",
         "2022-06-03",
         "2022-05-20",
@@ -11540,7 +11552,7 @@
         "2015-06-23"
       ],
       "current_event_count": 1,
-      "historical_event_count": 40,
+      "historical_event_count": 41,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -11584,9 +11596,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 39,
+      "archive_event_count": 40,
       "archive_first_date": "2015-06-23",
-      "archive_last_date": "2022-06-17",
+      "archive_last_date": "2026-04-17",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82002"
     },
@@ -11922,6 +11934,8 @@
       "stocking_dates": [
         "2026-07-24",
         "2026-07-17",
+        "2026-06-19",
+        "2026-05-01",
         "2025-09-12",
         "2025-08-15",
         "2025-08-01",
@@ -11974,7 +11988,7 @@
         "2015-05-26"
       ],
       "current_event_count": 2,
-      "historical_event_count": 52,
+      "historical_event_count": 54,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -12016,9 +12030,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 50,
+      "archive_event_count": 52,
       "archive_first_date": "2015-05-26",
-      "archive_last_date": "2025-09-12",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81909"
     },
@@ -12239,6 +12253,8 @@
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
         "2026-07-03",
+        "2026-06-12",
+        "2026-04-17",
         "2025-11-28",
         "2025-10-31",
         "2024-12-20",
@@ -12286,7 +12302,7 @@
         "2015-10-20"
       ],
       "current_event_count": 1,
-      "historical_event_count": 46,
+      "historical_event_count": 48,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -12336,9 +12352,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 45,
+      "archive_event_count": 47,
       "archive_first_date": "2015-10-20",
-      "archive_last_date": "2025-11-28",
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "54306",
       "fishery_type": "Coldwater"
@@ -12398,6 +12414,8 @@
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
         "2026-07-03",
+        "2026-06-19",
+        "2026-06-12",
         "2025-11-21",
         "2025-10-24",
         "2024-12-13",
@@ -12438,7 +12456,7 @@
         "2015-10-20"
       ],
       "current_event_count": 1,
-      "historical_event_count": 39,
+      "historical_event_count": 41,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -12485,9 +12503,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 38,
+      "archive_event_count": 40,
       "archive_first_date": "2015-10-20",
-      "archive_last_date": "2025-11-21",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "52580"
     },
@@ -14298,6 +14316,8 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-06-05",
+        "2026-05-15",
         "2024-06-18",
         "2023-07-28",
         "2023-06-09",
@@ -14328,7 +14348,7 @@
         "2015-05-11"
       ],
       "current_event_count": 1,
-      "historical_event_count": 29,
+      "historical_event_count": 31,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -14370,9 +14390,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 28,
+      "archive_event_count": 30,
       "archive_first_date": "2015-05-11",
-      "archive_last_date": "2024-06-18",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "80307"
     },
@@ -15311,6 +15331,9 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-19",
+        "2026-06-05",
+        "2026-05-01",
         "2025-09-05",
         "2025-08-22",
         "2024-08-12",
@@ -15365,7 +15388,7 @@
         "2015-05-26"
       ],
       "current_event_count": 1,
-      "historical_event_count": 53,
+      "historical_event_count": 56,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -15413,9 +15436,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 52,
+      "archive_event_count": 55,
       "archive_first_date": "2015-05-26",
-      "archive_last_date": "2025-09-05",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81733",
       "fishery_type": "Warmwater"
@@ -16375,6 +16398,7 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-05",
         "2024-08-21",
         "2024-06-12",
         "2024-05-15",
@@ -16405,7 +16429,7 @@
         "2014-04-22"
       ],
       "current_event_count": 1,
-      "historical_event_count": 29,
+      "historical_event_count": 30,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -16451,9 +16475,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 28,
+      "archive_event_count": 29,
       "archive_first_date": "2014-04-22",
-      "archive_last_date": "2024-08-21",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81745"
     },
@@ -20902,6 +20926,8 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-06-05",
+        "2026-04-17",
         "2024-10-18",
         "2024-08-13",
         "2024-08-07",
@@ -20948,7 +20974,7 @@
         "2015-05-05"
       ],
       "current_event_count": 1,
-      "historical_event_count": 45,
+      "historical_event_count": 47,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -20991,9 +21017,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 44,
+      "archive_event_count": 46,
       "archive_first_date": "2015-05-05",
-      "archive_last_date": "2024-10-18",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "54825"
     },
@@ -21168,6 +21194,9 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-26",
+        "2026-06-05",
+        "2026-05-15",
         "2025-09-05",
         "2025-08-22",
         "2024-08-14",
@@ -21203,7 +21232,7 @@
         "2015-05-11"
       ],
       "current_event_count": 1,
-      "historical_event_count": 34,
+      "historical_event_count": 37,
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [
@@ -21237,9 +21266,9 @@
       "atlas_layer": null,
       "atlas_data_source": "reviewed-manual-override",
       "atlas_errors": [],
-      "archive_event_count": 33,
+      "archive_event_count": 36,
       "archive_first_date": "2015-05-11",
-      "archive_last_date": "2025-09-05",
+      "archive_last_date": "2026-06-26",
       "watercode": "81531",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81531"
@@ -23537,6 +23566,8 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-06-19",
+        "2026-04-24",
         "2025-10-17",
         "2025-08-15",
         "2024-09-17",
@@ -23596,7 +23627,7 @@
         "2015-04-28"
       ],
       "current_event_count": 2,
-      "historical_event_count": 58,
+      "historical_event_count": 60,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -23638,9 +23669,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 57,
+      "archive_event_count": 59,
       "archive_first_date": "2015-04-28",
-      "archive_last_date": "2025-10-17",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56970"
     },
@@ -24265,6 +24296,7 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-06-05",
         "2022-07-15",
         "2022-02-08",
         "2022-01-24",
@@ -24304,7 +24336,7 @@
         "2015-04-28"
       ],
       "current_event_count": 1,
-      "historical_event_count": 38,
+      "historical_event_count": 39,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -24349,9 +24381,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 37,
+      "archive_event_count": 38,
       "archive_first_date": "2015-04-28",
-      "archive_last_date": "2022-07-15",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "66969"
     },
@@ -25090,6 +25122,8 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-05-29",
+        "2026-05-01",
         "2025-09-05",
         "2025-08-29",
         "2024-08-27",
@@ -25118,7 +25152,7 @@
         "2014-04-22"
       ],
       "current_event_count": 1,
-      "historical_event_count": 27,
+      "historical_event_count": 29,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -25159,9 +25193,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 26,
+      "archive_event_count": 28,
       "archive_first_date": "2014-04-22",
-      "archive_last_date": "2025-09-05",
+      "archive_last_date": "2026-05-29",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82711"
     },
@@ -25420,6 +25454,8 @@
       "stocking_dates": [
         "2026-07-17",
         "2026-07-03",
+        "2026-06-19",
+        "2026-06-05",
         "2024-06-18",
         "2024-05-23",
         "2024-05-15",
@@ -25448,7 +25484,7 @@
         "2015-05-19"
       ],
       "current_event_count": 2,
-      "historical_event_count": 28,
+      "historical_event_count": 30,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -25488,9 +25524,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 26,
+      "archive_event_count": 28,
       "archive_first_date": "2015-05-19",
-      "archive_last_date": "2024-06-18",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "90287"
     },
@@ -25839,6 +25875,8 @@
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
         "2026-07-10",
+        "2026-05-29",
+        "2026-05-22",
         "2022-06-17",
         "2021-07-28",
         "2021-07-15",
@@ -25858,7 +25896,7 @@
         "2015-06-09"
       ],
       "current_event_count": 1,
-      "historical_event_count": 18,
+      "historical_event_count": 20,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -25900,9 +25938,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 17,
+      "archive_event_count": 19,
       "archive_first_date": "2015-06-09",
-      "archive_last_date": "2022-06-17",
+      "archive_last_date": "2026-05-29",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "67151"
     },
@@ -32217,6 +32255,7 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-19",
         "2025-08-22",
         "2024-08-08",
         "2024-06-11",
@@ -32265,7 +32304,7 @@
         "2015-05-26"
       ],
       "current_event_count": 1,
-      "historical_event_count": 47,
+      "historical_event_count": 48,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -32308,9 +32347,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 46,
+      "archive_event_count": 47,
       "archive_first_date": "2015-05-26",
-      "archive_last_date": "2025-08-22",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79916"
     },
@@ -34341,6 +34380,7 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-19",
         "2025-09-26",
         "2025-09-12",
         "2024-08-19",
@@ -34359,7 +34399,7 @@
         "2015-06-30"
       ],
       "current_event_count": 1,
-      "historical_event_count": 17,
+      "historical_event_count": 18,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -34399,9 +34439,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 16,
+      "archive_event_count": 17,
       "archive_first_date": "2015-06-30",
-      "archive_last_date": "2025-09-26",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "55598"
     },
@@ -34539,6 +34579,7 @@
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
         "2026-07-10",
+        "2026-05-29",
         "2024-09-03",
         "2023-07-28",
         "2023-06-30",
@@ -34558,7 +34599,7 @@
         "2015-06-30"
       ],
       "current_event_count": 1,
-      "historical_event_count": 18,
+      "historical_event_count": 19,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -34600,9 +34641,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 17,
+      "archive_event_count": 18,
       "archive_first_date": "2015-06-30",
-      "archive_last_date": "2024-09-03",
+      "archive_last_date": "2026-05-29",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "68076"
     },
@@ -35316,6 +35357,7 @@
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
         "2026-07-10",
+        "2026-05-29",
         "2025-09-12",
         "2024-09-03",
         "2024-06-17",
@@ -35341,7 +35383,7 @@
         "2015-06-30"
       ],
       "current_event_count": 1,
-      "historical_event_count": 24,
+      "historical_event_count": 25,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -35383,9 +35425,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 23,
+      "archive_event_count": 24,
       "archive_first_date": "2015-06-30",
-      "archive_last_date": "2025-09-12",
+      "archive_last_date": "2026-05-29",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "68266"
     },
@@ -37448,6 +37490,7 @@
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
         "2026-07-03",
+        "2026-06-05",
         "2024-08-09",
         "2024-06-21",
         "2023-08-11",
@@ -37473,7 +37516,7 @@
         "2015-06-23"
       ],
       "current_event_count": 1,
-      "historical_event_count": 24,
+      "historical_event_count": 25,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -37513,9 +37556,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 23,
+      "archive_event_count": 24,
       "archive_first_date": "2015-06-23",
-      "archive_last_date": "2024-08-09",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91291"
     },
@@ -40104,6 +40147,8 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-05",
+        "2026-05-08",
         "2025-09-12",
         "2024-08-29",
         "2024-06-14",
@@ -40134,7 +40179,7 @@
         "2015-05-26"
       ],
       "current_event_count": 1,
-      "historical_event_count": 29,
+      "historical_event_count": 31,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -40175,9 +40220,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 28,
+      "archive_event_count": 30,
       "archive_first_date": "2015-05-26",
-      "archive_last_date": "2025-09-12",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "72657"
     },
@@ -40776,6 +40821,10 @@
       "stocking_dates": [
         "2026-07-17",
         "2026-07-03",
+        "2026-06-19",
+        "2026-06-05",
+        "2026-05-29",
+        "2026-05-22",
         "2025-08-08",
         "2024-06-18",
         "2024-05-23",
@@ -40802,7 +40851,7 @@
         "2015-05-19"
       ],
       "current_event_count": 2,
-      "historical_event_count": 26,
+      "historical_event_count": 30,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -40842,9 +40891,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 24,
+      "archive_event_count": 28,
       "archive_first_date": "2015-05-19",
-      "archive_last_date": "2025-08-08",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "96986"
     },
@@ -42564,6 +42613,7 @@
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
         "2026-07-10",
+        "2026-06-05",
         "2025-08-01",
         "2022-06-10",
         "2021-06-11",
@@ -42574,7 +42624,7 @@
         "2018-06-15"
       ],
       "current_event_count": 1,
-      "historical_event_count": 9,
+      "historical_event_count": 10,
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [
@@ -42607,9 +42657,9 @@
       "atlas_layer": null,
       "atlas_data_source": "reviewed-manual-override",
       "atlas_errors": [],
-      "archive_event_count": 8,
+      "archive_event_count": 9,
       "archive_first_date": "2018-06-15",
-      "archive_last_date": "2025-08-01",
+      "archive_last_date": "2026-06-05",
       "watercode": "91746",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91746"
@@ -43212,6 +43262,8 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-06-26",
+        "2026-05-15",
         "2024-05-24",
         "2023-08-04",
         "2023-07-07",
@@ -43235,7 +43287,7 @@
         "2015-06-09"
       ],
       "current_event_count": 1,
-      "historical_event_count": 22,
+      "historical_event_count": 24,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -43275,9 +43327,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 21,
+      "archive_event_count": 23,
       "archive_first_date": "2015-06-09",
-      "archive_last_date": "2024-05-24",
+      "archive_last_date": "2026-06-26",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91796"
     },
@@ -44180,6 +44232,7 @@
       "stocking_dates": [
         "2026-07-17",
         "2026-07-03",
+        "2026-06-19",
         "2025-08-01",
         "2023-06-23",
         "2022-07-29",
@@ -44198,7 +44251,7 @@
         "2015-06-30"
       ],
       "current_event_count": 2,
-      "historical_event_count": 18,
+      "historical_event_count": 19,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -44240,9 +44293,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 16,
+      "archive_event_count": 17,
       "archive_first_date": "2015-06-30",
-      "archive_last_date": "2025-08-01",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "42262"
     },
@@ -44713,6 +44766,7 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-06-26",
         "2025-09-12",
         "2025-09-05",
         "2025-08-15",
@@ -44778,7 +44832,7 @@
         "2015-04-13"
       ],
       "current_event_count": 1,
-      "historical_event_count": 64,
+      "historical_event_count": 65,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -44821,9 +44875,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 63,
+      "archive_event_count": 64,
       "archive_first_date": "2015-04-13",
-      "archive_last_date": "2025-09-12",
+      "archive_last_date": "2026-06-26",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79942"
     },
@@ -45869,11 +45923,13 @@
         "2026-07-24",
         "2026-07-17",
         "2026-07-10",
+        "2026-06-26",
+        "2026-06-19",
         "2025-10-10",
         "2025-08-08"
       ],
       "current_event_count": 3,
-      "historical_event_count": 5,
+      "historical_event_count": 7,
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [
@@ -45901,9 +45957,9 @@
       "atlas_layer": null,
       "atlas_data_source": "reviewed-manual-override",
       "atlas_errors": [],
-      "archive_event_count": 2,
+      "archive_event_count": 4,
       "archive_first_date": "2025-08-08",
-      "archive_last_date": "2025-10-10",
+      "archive_last_date": "2026-06-26",
       "watercode": "89929",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "89929"
@@ -46686,6 +46742,8 @@
       "stocking_dates": [
         "2026-07-17",
         "2026-07-03",
+        "2026-06-19",
+        "2026-06-05",
         "2025-08-08",
         "2024-06-18",
         "2024-05-23",
@@ -46709,7 +46767,7 @@
         "2015-05-19"
       ],
       "current_event_count": 2,
-      "historical_event_count": 23,
+      "historical_event_count": 25,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -46749,9 +46807,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 21,
+      "archive_event_count": 23,
       "archive_first_date": "2015-05-19",
-      "archive_last_date": "2025-08-08",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "90285"
     },
@@ -47101,6 +47159,9 @@
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
         "2026-07-10",
+        "2026-06-19",
+        "2026-05-22",
+        "2026-04-10",
         "2024-05-29",
         "2024-04-19",
         "2023-07-07",
@@ -47121,7 +47182,7 @@
         "2017-04-11"
       ],
       "current_event_count": 1,
-      "historical_event_count": 19,
+      "historical_event_count": 22,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -47162,9 +47223,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 18,
+      "archive_event_count": 21,
       "archive_first_date": "2017-04-11",
-      "archive_last_date": "2024-05-29",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "93714"
     },
@@ -51324,6 +51385,8 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-05",
+        "2026-04-24",
         "2025-09-26",
         "2025-08-29",
         "2025-08-01",
@@ -51374,7 +51437,7 @@
         "2015-06-23"
       ],
       "current_event_count": 1,
-      "historical_event_count": 49,
+      "historical_event_count": 51,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -51417,9 +51480,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 48,
+      "archive_event_count": 50,
       "archive_first_date": "2015-06-23",
-      "archive_last_date": "2025-09-26",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79992"
     },
@@ -51801,6 +51864,8 @@
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
         "2026-07-10",
+        "2026-06-12",
+        "2026-05-08",
         "2025-08-29",
         "2025-08-08",
         "2024-05-21",
@@ -51828,7 +51893,7 @@
         "2015-05-11"
       ],
       "current_event_count": 1,
-      "historical_event_count": 26,
+      "historical_event_count": 28,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -51868,9 +51933,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 25,
+      "archive_event_count": 27,
       "archive_first_date": "2015-05-11",
-      "archive_last_date": "2025-08-29",
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "57807"
     },
@@ -53276,6 +53341,8 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-06-26",
+        "2026-05-22",
         "2024-06-21",
         "2023-08-04",
         "2023-06-23",
@@ -53298,7 +53365,7 @@
         "2015-06-09"
       ],
       "current_event_count": 1,
-      "historical_event_count": 21,
+      "historical_event_count": 23,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -53340,9 +53407,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 20,
+      "archive_event_count": 22,
       "archive_first_date": "2015-06-09",
-      "archive_last_date": "2024-06-21",
+      "archive_last_date": "2026-06-26",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "92370"
     },
@@ -54937,6 +55004,13 @@
         "2026-07-17",
         "2026-07-10",
         "2026-07-03",
+        "2026-06-26",
+        "2026-05-29",
+        "2026-05-22",
+        "2026-05-15",
+        "2026-04-24",
+        "2026-04-17",
+        "2026-04-10",
         "2025-11-07",
         "2025-08-22",
         "2025-08-15",
@@ -55042,7 +55116,7 @@
         "2015-05-19"
       ],
       "current_event_count": 4,
-      "historical_event_count": 107,
+      "historical_event_count": 114,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -55086,9 +55160,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 103,
+      "archive_event_count": 110,
       "archive_first_date": "2015-05-19",
-      "archive_last_date": "2025-11-07",
+      "archive_last_date": "2026-06-26",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "92510"
     },
@@ -56000,6 +56074,7 @@
       "latest_report_date": "2026-07-03",
       "stocking_dates": [
         "2026-07-03",
+        "2026-06-05",
         "2024-06-21",
         "2023-07-21",
         "2023-06-23",
@@ -56019,7 +56094,7 @@
         "2015-06-23"
       ],
       "current_event_count": 1,
-      "historical_event_count": 18,
+      "historical_event_count": 19,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -56059,9 +56134,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 17,
+      "archive_event_count": 18,
       "archive_first_date": "2015-06-23",
-      "archive_last_date": "2024-06-21",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "96722"
     },
@@ -56620,6 +56695,8 @@
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
         "2026-07-10",
+        "2026-06-12",
+        "2026-04-03",
         "2025-12-05",
         "2025-11-21",
         "2025-10-17",
@@ -56673,7 +56750,7 @@
         "2015-05-11"
       ],
       "current_event_count": 1,
-      "historical_event_count": 52,
+      "historical_event_count": 54,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -56724,9 +56801,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 51,
+      "archive_event_count": 53,
       "archive_first_date": "2015-05-11",
-      "archive_last_date": "2025-12-05",
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81911"
     },
@@ -57069,6 +57146,7 @@
       "stocking_dates": [
         "2026-07-24",
         "2026-07-10",
+        "2026-06-26",
         "2016-08-09",
         "2016-07-19",
         "2016-06-28",
@@ -57079,7 +57157,7 @@
         "2015-06-16"
       ],
       "current_event_count": 2,
-      "historical_event_count": 10,
+      "historical_event_count": 11,
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [
@@ -57106,9 +57184,9 @@
       "atlas_layer": null,
       "atlas_data_source": "reviewed-manual-override",
       "atlas_errors": [],
-      "archive_event_count": 8,
+      "archive_event_count": 9,
       "archive_first_date": "2015-06-16",
-      "archive_last_date": "2016-08-09",
+      "archive_last_date": "2026-06-26",
       "watercode": "92724",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "92724"
@@ -57122,6 +57200,7 @@
       "latest_report_date": "2026-07-10",
       "stocking_dates": [
         "2026-07-10",
+        "2026-06-26",
         "2025-08-01",
         "2023-08-11",
         "2023-07-28",
@@ -57148,7 +57227,7 @@
         "2015-06-23"
       ],
       "current_event_count": 1,
-      "historical_event_count": 25,
+      "historical_event_count": 26,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -57188,9 +57267,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 24,
+      "archive_event_count": 25,
       "archive_first_date": "2015-06-23",
-      "archive_last_date": "2025-08-01",
+      "archive_last_date": "2026-06-26",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "92736"
     },
@@ -57290,6 +57369,9 @@
       "latest_report_date": "2026-07-24",
       "stocking_dates": [
         "2026-07-24",
+        "2026-06-19",
+        "2026-05-15",
+        "2026-04-24",
         "2025-08-29",
         "2025-08-15",
         "2025-08-01",
@@ -57325,7 +57407,7 @@
         "2015-06-23"
       ],
       "current_event_count": 1,
-      "historical_event_count": 34,
+      "historical_event_count": 37,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -57368,9 +57450,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 33,
+      "archive_event_count": 36,
       "archive_first_date": "2015-06-23",
-      "archive_last_date": "2025-08-29",
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "80010"
     },
@@ -57505,6 +57587,7 @@
       "stocking_dates": [
         "2026-07-24",
         "2026-07-17",
+        "2026-04-10",
         "2025-08-29",
         "2025-08-01",
         "2024-08-20",
@@ -57531,7 +57614,7 @@
         "2016-09-27"
       ],
       "current_event_count": 2,
-      "historical_event_count": 26,
+      "historical_event_count": 27,
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [
@@ -57569,9 +57652,9 @@
       "atlas_layer": null,
       "atlas_data_source": "reviewed-manual-override",
       "atlas_errors": [],
-      "archive_event_count": 24,
+      "archive_event_count": 25,
       "archive_first_date": "2016-09-27",
-      "archive_last_date": "2025-08-29",
+      "archive_last_date": "2026-04-10",
       "watercode": "80036",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "80036"
@@ -61214,6 +61297,8 @@
       "latest_report_date": "2026-07-17",
       "stocking_dates": [
         "2026-07-17",
+        "2026-06-05",
+        "2026-05-08",
         "2025-09-12",
         "2024-08-29",
         "2024-06-14",
@@ -61250,7 +61335,7 @@
         "2015-05-26"
       ],
       "current_event_count": 1,
-      "historical_event_count": 35,
+      "historical_event_count": 37,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -61291,9 +61376,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 34,
+      "archive_event_count": 36,
       "archive_first_date": "2015-05-26",
-      "archive_last_date": "2025-09-12",
+      "archive_last_date": "2026-06-05",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "70982"
     },
@@ -61501,6 +61586,7 @@
       "stocking_dates": [
         "2026-07-17",
         "2026-07-10",
+        "2026-05-08",
         "2025-11-26",
         "2025-11-21",
         "2023-11-07",
@@ -61527,7 +61613,7 @@
         "2015-03-24"
       ],
       "current_event_count": 2,
-      "historical_event_count": 26,
+      "historical_event_count": 27,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -61571,9 +61657,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 24,
+      "archive_event_count": 25,
       "archive_first_date": "2015-03-24",
-      "archive_last_date": "2025-11-26",
+      "archive_last_date": "2026-05-08",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "70989"
     },
@@ -61674,6 +61760,7 @@
       "stocking_dates": [
         "2026-07-24",
         "2026-07-17",
+        "2026-05-01",
         "2025-08-15",
         "2025-08-01",
         "2024-08-09",
@@ -61729,7 +61816,7 @@
         "2015-05-26"
       ],
       "current_event_count": 2,
-      "historical_event_count": 55,
+      "historical_event_count": 56,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -61771,9 +61858,9 @@
       "atlas_layer": 59,
       "atlas_data_source": "network",
       "atlas_errors": [],
-      "archive_event_count": 53,
+      "archive_event_count": 54,
       "archive_first_date": "2015-05-26",
-      "archive_last_date": "2025-08-15",
+      "archive_last_date": "2026-05-01",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "83128"
     },
