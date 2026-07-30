@@ -34,6 +34,17 @@ def event_name(event: dict[str, Any]) -> str:
     return clean(event.get("water_name") or event.get("name"))
 
 
+def water_names(water: dict[str, Any]) -> set[str]:
+    """Return all usable normalized names for an Atlas-enriched water."""
+    names = {
+        normalized_name(water.get("name") or ""),
+        normalized_name(water.get("canonical_name") or ""),
+        normalized_name(water.get("atlas_name") or ""),
+        clean(water.get("normalized_name") or ""),
+    }
+    return {name for name in names if name}
+
+
 def merge_archive(
     waters_payload: dict[str, Any],
     archive_payload: dict[str, Any],
@@ -41,18 +52,54 @@ def merge_archive(
     overrides: dict[str, Any],
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     archive_events = [
-        event for event in archive_payload.get("events", [])
-        if event.get("atlas_id") is not None and event.get("stocking_date") and event_name(event)
+        event
+        for event in archive_payload.get("events", [])
+        if event.get("stocking_date") and event_name(event)
     ]
-    by_atlas: dict[int, list[dict[str, Any]]] = defaultdict(list)
-    for event in archive_events:
-        by_atlas[int(event["atlas_id"])].append(event)
 
     existing = {
         int(water["atlas_id"]): dict(water)
         for water in waters_payload.get("waters", [])
         if water.get("atlas_id") is not None
     }
+
+    # The provenance database intentionally stores canonical stocking facts only;
+    # it does not have an atlas_id column.  Older generated snapshots sometimes
+    # carried Atlas IDs, but a fresh export does not.  Build an exact normalized
+    # name index so those events can still be merged into the live Atlas waters.
+    name_to_ids: dict[str, set[int]] = defaultdict(set)
+    for uid, water in existing.items():
+        for name in water_names(water):
+            name_to_ids[name].add(uid)
+
+    by_atlas: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    unmatched_name_events: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    ambiguous_name_events: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    matched_by_id = 0
+    matched_by_name = 0
+
+    for event in archive_events:
+        raw_uid = event.get("atlas_id")
+        if raw_uid is not None:
+            try:
+                uid = int(raw_uid)
+            except (TypeError, ValueError):
+                uid = None
+            if uid is not None:
+                by_atlas[uid].append(event)
+                matched_by_id += 1
+                continue
+
+        key = normalized_name(event_name(event))
+        candidates = name_to_ids.get(key, set())
+        if len(candidates) == 1:
+            uid = next(iter(candidates))
+            by_atlas[uid].append(event)
+            matched_by_name += 1
+        elif len(candidates) > 1:
+            ambiguous_name_events[key].append(event)
+        else:
+            unmatched_name_events[key].append(event)
 
     enriched_new = 0
     unresolved = []
@@ -73,6 +120,8 @@ def merge_archive(
             existing[uid] = water
             continue
 
+        # This path remains available for any legacy events that still carry a
+        # valid Atlas ID but refer to a water absent from the current report.
         info = query_atlas(client, uid, names, overrides.get(str(uid), {}))
         if not info or info.get("lat") is None or info.get("lng") is None:
             unresolved.append({"atlas_id": uid, "names": names, "event_count": len(events)})
@@ -110,10 +159,11 @@ def merge_archive(
     live_summary = dict(waters_payload.get("summary") or {})
     archive_summary = dict(archive_payload.get("summary") or {})
     live_rows = int(live_summary.get("stocking_events") or 0)
-    archive_rows = len(archive_events)
+    matched_archive_events = sum(len(events) for events in by_atlas.values())
     combined_dates = {
-        (event.get("atlas_id"), event.get("stocking_date"), event_name(event).casefold())
-        for event in archive_events
+        (uid, event.get("stocking_date"), event_name(event).casefold())
+        for uid, events in by_atlas.items()
+        for event in events
     }
     for water in waters_payload.get("waters", []):
         for stocking_date in water.get("stocking_dates") or []:
@@ -123,12 +173,15 @@ def merge_archive(
         **live_summary,
         "stocking_events": len(combined_dates),
         "current_report_events": live_rows,
-        "archive_events": archive_rows,
+        "archive_events": len(archive_events),
+        "archive_events_matched": matched_archive_events,
         "historical_events": len(combined_dates),
         "matched_waters": len(waters),
         "archive_unique_atlas_ids": len(by_atlas),
         "archive_only_waters_added": enriched_new,
         "archive_unresolved_waters": len(unresolved),
+        "archive_unmatched_names": len(unmatched_name_events),
+        "archive_ambiguous_names": len(ambiguous_name_events),
         "archive_earliest_date": archive_summary.get("earliest_date"),
         "archive_latest_date": archive_summary.get("latest_date"),
     }
@@ -140,11 +193,31 @@ def merge_archive(
         "waters": waters,
     }
     report = {
-        "archive_events_read": archive_rows,
+        "archive_events_read": len(archive_events),
+        "archive_events_matched": matched_archive_events,
+        "archive_events_matched_by_atlas_id": matched_by_id,
+        "archive_events_matched_by_normalized_name": matched_by_name,
         "archive_unique_atlas_ids": len(by_atlas),
         "existing_live_waters": len(waters_payload.get("waters", [])),
         "archive_only_waters_added": enriched_new,
         "combined_waters": len(waters),
+        "unmatched_names": [
+            {
+                "normalized_name": name,
+                "sample_name": event_name(events[0]),
+                "event_count": len(events),
+            }
+            for name, events in sorted(unmatched_name_events.items())
+        ],
+        "ambiguous_names": [
+            {
+                "normalized_name": name,
+                "sample_name": event_name(events[0]),
+                "event_count": len(events),
+                "candidate_atlas_ids": sorted(name_to_ids.get(name, set())),
+            }
+            for name, events in sorted(ambiguous_name_events.items())
+        ],
         "unresolved": unresolved,
     }
     return payload, report
@@ -171,9 +244,9 @@ def main() -> int:
     merged, report = merge_archive(waters_payload, archive_payload, client, overrides)
 
     if merged["summary"].get("archive_events", 0) < 500:
-        raise RuntimeError("Archive merge produced fewer than 500 historical events")
-    if merged["summary"].get("matched_waters", 0) <= len(waters_payload.get("waters", [])):
-        raise RuntimeError("Archive merge did not add any historical-only waters")
+        raise RuntimeError("Archive merge read fewer than 500 historical events")
+    if merged["summary"].get("archive_events_matched", 0) < 500:
+        raise RuntimeError("Archive merge matched fewer than 500 historical events to Atlas waters")
 
     write_json(waters_path, merged)
     write_json(args.data_dir / "archive-merge-report.json", report)
