@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T04:47:51.318088+00:00",
+  "generated_at": "2026-07-30T18:02:27.209941+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
@@ -122,6 +122,14 @@
       ]
     },
     {
+      "atlas_id": 771,
+      "watercode": "91746",
+      "name": "Pitkin Kid's Pond",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 759,
       "watercode": "79891",
       "name": "North Fork Reservoir",
@@ -137,6 +145,18 @@
       "name": "Montgomery Reservoir",
       "species": [
         "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 106,
+      "watercode": "92130",
+      "name": "Lake San Cristobal",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Lake",
         "Trout: Rainbow"
       ]
     },
@@ -539,14 +559,6 @@
       ]
     },
     {
-      "atlas_id": 771,
-      "watercode": "91746",
-      "name": "Pitkin Kids Pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 1730,
       "watercode": "69193",
       "name": "Piney Lake",
@@ -658,18 +670,6 @@
       "watercode": "91291",
       "name": "Mirror Lake",
       "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 106,
-      "watercode": "92130",
-      "name": "Lake San Cristobal",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Lake",
         "Trout: Rainbow"
       ]
     },

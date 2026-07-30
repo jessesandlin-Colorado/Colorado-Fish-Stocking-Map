@@ -186,6 +186,22 @@
     "matched_layer": 59
   },
   {
+    "event_id": "atlas-771-2026-07-24",
+    "name": "Pitkin Kid's Pond",
+    "normalized_name": "pitkin kid s pond",
+    "report_date": "2026-07-24",
+    "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
+    "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=771",
+    "atlas_id": 771,
+    "first_observed": "2026-07-30",
+    "last_observed": "2026-07-30",
+    "match_status": "matched",
+    "match_method": "manual-override",
+    "match_confidence": 1.0,
+    "watercode": null,
+    "matched_layer": null
+  },
+  {
     "event_id": "atlas-759-2026-07-24",
     "name": "North Fork Reservoir",
     "normalized_name": "north fork reservoir",
@@ -217,6 +233,22 @@
     "match_method": "atlas-id",
     "match_confidence": 1.0,
     "watercode": "79877",
+    "matched_layer": 59
+  },
+  {
+    "event_id": "atlas-106-2026-07-24",
+    "name": "Lake San Cristobal",
+    "normalized_name": "lake san cristobal",
+    "report_date": "2026-07-24",
+    "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
+    "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=106",
+    "atlas_id": 106,
+    "first_observed": "2026-07-30",
+    "last_observed": "2026-07-30",
+    "match_status": "matched",
+    "match_method": "atlas-id",
+    "match_confidence": 1.0,
+    "watercode": "92130",
     "matched_layer": 59
   },
   {
