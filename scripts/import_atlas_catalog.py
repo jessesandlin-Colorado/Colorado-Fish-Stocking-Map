@@ -24,6 +24,11 @@ def norm(value: Any) -> str:
     return re.sub(r"[^a-z0-9]+", " ", str(value or "").lower()).strip()
 
 
+def name_signature(value: Any) -> tuple[str, ...]:
+    """Treat harmless word-order changes as the same candidate identity."""
+    return tuple(sorted(norm(value).split()))
+
+
 def clean_name(record: dict[str, Any]) -> str:
     return str(record.get("display_name") or record.get("alternate_name") or record.get("name") or "").strip()
 
@@ -85,6 +90,127 @@ def merge_missing(target: dict[str, Any], source: dict[str, Any]) -> None:
             target["match_method"] = "atlas-catalog-exact-name"
 
 
+def merge_stocking_history(target: dict[str, Any], source: dict[str, Any]) -> None:
+    """Merge an unresolved alias into its unique WATERCODE-backed water."""
+    events_by_id: dict[str, dict[str, Any]] = {}
+    anonymous_events: list[dict[str, Any]] = []
+    for event in [*(target.get("stocking_events") or []), *(source.get("stocking_events") or [])]:
+        event_id = str(event.get("event_id") or "").strip()
+        if event_id:
+            events_by_id[event_id] = event
+        elif event not in anonymous_events:
+            anonymous_events.append(event)
+    events = [*events_by_id.values(), *anonymous_events]
+    events.sort(
+        key=lambda event: (
+            event.get("stocking_date") or "",
+            event.get("species") or "",
+            event.get("event_id") or "",
+        ),
+        reverse=True,
+    )
+
+    dates = {
+        str(date)
+        for date in [
+            *(target.get("stocking_dates") or []),
+            *(source.get("stocking_dates") or []),
+            *(event.get("stocking_date") for event in events),
+        ]
+        if date
+    }
+    target["stocking_events"] = events
+    target["stocking_dates"] = sorted(dates, reverse=True)
+    target["latest_report_date"] = max(dates) if dates else None
+    target["historical_event_count"] = len(events)
+    target["archive_event_count"] = sum(
+        event.get("source_kind") == "archive" for event in events
+    )
+    target["current_event_count"] = int(target.get("current_event_count") or 0) + int(
+        source.get("current_event_count") or 0
+    )
+    if dates:
+        target["archive_first_date"] = min(dates)
+        target["archive_last_date"] = max(dates)
+    target["species"] = sorted(
+        set(target.get("species") or []) | set(source.get("species") or []),
+        key=str.casefold,
+    )
+    aliases = {
+        str(value).strip()
+        for value in [
+            *(target.get("stocking_name_aliases") or []),
+            target.get("name"),
+            source.get("name"),
+            source.get("canonical_name"),
+        ]
+        if str(value or "").strip()
+    }
+    target["stocking_name_aliases"] = sorted(aliases, key=str.casefold)
+
+
+def consolidate_watercode_aliases(
+    waters: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], int]:
+    """Collapse unresolved aliases only when one mapped WATERCODE target exists."""
+    mapped_by_signature: dict[tuple[str, ...], list[dict[str, Any]]] = {}
+    for water in waters:
+        if (
+            water.get("watercode") not in (None, "")
+            and water.get("lat") not in (None, "")
+            and water.get("lng") not in (None, "")
+        ):
+            for value in (
+                water.get("name"),
+                water.get("canonical_name"),
+                water.get("atlas_name"),
+                *(water.get("stocking_name_aliases") or []),
+            ):
+                signature = name_signature(value)
+                if signature:
+                    mapped_by_signature.setdefault(signature, []).append(water)
+
+    removed_ids: set[int] = set()
+    consolidated = 0
+    for water in waters:
+        if water.get("stocking_status") != "location-not-matched":
+            continue
+        signature = name_signature(water.get("name"))
+        candidates = {
+            id(candidate): candidate
+            for candidate in mapped_by_signature.get(signature, [])
+            if candidate is not water
+        }
+        source_regions = {
+            norm(event.get("region"))
+            for event in water.get("stocking_events") or []
+            if norm(event.get("region"))
+        }
+        if source_regions:
+            candidates = {
+                identity: candidate
+                for identity, candidate in candidates.items()
+                if not (
+                    (
+                        target_regions := {
+                            norm(event.get("region"))
+                            for event in candidate.get("stocking_events") or []
+                            if norm(event.get("region"))
+                        }
+                    )
+                    and source_regions.isdisjoint(target_regions)
+                )
+            }
+        if len(candidates) != 1:
+            continue
+        target = next(iter(candidates.values()))
+        merge_stocking_history(target, water)
+        removed_ids.add(id(water))
+        consolidated += 1
+
+    return [water for water in waters if id(water) not in removed_ids], consolidated
+
+
 def make_water(record: dict[str, Any]) -> dict[str, Any]:
     name = clean_name(record)
     watercode = str(record.get("watercode") or "").strip()
@@ -142,6 +268,7 @@ def main() -> None:
 
     imported = 0
     aliases_merged = 0
+    watercode_aliases_consolidated = 0
     excluded_private = 0
     held = 0
 
@@ -162,6 +289,7 @@ def main() -> None:
         else:
             held += 1
 
+    waters, watercode_aliases_consolidated = consolidate_watercode_aliases(waters)
     waters.sort(key=lambda w: str(w.get("canonical_name") or w.get("name") or "").casefold())
     project["waters"] = waters
     summary = project.setdefault("summary", {})
@@ -175,6 +303,7 @@ def main() -> None:
     )
     summary["atlas_catalog_only_waters"] = sum(w.get("stocking_status") == "no-project-stocking-record-found" for w in waters)
     summary["atlas_aliases_merged"] = aliases_merged
+    summary["watercode_aliases_consolidated"] = watercode_aliases_consolidated
     summary["atlas_private_records_excluded"] = excluded_private
     summary["atlas_records_held"] = held
     project["schema_version"] = max(int(project.get("schema_version") or 0), 6)
@@ -185,6 +314,7 @@ def main() -> None:
         "stocking_history_waters": summary["stocking_history_waters"],
         "atlas_catalog_only_imported": imported,
         "likely_aliases_merged": aliases_merged,
+        "watercode_aliases_consolidated": watercode_aliases_consolidated,
         "private_records_excluded": excluded_private,
         "other_records_held": held,
     }
