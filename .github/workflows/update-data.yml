@@ -8,6 +8,9 @@ on:
       - "scripts/compare_atlas_inventory.py"
       - "scripts/import_atlas_catalog.py"
       - "scripts/import_2026_archive.py"
+      - "scripts/merge_archive_waters.py"
+      - "scripts/stocking_database.py"
+      - "scripts/update_data.py"
       - ".github/workflows/update-data.yml"
   schedule:
     # Saturday morning after CPW's typical Friday report update.
