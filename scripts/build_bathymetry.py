@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert the Reclamation Blue Mesa survey raster to compact web contours.
+"""Convert a Reclamation reservoir survey raster to compact web contours.
 
 Example:
     python scripts/build_bathymetry.py source.tif \
@@ -20,17 +20,22 @@ from rasterio.enums import Resampling
 from shapely.geometry import LineString, mapping
 from shapely.ops import transform
 
-FULL_POOL_FT = 7519
-DEPTHS_FT = range(25, 326, 25)
-SOURCE_URL = (
+DEFAULT_SOURCE_URL = (
     "https://www.usbr.gov/tsc/techreferences/reservoir/"
     "BlueMesaReservoir2019GISSurface.tif.zip"
 )
 
 
-def build_features(source: Path) -> list[dict]:
+def build_features(
+    source: Path,
+    reference_elevation: float,
+    minimum_elevation: float,
+    interval: int,
+    maximum_depth: int,
+    downsample: int,
+) -> list[dict]:
     with rasterio.open(source) as raster:
-        factor = 6
+        factor = downsample
         height, width = raster.height // factor, raster.width // factor
         elevations = raster.read(
             1,
@@ -43,7 +48,9 @@ def build_features(source: Path) -> list[dict]:
         )
         source_crs = raster.crs
 
-    elevations[(elevations > FULL_POOL_FT) | (elevations < 7180)] = np.nan
+    elevations[
+        (elevations > reference_elevation) | (elevations < minimum_elevation)
+    ] = np.nan
     x_coords = matrix.c + (np.arange(width) + 0.5) * matrix.a
     y_coords = matrix.f + (np.arange(height) + 0.5) * matrix.e
     contours = contourpy.contour_generator(
@@ -52,8 +59,8 @@ def build_features(source: Path) -> list[dict]:
     to_wgs84 = Transformer.from_crs(source_crs, "EPSG:4326", always_xy=True).transform
 
     features = []
-    for depth_ft in DEPTHS_FT:
-        elevation_ft = FULL_POOL_FT - depth_ft
+    for depth_ft in range(interval, maximum_depth + 1, interval):
+        elevation_ft = reference_elevation - depth_ft
         for points in contours.lines(elevation_ft):
             if len(points) < 3:
                 continue
@@ -78,24 +85,43 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("source", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--water", default="Blue Mesa Reservoir")
+    parser.add_argument("--year", type=int, default=2019)
+    parser.add_argument("--reference-elevation", type=float, default=7519)
+    parser.add_argument("--minimum-elevation", type=float, default=7180)
+    parser.add_argument("--interval", type=int, default=25)
+    parser.add_argument("--maximum-depth", type=int, default=325)
+    parser.add_argument("--downsample", type=int, default=6)
+    parser.add_argument(
+        "--datum", default="Reclamation Project Vertical Datum"
+    )
+    parser.add_argument("--source-url", default=DEFAULT_SOURCE_URL)
     args = parser.parse_args()
     payload = {
         "type": "FeatureCollection",
-        "name": "Blue Mesa Reservoir 2019 bathymetric contours",
+        "name": f"{args.water} {args.year} bathymetric contours",
         "metadata": {
-            "water": "Blue Mesa Reservoir",
-            "survey_year": 2019,
-            "full_pool_elevation_ft": FULL_POOL_FT,
+            "water": args.water,
+            "survey_year": args.year,
+            "reference_elevation_ft": args.reference_elevation,
+            "contour_interval_ft": args.interval,
             "depth_reference": "Feet below the published full-pool elevation",
-            "vertical_datum": "Reclamation Project Vertical Datum",
+            "vertical_datum": args.datum,
             "source": "U.S. Bureau of Reclamation",
-            "source_url": SOURCE_URL,
+            "source_url": args.source_url,
             "disclaimer": (
                 "Historical survey contours are for planning only and do not "
                 "represent current depth or navigation hazards."
             ),
         },
-        "features": build_features(args.source),
+        "features": build_features(
+            args.source,
+            args.reference_elevation,
+            args.minimum_elevation,
+            args.interval,
+            args.maximum_depth,
+            args.downsample,
+        ),
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
