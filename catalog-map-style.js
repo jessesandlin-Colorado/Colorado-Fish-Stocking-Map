@@ -53,6 +53,14 @@
   }
 
   detailHtml=function(w){
+    if(w.stocking_status==='location-not-matched'){
+      return originalDetailHtml(w)
+        .replace(
+          '<h3>Water details</h3>',
+          `<p class="warning"><strong>Location not yet mapped.</strong> ${esc(w.location_warning||'These stocking records have not yet been matched to a unique Fishing Atlas location.')}</p><h3>Available details</h3>`
+        )
+        .replace('<a href="" target="_blank" rel="noreferrer">Fishing Atlas ↗</a>','');
+    }
     if(w.latest_report_date)return originalDetailHtml(w);
     const stockingDescription=firstValue(w.stocked_description,w.atlas_stocked_description,w.stocked);
     const rows=[
