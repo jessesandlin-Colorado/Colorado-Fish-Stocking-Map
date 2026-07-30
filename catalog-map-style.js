@@ -27,6 +27,10 @@
     return Boolean(w.latest_report_date||(Array.isArray(w.stocking_dates)&&w.stocking_dates.length)||(w.historical_event_count>0));
   }
 
+  function hasMappedLocation(w){
+    return Number.isFinite(Number(w.lat))&&Number.isFinite(Number(w.lng));
+  }
+
   function firstValue(...values){
     return values.find(value=>value!==null&&value!==undefined&&value!=='');
   }
@@ -53,7 +57,7 @@
   }
 
   detailHtml=function(w){
-    if(w.stocking_status==='location-not-matched'){
+    if(w.stocking_status==='location-not-matched'&&!hasMappedLocation(w)){
       return originalDetailHtml(w)
         .replace(
           '<h3>Water details</h3>',
