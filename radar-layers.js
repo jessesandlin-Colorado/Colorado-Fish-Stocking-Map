@@ -31,14 +31,19 @@
   let cloudErrorShown = false;
   let windErrorShown = false;
 
+  const overlays = {
+    'Stocked waters': markerLayer
+  };
+  if (window.cofishBathymetry?.layer) {
+    overlays['Blue Mesa depth contours (2019)'] = window.cofishBathymetry.layer;
+  }
+
   const layerControl = L.control.layers({
     'No weather': noWeatherLayer,
     'Weather radar': radarGroup,
     'Cloud cover forecast': cloudCoverLayer,
     'Wind speed forecast': windLayer
-  }, {
-    'Stocked waters': markerLayer
-  }, {
+  }, overlays, {
     collapsed: true,
     position: 'topright'
   }).addTo(map);
