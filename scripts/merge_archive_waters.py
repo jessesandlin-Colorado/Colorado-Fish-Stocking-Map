@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -43,6 +44,96 @@ def water_names(water: dict[str, Any]) -> set[str]:
         clean(water.get("normalized_name") or ""),
     }
     return {name for name in names if name}
+
+
+def site_event(event: dict[str, Any], source_kind: str = "archive") -> dict[str, Any]:
+    """Keep the canonical event fields the website can display."""
+    return {
+        key: value
+        for key, value in {
+            "event_id": event.get("event_id"),
+            "stocking_date": event.get("stocking_date") or event.get("report_date"),
+            "species": event.get("species"),
+            "quantity": event.get("quantity"),
+            "length_inches": event.get("length_inches"),
+            "county": event.get("county"),
+            "region": event.get("region"),
+            "water_name": event_name(event),
+            "source_kind": source_kind,
+        }.items()
+        if value not in (None, "")
+    }
+
+
+def merged_events(
+    uid: int,
+    archive_events: list[dict[str, Any]],
+    current_dates: list[str],
+    water_name: str,
+) -> list[dict[str, Any]]:
+    """Preserve canonical archive rows and add only genuinely newer live dates."""
+    events = [site_event(event) for event in archive_events]
+    archived_dates = {event.get("stocking_date") for event in events}
+    for stocking_date in current_dates:
+        if stocking_date and stocking_date not in archived_dates:
+            events.append(
+                {
+                    "event_id": f"current-{uid}-{stocking_date}",
+                    "stocking_date": stocking_date,
+                    "water_name": water_name,
+                    "source_kind": "current-report",
+                }
+            )
+    return sorted(
+        events,
+        key=lambda event: (
+            event.get("stocking_date") or "",
+            event.get("species") or "",
+            event.get("event_id") or "",
+        ),
+        reverse=True,
+    )
+
+
+def unmapped_water(name: str, events: list[dict[str, Any]], reason: str) -> dict[str, Any]:
+    """Expose valid database events in the list even when no map point is known."""
+    public_events = [site_event(event) for event in events]
+    dates = sorted(
+        {event["stocking_date"] for event in public_events if event.get("stocking_date")},
+        reverse=True,
+    )
+    digest = hashlib.sha1(f"{reason}|{normalized_name(name)}".encode("utf-8")).hexdigest()[:12]
+    counties = {event.get("county") for event in public_events if event.get("county")}
+    species = sorted(
+        {event.get("species") for event in public_events if event.get("species")},
+        key=str.casefold,
+    )
+    return {
+        "key": f"unmapped-{digest}",
+        "atlas_id": None,
+        "name": name,
+        "canonical_name": name,
+        "normalized_name": normalized_name(name),
+        "atlas_url": None,
+        "latest_report_date": dates[0],
+        "stocking_dates": dates,
+        "stocking_events": public_events,
+        "current_event_count": 0,
+        "historical_event_count": len(public_events),
+        "archive_event_count": len(public_events),
+        "archive_first_date": dates[-1],
+        "archive_last_date": dates[0],
+        "species": species,
+        "county": next(iter(counties)) if len(counties) == 1 else None,
+        "lat": None,
+        "lng": None,
+        "stocking_status": "location-not-matched",
+        "match_method": reason,
+        "location_warning": (
+            "These official stocking events are included, but this water has not "
+            "yet been matched to a unique Fishing Atlas location."
+        ),
+    }
 
 
 def merge_archive(
@@ -103,6 +194,8 @@ def merge_archive(
 
     enriched_new = 0
     unresolved = []
+    unresolved_event_groups: list[list[dict[str, Any]]] = []
+    located_archive_events = 0
     for uid, events in sorted(by_atlas.items()):
         archive_dates = {event["stocking_date"] for event in events}
         names = sorted({event_name(event) for event in events if event_name(event)})
@@ -110,14 +203,22 @@ def merge_archive(
 
         if uid in existing:
             water = existing[uid]
-            dates = set(water.get("stocking_dates") or []) | archive_dates
+            events_for_water = merged_events(
+                uid,
+                events,
+                water.get("stocking_dates") or [],
+                water.get("name") or names[0],
+            )
+            dates = {event["stocking_date"] for event in events_for_water}
             water["stocking_dates"] = sorted(dates, reverse=True)
+            water["stocking_events"] = events_for_water
             water["latest_report_date"] = max(dates)
-            water["historical_event_count"] = len(dates)
-            water["archive_event_count"] = len(archive_dates)
+            water["historical_event_count"] = len(events_for_water)
+            water["archive_event_count"] = len(events)
             water["archive_first_date"] = min(archive_dates)
             water["archive_last_date"] = max(archive_dates)
             existing[uid] = water
+            located_archive_events += len(events)
             continue
 
         # This path remains available for any legacy events that still carry a
@@ -125,9 +226,11 @@ def merge_archive(
         info = query_atlas(client, uid, names, overrides.get(str(uid), {}))
         if not info or info.get("lat") is None or info.get("lng") is None:
             unresolved.append({"atlas_id": uid, "names": names, "event_count": len(events)})
+            unresolved_event_groups.append(events)
             continue
 
         dates = sorted(archive_dates, reverse=True)
+        events_for_water = merged_events(uid, events, [], names[0])
         canonical_name = info.get("atlas_name") or names[0]
         existing[uid] = {
             "key": f"atlas-{uid}",
@@ -137,9 +240,10 @@ def merge_archive(
             "atlas_url": atlas_url,
             "latest_report_date": dates[0],
             "stocking_dates": dates,
+            "stocking_events": events_for_water,
             "current_event_count": 0,
-            "historical_event_count": len(dates),
-            "archive_event_count": len(dates),
+            "historical_event_count": len(events_for_water),
+            "archive_event_count": len(events),
             "archive_first_date": dates[-1],
             "archive_last_date": dates[0],
             "species": [],
@@ -149,9 +253,21 @@ def merge_archive(
             **info,
         }
         enriched_new += 1
+        located_archive_events += len(events)
+
+    unmapped = [
+        unmapped_water(event_name(events[0]), events, "unmatched-name")
+        for events in unmatched_name_events.values()
+    ] + [
+        unmapped_water(event_name(events[0]), events, "ambiguous-name")
+        for events in ambiguous_name_events.values()
+    ] + [
+        unmapped_water(event_name(events[0]), events, "atlas-id-unresolved")
+        for events in unresolved_event_groups
+    ]
 
     waters = sorted(
-        existing.values(),
+        [*existing.values(), *unmapped],
         key=lambda item: (item.get("latest_report_date") or "", item.get("name") or ""),
         reverse=True,
     )
@@ -159,24 +275,18 @@ def merge_archive(
     live_summary = dict(waters_payload.get("summary") or {})
     archive_summary = dict(archive_payload.get("summary") or {})
     live_rows = int(live_summary.get("stocking_events") or 0)
-    matched_archive_events = sum(len(events) for events in by_atlas.values())
-    combined_dates = {
-        (uid, event.get("stocking_date"), event_name(event).casefold())
-        for uid, events in by_atlas.items()
-        for event in events
-    }
-    for water in waters_payload.get("waters", []):
-        for stocking_date in water.get("stocking_dates") or []:
-            combined_dates.add((water.get("atlas_id"), stocking_date, clean(water.get("name")).casefold()))
+    displayed_events = sum(int(water.get("historical_event_count") or 0) for water in waters)
 
     summary = {
         **live_summary,
-        "stocking_events": len(combined_dates),
+        "stocking_events": displayed_events,
         "current_report_events": live_rows,
         "archive_events": len(archive_events),
-        "archive_events_matched": matched_archive_events,
-        "historical_events": len(combined_dates),
-        "matched_waters": len(waters),
+        "archive_events_matched": located_archive_events,
+        "historical_events": displayed_events,
+        "matched_waters": len(existing),
+        "stocking_history_waters": len(waters),
+        "unmapped_stocking_waters": len(unmapped),
         "archive_unique_atlas_ids": len(by_atlas),
         "archive_only_waters_added": enriched_new,
         "archive_unresolved_waters": len(unresolved),
@@ -194,13 +304,19 @@ def merge_archive(
     }
     report = {
         "archive_events_read": len(archive_events),
-        "archive_events_matched": matched_archive_events,
+        "archive_events_matched": located_archive_events,
         "archive_events_matched_by_atlas_id": matched_by_id,
         "archive_events_matched_by_normalized_name": matched_by_name,
         "archive_unique_atlas_ids": len(by_atlas),
         "existing_live_waters": len(waters_payload.get("waters", [])),
         "archive_only_waters_added": enriched_new,
         "combined_waters": len(waters),
+        "unmapped_waters_added": len(unmapped),
+        "archive_events_displayed": located_archive_events + sum(
+            len(events) for events in unmatched_name_events.values()
+        ) + sum(len(events) for events in ambiguous_name_events.values()) + sum(
+            len(events) for events in unresolved_event_groups
+        ),
         "unmatched_names": [
             {
                 "normalized_name": name,

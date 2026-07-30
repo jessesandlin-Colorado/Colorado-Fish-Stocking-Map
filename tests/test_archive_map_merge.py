@@ -62,6 +62,18 @@ def test_merge_adds_archive_dates_and_historical_only_waters(monkeypatch):
                 "atlas_id": 680,
                 "water_name": "Wrights Lake",
                 "stocking_date": "2014-06-14",
+                "species": "Rainbow Trout",
+                "quantity": 1000,
+                "event_id": "rainbow-event",
+                "atlas_url": "https://example.test/?value=680",
+            },
+            {
+                "atlas_id": 680,
+                "water_name": "Wrights Lake",
+                "stocking_date": "2014-06-14",
+                "species": "Cutthroat Trout",
+                "quantity": 500,
+                "event_id": "cutthroat-event",
                 "atlas_url": "https://example.test/?value=680",
             },
             {
@@ -69,6 +81,12 @@ def test_merge_adds_archive_dates_and_historical_only_waters(monkeypatch):
                 "water_name": "Historic Reservoir",
                 "stocking_date": "2015-05-01",
                 "atlas_url": "https://example.test/?value=999",
+            },
+            {
+                "water_name": "Unmapped Pond",
+                "stocking_date": "2016-06-01",
+                "species": "Rainbow Trout",
+                "event_id": "unmapped-event",
             },
         ],
     }
@@ -91,8 +109,25 @@ def test_merge_adds_archive_dates_and_historical_only_waters(monkeypatch):
 
     by_id = {water["atlas_id"]: water for water in merged["waters"]}
     assert by_id[680]["stocking_dates"] == ["2026-07-24", "2014-06-14"]
-    assert by_id[680]["historical_event_count"] == 2
+    assert by_id[680]["historical_event_count"] == 3
+    assert len(by_id[680]["stocking_events"]) == 3
+    same_day = [
+        event for event in by_id[680]["stocking_events"]
+        if event["stocking_date"] == "2014-06-14"
+    ]
+    assert {event["species"] for event in same_day} == {
+        "Rainbow Trout",
+        "Cutthroat Trout",
+    }
     assert by_id[999]["current_event_count"] == 0
     assert by_id[999]["stocking_dates"] == ["2015-05-01"]
     assert report["archive_only_waters_added"] == 1
     assert merged["summary"]["matched_waters"] == 2
+    unmapped = next(
+        water for water in merged["waters"]
+        if water.get("stocking_status") == "location-not-matched"
+    )
+    assert unmapped["name"] == "Unmapped Pond"
+    assert unmapped["historical_event_count"] == 1
+    assert report["archive_events_displayed"] == 4
+    assert merged["summary"]["unmapped_stocking_waters"] == 1

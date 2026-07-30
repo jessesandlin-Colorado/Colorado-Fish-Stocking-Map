@@ -8,7 +8,10 @@ function charts(){
 
   const top=dataset.waters
     .map(w=>{
-      const recentDates=(w.stocking_dates||[])
+      const sourceEvents=(Array.isArray(w.stocking_events)&&w.stocking_events.length)
+        ?w.stocking_events.map(event=>event.stocking_date)
+        :(w.stocking_dates||[]);
+      const recentDates=sourceEvents
         .map(d=>new Date(`${d}T12:00:00-06:00`))
         .filter(d=>!Number.isNaN(d.getTime())&&d>=cutoff&&d<=reference);
       return{water:w,count:recentDates.length,latest:recentDates.length?Math.max(...recentDates.map(d=>d.getTime())):0};
