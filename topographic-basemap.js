@@ -11,20 +11,27 @@
     }
   });
 
-  const topographicLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    subdomains: 'abc',
-    maxZoom: 17,
-    attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>, SRTM | Map style © <a href="https://opentopomap.org" target="_blank" rel="noreferrer">OpenTopoMap</a> (CC-BY-SA)'
-  });
+  const usgsAttribution = 'Map services © <a href="https://www.usgs.gov/programs/national-geospatial-program/national-map" target="_blank" rel="noreferrer">USGS The National Map</a>';
+  const usgsTiles = service => `https://basemap.nationalmap.gov/arcgis/rest/services/${service}/MapServer/tile/{z}/{y}/{x}`;
+  const layerOptions = {
+    maxZoom: 16,
+    attribution: usgsAttribution
+  };
+
+  const usgsTopo = L.tileLayer(usgsTiles('USGSTopo'), layerOptions);
+  const usgsImagery = L.tileLayer(usgsTiles('USGSImageryOnly'), layerOptions);
+  const usgsImageryTopo = L.tileLayer(usgsTiles('USGSImageryTopo'), layerOptions);
 
   if (streetLayer && map.hasLayer(streetLayer)) map.removeLayer(streetLayer);
-  topographicLayer.addTo(map);
-  topographicLayer.bringToBack();
+  usgsTopo.addTo(map);
+  usgsTopo.bringToBack();
 
   const baseMaps = {
-    'Topographic': topographicLayer
+    '🏔 USGS Topo (feet)': usgsTopo,
+    '🛰 USGS Imagery': usgsImagery,
+    '🛰 USGS Imagery + Topo': usgsImageryTopo
   };
-  if (streetLayer) baseMaps['Street map'] = streetLayer;
+  if (streetLayer) baseMaps['🗺 Street map'] = streetLayer;
 
   const control = L.control.layers(baseMaps, null, {
     collapsed: true,
