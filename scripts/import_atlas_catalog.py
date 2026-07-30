@@ -66,6 +66,23 @@ def merge_missing(target: dict[str, Any], source: dict[str, Any]) -> None:
         target["species"] = sorted(set(target.get("species") or []) | set(source["species"]), key=str.casefold)
     if not target.get("atlas_url"):
         target["atlas_url"] = atlas_url(source.get("atlas_id"))
+    if (
+        target.get("atlas_id") not in (None, "")
+        and target.get("lat") not in (None, "")
+        and target.get("lng") not in (None, "")
+    ):
+        # A reviewed catalog match supersedes an earlier unresolved-location
+        # classification. Do not leave a mapped water carrying a stale warning.
+        target.pop("location_warning", None)
+        target["stocking_status"] = "matched-to-fishing-atlas"
+        if target.get("match_method") in {
+            None,
+            "",
+            "unmatched-name",
+            "ambiguous-name",
+            "atlas-id-unresolved",
+        }:
+            target["match_method"] = "atlas-catalog-exact-name"
 
 
 def make_water(record: dict[str, Any]) -> dict[str, Any]:
