@@ -38,6 +38,13 @@
 
   detailHtml = function detailWithStockingChart(water) {
     const html = originalDetailHtml(water);
+
+    // Atlas-only waters have a purpose-built explanatory section followed by
+    // Fishing Atlas metadata. Do not run the stocked-water HTML replacement
+    // over that layout or it removes the Atlas detail rows.
+    const hasDatedHistory = Array.isArray(water.stocking_dates) && water.stocking_dates.some(Boolean);
+    if (!water.latest_report_date && !hasDatedHistory) return html;
+
     const start = html.indexOf('<h3>Stocking history</h3>');
     const endMarker = '<div class="detail-links">';
     const end = html.indexOf(endMarker, start);
