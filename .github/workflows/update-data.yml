@@ -36,9 +36,28 @@ jobs:
           key: atlas-cache-${{ runner.os }}-${{ github.ref_name }}
           restore-keys: |
             atlas-cache-${{ runner.os }}-
+      - name: Check whether the 2026 archive needs a one-time import
+        id: archive_check
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/stocking_events.json")
+          payload = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+          events_2026 = int((payload.get("summary", {}).get("events_by_year", {}) or {}).get("2026", 0))
+          needed = events_2026 == 0
+          print(f"Committed 2026 archive events: {events_2026}")
+          with Path("$GITHUB_OUTPUT").open("a", encoding="utf-8") as output:
+              output.write(f"needed={'true' if needed else 'false'}\n")
+          PY
+      - name: Import the published CPW archive once for 2026
+        if: steps.archive_check.outputs.needed == 'true'
+        run: python scripts/stocking_database.py bootstrap
       - name: Fetch and validate current CPW map data
         run: python scripts/update_data.py --strict
-      - name: Merge committed 2014-2025 historical database
+      - name: Merge committed historical database
         run: python scripts/merge_archive_waters.py
       - name: Enrich waters with official Fishing Atlas species
         run: python scripts/enrich_atlas_species.py
@@ -56,6 +75,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/waters.json data/unmatched.json data/match-report.html \
                   data/stocking-history.json data/import-history.json \
+                  data/stocking_events.json data/stocking.sqlite3 \
                   data/species.json data/validation.json data/validation-report.html \
                   data/archive-merge-report.json \
                   data/atlas-inventory-comparison.json \
