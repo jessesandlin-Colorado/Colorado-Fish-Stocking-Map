@@ -7,6 +7,7 @@ on:
       - "scripts/classify_atlas_only_waters.py"
       - "scripts/compare_atlas_inventory.py"
       - "scripts/import_atlas_catalog.py"
+      - "scripts/import_2026_archive.py"
       - ".github/workflows/update-data.yml"
   schedule:
     # Saturday morning after CPW's typical Friday report update.
@@ -53,9 +54,9 @@ jobs:
           with Path(os.environ["GITHUB_OUTPUT"]).open("a", encoding="utf-8") as output:
               output.write(f"needed={'true' if needed else 'false'}\n")
           PY
-      - name: Import the published CPW archive once for 2026
+      - name: Import the published CPW 2026 worksheet once
         if: steps.archive_check.outputs.needed == 'true'
-        run: python scripts/stocking_database.py bootstrap
+        run: python scripts/import_2026_archive.py
       - name: Fetch and validate current CPW map data
         run: python scripts/update_data.py --strict
       - name: Merge committed historical database
