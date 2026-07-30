@@ -1,0 +1,51 @@
+name: Deploy bathymetry preview
+
+on:
+  push:
+    branches:
+      - agent/add-blue-mesa-bathymetry
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy-preview:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}preview/bathymetry/
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out live main site
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+
+      - name: Check out bathymetry preview branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/add-blue-mesa-bathymetry
+          path: preview-source
+
+      - name: Add branch preview without replacing live root
+        run: |
+          rm -rf site/.git site/.github
+          mkdir -p site/preview/bathymetry
+          rsync -a --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            preview-source/ site/preview/bathymetry/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
