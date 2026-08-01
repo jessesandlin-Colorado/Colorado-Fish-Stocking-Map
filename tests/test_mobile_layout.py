@@ -40,4 +40,6 @@ def test_mobile_details_use_a_draggable_non_modal_bottom_sheet():
     assert "data-sheet-state='peek'" in styles
     assert "data-sheet-state='half'" in styles
     assert "data-sheet-state='full'" in styles
+    assert "height * .54" in script
+    assert "--mobile-sheet-top: 54dvh" in styles
     assert "touch-action: none" in styles
