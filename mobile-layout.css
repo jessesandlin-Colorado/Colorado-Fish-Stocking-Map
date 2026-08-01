@@ -187,7 +187,7 @@
   }
 
   dialog#details {
-    --mobile-sheet-top: 48dvh;
+    --mobile-sheet-top: 54dvh;
     position: fixed;
     z-index: 6000;
     inset: var(--mobile-sheet-top) 0 auto;
@@ -215,7 +215,7 @@
   }
 
   dialog#details[data-sheet-state='half'] {
-    --mobile-sheet-top: 48dvh;
+    --mobile-sheet-top: 54dvh;
   }
 
   dialog#details[data-sheet-state='full'] {
