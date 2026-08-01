@@ -1,23 +1,27 @@
 {
-  "generated_at": "2026-07-30T18:02:27.209941+00:00",
+  "generated_at": "2026-08-01T16:44:56.850278+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
   "waters_with_species": [
     {
-      "atlas_id": 680,
-      "watercode": "83128",
-      "name": "Wrights Lake",
+      "atlas_id": 421,
+      "watercode": "92902",
+      "name": "Vallecito Reservoir",
       "species": [
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
+        "Bass: Smallmouth",
+        "Perch: Walleye",
+        "Pike: Northern",
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
       ]
     },
     {
       "atlas_id": 298,
       "watercode": "80036",
-      "name": "Twin Lakes Reservoir",
+      "name": "Twin Lake Lower",
       "species": [
         "Trout: Brown",
         "Trout: Cutbow",
@@ -33,6 +37,84 @@
       "species": [
         "Trout: Brown",
         "Trout: Lake",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 271,
+      "watercode": "89929",
+      "name": "Rio Grande Reservoir",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Cutthroat",
+        "Trout: Rainbow",
+        "Trout: Splake"
+      ]
+    },
+    {
+      "atlas_id": 219,
+      "watercode": "79942",
+      "name": "Rampart Reservoir",
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 341,
+      "watercode": "79916",
+      "name": "Lake O'Haver",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 804,
+      "watercode": "81531",
+      "name": "Fairplay Kids Pond",
+      "species": [
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 426,
+      "watercode": "81745",
+      "name": "Crystal Creek Reservoir",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Cutthroat",
+        "Trout: Lake",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 484,
+      "watercode": "81733",
+      "name": "Cottonwood Lake",
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 680,
+      "watercode": "83128",
+      "name": "Wrights Lake",
+      "species": [
+        "Trout: Cutbow",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
       ]
@@ -75,29 +157,6 @@
       "species": [
         "Trout: Brook",
         "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 271,
-      "watercode": "89929",
-      "name": "Rio Grande Reservoir",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Cutthroat",
-        "Trout: Rainbow",
-        "Trout: Splake"
-      ]
-    },
-    {
-      "atlas_id": 219,
-      "watercode": "79942",
-      "name": "Rampart Reservoir",
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Lake",
         "Trout: Rainbow"
       ]
     },
@@ -275,20 +334,6 @@
       ]
     },
     {
-      "atlas_id": 421,
-      "watercode": "92902",
-      "name": "Vallecito Reservoir",
-      "species": [
-        "Bass: Smallmouth",
-        "Perch: Walleye",
-        "Pike: Northern",
-        "Salmon: Kokanee",
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 753,
       "watercode": "92712",
       "name": "Trout Lake",
@@ -395,56 +440,11 @@
       ]
     },
     {
-      "atlas_id": 341,
-      "watercode": "79916",
-      "name": "Lake O'Haver",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
       "atlas_id": 838,
       "watercode": "90287",
       "name": "Gunnison Pond",
       "species": [
         "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 804,
-      "watercode": "81531",
-      "name": "Fairplay Kids Pond",
-      "species": [
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 426,
-      "watercode": "81745",
-      "name": "Crystal Creek Reservoir",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Cutthroat",
-        "Trout: Lake",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 484,
-      "watercode": "81733",
-      "name": "Cottonwood Lake",
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
       ]
     },
     {
