@@ -54,7 +54,7 @@
   function sheetTopForState(state) {
     const height = viewportHeight();
     if (state === 'peek') return Math.max(0, height - 150);
-    if (state === 'half') return Math.max(0, height * .48);
+    if (state === 'half') return Math.max(0, height * .54);
     return Math.max(0, 12 + (window.visualViewport?.offsetTop || 0));
   }
 
