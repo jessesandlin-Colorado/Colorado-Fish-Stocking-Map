@@ -5,8 +5,10 @@
   const mapShell = document.querySelector('.map-shell');
   const mapElement = document.getElementById('map');
   const legend = document.querySelector('.legend');
+  const detailsDialog = document.getElementById('details');
+  const detailContent = document.getElementById('detailContent');
 
-  if (!layout || !sidebar || !mapShell || !mapElement || !legend) return;
+  if (!layout || !sidebar || !mapShell || !mapElement || !legend || !detailsDialog || !detailContent) return;
 
   const mobileStyles = document.createElement('link');
   mobileStyles.rel = 'stylesheet';
@@ -31,6 +33,126 @@
 
   let fullMapOpen = false;
   let pageScrollY = 0;
+  const sheetStates = ['peek', 'half', 'full'];
+  let sheetState = 'half';
+  let dragStartY = 0;
+  let dragStartTop = 0;
+  let dragLastY = 0;
+  let dragLastTime = 0;
+  let sheetMoved = false;
+
+  const sheetHandle = document.createElement('button');
+  sheetHandle.className = 'mobile-sheet-handle';
+  sheetHandle.type = 'button';
+  sheetHandle.innerHTML = '<span aria-hidden="true"></span><b>Water details</b>';
+  detailsDialog.insertBefore(sheetHandle, detailContent);
+
+  function viewportHeight() {
+    return window.visualViewport?.height || window.innerHeight;
+  }
+
+  function sheetTopForState(state) {
+    const height = viewportHeight();
+    if (state === 'peek') return Math.max(0, height - 150);
+    if (state === 'half') return Math.max(0, height * .48);
+    return Math.max(0, 12 + (window.visualViewport?.offsetTop || 0));
+  }
+
+  function updateSheetHandleLabel() {
+    const action = sheetState === 'full' ? 'Collapse' : 'Expand';
+    sheetHandle.setAttribute('aria-label', `${action} water details`);
+    sheetHandle.setAttribute('aria-expanded', String(sheetState === 'full'));
+  }
+
+  function setSheetState(state, { focus = false } = {}) {
+    if (!sheetStates.includes(state)) return;
+    sheetState = state;
+    detailsDialog.dataset.sheetState = state;
+    detailsDialog.classList.remove('is-dragging');
+    detailsDialog.style.removeProperty('--mobile-sheet-top');
+    updateSheetHandleLabel();
+    if (focus) sheetHandle.focus({ preventScroll: true });
+  }
+
+  function cycleSheetState() {
+    setSheetState(sheetState === 'peek' ? 'half' : sheetState === 'half' ? 'full' : 'half');
+  }
+
+  function beginSheetDrag(event) {
+    if (!mobileQuery.matches || !detailsDialog.open || event.button !== 0) return;
+    dragStartY = event.clientY;
+    dragLastY = event.clientY;
+    dragLastTime = performance.now();
+    dragStartTop = detailsDialog.getBoundingClientRect().top;
+    sheetMoved = false;
+    detailsDialog.classList.add('is-dragging');
+    sheetHandle.setPointerCapture(event.pointerId);
+    event.preventDefault();
+  }
+
+  function moveSheet(event) {
+    if (!detailsDialog.classList.contains('is-dragging')) return;
+    const minTop = sheetTopForState('full');
+    const maxTop = sheetTopForState('peek');
+    const nextTop = Math.min(maxTop, Math.max(minTop, dragStartTop + event.clientY - dragStartY));
+    if (Math.abs(event.clientY - dragStartY) > 5) sheetMoved = true;
+    detailsDialog.style.setProperty('--mobile-sheet-top', `${nextTop}px`);
+    dragLastY = event.clientY;
+    dragLastTime = performance.now();
+    event.preventDefault();
+  }
+
+  function finishSheetDrag(event) {
+    if (!detailsDialog.classList.contains('is-dragging')) return;
+    const elapsed = Math.max(1, performance.now() - dragLastTime);
+    const velocity = (event.clientY - dragLastY) / elapsed;
+    const currentTop = detailsDialog.getBoundingClientRect().top;
+    const currentIndex = sheetStates.indexOf(sheetState);
+    let nextState;
+
+    if (Math.abs(velocity) > .35) {
+      const nextIndex = velocity < 0
+        ? Math.min(sheetStates.length - 1, currentIndex + 1)
+        : Math.max(0, currentIndex - 1);
+      nextState = sheetStates[nextIndex];
+    } else {
+      nextState = sheetStates.reduce((closest, state) => (
+        Math.abs(sheetTopForState(state) - currentTop) < Math.abs(sheetTopForState(closest) - currentTop)
+          ? state
+          : closest
+      ), sheetStates[0]);
+    }
+
+    setSheetState(nextState);
+    if (sheetHandle.hasPointerCapture(event.pointerId)) sheetHandle.releasePointerCapture(event.pointerId);
+  }
+
+  sheetHandle.addEventListener('click', event => {
+    if (sheetMoved) {
+      event.preventDefault();
+      sheetMoved = false;
+      return;
+    }
+    cycleSheetState();
+  });
+  sheetHandle.addEventListener('pointerdown', beginSheetDrag);
+  sheetHandle.addEventListener('pointermove', moveSheet);
+  sheetHandle.addEventListener('pointerup', finishSheetDrag);
+  sheetHandle.addEventListener('pointercancel', finishSheetDrag);
+
+  const originalShowDetails = window.showDetails;
+  window.showDetails = function mobileAwareDetails(water) {
+    if (!mobileQuery.matches) {
+      originalShowDetails(water);
+      return;
+    }
+    detailContent.innerHTML = window.detailHtml(water);
+    if (!detailsDialog.open) detailsDialog.show();
+    setSheetState('half');
+    window.loadWeather(water);
+  };
+
+  detailsDialog.addEventListener('close', () => setSheetState('half'));
 
   function refreshMap(delay = 100) {
     window.setTimeout(() => {
@@ -84,6 +206,7 @@
       }
     } else {
       setFullMap(false);
+      if (detailsDialog.open) detailsDialog.close();
       legendDisclosure.open = true;
       if (mapShell.parentElement !== layout || sidebar.nextElementSibling !== mapShell) {
         layout.insertBefore(mapShell, sidebar.nextElementSibling);
@@ -127,7 +250,9 @@
 
   fullMapButton.addEventListener('click', () => setFullMap(!fullMapOpen));
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && fullMapOpen) setFullMap(false);
+    if (event.key !== 'Escape') return;
+    if (detailsDialog.open) detailsDialog.close();
+    else if (fullMapOpen) setFullMap(false);
   });
 
   mapElement.addEventListener('touchmove', keepPinchInsideMap, { passive: false });
@@ -146,7 +271,10 @@
   placeMap();
   discoverMapLegends();
   mobileQuery.addEventListener?.('change', placeMap);
-  window.visualViewport?.addEventListener('resize', () => refreshMap(50));
+  window.visualViewport?.addEventListener('resize', () => {
+    refreshMap(50);
+    if (detailsDialog.open) setSheetState(sheetState);
+  });
   window.addEventListener('orientationchange', () => {
     configureTouchMap();
     refreshMap(150);
