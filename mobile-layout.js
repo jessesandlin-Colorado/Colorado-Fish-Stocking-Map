@@ -58,10 +58,30 @@
   legend.parentNode.insertBefore(legendDisclosure, legend);
   legendDisclosure.append(legendSummary, legend);
 
+  const aboutView = document.createElement('section');
+  aboutView.className = 'mobile-about-view';
+  aboutView.setAttribute('aria-labelledby', 'mobileAboutHeading');
+  const aboutHeading = document.createElement('div');
+  aboutHeading.className = 'mobile-view-heading';
+  aboutHeading.innerHTML = '<p>ABOUT COFISH</p><h2 id="mobileAboutHeading">How to use the map</h2>';
+  const aboutGuide = document.createElement('div');
+  aboutGuide.className = 'mobile-about-guide';
+  aboutGuide.innerHTML = [
+    '<section><span aria-hidden="true">●</span><div><h3>Read the markers</h3><p>Marker fill shows stocking recency. Blue outlines identify lakes and ponds; green outlines identify rivers and streams.</p></div></section>',
+    '<section><span aria-hidden="true">▱</span><div><h3>Choose a map and depth layer</h3><p>Use the upper-left Layers control to switch among USGS Topo, imagery, and street maps. Turn on Bathymetry / depth contours where available.</p></div></section>',
+    '<section><span aria-hidden="true">☁</span><div><h3>Check weather layers</h3><p>Use the upper-right Layers control for weather radar, cloud cover, wind forecasts, and the stocked-water markers.</p></div></section>',
+    '<section><span aria-hidden="true">↥</span><div><h3>Open water details</h3><p>Tap a marker for a quick summary, then choose Full details. Drag the details sheet up or down to keep exploring the map.</p></div></section>'
+  ].join('');
+  const summary = sidebar.querySelector('.summary');
+  const feedbackCard = sidebar.querySelector('.feedback-card');
+  sidebar.insertBefore(aboutView, legendDisclosure);
+  aboutView.append(aboutHeading, aboutGuide, legendDisclosure, summary, feedbackCard);
+
   const icons = {
     search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4"></circle><path d="m16 16 4.2 4.2"></path></svg>',
     map: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 5.5 5-2.2 7 2.2 5-2.2v15.2l-5 2.2-7-2.2-5 2.2z"></path><path d="M8.5 3.3v15.2M15.5 5.5v15.2"></path></svg>',
-    navigate: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.5 3.5-7.2 17-2.4-7.4-7.4-2.4z"></path></svg>'
+    navigate: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.5 3.5-7.2 17-2.4-7.4-7.4-2.4z"></path></svg>',
+    about: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.7 9a2.4 2.4 0 0 1 4.6.9c0 1.8-2.3 2.1-2.3 3.7"></path><path d="M12 17.5h.01"></path></svg>'
   };
   const bottomNav = document.createElement('nav');
   bottomNav.className = 'mobile-bottom-nav';
@@ -69,7 +89,8 @@
   bottomNav.innerHTML = [
     `<button type="button" data-mobile-view-target="search">${icons.search}<span>Search</span></button>`,
     `<button type="button" class="mobile-map-tab" data-mobile-view-target="map">${icons.map}<span>Map</span></button>`,
-    `<button type="button" data-mobile-view-target="navigate">${icons.navigate}<span>Navigate</span></button>`
+    `<button type="button" data-mobile-view-target="navigate">${icons.navigate}<span>Navigate</span></button>`,
+    `<button type="button" data-mobile-view-target="about">${icons.about}<span>About</span></button>`
   ].join('');
   document.body.appendChild(bottomNav);
   const navButtons = [...bottomNav.querySelectorAll('button')];
@@ -92,7 +113,7 @@
   }
 
   function setMobileView(view, { push = true, focus = true } = {}) {
-    if (!mobileQuery.matches || !['home', 'search', 'map', 'navigate'].includes(view)) return;
+    if (!mobileQuery.matches || !['home', 'search', 'map', 'navigate', 'about'].includes(view)) return;
     if (view === currentMobileView && document.body.dataset.mobileView === view) return;
     currentMobileView = view;
     document.body.dataset.mobileView = view;
@@ -252,8 +273,8 @@
   function placeMap() {
     if (mobileQuery.matches) {
       legendDisclosure.open = false;
-      if (mapShell.parentElement !== sidebar || mapShell.nextElementSibling !== legendDisclosure) {
-        sidebar.insertBefore(mapShell, legendDisclosure);
+      if (mapShell.parentElement !== sidebar || mapShell.nextElementSibling !== aboutView) {
+        sidebar.insertBefore(mapShell, aboutView);
       }
       setMobileView(currentMobileView, { push: false, focus: false });
     } else {
