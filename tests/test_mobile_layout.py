@@ -9,6 +9,7 @@ def test_mobile_layout_exposes_persistent_app_navigation():
     styles = (ROOT / "mobile-layout.css").read_text(encoding="utf-8")
 
     assert "mobile-bottom-nav" in script
+    assert 'data-mobile-view-target="home"' in script
     assert 'data-mobile-view-target="search"' in script
     assert 'data-mobile-view-target="map"' in script
     assert 'data-mobile-view-target="navigate"' in script
@@ -44,7 +45,7 @@ def test_mobile_about_view_explains_layers_and_includes_feedback():
     assert "weather radar, cloud cover, wind forecasts" in script
     assert "feedbackCard" in script
     assert "mobile-about-guide" in styles
-    assert "grid-template-columns: repeat(4, 1fr)" in styles
+    assert "grid-template-columns: repeat(5, 1fr)" in styles
 
 
 def test_mobile_legends_are_collapsible_and_desktop_remains_open():
