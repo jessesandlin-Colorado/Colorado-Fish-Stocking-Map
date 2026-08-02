@@ -78,6 +78,7 @@
   aboutView.append(aboutHeading, aboutGuide, legendDisclosure, summary, feedbackCard);
 
   const icons = {
+    home: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 10.5 8.5-7 8.5 7"></path><path d="M5.5 9v11h13V9M9.5 20v-6h5v6"></path></svg>',
     search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4"></circle><path d="m16 16 4.2 4.2"></path></svg>',
     map: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 5.5 5-2.2 7 2.2 5-2.2v15.2l-5 2.2-7-2.2-5 2.2z"></path><path d="M8.5 3.3v15.2M15.5 5.5v15.2"></path></svg>',
     navigate: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.5 3.5-7.2 17-2.4-7.4-7.4-2.4z"></path></svg>',
@@ -87,6 +88,7 @@
   bottomNav.className = 'mobile-bottom-nav';
   bottomNav.setAttribute('aria-label', 'Mobile app navigation');
   bottomNav.innerHTML = [
+    `<button type="button" data-mobile-view-target="home">${icons.home}<span>Home</span></button>`,
     `<button type="button" data-mobile-view-target="search">${icons.search}<span>Search</span></button>`,
     `<button type="button" class="mobile-map-tab" data-mobile-view-target="map">${icons.map}<span>Map</span></button>`,
     `<button type="button" data-mobile-view-target="navigate">${icons.navigate}<span>Navigate</span></button>`,
@@ -114,7 +116,7 @@
 
   function setMobileView(view, { push = true, focus = true } = {}) {
     if (!mobileQuery.matches || !['home', 'search', 'map', 'navigate', 'about'].includes(view)) return;
-    if (view === currentMobileView && document.body.dataset.mobileView === view) return;
+    const sameView = view === currentMobileView && document.body.dataset.mobileView === view;
     currentMobileView = view;
     document.body.dataset.mobileView = view;
 
@@ -124,6 +126,8 @@
       if (active) button.setAttribute('aria-current', 'page');
       else button.removeAttribute('aria-current');
     });
+
+    if (sameView) return;
 
     if (detailsDialog.open && view !== 'map') detailsDialog.close();
     if (view === 'map') {
