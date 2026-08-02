@@ -246,7 +246,7 @@
     left: 0;
     z-index: 7000;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     min-height: calc(var(--mobile-nav-height) + env(safe-area-inset-bottom));
     padding: 5px max(10px, env(safe-area-inset-right)) env(safe-area-inset-bottom) max(10px, env(safe-area-inset-left));
     border-top: 1px solid rgba(31, 53, 40, .16);
@@ -264,11 +264,11 @@
     gap: 2px;
     min-width: 0;
     min-height: 56px;
-    padding: 3px 8px;
+    padding: 3px 4px;
     border: 0;
     background: transparent;
     color: #637069;
-    font: 750 .7rem/1.1 system-ui, sans-serif;
+    font: 750 .66rem/1.1 system-ui, sans-serif;
     cursor: pointer;
   }
 
@@ -288,7 +288,7 @@
     align-self: end;
     min-height: 68px;
     margin: -16px auto 0;
-    padding: 7px 16px 4px;
+    padding: 7px 14px 4px;
     border: 1px solid rgba(31, 53, 40, .16);
     border-radius: 24px 24px 12px 12px;
     background: #fff;
