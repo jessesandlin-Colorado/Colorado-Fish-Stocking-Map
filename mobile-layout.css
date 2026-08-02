@@ -6,11 +6,13 @@
 .mobile-bottom-nav,
 .mobile-view-heading,
 .mobile-sidebar-legend > summary,
-.mobile-navigate-heading {
+.mobile-navigate-heading,
+.mobile-about-guide {
   display: none;
 }
 
-.mobile-search-view {
+.mobile-search-view,
+.mobile-about-view {
   display: contents;
 }
 
@@ -22,13 +24,15 @@
 
   body[data-mobile-view='search'],
   body[data-mobile-view='map'],
-  body[data-mobile-view='navigate'] {
+  body[data-mobile-view='navigate'],
+  body[data-mobile-view='about'] {
     background: #f4f6f2;
   }
 
   body[data-mobile-view='search'] .topbar,
   body[data-mobile-view='map'] .topbar,
   body[data-mobile-view='navigate'] .topbar,
+  body[data-mobile-view='about'] .topbar,
   body[data-mobile-view] .site-footer {
     display: none;
   }
@@ -66,6 +70,7 @@
   body[data-mobile-view='home'] .sidebar > .notice,
   body[data-mobile-view='search'] .sidebar > .mobile-search-view,
   body[data-mobile-view='navigate'] .sidebar > .location-planner,
+  body[data-mobile-view='about'] .sidebar > .mobile-about-view,
   body[data-mobile-view='map'] .sidebar > .map-shell {
     display: block !important;
   }
@@ -140,7 +145,8 @@
   }
 
   .mobile-search-view,
-  .location-planner {
+  .location-planner,
+  .mobile-about-view {
     width: min(680px, 100%);
     margin: 0 auto;
   }
@@ -170,6 +176,56 @@
     display: block;
   }
 
+  .mobile-about-guide {
+    display: grid;
+    gap: .65rem;
+    margin-bottom: .85rem;
+  }
+
+  .mobile-about-guide section {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: .65rem;
+    align-items: start;
+    padding: .75rem;
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    background: #fff;
+  }
+
+  .mobile-about-guide section > span {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: #e4eee5;
+    color: var(--accent);
+    font-size: 1.15rem;
+    font-weight: 850;
+  }
+
+  .mobile-about-guide h3 {
+    margin: 0 0 .25rem;
+    font-size: .95rem;
+  }
+
+  .mobile-about-guide p {
+    margin: 0;
+    color: var(--muted);
+    font-size: .82rem;
+    line-height: 1.45;
+  }
+
+  .mobile-about-view .summary,
+  .mobile-about-view .feedback-card {
+    display: block;
+  }
+
+  .mobile-about-view .feedback-card {
+    margin-bottom: 1rem;
+  }
+
   .location-planner > h2,
   .location-planner > p:first-of-type {
     display: none;
@@ -190,7 +246,7 @@
     left: 0;
     z-index: 7000;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     min-height: calc(var(--mobile-nav-height) + env(safe-area-inset-bottom));
     padding: 5px max(10px, env(safe-area-inset-right)) env(safe-area-inset-bottom) max(10px, env(safe-area-inset-left));
     border-top: 1px solid rgba(31, 53, 40, .16);
@@ -232,7 +288,7 @@
     align-self: end;
     min-height: 68px;
     margin: -16px auto 0;
-    padding: 7px 22px 4px;
+    padding: 7px 16px 4px;
     border: 1px solid rgba(31, 53, 40, .16);
     border-radius: 24px 24px 12px 12px;
     background: #fff;
