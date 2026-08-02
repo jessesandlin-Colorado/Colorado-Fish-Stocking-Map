@@ -12,6 +12,7 @@ def test_mobile_layout_exposes_persistent_app_navigation():
     assert 'data-mobile-view-target="search"' in script
     assert 'data-mobile-view-target="map"' in script
     assert 'data-mobile-view-target="navigate"' in script
+    assert 'data-mobile-view-target="about"' in script
     assert "mobile-full-map-button" not in script
     assert "data-mobile-view='map'" in styles
     assert "map.invalidateSize" in script
@@ -30,6 +31,20 @@ def test_mobile_home_and_content_views_are_separated():
     assert "data-mobile-view='home'" in styles
     assert "data-mobile-view='search'" in styles
     assert "data-mobile-view='navigate'" in styles
+    assert "data-mobile-view='about'" in styles
+
+
+def test_mobile_about_view_explains_layers_and_includes_feedback():
+    script = (ROOT / "mobile-layout.js").read_text(encoding="utf-8")
+    styles = (ROOT / "mobile-layout.css").read_text(encoding="utf-8")
+
+    assert "How to use the map" in script
+    assert "USGS Topo" in script
+    assert "Bathymetry / depth contours" in script
+    assert "weather radar, cloud cover, wind forecasts" in script
+    assert "feedbackCard" in script
+    assert "mobile-about-guide" in styles
+    assert "grid-template-columns: repeat(4, 1fr)" in styles
 
 
 def test_mobile_legends_are_collapsible_and_desktop_remains_open():
