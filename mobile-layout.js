@@ -7,13 +7,48 @@
   const legend = document.querySelector('.legend');
   const detailsDialog = document.getElementById('details');
   const detailContent = document.getElementById('detailContent');
+  const locationPlanner = document.querySelector('.location-planner');
+  const searchInput = document.getElementById('search');
+  const results = document.getElementById('results');
 
-  if (!layout || !sidebar || !mapShell || !mapElement || !legend || !detailsDialog || !detailContent) return;
+  if (!layout || !sidebar || !mapShell || !mapElement || !legend || !detailsDialog ||
+      !detailContent || !locationPlanner || !searchInput || !results) return;
 
   const mobileStyles = document.createElement('link');
   mobileStyles.rel = 'stylesheet';
   mobileStyles.href = 'mobile-layout.css';
   document.head.appendChild(mobileStyles);
+
+  const appIntro = document.createElement('section');
+  appIntro.className = 'mobile-app-intro';
+  appIntro.innerHTML = [
+    '<p class="mobile-app-eyebrow">COLORADO FISHING, IN YOUR POCKET</p>',
+    '<h2>Find your next water.</h2>',
+    '<p>Search Colorado waters and stocking history, explore the statewide map, or plan a drive from your location.</p>',
+    '<div class="mobile-app-features" aria-label="COFish features">',
+    '<span>Recent stocking</span><span>Species</span><span>Weather</span><span>Bathymetry</span>',
+    '</div>',
+    '<p class="mobile-app-prompt">Choose an option below to get started.</p>'
+  ].join('');
+  sidebar.insertBefore(appIntro, sidebar.firstChild);
+
+  const searchView = document.createElement('section');
+  searchView.className = 'mobile-search-view';
+  searchView.setAttribute('aria-labelledby', 'mobileSearchHeading');
+  const searchHeading = document.createElement('div');
+  searchHeading.className = 'mobile-view-heading';
+  searchHeading.innerHTML = '<p>FIND A WATER</p><h2 id="mobileSearchHeading">Search and filter</h2>';
+  const searchLabel = searchInput.closest('label');
+  const controlGrid = sidebar.querySelector('.control-grid');
+  const filterFieldsets = [...sidebar.querySelectorAll(':scope > fieldset')];
+  const resultsHeader = sidebar.querySelector('.results-header');
+  sidebar.insertBefore(searchView, searchLabel);
+  searchView.append(searchHeading, searchLabel, controlGrid, ...filterFieldsets, resultsHeader, results);
+
+  const navigateHeading = document.createElement('div');
+  navigateHeading.className = 'mobile-view-heading mobile-navigate-heading';
+  navigateHeading.innerHTML = '<p>PLAN YOUR DRIVE</p><h2>Start from your location</h2>';
+  locationPlanner.insertBefore(navigateHeading, locationPlanner.firstChild);
 
   const legendDisclosure = document.createElement('details');
   legendDisclosure.className = 'mobile-sidebar-legend';
@@ -23,16 +58,46 @@
   legend.parentNode.insertBefore(legendDisclosure, legend);
   legendDisclosure.append(legendSummary, legend);
 
-  const fullMapButton = document.createElement('button');
-  fullMapButton.className = 'mobile-full-map-button';
-  fullMapButton.type = 'button';
-  fullMapButton.setAttribute('aria-controls', 'map');
-  fullMapButton.setAttribute('aria-pressed', 'false');
-  fullMapButton.innerHTML = '<span aria-hidden="true">⛶</span> Full-screen map';
-  mapShell.appendChild(fullMapButton);
+  const aboutView = document.createElement('section');
+  aboutView.className = 'mobile-about-view';
+  aboutView.setAttribute('aria-labelledby', 'mobileAboutHeading');
+  const aboutHeading = document.createElement('div');
+  aboutHeading.className = 'mobile-view-heading';
+  aboutHeading.innerHTML = '<p>ABOUT COFISH</p><h2 id="mobileAboutHeading">How to use the map</h2>';
+  const aboutGuide = document.createElement('div');
+  aboutGuide.className = 'mobile-about-guide';
+  aboutGuide.innerHTML = [
+    '<section><span aria-hidden="true">●</span><div><h3>Read the markers</h3><p>Marker fill shows stocking recency. Blue outlines identify lakes and ponds; green outlines identify rivers and streams.</p></div></section>',
+    '<section><span aria-hidden="true">▱</span><div><h3>Choose a map and depth layer</h3><p>Use the upper-left Layers control to switch among USGS Topo, imagery, and street maps. Turn on Bathymetry / depth contours where available.</p></div></section>',
+    '<section><span aria-hidden="true">☁</span><div><h3>Check weather layers</h3><p>Use the upper-right Layers control for weather radar, cloud cover, wind forecasts, and the stocked-water markers.</p></div></section>',
+    '<section><span aria-hidden="true">↥</span><div><h3>Open water details</h3><p>Tap a marker for a quick summary, then choose Full details. Drag the details sheet up or down to keep exploring the map.</p></div></section>'
+  ].join('');
+  const summary = sidebar.querySelector('.summary');
+  const feedbackCard = sidebar.querySelector('.feedback-card');
+  sidebar.insertBefore(aboutView, legendDisclosure);
+  aboutView.append(aboutHeading, aboutGuide, legendDisclosure, summary, feedbackCard);
 
-  let fullMapOpen = false;
-  let pageScrollY = 0;
+  const icons = {
+    home: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 10.5 8.5-7 8.5 7"></path><path d="M5.5 9v11h13V9M9.5 20v-6h5v6"></path></svg>',
+    search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4"></circle><path d="m16 16 4.2 4.2"></path></svg>',
+    map: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 5.5 5-2.2 7 2.2 5-2.2v15.2l-5 2.2-7-2.2-5 2.2z"></path><path d="M8.5 3.3v15.2M15.5 5.5v15.2"></path></svg>',
+    navigate: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.5 3.5-7.2 17-2.4-7.4-7.4-2.4z"></path></svg>',
+    about: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.7 9a2.4 2.4 0 0 1 4.6.9c0 1.8-2.3 2.1-2.3 3.7"></path><path d="M12 17.5h.01"></path></svg>'
+  };
+  const bottomNav = document.createElement('nav');
+  bottomNav.className = 'mobile-bottom-nav';
+  bottomNav.setAttribute('aria-label', 'Mobile app navigation');
+  bottomNav.innerHTML = [
+    `<button type="button" data-mobile-view-target="home">${icons.home}<span>Home</span></button>`,
+    `<button type="button" data-mobile-view-target="search">${icons.search}<span>Search</span></button>`,
+    `<button type="button" class="mobile-map-tab" data-mobile-view-target="map">${icons.map}<span>Map</span></button>`,
+    `<button type="button" data-mobile-view-target="navigate">${icons.navigate}<span>Navigate</span></button>`,
+    `<button type="button" data-mobile-view-target="about">${icons.about}<span>About</span></button>`
+  ].join('');
+  document.body.appendChild(bottomNav);
+  const navButtons = [...bottomNav.querySelectorAll('button')];
+
+  let currentMobileView = 'home';
   const sheetStates = ['peek', 'half', 'full'];
   let sheetState = 'half';
   let dragStartY = 0;
@@ -40,6 +105,49 @@
   let dragLastY = 0;
   let dragLastTime = 0;
   let sheetMoved = false;
+
+  function refreshMap(delay = 100) {
+    window.setTimeout(() => {
+      if (typeof map !== 'undefined' && map && typeof map.invalidateSize === 'function') {
+        map.invalidateSize();
+      }
+    }, delay);
+  }
+
+  function setMobileView(view, { push = true, focus = true } = {}) {
+    if (!mobileQuery.matches || !['home', 'search', 'map', 'navigate', 'about'].includes(view)) return;
+    const sameView = view === currentMobileView && document.body.dataset.mobileView === view;
+    currentMobileView = view;
+    document.body.dataset.mobileView = view;
+
+    navButtons.forEach(button => {
+      const active = button.dataset.mobileViewTarget === view;
+      button.classList.toggle('is-active', active);
+      if (active) button.setAttribute('aria-current', 'page');
+      else button.removeAttribute('aria-current');
+    });
+
+    if (sameView) return;
+
+    if (detailsDialog.open && view !== 'map') detailsDialog.close();
+    if (view === 'map') {
+      refreshMap(50);
+      refreshMap(300);
+    } else if (view === 'search' && focus) {
+      window.setTimeout(() => searchInput.focus({ preventScroll: true }), 80);
+    }
+
+    window.scrollTo({ top: 0, behavior: 'auto' });
+    if (push) history.pushState({ ...history.state, cofishMobileView: view }, '');
+  }
+
+  navButtons.forEach(button => {
+    button.addEventListener('click', () => setMobileView(button.dataset.mobileViewTarget));
+  });
+  window.addEventListener('popstate', event => {
+    if (!mobileQuery.matches) return;
+    setMobileView(event.state?.cofishMobileView || 'home', { push: false, focus: false });
+  });
 
   const sheetHandle = document.createElement('button');
   sheetHandle.className = 'mobile-sheet-handle';
@@ -92,9 +200,10 @@
 
   function moveSheet(event) {
     if (!detailsDialog.classList.contains('is-dragging')) return;
-    const minTop = sheetTopForState('full');
-    const maxTop = sheetTopForState('peek');
-    const nextTop = Math.min(maxTop, Math.max(minTop, dragStartTop + event.clientY - dragStartY));
+    const nextTop = Math.min(
+      sheetTopForState('peek'),
+      Math.max(sheetTopForState('full'), dragStartTop + event.clientY - dragStartY)
+    );
     if (Math.abs(event.clientY - dragStartY) > 5) sheetMoved = true;
     detailsDialog.style.setProperty('--mobile-sheet-top', `${nextTop}px`);
     dragLastY = event.clientY;
@@ -146,49 +255,16 @@
       originalShowDetails(water);
       return;
     }
+    setMobileView('map');
     detailContent.innerHTML = window.detailHtml(water);
     if (!detailsDialog.open) detailsDialog.show();
     setSheetState('half');
     window.loadWeather(water);
   };
-
   detailsDialog.addEventListener('close', () => setSheetState('half'));
-
-  function refreshMap(delay = 100) {
-    window.setTimeout(() => {
-      if (typeof map !== 'undefined' && map && typeof map.invalidateSize === 'function') {
-        map.invalidateSize();
-      }
-    }, delay);
-  }
-
-  function setFullMap(open) {
-    const nextOpen = Boolean(open && mobileQuery.matches);
-    if (nextOpen === fullMapOpen) return;
-    fullMapOpen = nextOpen;
-
-    if (fullMapOpen) {
-      pageScrollY = window.scrollY;
-      document.body.classList.add('mobile-map-fullscreen');
-      mapShell.setAttribute('role', 'dialog');
-      mapShell.setAttribute('aria-label', 'Full-screen fishing map');
-      fullMapButton.innerHTML = '<span aria-hidden="true">×</span> Exit full map';
-    } else {
-      document.body.classList.remove('mobile-map-fullscreen');
-      mapShell.removeAttribute('role');
-      mapShell.removeAttribute('aria-label');
-      fullMapButton.innerHTML = '<span aria-hidden="true">⛶</span> Full-screen map';
-      window.scrollTo(0, pageScrollY);
-    }
-
-    fullMapButton.setAttribute('aria-pressed', String(fullMapOpen));
-    refreshMap(50);
-    refreshMap(300);
-  }
 
   function configureTouchMap() {
     if (typeof map === 'undefined' || !map) return;
-
     if (mobileQuery.matches) {
       map.dragging?.enable();
       map.touchZoom?.enable();
@@ -201,13 +277,15 @@
   function placeMap() {
     if (mobileQuery.matches) {
       legendDisclosure.open = false;
-      if (mapShell.parentElement !== sidebar || mapShell.nextElementSibling !== legendDisclosure) {
-        sidebar.insertBefore(mapShell, legendDisclosure);
+      if (mapShell.parentElement !== sidebar || mapShell.nextElementSibling !== aboutView) {
+        sidebar.insertBefore(mapShell, aboutView);
       }
+      setMobileView(currentMobileView, { push: false, focus: false });
     } else {
-      setFullMap(false);
+      delete document.body.dataset.mobileView;
       if (detailsDialog.open) detailsDialog.close();
       legendDisclosure.open = true;
+      navButtons.forEach(button => button.removeAttribute('aria-current'));
       if (mapShell.parentElement !== layout || sidebar.nextElementSibling !== mapShell) {
         layout.insertBefore(mapShell, sidebar.nextElementSibling);
       }
@@ -225,7 +303,6 @@
     element.setAttribute('tabindex', '0');
     element.setAttribute('aria-label', 'Show map legend');
     element.setAttribute('aria-expanded', 'false');
-
     const toggle = event => {
       if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
       if (event.target.closest('a') && element.classList.contains('is-expanded')) return;
@@ -244,17 +321,12 @@
   }
 
   function keepPinchInsideMap(event) {
-    if (!mobileQuery.matches || event.touches.length < 2) return;
-    event.preventDefault();
+    if (mobileQuery.matches && event.touches.length >= 2) event.preventDefault();
   }
 
-  fullMapButton.addEventListener('click', () => setFullMap(!fullMapOpen));
   document.addEventListener('keydown', event => {
-    if (event.key !== 'Escape') return;
-    if (detailsDialog.open) detailsDialog.close();
-    else if (fullMapOpen) setFullMap(false);
+    if (event.key === 'Escape' && detailsDialog.open) detailsDialog.close();
   });
-
   mapElement.addEventListener('touchmove', keepPinchInsideMap, { passive: false });
   mapElement.addEventListener('gesturestart', event => {
     if (mobileQuery.matches) event.preventDefault();
@@ -263,11 +335,13 @@
     if (mobileQuery.matches) event.preventDefault();
   }, { passive: false });
 
-  new MutationObserver(discoverMapLegends).observe(mapShell, {
-    childList: true,
-    subtree: true
-  });
+  new MutationObserver(discoverMapLegends).observe(mapShell, { childList: true, subtree: true });
+  results.addEventListener('click', event => {
+    if (!mobileQuery.matches || !event.target.closest('.water-button')) return;
+    setMobileView('map');
+  }, true);
 
+  document.body.dataset.mobileView = mobileQuery.matches ? 'home' : '';
   placeMap();
   discoverMapLegends();
   mobileQuery.addEventListener?.('change', placeMap);
@@ -279,9 +353,4 @@
     configureTouchMap();
     refreshMap(150);
   });
-
-  document.getElementById('results')?.addEventListener('click', event => {
-    if (!mobileQuery.matches || !event.target.closest('.water-button')) return;
-    mapShell.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, true);
 })();
