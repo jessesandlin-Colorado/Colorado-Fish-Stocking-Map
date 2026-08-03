@@ -15,6 +15,16 @@ def test_auto_match_requires_name_and_proximity():
 def test_ambiguous_high_matches_are_held_for_review():
     options=candidate_matches([water()],[station(abbrev="ONE"),station(lat=40.591,abbrev="TWO")])
     assert "poudre" not in choose_matches(options)
+    assert choose_matches(options,{"poudre":"ONE"})["poudre"]["confidence"]=="manual-approved"
+def test_exact_name_can_match_farther_access_point():
+    farther=station(lat=40.68)
+    candidates=candidate_matches([water()],[farther])
+    assert candidates[0]["distance_miles"]>3
+    assert choose_matches(candidates)["poudre"]["station_abbrev"]=="CLAFTCCO"
+def test_fork_mismatch_is_not_auto_approved_at_longer_distance():
+    main=water(name="Cache la Poudre River")
+    north=station(name="NORTH FORK CACHE LA POUDRE RIVER",source="North Fork Cache la Poudre River",lat=40.68)
+    assert choose_matches(candidate_matches([main],[north]))=={}
 def test_diversion_structures_are_not_published_as_stream_flow():
     diversion=station(name="DENVER WATER CONDUIT NO 20",source="Cache la Poudre River")
     diversion["stationType"]="Diversion Structure"
