@@ -53,7 +53,7 @@ def test_mobile_legends_are_collapsible_and_desktop_remains_open():
     styles = (ROOT / "mobile-layout.css").read_text(encoding="utf-8")
 
     assert "legendDisclosure.open = !mobileQuery.matches" in script
-    assert "weather-layer-legend, .bathymetry-legend" in script
+    assert "weather-layer-legend, .bathymetry-legend, .map-symbol-legend" in script
     assert "aria-expanded" in script
     assert ".mobile-map-legend[hidden]" in styles
     assert "@media (max-width: 820px)" in styles
