@@ -1,0 +1,40 @@
+name: Refresh Colorado stream flow
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */4 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: refresh-streamflow-data
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Fetch DWR stations and 30-day stream-flow trends
+        env:
+          DWR_API_KEY: ${{ secrets.DWR_API_KEY }}
+        run: python scripts/update_streamflow.py
+      - name: Run tests
+        run: python -m pytest -q
+      - name: Commit refreshed stream-flow data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/streamflow.json data/streamflow-match-report.csv
+          if git diff --cached --quiet; then echo "No stream-flow changes"; exit 0; fi
+          git commit -m "Refresh Colorado stream flow data"
+          for attempt in 1 2 3; do
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            sleep $((attempt * 5))
+          done
+          exit 1
