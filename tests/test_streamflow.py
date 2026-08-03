@@ -24,6 +24,13 @@ def test_frontend_bundle_and_loader_are_present():
     bundle=open("streamflow.js",encoding="utf-8").read()
     assert "30-day stream flow trend" in bundle
     assert "View official DWR station" in bundle
+    catalog=open("catalog-map-style.js",encoding="utf-8").read()
+    assert "flow-gauge" in catalog
+    assert "flow-available-badge" in catalog
+def test_full_map_legend_explains_marker_colors_and_gauge():
+    legend=open("map-symbol-legend.js",encoding="utf-8").read()
+    for label in ("Green · 0–14 days","Yellow · 15–30 days","Red · 31–60 days","Gray · 61+ days","Blue pointer · lake or pond","Green pointer · river or stream","Gauge · stream-flow data"):
+        assert label in legend
 def test_fixture_build_writes_public_data_and_review_report(tmp_path):
     waters,stations,daily,output,report=[tmp_path/name for name in ("waters.json","stations.json","daily.json","streamflow.json","report.csv")]
     waters.write_text(json.dumps({"waters":[water()]}),encoding="utf-8")
