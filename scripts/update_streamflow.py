@@ -21,6 +21,7 @@ from typing import Any
 import requests
 
 ROOT = Path(__file__).parents[1]
+DEFAULT_OVERRIDES = ROOT / "config" / "streamflow_overrides.json"
 STATIONS_URL = "https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrystation"
 DAILY_URL = "https://dwr.state.co.us/Rest/GET/api/v2/telemetrystations/telemetrytimeseriesday"
 FLOW_PARAMETERS = {"DISCHRG", "DISCHARGE", "FLOW", "STREAMFLOW"}
@@ -82,10 +83,10 @@ def is_flow_station(station: dict[str, Any]) -> bool:
 
 
 def classify_match(distance: float, similarity: float) -> tuple[str, float]:
-    distance_score = max(0.0, 1.0 - distance / 3.0)
+    distance_score = max(0.0, 1.0 - distance / 10.0)
     score = round(similarity * 0.72 + distance_score * 0.28, 3)
-    high = (distance <= 0.75 and similarity >= 0.72) or (distance <= 2.5 and similarity >= 0.90)
-    possible = distance <= 3.0 and similarity >= 0.55
+    high = (distance <= 0.75 and similarity >= 0.72) or (distance <= 2.5 and similarity >= 0.90) or (distance <= 10.0 and similarity >= 0.99)
+    possible = distance <= 10.0 and similarity >= 0.55
     return ("high" if high else "review" if possible else "rejected"), score
 
 
@@ -97,7 +98,7 @@ def candidate_matches(waters: list[dict[str, Any]], stations: list[dict[str, Any
             continue
         for station in usable:
             distance = distance_miles(float(water["lat"]), float(water["lng"]), float(station["latitude"]), float(station["longitude"]))
-            if distance > 3.0:
+            if distance > 10.0:
                 continue
             similarity = name_similarity(water, station)
             confidence, score = classify_match(distance, similarity)
@@ -107,12 +108,20 @@ def candidate_matches(waters: list[dict[str, Any]], stations: list[dict[str, Any
     return sorted(candidates, key=lambda item: (item["water_key"], -item["match_score"], item["distance_miles"]))
 
 
-def choose_matches(candidates: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+def choose_matches(candidates: list[dict[str, Any]], overrides: dict[str, str] | None = None) -> dict[str, dict[str, Any]]:
+    overrides = overrides or {}
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for candidate in candidates:
         grouped[candidate["water_key"]].append(candidate)
     chosen = {}
     for water_key, options in grouped.items():
+        approved_abbrev = overrides.get(water_key)
+        if approved_abbrev:
+            approved = next((option for option in options if option["station_abbrev"] == approved_abbrev), None)
+            if approved:
+                approved = {**approved, "confidence": "manual-approved", "match_score": 1.0}
+                chosen[water_key] = approved
+            continue
         high = [option for option in options if option["confidence"] == "high"]
         if not high:
             continue
@@ -164,7 +173,7 @@ def build_payload(chosen: dict[str, dict[str, Any]], daily_rows: list[dict[str, 
     waters = {}
     for key, match in chosen.items():
         station, abbrev = match["station"], str(match["station"].get("abbrev") or "")
-        waters[key] = {"station": {"abbrev": abbrev, "name": station.get("stationName"), "water_source": station.get("waterSource"), "latitude": station.get("latitude"), "longitude": station.get("longitude"), "distance_miles": match["distance_miles"], "provider": station.get("dataSource"), "usgs_station_id": station.get("usgsStationId"), "official_url": station.get("moreInformation")}, "current": {"value": station.get("measValue"), "units": station.get("units") or "cfs", "measured_at": station.get("measDateTime"), "parameter": station.get("parameter"), "flag": station.get("flagA"), "review_status": station.get("flagB")}, "trend": sorted(trends.get(abbrev, []), key=lambda point: point["date"])[-30:], "match": {"confidence": "high", "score": match["match_score"], "name_similarity": match["name_similarity"]}}
+        waters[key] = {"station": {"abbrev": abbrev, "name": station.get("stationName"), "water_source": station.get("waterSource"), "latitude": station.get("latitude"), "longitude": station.get("longitude"), "distance_miles": match["distance_miles"], "provider": station.get("dataSource"), "usgs_station_id": station.get("usgsStationId"), "official_url": station.get("moreInformation")}, "current": {"value": station.get("measValue"), "units": station.get("units") or "cfs", "measured_at": station.get("measDateTime"), "parameter": station.get("parameter"), "flag": station.get("flagA"), "review_status": station.get("flagB")}, "trend": sorted(trends.get(abbrev, []), key=lambda point: point["date"])[-30:], "match": {"confidence": match["confidence"], "score": match["match_score"], "name_similarity": match["name_similarity"]}}
     return {"generated_at": datetime.now(timezone.utc).isoformat(), "source": "Colorado Division of Water Resources HydroBase REST API", "source_url": "https://dwr.state.co.us/tools/stations", "summary": {"matched_waters": len(waters), "stations": len({v["station"]["abbrev"] for v in waters.values()})}, "waters": waters}
 
 
@@ -173,6 +182,7 @@ def main() -> int:
     parser.add_argument("--waters", type=Path, default=ROOT / "data" / "waters.json")
     parser.add_argument("--stations-fixture", type=Path)
     parser.add_argument("--daily-fixture", type=Path)
+    parser.add_argument("--overrides", type=Path, default=DEFAULT_OVERRIDES)
     parser.add_argument("--output", type=Path, default=ROOT / "data" / "streamflow.json")
     parser.add_argument("--report", type=Path, default=ROOT / "data" / "streamflow-match-report.csv")
     args = parser.parse_args()
@@ -180,7 +190,8 @@ def main() -> int:
     api_key = os.getenv("DWR_API_KEY") or None
     stations = read_json(args.stations_fixture) if args.stations_fixture else fetch_stations(api_key)
     candidates = candidate_matches(waters, stations)
-    chosen = choose_matches(candidates)
+    overrides_payload = read_json(args.overrides) if args.overrides.exists() else {}
+    chosen = choose_matches(candidates, overrides_payload.get("approved", {}))
     abbrevs = sorted({str(item["station_abbrev"]) for item in chosen.values() if item.get("station_abbrev")})
     daily = read_json(args.daily_fixture) if args.daily_fixture else fetch_daily(abbrevs, api_key)
     write_json(args.output, build_payload(chosen, daily))
