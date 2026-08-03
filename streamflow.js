@@ -1,6 +1,7 @@
 (() => {
   let flowData = { waters: {} };
-  const loaded = fetch('data/streamflow.json').then(response => response.ok ? response.json() : Promise.reject(new Error(response.statusText))).then(data => { flowData = data; return data; }).catch(error => { console.warn('Stream-flow data unavailable', error); return flowData; });
+  window.cofishHasStreamflow=water=>Boolean(flowData.waters?.[water?.key]);
+  const loaded = fetch('data/streamflow.json').then(response => response.ok ? response.json() : Promise.reject(new Error(response.statusText))).then(data => { flowData = data; window.render?.(); return data; }).catch(error => { console.warn('Stream-flow data unavailable', error); return flowData; });
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const flowValue = value => Number.isFinite(Number(value)) ? Number(value).toLocaleString(undefined,{maximumFractionDigits:1}) : '—';
   function measuredAt(value){if(!value)return'Time unavailable';const date=new Date(value);return Number.isNaN(date.getTime())?'Time unavailable':date.toLocaleString([],{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}
