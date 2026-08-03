@@ -31,6 +31,15 @@
     return Number.isFinite(Number(w.lat))&&Number.isFinite(Number(w.lng));
   }
 
+  function flowGauge(w){
+    if(!window.cofishHasStreamflow?.(w))return'';
+    return '<span class="flow-gauge" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M2.5 10a5.5 5.5 0 0 1 11 0"></path><path d="m8 10 3-3"></path><circle cx="8" cy="10" r="1"></circle></svg></span>';
+  }
+
+  function flowBadge(w){
+    return window.cofishHasStreamflow?.(w)?'<span class="flow-available-badge">Gauge data</span>':'';
+  }
+
   function firstValue(...values){
     return values.find(value=>value!==null&&value!==undefined&&value!=='');
   }
@@ -86,7 +95,7 @@
   };
 
   popup=function(w){
-    return `<div class="popup"><h3>${esc(displayName(w))}</h3><p>${esc(stockingLabel(w))} · ${esc(w.county||'County unavailable')}</p>${speciesVisuals(w,'popup-species')}<div class="popup-weather weather-loading" aria-live="polite" aria-label="Loading weather summary">${['High','Precip.','Wind'].map(label=>`<div class="popup-weather-item"><span>${label}</span><b class="skeleton">—</b></div>`).join('')}</div><button class="popup-detail" onclick="window.openWater('${esc(w.key)}')">Full details</button></div>`;
+    return `<div class="popup"><h3>${esc(displayName(w))}</h3>${flowBadge(w)}<p>${esc(stockingLabel(w))} · ${esc(w.county||'County unavailable')}</p>${speciesVisuals(w,'popup-species')}<div class="popup-weather weather-loading" aria-live="polite" aria-label="Loading weather summary">${['High','Precip.','Wind'].map(label=>`<div class="popup-weather-item"><span>${label}</span><b class="skeleton">—</b></div>`).join('')}</div><button class="popup-detail" onclick="window.openWater('${esc(w.key)}')">Full details</button></div>`;
   };
 
   render=function(){
@@ -96,6 +105,7 @@
     visible.forEach(w=>{
       const n=$('waterCardTemplate').content.cloneNode(true);
       n.querySelector('.card-name').textContent=displayName(w);
+      if(window.cofishHasStreamflow?.(w))n.querySelector('.card-name').insertAdjacentHTML('afterend',flowBadge(w));
       n.querySelector('.card-meta').textContent=w.latest_report_date?`${pretty(w.latest_report_date)} · ${w.county||'County unavailable'} · ${w.historical_event_count||w.stocking_dates?.length||0} stocking event(s)`:`No matching stocking history · ${w.county||'County unavailable'}`;
       n.querySelector('.card-species').textContent=w.species?.length?w.species.join(' · '):'Species not exposed';
       n.querySelector('button').addEventListener('click',()=>{const m=markers.get(w.key);if(m&&map){map.setView([w.lat,w.lng],10);m.openPopup()}showDetails(w)});
@@ -104,7 +114,7 @@
     if(markerLayer){
       markerLayer.clearLayers();markers.clear();
       visible.filter(w=>Number.isFinite(Number(w.lat))&&Number.isFinite(Number(w.lng))).forEach(w=>{
-        const icon=L.divIcon({className:'',html:`<div class="marker-pin ${recency(w.latest_report_date)} ${waterTypeClass(w)}"></div>`,iconSize:[20,20],iconAnchor:[10,10]});
+        const icon=L.divIcon({className:'',html:`<div class="marker-pin ${recency(w.latest_report_date)} ${waterTypeClass(w)} ${window.cofishHasStreamflow?.(w)?'has-streamflow':''}">${flowGauge(w)}</div>`,iconSize:[24,24],iconAnchor:[12,12]});
         const m=L.marker([Number(w.lat),Number(w.lng)],{icon}).bindPopup(popup(w),{maxWidth:360});
         m.on('popupopen',()=>loadPopupWeather(w,m));markerLayer.addLayer(m);markers.set(w.key,m);
       });
