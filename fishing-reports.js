@@ -18,7 +18,11 @@
   const originalDetailHtml = window.detailHtml;
   window.detailHtml = function fishingReportsDetailHtml(water) {
     const html = originalDetailHtml(water), reportCard = card(water);
-    return reportCard ? html.replace('<h3>Water details</h3>', `${reportCard}<h3>Water details</h3>`) : html;
+    if (!reportCard) return html;
+    const heading = html.includes('<h3>Water details</h3>')
+      ? '<h3>Water details</h3>'
+      : '<h3>Fishing Atlas details</h3>';
+    return html.replace(heading, `${reportCard}${heading}`);
   };
   const originalShowDetails = window.showDetails;
   window.showDetails = function fishingReportsShowDetails(water) {
@@ -27,7 +31,9 @@
     if (content && !content.querySelector('.fishing-reports-card')) {
       const reportCard = card(water);
       if (reportCard) {
-        const heading = [...content.querySelectorAll('h3')].find(element => element.textContent === 'Water details');
+        const heading = [...content.querySelectorAll('h3')].find(element =>
+          ['Water details', 'Fishing Atlas details'].includes(element.textContent)
+        );
         heading?.insertAdjacentHTML('beforebegin', reportCard);
       }
     }
