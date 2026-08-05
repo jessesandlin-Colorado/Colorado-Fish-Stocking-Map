@@ -316,7 +316,7 @@
   }
 
   function discoverMapLegends() {
-    mapShell.querySelectorAll('.weather-layer-legend, .bathymetry-legend')
+    mapShell.querySelectorAll('.weather-layer-legend, .bathymetry-legend, .map-symbol-legend')
       .forEach(makeMapLegendCollapsible);
   }
 

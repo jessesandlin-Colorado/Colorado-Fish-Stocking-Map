@@ -94,13 +94,32 @@ def duplicate_candidate(record: dict[str, Any], exact_names: dict[str, list[dict
     candidate_names.discard("")
     lat, lng = coordinates(record)
 
-    for name in candidate_names:
-        if name in exact_names:
-            match = exact_names[name][0]
-            distance = None
-            if lat is not None and lng is not None and match.get("_lat") is not None:
-                distance = miles(lat, lng, match["_lat"], match["_lng"])
-            return "exact-name", str(match.get("name") or ""), distance
+    exact_matches = list({
+        id(match): match
+        for name in candidate_names
+        for match in exact_names.get(name, [])
+    }.values())
+    if exact_matches:
+        located_matches = []
+        if lat is not None and lng is not None:
+            located_matches = [
+                (miles(lat, lng, match["_lat"], match["_lng"]), match)
+                for match in exact_matches
+                if match.get("_lat") is not None and match.get("_lng") is not None
+            ]
+        if located_matches:
+            distance, match = min(located_matches, key=lambda item: item[0])
+            # A shared generic name does not make distant lakes or separate river
+            # access sections duplicates. Keep only geographically plausible
+            # exact-name aliases; the prior first-match behavior suppressed the
+            # Dream Stream because another South Platte record was 51.8 mi away.
+            if distance <= 3.0:
+                return "exact-name", str(match.get("name") or ""), distance
+        else:
+            # An exact name remains useful for attaching Atlas coordinates to a
+            # stocking record whose location has not yet been mapped.
+            match = next(iter(exact_matches))
+            return "exact-name-unmapped", str(match.get("name") or ""), None
 
     if lat is None or lng is None:
         return "", "", None
@@ -164,6 +183,12 @@ def classify(record: dict[str, Any], duplicate_kind: str) -> tuple[str, str]:
 def main() -> None:
     comparison = load(DATA / "atlas-inventory-comparison.json")
     project = load(DATA / "waters.json")
+    overrides_path = ROOT / "config" / "atlas_import_overrides.json"
+    overrides = load(overrides_path) if overrides_path.exists() else {}
+    forced_imports = {
+        str(key): str(reason)
+        for key, reason in (overrides.get("force_import_watercodes") or {}).items()
+    }
     records = comparison.get("atlas_only_waters", [])
     project_waters = project.get("waters", [])
     exact_names, existing = existing_index(project_waters)
@@ -175,6 +200,10 @@ def main() -> None:
         record["possible_existing_water"] = duplicate_name
         record["possible_existing_distance_miles"] = round(duplicate_distance, 3) if duplicate_distance is not None else None
         classification, reason = classify(record, duplicate_kind)
+        watercode = str(record.get("watercode") or "")
+        if watercode in forced_imports:
+            classification = "import-public-confirmed"
+            reason = f"Reviewed import override: {forced_imports[watercode]}"
         record["review_classification"] = classification
         record["review_reason"] = reason
 

@@ -168,3 +168,34 @@
 
   applySiteBranding();
 })();
+
+// Stream-flow is kept in its own small bundle so the core map remains usable
+// if Colorado DWR data is temporarily unavailable.
+const streamflowStyles = document.createElement('link');
+streamflowStyles.rel = 'stylesheet';
+streamflowStyles.href = 'streamflow.css';
+document.head.appendChild(streamflowStyles);
+const streamflowScript = document.createElement('script');
+streamflowScript.src = 'streamflow.js';
+document.body.appendChild(streamflowScript);
+const goldMedalStyles = document.createElement('link');
+goldMedalStyles.rel = 'stylesheet';
+goldMedalStyles.href = 'gold-medal-waters.css';
+document.head.appendChild(goldMedalStyles);
+const goldMedalScript = document.createElement('script');
+goldMedalScript.src = 'gold-medal-waters.js';
+document.body.appendChild(goldMedalScript);
+const fishingReportStyles = document.createElement('link');
+fishingReportStyles.rel = 'stylesheet';
+fishingReportStyles.href = 'fishing-reports.css';
+document.head.appendChild(fishingReportStyles);
+const fishingReportScript = document.createElement('script');
+fishingReportScript.src = 'fishing-reports.js';
+document.body.appendChild(fishingReportScript);
+const symbolLegendStyles = document.createElement('link');
+symbolLegendStyles.rel = 'stylesheet';
+symbolLegendStyles.href = 'map-symbol-legend.css';
+document.head.appendChild(symbolLegendStyles);
+const symbolLegendScript = document.createElement('script');
+symbolLegendScript.src = 'map-symbol-legend.js';
+document.body.appendChild(symbolLegendScript);

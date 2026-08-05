@@ -35,6 +35,36 @@
   border-left-color:var(--river-outline);
 }
 
+.flow-gauge{
+  position:absolute;
+  z-index:2;
+  top:-9px;
+  left:-9px;
+  display:grid;
+  place-items:center;
+  width:15px;
+  height:15px;
+  border:1px solid #17422f;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,.35);
+  color:#174f36;
+}
+.flow-gauge svg{width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.flow-gauge circle{fill:currentColor;stroke:none}
+
+.flow-available-badge{
+  display:inline-block;
+  margin:.2rem 0;
+  padding:.2rem .45rem;
+  border:1px solid #a9c9b5;
+  border-radius:999px;
+  background:#e7f3ea;
+  color:#174f36;
+  font-size:.7rem;
+  font-weight:800;
+}
+
 .legend .lake-key,
 .legend .river-key{
   position:relative;

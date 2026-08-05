@@ -1,0 +1,5339 @@
+{
+  "generated_at": "2026-08-03T16:58:36.509338+00:00",
+  "source": "Colorado Division of Water Resources HydroBase REST API",
+  "source_url": "https://dwr.state.co.us/tools/stations",
+  "summary": {
+    "matched_waters": 37,
+    "stations": 34
+  },
+  "waters": {
+    "atlas-1323": {
+      "station": {
+        "abbrev": "UNCBRRCO",
+        "name": "UNCOMPAHGRE RIVER BELOW RIDGWAY RESERVOIR, CO",
+        "water_source": "UNCOMPAHGRE RIVER",
+        "latitude": 38.240561,
+        "longitude": -107.760319,
+        "distance_miles": 0.3,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09147025",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/UNCBRRCO"
+      },
+      "current": {
+        "value": 107.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:30:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-09",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-11",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-14",
+          "value": 142.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 145.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 106.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 107.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 107.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 107.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.972,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-1338": {
+      "station": {
+        "abbrev": "DOLDOLCO",
+        "name": "DOLORES RIVER AT DOLORES",
+        "water_source": "DOLORES RIVER",
+        "latitude": 37.472396,
+        "longitude": -108.497913,
+        "distance_miles": 0.63,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09166500",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/DOLDOLCO"
+      },
+      "current": {
+        "value": 116.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T09:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 65.3
+        },
+        {
+          "date": "2026-07-06",
+          "value": 79.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 83.5
+        },
+        {
+          "date": "2026-07-08",
+          "value": 83.3
+        },
+        {
+          "date": "2026-07-09",
+          "value": 81.4
+        },
+        {
+          "date": "2026-07-10",
+          "value": 78.5
+        },
+        {
+          "date": "2026-07-11",
+          "value": 77.1
+        },
+        {
+          "date": "2026-07-12",
+          "value": 80.2
+        },
+        {
+          "date": "2026-07-13",
+          "value": 88.3
+        },
+        {
+          "date": "2026-07-14",
+          "value": 93.2
+        },
+        {
+          "date": "2026-07-15",
+          "value": 99.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 110.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 137.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 123.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 134.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 170.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 153.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 180.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 218.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 188.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 264.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 241.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 251.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 202.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 172.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 154.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 133.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 124.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 116.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.941,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-1444": {
+      "station": {
+        "abbrev": "SANPAGCO",
+        "name": "SAN JUAN RIVER AT PAGOSA SPRINGS, CO",
+        "water_source": "SAN JUAN RIVER",
+        "latitude": 37.265532,
+        "longitude": -107.011015,
+        "distance_miles": 0.67,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09342500",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/SANPAGCO"
+      },
+      "current": {
+        "value": 13.7,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:00:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 28.8
+        },
+        {
+          "date": "2026-07-06",
+          "value": 28.8
+        },
+        {
+          "date": "2026-07-07",
+          "value": 30.5
+        },
+        {
+          "date": "2026-07-08",
+          "value": 31.5
+        },
+        {
+          "date": "2026-07-09",
+          "value": 31.8
+        },
+        {
+          "date": "2026-07-10",
+          "value": 28.2
+        },
+        {
+          "date": "2026-07-11",
+          "value": 24.9
+        },
+        {
+          "date": "2026-07-12",
+          "value": 23.8
+        },
+        {
+          "date": "2026-07-13",
+          "value": 23.1
+        },
+        {
+          "date": "2026-07-14",
+          "value": 25.7
+        },
+        {
+          "date": "2026-07-15",
+          "value": 25.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 26.2
+        },
+        {
+          "date": "2026-07-17",
+          "value": 30.3
+        },
+        {
+          "date": "2026-07-18",
+          "value": 34.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 34.1
+        },
+        {
+          "date": "2026-07-20",
+          "value": 27.3
+        },
+        {
+          "date": "2026-07-21",
+          "value": 22.9
+        },
+        {
+          "date": "2026-07-22",
+          "value": 23.5
+        },
+        {
+          "date": "2026-07-23",
+          "value": 27.2
+        },
+        {
+          "date": "2026-07-24",
+          "value": 23.3
+        },
+        {
+          "date": "2026-07-25",
+          "value": 20.6
+        },
+        {
+          "date": "2026-07-26",
+          "value": 23.9
+        },
+        {
+          "date": "2026-07-27",
+          "value": 26.7
+        },
+        {
+          "date": "2026-07-28",
+          "value": 21.3
+        },
+        {
+          "date": "2026-07-29",
+          "value": 21.6
+        },
+        {
+          "date": "2026-07-30",
+          "value": 19.5
+        },
+        {
+          "date": "2026-07-31",
+          "value": 15.8
+        },
+        {
+          "date": "2026-08-01",
+          "value": 14.7
+        },
+        {
+          "date": "2026-08-02",
+          "value": 15.8
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.937,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-1731": {
+      "station": {
+        "abbrev": "RIFRGRCO",
+        "name": "RIFLE CREEK BELOW RIFLE GAP RESERVOIR",
+        "water_source": "RIFLE CREEK",
+        "latitude": 39.626291,
+        "longitude": -107.75989,
+        "distance_miles": 0.25,
+        "provider": "Bureau of Reclamation  (Station cooperator)",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/RIFRGRCO"
+      },
+      "current": {
+        "value": 28.5,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:00:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 27.8
+        },
+        {
+          "date": "2026-07-06",
+          "value": 27.7
+        },
+        {
+          "date": "2026-07-07",
+          "value": 27.4
+        },
+        {
+          "date": "2026-07-08",
+          "value": 27.8
+        },
+        {
+          "date": "2026-07-09",
+          "value": 28.1
+        },
+        {
+          "date": "2026-07-10",
+          "value": 28.1
+        },
+        {
+          "date": "2026-07-11",
+          "value": 28.1
+        },
+        {
+          "date": "2026-07-12",
+          "value": 28.1
+        },
+        {
+          "date": "2026-07-13",
+          "value": 27.1
+        },
+        {
+          "date": "2026-07-14",
+          "value": 26.4
+        },
+        {
+          "date": "2026-07-15",
+          "value": 26.4
+        },
+        {
+          "date": "2026-07-16",
+          "value": 26.5
+        },
+        {
+          "date": "2026-07-17",
+          "value": 26.5
+        },
+        {
+          "date": "2026-07-18",
+          "value": 26.4
+        },
+        {
+          "date": "2026-07-19",
+          "value": 26.4
+        },
+        {
+          "date": "2026-07-20",
+          "value": 26.5
+        },
+        {
+          "date": "2026-07-21",
+          "value": 27.6
+        },
+        {
+          "date": "2026-07-22",
+          "value": 29.6
+        },
+        {
+          "date": "2026-07-23",
+          "value": 29.6
+        },
+        {
+          "date": "2026-07-24",
+          "value": 29.6
+        },
+        {
+          "date": "2026-07-25",
+          "value": 29.5
+        },
+        {
+          "date": "2026-07-26",
+          "value": 29.2
+        },
+        {
+          "date": "2026-07-27",
+          "value": 29.2
+        },
+        {
+          "date": "2026-07-28",
+          "value": 29.2
+        },
+        {
+          "date": "2026-07-29",
+          "value": 29.1
+        },
+        {
+          "date": "2026-07-30",
+          "value": 28.8
+        },
+        {
+          "date": "2026-07-31",
+          "value": 28.5
+        },
+        {
+          "date": "2026-08-01",
+          "value": 28.5
+        },
+        {
+          "date": "2026-08-02",
+          "value": 28.5
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.977,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-1788": {
+      "station": {
+        "abbrev": "BLUNINCO",
+        "name": "BLUE RIVER AT HIGHWAY 9 BRIDGE BELOW BRECKENRIDGE",
+        "water_source": "BLUE RIVER",
+        "latitude": 39.539337,
+        "longitude": -106.042213,
+        "distance_miles": 2.18,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/BLUNINCO"
+      },
+      "current": {
+        "value": 40.1,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:30:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 38.9
+        },
+        {
+          "date": "2026-07-06",
+          "value": 37.7
+        },
+        {
+          "date": "2026-07-07",
+          "value": 38.2
+        },
+        {
+          "date": "2026-07-08",
+          "value": 40.3
+        },
+        {
+          "date": "2026-07-09",
+          "value": 43.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 40.5
+        },
+        {
+          "date": "2026-07-11",
+          "value": 37.2
+        },
+        {
+          "date": "2026-07-12",
+          "value": 35.6
+        },
+        {
+          "date": "2026-07-13",
+          "value": 34.5
+        },
+        {
+          "date": "2026-07-14",
+          "value": 34.2
+        },
+        {
+          "date": "2026-07-15",
+          "value": 33.5
+        },
+        {
+          "date": "2026-07-16",
+          "value": 33.3
+        },
+        {
+          "date": "2026-07-17",
+          "value": 34.2
+        },
+        {
+          "date": "2026-07-18",
+          "value": 36.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 35.2
+        },
+        {
+          "date": "2026-07-20",
+          "value": 34.7
+        },
+        {
+          "date": "2026-07-21",
+          "value": 33.1
+        },
+        {
+          "date": "2026-07-22",
+          "value": 32.7
+        },
+        {
+          "date": "2026-07-23",
+          "value": 31.9
+        },
+        {
+          "date": "2026-07-24",
+          "value": 32.2
+        },
+        {
+          "date": "2026-07-25",
+          "value": 31.8
+        },
+        {
+          "date": "2026-07-26",
+          "value": 32.3
+        },
+        {
+          "date": "2026-07-27",
+          "value": 35.3
+        },
+        {
+          "date": "2026-07-28",
+          "value": 46.7
+        },
+        {
+          "date": "2026-07-29",
+          "value": 57.1
+        },
+        {
+          "date": "2026-07-30",
+          "value": 67.1
+        },
+        {
+          "date": "2026-07-31",
+          "value": 54.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 46.6
+        },
+        {
+          "date": "2026-08-02",
+          "value": 42.5
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.797,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-1794": {
+      "station": {
+        "abbrev": "UNCBRRCO",
+        "name": "UNCOMPAHGRE RIVER BELOW RIDGWAY RESERVOIR, CO",
+        "water_source": "UNCOMPAHGRE RIVER",
+        "latitude": 38.240561,
+        "longitude": -107.760319,
+        "distance_miles": 0.3,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09147025",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/UNCBRRCO"
+      },
+      "current": {
+        "value": 107.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:30:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-09",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-11",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 141.0
+        },
+        {
+          "date": "2026-07-14",
+          "value": 142.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 144.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 145.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 106.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 107.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 107.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 107.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 107.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.972,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-615": {
+      "station": {
+        "abbrev": "DOLDOLCO",
+        "name": "DOLORES RIVER AT DOLORES",
+        "water_source": "DOLORES RIVER",
+        "latitude": 37.472396,
+        "longitude": -108.497913,
+        "distance_miles": 0.63,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09166500",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/DOLDOLCO"
+      },
+      "current": {
+        "value": 116.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T09:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 65.3
+        },
+        {
+          "date": "2026-07-06",
+          "value": 79.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 83.5
+        },
+        {
+          "date": "2026-07-08",
+          "value": 83.3
+        },
+        {
+          "date": "2026-07-09",
+          "value": 81.4
+        },
+        {
+          "date": "2026-07-10",
+          "value": 78.5
+        },
+        {
+          "date": "2026-07-11",
+          "value": 77.1
+        },
+        {
+          "date": "2026-07-12",
+          "value": 80.2
+        },
+        {
+          "date": "2026-07-13",
+          "value": 88.3
+        },
+        {
+          "date": "2026-07-14",
+          "value": 93.2
+        },
+        {
+          "date": "2026-07-15",
+          "value": 99.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 110.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 137.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 123.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 134.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 170.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 153.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 180.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 218.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 188.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 264.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 241.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 251.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 202.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 172.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 154.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 133.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 124.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 116.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.941,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-653": {
+      "station": {
+        "abbrev": "YAMBSRCO",
+        "name": "YAMPA RIVER BELOW STAGECOACH RESERVOIR, CO",
+        "water_source": "YAMPA RIVER",
+        "latitude": 40.286554,
+        "longitude": -106.829061,
+        "distance_miles": 1.49,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09237500",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/YAMBSRCO"
+      },
+      "current": {
+        "value": 55.1,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:00:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 25.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 25.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 24.9
+        },
+        {
+          "date": "2026-07-08",
+          "value": 24.7
+        },
+        {
+          "date": "2026-07-09",
+          "value": 24.9
+        },
+        {
+          "date": "2026-07-10",
+          "value": 27.3
+        },
+        {
+          "date": "2026-07-11",
+          "value": 29.3
+        },
+        {
+          "date": "2026-07-12",
+          "value": 30.6
+        },
+        {
+          "date": "2026-07-13",
+          "value": 32.0
+        },
+        {
+          "date": "2026-07-14",
+          "value": 32.6
+        },
+        {
+          "date": "2026-07-15",
+          "value": 29.8
+        },
+        {
+          "date": "2026-07-16",
+          "value": 29.8
+        },
+        {
+          "date": "2026-07-17",
+          "value": 29.9
+        },
+        {
+          "date": "2026-07-18",
+          "value": 29.9
+        },
+        {
+          "date": "2026-07-19",
+          "value": 29.8
+        },
+        {
+          "date": "2026-07-20",
+          "value": 29.8
+        },
+        {
+          "date": "2026-07-21",
+          "value": 38.4
+        },
+        {
+          "date": "2026-07-22",
+          "value": 44.2
+        },
+        {
+          "date": "2026-07-23",
+          "value": 46.1
+        },
+        {
+          "date": "2026-07-24",
+          "value": 48.3
+        },
+        {
+          "date": "2026-07-25",
+          "value": 49.7
+        },
+        {
+          "date": "2026-07-26",
+          "value": 49.6
+        },
+        {
+          "date": "2026-07-27",
+          "value": 49.7
+        },
+        {
+          "date": "2026-07-28",
+          "value": 47.4
+        },
+        {
+          "date": "2026-07-29",
+          "value": 45.6
+        },
+        {
+          "date": "2026-07-30",
+          "value": 45.6
+        },
+        {
+          "date": "2026-07-31",
+          "value": 50.5
+        },
+        {
+          "date": "2026-08-01",
+          "value": 55.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 55.1
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.861,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-10316": {
+      "station": {
+        "abbrev": "BOCPINCO",
+        "name": "SOUTH BOULDER CREEK ABOVE GROSS RESERVOIR AT PINECLIFFE",
+        "water_source": "SOUTH BOULDER CREEK",
+        "latitude": 39.931659,
+        "longitude": -105.422985,
+        "distance_miles": 1.14,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/BOCPINCO"
+      },
+      "current": {
+        "value": 21.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 80.8
+        },
+        {
+          "date": "2026-07-06",
+          "value": 77.5
+        },
+        {
+          "date": "2026-07-07",
+          "value": 75.6
+        },
+        {
+          "date": "2026-07-08",
+          "value": 75.2
+        },
+        {
+          "date": "2026-07-09",
+          "value": 69.8
+        },
+        {
+          "date": "2026-07-10",
+          "value": 77.6
+        },
+        {
+          "date": "2026-07-11",
+          "value": 63.9
+        },
+        {
+          "date": "2026-07-12",
+          "value": 58.9
+        },
+        {
+          "date": "2026-07-13",
+          "value": 55.7
+        },
+        {
+          "date": "2026-07-14",
+          "value": 54.1
+        },
+        {
+          "date": "2026-07-15",
+          "value": 52.1
+        },
+        {
+          "date": "2026-07-16",
+          "value": 49.8
+        },
+        {
+          "date": "2026-07-17",
+          "value": 56.6
+        },
+        {
+          "date": "2026-07-18",
+          "value": 51.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 47.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 45.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 52.5
+        },
+        {
+          "date": "2026-07-22",
+          "value": 47.5
+        },
+        {
+          "date": "2026-07-23",
+          "value": 49.6
+        },
+        {
+          "date": "2026-07-24",
+          "value": 45.3
+        },
+        {
+          "date": "2026-07-25",
+          "value": 39.9
+        },
+        {
+          "date": "2026-07-26",
+          "value": 40.9
+        },
+        {
+          "date": "2026-07-27",
+          "value": 42.1
+        },
+        {
+          "date": "2026-07-28",
+          "value": 46.2
+        },
+        {
+          "date": "2026-07-29",
+          "value": 43.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 45.8
+        },
+        {
+          "date": "2026-07-31",
+          "value": 36.5
+        },
+        {
+          "date": "2026-08-01",
+          "value": 30.1
+        },
+        {
+          "date": "2026-08-02",
+          "value": 26.2
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.893,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-10506": {
+      "station": {
+        "abbrev": "CHIDEVCO",
+        "name": "CHICAGO CREEK BLW DEVILS CANYON NR IDAHO SPRGS C",
+        "water_source": "CHICAGO CREEK",
+        "latitude": 39.716986,
+        "longitude": -105.572152,
+        "distance_miles": 2.14,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": "06717400",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/CHIDEVCO"
+      },
+      "current": {
+        "value": 8.52,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:15:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 4.03
+        },
+        {
+          "date": "2026-07-06",
+          "value": 3.87
+        },
+        {
+          "date": "2026-07-07",
+          "value": 3.44
+        },
+        {
+          "date": "2026-07-08",
+          "value": 3.57
+        },
+        {
+          "date": "2026-07-09",
+          "value": 3.44
+        },
+        {
+          "date": "2026-07-10",
+          "value": 4.02
+        },
+        {
+          "date": "2026-07-11",
+          "value": 3.38
+        },
+        {
+          "date": "2026-07-12",
+          "value": 3.14
+        },
+        {
+          "date": "2026-07-13",
+          "value": 3.07
+        },
+        {
+          "date": "2026-07-14",
+          "value": 3.05
+        },
+        {
+          "date": "2026-07-15",
+          "value": 2.97
+        },
+        {
+          "date": "2026-07-16",
+          "value": 3.23
+        },
+        {
+          "date": "2026-07-17",
+          "value": 4.76
+        },
+        {
+          "date": "2026-07-18",
+          "value": 3.51
+        },
+        {
+          "date": "2026-07-19",
+          "value": 3.2
+        },
+        {
+          "date": "2026-07-20",
+          "value": 3.12
+        },
+        {
+          "date": "2026-07-21",
+          "value": 3.17
+        },
+        {
+          "date": "2026-07-22",
+          "value": 6.17
+        },
+        {
+          "date": "2026-07-23",
+          "value": 6.4
+        },
+        {
+          "date": "2026-07-24",
+          "value": 4.39
+        },
+        {
+          "date": "2026-07-25",
+          "value": 7.12
+        },
+        {
+          "date": "2026-07-26",
+          "value": 5.52
+        },
+        {
+          "date": "2026-07-27",
+          "value": 6.58
+        },
+        {
+          "date": "2026-07-28",
+          "value": 8.63
+        },
+        {
+          "date": "2026-07-29",
+          "value": 10.9
+        },
+        {
+          "date": "2026-07-30",
+          "value": 10.3
+        },
+        {
+          "date": "2026-07-31",
+          "value": 10.8
+        },
+        {
+          "date": "2026-08-01",
+          "value": 5.12
+        },
+        {
+          "date": "2026-08-02",
+          "value": 5.16
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.8,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-10532": {
+      "station": {
+        "abbrev": "CLELAWCO",
+        "name": "CLEAR CREEK NEAR LAWSON, CO",
+        "water_source": "CLEAR CREEK",
+        "latitude": 39.765831,
+        "longitude": -105.626122,
+        "distance_miles": 1.41,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "06716500",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/CLELAWCO"
+      },
+      "current": {
+        "value": 62.2,
+        "units": "CFS",
+        "measured_at": "2026-08-03T09:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 83.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 80.5
+        },
+        {
+          "date": "2026-07-07",
+          "value": 79.4
+        },
+        {
+          "date": "2026-07-08",
+          "value": 79.3
+        },
+        {
+          "date": "2026-07-09",
+          "value": 81.9
+        },
+        {
+          "date": "2026-07-10",
+          "value": 85.1
+        },
+        {
+          "date": "2026-07-11",
+          "value": 74.9
+        },
+        {
+          "date": "2026-07-12",
+          "value": 70.7
+        },
+        {
+          "date": "2026-07-13",
+          "value": 68.2
+        },
+        {
+          "date": "2026-07-14",
+          "value": 64.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 62.1
+        },
+        {
+          "date": "2026-07-16",
+          "value": 59.9
+        },
+        {
+          "date": "2026-07-17",
+          "value": 78.1
+        },
+        {
+          "date": "2026-07-18",
+          "value": 72.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 64.6
+        },
+        {
+          "date": "2026-07-20",
+          "value": 60.9
+        },
+        {
+          "date": "2026-07-21",
+          "value": 80.6
+        },
+        {
+          "date": "2026-07-22",
+          "value": 70.2
+        },
+        {
+          "date": "2026-07-23",
+          "value": 71.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 67.4
+        },
+        {
+          "date": "2026-07-25",
+          "value": 62.3
+        },
+        {
+          "date": "2026-07-26",
+          "value": 59.4
+        },
+        {
+          "date": "2026-07-27",
+          "value": 62.5
+        },
+        {
+          "date": "2026-07-28",
+          "value": 93.9
+        },
+        {
+          "date": "2026-07-29",
+          "value": 77.8
+        },
+        {
+          "date": "2026-07-30",
+          "value": 98.7
+        },
+        {
+          "date": "2026-07-31",
+          "value": 76.6
+        },
+        {
+          "date": "2026-08-01",
+          "value": 69.8
+        },
+        {
+          "date": "2026-08-02",
+          "value": 65.7
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.869,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-10968": {
+      "station": {
+        "abbrev": "LEFTHOCO",
+        "name": "LEFT HAND CREEK AT HOVER ROAD NEAR LONGMONT, CO",
+        "water_source": "LEFT HAND CREEK",
+        "latitude": 40.134283,
+        "longitude": -105.130832,
+        "distance_miles": 0.62,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "06724970",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/LEFTHOCO"
+      },
+      "current": {
+        "value": 0.44,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:10:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 1.06
+        },
+        {
+          "date": "2026-07-06",
+          "value": 0.89
+        },
+        {
+          "date": "2026-07-07",
+          "value": 0.69
+        },
+        {
+          "date": "2026-07-08",
+          "value": 0.7
+        },
+        {
+          "date": "2026-07-09",
+          "value": 0.72
+        },
+        {
+          "date": "2026-07-10",
+          "value": 0.74
+        },
+        {
+          "date": "2026-07-11",
+          "value": 0.61
+        },
+        {
+          "date": "2026-07-12",
+          "value": 0.6
+        },
+        {
+          "date": "2026-07-13",
+          "value": 0.68
+        },
+        {
+          "date": "2026-07-14",
+          "value": 0.52
+        },
+        {
+          "date": "2026-07-15",
+          "value": 0.48
+        },
+        {
+          "date": "2026-07-16",
+          "value": 0.44
+        },
+        {
+          "date": "2026-07-17",
+          "value": 0.43
+        },
+        {
+          "date": "2026-07-18",
+          "value": 0.44
+        },
+        {
+          "date": "2026-07-19",
+          "value": 0.43
+        },
+        {
+          "date": "2026-07-20",
+          "value": 0.44
+        },
+        {
+          "date": "2026-07-21",
+          "value": 0.49
+        },
+        {
+          "date": "2026-07-22",
+          "value": 0.5
+        },
+        {
+          "date": "2026-07-23",
+          "value": 0.51
+        },
+        {
+          "date": "2026-07-24",
+          "value": 0.54
+        },
+        {
+          "date": "2026-07-25",
+          "value": 0.74
+        },
+        {
+          "date": "2026-07-26",
+          "value": 1.5
+        },
+        {
+          "date": "2026-07-27",
+          "value": 0.45
+        },
+        {
+          "date": "2026-07-28",
+          "value": 0.5
+        },
+        {
+          "date": "2026-07-29",
+          "value": 0.48
+        },
+        {
+          "date": "2026-07-30",
+          "value": 0.49
+        },
+        {
+          "date": "2026-07-31",
+          "value": 0.43
+        },
+        {
+          "date": "2026-08-01",
+          "value": 0.52
+        },
+        {
+          "date": "2026-08-02",
+          "value": 1.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.942,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-11033": {
+      "station": {
+        "abbrev": "BOCBROCO",
+        "name": "BOULDER CREEK BELOW BROADWAY STREET",
+        "water_source": "BOULDER CREEK",
+        "latitude": 40.014863,
+        "longitude": -105.278541,
+        "distance_miles": 0.88,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/BOCBROCO"
+      },
+      "current": {
+        "value": 28.7,
+        "units": "CFS",
+        "measured_at": "2026-08-03T09:15:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 18.6
+        },
+        {
+          "date": "2026-07-06",
+          "value": 17.8
+        },
+        {
+          "date": "2026-07-07",
+          "value": 12.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 18.1
+        },
+        {
+          "date": "2026-07-09",
+          "value": 25.5
+        },
+        {
+          "date": "2026-07-10",
+          "value": 27.8
+        },
+        {
+          "date": "2026-07-11",
+          "value": 31.1
+        },
+        {
+          "date": "2026-07-12",
+          "value": 28.8
+        },
+        {
+          "date": "2026-07-13",
+          "value": 24.5
+        },
+        {
+          "date": "2026-07-14",
+          "value": 28.8
+        },
+        {
+          "date": "2026-07-15",
+          "value": 26.8
+        },
+        {
+          "date": "2026-07-16",
+          "value": 20.5
+        },
+        {
+          "date": "2026-07-17",
+          "value": 20.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 22.1
+        },
+        {
+          "date": "2026-07-19",
+          "value": 21.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 17.9
+        },
+        {
+          "date": "2026-07-21",
+          "value": 15.6
+        },
+        {
+          "date": "2026-07-22",
+          "value": 15.8
+        },
+        {
+          "date": "2026-07-23",
+          "value": 19.4
+        },
+        {
+          "date": "2026-07-24",
+          "value": 25.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 21.2
+        },
+        {
+          "date": "2026-07-26",
+          "value": 19.8
+        },
+        {
+          "date": "2026-07-27",
+          "value": 16.9
+        },
+        {
+          "date": "2026-07-28",
+          "value": 22.1
+        },
+        {
+          "date": "2026-07-29",
+          "value": 20.8
+        },
+        {
+          "date": "2026-07-30",
+          "value": 29.8
+        },
+        {
+          "date": "2026-07-31",
+          "value": 24.8
+        },
+        {
+          "date": "2026-08-01",
+          "value": 18.9
+        },
+        {
+          "date": "2026-08-02",
+          "value": 15.4
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.918,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-11596": {
+      "station": {
+        "abbrev": "MICWLDCO",
+        "name": "MICHIGAN RIVER AT WALDEN, CO.",
+        "water_source": "MICHIGAN RIVER",
+        "latitude": 40.740791,
+        "longitude": -106.281421,
+        "distance_miles": 1.89,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": "06617100",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/MICWLDCO"
+      },
+      "current": {
+        "value": 12.5,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:15:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 19.2
+        },
+        {
+          "date": "2026-07-06",
+          "value": 15.7
+        },
+        {
+          "date": "2026-07-07",
+          "value": 14.3
+        },
+        {
+          "date": "2026-07-08",
+          "value": 17.9
+        },
+        {
+          "date": "2026-07-09",
+          "value": 21.7
+        },
+        {
+          "date": "2026-07-10",
+          "value": 26.5
+        },
+        {
+          "date": "2026-07-11",
+          "value": 30.7
+        },
+        {
+          "date": "2026-07-12",
+          "value": 35.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 37.6
+        },
+        {
+          "date": "2026-07-14",
+          "value": 42.4
+        },
+        {
+          "date": "2026-07-15",
+          "value": 45.4
+        },
+        {
+          "date": "2026-07-16",
+          "value": 57.2
+        },
+        {
+          "date": "2026-07-17",
+          "value": 55.4
+        },
+        {
+          "date": "2026-07-18",
+          "value": 51.4
+        },
+        {
+          "date": "2026-07-19",
+          "value": 50.5
+        },
+        {
+          "date": "2026-07-20",
+          "value": 62.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 38.3
+        },
+        {
+          "date": "2026-07-22",
+          "value": 3.87
+        },
+        {
+          "date": "2026-07-23",
+          "value": 11.4
+        },
+        {
+          "date": "2026-07-24",
+          "value": 26.2
+        },
+        {
+          "date": "2026-07-25",
+          "value": 34.1
+        },
+        {
+          "date": "2026-07-26",
+          "value": 36.9
+        },
+        {
+          "date": "2026-07-27",
+          "value": 24.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 7.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 10.7
+        },
+        {
+          "date": "2026-07-30",
+          "value": 13.6
+        },
+        {
+          "date": "2026-07-31",
+          "value": 7.57
+        },
+        {
+          "date": "2026-08-01",
+          "value": 6.19
+        },
+        {
+          "date": "2026-08-02",
+          "value": 6.79
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.823,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-12168": {
+      "station": {
+        "abbrev": "MIDSTECO",
+        "name": "MIDDLE SAINT VRAIN AT PEACEFUL VALLEY",
+        "water_source": "MIDDLE SAINT VRAIN CREEK",
+        "latitude": 40.129806,
+        "longitude": -105.517111,
+        "distance_miles": 0.09,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/MIDSTECO"
+      },
+      "current": {
+        "value": 19.5,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:00:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 27.2
+        },
+        {
+          "date": "2026-07-06",
+          "value": 26.1
+        },
+        {
+          "date": "2026-07-07",
+          "value": 26.9
+        },
+        {
+          "date": "2026-07-08",
+          "value": 27.7
+        },
+        {
+          "date": "2026-07-09",
+          "value": 28.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 28.1
+        },
+        {
+          "date": "2026-07-11",
+          "value": 27.5
+        },
+        {
+          "date": "2026-07-12",
+          "value": 27.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 27.3
+        },
+        {
+          "date": "2026-07-14",
+          "value": 27.3
+        },
+        {
+          "date": "2026-07-15",
+          "value": 27.4
+        },
+        {
+          "date": "2026-07-16",
+          "value": 27.3
+        },
+        {
+          "date": "2026-07-17",
+          "value": 26.5
+        },
+        {
+          "date": "2026-07-18",
+          "value": 25.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 24.8
+        },
+        {
+          "date": "2026-07-20",
+          "value": 24.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 23.9
+        },
+        {
+          "date": "2026-07-22",
+          "value": 25.4
+        },
+        {
+          "date": "2026-07-23",
+          "value": 26.6
+        },
+        {
+          "date": "2026-07-24",
+          "value": 28.9
+        },
+        {
+          "date": "2026-07-25",
+          "value": 26.7
+        },
+        {
+          "date": "2026-07-26",
+          "value": 24.1
+        },
+        {
+          "date": "2026-07-27",
+          "value": 24.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 24.2
+        },
+        {
+          "date": "2026-07-29",
+          "value": 24.7
+        },
+        {
+          "date": "2026-07-30",
+          "value": 24.2
+        },
+        {
+          "date": "2026-07-31",
+          "value": 21.1
+        },
+        {
+          "date": "2026-08-01",
+          "value": 19.9
+        },
+        {
+          "date": "2026-08-02",
+          "value": 18.8
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.86,
+        "name_similarity": 0.818
+      }
+    },
+    "atlas-watercode-12384": {
+      "station": {
+        "abbrev": "BTNFDRCO",
+        "name": "NORTH FORK BIG THOMPSON RIVER AT DRAKE, CO.",
+        "water_source": "NORTH FORK BIG THOMPSON RIVER",
+        "latitude": 40.437221,
+        "longitude": -105.351879,
+        "distance_miles": 0.07,
+        "provider": "NCWCD/Bureau of Reclamation (Station Cooperators)",
+        "usgs_station_id": "06736000",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/BTNFDRCO"
+      },
+      "current": {
+        "value": 25.9,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:30:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 26.9
+        },
+        {
+          "date": "2026-07-06",
+          "value": 26.1
+        },
+        {
+          "date": "2026-07-07",
+          "value": 25.7
+        },
+        {
+          "date": "2026-07-08",
+          "value": 24.9
+        },
+        {
+          "date": "2026-07-09",
+          "value": 24.7
+        },
+        {
+          "date": "2026-07-10",
+          "value": 25.6
+        },
+        {
+          "date": "2026-07-11",
+          "value": 24.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 22.4
+        },
+        {
+          "date": "2026-07-13",
+          "value": 21.5
+        },
+        {
+          "date": "2026-07-14",
+          "value": 21.3
+        },
+        {
+          "date": "2026-07-15",
+          "value": 20.4
+        },
+        {
+          "date": "2026-07-16",
+          "value": 20.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 19.5
+        },
+        {
+          "date": "2026-07-18",
+          "value": 18.8
+        },
+        {
+          "date": "2026-07-19",
+          "value": 18.6
+        },
+        {
+          "date": "2026-07-20",
+          "value": 19.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 19.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 42.2
+        },
+        {
+          "date": "2026-07-23",
+          "value": 45.9
+        },
+        {
+          "date": "2026-07-24",
+          "value": 35.5
+        },
+        {
+          "date": "2026-07-25",
+          "value": 30.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 27.3
+        },
+        {
+          "date": "2026-07-27",
+          "value": 26.1
+        },
+        {
+          "date": "2026-07-28",
+          "value": 27.2
+        },
+        {
+          "date": "2026-07-29",
+          "value": 34.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 35.6
+        },
+        {
+          "date": "2026-07-31",
+          "value": 29.4
+        },
+        {
+          "date": "2026-08-01",
+          "value": 27.8
+        },
+        {
+          "date": "2026-08-02",
+          "value": 26.5
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.994,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-18950": {
+      "station": {
+        "abbrev": "CHIIDSCO",
+        "name": "CHICAGO CREEK BELOW IDAHO SPRINGS RESERVOIR",
+        "water_source": "CHICAGO CREEK",
+        "latitude": 39.645135,
+        "longitude": -105.615265,
+        "distance_miles": 1.39,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/CHIIDSCO"
+      },
+      "current": {
+        "value": 4.91,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:30:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 1.44
+        },
+        {
+          "date": "2026-07-06",
+          "value": 0.89
+        },
+        {
+          "date": "2026-07-07",
+          "value": 0.38
+        },
+        {
+          "date": "2026-07-08",
+          "value": 0.38
+        },
+        {
+          "date": "2026-07-09",
+          "value": 1.02
+        },
+        {
+          "date": "2026-07-10",
+          "value": 1.26
+        },
+        {
+          "date": "2026-07-11",
+          "value": 0.41
+        },
+        {
+          "date": "2026-07-12",
+          "value": 0.42
+        },
+        {
+          "date": "2026-07-13",
+          "value": 0.42
+        },
+        {
+          "date": "2026-07-14",
+          "value": 0.42
+        },
+        {
+          "date": "2026-07-15",
+          "value": 0.42
+        },
+        {
+          "date": "2026-07-16",
+          "value": 1.63
+        },
+        {
+          "date": "2026-07-17",
+          "value": 1.8
+        },
+        {
+          "date": "2026-07-18",
+          "value": 0.42
+        },
+        {
+          "date": "2026-07-19",
+          "value": 0.42
+        },
+        {
+          "date": "2026-07-20",
+          "value": 0.41
+        },
+        {
+          "date": "2026-07-21",
+          "value": 1.55
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2.09
+        },
+        {
+          "date": "2026-07-23",
+          "value": 0.66
+        },
+        {
+          "date": "2026-07-24",
+          "value": 1.28
+        },
+        {
+          "date": "2026-07-25",
+          "value": 2.16
+        },
+        {
+          "date": "2026-07-26",
+          "value": 2.16
+        },
+        {
+          "date": "2026-07-27",
+          "value": 2.16
+        },
+        {
+          "date": "2026-07-28",
+          "value": 2.8
+        },
+        {
+          "date": "2026-07-29",
+          "value": 3.62
+        },
+        {
+          "date": "2026-07-30",
+          "value": 5.42
+        },
+        {
+          "date": "2026-07-31",
+          "value": 4.93
+        },
+        {
+          "date": "2026-08-01",
+          "value": 0.05
+        },
+        {
+          "date": "2026-08-02",
+          "value": 2.28
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.87,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-20355": {
+      "station": {
+        "abbrev": "FRAWINCO",
+        "name": "FRASER RIVER AT WINTER PARK, CO.",
+        "water_source": "FRASER RIVER",
+        "latitude": 39.899998,
+        "longitude": -105.776689,
+        "distance_miles": 1.7,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09024000",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/FRAWINCO"
+      },
+      "current": {
+        "value": 6.6,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:00:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 10.9
+        },
+        {
+          "date": "2026-07-06",
+          "value": 10.4
+        },
+        {
+          "date": "2026-07-07",
+          "value": 10.9
+        },
+        {
+          "date": "2026-07-08",
+          "value": 10.6
+        },
+        {
+          "date": "2026-07-09",
+          "value": 11.1
+        },
+        {
+          "date": "2026-07-10",
+          "value": 10.6
+        },
+        {
+          "date": "2026-07-11",
+          "value": 10.5
+        },
+        {
+          "date": "2026-07-12",
+          "value": 10.1
+        },
+        {
+          "date": "2026-07-13",
+          "value": 10.3
+        },
+        {
+          "date": "2026-07-14",
+          "value": 9.73
+        },
+        {
+          "date": "2026-07-15",
+          "value": 10.2
+        },
+        {
+          "date": "2026-07-16",
+          "value": 10.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 10.1
+        },
+        {
+          "date": "2026-07-18",
+          "value": 10.1
+        },
+        {
+          "date": "2026-07-19",
+          "value": 9.23
+        },
+        {
+          "date": "2026-07-20",
+          "value": 9.16
+        },
+        {
+          "date": "2026-07-21",
+          "value": 9.14
+        },
+        {
+          "date": "2026-07-22",
+          "value": 10.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 10.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 9.52
+        },
+        {
+          "date": "2026-07-25",
+          "value": 9.25
+        },
+        {
+          "date": "2026-07-26",
+          "value": 9.16
+        },
+        {
+          "date": "2026-07-27",
+          "value": 9.11
+        },
+        {
+          "date": "2026-07-28",
+          "value": 9.25
+        },
+        {
+          "date": "2026-07-29",
+          "value": 9.65
+        },
+        {
+          "date": "2026-07-30",
+          "value": 8.25
+        },
+        {
+          "date": "2026-07-31",
+          "value": 4.62
+        },
+        {
+          "date": "2026-08-01",
+          "value": 4.17
+        },
+        {
+          "date": "2026-08-02",
+          "value": 5.24
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.841,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-20406": {
+      "station": {
+        "abbrev": "FRYMERCO",
+        "name": "FRYINGPAN RIVER AT MEREDITH, CO.",
+        "water_source": "FRYINGPAN RIVER",
+        "latitude": 39.362485,
+        "longitude": -106.732542,
+        "distance_miles": 0.14,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": "09080100",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/FRYMERCO"
+      },
+      "current": {
+        "value": 29.6,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 38.6
+        },
+        {
+          "date": "2026-07-06",
+          "value": 36.5
+        },
+        {
+          "date": "2026-07-07",
+          "value": 35.9
+        },
+        {
+          "date": "2026-07-08",
+          "value": 36.6
+        },
+        {
+          "date": "2026-07-09",
+          "value": 38.7
+        },
+        {
+          "date": "2026-07-10",
+          "value": 36.7
+        },
+        {
+          "date": "2026-07-11",
+          "value": 33.8
+        },
+        {
+          "date": "2026-07-12",
+          "value": 32.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 29.8
+        },
+        {
+          "date": "2026-07-14",
+          "value": 27.5
+        },
+        {
+          "date": "2026-07-15",
+          "value": 27.5
+        },
+        {
+          "date": "2026-07-16",
+          "value": 28.4
+        },
+        {
+          "date": "2026-07-17",
+          "value": 28.3
+        },
+        {
+          "date": "2026-07-18",
+          "value": 28.3
+        },
+        {
+          "date": "2026-07-19",
+          "value": 26.7
+        },
+        {
+          "date": "2026-07-20",
+          "value": 25.8
+        },
+        {
+          "date": "2026-07-21",
+          "value": 30.2
+        },
+        {
+          "date": "2026-07-22",
+          "value": 28.6
+        },
+        {
+          "date": "2026-07-23",
+          "value": 55.8
+        },
+        {
+          "date": "2026-07-24",
+          "value": 61.2
+        },
+        {
+          "date": "2026-07-25",
+          "value": 45.2
+        },
+        {
+          "date": "2026-07-26",
+          "value": 42.3
+        },
+        {
+          "date": "2026-07-27",
+          "value": 46.8
+        },
+        {
+          "date": "2026-07-28",
+          "value": 41.5
+        },
+        {
+          "date": "2026-07-29",
+          "value": 41.9
+        },
+        {
+          "date": "2026-07-30",
+          "value": 51.5
+        },
+        {
+          "date": "2026-07-31",
+          "value": 40.6
+        },
+        {
+          "date": "2026-08-01",
+          "value": 36.1
+        },
+        {
+          "date": "2026-08-02",
+          "value": 33.5
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.987,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-20482": {
+      "station": {
+        "abbrev": "GORCRECO",
+        "name": "GORE CREEK AT MOUTH NEAR MINTURN, CO",
+        "water_source": "GORE CREEK",
+        "latitude": 39.609432,
+        "longitude": -106.447816,
+        "distance_miles": 0.46,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09066510",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/GORCRECO"
+      },
+      "current": {
+        "value": 17.5,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:15:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 52.3
+        },
+        {
+          "date": "2026-07-06",
+          "value": 50.7
+        },
+        {
+          "date": "2026-07-07",
+          "value": 45.8
+        },
+        {
+          "date": "2026-07-08",
+          "value": 40.3
+        },
+        {
+          "date": "2026-07-09",
+          "value": 41.6
+        },
+        {
+          "date": "2026-07-10",
+          "value": 42.4
+        },
+        {
+          "date": "2026-07-11",
+          "value": 35.9
+        },
+        {
+          "date": "2026-07-12",
+          "value": 33.2
+        },
+        {
+          "date": "2026-07-13",
+          "value": 31.3
+        },
+        {
+          "date": "2026-07-14",
+          "value": 29.5
+        },
+        {
+          "date": "2026-07-15",
+          "value": 27.9
+        },
+        {
+          "date": "2026-07-16",
+          "value": 27.2
+        },
+        {
+          "date": "2026-07-17",
+          "value": 26.8
+        },
+        {
+          "date": "2026-07-18",
+          "value": 25.5
+        },
+        {
+          "date": "2026-07-19",
+          "value": 24.3
+        },
+        {
+          "date": "2026-07-20",
+          "value": 27.6
+        },
+        {
+          "date": "2026-07-21",
+          "value": 27.6
+        },
+        {
+          "date": "2026-07-22",
+          "value": 27.5
+        },
+        {
+          "date": "2026-07-23",
+          "value": 34.1
+        },
+        {
+          "date": "2026-07-24",
+          "value": 30.2
+        },
+        {
+          "date": "2026-07-25",
+          "value": 25.3
+        },
+        {
+          "date": "2026-07-26",
+          "value": 23.2
+        },
+        {
+          "date": "2026-07-27",
+          "value": 25.7
+        },
+        {
+          "date": "2026-07-28",
+          "value": 23.8
+        },
+        {
+          "date": "2026-07-29",
+          "value": 22.5
+        },
+        {
+          "date": "2026-07-30",
+          "value": 24.6
+        },
+        {
+          "date": "2026-07-31",
+          "value": 23.2
+        },
+        {
+          "date": "2026-08-01",
+          "value": 20.7
+        },
+        {
+          "date": "2026-08-02",
+          "value": 18.8
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.958,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-21236": {
+      "station": {
+        "abbrev": "BERBBLCO",
+        "name": "BEAR RIVER BELOW BEAR LAKE",
+        "water_source": "BEAR RIVER",
+        "latitude": 40.044177,
+        "longitude": -107.071753,
+        "distance_miles": 1.67,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/BERBBLCO"
+      },
+      "current": {
+        "value": 14.6,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:15:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 50.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 43.6
+        },
+        {
+          "date": "2026-07-07",
+          "value": 32.1
+        },
+        {
+          "date": "2026-07-08",
+          "value": 20.4
+        },
+        {
+          "date": "2026-07-09",
+          "value": 17.1
+        },
+        {
+          "date": "2026-07-10",
+          "value": 25.2
+        },
+        {
+          "date": "2026-07-11",
+          "value": 34.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 31.7
+        },
+        {
+          "date": "2026-07-13",
+          "value": 26.2
+        },
+        {
+          "date": "2026-07-14",
+          "value": 24.9
+        },
+        {
+          "date": "2026-07-15",
+          "value": 27.6
+        },
+        {
+          "date": "2026-07-16",
+          "value": 24.5
+        },
+        {
+          "date": "2026-07-17",
+          "value": 23.8
+        },
+        {
+          "date": "2026-07-18",
+          "value": 23.1
+        },
+        {
+          "date": "2026-07-19",
+          "value": 22.6
+        },
+        {
+          "date": "2026-07-20",
+          "value": 21.8
+        },
+        {
+          "date": "2026-07-21",
+          "value": 18.7
+        },
+        {
+          "date": "2026-07-22",
+          "value": 16.7
+        },
+        {
+          "date": "2026-07-23",
+          "value": 21.4
+        },
+        {
+          "date": "2026-07-24",
+          "value": 21.3
+        },
+        {
+          "date": "2026-07-25",
+          "value": 21.9
+        },
+        {
+          "date": "2026-07-26",
+          "value": 19.7
+        },
+        {
+          "date": "2026-07-27",
+          "value": 18.6
+        },
+        {
+          "date": "2026-07-28",
+          "value": 16.6
+        },
+        {
+          "date": "2026-07-29",
+          "value": 16.2
+        },
+        {
+          "date": "2026-07-30",
+          "value": 17.9
+        },
+        {
+          "date": "2026-07-31",
+          "value": 18.1
+        },
+        {
+          "date": "2026-08-01",
+          "value": 16.1
+        },
+        {
+          "date": "2026-08-02",
+          "value": 14.8
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.844,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-22626": {
+      "station": {
+        "abbrev": "WLTNCKCO",
+        "name": "WALTON CREEK NEAR STEAMBOAT SPRINGS, CO.",
+        "water_source": "WALTON CREEK",
+        "latitude": 40.410902,
+        "longitude": -106.756233,
+        "distance_miles": 1.89,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": "09238500",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/WLTNCKCO"
+      },
+      "current": {
+        "value": 10.5,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:00:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 13.5
+        },
+        {
+          "date": "2026-07-06",
+          "value": 12.6
+        },
+        {
+          "date": "2026-07-07",
+          "value": 12.7
+        },
+        {
+          "date": "2026-07-08",
+          "value": 15.0
+        },
+        {
+          "date": "2026-07-09",
+          "value": 13.1
+        },
+        {
+          "date": "2026-07-10",
+          "value": 11.6
+        },
+        {
+          "date": "2026-07-11",
+          "value": 10.3
+        },
+        {
+          "date": "2026-07-12",
+          "value": 9.44
+        },
+        {
+          "date": "2026-07-13",
+          "value": 8.88
+        },
+        {
+          "date": "2026-07-14",
+          "value": 9.05
+        },
+        {
+          "date": "2026-07-15",
+          "value": 9.37
+        },
+        {
+          "date": "2026-07-16",
+          "value": 8.8
+        },
+        {
+          "date": "2026-07-17",
+          "value": 9.88
+        },
+        {
+          "date": "2026-07-18",
+          "value": 10.1
+        },
+        {
+          "date": "2026-07-19",
+          "value": 13.4
+        },
+        {
+          "date": "2026-07-20",
+          "value": 12.3
+        },
+        {
+          "date": "2026-07-21",
+          "value": 8.36
+        },
+        {
+          "date": "2026-07-22",
+          "value": 8.85
+        },
+        {
+          "date": "2026-07-23",
+          "value": 29.1
+        },
+        {
+          "date": "2026-07-24",
+          "value": 15.9
+        },
+        {
+          "date": "2026-07-25",
+          "value": 9.71
+        },
+        {
+          "date": "2026-07-26",
+          "value": 8.07
+        },
+        {
+          "date": "2026-07-27",
+          "value": 8.8
+        },
+        {
+          "date": "2026-07-28",
+          "value": 7.69
+        },
+        {
+          "date": "2026-07-29",
+          "value": 6.99
+        },
+        {
+          "date": "2026-07-30",
+          "value": 15.7
+        },
+        {
+          "date": "2026-07-31",
+          "value": 8.66
+        },
+        {
+          "date": "2026-08-01",
+          "value": 6.86
+        },
+        {
+          "date": "2026-08-02",
+          "value": 6.73
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.823,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-23204": {
+      "station": {
+        "abbrev": "GORUPPCO",
+        "name": "GORE CREEK AT UPPER STATION, NEAR MINTURN, CO.",
+        "water_source": "GORE CREEK",
+        "latitude": 39.625821,
+        "longitude": -106.278097,
+        "distance_miles": 0.92,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09065500",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/GORUPPCO"
+      },
+      "current": {
+        "value": 6.47,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:30:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 13.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 12.4
+        },
+        {
+          "date": "2026-07-07",
+          "value": 12.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 12.2
+        },
+        {
+          "date": "2026-07-09",
+          "value": 12.9
+        },
+        {
+          "date": "2026-07-10",
+          "value": 12.6
+        },
+        {
+          "date": "2026-07-11",
+          "value": 11.4
+        },
+        {
+          "date": "2026-07-12",
+          "value": 10.7
+        },
+        {
+          "date": "2026-07-13",
+          "value": 10.4
+        },
+        {
+          "date": "2026-07-14",
+          "value": 10.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 9.57
+        },
+        {
+          "date": "2026-07-16",
+          "value": 9.69
+        },
+        {
+          "date": "2026-07-17",
+          "value": 9.35
+        },
+        {
+          "date": "2026-07-18",
+          "value": 8.73
+        },
+        {
+          "date": "2026-07-19",
+          "value": 8.34
+        },
+        {
+          "date": "2026-07-20",
+          "value": 8.07
+        },
+        {
+          "date": "2026-07-21",
+          "value": 7.95
+        },
+        {
+          "date": "2026-07-22",
+          "value": 8.31
+        },
+        {
+          "date": "2026-07-23",
+          "value": 11.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 9.48
+        },
+        {
+          "date": "2026-07-25",
+          "value": 8.62
+        },
+        {
+          "date": "2026-07-26",
+          "value": 8.25
+        },
+        {
+          "date": "2026-07-27",
+          "value": 8.69
+        },
+        {
+          "date": "2026-07-28",
+          "value": 8.4
+        },
+        {
+          "date": "2026-07-29",
+          "value": 7.77
+        },
+        {
+          "date": "2026-07-30",
+          "value": 8.13
+        },
+        {
+          "date": "2026-07-31",
+          "value": 7.4
+        },
+        {
+          "date": "2026-08-01",
+          "value": 6.84
+        },
+        {
+          "date": "2026-08-02",
+          "value": 6.53
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.914,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-24454": {
+      "station": {
+        "abbrev": "RFCMERCO",
+        "name": "ROCKY FORK CREEK NEAR MEREDITH, CO.",
+        "water_source": "ROCKY FORK CREEK",
+        "latitude": 39.361538,
+        "longitude": -106.820567,
+        "distance_miles": 0.78,
+        "provider": "Bureau of Reclamation  (Station cooperator)",
+        "usgs_station_id": "09080300",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/RFCMERCO"
+      },
+      "current": {
+        "value": 1.26,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:15:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 1.26
+        },
+        {
+          "date": "2026-07-06",
+          "value": 1.21
+        },
+        {
+          "date": "2026-07-07",
+          "value": 1.15
+        },
+        {
+          "date": "2026-07-08",
+          "value": 1.28
+        },
+        {
+          "date": "2026-07-09",
+          "value": 1.7
+        },
+        {
+          "date": "2026-07-10",
+          "value": 1.7
+        },
+        {
+          "date": "2026-07-11",
+          "value": 1.65
+        },
+        {
+          "date": "2026-07-12",
+          "value": 1.59
+        },
+        {
+          "date": "2026-07-13",
+          "value": 1.59
+        },
+        {
+          "date": "2026-07-14",
+          "value": 1.59
+        },
+        {
+          "date": "2026-07-15",
+          "value": 1.53
+        },
+        {
+          "date": "2026-07-16",
+          "value": 1.48
+        },
+        {
+          "date": "2026-07-17",
+          "value": 1.48
+        },
+        {
+          "date": "2026-07-18",
+          "value": 1.48
+        },
+        {
+          "date": "2026-07-19",
+          "value": 1.48
+        },
+        {
+          "date": "2026-07-20",
+          "value": 1.51
+        },
+        {
+          "date": "2026-07-21",
+          "value": 1.79
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2.02
+        },
+        {
+          "date": "2026-07-23",
+          "value": 2.55
+        },
+        {
+          "date": "2026-07-24",
+          "value": 2.81
+        },
+        {
+          "date": "2026-07-25",
+          "value": 2.82
+        },
+        {
+          "date": "2026-07-26",
+          "value": 2.87
+        },
+        {
+          "date": "2026-07-27",
+          "value": 2.96
+        },
+        {
+          "date": "2026-07-28",
+          "value": 2.96
+        },
+        {
+          "date": "2026-07-29",
+          "value": 3.81
+        },
+        {
+          "date": "2026-07-30",
+          "value": 2.51
+        },
+        {
+          "date": "2026-07-31",
+          "value": 1.26
+        },
+        {
+          "date": "2026-08-01",
+          "value": 1.26
+        },
+        {
+          "date": "2026-08-02",
+          "value": 1.26
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.927,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-27599": {
+      "station": {
+        "abbrev": "FRYIVLCO",
+        "name": "FRYINGPAN RIVER NEAR IVANHOE LAKE, CO.",
+        "water_source": "FRYINGPAN RIVER",
+        "latitude": 39.244793,
+        "longitude": -106.530823,
+        "distance_miles": 1.23,
+        "provider": "Bureau of Reclamation  (Station cooperator)",
+        "usgs_station_id": "09077200",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/FRYIVLCO"
+      },
+      "current": {
+        "value": 9.59,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 12.6
+        },
+        {
+          "date": "2026-07-06",
+          "value": 12.4
+        },
+        {
+          "date": "2026-07-07",
+          "value": 12.3
+        },
+        {
+          "date": "2026-07-08",
+          "value": 12.4
+        },
+        {
+          "date": "2026-07-09",
+          "value": 12.2
+        },
+        {
+          "date": "2026-07-10",
+          "value": 11.8
+        },
+        {
+          "date": "2026-07-11",
+          "value": 11.3
+        },
+        {
+          "date": "2026-07-12",
+          "value": 10.7
+        },
+        {
+          "date": "2026-07-13",
+          "value": 10.5
+        },
+        {
+          "date": "2026-07-14",
+          "value": 10.4
+        },
+        {
+          "date": "2026-07-15",
+          "value": 10.1
+        },
+        {
+          "date": "2026-07-16",
+          "value": 9.83
+        },
+        {
+          "date": "2026-07-17",
+          "value": 9.83
+        },
+        {
+          "date": "2026-07-18",
+          "value": 9.51
+        },
+        {
+          "date": "2026-07-19",
+          "value": 9.37
+        },
+        {
+          "date": "2026-07-20",
+          "value": 9.7
+        },
+        {
+          "date": "2026-07-21",
+          "value": 10.4
+        },
+        {
+          "date": "2026-07-22",
+          "value": 10.5
+        },
+        {
+          "date": "2026-07-23",
+          "value": 11.9
+        },
+        {
+          "date": "2026-07-24",
+          "value": 10.7
+        },
+        {
+          "date": "2026-07-25",
+          "value": 10.5
+        },
+        {
+          "date": "2026-07-26",
+          "value": 11.7
+        },
+        {
+          "date": "2026-07-27",
+          "value": 12.2
+        },
+        {
+          "date": "2026-07-28",
+          "value": 12.7
+        },
+        {
+          "date": "2026-07-29",
+          "value": 14.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 13.1
+        },
+        {
+          "date": "2026-07-31",
+          "value": 11.3
+        },
+        {
+          "date": "2026-08-01",
+          "value": 10.4
+        },
+        {
+          "date": "2026-08-02",
+          "value": 9.74
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.885,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-29771": {
+      "station": {
+        "abbrev": "FOUHARCO",
+        "name": "FOUR MILE CREEK NEAR HARTSEL",
+        "water_source": "FOURMILE CREEK",
+        "latitude": 39.023813,
+        "longitude": -105.81837,
+        "distance_miles": 0.72,
+        "provider": "City of Aurora  (Station cooperator)",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/FOUHARCO"
+      },
+      "current": {
+        "value": 2.63,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 2.15
+        },
+        {
+          "date": "2026-07-06",
+          "value": 2.16
+        },
+        {
+          "date": "2026-07-07",
+          "value": 2.48
+        },
+        {
+          "date": "2026-07-08",
+          "value": 2.56
+        },
+        {
+          "date": "2026-07-09",
+          "value": 2.33
+        },
+        {
+          "date": "2026-07-10",
+          "value": 2.18
+        },
+        {
+          "date": "2026-07-11",
+          "value": 2.07
+        },
+        {
+          "date": "2026-07-12",
+          "value": 1.96
+        },
+        {
+          "date": "2026-07-13",
+          "value": 2.04
+        },
+        {
+          "date": "2026-07-14",
+          "value": 2.16
+        },
+        {
+          "date": "2026-07-15",
+          "value": 2.07
+        },
+        {
+          "date": "2026-07-16",
+          "value": 2.19
+        },
+        {
+          "date": "2026-07-17",
+          "value": 2.69
+        },
+        {
+          "date": "2026-07-18",
+          "value": 2.5
+        },
+        {
+          "date": "2026-07-19",
+          "value": 2.21
+        },
+        {
+          "date": "2026-07-20",
+          "value": 1.97
+        },
+        {
+          "date": "2026-07-21",
+          "value": 1.97
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 2.44
+        },
+        {
+          "date": "2026-07-24",
+          "value": 2.44
+        },
+        {
+          "date": "2026-07-25",
+          "value": 2.37
+        },
+        {
+          "date": "2026-07-26",
+          "value": 2.37
+        },
+        {
+          "date": "2026-07-27",
+          "value": 3.47
+        },
+        {
+          "date": "2026-07-28",
+          "value": 3.6
+        },
+        {
+          "date": "2026-07-29",
+          "value": 3.27
+        },
+        {
+          "date": "2026-07-30",
+          "value": 2.71
+        },
+        {
+          "date": "2026-07-31",
+          "value": 2.36
+        },
+        {
+          "date": "2026-08-01",
+          "value": 2.45
+        },
+        {
+          "date": "2026-08-02",
+          "value": 2.31
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.932,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-29783": {
+      "station": {
+        "abbrev": "FRNCRKCO",
+        "name": "FRENCH CREEK ABOVE CONFLUENCE WITH MICHIGAN CREEK",
+        "water_source": "FRENCH CREEK",
+        "latitude": 39.415193,
+        "longitude": -105.890303,
+        "distance_miles": 1.16,
+        "provider": "City of Aurora  (Station cooperator)",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/FRNCRKCO"
+      },
+      "current": {
+        "value": 2.96,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 2.5
+        },
+        {
+          "date": "2026-07-06",
+          "value": 2.43
+        },
+        {
+          "date": "2026-07-07",
+          "value": 2.38
+        },
+        {
+          "date": "2026-07-08",
+          "value": 2.32
+        },
+        {
+          "date": "2026-07-09",
+          "value": 2.48
+        },
+        {
+          "date": "2026-07-10",
+          "value": 2.23
+        },
+        {
+          "date": "2026-07-11",
+          "value": 2.11
+        },
+        {
+          "date": "2026-07-12",
+          "value": 2.05
+        },
+        {
+          "date": "2026-07-13",
+          "value": 2.03
+        },
+        {
+          "date": "2026-07-14",
+          "value": 2.09
+        },
+        {
+          "date": "2026-07-15",
+          "value": 2.12
+        },
+        {
+          "date": "2026-07-16",
+          "value": 2.04
+        },
+        {
+          "date": "2026-07-17",
+          "value": 2.13
+        },
+        {
+          "date": "2026-07-18",
+          "value": 1.95
+        },
+        {
+          "date": "2026-07-19",
+          "value": 1.85
+        },
+        {
+          "date": "2026-07-20",
+          "value": 1.82
+        },
+        {
+          "date": "2026-07-21",
+          "value": 1.78
+        },
+        {
+          "date": "2026-07-22",
+          "value": 1.85
+        },
+        {
+          "date": "2026-07-23",
+          "value": 1.94
+        },
+        {
+          "date": "2026-07-24",
+          "value": 1.82
+        },
+        {
+          "date": "2026-07-25",
+          "value": 1.81
+        },
+        {
+          "date": "2026-07-26",
+          "value": 2.16
+        },
+        {
+          "date": "2026-07-27",
+          "value": 2.39
+        },
+        {
+          "date": "2026-07-28",
+          "value": 3.29
+        },
+        {
+          "date": "2026-07-29",
+          "value": 3.23
+        },
+        {
+          "date": "2026-07-30",
+          "value": 3.46
+        },
+        {
+          "date": "2026-07-31",
+          "value": 2.67
+        },
+        {
+          "date": "2026-08-01",
+          "value": 2.77
+        },
+        {
+          "date": "2026-08-02",
+          "value": 2.85
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.891,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-30825": {
+      "station": {
+        "abbrev": "SFKANTCO",
+        "name": "SOUTH FORK OF SOUTH PLATTE ABOVE ANTERO",
+        "water_source": "SOUTH FORK SOUTH PLATTE RIVER",
+        "latitude": 39.070705,
+        "longitude": -105.97343,
+        "distance_miles": 0.78,
+        "provider": "City of Aurora  (Station cooperator)",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/SFKANTCO"
+      },
+      "current": {
+        "value": 5.88,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 3.98
+        },
+        {
+          "date": "2026-07-06",
+          "value": 3.94
+        },
+        {
+          "date": "2026-07-07",
+          "value": 4.11
+        },
+        {
+          "date": "2026-07-08",
+          "value": 5.28
+        },
+        {
+          "date": "2026-07-09",
+          "value": 3.99
+        },
+        {
+          "date": "2026-07-10",
+          "value": 3.65
+        },
+        {
+          "date": "2026-07-11",
+          "value": 3.44
+        },
+        {
+          "date": "2026-07-12",
+          "value": 2.85
+        },
+        {
+          "date": "2026-07-13",
+          "value": 2.35
+        },
+        {
+          "date": "2026-07-14",
+          "value": 2.08
+        },
+        {
+          "date": "2026-07-15",
+          "value": 1.21
+        },
+        {
+          "date": "2026-07-16",
+          "value": 3.05
+        },
+        {
+          "date": "2026-07-17",
+          "value": 3.76
+        },
+        {
+          "date": "2026-07-18",
+          "value": 3.86
+        },
+        {
+          "date": "2026-07-19",
+          "value": 3.9
+        },
+        {
+          "date": "2026-07-20",
+          "value": 2.7
+        },
+        {
+          "date": "2026-07-21",
+          "value": 2.47
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2.79
+        },
+        {
+          "date": "2026-07-23",
+          "value": 4.37
+        },
+        {
+          "date": "2026-07-24",
+          "value": 4.78
+        },
+        {
+          "date": "2026-07-25",
+          "value": 4.1
+        },
+        {
+          "date": "2026-07-26",
+          "value": 4.8
+        },
+        {
+          "date": "2026-07-27",
+          "value": 10.2
+        },
+        {
+          "date": "2026-07-28",
+          "value": 13.6
+        },
+        {
+          "date": "2026-07-29",
+          "value": 9.17
+        },
+        {
+          "date": "2026-07-30",
+          "value": 11.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 7.64
+        },
+        {
+          "date": "2026-08-01",
+          "value": 6.89
+        },
+        {
+          "date": "2026-08-02",
+          "value": 6.84
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.927,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-30875": {
+      "station": {
+        "abbrev": "MFKBLMCO",
+        "name": "MIDDLE FORK SOUTH PLATTE BELOW MONTGOMERY RESERVOIR NEAR ALMA",
+        "water_source": "MIDDLE FORK SOUTH PLATTE RIVER",
+        "latitude": 39.352071,
+        "longitude": -106.069368,
+        "distance_miles": 1.91,
+        "provider": "City of Colorado Springs  (Station cooperator)",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/MFKBLMCO"
+      },
+      "current": {
+        "value": 0.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:00:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": "Eqp"
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 6.05
+        },
+        {
+          "date": "2026-07-06",
+          "value": 5.48
+        },
+        {
+          "date": "2026-07-07",
+          "value": 5.37
+        },
+        {
+          "date": "2026-07-08",
+          "value": 5.29
+        },
+        {
+          "date": "2026-07-09",
+          "value": 5.26
+        },
+        {
+          "date": "2026-07-10",
+          "value": 5.28
+        },
+        {
+          "date": "2026-07-11",
+          "value": 5.28
+        },
+        {
+          "date": "2026-07-12",
+          "value": 5.25
+        },
+        {
+          "date": "2026-07-13",
+          "value": 5.29
+        },
+        {
+          "date": "2026-07-14",
+          "value": 4.86
+        },
+        {
+          "date": "2026-07-15",
+          "value": 4.65
+        },
+        {
+          "date": "2026-07-16",
+          "value": 3.42
+        },
+        {
+          "date": "2026-07-17",
+          "value": 2.74
+        },
+        {
+          "date": "2026-07-18",
+          "value": 2.76
+        },
+        {
+          "date": "2026-07-19",
+          "value": 3.64
+        },
+        {
+          "date": "2026-07-20",
+          "value": 4.44
+        },
+        {
+          "date": "2026-07-21",
+          "value": 4.59
+        },
+        {
+          "date": "2026-07-22",
+          "value": 4.62
+        },
+        {
+          "date": "2026-07-23",
+          "value": 5.05
+        },
+        {
+          "date": "2026-07-24",
+          "value": 5.31
+        },
+        {
+          "date": "2026-07-25",
+          "value": 5.35
+        },
+        {
+          "date": "2026-07-26",
+          "value": 5.29
+        },
+        {
+          "date": "2026-07-27",
+          "value": 5.28
+        },
+        {
+          "date": "2026-07-28",
+          "value": 5.27
+        },
+        {
+          "date": "2026-07-29",
+          "value": 9.33
+        },
+        {
+          "date": "2026-07-30",
+          "value": 22.8
+        },
+        {
+          "date": "2026-07-31",
+          "value": 0.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 0.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 0.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.822,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-31390": {
+      "station": {
+        "abbrev": "MFKSTMCO",
+        "name": "MIDDLE FORK SOUTH PLATTE AT SANTA MARIA",
+        "water_source": "MIDDLE FORK SOUTH PLATTE RIVER",
+        "latitude": 39.058242,
+        "longitude": -105.816156,
+        "distance_miles": 1.62,
+        "provider": "City of Aurora  (Station cooperator)",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/MFKSTMCO"
+      },
+      "current": {
+        "value": 6.87,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 7.31
+        },
+        {
+          "date": "2026-07-06",
+          "value": 6.57
+        },
+        {
+          "date": "2026-07-07",
+          "value": 6.65
+        },
+        {
+          "date": "2026-07-08",
+          "value": 7.29
+        },
+        {
+          "date": "2026-07-09",
+          "value": 6.2
+        },
+        {
+          "date": "2026-07-10",
+          "value": 6.34
+        },
+        {
+          "date": "2026-07-11",
+          "value": 6.08
+        },
+        {
+          "date": "2026-07-12",
+          "value": 4.94
+        },
+        {
+          "date": "2026-07-13",
+          "value": 4.04
+        },
+        {
+          "date": "2026-07-14",
+          "value": 3.87
+        },
+        {
+          "date": "2026-07-15",
+          "value": 3.47
+        },
+        {
+          "date": "2026-07-16",
+          "value": 3.85
+        },
+        {
+          "date": "2026-07-17",
+          "value": 6.05
+        },
+        {
+          "date": "2026-07-18",
+          "value": 5.6
+        },
+        {
+          "date": "2026-07-19",
+          "value": 5.24
+        },
+        {
+          "date": "2026-07-20",
+          "value": 3.77
+        },
+        {
+          "date": "2026-07-21",
+          "value": 3.16
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2.19
+        },
+        {
+          "date": "2026-07-23",
+          "value": 2.7
+        },
+        {
+          "date": "2026-07-24",
+          "value": 4.39
+        },
+        {
+          "date": "2026-07-25",
+          "value": 4.18
+        },
+        {
+          "date": "2026-07-26",
+          "value": 3.99
+        },
+        {
+          "date": "2026-07-27",
+          "value": 6.08
+        },
+        {
+          "date": "2026-07-28",
+          "value": 7.5
+        },
+        {
+          "date": "2026-07-29",
+          "value": 8.02
+        },
+        {
+          "date": "2026-07-30",
+          "value": 7.88
+        },
+        {
+          "date": "2026-07-31",
+          "value": 8.03
+        },
+        {
+          "date": "2026-08-01",
+          "value": 7.66
+        },
+        {
+          "date": "2026-08-02",
+          "value": 7.03
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.849,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-32641": {
+      "station": {
+        "abbrev": "MFKSTMCO",
+        "name": "MIDDLE FORK SOUTH PLATTE AT SANTA MARIA",
+        "water_source": "MIDDLE FORK SOUTH PLATTE RIVER",
+        "latitude": 39.058242,
+        "longitude": -105.816156,
+        "distance_miles": 1.96,
+        "provider": "City of Aurora  (Station cooperator)",
+        "usgs_station_id": null,
+        "official_url": "https://dwr.state.co.us/Tools/Stations/MFKSTMCO"
+      },
+      "current": {
+        "value": 6.87,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 7.31
+        },
+        {
+          "date": "2026-07-06",
+          "value": 6.57
+        },
+        {
+          "date": "2026-07-07",
+          "value": 6.65
+        },
+        {
+          "date": "2026-07-08",
+          "value": 7.29
+        },
+        {
+          "date": "2026-07-09",
+          "value": 6.2
+        },
+        {
+          "date": "2026-07-10",
+          "value": 6.34
+        },
+        {
+          "date": "2026-07-11",
+          "value": 6.08
+        },
+        {
+          "date": "2026-07-12",
+          "value": 4.94
+        },
+        {
+          "date": "2026-07-13",
+          "value": 4.04
+        },
+        {
+          "date": "2026-07-14",
+          "value": 3.87
+        },
+        {
+          "date": "2026-07-15",
+          "value": 3.47
+        },
+        {
+          "date": "2026-07-16",
+          "value": 3.85
+        },
+        {
+          "date": "2026-07-17",
+          "value": 6.05
+        },
+        {
+          "date": "2026-07-18",
+          "value": 5.6
+        },
+        {
+          "date": "2026-07-19",
+          "value": 5.24
+        },
+        {
+          "date": "2026-07-20",
+          "value": 3.77
+        },
+        {
+          "date": "2026-07-21",
+          "value": 3.16
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2.19
+        },
+        {
+          "date": "2026-07-23",
+          "value": 2.7
+        },
+        {
+          "date": "2026-07-24",
+          "value": 4.39
+        },
+        {
+          "date": "2026-07-25",
+          "value": 4.18
+        },
+        {
+          "date": "2026-07-26",
+          "value": 3.99
+        },
+        {
+          "date": "2026-07-27",
+          "value": 6.08
+        },
+        {
+          "date": "2026-07-28",
+          "value": 7.5
+        },
+        {
+          "date": "2026-07-29",
+          "value": 8.02
+        },
+        {
+          "date": "2026-07-30",
+          "value": 7.88
+        },
+        {
+          "date": "2026-07-31",
+          "value": 8.03
+        },
+        {
+          "date": "2026-08-01",
+          "value": 7.66
+        },
+        {
+          "date": "2026-08-02",
+          "value": 7.03
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.817,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-42527": {
+      "station": {
+        "abbrev": "RIODELCO",
+        "name": "RIO GRANDE NEAR DEL NORTE, CO",
+        "water_source": "RIO GRANDE",
+        "latitude": 37.688606,
+        "longitude": -106.459809,
+        "distance_miles": 1.26,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": "08220000",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/RIODELCO"
+      },
+      "current": {
+        "value": 181.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 194.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 196.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 199.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 205.0
+        },
+        {
+          "date": "2026-07-09",
+          "value": 201.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 196.0
+        },
+        {
+          "date": "2026-07-11",
+          "value": 178.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 173.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 168.0
+        },
+        {
+          "date": "2026-07-14",
+          "value": 168.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 173.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 187.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 209.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 231.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 237.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 232.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 200.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 199.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 202.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 208.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 205.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 211.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 216.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 252.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 258.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 288.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 260.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 230.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 189.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.883,
+        "name_similarity": 1.0
+      }
+    },
+    "atlas-watercode-43531": {
+      "station": {
+        "abbrev": "TAYBERCO",
+        "name": "TAYLOR RIVER BELOW TAYLOR PARK RESERVOIR, CO.",
+        "water_source": "TAYLOR RIVER",
+        "latitude": 38.818329,
+        "longitude": -106.60921,
+        "distance_miles": 0.35,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "09109000",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/TAYBERCO"
+      },
+      "current": {
+        "value": 229.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:00:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-09",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 222.0
+        },
+        {
+          "date": "2026-07-11",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 222.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 222.0
+        },
+        {
+          "date": "2026-07-14",
+          "value": 220.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 216.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 222.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 222.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 222.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 234.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 224.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 224.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 224.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 224.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 224.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 224.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 224.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 225.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 222.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 225.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 226.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.967,
+        "name_similarity": 1.0
+      }
+    },
+    "unmapped-17029fed3862": {
+      "station": {
+        "abbrev": "COLPARCO",
+        "name": "COLORADO RIVER NEAR PARSHALL BELOW W.F. CONFLUENCE",
+        "water_source": "COLORADO RIVER",
+        "latitude": 40.062764,
+        "longitude": -106.19254,
+        "distance_miles": 0.1,
+        "provider": "Northern Water",
+        "usgs_station_id": "WS1854",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/COLPARCO"
+      },
+      "current": {
+        "value": 440.4,
+        "units": "CFS",
+        "measured_at": "2026-08-03T09:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 392.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 412.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 429.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 376.0
+        },
+        {
+          "date": "2026-07-09",
+          "value": 350.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 406.0
+        },
+        {
+          "date": "2026-07-11",
+          "value": 438.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 470.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 508.0
+        },
+        {
+          "date": "2026-07-14",
+          "value": 535.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 543.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 484.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 406.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 390.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 398.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 427.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 436.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 439.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 403.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 392.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 372.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 365.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 375.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 375.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 387.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 419.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 416.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 399.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 413.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.99,
+        "name_similarity": 1.0
+      }
+    },
+    "unmapped-3294c965a757": {
+      "station": {
+        "abbrev": "NPLGATCO",
+        "name": "NORTH PLATTE RIVER NEAR NORTHGATE, CO",
+        "water_source": "NORTH PLATTE RIVER",
+        "latitude": 40.936647,
+        "longitude": -106.33921,
+        "distance_miles": 2.45,
+        "provider": "U.S. Geological Survey",
+        "usgs_station_id": "06620000",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/NPLGATCO"
+      },
+      "current": {
+        "value": 77.7,
+        "units": "CFS",
+        "measured_at": "2026-08-03T09:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "U",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 117.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 119.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 119.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 123.0
+        },
+        {
+          "date": "2026-07-09",
+          "value": 117.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 117.0
+        },
+        {
+          "date": "2026-07-11",
+          "value": 122.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 132.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 120.0
+        },
+        {
+          "date": "2026-07-14",
+          "value": 109.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 111.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 103.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 96.8
+        },
+        {
+          "date": "2026-07-18",
+          "value": 95.9
+        },
+        {
+          "date": "2026-07-19",
+          "value": 101.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 116.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 112.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 120.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 162.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 153.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 142.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 133.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 130.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 136.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 136.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 127.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 115.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 100.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 83.7
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.771,
+        "name_similarity": 1.0
+      }
+    },
+    "unmapped-69edc866a46c": {
+      "station": {
+        "abbrev": "IVCRNACO",
+        "name": "IVANHOE CREEK NEAR NAST, CO.",
+        "water_source": "IVANHOE CREEK",
+        "latitude": 39.286936,
+        "longitude": -106.559208,
+        "distance_miles": 0.61,
+        "provider": "Bureau of Reclamation  (Station cooperator)",
+        "usgs_station_id": "09077610",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/IVCRNACO"
+      },
+      "current": {
+        "value": 0.73,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:45:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 0.73
+        },
+        {
+          "date": "2026-07-06",
+          "value": 0.71
+        },
+        {
+          "date": "2026-07-07",
+          "value": 0.69
+        },
+        {
+          "date": "2026-07-08",
+          "value": 0.77
+        },
+        {
+          "date": "2026-07-09",
+          "value": 0.71
+        },
+        {
+          "date": "2026-07-10",
+          "value": 0.68
+        },
+        {
+          "date": "2026-07-11",
+          "value": 0.61
+        },
+        {
+          "date": "2026-07-12",
+          "value": 0.56
+        },
+        {
+          "date": "2026-07-13",
+          "value": 0.53
+        },
+        {
+          "date": "2026-07-14",
+          "value": 0.53
+        },
+        {
+          "date": "2026-07-15",
+          "value": 0.5
+        },
+        {
+          "date": "2026-07-16",
+          "value": 0.48
+        },
+        {
+          "date": "2026-07-17",
+          "value": 0.47
+        },
+        {
+          "date": "2026-07-18",
+          "value": 0.47
+        },
+        {
+          "date": "2026-07-19",
+          "value": 0.45
+        },
+        {
+          "date": "2026-07-20",
+          "value": 0.44
+        },
+        {
+          "date": "2026-07-21",
+          "value": 0.58
+        },
+        {
+          "date": "2026-07-22",
+          "value": 1.27
+        },
+        {
+          "date": "2026-07-23",
+          "value": 3.42
+        },
+        {
+          "date": "2026-07-24",
+          "value": 2.06
+        },
+        {
+          "date": "2026-07-25",
+          "value": 1.05
+        },
+        {
+          "date": "2026-07-26",
+          "value": 0.94
+        },
+        {
+          "date": "2026-07-27",
+          "value": 1.24
+        },
+        {
+          "date": "2026-07-28",
+          "value": 0.95
+        },
+        {
+          "date": "2026-07-29",
+          "value": 0.82
+        },
+        {
+          "date": "2026-07-30",
+          "value": 1.42
+        },
+        {
+          "date": "2026-07-31",
+          "value": 1.4
+        },
+        {
+          "date": "2026-08-01",
+          "value": 1.12
+        },
+        {
+          "date": "2026-08-02",
+          "value": 0.92
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.943,
+        "name_similarity": 1.0
+      }
+    },
+    "unmapped-fc3196187531": {
+      "station": {
+        "abbrev": "WHIBUFCO",
+        "name": "WHITE RIVER BELOW N ELK CREEK NEAR BUFORD,CO",
+        "water_source": "WHITE RIVER",
+        "latitude": 39.95008,
+        "longitude": -107.694579,
+        "distance_miles": 0.45,
+        "provider": "Co. Division of Water Resources",
+        "usgs_station_id": "09304115",
+        "official_url": "https://dwr.state.co.us/Tools/Stations/WHIBUFCO"
+      },
+      "current": {
+        "value": 188.0,
+        "units": "CFS",
+        "measured_at": "2026-08-03T10:30:00-06:00",
+        "parameter": "DISCHRG",
+        "flag": "O",
+        "review_status": null
+      },
+      "trend": [
+        {
+          "date": "2026-07-05",
+          "value": 205.0
+        },
+        {
+          "date": "2026-07-06",
+          "value": 206.0
+        },
+        {
+          "date": "2026-07-07",
+          "value": 203.0
+        },
+        {
+          "date": "2026-07-08",
+          "value": 204.0
+        },
+        {
+          "date": "2026-07-09",
+          "value": 209.0
+        },
+        {
+          "date": "2026-07-10",
+          "value": 205.0
+        },
+        {
+          "date": "2026-07-11",
+          "value": 202.0
+        },
+        {
+          "date": "2026-07-12",
+          "value": 205.0
+        },
+        {
+          "date": "2026-07-13",
+          "value": 207.0
+        },
+        {
+          "date": "2026-07-14",
+          "value": 216.0
+        },
+        {
+          "date": "2026-07-15",
+          "value": 211.0
+        },
+        {
+          "date": "2026-07-16",
+          "value": 204.0
+        },
+        {
+          "date": "2026-07-17",
+          "value": 209.0
+        },
+        {
+          "date": "2026-07-18",
+          "value": 223.0
+        },
+        {
+          "date": "2026-07-19",
+          "value": 218.0
+        },
+        {
+          "date": "2026-07-20",
+          "value": 218.0
+        },
+        {
+          "date": "2026-07-21",
+          "value": 215.0
+        },
+        {
+          "date": "2026-07-22",
+          "value": 216.0
+        },
+        {
+          "date": "2026-07-23",
+          "value": 235.0
+        },
+        {
+          "date": "2026-07-24",
+          "value": 237.0
+        },
+        {
+          "date": "2026-07-25",
+          "value": 222.0
+        },
+        {
+          "date": "2026-07-26",
+          "value": 209.0
+        },
+        {
+          "date": "2026-07-27",
+          "value": 205.0
+        },
+        {
+          "date": "2026-07-28",
+          "value": 201.0
+        },
+        {
+          "date": "2026-07-29",
+          "value": 207.0
+        },
+        {
+          "date": "2026-07-30",
+          "value": 215.0
+        },
+        {
+          "date": "2026-07-31",
+          "value": 202.0
+        },
+        {
+          "date": "2026-08-01",
+          "value": 196.0
+        },
+        {
+          "date": "2026-08-02",
+          "value": 191.0
+        }
+      ],
+      "match": {
+        "confidence": "high",
+        "score": 0.958,
+        "name_similarity": 1.0
+      }
+    }
+  }
+}
