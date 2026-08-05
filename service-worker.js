@@ -1,4 +1,4 @@
-const VERSION = 'cofish-pwa-v3';
+const VERSION = 'cofish-pwa-v4';
 const SHELL_CACHE = `${VERSION}-shell`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const BASE = new URL('./', self.location.href);
