@@ -1,5 +1,6 @@
 (() => {
   let medalData = { waters: {} };
+  let dreamStreamData = null;
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   window.cofishGoldMedal = water => medalData.waters?.[water?.key] || '';
 
@@ -9,14 +10,25 @@
       : '';
   }
 
+  function ensureDreamStream() {
+    if (!dreamStreamData || typeof dataset === 'undefined' || !Array.isArray(dataset.waters)) return;
+    if (dataset.waters.some(water => water.key === dreamStreamData.key)) return;
+    dataset.waters.push(dreamStreamData);
+    dataset.waters.sort((a, b) => String(a.canonical_name || a.name || '').localeCompare(String(b.canonical_name || b.name || '')));
+  }
+
+  const originalRender = window.render;
+  window.render = function goldMedalRender() {
+    ensureDreamStream();
+    return originalRender?.();
+  };
+
   const loadJson = url => fetch(url).then(response => response.ok ? response.json() : Promise.reject(new Error(response.statusText)));
   const loaded = Promise.all([loadJson('config/gold_medal_waters.json'), loadJson('data/dream-stream.json')])
     .then(([data, dreamStream]) => {
       medalData = data;
-      if (typeof dataset !== 'undefined' && Array.isArray(dataset.waters) && !dataset.waters.some(water => water.key === dreamStream.key)) {
-        dataset.waters.push(dreamStream);
-        dataset.waters.sort((a, b) => String(a.canonical_name || a.name || '').localeCompare(String(b.canonical_name || b.name || '')));
-      }
+      dreamStreamData = dreamStream;
+      ensureDreamStream();
       window.render?.();
       return data;
     })
