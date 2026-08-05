@@ -19,6 +19,12 @@ def test_report_catalog_only_references_known_waters():
     assert set(catalog).issubset(known_keys)
 
 
+def test_dream_stream_has_multiple_local_section_reports():
+    reports = json.load(open("config/fishing_reports.json", encoding="utf-8"))["waters"]["atlas-watercode-30851"]
+    assert {report["source"] for report in reports} >= {"Angler's Covey", "South Platte Fly Shop"}
+    assert all("Dream Stream" in report["area"] for report in reports)
+
+
 def test_report_card_bundle_is_loaded_and_safe():
     loader = open("share-links.js", encoding="utf-8").read()
     bundle = open("fishing-reports.js", encoding="utf-8").read()
