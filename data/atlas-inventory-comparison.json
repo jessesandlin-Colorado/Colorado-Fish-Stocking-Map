@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T16:49:45.241599+00:00",
+  "generated_at": "2026-08-05T05:36:33.013813+00:00",
   "sources": {
     "atlas_inventory": "https://ndismaps.nrel.colostate.edu/arcgis/rest/services/FishingAtlas/FishingAtlas_Data/MapServer/2/query",
     "atlas_species": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
@@ -13,34 +13,33 @@
     "score": "0-100 transparent heuristic favoring official species, sportfish, public/access indicators, survey links, and family/access attributes; private indicators are penalized."
   },
   "summary": {
-    "generated_at": "2026-08-01T16:49:45.241599+00:00",
-    "atlas_feature_records": 1286,
-    "atlas_unique_watercodes": 1200,
+    "generated_at": "2026-08-05T05:36:33.013813+00:00",
+    "atlas_feature_records": 1287,
+    "atlas_unique_watercodes": 1201,
     "project_waters": 763,
     "project_unique_watercodes": 345,
     "atlas_watercodes_already_in_project": 343,
-    "atlas_only_unique_watercodes": 857,
+    "atlas_only_unique_watercodes": 858,
     "atlas_records_without_watercode": 0,
     "duplicate_watercode_groups": 50,
     "species_lookup_failures": 0,
     "project_coverage_of_atlas_percent": 28.6,
     "recommendations": {
       "exclude/private-review": 13,
-      "import-high-priority": 843,
-      "import-medium-priority": 1
+      "import-high-priority": 845
     },
     "water_types": {
       "Stream or River": 309,
-      "Water Body": 548
+      "Water Body": 549
     },
     "fishery_types": {
-      "Coldwater": 592,
+      "Coldwater": 593,
       "Mixed coldwater/warmwater": 35,
       "Warmwater": 230
     },
     "access_classes": {
       "private-indicated": 13,
-      "public-indicated": 844
+      "public-indicated": 845
     },
     "top_counties": {
       "Boulder": 92,
@@ -56,8 +55,8 @@
       "Garfield": 25,
       "Weld": 24,
       "Gilpin": 24,
+      "Chaffee": 23,
       "Jackson": 22,
-      "Chaffee": 22,
       "Arapahoe": 21,
       "Rio Blanco": 16,
       "Hinsdale": 16,
@@ -67,7 +66,7 @@
     "top_species": {
       "Trout: Cutthroat": 313,
       "Trout: Brook": 267,
-      "Trout: Rainbow": 251,
+      "Trout: Rainbow": 252,
       "Bass: Largemouth": 222,
       "Trout: Brown": 210,
       "Sunfish: Bluegill": 202,
@@ -762,7 +761,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 528,
+      "objectid": 526,
       "atlas_id": 1644,
       "watercode": "81618",
       "name": "[Purposely Left Blank]",
@@ -816,7 +815,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 531,
+      "objectid": 529,
       "atlas_id": 1666,
       "watercode": "82482",
       "name": "[Purposely Left Blank]",
@@ -870,7 +869,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 532,
+      "objectid": 530,
       "atlas_id": 1692,
       "watercode": "81810",
       "name": "[Purposely Left Blank]",
@@ -923,7 +922,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 564,
+      "objectid": 561,
       "atlas_id": 340,
       "watercode": "61084",
       "name": "[Purposely Left Blank]",
@@ -980,7 +979,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 569,
+      "objectid": 566,
       "atlas_id": 290,
       "watercode": "57914",
       "name": "[Purposely Left Blank]",
@@ -1038,7 +1037,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 577,
+      "objectid": 574,
       "atlas_id": 1342,
       "watercode": "53172",
       "name": "[Purposely Left Blank]",
@@ -1096,7 +1095,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 726,
+      "objectid": 723,
       "atlas_id": 297,
       "watercode": "61274",
       "name": "[Purposely Left Blank]",
@@ -1153,7 +1152,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 728,
+      "objectid": 725,
       "atlas_id": 313,
       "watercode": "61173",
       "name": "[Purposely Left Blank]",
@@ -1210,7 +1209,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 730,
+      "objectid": 727,
       "atlas_id": 326,
       "watercode": "61185",
       "name": "[Purposely Left Blank]",
@@ -1267,7 +1266,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 731,
+      "objectid": 728,
       "atlas_id": 327,
       "watercode": "61161",
       "name": "[Purposely Left Blank]",
@@ -1324,7 +1323,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 732,
+      "objectid": 729,
       "atlas_id": 328,
       "watercode": "61159",
       "name": "[Purposely Left Blank]",
@@ -1382,7 +1381,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 733,
+      "objectid": 730,
       "atlas_id": 329,
       "watercode": "61224",
       "name": "[Purposely Left Blank]",
@@ -1438,7 +1437,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 734,
+      "objectid": 731,
       "atlas_id": 330,
       "watercode": "61212",
       "name": "[Purposely Left Blank]",
@@ -1496,7 +1495,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 735,
+      "objectid": 732,
       "atlas_id": 331,
       "watercode": "61200",
       "name": "[Purposely Left Blank]",
@@ -1553,7 +1552,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 736,
+      "objectid": 733,
       "atlas_id": 332,
       "watercode": "61197",
       "name": "[Purposely Left Blank]",
@@ -1610,7 +1609,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 737,
+      "objectid": 734,
       "atlas_id": 333,
       "watercode": "61123",
       "name": "[Purposely Left Blank]",
@@ -1667,7 +1666,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 739,
+      "objectid": 736,
       "atlas_id": 335,
       "watercode": "61111",
       "name": "[Purposely Left Blank]",
@@ -1724,7 +1723,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 740,
+      "objectid": 737,
       "atlas_id": 336,
       "watercode": "61109",
       "name": "[Purposely Left Blank]",
@@ -1781,7 +1780,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 741,
+      "objectid": 738,
       "atlas_id": 337,
       "watercode": "61147",
       "name": "[Purposely Left Blank]",
@@ -1838,7 +1837,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 742,
+      "objectid": 739,
       "atlas_id": 338,
       "watercode": "53487",
       "name": "[Purposely Left Blank]",
@@ -1895,7 +1894,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 743,
+      "objectid": 740,
       "atlas_id": 339,
       "watercode": "61096",
       "name": "[Purposely Left Blank]",
@@ -1952,7 +1951,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 756,
+      "objectid": 753,
       "atlas_id": 276,
       "watercode": "52915",
       "name": "[Purposely Left Blank]",
@@ -2008,7 +2007,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 757,
+      "objectid": 754,
       "atlas_id": 281,
       "watercode": "60416",
       "name": "[Purposely Left Blank]",
@@ -2063,7 +2062,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 758,
+      "objectid": 755,
       "atlas_id": 282,
       "watercode": "60414",
       "name": "[Purposely Left Blank]",
@@ -2119,7 +2118,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 762,
+      "objectid": 759,
       "atlas_id": 293,
       "watercode": "57899",
       "name": "[Purposely Left Blank]",
@@ -2175,7 +2174,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 773,
+      "objectid": 770,
       "atlas_id": 303,
       "watercode": "58536",
       "name": "[Purposely Left Blank]",
@@ -2228,7 +2227,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 774,
+      "objectid": 771,
       "atlas_id": 305,
       "watercode": "58534",
       "name": "[Purposely Left Blank]",
@@ -2282,7 +2281,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 778,
+      "objectid": 775,
       "atlas_id": 34,
       "watercode": "58152",
       "name": "[Purposely Left Blank]",
@@ -2338,7 +2337,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 780,
+      "objectid": 777,
       "atlas_id": 139,
       "watercode": "58138",
       "name": "[Purposely Left Blank]",
@@ -2392,7 +2391,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 783,
+      "objectid": 780,
       "atlas_id": 350,
       "watercode": "57201",
       "name": "[Purposely Left Blank]",
@@ -2448,7 +2447,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 790,
+      "objectid": 787,
       "atlas_id": 1776,
       "watercode": "18515",
       "name": "[Purposely Left Blank]",
@@ -2502,7 +2501,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 880,
+      "objectid": 877,
       "atlas_id": 401,
       "watercode": "52824",
       "name": "[Purposely Left Blank]",
@@ -2555,7 +2554,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 881,
+      "objectid": 878,
       "atlas_id": 402,
       "watercode": "52826",
       "name": "[Purposely Left Blank]",
@@ -2608,7 +2607,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 888,
+      "objectid": 885,
       "atlas_id": 1722,
       "watercode": "57537",
       "name": "[Purposely Left Blank]",
@@ -2662,7 +2661,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 889,
+      "objectid": 886,
       "atlas_id": 1723,
       "watercode": "57536",
       "name": "[Purposely Left Blank]",
@@ -2715,7 +2714,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 915,
+      "objectid": 912,
       "atlas_id": 172,
       "watercode": "60208",
       "name": "[Purposely Left Blank]",
@@ -2770,7 +2769,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 938,
+      "objectid": 935,
       "atlas_id": 1713,
       "watercode": "21286",
       "name": "[Purposely Left Blank]",
@@ -2823,7 +2822,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1022,
+      "objectid": 1019,
       "atlas_id": 1716,
       "watercode": "60432",
       "name": "[Purposely Left Blank]",
@@ -2877,7 +2876,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1221,
+      "objectid": 1218,
       "atlas_id": 7,
       "watercode": "60296",
       "name": "[Purposely Left Blank]",
@@ -2931,7 +2930,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1247,
+      "objectid": 1244,
       "atlas_id": 225,
       "watercode": "58102",
       "name": "[Purposely Left Blank]",
@@ -2986,7 +2985,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1248,
+      "objectid": 1245,
       "atlas_id": 232,
       "watercode": "58085",
       "name": "[Purposely Left Blank]",
@@ -3041,7 +3040,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1250,
+      "objectid": 1247,
       "atlas_id": 234,
       "watercode": "58090",
       "name": "[Purposely Left Blank]",
@@ -3095,7 +3094,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1253,
+      "objectid": 1250,
       "atlas_id": 237,
       "watercode": "58083",
       "name": "[Purposely Left Blank]",
@@ -3150,7 +3149,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1038,
+      "objectid": 1035,
       "atlas_id": 378,
       "watercode": "20916",
       "name": "Akron Pond",
@@ -3477,7 +3476,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1002,
+      "objectid": 999,
       "atlas_id": 505,
       "watercode": "52390",
       "name": "Barnum Pond",
@@ -3584,7 +3583,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 529,
+      "objectid": 527,
       "atlas_id": 1646,
       "watercode": "83259",
       "name": "Big Mac Pond",
@@ -3638,7 +3637,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 785,
+      "objectid": 782,
       "atlas_id": 1326,
       "watercode": "12358",
       "name": "Big Thompson River",
@@ -3691,7 +3690,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 599,
+      "objectid": 596,
       "atlas_id": 515,
       "watercode": "57237",
       "name": "Birdland Lake",
@@ -3744,7 +3743,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 782,
+      "objectid": 779,
       "atlas_id": 279,
       "watercode": "52489",
       "name": "Boedecker Reservoir",
@@ -3804,7 +3803,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 565,
+      "objectid": 562,
       "atlas_id": 377,
       "watercode": "54089",
       "name": "Boulder City Reservoir",
@@ -4023,7 +4022,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 870,
+      "objectid": 867,
       "atlas_id": 92,
       "watercode": "57516",
       "name": "Camenisch Lake",
@@ -4077,7 +4076,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 877,
+      "objectid": 874,
       "atlas_id": 258,
       "watercode": "57922",
       "name": "Carl Park Pond",
@@ -4130,7 +4129,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1018,
+      "objectid": 1015,
       "atlas_id": 1675,
       "watercode": "52308",
       "name": "Cherry Knolls Pond",
@@ -4185,7 +4184,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 912,
+      "objectid": 909,
       "atlas_id": 226,
       "watercode": "57946",
       "name": "City Park Lake",
@@ -4242,7 +4241,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 887,
+      "objectid": 884,
       "atlas_id": 1651,
       "watercode": "52822",
       "name": "Civic Center Park Lake",
@@ -4296,7 +4295,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 840,
+      "objectid": 837,
       "atlas_id": 780,
       "watercode": "54407",
       "name": "Clear Lake",
@@ -4349,7 +4348,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1156,
+      "objectid": 1153,
       "atlas_id": 605,
       "watercode": "21262",
       "name": "Colorado River",
@@ -4404,7 +4403,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 598,
+      "objectid": 595,
       "atlas_id": 462,
       "watercode": "54448",
       "name": "Community College Pond",
@@ -4457,7 +4456,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 957,
+      "objectid": 954,
       "atlas_id": 368,
       "watercode": "73950",
       "name": "Connected Lakes",
@@ -4513,7 +4512,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 561,
+      "objectid": 558,
       "atlas_id": 198,
       "watercode": "61022",
       "name": "Coot Lake",
@@ -4680,7 +4679,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 590,
+      "objectid": 587,
       "atlas_id": 193,
       "watercode": "60640",
       "name": "Croke Lake",
@@ -4791,7 +4790,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 527,
+      "objectid": 525,
       "atlas_id": 692,
       "watercode": "81577",
       "name": "Dawn Pond",
@@ -4900,7 +4899,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1066,
+      "objectid": 1063,
       "atlas_id": 393,
       "watercode": "54596",
       "name": "Delaney Buttes Lake, East",
@@ -4953,7 +4952,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1065,
+      "objectid": 1062,
       "atlas_id": 392,
       "watercode": "54609",
       "name": "Delaney Buttes Lake, North",
@@ -5006,7 +5005,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1067,
+      "objectid": 1064,
       "atlas_id": 394,
       "watercode": "54611",
       "name": "Delaney Buttes Lake, South",
@@ -5060,7 +5059,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 928,
+      "objectid": 925,
       "atlas_id": 1327,
       "watercode": "54615",
       "name": "DePoorter Lake",
@@ -5099,6 +5098,60 @@
       "access_class": "public-indicated",
       "access_basis": "Public-land/property indicator or official property URL is present",
       "fishery_type": "Warmwater",
+      "import_score": 98,
+      "score_reasons": [
+        "official species list",
+        "sportfish present",
+        "three or more sportfish",
+        "public access indicated",
+        "easy access",
+        "family friendly",
+        "survey/report available",
+        "driving link available"
+      ],
+      "recommendation": "import-high-priority",
+      "stocking_status": "no-project-stocking-record-found"
+    },
+    {
+      "objectid": 1279,
+      "atlas_id": 1811,
+      "watercode": "48179",
+      "name": "Dolores River #3B",
+      "alternate_name": "Dolores River",
+      "property_name": "Lone Dome SWA",
+      "county": "Montezuma",
+      "location_type": "Stream or River",
+      "lat": 37.608258084320646,
+      "lng": -108.62771024398789,
+      "elevation_ft": 6595,
+      "boating": "Non-motorized",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "Yes",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "atlas_stocked_description": "Sub-catchables",
+      "survey_url": "http://www.google.com/search?q=\"fishing report\"+Dolores River+\"Montezuma County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//37.6083,-108.6277",
+      "property_url": "https://cpw.state.co.us/state-wildlife-areas/lone-dome-swa",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "show": 1,
+      "noshow_reason": null,
+      "quality": 1,
+      "spot_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1811",
+      "duplicate_atlas_records": 1,
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutthroat",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ],
+      "species_error": null,
+      "access_class": "public-indicated",
+      "access_basis": "Public-land/property indicator or official property URL is present",
+      "fishery_type": "Coldwater",
       "import_score": 98,
       "score_reasons": [
         "official species list",
@@ -5167,7 +5220,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 922,
+      "objectid": 919,
       "atlas_id": 801,
       "watercode": "52517",
       "name": "Doty Park Pond",
@@ -5220,7 +5273,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 958,
+      "objectid": 955,
       "atlas_id": 370,
       "watercode": "73965",
       "name": "Duke Lake",
@@ -5275,7 +5328,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1125,
+      "objectid": 1122,
       "atlas_id": 617,
       "watercode": "20026",
       "name": "Eagle River",
@@ -5328,7 +5381,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1166,
+      "objectid": 1163,
       "atlas_id": 1637,
       "watercode": "20038",
       "name": "Eagle River",
@@ -5381,7 +5434,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1226,
+      "objectid": 1223,
       "atlas_id": 361,
       "watercode": "66438",
       "name": "Elkhead Reservoir",
@@ -5438,7 +5491,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 566,
+      "objectid": 563,
       "atlas_id": 1687,
       "watercode": "52693",
       "name": "Erie Lake",
@@ -5494,7 +5547,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 760,
+      "objectid": 757,
       "atlas_id": 288,
       "watercode": "61262",
       "name": "Fairgrounds Lake",
@@ -5551,7 +5604,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 601,
+      "objectid": 598,
       "atlas_id": 551,
       "watercode": "60272",
       "name": "Faversham Park Pond",
@@ -5604,7 +5657,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 571,
+      "objectid": 568,
       "atlas_id": 79,
       "watercode": "54851",
       "name": "Flatiron Reservoir",
@@ -5657,7 +5710,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 942,
+      "objectid": 939,
       "atlas_id": 1331,
       "watercode": "20355",
       "name": "Fraser River",
@@ -5763,7 +5816,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 998,
+      "objectid": 995,
       "atlas_id": 126,
       "watercode": "52794",
       "name": "Garfield Lake",
@@ -5817,7 +5870,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1006,
+      "objectid": 1003,
       "atlas_id": 571,
       "watercode": "53140",
       "name": "Garland Park Lake",
@@ -5871,7 +5924,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 761,
+      "objectid": 758,
       "atlas_id": 291,
       "watercode": "57902",
       "name": "Golden Ponds",
@@ -5929,7 +5982,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1112,
+      "objectid": 1109,
       "atlas_id": 38,
       "watercode": "67036",
       "name": "Green Mountain Reservoir",
@@ -5985,7 +6038,113 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1005,
+      "objectid": 1283,
+      "atlas_id": 1815,
+      "watercode": "40472",
+      "name": "Gunnison River, Lake Fork #1",
+      "alternate_name": "Gunnison River, Lake Fork",
+      "property_name": "Red Bridge Campground",
+      "county": "Gunnison",
+      "location_type": "Stream or River",
+      "lat": 38.32434276263816,
+      "lng": -107.22756934243235,
+      "elevation_ft": 7787,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "Yes",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "atlas_stocked_description": "Sub-catchables",
+      "survey_url": "http://www.google.com/search?q=\"fishing report\"+Gunnison River, Lake Fork+\"Gunnison County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//38.3243,-107.2276",
+      "property_url": "https://www.blm.gov/visit/red-bridge-campground",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "show": 1,
+      "noshow_reason": null,
+      "quality": 1,
+      "spot_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1815",
+      "duplicate_atlas_records": 0,
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ],
+      "species_error": null,
+      "access_class": "public-indicated",
+      "access_basis": "Public-land/property indicator or official property URL is present",
+      "fishery_type": "Coldwater",
+      "import_score": 98,
+      "score_reasons": [
+        "official species list",
+        "sportfish present",
+        "three or more sportfish",
+        "public access indicated",
+        "easy access",
+        "family friendly",
+        "survey/report available",
+        "driving link available"
+      ],
+      "recommendation": "import-high-priority",
+      "stocking_status": "no-project-stocking-record-found"
+    },
+    {
+      "objectid": 1282,
+      "atlas_id": 1814,
+      "watercode": "40484",
+      "name": "Gunnison River, Lake Fork #2",
+      "alternate_name": "Gunnison River, Lake Fork",
+      "property_name": "The Gate Campground",
+      "county": "Gunnison",
+      "location_type": "Stream or River",
+      "lat": 38.24451812658316,
+      "lng": -107.26114361027497,
+      "elevation_ft": 7988,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "Yes",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "atlas_stocked_description": "Sub-catchables",
+      "survey_url": "http://www.google.com/search?q=\"fishing report\"+Gunnison River, Lake Fork+\"Gunnison County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//38.2445,-107.2611",
+      "property_url": "https://www.blm.gov/visit/gate-campground",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "show": 1,
+      "noshow_reason": null,
+      "quality": 1,
+      "spot_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1814",
+      "duplicate_atlas_records": 1,
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ],
+      "species_error": null,
+      "access_class": "public-indicated",
+      "access_basis": "Public-land/property indicator or official property URL is present",
+      "fishery_type": "Coldwater",
+      "import_score": 98,
+      "score_reasons": [
+        "official species list",
+        "sportfish present",
+        "three or more sportfish",
+        "public access indicated",
+        "easy access",
+        "family friendly",
+        "survey/report available",
+        "driving link available"
+      ],
+      "recommendation": "import-high-priority",
+      "stocking_status": "no-project-stocking-record-found"
+    },
+    {
+      "objectid": 1002,
       "atlas_id": 569,
       "watercode": "52883",
       "name": "Harvey Lake",
@@ -6040,7 +6199,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 788,
+      "objectid": 785,
       "atlas_id": 1659,
       "watercode": "52908",
       "name": "Heinricy Lake",
@@ -6096,7 +6255,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 525,
+      "objectid": 524,
       "atlas_id": 487,
       "watercode": "79473",
       "name": "Henry Lake",
@@ -6210,7 +6369,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 929,
+      "objectid": 926,
       "atlas_id": 1335,
       "watercode": "61440",
       "name": "Holyoke City Lake",
@@ -6264,7 +6423,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1163,
+      "objectid": 1160,
       "atlas_id": 1553,
       "watercode": "23228",
       "name": "Homestake Creek",
@@ -6379,7 +6538,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 883,
+      "objectid": 880,
       "atlas_id": 460,
       "watercode": "59964",
       "name": "Hunters Glen Lake",
@@ -6432,7 +6591,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 555,
+      "objectid": 552,
       "atlas_id": 1345,
       "watercode": "52887",
       "name": "Jeff's Pond",
@@ -6485,7 +6644,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 540,
+      "objectid": 537,
       "atlas_id": 50,
       "watercode": "79524",
       "name": "John Martin Reservoir",
@@ -6548,7 +6707,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1023,
+      "objectid": 1020,
       "atlas_id": 1717,
       "watercode": "60434",
       "name": "John Meade Park Lake",
@@ -6719,7 +6878,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 886,
+      "objectid": 883,
       "atlas_id": 1351,
       "watercode": "87001",
       "name": "Ken Mitchell Lake",
@@ -6828,7 +6987,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1013,
+      "objectid": 1010,
       "atlas_id": 253,
       "watercode": "53075",
       "name": "Ketring Lake",
@@ -6936,7 +7095,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 562,
+      "objectid": 559,
       "atlas_id": 294,
       "watercode": "57830",
       "name": "KOA Lake - Boulder",
@@ -6992,7 +7151,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 567,
+      "objectid": 564,
       "atlas_id": 135,
       "watercode": "61248",
       "name": "Lagerman Reservoir",
@@ -7050,7 +7209,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 597,
+      "objectid": 594,
       "atlas_id": 422,
       "watercode": "57504",
       "name": "Lake Arbor",
@@ -7107,7 +7266,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1069,
+      "objectid": 1066,
       "atlas_id": 446,
       "watercode": "55411",
       "name": "Lake John",
@@ -7160,7 +7319,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 779,
+      "objectid": 776,
       "atlas_id": 72,
       "watercode": "53176",
       "name": "Lake Loveland",
@@ -7218,7 +7377,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 890,
+      "objectid": 887,
       "atlas_id": 1726,
       "watercode": "60641",
       "name": "Lambertson Lake",
@@ -7271,7 +7430,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 770,
+      "objectid": 767,
       "atlas_id": 1797,
       "watercode": "10968",
       "name": "Left Hand Creek",
@@ -7378,7 +7537,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 876,
+      "objectid": 873,
       "atlas_id": 257,
       "watercode": "60450",
       "name": "Lowell Ponds",
@@ -7492,7 +7651,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 592,
+      "objectid": 589,
       "atlas_id": 286,
       "watercode": "52302",
       "name": "Mann-Nyholt Lake North",
@@ -7547,7 +7706,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 792,
+      "objectid": 789,
       "atlas_id": 796,
       "watercode": "55649",
       "name": "Marys Lake",
@@ -7600,7 +7759,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 769,
+      "objectid": 766,
       "atlas_id": 1650,
       "watercode": "57780",
       "name": "McIntosh Lake",
@@ -7712,7 +7871,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 524,
+      "objectid": 523,
       "atlas_id": 210,
       "watercode": "79586",
       "name": "Meredith Reservoir",
@@ -7772,7 +7931,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1239,
+      "objectid": 1236,
       "atlas_id": 475,
       "watercode": "91518",
       "name": "Navajo Reservoir",
@@ -7830,7 +7989,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 536,
+      "objectid": 533,
       "atlas_id": 102,
       "watercode": "79613",
       "name": "Nee Gronde Reservoir",
@@ -7890,7 +8049,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 535,
+      "objectid": 532,
       "atlas_id": 55,
       "watercode": "79625",
       "name": "Nee Noshe Reservoir",
@@ -7950,7 +8109,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 534,
+      "objectid": 531,
       "atlas_id": 5,
       "watercode": "79699",
       "name": "Neeskah Reservoir",
@@ -8010,7 +8169,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1116,
+      "objectid": 1113,
       "atlas_id": 770,
       "watercode": "68925",
       "name": "Officers Gulch Pond",
@@ -8063,7 +8222,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 911,
+      "objectid": 908,
       "atlas_id": 19,
       "watercode": "57996",
       "name": "Overland Park Pond",
@@ -8117,7 +8276,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 926,
+      "objectid": 923,
       "atlas_id": 1325,
       "watercode": "56609",
       "name": "Overland Trail Park Pond",
@@ -8176,7 +8335,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 755,
+      "objectid": 752,
       "atlas_id": 274,
       "watercode": "53537",
       "name": "Pella Crossing Ponds",
@@ -8233,7 +8392,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 772,
+      "objectid": 769,
       "atlas_id": 284,
       "watercode": "55928",
       "name": "Pinewood Reservoir",
@@ -8394,7 +8553,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 712,
+      "objectid": 709,
       "atlas_id": 417,
       "watercode": "69458",
       "name": "Rio Blanco Lake",
@@ -8451,7 +8610,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 610,
+      "objectid": 607,
       "atlas_id": 451,
       "watercode": "91998",
       "name": "Rito Hondo Lake",
@@ -8504,7 +8663,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 789,
+      "objectid": 786,
       "atlas_id": 1775,
       "watercode": "16931",
       "name": "River's Edge Natural Area Ponds",
@@ -8557,7 +8716,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 547,
+      "objectid": 544,
       "atlas_id": 269,
       "watercode": "92003",
       "name": "Road Canyon Reservoir",
@@ -8718,7 +8877,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 884,
+      "objectid": 881,
       "atlas_id": 464,
       "watercode": "57542",
       "name": "Rotella Park Lake",
@@ -8772,7 +8931,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 689,
+      "objectid": 686,
       "atlas_id": 53,
       "watercode": "96708",
       "name": "Rowdy Reservoir",
@@ -8825,7 +8984,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 530,
+      "objectid": 528,
       "atlas_id": 1665,
       "watercode": "81620",
       "name": "Ryan Ponds",
@@ -8879,7 +9038,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 628,
+      "objectid": 625,
       "atlas_id": 123,
       "watercode": "92128",
       "name": "Sanchez Reservoir",
@@ -8934,7 +9093,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 738,
+      "objectid": 735,
       "atlas_id": 334,
       "watercode": "61135",
       "name": "Sawhill Ponds",
@@ -8993,7 +9152,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 784,
+      "objectid": 781,
       "atlas_id": 351,
       "watercode": "58164",
       "name": "Simpson Property Ponds",
@@ -9103,7 +9262,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1274,
+      "objectid": 1271,
       "atlas_id": 1803,
       "watercode": "14681",
       "name": "South Platte River",
@@ -9157,7 +9316,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1249,
+      "objectid": 1246,
       "atlas_id": 233,
       "watercode": "58092",
       "name": "St. Vrain State Park",
@@ -9269,7 +9428,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1027,
+      "objectid": 1024,
       "atlas_id": 220,
       "watercode": "92445",
       "name": "Summit Reservoir",
@@ -9326,7 +9485,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1265,
+      "objectid": 1262,
       "atlas_id": 412,
       "watercode": "70437",
       "name": "Sylvan Lake",
@@ -9380,7 +9539,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 744,
+      "objectid": 741,
       "atlas_id": 376,
       "watercode": "60993",
       "name": "Teller Lake",
@@ -9435,7 +9594,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 605,
+      "objectid": 602,
       "atlas_id": 1702,
       "watercode": "52832",
       "name": "Thornton Recreation Center Lake",
@@ -9542,7 +9701,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1028,
+      "objectid": 1025,
       "atlas_id": 416,
       "watercode": "92659",
       "name": "Totten Reservoir",
@@ -9652,7 +9811,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 872,
+      "objectid": 869,
       "atlas_id": 228,
       "watercode": "58025",
       "name": "Twin Lakes Park Pond",
@@ -9706,7 +9865,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 572,
+      "objectid": 569,
       "atlas_id": 241,
       "watercode": "53570",
       "name": "Union Reservoir",
@@ -9768,7 +9927,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 606,
+      "objectid": 603,
       "atlas_id": 1721,
       "watercode": "57538",
       "name": "Valente Open Space Ponds ",
@@ -9822,7 +9981,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1267,
+      "objectid": 1264,
       "atlas_id": 54,
       "watercode": "70691",
       "name": "Vega Reservoir",
@@ -9930,7 +10089,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 563,
+      "objectid": 560,
       "atlas_id": 300,
       "watercode": "57821",
       "name": "Walden Pond - Wally Toevs Pond (aka Picnic Pond)",
@@ -10042,7 +10201,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 860,
+      "objectid": 857,
       "atlas_id": 1577,
       "watercode": "21313",
       "name": "White River, South Fork",
@@ -10152,7 +10311,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 717,
+      "objectid": 714,
       "atlas_id": 81,
       "watercode": "60727",
       "name": "Wonderland Lake",
@@ -10210,7 +10369,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1101,
+      "objectid": 1098,
       "atlas_id": 1028,
       "watercode": "72241",
       "name": "Yamcolo Reservoir",
@@ -10264,7 +10423,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1255,
+      "objectid": 1252,
       "atlas_id": 1796,
       "watercode": "28634",
       "name": "Yampa River",
@@ -10487,7 +10646,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 725,
+      "objectid": 722,
       "atlas_id": 296,
       "watercode": "61286",
       "name": "[Purposely Left Blank]",
@@ -10547,7 +10706,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 727,
+      "objectid": 724,
       "atlas_id": 301,
       "watercode": "61010",
       "name": "[Purposely Left Blank]",
@@ -10604,7 +10763,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 759,
+      "objectid": 756,
       "atlas_id": 283,
       "watercode": "60418",
       "name": "[Purposely Left Blank]",
@@ -10660,7 +10819,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 874,
+      "objectid": 871,
       "atlas_id": 255,
       "watercode": "60474",
       "name": "[Purposely Left Blank]",
@@ -10713,7 +10872,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 875,
+      "objectid": 872,
       "atlas_id": 256,
       "watercode": "60462",
       "name": "[Purposely Left Blank]",
@@ -10766,7 +10925,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1007,
+      "objectid": 1004,
       "atlas_id": 578,
       "watercode": "53500",
       "name": "[Purposely Left Blank]",
@@ -10818,7 +10977,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1178,
+      "objectid": 1175,
       "atlas_id": 1693,
       "watercode": "79408",
       "name": "[Purposely Left Blank]",
@@ -10870,7 +11029,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 702,
+      "objectid": 699,
       "atlas_id": 1432,
       "watercode": "37994",
       "name": "Animas River",
@@ -10980,7 +11139,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 796,
+      "objectid": 793,
       "atlas_id": 1487,
       "watercode": "13297",
       "name": "Big Thompson River, North Fork",
@@ -11190,7 +11349,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 843,
+      "objectid": 840,
       "atlas_id": 1397,
       "watercode": "10506",
       "name": "Chicago Creek",
@@ -11242,7 +11401,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 879,
+      "objectid": 876,
       "atlas_id": 388,
       "watercode": "57073",
       "name": "Clear Creek Pond",
@@ -11401,7 +11560,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1155,
+      "objectid": 1152,
       "atlas_id": 1621,
       "watercode": "19629",
       "name": "Colorado River",
@@ -11455,7 +11614,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1277,
+      "objectid": 1274,
       "atlas_id": 1806,
       "watercode": "19637",
       "name": "Colorado River",
@@ -11507,7 +11666,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1278,
+      "objectid": 1275,
       "atlas_id": 1807,
       "watercode": "21250",
       "name": "Colorado River",
@@ -11611,7 +11770,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1003,
+      "objectid": 1000,
       "atlas_id": 508,
       "watercode": "57972",
       "name": "Exposition Park Pond",
@@ -11664,7 +11823,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1015,
+      "objectid": 1012,
       "atlas_id": 502,
       "watercode": "58291",
       "name": "Geneva Lake",
@@ -11771,7 +11930,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1001,
+      "objectid": 998,
       "atlas_id": 452,
       "watercode": "52972",
       "name": "Huston Park Lake",
@@ -11823,7 +11982,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 600,
+      "objectid": 597,
       "atlas_id": 526,
       "watercode": "57828",
       "name": "Hyland Ponds",
@@ -11929,7 +12088,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1012,
+      "objectid": 1009,
       "atlas_id": 170,
       "watercode": "57580",
       "name": "Little's Creek Pond",
@@ -11982,7 +12141,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 878,
+      "objectid": 875,
       "atlas_id": 318,
       "watercode": "52310",
       "name": "McKay Lake",
@@ -12193,7 +12352,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 885,
+      "objectid": 882,
       "atlas_id": 516,
       "watercode": "53330",
       "name": "Pomona Lake",
@@ -12247,7 +12406,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1029,
+      "objectid": 1026,
       "atlas_id": 659,
       "watercode": "91885",
       "name": "Puett Reservoir",
@@ -12300,7 +12459,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1008,
+      "objectid": 1005,
       "atlas_id": 115,
       "watercode": "58304",
       "name": "Ridgeview Park Pond",
@@ -12510,7 +12669,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 896,
+      "objectid": 893,
       "atlas_id": 689,
       "watercode": "30851",
       "name": "South Platte River",
@@ -12615,7 +12774,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 978,
+      "objectid": 975,
       "atlas_id": 1373,
       "watercode": "11855",
       "name": "South Platte River, North Fork",
@@ -12719,7 +12878,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 745,
+      "objectid": 742,
       "atlas_id": 413,
       "watercode": "60999",
       "name": "Teller Lake #5",
@@ -12773,7 +12932,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1020,
+      "objectid": 1017,
       "atlas_id": 1714,
       "watercode": "COFA11",
       "name": "Tommy Davis Park Pond",
@@ -12880,7 +13039,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 857,
+      "objectid": 854,
       "atlas_id": 611,
       "watercode": "22739",
       "name": "White River",
@@ -12932,7 +13091,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 905,
+      "objectid": 902,
       "atlas_id": 1365,
       "watercode": "12574",
       "name": "Wigwam Creek",
@@ -13146,7 +13305,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 882,
+      "objectid": 879,
       "atlas_id": 404,
       "watercode": "52830",
       "name": "[Purposely Left Blank]",
@@ -13199,7 +13358,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1009,
+      "objectid": 1006,
       "atlas_id": 160,
       "watercode": "60741",
       "name": "[Purposely Left Blank]",
@@ -13307,7 +13466,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1104,
+      "objectid": 1101,
       "atlas_id": 1584,
       "watercode": "21236",
       "name": "Bear River",
@@ -13360,7 +13519,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 902,
+      "objectid": 899,
       "atlas_id": 128,
       "watercode": "54318",
       "name": "Cheesman Reservoir",
@@ -13574,7 +13733,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1004,
+      "objectid": 1001,
       "atlas_id": 522,
       "watercode": "57960",
       "name": "Engineers Lake",
@@ -13626,7 +13785,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 595,
+      "objectid": 592,
       "atlas_id": 403,
       "watercode": "52828",
       "name": "Grandview Ponds",
@@ -13737,7 +13896,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1148,
+      "objectid": 1145,
       "atlas_id": 866,
       "watercode": "67288",
       "name": "Heart Lake",
@@ -13948,7 +14107,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 775,
+      "objectid": 772,
       "atlas_id": 1231,
       "watercode": "54166",
       "name": "Ralph Price Reservoir",
@@ -14107,7 +14266,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 751,
+      "objectid": 748,
       "atlas_id": 1423,
       "watercode": "14782",
       "name": "St. Vrain Creek, South",
@@ -14211,7 +14370,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 791,
+      "objectid": 788,
       "atlas_id": 604,
       "watercode": "12384",
       "name": "Thompson River, Big North Fork",
@@ -14259,160 +14418,6 @@
         "family friendly",
         "survey/report available",
         "driving link available"
-      ],
-      "recommendation": "import-high-priority",
-      "stocking_status": "no-project-stocking-record-found"
-    },
-    {
-      "objectid": 1282,
-      "atlas_id": 1811,
-      "watercode": "48179",
-      "name": "Dolores River #3B",
-      "alternate_name": "Dolores River",
-      "property_name": "Lone Dome SWA",
-      "county": "Montezuma",
-      "location_type": "Stream or River",
-      "lat": 37.608258084320646,
-      "lng": -108.62771024398789,
-      "elevation_ft": 6595,
-      "boating": "Non-motorized",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "Yes",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "atlas_stocked_description": "Sub-catchables",
-      "survey_url": null,
-      "driving_url": null,
-      "property_url": "https://cpw.state.co.us/state-wildlife-areas/lone-dome-swa",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "show": 1,
-      "noshow_reason": null,
-      "quality": 1,
-      "spot_url": null,
-      "duplicate_atlas_records": 1,
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutthroat",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ],
-      "species_error": null,
-      "access_class": "public-indicated",
-      "access_basis": "Public-land/property indicator or official property URL is present",
-      "fishery_type": "Coldwater",
-      "import_score": 89,
-      "score_reasons": [
-        "official species list",
-        "sportfish present",
-        "three or more sportfish",
-        "public access indicated",
-        "easy access",
-        "family friendly"
-      ],
-      "recommendation": "import-high-priority",
-      "stocking_status": "no-project-stocking-record-found"
-    },
-    {
-      "objectid": 1286,
-      "atlas_id": 1815,
-      "watercode": "40472",
-      "name": "Gunnison River, Lake Fork #1",
-      "alternate_name": "Gunnison River, Lake Fork",
-      "property_name": "Red Bridge Campground",
-      "county": "Gunnison",
-      "location_type": "Stream or River",
-      "lat": 38.32434276263816,
-      "lng": -107.22756934243235,
-      "elevation_ft": 7787,
-      "boating": "None",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "Yes",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "atlas_stocked_description": "Sub-catchables",
-      "survey_url": null,
-      "driving_url": null,
-      "property_url": "https://www.blm.gov/visit/red-bridge-campground",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "show": 1,
-      "noshow_reason": null,
-      "quality": 1,
-      "spot_url": null,
-      "duplicate_atlas_records": 0,
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ],
-      "species_error": null,
-      "access_class": "public-indicated",
-      "access_basis": "Public-land/property indicator or official property URL is present",
-      "fishery_type": "Coldwater",
-      "import_score": 89,
-      "score_reasons": [
-        "official species list",
-        "sportfish present",
-        "three or more sportfish",
-        "public access indicated",
-        "easy access",
-        "family friendly"
-      ],
-      "recommendation": "import-high-priority",
-      "stocking_status": "no-project-stocking-record-found"
-    },
-    {
-      "objectid": 1285,
-      "atlas_id": 1814,
-      "watercode": "40484",
-      "name": "Gunnison River, Lake Fork #2",
-      "alternate_name": "Gunnison River, Lake Fork",
-      "property_name": "The Gate Campground",
-      "county": "Gunnison",
-      "location_type": "Stream or River",
-      "lat": 38.24451812658316,
-      "lng": -107.26114361027497,
-      "elevation_ft": 7988,
-      "boating": "None",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "Yes",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "atlas_stocked_description": "Sub-catchables",
-      "survey_url": null,
-      "driving_url": null,
-      "property_url": "https://www.blm.gov/visit/gate-campground",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "show": 1,
-      "noshow_reason": null,
-      "quality": 1,
-      "spot_url": null,
-      "duplicate_atlas_records": 1,
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ],
-      "species_error": null,
-      "access_class": "public-indicated",
-      "access_basis": "Public-land/property indicator or official property URL is present",
-      "fishery_type": "Coldwater",
-      "import_score": 89,
-      "score_reasons": [
-        "official species list",
-        "sportfish present",
-        "three or more sportfish",
-        "public access indicated",
-        "easy access",
-        "family friendly"
       ],
       "recommendation": "import-high-priority",
       "stocking_status": "no-project-stocking-record-found"
@@ -14468,7 +14473,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 721,
+      "objectid": 718,
       "atlas_id": 166,
       "watercode": "59015",
       "name": "[Purposely Left Blank]",
@@ -14518,7 +14523,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 722,
+      "objectid": 719,
       "atlas_id": 167,
       "watercode": "59003",
       "name": "[Purposely Left Blank]",
@@ -14568,7 +14573,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1251,
+      "objectid": 1248,
       "atlas_id": 235,
       "watercode": "58089",
       "name": "[Purposely Left Blank]",
@@ -14618,7 +14623,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 550,
+      "objectid": 547,
       "atlas_id": 655,
       "watercode": "88321",
       "name": "Alberta Park Reservoir",
@@ -14821,7 +14826,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 765,
+      "objectid": 762,
       "atlas_id": 435,
       "watercode": "54091",
       "name": "Brainard Lake",
@@ -15024,7 +15029,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 859,
+      "objectid": 856,
       "atlas_id": 1352,
       "watercode": "68444",
       "name": "Circle Park Pond",
@@ -15177,7 +15182,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1129,
+      "objectid": 1126,
       "atlas_id": 642,
       "watercode": "21298",
       "name": "Colorado River",
@@ -15228,7 +15233,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 688,
+      "objectid": 685,
       "atlas_id": 756,
       "watercode": "94348",
       "name": "Columbine Ponds",
@@ -15278,7 +15283,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 921,
+      "objectid": 918,
       "atlas_id": 1344,
       "watercode": "89525",
       "name": "Denny Lake",
@@ -15380,7 +15385,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 894,
+      "objectid": 891,
       "atlas_id": 1676,
       "watercode": "54304",
       "name": "Fairview Reservoir #1",
@@ -15634,7 +15639,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1160,
+      "objectid": 1157,
       "atlas_id": 1433,
       "watercode": "20482",
       "name": "Gore Creek",
@@ -15736,7 +15741,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 697,
+      "objectid": 694,
       "atlas_id": 1435,
       "watercode": "42595",
       "name": "Gunnison River",
@@ -15838,7 +15843,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 581,
+      "objectid": 578,
       "atlas_id": 1330,
       "watercode": "57390",
       "name": "Lily Lake",
@@ -15939,7 +15944,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1119,
+      "objectid": 1116,
       "atlas_id": 1332,
       "watercode": "31238",
       "name": "Meadow Creek Park",
@@ -15989,7 +15994,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1263,
+      "objectid": 1260,
       "atlas_id": 1477,
       "watercode": "11615",
       "name": "Michigan River, North Fork",
@@ -16091,7 +16096,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 629,
+      "objectid": 626,
       "atlas_id": 262,
       "watercode": "91431",
       "name": "Mountain Home Reservoir",
@@ -16141,7 +16146,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1241,
+      "objectid": 1238,
       "atlas_id": 213,
       "watercode": "69092",
       "name": "Pearl Lake",
@@ -16192,7 +16197,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1161,
+      "objectid": 1158,
       "atlas_id": 1544,
       "watercode": "23381",
       "name": "Piney River",
@@ -16243,7 +16248,57 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1111,
+      "objectid": 1285,
+      "atlas_id": 1817,
+      "watercode": "11938",
+      "name": "Poudre River, North Fork #5",
+      "alternate_name": "Poudre River, North Fork",
+      "property_name": "Gateway Natural Area",
+      "county": "Larimer",
+      "location_type": "Stream or River",
+      "lat": 40.70031785738178,
+      "lng": -105.24254308849127,
+      "elevation_ft": 5356,
+      "boating": "Non-motorized",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "atlas_stocked_description": "No",
+      "survey_url": "http://www.google.com/search?q=\"fishing report\"+Poudre River, North Fork+\"Larimer County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//40.7003,-105.2425",
+      "property_url": "https://www.fcgov.com/naturalareas/finder/gateway",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "show": 1,
+      "noshow_reason": null,
+      "quality": 1,
+      "spot_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1817",
+      "duplicate_atlas_records": 0,
+      "species": [
+        "Trout: Brown"
+      ],
+      "species_error": null,
+      "access_class": "public-indicated",
+      "access_basis": "Public-land/property indicator or official property URL is present",
+      "fishery_type": "Coldwater",
+      "import_score": 88,
+      "score_reasons": [
+        "official species list",
+        "sportfish present",
+        "public access indicated",
+        "easy access",
+        "family friendly",
+        "survey/report available",
+        "driving link available"
+      ],
+      "recommendation": "import-high-priority",
+      "stocking_status": "no-project-stocking-record-found"
+    },
+    {
+      "objectid": 1108,
       "atlas_id": 787,
       "watercode": "69395",
       "name": "Red Dirt Reservoir",
@@ -16294,7 +16349,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 724,
+      "objectid": 721,
       "atlas_id": 199,
       "watercode": "56158",
       "name": "Red Rock Lake",
@@ -16344,7 +16399,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 548,
+      "objectid": 545,
       "atlas_id": 834,
       "watercode": "92001",
       "name": "River Center Pond",
@@ -16394,7 +16449,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1245,
+      "objectid": 1242,
       "atlas_id": 742,
       "watercode": "92166",
       "name": "San Luis Lake",
@@ -16444,7 +16499,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 690,
+      "objectid": 687,
       "atlas_id": 66,
       "watercode": "92255",
       "name": "Silverjack Reservoir",
@@ -16495,7 +16550,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 897,
+      "objectid": 894,
       "atlas_id": 1393,
       "watercode": "30837",
       "name": "South Platte River",
@@ -16546,7 +16601,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 580,
+      "objectid": 577,
       "atlas_id": 1328,
       "watercode": "57491",
       "name": "Sprague Lake",
@@ -16597,7 +16652,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1264,
+      "objectid": 1261,
       "atlas_id": 192,
       "watercode": "70223",
       "name": "Steamboat Lake",
@@ -16648,7 +16703,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 835,
+      "objectid": 832,
       "atlas_id": 566,
       "watercode": "56641",
       "name": "Summit Lake",
@@ -16698,7 +16753,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 977,
+      "objectid": 974,
       "atlas_id": 1354,
       "watercode": "89501",
       "name": "Sweitzer Lake",
@@ -16799,7 +16854,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 558,
+      "objectid": 555,
       "atlas_id": 1794,
       "watercode": "46917",
       "name": "Uncompahgre River",
@@ -16850,7 +16905,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1172,
+      "objectid": 1169,
       "atlas_id": 240,
       "watercode": "70689",
       "name": "Vaughn Lake",
@@ -17383,7 +17438,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 781,
+      "objectid": 778,
       "atlas_id": 143,
       "watercode": "58140",
       "name": "[Purposely Left Blank]",
@@ -17438,7 +17493,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1010,
+      "objectid": 1007,
       "atlas_id": 161,
       "watercode": "60222",
       "name": "[Purposely Left Blank]",
@@ -17489,7 +17544,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1024,
+      "objectid": 1021,
       "atlas_id": 1718,
       "watercode": "COFA13",
       "name": "[Purposely Left Blank]",
@@ -17541,7 +17596,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1026,
+      "objectid": 1023,
       "atlas_id": 1720,
       "watercode": "COFA15",
       "name": "[Purposely Left Blank]",
@@ -17593,7 +17648,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1062,
+      "objectid": 1059,
       "atlas_id": 64,
       "watercode": "53998",
       "name": "[Purposely Left Blank]",
@@ -17645,7 +17700,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1216,
+      "objectid": 1213,
       "atlas_id": 1357,
       "watercode": "81410",
       "name": "[Purposely Left Blank]",
@@ -17702,7 +17757,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1217,
+      "objectid": 1214,
       "atlas_id": 1358,
       "watercode": "81413",
       "name": "[Purposely Left Blank]",
@@ -17757,7 +17812,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1222,
+      "objectid": 1219,
       "atlas_id": 8,
       "watercode": "60309",
       "name": "[Purposely Left Blank]",
@@ -17808,7 +17863,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1224,
+      "objectid": 1221,
       "atlas_id": 11,
       "watercode": "60323",
       "name": "[Purposely Left Blank]",
@@ -17963,7 +18018,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 687,
+      "objectid": 684,
       "atlas_id": 1597,
       "watercode": "81682",
       "name": "Balman Reservoir",
@@ -18014,7 +18069,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1032,
+      "objectid": 1029,
       "atlas_id": 1531,
       "watercode": "38136",
       "name": "Bear Creek",
@@ -18373,7 +18428,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 816,
+      "objectid": 813,
       "atlas_id": 1415,
       "watercode": "10329",
       "name": "Boulder Creek, South",
@@ -18578,7 +18633,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 768,
+      "objectid": 765,
       "atlas_id": 1486,
       "watercode": "10417",
       "name": "Cabin Creek",
@@ -18629,7 +18684,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1154,
+      "objectid": 1151,
       "atlas_id": 1620,
       "watercode": "19427",
       "name": "Canyon Creek",
@@ -18681,7 +18736,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1153,
+      "objectid": 1150,
       "atlas_id": 1567,
       "watercode": "27486",
       "name": "Canyon Creek, East",
@@ -18783,7 +18838,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1037,
+      "objectid": 1034,
       "atlas_id": 1691,
       "watercode": "52578",
       "name": "Chartiers Pond",
@@ -18839,7 +18894,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1223,
+      "objectid": 1220,
       "atlas_id": 10,
       "watercode": "60311",
       "name": "Chatfield Ponds",
@@ -18892,7 +18947,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 844,
+      "objectid": 841,
       "atlas_id": 1398,
       "watercode": "18950",
       "name": "Chicago Creek",
@@ -18943,7 +18998,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 699,
+      "objectid": 696,
       "atlas_id": 1558,
       "watercode": "39013",
       "name": "Cimarron River",
@@ -19200,7 +19255,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 777,
+      "objectid": 774,
       "atlas_id": 1485,
       "watercode": "10669",
       "name": "Cow Creek",
@@ -19262,7 +19317,7 @@
       "lat": 38.497037001122884,
       "lng": -107.60331578990464,
       "elevation_ft": 6756,
-      "boating": "Motor boats",
+      "boating": "Non-motorized",
       "access_ease": "Difficult",
       "fishing_pressure": "Medium",
       "family_friendly": "No",
@@ -19405,7 +19460,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 638,
+      "objectid": 635,
       "atlas_id": 1513,
       "watercode": "39936",
       "name": "Elk Creek",
@@ -19456,7 +19511,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 704,
+      "objectid": 701,
       "atlas_id": 1511,
       "watercode": "20115",
       "name": "Elk Creek",
@@ -19508,7 +19563,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1083,
+      "objectid": 1080,
       "atlas_id": 1585,
       "watercode": "20177",
       "name": "Elk River",
@@ -19559,7 +19614,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1084,
+      "objectid": 1081,
       "atlas_id": 1586,
       "watercode": "20189",
       "name": "Elk River, North Fork",
@@ -19712,7 +19767,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1035,
+      "objectid": 1032,
       "atlas_id": 811,
       "watercode": "79338",
       "name": "Fort Morgan Ponds (2)",
@@ -19765,7 +19820,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1036,
+      "objectid": 1033,
       "atlas_id": 1334,
       "watercode": "66785",
       "name": "Fort Morgan Ponds (2)",
@@ -19818,7 +19873,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 906,
+      "objectid": 903,
       "atlas_id": 1366,
       "watercode": "11039",
       "name": "Goose Creek",
@@ -19974,7 +20029,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 819,
+      "objectid": 816,
       "atlas_id": 129,
       "watercode": "54320",
       "name": "Idaho Springs Reservoir",
@@ -20077,7 +20132,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 617,
+      "objectid": 614,
       "atlas_id": 1515,
       "watercode": "40814",
       "name": "Ivy Creek",
@@ -20128,7 +20183,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1235,
+      "objectid": 1232,
       "atlas_id": 445,
       "watercode": "53037",
       "name": "Jackson Reservoir",
@@ -20290,7 +20345,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1039,
+      "objectid": 1036,
       "atlas_id": 652,
       "watercode": "53051",
       "name": "Jumbo Annex",
@@ -20348,7 +20403,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1041,
+      "objectid": 1038,
       "atlas_id": 468,
       "watercode": "53063",
       "name": "Jumbo Reservoir",
@@ -20462,7 +20517,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 631,
+      "objectid": 628,
       "atlas_id": 457,
       "watercode": "90833",
       "name": "La Jara Reservoir",
@@ -20666,7 +20721,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 570,
+      "objectid": 567,
       "atlas_id": 1324,
       "watercode": "12168",
       "name": "Middle St. Vrain Creek",
@@ -20728,7 +20783,7 @@
       "lat": 38.44458204165967,
       "lng": -107.48813734174044,
       "elevation_ft": 7165,
-      "boating": "Motor boats",
+      "boating": "Non-motorized",
       "access_ease": "Difficult",
       "fishing_pressure": "Low",
       "family_friendly": "No",
@@ -20770,7 +20825,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1152,
+      "objectid": 1149,
       "atlas_id": 1556,
       "watercode": "21345",
       "name": "No Name Creek",
@@ -20822,7 +20877,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1078,
+      "objectid": 1075,
       "atlas_id": 1431,
       "watercode": "11786",
       "name": "North Platte River",
@@ -20873,7 +20928,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 961,
+      "objectid": 958,
       "atlas_id": 211,
       "watercode": "53328",
       "name": "North Sterling Reservoir",
@@ -20984,7 +21039,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1269,
+      "objectid": 1266,
       "atlas_id": 1798,
       "watercode": "42010",
       "name": "Pass Creek",
@@ -21036,7 +21091,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1025,
+      "objectid": 1022,
       "atlas_id": 1719,
       "watercode": "COFA14",
       "name": "Perry Preserve Ponds",
@@ -21139,7 +21194,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 753,
+      "objectid": 750,
       "atlas_id": 1669,
       "watercode": "57524",
       "name": "Pit D",
@@ -21192,7 +21247,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1268,
+      "objectid": 1265,
       "atlas_id": 1635,
       "watercode": "23406",
       "name": "Plateau Creek",
@@ -21347,7 +21402,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 655,
+      "objectid": 652,
       "atlas_id": 98,
       "watercode": "53354",
       "name": "Prewitt Reservoir",
@@ -21463,7 +21518,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 593,
+      "objectid": 590,
       "atlas_id": 287,
       "watercode": "62000",
       "name": "Public Works Lake",
@@ -21518,7 +21573,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 706,
+      "objectid": 703,
       "atlas_id": 1630,
       "watercode": "24218",
       "name": "Rifle Creek, East",
@@ -21569,7 +21624,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1109,
+      "objectid": 1106,
       "atlas_id": 650,
       "watercode": "21787",
       "name": "Rock Creek",
@@ -21725,7 +21780,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 873,
+      "objectid": 870,
       "atlas_id": 254,
       "watercode": "61034",
       "name": "Sheets Lake",
@@ -21879,7 +21934,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 987,
+      "objectid": 984,
       "atlas_id": 1383,
       "watercode": "11837",
       "name": "South Platte River",
@@ -22034,7 +22089,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 767,
+      "objectid": 764,
       "atlas_id": 1484,
       "watercode": "13285",
       "name": "St. Vrain Creek, North",
@@ -22085,7 +22140,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 776,
+      "objectid": 773,
       "atlas_id": 1483,
       "watercode": "12182",
       "name": "St. Vrain Creek, North",
@@ -22189,7 +22244,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 891,
+      "objectid": 888,
       "atlas_id": 180,
       "watercode": "58443",
       "name": "Strontia Springs Reservoir",
@@ -22240,7 +22295,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1151,
+      "objectid": 1148,
       "atlas_id": 1551,
       "watercode": "23507",
       "name": "Sweetwater Creek",
@@ -22342,7 +22397,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1106,
+      "objectid": 1103,
       "atlas_id": 1592,
       "watercode": "23557",
       "name": "Trout Creek",
@@ -22393,7 +22448,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1218,
+      "objectid": 1215,
       "atlas_id": 1596,
       "watercode": "81414",
       "name": "Valco Pond #4",
@@ -22449,7 +22504,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1215,
+      "objectid": 1212,
       "atlas_id": 1356,
       "watercode": "81412",
       "name": "Valco Ponds",
@@ -22507,7 +22562,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 858,
+      "objectid": 855,
       "atlas_id": 687,
       "watercode": "22753",
       "name": "White River, South Fork",
@@ -22609,7 +22664,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1089,
+      "objectid": 1086,
       "atlas_id": 624,
       "watercode": "22917",
       "name": "Yampa River",
@@ -22663,7 +22718,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1092,
+      "objectid": 1089,
       "atlas_id": 669,
       "watercode": "22905",
       "name": "Yampa River",
@@ -22816,7 +22871,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 678,
+      "objectid": 675,
       "atlas_id": 1149,
       "watercode": "81404",
       "name": "[Purposely Left Blank]",
@@ -22865,7 +22920,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 800,
+      "objectid": 797,
       "atlas_id": 67,
       "watercode": "54887",
       "name": "[Purposely Left Blank]",
@@ -22914,7 +22969,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 996,
+      "objectid": 993,
       "atlas_id": 108,
       "watercode": "52821",
       "name": "[Purposely Left Blank]",
@@ -23014,7 +23069,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1016,
+      "objectid": 1013,
       "atlas_id": 506,
       "watercode": "57910",
       "name": "Bowles Grove Pond",
@@ -23064,7 +23119,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1123,
+      "objectid": 1120,
       "atlas_id": 1545,
       "watercode": "19326",
       "name": "Brush Creek, West",
@@ -23114,7 +23169,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 700,
+      "objectid": 697,
       "atlas_id": 1566,
       "watercode": "39051",
       "name": "Cimarron River, Little",
@@ -23164,7 +23219,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 841,
+      "objectid": 838,
       "atlas_id": 1392,
       "watercode": "10532",
       "name": "Clear Creek",
@@ -23214,7 +23269,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 815,
+      "objectid": 812,
       "atlas_id": 1396,
       "watercode": "10568",
       "name": "Clear Creek, North Fork",
@@ -23264,7 +23319,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 850,
+      "objectid": 847,
       "atlas_id": 1409,
       "watercode": "10570",
       "name": "Clear Creek, South Fork",
@@ -23512,6 +23567,56 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
+      "objectid": 1278,
+      "atlas_id": 1810,
+      "watercode": "20165",
+      "name": "Elk River #1",
+      "alternate_name": "Elk River",
+      "property_name": "Christina SWA",
+      "county": "Routt",
+      "location_type": "Stream or River",
+      "lat": 40.58131821521658,
+      "lng": -106.89773527709166,
+      "elevation_ft": 6745,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "No",
+      "rustic": "Yes",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "atlas_stocked_description": "Sub-catchables",
+      "survey_url": "http://www.google.com/search?q=\"fishing report\"+Elk River+\"Routt County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//40.5813,-106.8977",
+      "property_url": "https://cpw.state.co.us/state-wildlife-areas/christina-swa-fishing-easement-elk-river",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "show": 1,
+      "noshow_reason": null,
+      "quality": 1,
+      "spot_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1810",
+      "duplicate_atlas_records": 0,
+      "species": [
+        "Trout: Mountain Whitefish",
+        "Trout: Rainbow"
+      ],
+      "species_error": null,
+      "access_class": "public-indicated",
+      "access_basis": "Public-land/property indicator or official property URL is present",
+      "fishery_type": "Coldwater",
+      "import_score": 82,
+      "score_reasons": [
+        "official species list",
+        "sportfish present",
+        "public access indicated",
+        "easy access",
+        "survey/report available",
+        "driving link available"
+      ],
+      "recommendation": "import-high-priority",
+      "stocking_status": "no-project-stocking-record-found"
+    },
+    {
       "objectid": 83,
       "atlas_id": 1542,
       "watercode": "20420",
@@ -23562,7 +23667,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1060,
+      "objectid": 1057,
       "atlas_id": 1467,
       "watercode": "13867",
       "name": "Illinois River",
@@ -23760,7 +23865,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 718,
+      "objectid": 715,
       "atlas_id": 82,
       "watercode": "55459",
       "name": "Left Hand Park Reservoir",
@@ -23908,7 +24013,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1162,
+      "objectid": 1159,
       "atlas_id": 1548,
       "watercode": "26179",
       "name": "Lime Creek",
@@ -24006,7 +24111,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 861,
+      "objectid": 858,
       "atlas_id": 1583,
       "watercode": "25761",
       "name": "Miller Creek",
@@ -24056,7 +24161,56 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1071,
+      "objectid": 1287,
+      "atlas_id": 1819,
+      "watercode": "52502",
+      "name": "Monarch Park Ponds",
+      "alternate_name": "Monarch Park Ponds",
+      "property_name": "Monarch Park Campground",
+      "county": "Chaffee",
+      "location_type": "Water Body",
+      "lat": 38.519870753648725,
+      "lng": -106.32277616666185,
+      "elevation_ft": 10445,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "No",
+      "rustic": "Yes",
+      "ice_fishing": "Yes",
+      "accessible_pier": "Yes",
+      "atlas_stocked_description": "Catchable trout",
+      "survey_url": "http://www.google.com/search?q=\"fishing report\"+Monarch Park Ponds+\"Chaffee County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//38.5199,-106.3228",
+      "property_url": "https://www.fs.usda.gov/r02/psicc/recreation/monarch-park-campground",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "show": 1,
+      "noshow_reason": null,
+      "quality": null,
+      "spot_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1819",
+      "duplicate_atlas_records": 0,
+      "species": [
+        "Trout: Rainbow"
+      ],
+      "species_error": null,
+      "access_class": "public-indicated",
+      "access_basis": "Public-land/property indicator or official property URL is present",
+      "fishery_type": "Coldwater",
+      "import_score": 82,
+      "score_reasons": [
+        "official species list",
+        "sportfish present",
+        "public access indicated",
+        "easy access",
+        "survey/report available",
+        "driving link available"
+      ],
+      "recommendation": "import-high-priority",
+      "stocking_status": "no-project-stocking-record-found"
+    },
+    {
+      "objectid": 1068,
       "atlas_id": 612,
       "watercode": "10904",
       "name": "North Platte River",
@@ -24155,7 +24309,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1240,
+      "objectid": 1237,
       "atlas_id": 1353,
       "watercode": "91657",
       "name": "Paonia Reservoir",
@@ -24253,7 +24407,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 893,
+      "objectid": 890,
       "atlas_id": 1408,
       "watercode": "14643",
       "name": "Pine Creek",
@@ -24352,7 +24506,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 916,
+      "objectid": 913,
       "atlas_id": 205,
       "watercode": "55960",
       "name": "Progress Park Pond",
@@ -24402,7 +24556,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1232,
+      "objectid": 1229,
       "atlas_id": 1395,
       "watercode": "18134",
       "name": "Ralston Creek",
@@ -24501,7 +24655,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1072,
+      "objectid": 1069,
       "atlas_id": 672,
       "watercode": "12079",
       "name": "Roaring Fork",
@@ -24649,7 +24803,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 713,
+      "objectid": 710,
       "atlas_id": 1769,
       "watercode": "73626",
       "name": "Scenery Pond",
@@ -24747,7 +24901,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 964,
+      "objectid": 961,
       "atlas_id": 1321,
       "watercode": "11813",
       "name": "South Platte River",
@@ -24797,7 +24951,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 979,
+      "objectid": 976,
       "atlas_id": 1374,
       "watercode": "10980",
       "name": "South Platte River, North Fork",
@@ -24946,7 +25100,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1014,
+      "objectid": 1011,
       "atlas_id": 501,
       "watercode": "57148",
       "name": "Sterns Park Pond",
@@ -25096,7 +25250,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 865,
+      "objectid": 862,
       "atlas_id": 1362,
       "watercode": "12435",
       "name": "Trout Creek",
@@ -25195,7 +25349,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 997,
+      "objectid": 994,
       "atlas_id": 113,
       "watercode": "58037",
       "name": "Vanderbuilt Pond",
@@ -25294,7 +25448,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 864,
+      "objectid": 861,
       "atlas_id": 1361,
       "watercode": "12512",
       "name": "West Creek",
@@ -25442,7 +25596,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 612,
+      "objectid": 609,
       "atlas_id": 647,
       "watercode": "88802",
       "name": "[Purposely Left Blank]",
@@ -25492,7 +25646,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 691,
+      "objectid": 688,
       "atlas_id": 292,
       "watercode": "88838",
       "name": "[Purposely Left Blank]",
@@ -25542,7 +25696,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 720,
+      "objectid": 717,
       "atlas_id": 165,
       "watercode": "58974",
       "name": "[Purposely Left Blank]",
@@ -25591,7 +25745,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 723,
+      "objectid": 720,
       "atlas_id": 168,
       "watercode": "58998",
       "name": "[Purposely Left Blank]",
@@ -25640,7 +25794,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1017,
+      "objectid": 1014,
       "atlas_id": 565,
       "watercode": "60234",
       "name": "[Purposely Left Blank]",
@@ -25690,7 +25844,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 845,
+      "objectid": 842,
       "atlas_id": 1399,
       "watercode": "10518",
       "name": "Chicago Creek, West Fork",
@@ -25739,7 +25893,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1102,
+      "objectid": 1099,
       "atlas_id": 1108,
       "watercode": "66111",
       "name": "Crosho Lake",
@@ -25789,7 +25943,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1150,
+      "objectid": 1147,
       "atlas_id": 1549,
       "watercode": "19922",
       "name": "Deep Creek",
@@ -25838,7 +25992,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1171,
+      "objectid": 1168,
       "atlas_id": 400,
       "watercode": "66705",
       "name": "Freeman Reservoir",
@@ -25936,7 +26090,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1047,
+      "objectid": 1044,
       "atlas_id": 644,
       "watercode": "30130",
       "name": "Huerfano River",
@@ -26035,7 +26189,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 633,
+      "objectid": 630,
       "atlas_id": 1181,
       "watercode": "90794",
       "name": "Kerr Lake",
@@ -26133,7 +26287,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 855,
+      "objectid": 852,
       "atlas_id": 190,
       "watercode": "67682",
       "name": "Lake Of The Woods",
@@ -26182,7 +26336,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 746,
+      "objectid": 743,
       "atlas_id": 425,
       "watercode": "55512",
       "name": "Long Lake",
@@ -26331,7 +26485,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 795,
+      "objectid": 792,
       "atlas_id": 1482,
       "watercode": "12992",
       "name": "Miller Fork Creek",
@@ -26381,7 +26535,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 747,
+      "objectid": 744,
       "atlas_id": 591,
       "watercode": "58986",
       "name": "Rainbow Lakes",
@@ -26430,7 +26584,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 856,
+      "objectid": 853,
       "atlas_id": 194,
       "watercode": "70552",
       "name": "Trappers Lake",
@@ -26480,7 +26634,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 808,
+      "objectid": 805,
       "atlas_id": 252,
       "watercode": "57035",
       "name": "Yankee Doodle Lake",
@@ -26525,54 +26679,6 @@
         "family friendly",
         "survey/report available",
         "driving link available"
-      ],
-      "recommendation": "import-high-priority",
-      "stocking_status": "no-project-stocking-record-found"
-    },
-    {
-      "objectid": 1288,
-      "atlas_id": 1817,
-      "watercode": "11938",
-      "name": "Poudre River, North Fork #5",
-      "alternate_name": "Poudre River, North Fork",
-      "property_name": "Gateway Natural Area",
-      "county": "Larimer",
-      "location_type": "Stream or River",
-      "lat": 40.70031785738178,
-      "lng": -105.24254308849127,
-      "elevation_ft": 5356,
-      "boating": "Non-motorized",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "atlas_stocked_description": "No",
-      "survey_url": null,
-      "driving_url": null,
-      "property_url": "https://www.fcgov.com/naturalareas/finder/gateway",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "show": 1,
-      "noshow_reason": null,
-      "quality": 1,
-      "spot_url": null,
-      "duplicate_atlas_records": 0,
-      "species": [
-        "Trout: Brown"
-      ],
-      "species_error": null,
-      "access_class": "public-indicated",
-      "access_basis": "Public-land/property indicator or official property URL is present",
-      "fishery_type": "Coldwater",
-      "import_score": 79,
-      "score_reasons": [
-        "official species list",
-        "sportfish present",
-        "public access indicated",
-        "easy access",
-        "family friendly"
       ],
       "recommendation": "import-high-priority",
       "stocking_status": "no-project-stocking-record-found"
@@ -27402,7 +27508,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 615,
+      "objectid": 612,
       "atlas_id": 897,
       "watercode": "92837",
       "name": "[Purposely Left Blank]",
@@ -27450,7 +27556,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 648,
+      "objectid": 645,
       "atlas_id": 1245,
       "watercode": "93649",
       "name": "[Purposely Left Blank]",
@@ -27498,7 +27604,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 654,
+      "objectid": 651,
       "atlas_id": 1095,
       "watercode": "89400",
       "name": "[Purposely Left Blank]",
@@ -27546,7 +27652,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 658,
+      "objectid": 655,
       "atlas_id": 528,
       "watercode": "80868",
       "name": "[Purposely Left Blank]",
@@ -27594,7 +27700,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 660,
+      "objectid": 657,
       "atlas_id": 581,
       "watercode": "80844",
       "name": "[Purposely Left Blank]",
@@ -27642,7 +27748,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 661,
+      "objectid": 658,
       "atlas_id": 582,
       "watercode": "80248",
       "name": "[Purposely Left Blank]",
@@ -27690,7 +27796,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 664,
+      "objectid": 661,
       "atlas_id": 888,
       "watercode": "80476",
       "name": "[Purposely Left Blank]",
@@ -27738,7 +27844,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 669,
+      "objectid": 666,
       "atlas_id": 960,
       "watercode": "80983",
       "name": "[Purposely Left Blank]",
@@ -27786,7 +27892,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 670,
+      "objectid": 667,
       "atlas_id": 973,
       "watercode": "80971",
       "name": "[Purposely Left Blank]",
@@ -27834,7 +27940,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 672,
+      "objectid": 669,
       "atlas_id": 985,
       "watercode": "80945",
       "name": "[Purposely Left Blank]",
@@ -27882,7 +27988,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 676,
+      "objectid": 673,
       "atlas_id": 1132,
       "watercode": "80399",
       "name": "[Purposely Left Blank]",
@@ -27930,7 +28036,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 677,
+      "objectid": 674,
       "atlas_id": 1139,
       "watercode": "80298",
       "name": "[Purposely Left Blank]",
@@ -27978,7 +28084,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 681,
+      "objectid": 678,
       "atlas_id": 1178,
       "watercode": "80387",
       "name": "[Purposely Left Blank]",
@@ -28026,7 +28132,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 797,
+      "objectid": 794,
       "atlas_id": 22,
       "watercode": "53746",
       "name": "[Purposely Left Blank]",
@@ -28074,7 +28180,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 799,
+      "objectid": 796,
       "atlas_id": 57,
       "watercode": "54546",
       "name": "[Purposely Left Blank]",
@@ -28123,7 +28229,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 801,
+      "objectid": 798,
       "atlas_id": 70,
       "watercode": "53758",
       "name": "[Purposely Left Blank]",
@@ -28171,7 +28277,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 802,
+      "objectid": 799,
       "atlas_id": 80,
       "watercode": "53722",
       "name": "[Purposely Left Blank]",
@@ -28219,7 +28325,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 806,
+      "objectid": 803,
       "atlas_id": 243,
       "watercode": "54510",
       "name": "[Purposely Left Blank]",
@@ -28267,7 +28373,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 810,
+      "objectid": 807,
       "atlas_id": 267,
       "watercode": "55219",
       "name": "[Purposely Left Blank]",
@@ -28315,7 +28421,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 814,
+      "objectid": 811,
       "atlas_id": 308,
       "watercode": "54522",
       "name": "[Purposely Left Blank]",
@@ -28363,7 +28469,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 826,
+      "objectid": 823,
       "atlas_id": 497,
       "watercode": "54344",
       "name": "[Purposely Left Blank]",
@@ -28411,7 +28517,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 904,
+      "objectid": 901,
       "atlas_id": 504,
       "watercode": "53669",
       "name": "Abyss Lake",
@@ -28459,7 +28565,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1261,
+      "objectid": 1258,
       "atlas_id": 1293,
       "watercode": "53683",
       "name": "Agnes Lake, Upper",
@@ -28507,7 +28613,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1137,
+      "objectid": 1134,
       "atlas_id": 1569,
       "watercode": "19706",
       "name": "Arapaho Creek",
@@ -28555,7 +28661,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 798,
+      "objectid": 795,
       "atlas_id": 32,
       "watercode": "53734",
       "name": "Arapahoe Lakes",
@@ -28799,7 +28905,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 709,
+      "objectid": 706,
       "atlas_id": 1746,
       "watercode": "32970",
       "name": "Arkansas River",
@@ -28848,7 +28954,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1187,
+      "objectid": 1184,
       "atlas_id": 1740,
       "watercode": "32994",
       "name": "Arkansas River",
@@ -28897,7 +29003,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1193,
+      "objectid": 1190,
       "atlas_id": 1747,
       "watercode": "32968",
       "name": "Arkansas River",
@@ -29189,7 +29295,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 849,
+      "objectid": 846,
       "atlas_id": 1403,
       "watercode": "10051",
       "name": "Bard Creek",
@@ -29574,7 +29680,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 892,
+      "objectid": 889,
       "atlas_id": 1406,
       "watercode": "15013",
       "name": "Bear Creek",
@@ -29623,7 +29729,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1107,
+      "objectid": 1104,
       "atlas_id": 1593,
       "watercode": "21248",
       "name": "Bear River",
@@ -29720,7 +29826,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 626,
+      "objectid": 623,
       "atlas_id": 1532,
       "watercode": "38275",
       "name": "Beaver Creek",
@@ -29768,7 +29874,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 708,
+      "objectid": 705,
       "atlas_id": 656,
       "watercode": "29149",
       "name": "Beaver Creek",
@@ -29817,7 +29923,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 992,
+      "objectid": 989,
       "atlas_id": 1388,
       "watercode": "10140",
       "name": "Beaver Creek",
@@ -29865,7 +29971,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1170,
+      "objectid": 1167,
       "atlas_id": 1580,
       "watercode": "24935",
       "name": "Beaver Creek, Big",
@@ -29913,7 +30019,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 983,
+      "objectid": 980,
       "atlas_id": 1379,
       "watercode": "12726",
       "name": "Ben Tyler Gulch",
@@ -30105,7 +30211,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1157,
+      "objectid": 1154,
       "atlas_id": 646,
       "watercode": "19225",
       "name": "Blacktail Creek",
@@ -30201,7 +30307,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 754,
+      "objectid": 751,
       "atlas_id": 20,
       "watercode": "54053",
       "name": "Blue Lake",
@@ -30249,7 +30355,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1043,
+      "objectid": 1040,
       "atlas_id": 818,
       "watercode": "82610",
       "name": "Blue Lake Lower",
@@ -30443,7 +30549,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 752,
+      "objectid": 749,
       "atlas_id": 1488,
       "watercode": "10277",
       "name": "Boulder Creek, Middle, North Fork",
@@ -30589,7 +30695,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 989,
+      "objectid": 986,
       "atlas_id": 1385,
       "watercode": "13920",
       "name": "Bruno Gulch",
@@ -30686,7 +30792,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 656,
+      "objectid": 653,
       "atlas_id": 196,
       "watercode": "80236",
       "name": "Brush Creek Lakes",
@@ -30734,7 +30840,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 980,
+      "objectid": 977,
       "atlas_id": 1375,
       "watercode": "10380",
       "name": "Buffalo Creek",
@@ -30879,7 +30985,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 986,
+      "objectid": 983,
       "atlas_id": 1382,
       "watercode": "12740",
       "name": "Burning Bear Creek",
@@ -31025,7 +31131,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 834,
+      "objectid": 831,
       "atlas_id": 555,
       "watercode": "54178",
       "name": "Byron Lake",
@@ -31171,7 +31277,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 748,
+      "objectid": 745,
       "atlas_id": 1417,
       "watercode": "10467",
       "name": "Caribou Creek",
@@ -31220,7 +31326,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 825,
+      "objectid": 822,
       "atlas_id": 458,
       "watercode": "54243",
       "name": "Caroline Lake",
@@ -31268,7 +31374,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1121,
+      "objectid": 1118,
       "atlas_id": 1574,
       "watercode": "23090",
       "name": "Cataract Creek",
@@ -31366,7 +31472,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1103,
+      "objectid": 1100,
       "atlas_id": 1185,
       "watercode": "65828",
       "name": "Chatfield Reservoir",
@@ -31415,7 +31521,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 827,
+      "objectid": 824,
       "atlas_id": 510,
       "watercode": "54332",
       "name": "Chicago Lakes",
@@ -31463,7 +31569,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 824,
+      "objectid": 821,
       "atlas_id": 387,
       "watercode": "54368",
       "name": "Chinns Lake",
@@ -31512,7 +31618,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 695,
+      "objectid": 692,
       "atlas_id": 1427,
       "watercode": "39025",
       "name": "Cimarron River, East Fork",
@@ -31561,7 +31667,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 694,
+      "objectid": 691,
       "atlas_id": 1426,
       "watercode": "39037",
       "name": "Cimarron River, Middle Fork",
@@ -31610,7 +31716,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 693,
+      "objectid": 690,
       "atlas_id": 1425,
       "watercode": "39049",
       "name": "Cimarron River, West Fork",
@@ -31659,7 +31765,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 805,
+      "objectid": 802,
       "atlas_id": 184,
       "watercode": "54382",
       "name": "Clayton Lake",
@@ -31707,7 +31813,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 842,
+      "objectid": 839,
       "atlas_id": 1394,
       "watercode": "10556",
       "name": "Clear Creek",
@@ -31852,7 +31958,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 848,
+      "objectid": 845,
       "atlas_id": 1402,
       "watercode": "10582",
       "name": "Clear Creek, West Fork",
@@ -31901,7 +32007,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1259,
+      "objectid": 1256,
       "atlas_id": 1211,
       "watercode": "54394",
       "name": "Clear Lake",
@@ -32191,7 +32297,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1139,
+      "objectid": 1136,
       "atlas_id": 1573,
       "watercode": "19718",
       "name": "Colorado River",
@@ -32239,7 +32345,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 686,
+      "objectid": 683,
       "atlas_id": 1318,
       "watercode": "80313",
       "name": "Comanche Lake",
@@ -32287,7 +32393,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 828,
+      "objectid": 825,
       "atlas_id": 518,
       "watercode": "54469",
       "name": "Cone Lake",
@@ -32335,7 +32441,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 636,
+      "objectid": 633,
       "atlas_id": 1442,
       "watercode": "39253",
       "name": "Conejos River",
@@ -32384,7 +32490,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1280,
+      "objectid": 1277,
       "atlas_id": 1809,
       "watercode": "39241",
       "name": "Conejos River",
@@ -32676,7 +32782,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 982,
+      "objectid": 979,
       "atlas_id": 1378,
       "watercode": "10695",
       "name": "Craig Creek",
@@ -32724,7 +32830,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 811,
+      "objectid": 808,
       "atlas_id": 268,
       "watercode": "54534",
       "name": "Crater Lakes",
@@ -32966,7 +33072,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1127,
+      "objectid": 1124,
       "atlas_id": 1550,
       "watercode": "19984",
       "name": "Derby Creek, Middle Fork",
@@ -33160,7 +33266,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 716,
+      "objectid": 713,
       "atlas_id": 71,
       "watercode": "54661",
       "name": "Dorothy Lake",
@@ -33305,7 +33411,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 711,
+      "objectid": 708,
       "atlas_id": 1581,
       "watercode": "20237",
       "name": "Douglas Creek, East",
@@ -33353,7 +33459,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 685,
+      "objectid": 682,
       "atlas_id": 1306,
       "watercode": "80375",
       "name": "Dry Lakes",
@@ -33401,7 +33507,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 990,
+      "objectid": 987,
       "atlas_id": 1386,
       "watercode": "10811",
       "name": "Duck Creek",
@@ -33449,7 +33555,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1227,
+      "objectid": 1224,
       "atlas_id": 207,
       "watercode": "58380",
       "name": "Dudes Hole Lake",
@@ -33498,7 +33604,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 807,
+      "objectid": 804,
       "atlas_id": 246,
       "watercode": "54724",
       "name": "Echo Lake, Little",
@@ -33595,7 +33701,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1272,
+      "objectid": 1269,
       "atlas_id": 1801,
       "watercode": "80396",
       "name": "Elk Falls Pond",
@@ -33692,7 +33798,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1088,
+      "objectid": 1085,
       "atlas_id": 1594,
       "watercode": "20191",
       "name": "Elk River, South Fork",
@@ -33789,7 +33895,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 838,
+      "objectid": 835,
       "atlas_id": 587,
       "watercode": "54813",
       "name": "Ethel Lake",
@@ -33837,7 +33943,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 683,
+      "objectid": 680,
       "atlas_id": 1241,
       "watercode": "80426",
       "name": "Eureka Lake",
@@ -33885,7 +33991,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 698,
+      "objectid": 695,
       "atlas_id": 1541,
       "watercode": "40105",
       "name": "Fall Creek",
@@ -33933,7 +34039,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 846,
+      "objectid": 843,
       "atlas_id": 1400,
       "watercode": "10912",
       "name": "Fall River",
@@ -33981,7 +34087,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 821,
+      "objectid": 818,
       "atlas_id": 384,
       "watercode": "57061",
       "name": "Fall River Reservoir",
@@ -34029,7 +34135,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1169,
+      "objectid": 1166,
       "atlas_id": 1579,
       "watercode": "20254",
       "name": "Fawn Creek",
@@ -34077,7 +34183,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 867,
+      "objectid": 864,
       "atlas_id": 1364,
       "watercode": "10924",
       "name": "Fern Creek",
@@ -34222,7 +34328,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 625,
+      "objectid": 622,
       "atlas_id": 1527,
       "watercode": "40167",
       "name": "Fish Creek",
@@ -34270,7 +34376,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 803,
+      "objectid": 800,
       "atlas_id": 86,
       "watercode": "54875",
       "name": "Forest Lakes",
@@ -34318,7 +34424,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 817,
+      "objectid": 814,
       "atlas_id": 1777,
       "watercode": "54863",
       "name": "Forest Lakes",
@@ -34367,7 +34473,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1228,
+      "objectid": 1225,
       "atlas_id": 208,
       "watercode": "61060",
       "name": "Forgotten Valley Pond",
@@ -34512,7 +34618,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 793,
+      "objectid": 790,
       "atlas_id": 1480,
       "watercode": "10986",
       "name": "Fox Creek",
@@ -34609,7 +34715,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 899,
+      "objectid": 896,
       "atlas_id": 118,
       "watercode": "54902",
       "name": "Frozen Lake",
@@ -34755,7 +34861,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 984,
+      "objectid": 981,
       "atlas_id": 1380,
       "watercode": "10998",
       "name": "Geneva Creek",
@@ -34804,7 +34910,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 903,
+      "objectid": 900,
       "atlas_id": 454,
       "watercode": "54952",
       "name": "Gibson Lake",
@@ -34901,7 +35007,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 680,
+      "objectid": 677,
       "atlas_id": 1171,
       "watercode": "80452",
       "name": "Goodwin Lakes",
@@ -34949,7 +35055,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1165,
+      "objectid": 1162,
       "atlas_id": 1555,
       "watercode": "23204",
       "name": "Gore Creek",
@@ -35194,7 +35300,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 650,
+      "objectid": 647,
       "atlas_id": 1517,
       "watercode": "45458",
       "name": "Groundhog Creek",
@@ -35292,7 +35398,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 696,
+      "objectid": 693,
       "atlas_id": 1434,
       "watercode": "42583",
       "name": "Gunnison River",
@@ -35389,7 +35495,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 907,
+      "objectid": 904,
       "atlas_id": 1367,
       "watercode": "14528",
       "name": "Hankins Gulch",
@@ -35486,7 +35592,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 833,
+      "objectid": 830,
       "atlas_id": 552,
       "watercode": "55093",
       "name": "Hassell Lake",
@@ -35534,7 +35640,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 809,
+      "objectid": 806,
       "atlas_id": 266,
       "watercode": "55106",
       "name": "Heart Lake",
@@ -35630,7 +35736,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 673,
+      "objectid": 670,
       "atlas_id": 1072,
       "watercode": "80604",
       "name": "Hermit Lake",
@@ -35678,7 +35784,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 703,
+      "objectid": 700,
       "atlas_id": 1524,
       "watercode": "45799",
       "name": "Hermosa Creek",
@@ -35727,7 +35833,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 682,
+      "objectid": 679,
       "atlas_id": 1209,
       "watercode": "80628",
       "name": "Horn Lake",
@@ -35775,7 +35881,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 675,
+      "objectid": 672,
       "atlas_id": 1116,
       "watercode": "80630",
       "name": "Horn Lake, Little",
@@ -35823,7 +35929,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 863,
+      "objectid": 860,
       "atlas_id": 1360,
       "watercode": "11180",
       "name": "Horse Creek",
@@ -35871,7 +35977,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 749,
+      "objectid": 746,
       "atlas_id": 1418,
       "watercode": "13615",
       "name": "Horseshoe Creek",
@@ -35919,7 +36025,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 674,
+      "objectid": 671,
       "atlas_id": 1078,
       "watercode": "80642",
       "name": "Horseshoe Lake",
@@ -36112,7 +36218,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 831,
+      "objectid": 828,
       "atlas_id": 524,
       "watercode": "55194",
       "name": "Ice Lake",
@@ -36160,7 +36266,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 804,
+      "objectid": 801,
       "atlas_id": 87,
       "watercode": "55221",
       "name": "Iceberg Lakes",
@@ -36256,7 +36362,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 714,
+      "objectid": 711,
       "atlas_id": 21,
       "watercode": "55233",
       "name": "Isabelle Lake",
@@ -36305,7 +36411,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1059,
+      "objectid": 1056,
       "atlas_id": 1466,
       "watercode": "11231",
       "name": "Jack Creek",
@@ -36353,7 +36459,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 868,
+      "objectid": 865,
       "atlas_id": 1404,
       "watercode": "11243",
       "name": "Jackson Creek",
@@ -36401,7 +36507,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 869,
+      "objectid": 866,
       "atlas_id": 1405,
       "watercode": "14770",
       "name": "Jackson Creek, North Fork",
@@ -36449,7 +36555,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 812,
+      "objectid": 809,
       "atlas_id": 278,
       "watercode": "55271",
       "name": "James Peak Lake",
@@ -36595,7 +36701,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1260,
+      "objectid": 1257,
       "atlas_id": 1228,
       "watercode": "55372",
       "name": "Kelly Lake",
@@ -36692,7 +36798,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1085,
+      "objectid": 1082,
       "atlas_id": 1588,
       "watercode": "20874",
       "name": "King Solomon Creek",
@@ -36740,7 +36846,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 991,
+      "objectid": 988,
       "atlas_id": 1387,
       "watercode": "12738",
       "name": "Kirby Gulch",
@@ -36885,7 +36991,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 649,
+      "objectid": 646,
       "atlas_id": 1516,
       "watercode": "40941",
       "name": "La Garita Creek",
@@ -36934,7 +37040,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 632,
+      "objectid": 629,
       "atlas_id": 657,
       "watercode": "45282",
       "name": "La Jara Creek",
@@ -36982,7 +37088,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1258,
+      "objectid": 1255,
       "atlas_id": 1101,
       "watercode": "53671",
       "name": "Lake Agnes",
@@ -37078,7 +37184,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 684,
+      "objectid": 681,
       "atlas_id": 1259,
       "watercode": "80743",
       "name": "Lake Of The Clouds, Lower",
@@ -37126,7 +37232,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 665,
+      "objectid": 662,
       "atlas_id": 900,
       "watercode": "80755",
       "name": "Lake Of The Clouds, Middle",
@@ -37174,7 +37280,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 666,
+      "objectid": 663,
       "atlas_id": 906,
       "watercode": "80767",
       "name": "Lake Of The Clouds, Upper",
@@ -37318,7 +37424,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 750,
+      "objectid": 747,
       "atlas_id": 1422,
       "watercode": "11433",
       "name": "Lefthand Creek",
@@ -37607,7 +37713,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1050,
+      "objectid": 1047,
       "atlas_id": 896,
       "watercode": "80781",
       "name": "Lilly Lake, Upper",
@@ -37703,7 +37809,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1045,
+      "objectid": 1042,
       "atlas_id": 260,
       "watercode": "80779",
       "name": "Lily Lake, Lower",
@@ -37898,7 +38004,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1087,
+      "objectid": 1084,
       "atlas_id": 1590,
       "watercode": "23317",
       "name": "Little Snake River, Middle Fork",
@@ -37946,7 +38052,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 618,
+      "objectid": 615,
       "atlas_id": 1518,
       "watercode": "43377",
       "name": "Little Squaw Creek",
@@ -37994,7 +38100,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 830,
+      "objectid": 827,
       "atlas_id": 521,
       "watercode": "55485",
       "name": "Loch Lomond Lake",
@@ -38043,7 +38149,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 866,
+      "objectid": 863,
       "atlas_id": 1363,
       "watercode": "17372",
       "name": "Long Hollow Gulch",
@@ -38189,7 +38295,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 909,
+      "objectid": 906,
       "atlas_id": 1369,
       "watercode": "14011",
       "name": "Lost Creek, North Fork",
@@ -38237,7 +38343,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 908,
+      "objectid": 905,
       "atlas_id": 1368,
       "watercode": "14023",
       "name": "Lost Creek, South Fork",
@@ -38334,7 +38440,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 657,
+      "objectid": 654,
       "atlas_id": 471,
       "watercode": "80856",
       "name": "Macey Lakes",
@@ -38430,7 +38536,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1055,
+      "objectid": 1052,
       "atlas_id": 682,
       "watercode": "11596",
       "name": "Michigan River",
@@ -38479,7 +38585,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1262,
+      "objectid": 1259,
       "atlas_id": 1462,
       "watercode": "11611",
       "name": "Michigan River, North Fork",
@@ -38527,7 +38633,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 847,
+      "objectid": 844,
       "atlas_id": 1401,
       "watercode": "13172",
       "name": "Mill Creek",
@@ -38575,7 +38681,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 763,
+      "objectid": 760,
       "atlas_id": 311,
       "watercode": "55726",
       "name": "Mitchell Lake",
@@ -38768,7 +38874,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 836,
+      "objectid": 833,
       "atlas_id": 570,
       "watercode": "55788",
       "name": "Murray Lake",
@@ -38864,7 +38970,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 719,
+      "objectid": 716,
       "atlas_id": 88,
       "watercode": "55790",
       "name": "Neva Lake, Lower",
@@ -38912,7 +39018,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 715,
+      "objectid": 712,
       "atlas_id": 69,
       "watercode": "55803",
       "name": "Neva Lake, Upper",
@@ -38960,7 +39066,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1079,
+      "objectid": 1076,
       "atlas_id": 1468,
       "watercode": "11659",
       "name": "Newcomb Creek",
@@ -39008,7 +39114,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 667,
+      "objectid": 664,
       "atlas_id": 924,
       "watercode": "80969",
       "name": "North Colony Lakes",
@@ -39056,7 +39162,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1140,
+      "objectid": 1137,
       "atlas_id": 1575,
       "watercode": "21371",
       "name": "North Inlet",
@@ -39105,7 +39211,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1075,
+      "objectid": 1072,
       "atlas_id": 691,
       "watercode": "10836",
       "name": "North Platte River, North Fork",
@@ -39153,7 +39259,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1021,
+      "objectid": 1018,
       "atlas_id": 1715,
       "watercode": "COFA12",
       "name": "Orchard Hills Park Pond",
@@ -39346,7 +39452,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1164,
+      "objectid": 1161,
       "atlas_id": 1554,
       "watercode": "23393",
       "name": "Piney River",
@@ -39443,7 +39549,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 647,
+      "objectid": 644,
       "atlas_id": 1120,
       "watercode": "91760",
       "name": "Poage Lake",
@@ -39492,7 +39598,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 619,
+      "objectid": 616,
       "atlas_id": 1519,
       "watercode": "42197",
       "name": "Pole Creek",
@@ -39638,7 +39744,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1061,
+      "objectid": 1058,
       "atlas_id": 1472,
       "watercode": "11875",
       "name": "Porcupine Creek",
@@ -39686,7 +39792,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1082,
+      "objectid": 1079,
       "atlas_id": 1238,
       "watercode": "69232",
       "name": "Porcupine Lake",
@@ -39717,6 +39823,55 @@
       "duplicate_atlas_records": 0,
       "species": [
         "Trout: Cutthroat"
+      ],
+      "species_error": null,
+      "access_class": "public-indicated",
+      "access_basis": "Public-land/property indicator or official property URL is present",
+      "fishery_type": "Coldwater",
+      "import_score": 74,
+      "score_reasons": [
+        "official species list",
+        "sportfish present",
+        "public access indicated",
+        "survey/report available",
+        "driving link available"
+      ],
+      "recommendation": "import-high-priority",
+      "stocking_status": "no-project-stocking-record-found"
+    },
+    {
+      "objectid": 1284,
+      "atlas_id": 1816,
+      "watercode": "11976",
+      "name": "Poudre River, North Fork #3",
+      "alternate_name": "Poudre River, North Fork",
+      "property_name": "Cherokee SWA - Middle Unit",
+      "county": "Larimer",
+      "location_type": "Stream or River",
+      "lat": 40.90334411610989,
+      "lng": -105.42913098834585,
+      "elevation_ft": 6767,
+      "boating": "None",
+      "access_ease": "Difficult",
+      "fishing_pressure": "Low",
+      "family_friendly": "No",
+      "rustic": "Yes",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "atlas_stocked_description": "No",
+      "survey_url": "http://www.google.com/search?q=\"fishing report\"+Poudre River, North Fork+\"Larimer County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//40.9033,-105.4291",
+      "property_url": "https://cpw.state.co.us/state-wildlife-areas/cherokee-swa-all-units",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "show": 1,
+      "noshow_reason": null,
+      "quality": 1,
+      "spot_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1816",
+      "duplicate_atlas_records": 3,
+      "species": [
+        "Trout: Brown",
+        "Trout: Rainbow"
       ],
       "species_error": null,
       "access_class": "public-indicated",
@@ -39782,7 +39937,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 679,
+      "objectid": 676,
       "atlas_id": 1157,
       "watercode": "81101",
       "name": "Rainbow Lake",
@@ -39878,7 +40033,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 832,
+      "objectid": 829,
       "atlas_id": 536,
       "watercode": "56160",
       "name": "Reynolds Lake",
@@ -40023,7 +40178,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 549,
+      "objectid": 546,
       "atlas_id": 622,
       "watercode": "42527",
       "name": "Rio Grande River",
@@ -40072,7 +40227,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 651,
+      "objectid": 648,
       "atlas_id": 1768,
       "watercode": "42539",
       "name": "Rio Grande River",
@@ -40314,7 +40469,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 813,
+      "objectid": 810,
       "atlas_id": 280,
       "watercode": "56209",
       "name": "Rogers Peak Lake",
@@ -40362,7 +40517,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 981,
+      "objectid": 978,
       "atlas_id": 1376,
       "watercode": "18261",
       "name": "Rolling Creek",
@@ -40507,7 +40662,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 639,
+      "objectid": 636,
       "atlas_id": 1514,
       "watercode": "42793",
       "name": "Saguache Creek",
@@ -40556,7 +40711,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 653,
+      "objectid": 650,
       "atlas_id": 1154,
       "watercode": "93283",
       "name": "San Francisco Lakes, Upper",
@@ -40604,7 +40759,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 624,
+      "objectid": 621,
       "atlas_id": 1525,
       "watercode": "42933",
       "name": "San Juan River, West Fork",
@@ -40653,7 +40808,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1080,
+      "objectid": 1077,
       "atlas_id": 1469,
       "watercode": "12219",
       "name": "Sawmill Creek",
@@ -40895,7 +41050,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 900,
+      "objectid": 897,
       "atlas_id": 125,
       "watercode": "56449",
       "name": "Shelf Lake",
@@ -40943,7 +41098,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 823,
+      "objectid": 820,
       "atlas_id": 386,
       "watercode": "56451",
       "name": "Sherwin Lake",
@@ -41039,7 +41194,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 818,
+      "objectid": 815,
       "atlas_id": 109,
       "watercode": "56487",
       "name": "Silver Dollar Lake",
@@ -41136,7 +41291,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 663,
+      "objectid": 660,
       "atlas_id": 875,
       "watercode": "81199",
       "name": "Silver Lake",
@@ -41232,7 +41387,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 822,
+      "objectid": 819,
       "atlas_id": 385,
       "watercode": "56514",
       "name": "Slater Lake",
@@ -41280,7 +41435,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 995,
+      "objectid": 992,
       "atlas_id": 1489,
       "watercode": "14009",
       "name": "Smelter Gulch",
@@ -41328,7 +41483,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1100,
+      "objectid": 1097,
       "atlas_id": 1001,
       "watercode": "70083",
       "name": "Smith Lake Upper",
@@ -41376,7 +41531,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1145,
+      "objectid": 1142,
       "atlas_id": 1571,
       "watercode": "21989",
       "name": "Snake River, North Fork",
@@ -41424,7 +41579,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1168,
+      "objectid": 1165,
       "atlas_id": 1578,
       "watercode": "22044",
       "name": "Snell Creek",
@@ -41473,7 +41628,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 662,
+      "objectid": 659,
       "atlas_id": 862,
       "watercode": "80301",
       "name": "South Colony Lake, Lower",
@@ -41521,7 +41676,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 895,
+      "objectid": 892,
       "atlas_id": 671,
       "watercode": "33819",
       "name": "South Platte River",
@@ -41619,7 +41774,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 993,
+      "objectid": 990,
       "atlas_id": 1407,
       "watercode": "18831",
       "name": "Spring Creek",
@@ -41668,7 +41823,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1138,
+      "objectid": 1135,
       "atlas_id": 1572,
       "watercode": "23494",
       "name": "St Louis Creek",
@@ -41716,7 +41871,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 829,
+      "objectid": 826,
       "atlas_id": 519,
       "watercode": "56324",
       "name": "St. Marys Lake",
@@ -41765,7 +41920,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 820,
+      "objectid": 817,
       "atlas_id": 239,
       "watercode": "56615",
       "name": "Stewart Lake",
@@ -42005,7 +42160,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1120,
+      "objectid": 1117,
       "atlas_id": 1570,
       "watercode": "22323",
       "name": "Tenmile Creek, North",
@@ -42101,7 +42256,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 985,
+      "objectid": 982,
       "atlas_id": 1381,
       "watercode": "13970",
       "name": "Threemile Creek",
@@ -42247,7 +42402,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1086,
+      "objectid": 1083,
       "atlas_id": 1589,
       "watercode": "22424",
       "name": "Trail Creek",
@@ -42344,7 +42499,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1131,
+      "objectid": 1128,
       "atlas_id": 1568,
       "watercode": "22450",
       "name": "Troublesome Creek, East Fork",
@@ -42393,7 +42548,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1105,
+      "objectid": 1102,
       "atlas_id": 1587,
       "watercode": "23545",
       "name": "Trout Creek",
@@ -42442,7 +42597,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1058,
+      "objectid": 1055,
       "atlas_id": 1300,
       "watercode": "56829",
       "name": "Two Ledge Reservoir",
@@ -42538,7 +42693,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 668,
+      "objectid": 665,
       "atlas_id": 950,
       "watercode": "81391",
       "name": "Venable Lakes",
@@ -42634,7 +42789,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1091,
+      "objectid": 1088,
       "atlas_id": 1591,
       "watercode": "22626",
       "name": "Walton Creek",
@@ -42682,7 +42837,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 620,
+      "objectid": 617,
       "atlas_id": 1520,
       "watercode": "38376",
       "name": "West Bellows Creek",
@@ -42730,7 +42885,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 794,
+      "objectid": 791,
       "atlas_id": 1481,
       "watercode": "12524",
       "name": "West Creek",
@@ -42875,7 +43030,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1095,
+      "objectid": 1092,
       "atlas_id": 1582,
       "watercode": "23292",
       "name": "Williams Fork Yampa, East Fork",
@@ -43116,102 +43271,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1281,
-      "atlas_id": 1810,
-      "watercode": "20165",
-      "name": "Elk River #1",
-      "alternate_name": "Elk River",
-      "property_name": "Christina SWA",
-      "county": "Routt",
-      "location_type": "Stream or River",
-      "lat": 40.58131821521658,
-      "lng": -106.89773527709166,
-      "elevation_ft": 6745,
-      "boating": "None",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "No",
-      "rustic": "Yes",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "atlas_stocked_description": "Sub-catchables",
-      "survey_url": null,
-      "driving_url": null,
-      "property_url": "https://cpw.state.co.us/state-wildlife-areas/christina-swa-fishing-easement-elk-river",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "show": 1,
-      "noshow_reason": null,
-      "quality": 1,
-      "spot_url": null,
-      "duplicate_atlas_records": 0,
-      "species": [
-        "Trout: Mountain Whitefish",
-        "Trout: Rainbow"
-      ],
-      "species_error": null,
-      "access_class": "public-indicated",
-      "access_basis": "Public-land/property indicator or official property URL is present",
-      "fishery_type": "Coldwater",
-      "import_score": 73,
-      "score_reasons": [
-        "official species list",
-        "sportfish present",
-        "public access indicated",
-        "easy access"
-      ],
-      "recommendation": "import-high-priority",
-      "stocking_status": "no-project-stocking-record-found"
-    },
-    {
-      "objectid": 1287,
-      "atlas_id": 1816,
-      "watercode": "11976",
-      "name": "Poudre River, North Fork #3",
-      "alternate_name": "Poudre River, North Fork",
-      "property_name": "Cherokee SWA - Middle Unit",
-      "county": "Larimer",
-      "location_type": "Stream or River",
-      "lat": 40.90334411610989,
-      "lng": -105.42913098834585,
-      "elevation_ft": 6767,
-      "boating": "None",
-      "access_ease": "Difficult",
-      "fishing_pressure": "Low",
-      "family_friendly": "No",
-      "rustic": "Yes",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "atlas_stocked_description": "No",
-      "survey_url": null,
-      "driving_url": null,
-      "property_url": "https://cpw.state.co.us/state-wildlife-areas/cherokee-swa-all-units",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "show": 1,
-      "noshow_reason": null,
-      "quality": 1,
-      "spot_url": null,
-      "duplicate_atlas_records": 3,
-      "species": [
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ],
-      "species_error": null,
-      "access_class": "public-indicated",
-      "access_basis": "Public-land/property indicator or official property URL is present",
-      "fishery_type": "Coldwater",
-      "import_score": 65,
-      "score_reasons": [
-        "official species list",
-        "sportfish present",
-        "public access indicated"
-      ],
-      "recommendation": "import-medium-priority",
-      "stocking_status": "no-project-stocking-record-found"
-    },
-    {
-      "objectid": 1141,
+      "objectid": 1138,
       "atlas_id": 1782,
       "watercode": "20511",
       "name": "[Purposely Left Blank]",
@@ -43264,7 +43324,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 920,
+      "objectid": 917,
       "atlas_id": 1674,
       "watercode": "60328",
       "name": "Flyin' B Pond",
@@ -43317,7 +43377,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1143,
+      "objectid": 1140,
       "atlas_id": 1795,
       "watercode": "30056",
       "name": "Fraser Pond #1",
@@ -43371,7 +43431,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 927,
+      "objectid": 924,
       "atlas_id": 819,
       "watercode": "52886",
       "name": "Haxtun Gun Club Lake",
@@ -43426,7 +43486,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1229,
+      "objectid": 1226,
       "atlas_id": 247,
       "watercode": "57795",
       "name": "Ranch Pond, Lower",
@@ -43478,7 +43538,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1231,
+      "objectid": 1228,
       "atlas_id": 554,
       "watercode": "57794",
       "name": "Ranch Pond, Upper",
@@ -43530,7 +43590,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 925,
+      "objectid": 922,
       "atlas_id": 1349,
       "watercode": "82807",
       "name": "Homestead Ranch Park Pond",
@@ -43580,7 +43640,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1122,
+      "objectid": 1119,
       "atlas_id": 1766,
       "watercode": "22335",
       "name": "Tenmile Creek, West",
@@ -43631,7 +43691,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1040,
+      "objectid": 1037,
       "atlas_id": 1688,
       "watercode": "53544",
       "name": "Tamarack Ranch Pond",
@@ -43685,7 +43745,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 918,
+      "objectid": 915,
       "atlas_id": 573,
       "watercode": "58049",
       "name": "Watson Lake",
@@ -43737,7 +43797,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 1019,
+      "objectid": 1016,
       "atlas_id": 1682,
       "watercode": "54307",
       "name": "Johnny's Pond",
@@ -43835,7 +43895,7 @@
       "stocking_status": "no-project-stocking-record-found"
     },
     {
-      "objectid": 671,
+      "objectid": 668,
       "atlas_id": 982,
       "watercode": "83105",
       "name": "Brush Creek Lake, South Branch",
@@ -48318,7 +48378,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 523,
+      "objectid": 522,
       "atlas_id": 134,
       "watercode": "79649",
       "name": "Ordway Reservoir",
@@ -48349,7 +48409,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 537,
+      "objectid": 534,
       "atlas_id": 348,
       "watercode": "79527",
       "name": "Midwestern Farms Pond",
@@ -48380,7 +48440,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 538,
+      "objectid": 535,
       "atlas_id": 670,
       "watercode": "81226",
       "name": "Turks Pond",
@@ -48411,7 +48471,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 539,
+      "objectid": 536,
       "atlas_id": 805,
       "watercode": "81799",
       "name": "Black Hole at Two Buttes",
@@ -48442,7 +48502,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 541,
+      "objectid": 538,
       "atlas_id": 859,
       "watercode": "81529",
       "name": "Clay Creek Pond",
@@ -48473,7 +48533,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 542,
+      "objectid": 539,
       "atlas_id": 1701,
       "watercode": "79298",
       "name": "[Purposely Left Blank]",
@@ -48504,7 +48564,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 543,
+      "objectid": 540,
       "atlas_id": 1703,
       "watercode": "17614",
       "name": "[Purposely Left Blank]",
@@ -48535,7 +48595,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 544,
+      "objectid": 541,
       "atlas_id": 1770,
       "watercode": "98728",
       "name": "Northgate Ponds",
@@ -48566,7 +48626,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 545,
+      "objectid": 542,
       "atlas_id": 187,
       "watercode": "79983",
       "name": "Willow Creek Ponds",
@@ -48597,7 +48657,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 546,
+      "objectid": 543,
       "atlas_id": 188,
       "watercode": "80013",
       "name": "[Purposely Left Blank]",
@@ -48628,7 +48688,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 551,
+      "objectid": 548,
       "atlas_id": 814,
       "watercode": "92736",
       "name": "Tucker Park Ponds",
@@ -48659,7 +48719,7 @@
       "duplicate_atlas_records": 1
     },
     {
-      "objectid": 554,
+      "objectid": 551,
       "atlas_id": 686,
       "watercode": "90528",
       "name": "Sherman Lake",
@@ -48690,7 +48750,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 556,
+      "objectid": 553,
       "atlas_id": 1771,
       "watercode": "91619",
       "name": "Olathe Kids Pond",
@@ -48721,7 +48781,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 557,
+      "objectid": 554,
       "atlas_id": 144,
       "watercode": "88991",
       "name": "Chipeta Lake",
@@ -48752,7 +48812,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 559,
+      "objectid": 556,
       "atlas_id": 169,
       "watercode": "68432",
       "name": "Meadow Creek Lake",
@@ -48783,7 +48843,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 560,
+      "objectid": 557,
       "atlas_id": 365,
       "watercode": "73003",
       "name": "Kenney Reservoir",
@@ -48814,7 +48874,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 568,
+      "objectid": 565,
       "atlas_id": 289,
       "watercode": "57883",
       "name": "Izaak Walton Longmont Pond",
@@ -48845,7 +48905,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 573,
+      "objectid": 570,
       "atlas_id": 304,
       "watercode": "58535",
       "name": "Mead Ponds",
@@ -48876,7 +48936,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 574,
+      "objectid": 571,
       "atlas_id": 450,
       "watercode": "55562",
       "name": "Lon Hagler Reservoir",
@@ -48907,7 +48967,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 575,
+      "objectid": 572,
       "atlas_id": 794,
       "watercode": "61476",
       "name": "North Lake Park Pond",
@@ -48938,7 +48998,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 576,
+      "objectid": 573,
       "atlas_id": 817,
       "watercode": "59053",
       "name": "Roberts Lake",
@@ -48969,7 +49029,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 578,
+      "objectid": 575,
       "atlas_id": 1774,
       "watercode": "54181",
       "name": "[Purposely Left Blank]",
@@ -49000,7 +49060,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 579,
+      "objectid": 576,
       "atlas_id": 795,
       "watercode": "54801",
       "name": "Lake Estes",
@@ -49031,7 +49091,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 582,
+      "objectid": 579,
       "atlas_id": 469,
       "watercode": "56970",
       "name": "Georgetown Lake",
@@ -49062,7 +49122,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 583,
+      "objectid": 580,
       "atlas_id": 163,
       "watercode": "79601",
       "name": "Monument Lake",
@@ -49093,7 +49153,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 584,
+      "objectid": 581,
       "atlas_id": 133,
       "watercode": "82711",
       "name": "Green Mountain Falls Lake",
@@ -49124,7 +49184,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 585,
+      "objectid": 582,
       "atlas_id": 159,
       "watercode": "82228",
       "name": "South Lake",
@@ -49155,7 +49215,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 586,
+      "objectid": 583,
       "atlas_id": 663,
       "watercode": "70019",
       "name": "Sleepy Cat Ponds",
@@ -49186,7 +49246,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 587,
+      "objectid": 584,
       "atlas_id": 197,
       "watercode": "54107",
       "name": "Brighton Park Lake",
@@ -49217,7 +49277,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 588,
+      "objectid": 585,
       "atlas_id": 26,
       "watercode": "55318",
       "name": "Jim Baker Reservoir",
@@ -49248,7 +49308,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 589,
+      "objectid": 586,
       "atlas_id": 112,
       "watercode": "60260",
       "name": "Thornton Gravel Ponds",
@@ -49279,7 +49339,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 591,
+      "objectid": 588,
       "atlas_id": 285,
       "watercode": "52301",
       "name": "Mann-Nyholt Lake South",
@@ -49310,7 +49370,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 594,
+      "objectid": 591,
       "atlas_id": 320,
       "watercode": "59976",
       "name": "Arvada Reservoir",
@@ -49341,7 +49401,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 596,
+      "objectid": 593,
       "atlas_id": 420,
       "watercode": "60171",
       "name": "Ketner Lake",
@@ -49372,7 +49432,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 602,
+      "objectid": 599,
       "atlas_id": 563,
       "watercode": "53532",
       "name": "Standley Lake",
@@ -49403,7 +49463,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 603,
+      "objectid": 600,
       "atlas_id": 572,
       "watercode": "53621",
       "name": "Webster Lake",
@@ -49434,7 +49494,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 607,
+      "objectid": 604,
       "atlas_id": 178,
       "watercode": "80008",
       "name": "Tarryall Reservoir",
@@ -49465,7 +49525,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 608,
+      "objectid": 605,
       "atlas_id": 116,
       "watercode": "61058",
       "name": "Pine Valley Ranch Lake",
@@ -49496,7 +49556,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 609,
+      "objectid": 606,
       "atlas_id": 755,
       "watercode": "81555",
       "name": "La Junta Kids Pond",
@@ -49527,7 +49587,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 613,
+      "objectid": 610,
       "atlas_id": 743,
       "watercode": "91102",
       "name": "Love Lake",
@@ -49558,7 +49618,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 614,
+      "objectid": 611,
       "atlas_id": 747,
       "watercode": "92382",
       "name": "Spring Creek Reservoir",
@@ -49589,7 +49649,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 616,
+      "objectid": 613,
       "atlas_id": 1247,
       "watercode": "89107",
       "name": "Continental Reservoir",
@@ -49620,7 +49680,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 621,
+      "objectid": 618,
       "atlas_id": 812,
       "watercode": "91164",
       "name": "West Fork Lakes",
@@ -49651,7 +49711,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 622,
+      "objectid": 619,
       "atlas_id": 1444,
       "watercode": "42919",
       "name": "San Juan River",
@@ -49682,7 +49742,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 623,
+      "objectid": 620,
       "atlas_id": 1445,
       "watercode": "42921",
       "name": "San Juan River, East Fork",
@@ -49713,7 +49773,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 627,
+      "objectid": 624,
       "atlas_id": 33,
       "watercode": "92320",
       "name": "Smith Reservoir",
@@ -49744,7 +49804,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 630,
+      "objectid": 627,
       "atlas_id": 749,
       "watercode": "92407",
       "name": "Stabilization Reservoir",
@@ -49775,7 +49835,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 634,
+      "objectid": 631,
       "atlas_id": 124,
       "watercode": "91758",
       "name": "Platoro Reservoir",
@@ -49806,7 +49866,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 635,
+      "objectid": 632,
       "atlas_id": 744,
       "watercode": "91304",
       "name": "Mix Lake",
@@ -49837,7 +49897,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 640,
+      "objectid": 637,
       "atlas_id": 1729,
       "watercode": "36034",
       "name": "Mosquito Lake",
@@ -49868,7 +49928,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 641,
+      "objectid": 638,
       "atlas_id": 396,
       "watercode": "88511",
       "name": "Beaver Creek Reservoir",
@@ -49899,7 +49959,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 642,
+      "objectid": 639,
       "atlas_id": 545,
       "watercode": "88597",
       "name": "Big Meadows Reservoir",
@@ -49930,7 +49990,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 645,
+      "objectid": 642,
       "atlas_id": 746,
       "watercode": "91277",
       "name": "Million Reservoir",
@@ -49961,7 +50021,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 646,
+      "objectid": 643,
       "atlas_id": 748,
       "watercode": "91669",
       "name": "Pass Creek Pond",
@@ -49992,7 +50052,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 652,
+      "objectid": 649,
       "atlas_id": 741,
       "watercode": "83058",
       "name": "Wetherill Pond",
@@ -50023,7 +50083,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 659,
+      "objectid": 656,
       "atlas_id": 541,
       "watercode": "81769",
       "name": "De Weese Reservoir",
@@ -50054,7 +50114,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 692,
+      "objectid": 689,
       "atlas_id": 525,
       "watercode": "88826",
       "name": "Buckhorn Lakes",
@@ -50085,7 +50145,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 701,
+      "objectid": 698,
       "atlas_id": 212,
       "watercode": "91671",
       "name": "Pastorius Reservoir",
@@ -50116,7 +50176,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 705,
+      "objectid": 702,
       "atlas_id": 1628,
       "watercode": "20127",
       "name": "Elk Creek, East",
@@ -50147,7 +50207,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 707,
+      "objectid": 704,
       "atlas_id": 380,
       "watercode": "79409",
       "name": "Brush Hollow Reservoir",
@@ -50178,7 +50238,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 710,
+      "objectid": 707,
       "atlas_id": 832,
       "watercode": "73005",
       "name": "Rangely Fishing Pond",
@@ -50209,7 +50269,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 729,
+      "objectid": 726,
       "atlas_id": 319,
       "watercode": "52695",
       "name": "Thomas Reservoir",
@@ -50240,7 +50300,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 764,
+      "objectid": 761,
       "atlas_id": 433,
       "watercode": "53227",
       "name": "McCall Lake",
@@ -50271,7 +50331,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 771,
+      "objectid": 768,
       "atlas_id": 77,
       "watercode": "54255",
       "name": "Carter Lake",
@@ -50302,7 +50362,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 786,
+      "objectid": 783,
       "atlas_id": 1343,
       "watercode": "53174",
       "name": "[Purposely Left Blank]",
@@ -50333,7 +50393,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 787,
+      "objectid": 784,
       "atlas_id": 1657,
       "watercode": "55605",
       "name": "Loveland Service Center Pond",
@@ -50364,7 +50424,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 837,
+      "objectid": 834,
       "atlas_id": 579,
       "watercode": "54712",
       "name": "Echo Lake",
@@ -50395,7 +50455,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 839,
+      "objectid": 836,
       "atlas_id": 593,
       "watercode": "56831",
       "name": "Urad Mine Lake",
@@ -50426,7 +50486,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 852,
+      "objectid": 849,
       "atlas_id": 153,
       "watercode": "79651",
       "name": "Palmer Lake",
@@ -50457,7 +50517,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 853,
+      "objectid": 850,
       "atlas_id": 219,
       "watercode": "79942",
       "name": "Rampart Reservoir",
@@ -50488,7 +50548,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 854,
+      "objectid": 851,
       "atlas_id": 802,
       "watercode": "81180",
       "name": "Schryver Park Pond",
@@ -50519,7 +50579,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 862,
+      "objectid": 859,
       "atlas_id": 1785,
       "watercode": "53106",
       "name": "Dragon Fly Pond",
@@ -50550,7 +50610,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 871,
+      "objectid": 868,
       "atlas_id": 122,
       "watercode": "60261",
       "name": "[Purposely Left Blank]",
@@ -50581,7 +50641,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 898,
+      "objectid": 895,
       "atlas_id": 1424,
       "watercode": "30849",
       "name": "South Platte River",
@@ -50612,7 +50672,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 901,
+      "objectid": 898,
       "atlas_id": 127,
       "watercode": "79815",
       "name": "Jefferson Lake",
@@ -50643,7 +50703,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 913,
+      "objectid": 910,
       "atlas_id": 517,
       "watercode": "53493",
       "name": "Sloans Lake",
@@ -50674,7 +50734,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 914,
+      "objectid": 911,
       "atlas_id": 586,
       "watercode": "56552",
       "name": "Washington Park Lakes",
@@ -50705,7 +50765,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 917,
+      "objectid": 914,
       "atlas_id": 206,
       "watercode": "57100",
       "name": "Centennial Park Lake",
@@ -50736,7 +50796,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 919,
+      "objectid": 916,
       "atlas_id": 1359,
       "watercode": "11805",
       "name": "South Platte River",
@@ -50767,7 +50827,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 923,
+      "objectid": 920,
       "atlas_id": 637,
       "watercode": "79663",
       "name": "Pike View Reservoir",
@@ -50798,7 +50858,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 924,
+      "objectid": 921,
       "atlas_id": 638,
       "watercode": "79675",
       "name": "Prospect Lake",
@@ -50829,7 +50889,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 930,
+      "objectid": 927,
       "atlas_id": 265,
       "watercode": "79980",
       "name": "Lake Isabel",
@@ -50860,7 +50920,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 931,
+      "objectid": 928,
       "atlas_id": 543,
       "watercode": "81517",
       "name": "Trinidad Central Park Lake",
@@ -50891,7 +50951,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 932,
+      "objectid": 929,
       "atlas_id": 791,
       "watercode": "67151",
       "name": "Hahns Peak Lake",
@@ -50922,7 +50982,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 933,
+      "objectid": 930,
       "atlas_id": 18,
       "watercode": "65723",
       "name": "Casey's Pond",
@@ -50953,7 +51013,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 934,
+      "objectid": 931,
       "atlas_id": 201,
       "watercode": "71926",
       "name": "Fetcher City Pond",
@@ -50984,7 +51044,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 935,
+      "objectid": 932,
       "atlas_id": 49,
       "watercode": "65082",
       "name": "Bear Lake",
@@ -51015,7 +51075,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 936,
+      "objectid": 933,
       "atlas_id": 46,
       "watercode": "70989",
       "name": "Wolford Mountain Reservoir",
@@ -51046,7 +51106,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 937,
+      "objectid": 934,
       "atlas_id": 363,
       "watercode": "70441",
       "name": "Breeze Pond",
@@ -51077,7 +51137,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 939,
+      "objectid": 936,
       "atlas_id": 40,
       "watercode": "69799",
       "name": "Shadow Mountain Reservoir",
@@ -51108,7 +51168,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 940,
+      "objectid": 937,
       "atlas_id": 83,
       "watercode": "66971",
       "name": "Grand Lake",
@@ -51139,7 +51199,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 941,
+      "objectid": 938,
       "atlas_id": 845,
       "watercode": "73914",
       "name": "Fraser Lions Club Pond",
@@ -51170,7 +51230,7 @@
       "duplicate_atlas_records": 1
     },
     {
-      "objectid": 945,
+      "objectid": 942,
       "atlas_id": 39,
       "watercode": "66274",
       "name": "Dillon Reservoir",
@@ -51201,7 +51261,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 946,
+      "objectid": 943,
       "atlas_id": 74,
       "watercode": "72657",
       "name": "Nottingham Lake",
@@ -51232,7 +51292,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 947,
+      "objectid": 944,
       "atlas_id": 767,
       "watercode": "65676",
       "name": "Camp Hale Pond",
@@ -51263,7 +51323,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 948,
+      "objectid": 945,
       "atlas_id": 145,
       "watercode": "66023",
       "name": "Craig Justice Center Pond",
@@ -51294,7 +51354,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 949,
+      "objectid": 946,
       "atlas_id": 810,
       "watercode": "66022",
       "name": "Craig City Ponds",
@@ -51325,7 +51385,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 950,
+      "objectid": 947,
       "atlas_id": 851,
       "watercode": "79714",
       "name": "Runyon Lake",
@@ -51356,7 +51416,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 951,
+      "objectid": 948,
       "atlas_id": 852,
       "watercode": "79447",
       "name": "Fountain Lake",
@@ -51387,7 +51447,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 952,
+      "objectid": 949,
       "atlas_id": 261,
       "watercode": "82595",
       "name": "Pueblo West Pond",
@@ -51418,7 +51478,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 953,
+      "objectid": 950,
       "atlas_id": 315,
       "watercode": "52580",
       "name": "Cherry Creek Reservoir",
@@ -51449,7 +51509,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 954,
+      "objectid": 951,
       "atlas_id": 360,
       "watercode": "79774",
       "name": "Hayden Meadows Reservoir",
@@ -51480,7 +51540,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 955,
+      "objectid": 952,
       "atlas_id": 760,
       "watercode": "81757",
       "name": "Crystal Lake",
@@ -51511,7 +51571,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 956,
+      "objectid": 953,
       "atlas_id": 346,
       "watercode": "72215",
       "name": "Corn Lake",
@@ -51542,7 +51602,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 959,
+      "objectid": 956,
       "atlas_id": 540,
       "watercode": "81238",
       "name": "Anticline Pond",
@@ -51573,7 +51633,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 960,
+      "objectid": 957,
       "atlas_id": 1333,
       "watercode": "28971",
       "name": "Arkansas River",
@@ -51604,7 +51664,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 962,
+      "objectid": 959,
       "atlas_id": 76,
       "watercode": "52491",
       "name": "Boyd Lake",
@@ -51635,7 +51695,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 963,
+      "objectid": 960,
       "atlas_id": 364,
       "watercode": "54306",
       "name": "Chatfield Reservoir",
@@ -51666,7 +51726,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 965,
+      "objectid": 962,
       "atlas_id": 390,
       "watercode": "89284",
       "name": "Crawford Reservoir",
@@ -51697,7 +51757,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 966,
+      "objectid": 963,
       "atlas_id": 248,
       "watercode": "57819",
       "name": "Kriley Pond",
@@ -51728,7 +51788,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 967,
+      "objectid": 964,
       "atlas_id": 434,
       "watercode": "68153",
       "name": "Mack Mesa Lake",
@@ -51759,7 +51819,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 968,
+      "objectid": 965,
       "atlas_id": 440,
       "watercode": "79841",
       "name": "Martin Lake",
@@ -51790,7 +51850,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 969,
+      "objectid": 966,
       "atlas_id": 1724,
       "watercode": "50822",
       "name": "Dragonfly Pond",
@@ -51821,7 +51881,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 970,
+      "objectid": 967,
       "atlas_id": 62,
       "watercode": "96695",
       "name": "Ridgway Reservoir",
@@ -51852,7 +51912,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 971,
+      "objectid": 968,
       "atlas_id": 204,
       "watercode": "94025",
       "name": "Pericles Pond",
@@ -51883,7 +51943,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 972,
+      "objectid": 969,
       "atlas_id": 1323,
       "watercode": "48181",
       "name": "Uncompahgre River",
@@ -51914,7 +51974,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 973,
+      "objectid": 970,
       "atlas_id": 223,
       "watercode": "52388",
       "name": "[Purposely Left Blank]",
@@ -51945,7 +52005,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 974,
+      "objectid": 971,
       "atlas_id": 224,
       "watercode": "58099",
       "name": "[Purposely Left Blank]",
@@ -51976,7 +52036,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 975,
+      "objectid": 972,
       "atlas_id": 231,
       "watercode": "58087",
       "name": "[Purposely Left Blank]",
@@ -52007,7 +52067,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 976,
+      "objectid": 973,
       "atlas_id": 456,
       "watercode": "56071",
       "name": "Ranger Lakes",
@@ -52038,7 +52098,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 988,
+      "objectid": 985,
       "atlas_id": 1384,
       "watercode": "14693",
       "name": "South Platte River",
@@ -52069,7 +52129,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 999,
+      "objectid": 996,
       "atlas_id": 227,
       "watercode": "52427",
       "name": "Berkeley Lake",
@@ -52100,7 +52160,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1000,
+      "objectid": 997,
       "atlas_id": 429,
       "watercode": "53405",
       "name": "Rocky Mountain Lake",
@@ -52131,7 +52191,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1011,
+      "objectid": 1008,
       "atlas_id": 162,
       "watercode": "60210",
       "name": "South Platte Park Ponds",
@@ -52162,7 +52222,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1030,
+      "objectid": 1027,
       "atlas_id": 660,
       "watercode": "90756",
       "name": "Joe Moore Reservoir",
@@ -52193,7 +52253,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1031,
+      "objectid": 1028,
       "atlas_id": 1338,
       "watercode": "39796",
       "name": "Dolores River",
@@ -52224,7 +52284,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1033,
+      "objectid": 1030,
       "atlas_id": 1781,
       "watercode": "89820",
       "name": "Twin Spruce Ponds",
@@ -52255,7 +52315,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1042,
+      "objectid": 1039,
       "atlas_id": 542,
       "watercode": "82026",
       "name": "Beckwith Reservoir",
@@ -52286,7 +52346,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1044,
+      "objectid": 1041,
       "atlas_id": 259,
       "watercode": "82406",
       "name": "Wahatoya Reservoir",
@@ -52317,7 +52377,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1046,
+      "objectid": 1043,
       "atlas_id": 391,
       "watercode": "82393",
       "name": "Daigre Reservoir",
@@ -52348,7 +52408,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1048,
+      "objectid": 1045,
       "atlas_id": 739,
       "watercode": "80212",
       "name": "Blue Lake",
@@ -52379,7 +52439,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1049,
+      "objectid": 1046,
       "atlas_id": 740,
       "watercode": "80123",
       "name": "Bear Lake",
@@ -52410,7 +52470,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1051,
+      "objectid": 1048,
       "atlas_id": 855,
       "watercode": "82507",
       "name": "Lake Dorothey",
@@ -52441,7 +52501,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1052,
+      "objectid": 1049,
       "atlas_id": 164,
       "watercode": "79889",
       "name": "North Lake",
@@ -52472,7 +52532,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1053,
+      "objectid": 1050,
       "atlas_id": 415,
       "watercode": "79865",
       "name": "Monument Reservoir",
@@ -52503,7 +52563,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1054,
+      "objectid": 1051,
       "atlas_id": 512,
       "watercode": "56425",
       "name": "Seymour Reservoir",
@@ -52534,7 +52594,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1057,
+      "objectid": 1054,
       "atlas_id": 782,
       "watercode": "56502",
       "name": "Slack And Weiss Reservoir",
@@ -52565,7 +52625,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1063,
+      "objectid": 1060,
       "atlas_id": 147,
       "watercode": "54508",
       "name": "Cowdrey Lake",
@@ -52596,7 +52656,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1064,
+      "objectid": 1061,
       "atlas_id": 150,
       "watercode": "56653",
       "name": "Teal Lake",
@@ -52627,7 +52687,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1068,
+      "objectid": 1065,
       "atlas_id": 397,
       "watercode": "53974",
       "name": "Big Creek Lakes",
@@ -52658,7 +52718,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1070,
+      "objectid": 1067,
       "atlas_id": 513,
       "watercode": "56691",
       "name": "Tiago Lake",
@@ -52689,7 +52749,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1076,
+      "objectid": 1073,
       "atlas_id": 781,
       "watercode": "55776",
       "name": "Muddy Pass Lake",
@@ -52720,7 +52780,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1077,
+      "objectid": 1074,
       "atlas_id": 823,
       "watercode": "54506",
       "name": "Walden Lions Park Pond",
@@ -52751,7 +52811,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1093,
+      "objectid": 1090,
       "atlas_id": 821,
       "watercode": "72063",
       "name": "Nofstger Reservoir",
@@ -52782,7 +52842,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1094,
+      "objectid": 1091,
       "atlas_id": 858,
       "watercode": "67251",
       "name": "Dry Creek Pond",
@@ -52813,7 +52873,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1096,
+      "objectid": 1093,
       "atlas_id": 653,
       "watercode": "22929",
       "name": "Yampa River",
@@ -52844,7 +52904,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1097,
+      "objectid": 1094,
       "atlas_id": 784,
       "watercode": "73849",
       "name": "Ligon Reservoir",
@@ -52875,7 +52935,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1098,
+      "objectid": 1095,
       "atlas_id": 788,
       "watercode": "73469",
       "name": "Cold Springs Pond",
@@ -52906,7 +52966,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1099,
+      "objectid": 1096,
       "atlas_id": 830,
       "watercode": "69840",
       "name": "Sheriff Reservoir",
@@ -52937,7 +52997,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1108,
+      "objectid": 1105,
       "atlas_id": 1727,
       "watercode": "66793",
       "name": "Gardner Park Reservoir",
@@ -52968,7 +53028,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1110,
+      "objectid": 1107,
       "atlas_id": 786,
       "watercode": "66349",
       "name": "Dumont Lake",
@@ -52999,7 +53059,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1144,
+      "objectid": 1141,
       "atlas_id": 664,
       "watercode": "19249",
       "name": "Blue River",
@@ -53030,7 +53090,7 @@
       "duplicate_atlas_records": 1
     },
     {
-      "objectid": 1114,
+      "objectid": 1111,
       "atlas_id": 766,
       "watercode": "73609",
       "name": "Trent Pond",
@@ -53061,7 +53121,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1115,
+      "objectid": 1112,
       "atlas_id": 768,
       "watercode": "72227",
       "name": "Sawmill Reservoir",
@@ -53092,7 +53152,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1117,
+      "objectid": 1114,
       "atlas_id": 799,
       "watercode": "72138",
       "name": "Curtain Ponds",
@@ -53123,7 +53183,7 @@
       "duplicate_atlas_records": 1
     },
     {
-      "objectid": 1124,
+      "objectid": 1121,
       "atlas_id": 1784,
       "watercode": "43592",
       "name": "Eagle Ranch Children's Pond",
@@ -53154,7 +53214,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1126,
+      "objectid": 1123,
       "atlas_id": 668,
       "watercode": "72722",
       "name": "Gypsum Ponds",
@@ -53185,7 +53245,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1128,
+      "objectid": 1125,
       "atlas_id": 436,
       "watercode": "70881",
       "name": "Williams Fork Reservoir",
@@ -53216,7 +53276,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1132,
+      "objectid": 1129,
       "atlas_id": 37,
       "watercode": "66969",
       "name": "Lake Granby",
@@ -53247,7 +53307,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1133,
+      "objectid": 1130,
       "atlas_id": 783,
       "watercode": "72582",
       "name": "Granby City Pond",
@@ -53278,7 +53338,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1134,
+      "objectid": 1131,
       "atlas_id": 797,
       "watercode": "71326",
       "name": "Meadow Creek Reservoir",
@@ -53309,7 +53369,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1135,
+      "objectid": 1132,
       "atlas_id": 798,
       "watercode": "68646",
       "name": "Monarch Lake",
@@ -53340,7 +53400,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1136,
+      "objectid": 1133,
       "atlas_id": 853,
       "watercode": "70956",
       "name": "Willow Creek Reservoir",
@@ -53371,7 +53431,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1142,
+      "objectid": 1139,
       "atlas_id": 1783,
       "watercode": "28297",
       "name": "Granby Town Pond #1",
@@ -53402,7 +53462,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1146,
+      "objectid": 1143,
       "atlas_id": 1788,
       "watercode": "19251",
       "name": "Blue River",
@@ -53433,7 +53493,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1147,
+      "objectid": 1144,
       "atlas_id": 532,
       "watercode": "70425",
       "name": "Sweetwater Lake",
@@ -53464,7 +53524,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1149,
+      "objectid": 1146,
       "atlas_id": 975,
       "watercode": "66200",
       "name": "Deep Lake",
@@ -53495,7 +53555,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1158,
+      "objectid": 1155,
       "atlas_id": 765,
       "watercode": "70982",
       "name": "Wilmor Pond",
@@ -53526,7 +53586,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1159,
+      "objectid": 1156,
       "atlas_id": 999,
       "watercode": "70431",
       "name": "Berry Creek Pond",
@@ -53557,7 +53617,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1167,
+      "objectid": 1164,
       "atlas_id": 1730,
       "watercode": "69193",
       "name": "Piney Lake",
@@ -53588,7 +53648,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1173,
+      "objectid": 1170,
       "atlas_id": 790,
       "watercode": "64991",
       "name": "Axial Basin Lake",
@@ -53619,7 +53679,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1174,
+      "objectid": 1171,
       "atlas_id": 1786,
       "watercode": "82038",
       "name": "Lake Minnequa",
@@ -53650,7 +53710,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1175,
+      "objectid": 1172,
       "atlas_id": 544,
       "watercode": "81606",
       "name": "Pueblo City Park Lake",
@@ -53681,7 +53741,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1177,
+      "objectid": 1174,
       "atlas_id": 803,
       "watercode": "81505",
       "name": "Canon City Kids Pond",
@@ -53712,7 +53772,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1208,
+      "objectid": 1205,
       "atlas_id": 459,
       "watercode": "53796",
       "name": "Barr Lake",
@@ -53743,7 +53803,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1209,
+      "objectid": 1206,
       "atlas_id": 1611,
       "watercode": "65887",
       "name": "Fruita Red Rocks Lake",
@@ -53774,7 +53834,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1210,
+      "objectid": 1207,
       "atlas_id": 1613,
       "watercode": "66082",
       "name": "Old Orchard",
@@ -53805,7 +53865,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1211,
+      "objectid": 1208,
       "atlas_id": 1614,
       "watercode": "66080",
       "name": "Roans Pothole",
@@ -53836,7 +53896,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1214,
+      "objectid": 1211,
       "atlas_id": 51,
       "watercode": "81783",
       "name": "Pueblo Reservoir",
@@ -53867,7 +53927,7 @@
       "duplicate_atlas_records": 1
     },
     {
-      "objectid": 1220,
+      "objectid": 1217,
       "atlas_id": 6,
       "watercode": "60284",
       "name": "[Purposely Left Blank]",
@@ -53898,7 +53958,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1225,
+      "objectid": 1222,
       "atlas_id": 399,
       "watercode": "81771",
       "name": "Elevenmile Reservoir",
@@ -53929,7 +53989,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1230,
+      "objectid": 1227,
       "atlas_id": 249,
       "watercode": "57807",
       "name": "Slough Pond",
@@ -53960,7 +54020,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1233,
+      "objectid": 1230,
       "atlas_id": 342,
       "watercode": "67226",
       "name": "Harvey Gap Reservoir",
@@ -53991,7 +54051,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1234,
+      "objectid": 1231,
       "atlas_id": 406,
       "watercode": "67315",
       "name": "Highline Lake",
@@ -54022,7 +54082,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1236,
+      "objectid": 1233,
       "atlas_id": 439,
       "watercode": "79803",
       "name": "Horseshoe Reservoir",
@@ -54053,7 +54113,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1237,
+      "objectid": 1234,
       "atlas_id": 1355,
       "watercode": "81656",
       "name": "Walsenburg Kids Pond",
@@ -54084,7 +54144,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1238,
+      "objectid": 1235,
       "atlas_id": 806,
       "watercode": "90720",
       "name": "Jackson Gulch Reservoir",
@@ -54115,7 +54175,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1242,
+      "objectid": 1239,
       "atlas_id": 203,
       "watercode": "96548",
       "name": "Shavano Pond",
@@ -54146,7 +54206,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1243,
+      "objectid": 1240,
       "atlas_id": 423,
       "watercode": "69422",
       "name": "Rifle Gap Reservoir",
@@ -54177,7 +54237,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1244,
+      "objectid": 1241,
       "atlas_id": 1731,
       "watercode": "21674",
       "name": "Rifle Creek",
@@ -54208,7 +54268,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1246,
+      "objectid": 1243,
       "atlas_id": 419,
       "watercode": "82583",
       "name": "Spinney Mountain Reservoir",
@@ -54239,7 +54299,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1252,
+      "objectid": 1249,
       "atlas_id": 236,
       "watercode": "58091",
       "name": "[Purposely Left Blank]",
@@ -54270,7 +54330,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1254,
+      "objectid": 1251,
       "atlas_id": 362,
       "watercode": "73902",
       "name": "Stagecoach Reservoir",
@@ -54301,7 +54361,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1256,
+      "objectid": 1253,
       "atlas_id": 56,
       "watercode": "55815",
       "name": "North Michigan Reservoir",
@@ -54332,7 +54392,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1257,
+      "objectid": 1254,
       "atlas_id": 142,
       "watercode": "56069",
       "name": "[Purposely Left Blank]",
@@ -54363,7 +54423,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1266,
+      "objectid": 1263,
       "atlas_id": 111,
       "watercode": "81911",
       "name": "Trinidad Reservoir",
@@ -54394,7 +54454,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1270,
+      "objectid": 1267,
       "atlas_id": 1799,
       "watercode": "93039",
       "name": "Davis Pond #1",
@@ -54425,7 +54485,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1271,
+      "objectid": 1268,
       "atlas_id": 1800,
       "watercode": "52961",
       "name": "[Purposely Left Blank]",
@@ -54456,7 +54516,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1275,
+      "objectid": 1272,
       "atlas_id": 1804,
       "watercode": "81083",
       "name": "Wolf Lake",
@@ -54487,7 +54547,7 @@
       "duplicate_atlas_records": 0
     },
     {
-      "objectid": 1276,
+      "objectid": 1273,
       "atlas_id": 1805,
       "watercode": "48551",
       "name": "Duckwood Pond",
