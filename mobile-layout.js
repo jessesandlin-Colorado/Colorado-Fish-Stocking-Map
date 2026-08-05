@@ -276,7 +276,10 @@
   function configureTouchMap() {
     if (typeof map === 'undefined' || !map) return;
     if (mobileQuery.matches) {
-      map.dragging?.enable();
+      // iOS standalone mode can lose Leaflet's single-touch drag after native
+      // page-pinch suppression. A dedicated controller below owns one-finger
+      // panning; Leaflet continues to own two-finger touch zoom.
+      map.dragging?.disable();
       map.touchZoom?.enable();
       map.doubleClickZoom?.enable();
     } else {
@@ -343,6 +346,45 @@
     if (mapOwnsGesture(event)) event.preventDefault();
   }
 
+  let panTouch = null;
+  let panMoved = false;
+
+  function beginSingleFingerPan(event) {
+    if (!mapOwnsGesture(event) || event.touches.length !== 1) return;
+    if (event.target.closest('.leaflet-control, .leaflet-popup, .mobile-map-legend')) return;
+    const touch = event.touches[0];
+    panTouch = { id: touch.identifier, x: touch.clientX, y: touch.clientY };
+    panMoved = false;
+  }
+
+  function moveSingleFingerPan(event) {
+    if (!panTouch || event.touches.length !== 1 || typeof map === 'undefined' || !map) {
+      if (event.touches.length !== 1) panTouch = null;
+      return;
+    }
+    const touch = Array.from(event.touches).find(item => item.identifier === panTouch.id);
+    if (!touch) return;
+    const dx = touch.clientX - panTouch.x;
+    const dy = touch.clientY - panTouch.y;
+    if (!panMoved && Math.hypot(dx, dy) < 3) return;
+    event.preventDefault();
+    panMoved = true;
+    panTouch.x = touch.clientX;
+    panTouch.y = touch.clientY;
+    map.panBy([-dx, -dy], { animate: false });
+  }
+
+  function endSingleFingerPan() {
+    if (panMoved) {
+      mapElement.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopPropagation();
+      }, { capture: true, once: true });
+    }
+    panTouch = null;
+    panMoved = false;
+  }
+
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && detailsDialog.open) detailsDialog.close();
   });
@@ -350,6 +392,10 @@
   ['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
     document.addEventListener(type, keepIosGestureInsideMap, { passive: false, capture: true });
   });
+  mapElement.addEventListener('touchstart', beginSingleFingerPan, { passive: true });
+  mapElement.addEventListener('touchmove', moveSingleFingerPan, { passive: false });
+  mapElement.addEventListener('touchend', endSingleFingerPan, { passive: true });
+  mapElement.addEventListener('touchcancel', endSingleFingerPan, { passive: true });
 
   new MutationObserver(discoverMapLegends).observe(mapShell, { childList: true, subtree: true });
   results.addEventListener('click', event => {
