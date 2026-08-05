@@ -392,10 +392,10 @@
   ['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
     document.addEventListener(type, keepIosGestureInsideMap, { passive: false, capture: true });
   });
-  mapElement.addEventListener('touchstart', beginSingleFingerPan, { passive: true });
-  mapElement.addEventListener('touchmove', moveSingleFingerPan, { passive: false });
-  mapElement.addEventListener('touchend', endSingleFingerPan, { passive: true });
-  mapElement.addEventListener('touchcancel', endSingleFingerPan, { passive: true });
+  document.addEventListener('touchstart', beginSingleFingerPan, { passive: true, capture: true });
+  document.addEventListener('touchmove', moveSingleFingerPan, { passive: false, capture: true });
+  document.addEventListener('touchend', endSingleFingerPan, { passive: true, capture: true });
+  document.addEventListener('touchcancel', endSingleFingerPan, { passive: true, capture: true });
 
   new MutationObserver(discoverMapLegends).observe(mapShell, { childList: true, subtree: true });
   results.addEventListener('click', event => {
