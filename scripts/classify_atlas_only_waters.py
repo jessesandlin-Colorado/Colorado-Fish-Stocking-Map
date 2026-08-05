@@ -164,6 +164,12 @@ def classify(record: dict[str, Any], duplicate_kind: str) -> tuple[str, str]:
 def main() -> None:
     comparison = load(DATA / "atlas-inventory-comparison.json")
     project = load(DATA / "waters.json")
+    overrides_path = ROOT / "config" / "atlas_import_overrides.json"
+    overrides = load(overrides_path) if overrides_path.exists() else {}
+    forced_imports = {
+        str(key): str(reason)
+        for key, reason in (overrides.get("force_import_watercodes") or {}).items()
+    }
     records = comparison.get("atlas_only_waters", [])
     project_waters = project.get("waters", [])
     exact_names, existing = existing_index(project_waters)
@@ -175,6 +181,10 @@ def main() -> None:
         record["possible_existing_water"] = duplicate_name
         record["possible_existing_distance_miles"] = round(duplicate_distance, 3) if duplicate_distance is not None else None
         classification, reason = classify(record, duplicate_kind)
+        watercode = str(record.get("watercode") or "")
+        if watercode in forced_imports:
+            classification = "import-public-confirmed"
+            reason = f"Reviewed import override: {forced_imports[watercode]}"
         record["review_classification"] = classification
         record["review_reason"] = reason
 
