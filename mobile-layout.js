@@ -10,6 +10,8 @@
   const locationPlanner = document.querySelector('.location-planner');
   const searchInput = document.getElementById('search');
   const results = document.getElementById('results');
+  const viewportMeta = document.querySelector('meta[name="viewport"]');
+  const defaultViewport = viewportMeta?.content || 'width=device-width,initial-scale=1';
 
   if (!layout || !sidebar || !mapShell || !mapElement || !legend || !detailsDialog ||
       !detailContent || !locationPlanner || !searchInput || !results) return;
@@ -114,11 +116,19 @@
     }, delay);
   }
 
+  function lockPageScaleForMap(locked) {
+    if (!viewportMeta) return;
+    viewportMeta.content = locked
+      ? 'width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover'
+      : defaultViewport;
+  }
+
   function setMobileView(view, { push = true, focus = true } = {}) {
     if (!mobileQuery.matches || !['home', 'search', 'map', 'navigate', 'about'].includes(view)) return;
     const sameView = view === currentMobileView && document.body.dataset.mobileView === view;
     currentMobileView = view;
     document.body.dataset.mobileView = view;
+    lockPageScaleForMap(view === 'map');
 
     navButtons.forEach(button => {
       const active = button.dataset.mobileViewTarget === view;
@@ -282,6 +292,7 @@
       }
       setMobileView(currentMobileView, { push: false, focus: false });
     } else {
+      lockPageScaleForMap(false);
       delete document.body.dataset.mobileView;
       if (detailsDialog.open) detailsDialog.close();
       legendDisclosure.open = true;
@@ -320,20 +331,25 @@
       .forEach(makeMapLegendCollapsible);
   }
 
+  function mapOwnsGesture(event) {
+    return mobileQuery.matches && document.body.dataset.mobileView === 'map' && mapShell.contains(event.target);
+  }
+
   function keepPinchInsideMap(event) {
-    if (mobileQuery.matches && event.touches.length >= 2) event.preventDefault();
+    if (mapOwnsGesture(event) && event.touches?.length >= 2) event.preventDefault();
+  }
+
+  function keepIosGestureInsideMap(event) {
+    if (mapOwnsGesture(event)) event.preventDefault();
   }
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && detailsDialog.open) detailsDialog.close();
   });
-  mapElement.addEventListener('touchmove', keepPinchInsideMap, { passive: false });
-  mapElement.addEventListener('gesturestart', event => {
-    if (mobileQuery.matches) event.preventDefault();
-  }, { passive: false });
-  mapElement.addEventListener('gesturechange', event => {
-    if (mobileQuery.matches) event.preventDefault();
-  }, { passive: false });
+  document.addEventListener('touchmove', keepPinchInsideMap, { passive: false, capture: true });
+  ['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
+    document.addEventListener(type, keepIosGestureInsideMap, { passive: false, capture: true });
+  });
 
   new MutationObserver(discoverMapLegends).observe(mapShell, { childList: true, subtree: true });
   results.addEventListener('click', event => {
