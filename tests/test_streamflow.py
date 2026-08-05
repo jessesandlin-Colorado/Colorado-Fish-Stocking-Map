@@ -39,8 +39,25 @@ def test_frontend_bundle_and_loader_are_present():
     assert "flow-available-badge" in catalog
 def test_full_map_legend_explains_marker_colors_and_gauge():
     legend=open("map-symbol-legend.js",encoding="utf-8").read()
-    for label in ("Green · 0–14 days","Yellow · 15–30 days","Red · 31–60 days","Gray · 61+ days","Blue pointer · lake or pond","Green pointer · river or stream","Gauge · stream-flow data"):
+    for label in ("Green · 0–14 days","Yellow · 15–30 days","Red · 31–60 days","Gray · 61+ days","Blue pointer · lake or pond","Green pointer · river or stream","Gold ring · Gold Medal Water","Gauge · stream-flow data"):
         assert label in legend
+
+def test_gold_medal_sections_have_map_treatment_and_reports():
+    medal=json.load(open("config/gold_medal_waters.json",encoding="utf-8"))["waters"]
+    reports=json.load(open("config/fishing_reports.json",encoding="utf-8"))["waters"]
+    waters={item["key"]:item for item in json.load(open("data/waters.json",encoding="utf-8"))["waters"]}
+    dream=json.load(open("data/dream-stream.json",encoding="utf-8"))
+    waters[dream["key"]]=dream
+    assert len(medal)==18
+    assert set(medal).issubset(waters)
+    assert set(medal).issubset(reports)
+    assert all(reports[key] for key in medal)
+    catalog=open("catalog-map-style.js",encoding="utf-8").read()
+    assert "gold-medal-water" in catalog
+    assert "gold-medal-badge" in catalog
+    assert dream["atlas_id"]==689
+    assert dream["watercode"]=="30851"
+    assert dream["property_name"]=="Charlie Meyers SWA"
 def test_fixture_build_writes_public_data_and_review_report(tmp_path):
     waters,stations,daily,output,report=[tmp_path/name for name in ("waters.json","stations.json","daily.json","streamflow.json","report.csv")]
     waters.write_text(json.dumps({"waters":[water()]}),encoding="utf-8")
