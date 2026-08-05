@@ -32,3 +32,4 @@ def test_report_card_bundle_is_loaded_and_safe():
     assert "config/fishing_reports.json" in bundle
     assert 'rel="noopener noreferrer"' in bundle
     assert "Fishing reports" in bundle
+    assert "Fishing Atlas details" in bundle
