@@ -75,3 +75,13 @@ def test_mobile_details_use_a_draggable_non_modal_bottom_sheet():
     assert "height * .54" in script
     assert "--mobile-sheet-top: 54dvh" in styles
     assert "touch-action: none" in styles
+    assert "lockPageScaleForMap(view === 'map')" in script
+    assert "maximum-scale=1,user-scalable=no" in script
+    assert "gestureend" in script
+    assert "capture: true" in script
+    assert "beginSingleFingerPan" in script
+    assert "moveSingleFingerPan" in script
+    assert "map.panBy([-dx, -dy]" in script
+    assert "event.touches.length !== 1" in script
+    assert "document.addEventListener('touchstart', beginSingleFingerPan" in script
+    assert "document.addEventListener('touchmove', moveSingleFingerPan" in script
