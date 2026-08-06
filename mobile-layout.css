@@ -322,6 +322,8 @@
     overflow: hidden;
     border-radius: 0;
     background: #dce8df;
+    touch-action: none;
+    overscroll-behavior: none;
   }
 
   body[data-mobile-view='map'] .map-shell > .weather-tip { display: none; }
