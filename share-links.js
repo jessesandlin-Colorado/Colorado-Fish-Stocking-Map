@@ -151,13 +151,24 @@
       document.head.appendChild(favicon);
     }
 
-    if (document.querySelector('.site-footer')) return;
+    const existingFooter = document.querySelector('.site-footer');
+    if (existingFooter) {
+      const links = existingFooter.querySelector('.site-footer__links, nav');
+      if (links && !links.querySelector('a[href*="privacy.html"]')) {
+        const privacy = document.createElement('a');
+        privacy.href = 'privacy.html';
+        privacy.textContent = 'Privacy';
+        links.appendChild(privacy);
+      }
+      return;
+    }
     const footer = document.createElement('footer');
     footer.className = 'site-footer';
     footer.innerHTML = `<div class="site-footer-main">
       <span>© 2026 COFish</span>
       <nav aria-label="Site information">
         <a href="https://cpw.state.co.us/activities/fishing" target="_blank" rel="noreferrer">Data Sources</a>
+        <a href="privacy.html">Privacy Policy</a>
         <details><summary>Privacy</summary><p>COFish does not require an account or collect personal information. Location and ZIP-code tools are used in your browser to plan routes. Third-party map, weather, and routing services may receive ordinary web requests needed to provide those features.</p></details>
         <details><summary>Disclaimer</summary><p>COFish is an unofficial planning tool. Stocking records, access, regulations, closures, weather, and road conditions can change. Always confirm current information with Colorado Parks and Wildlife and the applicable land manager.</p></details>
         <a href="https://github.com/jessesandlin-Colorado/Colorado-Fish-Stocking-Map/issues" target="_blank" rel="noreferrer">Contact</a>
