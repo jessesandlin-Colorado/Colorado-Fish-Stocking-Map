@@ -199,3 +199,15 @@ document.head.appendChild(symbolLegendStyles);
 const symbolLegendScript = document.createElement('script');
 symbolLegendScript.src = 'map-symbol-legend.js';
 document.body.appendChild(symbolLegendScript);
+
+// Installable-app support uses relative URLs so branch previews and production
+// share the same manifest and service-worker implementation.
+const appManifest = document.querySelector('link[rel="manifest"]');
+if (appManifest) appManifest.href = 'site.webmanifest';
+const appInstallStyles = document.createElement('link');
+appInstallStyles.rel = 'stylesheet';
+appInstallStyles.href = 'app-install.css';
+document.head.appendChild(appInstallStyles);
+const appInstallScript = document.createElement('script');
+appInstallScript.src = 'app-install.js';
+document.body.appendChild(appInstallScript);
