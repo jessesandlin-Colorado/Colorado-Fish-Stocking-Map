@@ -65,5 +65,67 @@ class AtlasFallbackTests(unittest.TestCase):
         self.assertNotIn("region", event)
 
 
+class ReportWindowValidationTests(unittest.TestCase):
+    @staticmethod
+    def _events(count, report_date):
+        return [
+            {
+                "atlas_id": index,
+                "name": f"Water {index}",
+                "report_date": report_date,
+            }
+            for index in range(count)
+        ]
+
+    @staticmethod
+    def _waters(count):
+        return [
+            {
+                "atlas_id": index,
+                "name": f"Water {index}",
+                "lat": 39.0,
+                "lng": -105.0,
+                "species": ["Rainbow trout"],
+            }
+            for index in range(count)
+        ]
+
+    def test_current_fully_matched_window_reset_preserves_history(self):
+        today = update_data.datetime.now(update_data.timezone.utc).date().isoformat()
+        findings = update_data.validate(
+            self._events(18, today),
+            self._waters(18),
+            [],
+            prior_count=107,
+            prior_history_count=106,
+            history_count=124,
+        )
+        self.assertFalse(any(item["level"] == "critical" for item in findings))
+        self.assertTrue(any(item["code"] == "rolling-window-reset" for item in findings))
+
+    def test_window_drop_remains_critical_when_history_shrinks(self):
+        today = update_data.datetime.now(update_data.timezone.utc).date().isoformat()
+        findings = update_data.validate(
+            self._events(18, today),
+            self._waters(18),
+            [],
+            prior_count=107,
+            prior_history_count=106,
+            history_count=100,
+        )
+        self.assertTrue(any(item["code"] == "large-report-drop" for item in findings))
+
+    def test_window_drop_remains_critical_when_report_is_stale(self):
+        findings = update_data.validate(
+            self._events(18, "2025-01-01"),
+            self._waters(18),
+            [],
+            prior_count=107,
+            prior_history_count=106,
+            history_count=124,
+        )
+        self.assertTrue(any(item["code"] == "large-report-drop" for item in findings))
+
+
 if __name__ == "__main__":
     unittest.main()
