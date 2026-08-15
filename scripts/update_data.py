@@ -456,7 +456,14 @@ def build_history(existing: list[dict[str, Any]], current: list[dict[str, Any]],
     return sorted(by_id.values(), key=lambda x: (x.get("report_date", ""), x.get("name", "")), reverse=True), added
 
 
-def validate(events: list[dict[str, Any]], waters: list[dict[str, Any]], unmatched: list[dict[str, Any]], prior_count: int) -> list[dict[str, str]]:
+def validate(
+    events: list[dict[str, Any]],
+    waters: list[dict[str, Any]],
+    unmatched: list[dict[str, Any]],
+    prior_count: int,
+    prior_history_count: int = 0,
+    history_count: int = 0,
+) -> list[dict[str, str]]:
     findings: list[dict[str, str]] = []
 
     def add(level: str, code: str, message: str) -> None:
@@ -465,7 +472,31 @@ def validate(events: list[dict[str, Any]], waters: list[dict[str, Any]], unmatch
     if len(events) < 10:
         add("critical", "report-too-small", f"Only {len(events)} report rows were parsed.")
     if prior_count and len(events) < max(10, int(prior_count * 0.35)):
-        add("critical", "large-report-drop", f"Report row count fell from {prior_count} to {len(events)}.")
+        report_dates = []
+        for event in events:
+            try:
+                report_dates.append(datetime.fromisoformat(str(event.get("report_date"))).date())
+            except (TypeError, ValueError):
+                pass
+        latest_report_date = max(report_dates) if report_dates else None
+        today = datetime.now(timezone.utc).date()
+        report_is_current = (
+            latest_report_date is not None
+            and today - timedelta(days=14) <= latest_report_date <= today + timedelta(days=1)
+        )
+        history_is_preserved = prior_history_count > 0 and history_count >= prior_history_count
+        fully_matched = not unmatched and len(waters) == len({event.get("atlas_id") for event in events})
+
+        if report_is_current and history_is_preserved and fully_matched:
+            add(
+                "warning",
+                "rolling-window-reset",
+                f"Current CPW report window fell from {prior_count} to {len(events)} rows; "
+                f"accepted because the report is current, all waters matched, and "
+                f"history was preserved ({prior_history_count} to {history_count} events).",
+            )
+        else:
+            add("critical", "large-report-drop", f"Report row count fell from {prior_count} to {len(events)}.")
     if unmatched:
         add("warning", "unmatched-events", f"{len(unmatched)} current events remain unmatched.")
 
@@ -625,7 +656,14 @@ def main() -> None:
         "unique_species": len({species for water in matched for species in water.get("species", [])}),
     }
     print("STEP 5/6 — Validate generated data")
-    findings = validate(current_events, matched, unmatched, prior_current_count)
+    findings = validate(
+        current_events,
+        matched,
+        unmatched,
+        prior_current_count,
+        prior_history_count=len(existing_history),
+        history_count=len(history),
+    )
     critical_count = sum(1 for finding in findings if finding["level"] == "critical")
     warning_count = sum(1 for finding in findings if finding["level"] == "warning")
     run_id = hashlib.sha1(generated_at.encode("utf-8")).hexdigest()[:12]
