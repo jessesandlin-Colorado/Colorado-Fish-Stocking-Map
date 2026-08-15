@@ -9,6 +9,7 @@ on:
       - "scripts/import_atlas_catalog.py"
       - "scripts/import_2026_archive.py"
       - "scripts/merge_archive_waters.py"
+      - "scripts/reconcile_curated_water_keys.py"
       - "scripts/stocking_database.py"
       - "scripts/update_data.py"
       - ".github/workflows/update-data.yml"
@@ -40,6 +41,8 @@ jobs:
           key: atlas-cache-${{ runner.os }}-${{ github.ref_name }}
           restore-keys: |
             atlas-cache-${{ runner.os }}-
+      - name: Snapshot curated water identities
+        run: cp data/waters.json .cache/prior-waters.json
       - name: Check whether the 2026 archive needs a one-time import
         id: archive_check
         shell: bash
@@ -72,6 +75,8 @@ jobs:
         run: python scripts/classify_atlas_only_waters.py
       - name: Import cleaned public Fishing Atlas catalog
         run: python scripts/import_atlas_catalog.py
+      - name: Reconcile curated water metadata
+        run: python scripts/reconcile_curated_water_keys.py --prior .cache/prior-waters.json
       - name: Run tests
         run: python -m pytest -q
       - name: Commit refreshed data and catalog reports
@@ -89,7 +94,8 @@ jobs:
                   data/atlas-inventory-classified.json \
                   data/atlas-only-waters-classified.csv \
                   data/atlas-only-classification-report.md \
-                  data/atlas-catalog-import-report.json
+                  data/atlas-catalog-import-report.json \
+                  config/fishing_reports.json config/gold_medal_waters.json
           if git diff --cached --quiet; then
             echo "No data changes"
             exit 0
