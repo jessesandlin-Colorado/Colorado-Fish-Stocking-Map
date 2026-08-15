@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T05:48:47.434878+00:00",
+  "generated_at": "2026-08-15T14:59:47.181987+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
@@ -19,29 +19,6 @@
       ]
     },
     {
-      "atlas_id": 298,
-      "watercode": "80036",
-      "name": "Twin Lake Lower",
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Lake",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 481,
-      "watercode": "80010",
-      "name": "Turquoise Lake",
-      "species": [
-        "Trout: Brown",
-        "Trout: Lake",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
       "atlas_id": 271,
       "watercode": "89929",
       "name": "Rio Grande Reservoir",
@@ -54,86 +31,9 @@
       ]
     },
     {
-      "atlas_id": 219,
-      "watercode": "79942",
-      "name": "Rampart Reservoir",
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Lake",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 341,
-      "watercode": "79916",
-      "name": "Lake O'Haver",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 804,
-      "watercode": "81531",
-      "name": "Fairplay Kids Pond",
-      "species": [
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 426,
-      "watercode": "81745",
-      "name": "Crystal Creek Reservoir",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Cutthroat",
-        "Trout: Lake",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 484,
-      "watercode": "81733",
-      "name": "Cottonwood Lake",
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 680,
-      "watercode": "83128",
-      "name": "Wrights Lake",
-      "species": [
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 472,
-      "watercode": "92724",
-      "name": "Trujillo Meadows Reservoir",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Cutthroat",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 766,
-      "watercode": "73609",
-      "name": "Trent Ponds",
+      "atlas_id": 844,
+      "watercode": "96722",
+      "name": "Tincup Pond",
       "species": [
         "Trout: Rainbow"
       ]
@@ -151,6 +51,17 @@
       ]
     },
     {
+      "atlas_id": 178,
+      "watercode": "80008",
+      "name": "Tarryall Reservoir",
+      "species": [
+        "Pike: Northern",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 149,
       "watercode": "92370",
       "name": "Spring Creek Reservoir",
@@ -161,29 +72,17 @@
       ]
     },
     {
-      "atlas_id": 773,
-      "watercode": "91796",
-      "name": "Pothole Lake #1 (Lower)",
+      "atlas_id": 748,
+      "watercode": "91669",
+      "name": "Pass Creek Pond",
       "species": [
         "Trout: Rainbow"
       ]
     },
     {
-      "atlas_id": 124,
-      "watercode": "91758",
-      "name": "Platoro Reservoir",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow",
-        "Trout: Splake"
-      ]
-    },
-    {
-      "atlas_id": 771,
-      "watercode": "91746",
-      "name": "Pitkin Kid's Pond",
+      "atlas_id": 201,
+      "watercode": "71926",
+      "name": "North Lake",
       "species": [
         "Trout: Rainbow"
       ]
@@ -199,96 +98,47 @@
       ]
     },
     {
-      "atlas_id": 414,
-      "watercode": "79877",
-      "name": "Montgomery Reservoir",
+      "atlas_id": 151,
+      "watercode": "82684",
+      "name": "Mount Elbert Forebay",
       "species": [
-        "Trout: Cutthroat",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 106,
-      "watercode": "92130",
-      "name": "Lake San Cristobal",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brook",
         "Trout: Brown",
+        "Trout: Cutbow",
         "Trout: Lake",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 133,
-      "watercode": "82711",
-      "name": "Green Mountain Falls Lake",
-      "species": [
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 37,
-      "watercode": "66969",
-      "name": "Granby Reservoir",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Cutthroat",
-        "Trout: Lake",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 469,
-      "watercode": "56970",
-      "name": "Georgetown Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 548,
-      "watercode": "54825",
-      "name": "Evergreen Reservoir",
-      "species": [
-        "Pike: Tiger Muskie",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 799,
-      "watercode": "72138",
-      "name": "Copper Mountain Pond",
-      "species": [
-        "Trout: Brook",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1725,
-      "watercode": "80307",
-      "name": "Columbia Reservoir",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 764,
-      "watercode": "81909",
-      "name": "Chalk Creek Lake",
-      "species": [
-        "Trout: Cutbow",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 415,
+      "watercode": "79865",
+      "name": "Monument Reservoir",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow",
+        "Trout: Splake",
+        "Trout: Tiger"
+      ]
+    },
+    {
+      "atlas_id": 775,
+      "watercode": "91291",
+      "name": "Mirror Lake",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1338,
+      "watercode": "39796",
+      "name": "Dolores River #4",
+      "species": [
+        "Bass: Smallmouth",
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Rainbow"
       ]
     },
     {
@@ -309,468 +159,6 @@
         "Salmon: Kokanee",
         "Trout: Brook",
         "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 46,
-      "watercode": "70989",
-      "name": "Wolford Mountain Reservoir",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 765,
-      "watercode": "70982",
-      "name": "Wilmore Pond",
-      "species": [
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 753,
-      "watercode": "92712",
-      "name": "Trout Lake",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 455,
-      "watercode": "79992",
-      "name": "Skaguay Reservoir",
-      "species": [
-        "Pike: Northern",
-        "Trout: Brown",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 826,
-      "watercode": "90285",
-      "name": "Riverway Pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1731,
-      "watercode": "21674",
-      "name": "Rifle Creek",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1606,
-      "watercode": "42262",
-      "name": "Quartz Creek",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 748,
-      "watercode": "91669",
-      "name": "Pass Creek Pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 344,
-      "watercode": "96986",
-      "name": "Pac-Man Lake",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 74,
-      "watercode": "72657",
-      "name": "Nottingham Lake",
-      "species": [
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 781,
-      "watercode": "55776",
-      "name": "Muddy Pass lake",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 798,
-      "watercode": "68646",
-      "name": "Monarch Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 743,
-      "watercode": "91102",
-      "name": "Love Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 533,
-      "watercode": "55598",
-      "name": "Lost Lake",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 838,
-      "watercode": "90287",
-      "name": "Gunnison Pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 427,
-      "watercode": "82002",
-      "name": "Catamount Reservoir South",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutbow",
-        "Trout: Lake",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 767,
-      "watercode": "65676",
-      "name": "Camp Hale Pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 999,
-      "watercode": "70431",
-      "name": "Berry Creek pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 814,
-      "watercode": "92736",
-      "name": "Tucker Park Ponds",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 111,
-      "watercode": "81911",
-      "name": "Trinidad Reservoir",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Bass: Wiper",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Saugeye",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 249,
-      "watercode": "57807",
-      "name": "Slough pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 830,
-      "watercode": "69840",
-      "name": "Sheriff Reservoir",
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutthroat",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 486,
-      "watercode": "69535",
-      "name": "Ruedi Reservoir",
-      "species": [
-        "Perch: Yellow",
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Lake",
-        "Trout: Mountain Whitefish",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 839,
-      "watercode": "93714",
-      "name": "Roaring Judy Ponds",
-      "species": [
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 423,
-      "watercode": "69422",
-      "name": "Rifle Gap Reservoir",
-      "species": [
-        "Bass: Smallmouth",
-        "Crappie: Black",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Pike: Northern",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1730,
-      "watercode": "69193",
-      "name": "Piney Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Cutthroat",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 485,
-      "watercode": "68266",
-      "name": "Maroon Lake",
-      "species": [
-        "Trout: Cutthroat",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 343,
-      "watercode": "68076",
-      "name": "Lost Man Reservoir",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutthroat",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 248,
-      "watercode": "57819",
-      "name": "Kriley Pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 791,
-      "watercode": "67151",
-      "name": "Hahns Peak Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutthroat",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 975,
-      "watercode": "66200",
-      "name": "Deep Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Lake"
-      ]
-    },
-    {
-      "atlas_id": 397,
-      "watercode": "53974",
-      "name": "Big Creek Lake, Lower",
-      "species": [
-        "Pike: Tiger Muskie",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Lake",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 49,
-      "watercode": "65082",
-      "name": "Bear Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Mountain Whitefish",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 844,
-      "watercode": "96722",
-      "name": "Tincup Pond",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 56,
-      "watercode": "55815",
-      "name": "North Michigan Reservoir",
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1729,
-      "watercode": "36034",
-      "name": "Mosquito Lake",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 775,
-      "watercode": "91291",
-      "name": "Mirror Lake",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 855,
-      "watercode": "82507",
-      "name": "Lake Dorothey",
-      "species": [
-        "Trout: Rainbow",
-        "Trout: Splake"
-      ]
-    },
-    {
-      "atlas_id": 315,
-      "watercode": "52580",
-      "name": "Cherry Creek Reservoir",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Wiper",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Walleye",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 364,
-      "watercode": "54306",
-      "name": "Chatfield Reservoir",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 739,
-      "watercode": "80212",
-      "name": "Blue Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 474,
-      "watercode": "91316",
-      "name": "Big Molas Lake",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 740,
-      "watercode": "80123",
-      "name": "Bear Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 732,
-      "watercode": "88422",
-      "name": "Bailey Reservoir",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 85,
-      "watercode": "56420",
-      "name": "Aurora Reservoir",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Bass: Wiper",
-        "Catfish: Channel",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 677,
-      "watercode": "88369",
-      "name": "Andrews Lake",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutthroat",
         "Trout: Rainbow"
       ]
     },
@@ -949,6 +337,25 @@
       ]
     },
     {
+      "atlas_id": 111,
+      "watercode": "81911",
+      "name": "TRINIDAD RESERVOIR",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Bass: Wiper",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Saugeye",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 543,
       "watercode": "81517",
       "name": "TRINIDAD CENTRAL PARK LAKE",
@@ -1028,6 +435,34 @@
       ]
     },
     {
+      "atlas_id": 364,
+      "watercode": "54306",
+      "name": "CHATFIELD RESERVOIR",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 46,
+      "watercode": "70989",
+      "name": "WOLFORD MOUNTAIN RES",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
       "atlas_id": 147,
       "watercode": "54508",
       "name": "COWDREY LAKE",
@@ -1049,6 +484,21 @@
       ]
     },
     {
+      "atlas_id": 315,
+      "watercode": "52580",
+      "name": "CHERRY CREEK RESERVOIR",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Wiper",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Walleye",
+        "Sunfish: Bluegill",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 63,
       "watercode": "57617",
       "name": "BEAR CREEK RESERVOIR",
@@ -1057,6 +507,21 @@
         "Bass: Smallmouth",
         "Carp: Common",
         "Perch: Saugeye",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 85,
+      "watercode": "56420",
+      "name": "AURORA RESERVOIR",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Bass: Wiper",
+        "Catfish: Channel",
         "Perch: Walleye",
         "Perch: Yellow",
         "Sunfish: Bluegill",
@@ -1244,17 +709,6 @@
       "name": "HAVILAND LAKE",
       "species": [
         "Trout: Brook",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1338,
-      "watercode": "39796",
-      "name": "DOLORES RIVER #4",
-      "species": [
-        "Bass: Smallmouth",
-        "Salmon: Kokanee",
-        "Trout: Brown",
         "Trout: Rainbow"
       ]
     },
@@ -1525,6 +979,16 @@
       "species": [
         "Crappie: Black",
         "Perch: Yellow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 469,
+      "watercode": "56970",
+      "name": "GEORGETOWN LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
         "Trout: Rainbow"
       ]
     },
@@ -1910,6 +1374,38 @@
       ]
     },
     {
+      "atlas_id": 455,
+      "watercode": "79992",
+      "name": "SKAGUAY RESERVOIR",
+      "species": [
+        "Pike: Northern",
+        "Trout: Brown",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 486,
+      "watercode": "69535",
+      "name": "RUEDI RESERVOIR",
+      "species": [
+        "Perch: Yellow",
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Lake",
+        "Trout: Mountain Whitefish",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 533,
+      "watercode": "55598",
+      "name": "LOST LAKE",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 365,
       "watercode": "73003",
       "name": "KENNEY RESERVOIR",
@@ -1944,6 +1440,15 @@
       "name": "FRASER LIONS CLUB POND",
       "species": [
         "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 975,
+      "watercode": "66200",
+      "name": "DEEP LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Lake"
       ]
     },
     {
@@ -1985,19 +1490,6 @@
       ]
     },
     {
-      "atlas_id": 415,
-      "watercode": "79865",
-      "name": "MONUMENT RESERVOIR",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Splake",
-        "Trout: Tiger"
-      ]
-    },
-    {
       "atlas_id": 316,
       "watercode": "90693",
       "name": "ISLAND LAKE",
@@ -2021,6 +1513,26 @@
       ]
     },
     {
+      "atlas_id": 739,
+      "watercode": "80212",
+      "name": "BLUE LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 740,
+      "watercode": "80123",
+      "name": "BEAR LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 320,
       "watercode": "59976",
       "name": "ARVADA RESERVOIR",
@@ -2034,12 +1546,41 @@
       ]
     },
     {
+      "atlas_id": 765,
+      "watercode": "70982",
+      "name": "WILMOR POND",
+      "species": [
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
       "atlas_id": 512,
       "watercode": "56425",
       "name": "SEYMOUR RESERVOIR",
       "species": [
         "Trout: Cutbow",
         "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 219,
+      "watercode": "79942",
+      "name": "RAMPART RESERVOIR",
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 74,
+      "watercode": "72657",
+      "name": "NOTTINGHAM LAKE",
+      "species": [
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
       ]
     },
     {
@@ -2052,11 +1593,13 @@
       ]
     },
     {
-      "atlas_id": 201,
-      "watercode": "71926",
-      "name": "FETCHER CITY POND",
+      "atlas_id": 485,
+      "watercode": "68266",
+      "name": "MAROON LAKE",
       "species": [
-        "Trout: Rainbow"
+        "Trout: Cutthroat",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
       ]
     },
     {
@@ -2082,6 +1625,24 @@
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat",
         "Trout: Tiger"
+      ]
+    },
+    {
+      "atlas_id": 764,
+      "watercode": "81909",
+      "name": "CHALK CREEK LAKE",
+      "species": [
+        "Trout: Cutbow",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 767,
+      "watercode": "65676",
+      "name": "CAMP HALE POND",
+      "species": [
+        "Trout: Rainbow"
       ]
     },
     {
@@ -2141,13 +1702,46 @@
       ]
     },
     {
-      "atlas_id": 151,
-      "watercode": "82684",
-      "name": "Coal Creek",
+      "atlas_id": 423,
+      "watercode": "69422",
+      "name": "RIFLE GAP RESERVOIR",
+      "species": [
+        "Bass: Smallmouth",
+        "Crappie: Black",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Pike: Northern",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 133,
+      "watercode": "82711",
+      "name": "GREEN MOUNTAIN FALLS LAKE",
+      "species": [
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 804,
+      "watercode": "81531",
+      "name": "FAIRPLAY KIDS POND",
+      "species": [
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 484,
+      "watercode": "81733",
+      "name": "COTTONWOOD LAKE",
       "species": [
         "Trout: Brown",
         "Trout: Cutbow",
-        "Trout: Lake",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
       ]
@@ -2171,9 +1765,48 @@
       ]
     },
     {
+      "atlas_id": 298,
+      "watercode": "80036",
+      "name": "Twin Lake Lower",
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Lake",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 481,
+      "watercode": "80010",
+      "name": "TURQUOISE LAKE",
+      "species": [
+        "Trout: Brown",
+        "Trout: Lake",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
       "atlas_id": 513,
       "watercode": "56691",
       "name": "TIAGO LAKE",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 249,
+      "watercode": "57807",
+      "name": "SLOUGH POND",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 248,
+      "watercode": "57819",
+      "name": "KRILEY POND",
       "species": [
         "Trout: Rainbow"
       ]
@@ -2211,6 +1844,39 @@
       ]
     },
     {
+      "atlas_id": 397,
+      "watercode": "53974",
+      "name": "BIG CREEK LAKE LOWER",
+      "species": [
+        "Pike: Tiger Muskie",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 56,
+      "watercode": "55815",
+      "name": "N FK MICHIGAN R LAKE",
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 341,
+      "watercode": "79916",
+      "name": "Lake O'Haver",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
       "atlas_id": 127,
       "watercode": "79815",
       "name": "JEFFERSON LAKE",
@@ -2235,14 +1901,13 @@
       ]
     },
     {
-      "atlas_id": 178,
-      "watercode": "80008",
-      "name": "Blue River",
+      "atlas_id": 680,
+      "watercode": "83128",
+      "name": "WRIGHTS LAKE",
       "species": [
-        "Pike: Northern",
-        "Trout: Brown",
         "Trout: Cutbow",
-        "Trout: Rainbow"
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
       ]
     },
     {
@@ -2275,6 +1940,26 @@
       ]
     },
     {
+      "atlas_id": 474,
+      "watercode": "91316",
+      "name": "MOLAS LAKE",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 106,
+      "watercode": "92130",
+      "name": "LAKE SAN CRISTOBAL",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 514,
       "watercode": "67098",
       "name": "GRIZZLY RESERVOIR",
@@ -2292,6 +1977,49 @@
       ]
     },
     {
+      "atlas_id": 677,
+      "watercode": "88369",
+      "name": "ANDREWS LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 766,
+      "watercode": "73609",
+      "name": "TRENT POND",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 826,
+      "watercode": "90285",
+      "name": "RIVERWAY POND",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 344,
+      "watercode": "96986",
+      "name": "PAC-MAN LAKE",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 799,
+      "watercode": "72138",
+      "name": "COPPER MOUNTAIN PONDS",
+      "species": [
+        "Trout: Brook",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 768,
       "watercode": "72227",
       "name": "BRECKINRIDGE RESERVOIR",
@@ -2305,6 +2033,14 @@
       "name": "BELLAIRE LAKE",
       "species": [
         "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 814,
+      "watercode": "92736",
+      "name": "TUCKER PARK PONDS",
+      "species": [
         "Trout: Rainbow"
       ]
     },
@@ -2329,6 +2065,24 @@
       "atlas_id": 142,
       "watercode": "56069",
       "name": "RANGER LAKE LOWER",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1606,
+      "watercode": "42262",
+      "name": "QUARTZ CREEK",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 771,
+      "watercode": "91746",
+      "name": "Pitkin Kids Pond",
       "species": [
         "Trout: Rainbow"
       ]
@@ -2399,6 +2153,17 @@
       ]
     },
     {
+      "atlas_id": 548,
+      "watercode": "54825",
+      "name": "EVERGREEN RESERVOIR",
+      "species": [
+        "Pike: Tiger Muskie",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 357,
       "watercode": "79728",
       "name": "JACKSONS POND",
@@ -2426,6 +2191,14 @@
       "atlas_id": 1615,
       "watercode": "66235",
       "name": "SNOOKS BOTTOM LAKE",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 781,
+      "watercode": "55776",
+      "name": "MUDDY PASS LAKE",
       "species": [
         "Trout: Rainbow"
       ]
@@ -2506,9 +2279,27 @@
       ]
     },
     {
+      "atlas_id": 343,
+      "watercode": "68076",
+      "name": "LOST MAN RESERVOIR",
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 1784,
       "watercode": "43592",
       "name": "Eagle Ranch Children's Pond",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 999,
+      "watercode": "70431",
+      "name": "BERRY CREEK POND",
       "species": [
         "Trout: Rainbow"
       ]
@@ -2519,6 +2310,20 @@
       "name": "WALDEN LIONS PARK POND",
       "species": [
         "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 426,
+      "watercode": "81745",
+      "name": "CRYSTAL CR RESERVOIR",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Cutthroat",
+        "Trout: Lake",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
       ]
     },
     {
@@ -2641,6 +2446,34 @@
       ]
     },
     {
+      "atlas_id": 798,
+      "watercode": "68646",
+      "name": "MONARCH LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 838,
+      "watercode": "90287",
+      "name": "GUNNISON POND",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1725,
+      "watercode": "80307",
+      "name": "COLUMBIA RESERVOIR",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 531,
       "watercode": "66731",
       "name": "FRUITA RESERVOIR #3",
@@ -2676,6 +2509,24 @@
       ]
     },
     {
+      "atlas_id": 414,
+      "watercode": "79877",
+      "name": "MONTGOMERY RESERVOIR",
+      "species": [
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 855,
+      "watercode": "82507",
+      "name": "LAKE DOROTHEY",
+      "species": [
+        "Trout: Rainbow",
+        "Trout: Splake"
+      ]
+    },
+    {
       "atlas_id": 710,
       "watercode": "90578",
       "name": "HOTEL TWIN LAKE",
@@ -2697,6 +2548,17 @@
       "watercode": "73469",
       "name": "COLD SPRINGS POND",
       "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 49,
+      "watercode": "65082",
+      "name": "BEAR LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Mountain Whitefish",
         "Trout: Rainbow"
       ]
     },
@@ -2769,6 +2631,14 @@
       ]
     },
     {
+      "atlas_id": 753,
+      "watercode": "92712",
+      "name": "TROUT LAKE",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 827,
       "watercode": "92534",
       "name": "TELLURIDE KIDS POND",
@@ -2823,6 +2693,15 @@
       ]
     },
     {
+      "atlas_id": 839,
+      "watercode": "93714",
+      "name": "Roaring Judy Ponds",
+      "species": [
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 821,
       "watercode": "72063",
       "name": "NOFSTGER RESERVOIR",
@@ -2850,6 +2729,14 @@
       "atlas_id": 1641,
       "watercode": "97623",
       "name": "DEER LAKE #2",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 773,
+      "watercode": "91796",
+      "name": "POTHOLE LAKE #1 (LOWER)",
       "species": [
         "Trout: Rainbow"
       ]
@@ -3430,6 +3317,18 @@
       ]
     },
     {
+      "atlas_id": 124,
+      "watercode": "91758",
+      "name": "Continental Reservoir",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow",
+        "Trout: Splake"
+      ]
+    },
+    {
       "atlas_id": 744,
       "watercode": "91304",
       "name": "MIX LAKE",
@@ -3455,6 +3354,14 @@
         "Trout: Cutbow",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 1731,
+      "watercode": "21674",
+      "name": "RIFLE CREEK",
+      "species": [
+        "Trout: Rainbow"
       ]
     },
     {
@@ -3504,9 +3411,36 @@
       ]
     },
     {
+      "atlas_id": 1730,
+      "watercode": "69193",
+      "name": "PINEY LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1729,
+      "watercode": "36034",
+      "name": "Mosquito Lake",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 1603,
       "watercode": "97623",
       "name": "DEER LAKE #1",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 732,
+      "watercode": "88422",
+      "name": "BAILEY RESERVOIR",
       "species": [
         "Trout: Rainbow"
       ]
@@ -3528,6 +3462,16 @@
       "species": [
         "Trout: Brook",
         "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 830,
+      "watercode": "69840",
+      "name": "SHERIFF RESERVOIR",
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutthroat",
         "Trout: Rainbow"
       ]
     },
@@ -3734,6 +3678,19 @@
       ]
     },
     {
+      "atlas_id": 37,
+      "watercode": "66969",
+      "name": "GRANBY RESERVOIR",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Cutthroat",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 146,
       "watercode": "55156",
       "name": "HohnHolz Lake #1, East",
@@ -3747,6 +3704,16 @@
       "name": "KITSON RESERVOIR",
       "species": [
         "Grayling: Arctic",
+        "Trout: Brook",
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 791,
+      "watercode": "67151",
+      "name": "HAHNS PEAK LAKE",
+      "species": [
         "Trout: Brook",
         "Trout: Cutthroat",
         "Trout: Rainbow"
@@ -3774,6 +3741,18 @@
       ]
     },
     {
+      "atlas_id": 427,
+      "watercode": "82002",
+      "name": "CATAMOUNT RES, SOUTH",
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutbow",
+        "Trout: Lake",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
       "atlas_id": 442,
       "watercode": "81707",
       "name": "CATAMOUNT RES, NORTH",
@@ -3791,6 +3770,16 @@
       "name": "SPRING CREEK POND",
       "species": [
         "Trout: Brook",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 743,
+      "watercode": "91102",
+      "name": "LOVE LAKE",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
         "Trout: Rainbow"
       ]
     },
@@ -4085,6 +4074,17 @@
       "watercode": "94110",
       "name": "Arrowhead Lake",
       "species": [
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 472,
+      "watercode": "92724",
+      "name": "TRUJILLO MEADOWS RES",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
         "Trout: Cutthroat",
         "Trout: Rainbow"
       ]
