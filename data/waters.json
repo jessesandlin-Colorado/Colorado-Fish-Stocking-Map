@@ -1,41 +1,41 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-08-15T14:59:47.181987+00:00",
+  "generated_at": "2026-08-22T14:05:47.218590+00:00",
   "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
   "summary": {
-    "stocking_events": 9966,
-    "unique_atlas_ids": 16,
+    "stocking_events": 9985,
+    "unique_atlas_ids": 29,
     "matched_waters": 1193,
     "unmatched_events": 0,
-    "historical_events": 9966,
-    "new_historical_events": 18,
-    "latest_report_date": "2026-08-14",
-    "latest_report_events": 2,
-    "latest_report_unique_waters": 2,
+    "historical_events": 9985,
+    "new_historical_events": 19,
+    "latest_report_date": "2026-08-21",
+    "latest_report_events": 5,
+    "latest_report_unique_waters": 5,
     "waters_with_species": 370,
     "unique_species": 34,
-    "current_report_events": 18,
+    "current_report_events": 37,
     "archive_events": 9948,
-    "archive_events_matched": 8634,
-    "stocking_history_waters": 593,
-    "unmapped_stocking_waters": 96,
+    "archive_events_matched": 8653,
+    "stocking_history_waters": 589,
+    "unmapped_stocking_waters": 92,
     "archive_unique_atlas_ids": 522,
-    "archive_only_waters_added": 355,
+    "archive_only_waters_added": 342,
     "archive_unresolved_waters": 151,
-    "archive_unmatched_names": 280,
+    "archive_unmatched_names": 270,
     "archive_ambiguous_names": 0,
     "archive_earliest_date": "2014-04-22",
     "archive_latest_date": "2026-06-26",
-    "total_waters": 1289,
+    "total_waters": 1285,
     "atlas_catalog_only_waters": 697,
     "atlas_aliases_merged": 150,
-    "watercode_aliases_consolidated": 210,
+    "watercode_aliases_consolidated": 204,
     "atlas_private_records_excluded": 11,
     "atlas_records_held": 0
   },
   "validation": {
     "critical": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "waters": [
     {
@@ -638,8 +638,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "70374",
       "stocking_name_aliases": [
-        "Sunset Lake",
-        "SUNSET LAKE"
+        "SUNSET LAKE",
+        "Sunset Lake"
       ]
     },
     {
@@ -1432,8 +1432,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "60261",
       "stocking_name_aliases": [
-        "THORNTON GRAVEL LAKE #3",
-        "Thornton Gravel Lake #3"
+        "Thornton Gravel Lake #3",
+        "THORNTON GRAVEL LAKE #3"
       ]
     },
     {
@@ -5485,8 +5485,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "88369",
       "stocking_name_aliases": [
-        "Andrews Lake",
-        "ANDREWS LAKE"
+        "ANDREWS LAKE",
+        "Andrews Lake"
       ]
     },
     {
@@ -9874,8 +9874,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56420",
       "stocking_name_aliases": [
-        "Aurora Reservoir",
-        "AURORA RESERVOIR"
+        "AURORA RESERVOIR",
+        "Aurora Reservoir"
       ]
     },
     {
@@ -13044,63 +13044,17 @@
       "species_watercode": "57617"
     },
     {
-      "key": "unmapped-529979e5ca60",
-      "atlas_id": null,
-      "name": "Bear Lake",
-      "canonical_name": "Bear Lake",
-      "normalized_name": "bear lake",
-      "atlas_url": null,
-      "latest_report_date": "2026-06-12",
-      "stocking_dates": [
-        "2026-06-12",
-        "2026-05-22",
-        "2026-04-24"
-      ],
-      "stocking_events": [
-        {
-          "event_id": "fde0992587c6949fd60e2cf1",
-          "stocking_date": "2026-06-12",
-          "region": "southeast",
-          "water_name": "Bear Lake",
-          "source_kind": "archive"
-        },
-        {
-          "event_id": "76c8efe7f125053ef882e628",
-          "stocking_date": "2026-05-22",
-          "region": "southeast",
-          "water_name": "Bear Lake",
-          "source_kind": "archive"
-        },
-        {
-          "event_id": "172ef9b6407749ac8387ad94",
-          "stocking_date": "2026-04-24",
-          "region": "northwest",
-          "water_name": "Bear Lake",
-          "source_kind": "archive"
-        }
-      ],
-      "current_event_count": 0,
-      "historical_event_count": 3,
-      "archive_event_count": 3,
-      "archive_first_date": "2026-04-24",
-      "archive_last_date": "2026-06-12",
-      "species": [],
-      "county": null,
-      "lat": null,
-      "lng": null,
-      "stocking_status": "location-not-matched",
-      "match_method": "unmatched-name",
-      "location_warning": "These official stocking events are included, but this water has not yet been matched to a unique Fishing Atlas location.",
-      "species_status": "missing-watercode"
-    },
-    {
       "key": "atlas-740",
       "atlas_id": 740,
-      "name": "BEAR LAKE",
+      "name": "Bear Lake",
       "normalized_name": "bear lake",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=740",
-      "latest_report_date": "2025-09-19",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
+        "2026-06-12",
+        "2026-05-22",
+        "2026-04-24",
         "2025-09-19",
         "2025-08-22",
         "2024-05-23",
@@ -13129,7 +13083,77 @@
         "2015-07-07",
         "2015-06-30"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 31,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=740"
+        ],
+        "errors": []
+      },
+      "lat": 37.32394548292182,
+      "lng": -105.14148487739243,
+      "watercode": "80123",
+      "atlas_name": "Bear Lake",
+      "alternate_name": "Bear Lake",
+      "property_name": "San Isabel National Forest",
+      "county": "Huerfano",
+      "location_type": "Water Body",
+      "elevation_ft": 10432,
+      "boating": "Unsure",
+      "access_ease": "Medium",
+      "fishing_pressure": "Medium",
+      "family_friendly": "No",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Bear Lake+\"Huerfano County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//37.3239,-105.1415",
+      "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-740-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Bear Lake",
+          "source_kind": "current-report"
+        },
+        {
+          "event_id": "fde0992587c6949fd60e2cf1",
+          "stocking_date": "2026-06-12",
+          "region": "southeast",
+          "water_name": "Bear Lake",
+          "source_kind": "archive"
+        },
+        {
+          "event_id": "76c8efe7f125053ef882e628",
+          "stocking_date": "2026-05-22",
+          "region": "southeast",
+          "water_name": "Bear Lake",
+          "source_kind": "archive"
+        },
+        {
+          "event_id": "172ef9b6407749ac8387ad94",
+          "stocking_date": "2026-04-24",
+          "region": "northwest",
+          "water_name": "Bear Lake",
+          "source_kind": "archive"
+        },
         {
           "event_id": "1c52868b28f8266ee3b46bed",
           "stocking_date": "2025-09-19",
@@ -13320,48 +13344,9 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 27,
-      "archive_event_count": 27,
+      "archive_event_count": 30,
       "archive_first_date": "2015-06-30",
-      "archive_last_date": "2025-09-19",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Bear Lake",
-      "lat": 37.32394548292182,
-      "lng": -105.14148487739243,
-      "watercode": "80123",
-      "atlas_name": "Bear Lake",
-      "alternate_name": "Bear Lake",
-      "property_name": "San Isabel National Forest",
-      "county": "Huerfano",
-      "location_type": "Water Body",
-      "elevation_ft": 10432,
-      "boating": "Unsure",
-      "access_ease": "Medium",
-      "fishing_pressure": "Medium",
-      "family_friendly": "No",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Bear Lake+\"Huerfano County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//37.3239,-105.1415",
-      "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "80123"
     },
@@ -13755,8 +13740,10 @@
       "name": "Beaver Creek Reservoir",
       "normalized_name": "beaver creek reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=396",
-      "latest_report_date": "2026-08-07",
+      "latest_report_date": "2026-08-21",
       "stocking_dates": [
+        "2026-08-21",
+        "2026-08-14",
         "2026-08-07",
         "2025-10-31",
         "2025-10-24",
@@ -13805,8 +13792,8 @@
         "2017-06-23",
         "2017-04-18"
       ],
-      "current_event_count": 1,
-      "historical_event_count": 47,
+      "current_event_count": 3,
+      "historical_event_count": 49,
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [
@@ -13844,6 +13831,18 @@
       "atlas_data_source": "reviewed-manual-override",
       "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-396-2026-08-21",
+          "stocking_date": "2026-08-21",
+          "water_name": "Beaver Creek Reservoir",
+          "source_kind": "current-report"
+        },
+        {
+          "event_id": "current-396-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Beaver Creek Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "current-396-2026-08-07",
           "stocking_date": "2026-08-07",
@@ -16319,8 +16318,9 @@
       "name": "Big Meadows Reservoir",
       "normalized_name": "big meadows reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=545",
-      "latest_report_date": "2026-08-07",
+      "latest_report_date": "2026-08-21",
       "stocking_dates": [
+        "2026-08-21",
         "2026-08-07",
         "2025-10-31",
         "2025-10-24",
@@ -16377,8 +16377,8 @@
         "2015-06-16",
         "2015-05-19"
       ],
-      "current_event_count": 1,
-      "historical_event_count": 55,
+      "current_event_count": 2,
+      "historical_event_count": 56,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -16421,6 +16421,12 @@
       "atlas_data_source": "network",
       "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-545-2026-08-21",
+          "stocking_date": "2026-08-21",
+          "water_name": "Big Meadows Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "current-545-2026-08-07",
           "stocking_date": "2026-08-07",
@@ -17465,8 +17471,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "57679",
       "stocking_name_aliases": [
-        "BITTERSWEET LAKE",
-        "Bittersweet Lake"
+        "Bittersweet Lake",
+        "BITTERSWEET LAKE"
       ]
     },
     {
@@ -17948,55 +17954,16 @@
       "public_catalog_classification": "import-public-confirmed"
     },
     {
-      "key": "unmapped-f97f1ee2625e",
-      "atlas_id": null,
-      "name": "Blue Lake",
-      "canonical_name": "Blue Lake",
-      "normalized_name": "blue lake",
-      "atlas_url": null,
-      "latest_report_date": "2026-06-12",
-      "stocking_dates": [
-        "2026-06-12",
-        "2026-05-22"
-      ],
-      "stocking_events": [
-        {
-          "event_id": "583089f50922b2c392dcc8cd",
-          "stocking_date": "2026-06-12",
-          "region": "southeast",
-          "water_name": "Blue Lake",
-          "source_kind": "archive"
-        },
-        {
-          "event_id": "431006bd8048c4179793c476",
-          "stocking_date": "2026-05-22",
-          "region": "southeast",
-          "water_name": "Blue Lake",
-          "source_kind": "archive"
-        }
-      ],
-      "current_event_count": 0,
-      "historical_event_count": 2,
-      "archive_event_count": 2,
-      "archive_first_date": "2026-05-22",
-      "archive_last_date": "2026-06-12",
-      "species": [],
-      "county": null,
-      "lat": null,
-      "lng": null,
-      "stocking_status": "location-not-matched",
-      "match_method": "unmatched-name",
-      "location_warning": "These official stocking events are included, but this water has not yet been matched to a unique Fishing Atlas location.",
-      "species_status": "missing-watercode"
-    },
-    {
       "key": "atlas-739",
       "atlas_id": 739,
-      "name": "BLUE LAKE",
+      "name": "Blue Lake",
       "normalized_name": "blue lake",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=739",
-      "latest_report_date": "2025-09-19",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
+        "2026-06-12",
+        "2026-05-22",
         "2025-09-19",
         "2025-08-22",
         "2024-06-12",
@@ -18032,7 +17999,70 @@
         "2015-07-07",
         "2015-06-30"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 37,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=739"
+        ],
+        "errors": []
+      },
+      "lat": 37.31691139003899,
+      "lng": -105.13856976704035,
+      "watercode": "80212",
+      "atlas_name": "Blue Lake",
+      "alternate_name": "Blue Lake",
+      "property_name": "San Isabel National Forest",
+      "county": "Huerfano",
+      "location_type": "Water Body",
+      "elevation_ft": 10392,
+      "boating": "Unsure",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Blue Lake+\"Huerfano County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//37.3169,-105.1386",
+      "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-739-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Blue Lake",
+          "source_kind": "current-report"
+        },
+        {
+          "event_id": "583089f50922b2c392dcc8cd",
+          "stocking_date": "2026-06-12",
+          "region": "southeast",
+          "water_name": "Blue Lake",
+          "source_kind": "archive"
+        },
+        {
+          "event_id": "431006bd8048c4179793c476",
+          "stocking_date": "2026-05-22",
+          "region": "southeast",
+          "water_name": "Blue Lake",
+          "source_kind": "archive"
+        },
         {
           "event_id": "5d644f226c360780505b7454",
           "stocking_date": "2025-09-19",
@@ -18272,48 +18302,9 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 34,
-      "archive_event_count": 34,
+      "archive_event_count": 36,
       "archive_first_date": "2015-06-30",
-      "archive_last_date": "2025-09-19",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Blue Lake",
-      "lat": 37.31691139003899,
-      "lng": -105.13856976704035,
-      "watercode": "80212",
-      "atlas_name": "Blue Lake",
-      "alternate_name": "Blue Lake",
-      "property_name": "San Isabel National Forest",
-      "county": "Huerfano",
-      "location_type": "Water Body",
-      "elevation_ft": 10392,
-      "boating": "Unsure",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Blue Lake+\"Huerfano County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//37.3169,-105.1386",
-      "property_url": "https://www.fs.usda.gov/activity/psicc/recreation/fishing",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
+      "archive_last_date": "2026-06-12",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "80212"
     },
@@ -22370,8 +22361,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81492",
       "stocking_name_aliases": [
-        "BUENA VISTA KIDS POND",
-        "Buena Vista Kids Pond"
+        "Buena Vista Kids Pond",
+        "BUENA VISTA KIDS POND"
       ]
     },
     {
@@ -24737,8 +24728,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "65723",
       "stocking_name_aliases": [
-        "Casey Pond",
-        "CASEY POND"
+        "CASEY POND",
+        "Casey Pond"
       ]
     },
     {
@@ -25915,8 +25906,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "52925",
       "stocking_name_aliases": [
-        "CENTENNIAL LAKE",
-        "Centennial Lake"
+        "Centennial Lake",
+        "CENTENNIAL LAKE"
       ]
     },
     {
@@ -28295,8 +28286,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "52580",
       "stocking_name_aliases": [
-        "Cherry Creek Reservoir",
-        "CHERRY CREEK RESERVOIR"
+        "CHERRY CREEK RESERVOIR",
+        "Cherry Creek Reservoir"
       ]
     },
     {
@@ -28971,8 +28962,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "88991",
       "stocking_name_aliases": [
-        "CHIPETA LAKE",
-        "Chipeta Lake"
+        "Chipeta Lake",
+        "CHIPETA LAKE"
       ]
     },
     {
@@ -32090,8 +32081,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "80307",
       "stocking_name_aliases": [
-        "Columbia Reservoir",
-        "COLUMBIA RESERVOIR"
+        "COLUMBIA RESERVOIR",
+        "Columbia Reservoir"
       ]
     },
     {
@@ -37418,8 +37409,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "72138",
       "stocking_name_aliases": [
-        "Copper Mountain Ponds",
-        "COPPER MOUNTAIN PONDS"
+        "COPPER MOUNTAIN PONDS",
+        "Copper Mountain Ponds"
       ]
     },
     {
@@ -37752,8 +37743,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82393",
       "stocking_name_aliases": [
-        "DAIGRE RESERVOIR",
-        "Daigre Reservoir"
+        "Daigre Reservoir",
+        "DAIGRE RESERVOIR"
       ]
     },
     {
@@ -42059,8 +42050,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "54673",
       "stocking_name_aliases": [
-        "Dowdy Lake",
-        "DOWDY LAKE"
+        "DOWDY LAKE",
+        "Dowdy Lake"
       ]
     },
     {
@@ -44014,8 +44005,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "54712",
       "stocking_name_aliases": [
-        "ECHO LAKE",
-        "Echo Lake"
+        "Echo Lake",
+        "ECHO LAKE"
       ]
     },
     {
@@ -44512,52 +44503,21 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "52924",
       "stocking_name_aliases": [
-        "EHRLICH LAKE",
-        "Ehrlich Lake"
+        "Ehrlich Lake",
+        "EHRLICH LAKE"
       ]
-    },
-    {
-      "key": "unmapped-e8a695d8c0f1",
-      "atlas_id": null,
-      "name": "Eleven Mile Reservoir",
-      "canonical_name": "Eleven Mile Reservoir",
-      "normalized_name": "eleven mile reservoir",
-      "atlas_url": null,
-      "latest_report_date": "2026-02-13",
-      "stocking_dates": [
-        "2026-02-13"
-      ],
-      "stocking_events": [
-        {
-          "event_id": "167f204b14fa494506f18906",
-          "stocking_date": "2026-02-13",
-          "region": "northeast",
-          "water_name": "Eleven Mile Reservoir",
-          "source_kind": "archive"
-        }
-      ],
-      "current_event_count": 0,
-      "historical_event_count": 1,
-      "archive_event_count": 1,
-      "archive_first_date": "2026-02-13",
-      "archive_last_date": "2026-02-13",
-      "species": [],
-      "county": null,
-      "lat": null,
-      "lng": null,
-      "stocking_status": "location-not-matched",
-      "match_method": "unmatched-name",
-      "location_warning": "These official stocking events are included, but this water has not yet been matched to a unique Fishing Atlas location.",
-      "species_status": "missing-watercode"
     },
     {
       "key": "atlas-399",
       "atlas_id": 399,
-      "name": "ELEVEN MILE RES",
-      "normalized_name": "eleven mile res",
+      "name": "Eleven Mile Reservoir",
+      "normalized_name": "eleven mile reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=399",
-      "latest_report_date": "2025-12-31",
+      "latest_report_date": "2026-08-21",
       "stocking_dates": [
+        "2026-08-21",
+        "2026-08-14",
+        "2026-02-13",
         "2025-12-31",
         "2025-12-12",
         "2025-12-05",
@@ -44610,7 +44570,74 @@
         "2015-01-26",
         "2015-01-13"
       ],
+      "current_event_count": 2,
+      "historical_event_count": 54,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Carp: Common",
+        "Perch: Yellow",
+        "Pike: Northern",
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=399"
+        ],
+        "errors": []
+      },
+      "lat": 38.94591285132695,
+      "lng": -105.54586165704907,
+      "watercode": "81771",
+      "atlas_name": "Elevenmile Reservoir",
+      "alternate_name": "Elevenmile Reservoir",
+      "property_name": "Eleven Mile State Park",
+      "county": "Park",
+      "location_type": "Water Body",
+      "elevation_ft": 8565,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "High",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout and Sub-catchables",
+      "survey_url": "https://cpw.state.co.us/thingstodo/Fishery%20Survey%20Summaries/ElevenmileReservoir.pdf",
+      "driving_url": "https://www.google.com/maps/dir//38.9541,-105.5741",
+      "property_url": "https://cpw.state.co.us/placestogo/Parks/ElevenMile",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-399-2026-08-21",
+          "stocking_date": "2026-08-21",
+          "water_name": "Eleven Mile Reservoir",
+          "source_kind": "current-report"
+        },
+        {
+          "event_id": "current-399-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Eleven Mile Reservoir",
+          "source_kind": "current-report"
+        },
+        {
+          "event_id": "167f204b14fa494506f18906",
+          "stocking_date": "2026-02-13",
+          "region": "northeast",
+          "water_name": "Eleven Mile Reservoir",
+          "source_kind": "archive"
+        },
         {
           "event_id": "2db7637f18878e1d67de694e",
           "stocking_date": "2025-12-31",
@@ -44969,53 +44996,9 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 51,
-      "archive_event_count": 51,
+      "archive_event_count": 52,
       "archive_first_date": "2015-01-13",
-      "archive_last_date": "2025-12-31",
-      "species": [
-        "Carp: Common",
-        "Perch: Yellow",
-        "Pike: Northern",
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Elevenmile Reservoir",
-      "lat": 38.94591285132695,
-      "lng": -105.54586165704907,
-      "watercode": "81771",
-      "atlas_name": "Elevenmile Reservoir",
-      "alternate_name": "Elevenmile Reservoir",
-      "property_name": "Eleven Mile State Park",
-      "county": "Park",
-      "location_type": "Water Body",
-      "elevation_ft": 8565,
-      "boating": "Motor boats",
-      "access_ease": "Easy",
-      "fishing_pressure": "High",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "Yes",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout and Sub-catchables",
-      "survey_url": "https://cpw.state.co.us/thingstodo/Fishery%20Survey%20Summaries/ElevenmileReservoir.pdf",
-      "driving_url": "https://www.google.com/maps/dir//38.9541,-105.5741",
-      "property_url": "https://cpw.state.co.us/placestogo/Parks/ElevenMile",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
+      "archive_last_date": "2026-02-13",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81771"
     },
@@ -46586,8 +46569,8 @@
       "species_watercode": "54825",
       "stocking_name_aliases": [
         "Evergreen Lake",
-        "EVERGREEN RESERVOIR",
-        "Evergreen Reservoir"
+        "Evergreen Reservoir",
+        "EVERGREEN RESERVOIR"
       ]
     },
     {
@@ -47222,8 +47205,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81531",
       "stocking_name_aliases": [
-        "Fairplay Kids Pond",
-        "FAIRPLAY KIDS POND"
+        "FAIRPLAY KIDS POND",
+        "Fairplay Kids Pond"
       ]
     },
     {
@@ -49800,60 +49783,21 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79853",
       "stocking_name_aliases": [
-        "Frantz Lake",
-        "FRANTZ LAKE"
+        "FRANTZ LAKE",
+        "Frantz Lake"
       ]
-    },
-    {
-      "key": "unmapped-3c629bda1685",
-      "atlas_id": null,
-      "name": "Fraser Lions Club Pond",
-      "canonical_name": "Fraser Lions Club Pond",
-      "normalized_name": "fraser lions club pond",
-      "atlas_url": null,
-      "latest_report_date": "2026-06-19",
-      "stocking_dates": [
-        "2026-06-19",
-        "2026-05-08"
-      ],
-      "stocking_events": [
-        {
-          "event_id": "ebc6cd90064d86ae048d79f0",
-          "stocking_date": "2026-06-19",
-          "region": "northwest",
-          "water_name": "Fraser Lions Club Pond",
-          "source_kind": "archive"
-        },
-        {
-          "event_id": "0d56d91dde5bcd94e7a57412",
-          "stocking_date": "2026-05-08",
-          "region": "northwest",
-          "water_name": "Fraser Lions Club Pond",
-          "source_kind": "archive"
-        }
-      ],
-      "current_event_count": 0,
-      "historical_event_count": 2,
-      "archive_event_count": 2,
-      "archive_first_date": "2026-05-08",
-      "archive_last_date": "2026-06-19",
-      "species": [],
-      "county": null,
-      "lat": null,
-      "lng": null,
-      "stocking_status": "location-not-matched",
-      "match_method": "unmatched-name",
-      "location_warning": "These official stocking events are included, but this water has not yet been matched to a unique Fishing Atlas location.",
-      "species_status": "missing-watercode"
     },
     {
       "key": "atlas-845",
       "atlas_id": 845,
-      "name": "FRASER LIONS CLUB POND",
+      "name": "Fraser Lions Club Pond",
       "normalized_name": "fraser lions club pond",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=845",
-      "latest_report_date": "2025-09-26",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
+        "2026-06-19",
+        "2026-05-08",
         "2025-09-26",
         "2023-05-12",
         "2022-06-24",
@@ -49875,7 +49819,68 @@
         "2015-05-26",
         "2015-05-19"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 23,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=845"
+        ],
+        "errors": []
+      },
+      "lat": 39.94393063215596,
+      "lng": -105.81008193411287,
+      "watercode": "73914",
+      "atlas_name": "Fraser Lions Club Pond",
+      "alternate_name": "Fraser Lions Club Kids Pond",
+      "property_name": "Lions Club Park",
+      "county": "Grand",
+      "location_type": "Water Body",
+      "elevation_ft": 8570,
+      "boating": "Non-motorized",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "accessible_pier": "Yes",
+      "stocked_description": "Catchable trout",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Fraser Lions Club Kids Pond+\"Grand County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//39.9439,-105.8101",
+      "property_url": "https://www.playwinterpark.com/fishing",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-845-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Fraser Lions Club Pond",
+          "source_kind": "current-report"
+        },
+        {
+          "event_id": "ebc6cd90064d86ae048d79f0",
+          "stocking_date": "2026-06-19",
+          "region": "northwest",
+          "water_name": "Fraser Lions Club Pond",
+          "source_kind": "archive"
+        },
+        {
+          "event_id": "0d56d91dde5bcd94e7a57412",
+          "stocking_date": "2026-05-08",
+          "region": "northwest",
+          "water_name": "Fraser Lions Club Pond",
+          "source_kind": "archive"
+        },
         {
           "event_id": "bcd9825fb7338e242d9efd83",
           "stocking_date": "2025-09-26",
@@ -50017,46 +50022,9 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 20,
-      "archive_event_count": 20,
+      "archive_event_count": 22,
       "archive_first_date": "2015-05-19",
-      "archive_last_date": "2025-09-26",
-      "species": [
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Fraser Lions Club Pond",
-      "lat": 39.94393063215596,
-      "lng": -105.81008193411287,
-      "watercode": "73914",
-      "atlas_name": "Fraser Lions Club Pond",
-      "alternate_name": "Fraser Lions Club Kids Pond",
-      "property_name": "Lions Club Park",
-      "county": "Grand",
-      "location_type": "Water Body",
-      "elevation_ft": 8570,
-      "boating": "Non-motorized",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "Yes",
-      "accessible_pier": "Yes",
-      "stocked_description": "Catchable trout",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Fraser Lions Club Kids Pond+\"Grand County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//39.9439,-105.8101",
-      "property_url": "https://www.playwinterpark.com/fishing",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
+      "archive_last_date": "2026-06-19",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "73914"
     },
@@ -53500,11 +53468,12 @@
     {
       "key": "atlas-83",
       "atlas_id": 83,
-      "name": "GRAND LAKE",
+      "name": "Grand Lake",
       "normalized_name": "grand lake",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=83",
-      "latest_report_date": "2026-06-05",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2026-06-05",
         "2026-05-08",
         "2025-10-24",
@@ -53538,7 +53507,59 @@
         "2015-06-16",
         "2015-05-26"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 33,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Cutthroat",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=83"
+        ],
+        "errors": []
+      },
+      "lat": 40.2435722657885,
+      "lng": -105.81466612594096,
+      "watercode": "66971",
+      "atlas_name": "Grand Lake",
+      "alternate_name": "Grand Lake",
+      "property_name": "Grand Lake",
+      "county": "Grand",
+      "location_type": "Water Body",
+      "elevation_ft": 8371,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "accessible_pier": "Yes",
+      "stocked_description": "Catchable trout and Sub-catchables",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Grand Lake+\"Grand County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//40.2436,-105.8147",
+      "property_url": "https://www.townofgrandlake.com/town-parks-and-open-spaces.htm",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-83-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Grand Lake",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "3a10c57bb9037007656827cb",
           "stocking_date": "2026-06-05",
@@ -53764,57 +53785,11 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 32,
       "archive_event_count": 32,
       "archive_first_date": "2015-05-26",
       "archive_last_date": "2026-06-05",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Cutthroat",
-        "Trout: Lake",
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Grand Lake",
-      "lat": 40.2435722657885,
-      "lng": -105.81466612594096,
-      "watercode": "66971",
-      "atlas_name": "Grand Lake",
-      "alternate_name": "Grand Lake",
-      "property_name": "Grand Lake",
-      "county": "Grand",
-      "location_type": "Water Body",
-      "elevation_ft": 8371,
-      "boating": "Motor boats",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "Yes",
-      "accessible_pier": "Yes",
-      "stocked_description": "Catchable trout and Sub-catchables",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Grand Lake+\"Grand County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//40.2436,-105.8147",
-      "property_url": "https://www.townofgrandlake.com/town-parks-and-open-spaces.htm",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
-      "species_watercode": "66971",
-      "stocking_name_aliases": [
-        "Grand Lake",
-        "GRAND LAKE"
-      ]
+      "species_watercode": "66971"
     },
     {
       "key": "atlas-watercode-52824",
@@ -54482,8 +54457,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82711",
       "stocking_name_aliases": [
-        "Green Mountain Falls Lake",
-        "GREEN MOUNTAIN FALLS LAKE"
+        "GREEN MOUNTAIN FALLS LAKE",
+        "Green Mountain Falls Lake"
       ]
     },
     {
@@ -55010,11 +54985,12 @@
     {
       "key": "atlas-838",
       "atlas_id": 838,
-      "name": "GUNNISON POND",
+      "name": "Gunnison Pond",
       "normalized_name": "gunnison pond",
-      "atlas_url": "http://ndismaps.nrel.colostate.edu/index.html?app=FishingAtlas&keyword=fspot&value=838",
-      "latest_report_date": "2026-06-19",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=838",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2026-06-19",
         "2026-06-05",
         "2024-06-18",
@@ -55044,7 +55020,54 @@
         "2015-06-30",
         "2015-05-19"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 29,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=838"
+        ],
+        "errors": []
+      },
+      "lat": 38.53040515989236,
+      "lng": -106.94748393350875,
+      "watercode": "90287",
+      "atlas_name": "Gunnison Pond",
+      "alternate_name": "Gunnison Pond",
+      "property_name": "Lions Club Park",
+      "county": "Gunnison",
+      "location_type": "Water Body",
+      "elevation_ft": 7649,
+      "boating": "Non-motorized",
+      "access_ease": "Easy",
+      "fishing_pressure": "High",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Gunnison Pond+\"Gunnison County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//38.5304,-106.9475",
+      "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-838-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Gunnison Pond",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "5ab469b257c9b5311c7f6669",
           "stocking_date": "2026-06-19",
@@ -55242,52 +55265,11 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 28,
       "archive_event_count": 28,
       "archive_first_date": "2015-05-19",
       "archive_last_date": "2026-06-19",
-      "species": [
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Gunnison Pond",
-      "lat": 38.53040515989236,
-      "lng": -106.94748393350875,
-      "watercode": "90287",
-      "atlas_name": "Gunnison Pond",
-      "alternate_name": "Gunnison Pond",
-      "property_name": "Lions Club Park",
-      "county": "Gunnison",
-      "location_type": "Water Body",
-      "elevation_ft": 7649,
-      "boating": "Non-motorized",
-      "access_ease": "Easy",
-      "fishing_pressure": "High",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "Yes",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Gunnison Pond+\"Gunnison County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//38.5304,-106.9475",
-      "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
-      "species_watercode": "90287",
-      "stocking_name_aliases": [
-        "GUNNISON POND",
-        "Gunnison Pond"
-      ]
+      "species_watercode": "90287"
     },
     {
       "key": "atlas-watercode-42595",
@@ -55892,8 +55874,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "72722",
       "stocking_name_aliases": [
-        "Gypsum Ponds",
-        "GYPSUM PONDS"
+        "GYPSUM PONDS",
+        "Gypsum Ponds"
       ]
     },
     {
@@ -58839,8 +58821,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "61298",
       "stocking_name_aliases": [
-        "HINE LAKE",
-        "Hine Lake"
+        "Hine Lake",
+        "HINE LAKE"
       ]
     },
     {
@@ -60084,8 +60066,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79803",
       "stocking_name_aliases": [
-        "HORSESHOE RESERVOIR",
-        "Horseshoe Reservoir"
+        "Horseshoe Reservoir",
+        "HORSESHOE RESERVOIR"
       ]
     },
     {
@@ -60933,8 +60915,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "74283",
       "stocking_name_aliases": [
-        "Hudson Town Pond",
-        "HUDSON TOWN POND"
+        "HUDSON TOWN POND",
+        "Hudson Town Pond"
       ]
     },
     {
@@ -64762,8 +64744,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79815",
       "stocking_name_aliases": [
-        "JEFFERSON LAKE",
-        "Jefferson Lake"
+        "Jefferson Lake",
+        "JEFFERSON LAKE"
       ]
     },
     {
@@ -65945,8 +65927,8 @@
       "archive_first_date": "2015-03-31",
       "archive_last_date": "2016-04-19",
       "stocking_name_aliases": [
-        "Jumbo Reservoir",
-        "JUMBO RESERVOIR"
+        "JUMBO RESERVOIR",
+        "Jumbo Reservoir"
       ]
     },
     {
@@ -66747,8 +66729,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "60171",
       "stocking_name_aliases": [
-        "Ketner Lake",
-        "KETNER LAKE"
+        "KETNER LAKE",
+        "Ketner Lake"
       ]
     },
     {
@@ -67327,8 +67309,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "90807",
       "stocking_name_aliases": [
-        "Kiser Slough Reservoir",
-        "KISER SLOUGH RESERVOIR"
+        "KISER SLOUGH RESERVOIR",
+        "Kiser Slough Reservoir"
       ]
     },
     {
@@ -69265,8 +69247,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "54801",
       "stocking_name_aliases": [
-        "ESTES LAKE",
-        "Estes Lake"
+        "Estes Lake",
+        "ESTES LAKE"
       ]
     },
     {
@@ -72832,8 +72814,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "55562",
       "stocking_name_aliases": [
-        "Lon Hagler Reservoir",
-        "LON HAGLER RESERVOIR"
+        "LON HAGLER RESERVOIR",
+        "Lon Hagler Reservoir"
       ]
     },
     {
@@ -73969,8 +73951,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "68076",
       "stocking_name_aliases": [
-        "Lost Man Reservoir",
-        "LOST MAN RESERVOIR"
+        "LOST MAN RESERVOIR",
+        "Lost Man Reservoir"
       ]
     },
     {
@@ -76084,8 +76066,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "68266",
       "stocking_name_aliases": [
-        "Maroon Lake",
-        "MAROON LAKE"
+        "MAROON LAKE",
+        "Maroon Lake"
       ]
     },
     {
@@ -76570,8 +76552,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79841",
       "stocking_name_aliases": [
-        "Martin Lake",
-        "MARTIN LAKE"
+        "MARTIN LAKE",
+        "Martin Lake"
       ]
     },
     {
@@ -77450,8 +77432,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "68406",
       "stocking_name_aliases": [
-        "Mckee Lake",
-        "McKEE LAKE"
+        "McKEE LAKE",
+        "Mckee Lake"
       ]
     },
     {
@@ -77770,8 +77752,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "94273",
       "stocking_name_aliases": [
-        "McPHEE RESERVOIR",
-        "McPhee Reservoir"
+        "McPhee Reservoir",
+        "McPHEE RESERVOIR"
       ]
     },
     {
@@ -79870,8 +79852,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "61363",
       "stocking_name_aliases": [
-        "Milavec Reservoir",
-        "MILAVEC RESERVOIR"
+        "MILAVEC RESERVOIR",
+        "Milavec Reservoir"
       ]
     },
     {
@@ -81201,8 +81183,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91304",
       "stocking_name_aliases": [
-        "Mix Lake",
-        "MIX LAKE"
+        "MIX LAKE",
+        "Mix Lake"
       ]
     },
     {
@@ -82659,8 +82641,9 @@
       "name": "Monument Reservoir",
       "normalized_name": "monument reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=415",
-      "latest_report_date": "2026-08-07",
+      "latest_report_date": "2026-08-21",
       "stocking_dates": [
+        "2026-08-21",
         "2026-08-07",
         "2026-06-26",
         "2026-05-01",
@@ -82712,8 +82695,8 @@
         "2015-06-16",
         "2015-05-05"
       ],
-      "current_event_count": 1,
-      "historical_event_count": 50,
+      "current_event_count": 2,
+      "historical_event_count": 51,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -82759,6 +82742,12 @@
       "atlas_data_source": "network",
       "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-415-2026-08-21",
+          "stocking_date": "2026-08-21",
+          "water_name": "Monument Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "current-415-2026-08-07",
           "stocking_date": "2026-08-07",
@@ -84868,8 +84857,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "68836",
       "stocking_name_aliases": [
-        "Neversweat Reservoir",
-        "NEVERSWEAT RESERVOIR"
+        "NEVERSWEAT RESERVOIR",
+        "Neversweat Reservoir"
       ]
     },
     {
@@ -85713,8 +85702,9 @@
       "name": "North Lake",
       "normalized_name": "north lake",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=201",
-      "latest_report_date": "2026-08-07",
+      "latest_report_date": "2026-08-21",
       "stocking_dates": [
+        "2026-08-21",
         "2026-08-07",
         "2026-06-26",
         "2026-06-19",
@@ -85768,8 +85758,8 @@
         "2015-04-21",
         "2014-04-22"
       ],
-      "current_event_count": 1,
-      "historical_event_count": 52,
+      "current_event_count": 2,
+      "historical_event_count": 53,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -85810,6 +85800,12 @@
       "atlas_data_source": "network",
       "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-201-2026-08-21",
+          "stocking_date": "2026-08-21",
+          "water_name": "North Lake",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "current-201-2026-08-07",
           "stocking_date": "2026-08-07",
@@ -86785,8 +86781,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "61476",
       "stocking_name_aliases": [
-        "NORTH LAKE PARK POND",
-        "North Lake Park Pond"
+        "North Lake Park Pond",
+        "NORTH LAKE PARK POND"
       ]
     },
     {
@@ -89772,11 +89768,12 @@
     {
       "key": "atlas-344",
       "atlas_id": 344,
-      "name": "PAC-MAN LAKE",
+      "name": "Pac-Man Lake",
       "normalized_name": "pac man lake",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=344",
-      "latest_report_date": "2026-06-19",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2026-06-19",
         "2026-06-05",
         "2026-05-29",
@@ -89806,7 +89803,54 @@
         "2015-06-30",
         "2015-05-19"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 29,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=344"
+        ],
+        "errors": []
+      },
+      "lat": 38.54373606012939,
+      "lng": -106.9203766266167,
+      "watercode": "96986",
+      "atlas_name": "Pac-Man Lake",
+      "alternate_name": "Pac-Man Lake",
+      "property_name": "Jorgenson Park",
+      "county": "Gunnison",
+      "location_type": "Water Body",
+      "elevation_ft": 7693,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Pac-Man Lake+\"Gunnison County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//38.5437,-106.9204",
+      "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-344-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Pac-Man Lake",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "bfb2eaa2d4782b31730c6190",
           "stocking_date": "2026-06-19",
@@ -90004,52 +90048,11 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 28,
       "archive_event_count": 28,
       "archive_first_date": "2015-05-19",
       "archive_last_date": "2026-06-19",
-      "species": [
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Pac-Man Lake",
-      "lat": 38.54373606012939,
-      "lng": -106.9203766266167,
-      "watercode": "96986",
-      "atlas_name": "Pac-Man Lake",
-      "alternate_name": "Pac-Man Lake",
-      "property_name": "Jorgenson Park",
-      "county": "Gunnison",
-      "location_type": "Water Body",
-      "elevation_ft": 7693,
-      "boating": "None",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Pac-Man Lake+\"Gunnison County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//38.5437,-106.9204",
-      "property_url": "https://www.gunnisonco.gov/departments/parks___recreation/parks.php",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
-      "species_watercode": "96986",
-      "stocking_name_aliases": [
-        "Pac-Man Lake",
-        "PAC-MAN LAKE"
-      ]
+      "species_watercode": "96986"
     },
     {
       "key": "unmapped-736d6e6343e3",
@@ -93189,8 +93192,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79663",
       "stocking_name_aliases": [
-        "Pike View Reservoir",
-        "PIKE VIEW RESERVOIR"
+        "PIKE VIEW RESERVOIR",
+        "Pike View Reservoir"
       ]
     },
     {
@@ -94331,8 +94334,9 @@
       "name": "Pitkin Kids Pond",
       "normalized_name": "pitkin kids pond",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=771",
-      "latest_report_date": "2026-06-05",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2026-06-05",
         "2025-08-01",
         "2022-06-10",
@@ -94343,7 +94347,47 @@
         "2019-06-25",
         "2018-06-15"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 10,
+      "match_method": "manual-override",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=771"
+        ],
+        "errors": []
+      },
+      "canonical_name": "Pitkin Kids Pond",
+      "lat": 38.612164,
+      "lng": -106.504628,
+      "county": "Gunnison",
+      "location_type": "Pond",
+      "property_name": null,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Low",
+      "family_friendly": "No",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "stocked_description": "No",
+      "atlas_name": "Pitkin Kids Pond",
+      "alternate_name": null,
+      "atlas_layer": null,
+      "atlas_data_source": "reviewed-manual-override",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-771-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Pitkin Kids Pond",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "c1ee42d301bb44859b75fbc2",
           "stocking_date": "2026-06-05",
@@ -94408,44 +94452,12 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 9,
       "archive_event_count": 9,
       "archive_first_date": "2018-06-15",
       "archive_last_date": "2026-06-05",
-      "species": [
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Pitkin Kids Pond",
-      "lat": 38.612164,
-      "lng": -106.504628,
-      "county": "Gunnison",
-      "location_type": "Pond",
-      "property_name": null,
-      "boating": "None",
-      "access_ease": "Easy",
-      "fishing_pressure": "Low",
-      "family_friendly": "No",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "stocked_description": "No",
-      "atlas_name": "Pitkin Kids Pond",
-      "alternate_name": null,
-      "atlas_layer": null,
-      "atlas_data_source": "reviewed-manual-override",
-      "atlas_errors": [],
-      "match_method": "manual-override",
-      "match_score": 1.0,
       "watercode": "91746",
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
-      "species_watercode": "91746",
-      "stocking_name_aliases": [
-        "Pitkin Kids Pond"
-      ]
+      "species_watercode": "91746"
     },
     {
       "key": "atlas-watercode-23406",
@@ -94495,11 +94507,12 @@
     {
       "key": "atlas-124",
       "atlas_id": 124,
-      "name": "Continental Reservoir",
-      "normalized_name": "continental reservoir",
-      "atlas_url": "http://ndismaps.nrel.colostate.edu/index.html?app=FishingAtlas&keyword=fspot&value=124",
-      "latest_report_date": "2023-08-25",
+      "name": "Platoro Reservoir",
+      "normalized_name": "platoro reservoir",
+      "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=124",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2023-08-25",
         "2023-07-21",
         "2019-08-21",
@@ -94526,7 +94539,58 @@
         "2015-06-30",
         "2015-06-16"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 26,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow",
+        "Trout: Splake"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=124"
+        ],
+        "errors": []
+      },
+      "lat": 37.33756240559339,
+      "lng": -106.5681036911177,
+      "watercode": "91758",
+      "atlas_name": "Platoro Reservoir",
+      "alternate_name": "Platoro Reservoir",
+      "property_name": "Rio Grande National Forest",
+      "county": "Conejos",
+      "location_type": "Water Body",
+      "elevation_ft": 9975,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout and Sub-catchables",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Platoro Reservoir+\"Conejos County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//37.3376,-106.5681",
+      "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-124-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Platoro Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "9fbe87dfd218dc47877cb538",
           "stocking_date": "2023-08-25",
@@ -94703,50 +94767,9 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 25,
       "archive_event_count": 25,
       "archive_first_date": "2015-06-16",
       "archive_last_date": "2023-08-25",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow",
-        "Trout: Splake"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Platoro Reservoir",
-      "lat": 37.33756240559339,
-      "lng": -106.5681036911177,
-      "watercode": "91758",
-      "atlas_name": "Platoro Reservoir",
-      "alternate_name": "Platoro Reservoir",
-      "property_name": "Rio Grande National Forest",
-      "county": "Conejos",
-      "location_type": "Water Body",
-      "elevation_ft": 9975,
-      "boating": "Motor boats",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout and Sub-catchables",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Platoro Reservoir+\"Conejos County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//37.3376,-106.5681",
-      "property_url": "https://www.fs.usda.gov/activity/riogrande/recreation/fishing",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91758"
     },
@@ -95507,8 +95530,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91796",
       "stocking_name_aliases": [
-        "POTHOLE LAKE #1 (LOWER)",
-        "Pothole Lake #1 (Lower)"
+        "Pothole Lake #1 (Lower)",
+        "POTHOLE LAKE #1 (LOWER)"
       ]
     },
     {
@@ -96529,8 +96552,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79675",
       "stocking_name_aliases": [
-        "PROSPECT LAKE",
-        "Prospect Lake"
+        "Prospect Lake",
+        "PROSPECT LAKE"
       ]
     },
     {
@@ -97845,8 +97868,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82595",
       "stocking_name_aliases": [
-        "Pueblo West Pond",
-        "PUEBLO WEST POND"
+        "PUEBLO WEST POND",
+        "Pueblo West Pond"
       ]
     },
     {
@@ -97930,11 +97953,12 @@
     {
       "key": "atlas-1606",
       "atlas_id": 1606,
-      "name": "QUARTZ CREEK",
+      "name": "Quartz Creek",
       "normalized_name": "quartz creek",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1606",
-      "latest_report_date": "2026-06-19",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2026-06-19",
         "2025-08-01",
         "2023-06-23",
@@ -97953,7 +97977,56 @@
         "2015-07-28",
         "2015-06-30"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 18,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1606"
+        ],
+        "errors": []
+      },
+      "lat": 38.61124107367126,
+      "lng": -106.50165201183599,
+      "watercode": "42262",
+      "atlas_name": "Quartz Creek",
+      "alternate_name": "Quartz Creek",
+      "property_name": "Gunnison National Forest",
+      "county": "Gunnison",
+      "location_type": "Stream or River",
+      "elevation_ft": 9323,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Low",
+      "family_friendly": "No",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Quartz Creek+\"Gunnison County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//38.6112,-106.5017",
+      "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-1606-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Quartz Creek",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "7cb587427e822734a896c4bb",
           "stocking_date": "2026-06-19",
@@ -98074,54 +98147,11 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 17,
       "archive_event_count": 17,
       "archive_first_date": "2015-06-30",
       "archive_last_date": "2026-06-19",
-      "species": [
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Quartz Creek",
-      "lat": 38.61124107367126,
-      "lng": -106.50165201183599,
-      "watercode": "42262",
-      "atlas_name": "Quartz Creek",
-      "alternate_name": "Quartz Creek",
-      "property_name": "Gunnison National Forest",
-      "county": "Gunnison",
-      "location_type": "Stream or River",
-      "elevation_ft": 9323,
-      "boating": "None",
-      "access_ease": "Easy",
-      "fishing_pressure": "Low",
-      "family_friendly": "No",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Quartz Creek+\"Gunnison County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//38.6112,-106.5017",
-      "property_url": "https://www.fs.usda.gov/activity/gmug/recreation/fishing",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
-      "species_watercode": "42262",
-      "stocking_name_aliases": [
-        "Quartz Creek",
-        "QUARTZ CREEK"
-      ]
+      "species_watercode": "42262"
     },
     {
       "key": "atlas-218",
@@ -99357,8 +99387,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79942",
       "stocking_name_aliases": [
-        "Rampart Reservoir",
-        "RAMPART RESERVOIR"
+        "RAMPART RESERVOIR",
+        "Rampart Reservoir"
       ]
     },
     {
@@ -101528,11 +101558,12 @@
     {
       "key": "atlas-423",
       "atlas_id": 423,
-      "name": "RIFLE GAP RESERVOIR",
+      "name": "Rifle Gap Reservoir",
       "normalized_name": "rifle gap reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=423",
-      "latest_report_date": "2025-09-05",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2025-09-05",
         "2025-08-01",
         "2024-09-17",
@@ -101581,7 +101612,62 @@
         "2015-10-27",
         "2015-08-04"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 48,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Bass: Smallmouth",
+        "Crappie: Black",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Pike: Northern",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=423"
+        ],
+        "errors": []
+      },
+      "lat": 39.63216015426101,
+      "lng": -107.76365292649061,
+      "watercode": "69422",
+      "atlas_name": "Rifle Gap Reservoir",
+      "alternate_name": "Rifle Gap Reservoir",
+      "property_name": "Rifle Gap State Park",
+      "county": "Garfield",
+      "location_type": "Water Body",
+      "elevation_ft": 5963,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "High",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout and Warmwater",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Rifle Gap Reservoir+\"Garfield County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//39.6347,-107.7353",
+      "property_url": "https://cpw.state.co.us/placestogo/Parks/riflegap",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-423-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Rifle Gap Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "2bf2dbacee10a16c84acbd18",
           "stocking_date": "2025-09-05",
@@ -101912,54 +101998,9 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 47,
       "archive_event_count": 47,
       "archive_first_date": "2015-08-04",
       "archive_last_date": "2025-09-05",
-      "species": [
-        "Bass: Smallmouth",
-        "Crappie: Black",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Pike: Northern",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Rifle Gap Reservoir",
-      "lat": 39.63216015426101,
-      "lng": -107.76365292649061,
-      "watercode": "69422",
-      "atlas_name": "Rifle Gap Reservoir",
-      "alternate_name": "Rifle Gap Reservoir",
-      "property_name": "Rifle Gap State Park",
-      "county": "Garfield",
-      "location_type": "Water Body",
-      "elevation_ft": 5963,
-      "boating": "Motor boats",
-      "access_ease": "Easy",
-      "fishing_pressure": "High",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "Yes",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout and Warmwater",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Rifle Gap Reservoir+\"Garfield County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//39.6347,-107.7353",
-      "property_url": "https://cpw.state.co.us/placestogo/Parks/riflegap",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "69422"
     },
@@ -103220,8 +103261,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "61301",
       "stocking_name_aliases": [
-        "Riverside Park Lake",
-        "RIVERSIDE PARK LAKE"
+        "RIVERSIDE PARK LAKE",
+        "Riverside Park Lake"
       ]
     },
     {
@@ -104092,8 +104133,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "90285",
       "stocking_name_aliases": [
-        "Riverway Pond",
-        "RIVERWAY POND"
+        "RIVERWAY POND",
+        "Riverway Pond"
       ]
     },
     {
@@ -106467,11 +106508,12 @@
     {
       "key": "atlas-486",
       "atlas_id": 486,
-      "name": "RUEDI RESERVOIR",
+      "name": "Ruedi Reservoir",
       "normalized_name": "ruedi reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=486",
-      "latest_report_date": "2025-09-26",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2025-09-26",
         "2025-09-05",
         "2025-08-15",
@@ -106534,7 +106576,59 @@
         "2015-08-04",
         "2015-06-02"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 62,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Perch: Yellow",
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Lake",
+        "Trout: Mountain Whitefish",
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=486"
+        ],
+        "errors": []
+      },
+      "lat": 39.36566658926559,
+      "lng": -106.79839014515483,
+      "watercode": "69535",
+      "atlas_name": "Ruedi Reservoir",
+      "alternate_name": "Ruedi Reservoir",
+      "property_name": "White River National Forest",
+      "county": "Pitkin",
+      "location_type": "Water Body",
+      "elevation_ft": 7771,
+      "boating": "Motor boats",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout and Sub-catchables",
+      "survey_url": "https://cpw.state.co.us/thingstodo/Fishery%20Survey%20Summaries/RuediReservoir.pdf",
+      "driving_url": "https://www.google.com/maps/dir//39.3657,-106.7984",
+      "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-486-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Ruedi Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "1b3f3bc0f106db0867444f77",
           "stocking_date": "2025-09-26",
@@ -106963,51 +107057,9 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 61,
       "archive_event_count": 61,
       "archive_first_date": "2015-06-02",
       "archive_last_date": "2025-09-26",
-      "species": [
-        "Perch: Yellow",
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Lake",
-        "Trout: Mountain Whitefish",
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Ruedi Reservoir",
-      "lat": 39.36566658926559,
-      "lng": -106.79839014515483,
-      "watercode": "69535",
-      "atlas_name": "Ruedi Reservoir",
-      "alternate_name": "Ruedi Reservoir",
-      "property_name": "White River National Forest",
-      "county": "Pitkin",
-      "location_type": "Water Body",
-      "elevation_ft": 7771,
-      "boating": "Motor boats",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "Yes",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout and Sub-catchables",
-      "survey_url": "https://cpw.state.co.us/thingstodo/Fishery%20Survey%20Summaries/RuediReservoir.pdf",
-      "driving_url": "https://www.google.com/maps/dir//39.3657,-106.7984",
-      "property_url": "https://www.fs.usda.gov/activity/whiteriver/recreation/fishing",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "69535"
     },
@@ -110031,8 +110083,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82191",
       "stocking_name_aliases": [
-        "SANDS LAKE",
-        "Sands Lake"
+        "Sands Lake",
+        "SANDS LAKE"
       ]
     },
     {
@@ -111630,8 +111682,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53644",
       "stocking_name_aliases": [
-        "Severance City Pond",
-        "SEVERANCE CITY POND"
+        "SEVERANCE CITY POND",
+        "Severance City Pond"
       ]
     },
     {
@@ -114924,8 +114976,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "70019",
       "stocking_name_aliases": [
-        "SLEEPYCAT PONDS",
-        "Sleepycat ponds"
+        "Sleepycat ponds",
+        "SLEEPYCAT PONDS"
       ]
     },
     {
@@ -115205,8 +115257,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53493",
       "stocking_name_aliases": [
-        "SLOANS LAKE",
-        "Sloans Lake"
+        "Sloans Lake",
+        "SLOANS LAKE"
       ]
     },
     {
@@ -116837,8 +116889,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82228",
       "stocking_name_aliases": [
-        "QUAIL LAKE",
-        "Quail Lake"
+        "Quail Lake",
+        "QUAIL LAKE"
       ]
     },
     {
@@ -117061,8 +117113,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "60210",
       "stocking_name_aliases": [
-        "EAGLEWATCH LAKE",
-        "Eaglewatch Lake"
+        "Eaglewatch Lake",
+        "EAGLEWATCH LAKE"
       ]
     },
     {
@@ -125547,8 +125599,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56691",
       "stocking_name_aliases": [
-        "Tiago Lake",
-        "TIAGO LAKE"
+        "TIAGO LAKE",
+        "Tiago Lake"
       ]
     },
     {
@@ -127086,8 +127138,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81517",
       "stocking_name_aliases": [
-        "TRINIDAD CENTRAL PARK LAKE",
-        "Trinidad Central Park Lake"
+        "Trinidad Central Park Lake",
+        "TRINIDAD CENTRAL PARK LAKE"
       ]
     },
     {
@@ -128740,8 +128792,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81226",
       "stocking_name_aliases": [
-        "TURKS POND",
-        "Turks Pond"
+        "Turks Pond",
+        "TURKS POND"
       ]
     },
     {
@@ -129089,8 +129141,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "80010",
       "stocking_name_aliases": [
-        "TURQUOISE LAKE",
-        "Turquoise Lake"
+        "Turquoise Lake",
+        "TURQUOISE LAKE"
       ]
     },
     {
@@ -132310,8 +132362,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53582",
       "stocking_name_aliases": [
-        "VIELE LAKE",
-        "Viele Lake"
+        "Viele Lake",
+        "VIELE LAKE"
       ]
     },
     {
@@ -132830,8 +132882,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56919",
       "stocking_name_aliases": [
-        "WAILERS POND",
-        "Wailers Pond"
+        "Wailers Pond",
+        "WAILERS POND"
       ]
     },
     {
@@ -133365,8 +133417,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81656",
       "stocking_name_aliases": [
-        "WALSENBURG KIDS POND",
-        "Walsenburg Kids Pond"
+        "Walsenburg Kids Pond",
+        "WALSENBURG KIDS POND"
       ]
     },
     {
@@ -133816,8 +133868,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "92976",
       "stocking_name_aliases": [
-        "WARD CREEK RESERVOIR",
-        "Ward Creek Reservoir"
+        "Ward Creek Reservoir",
+        "WARD CREEK RESERVOIR"
       ]
     },
     {
@@ -134244,8 +134296,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "70730",
       "stocking_name_aliases": [
-        "Water Dog Reservoir",
-        "WATER DOG RESERVOIR"
+        "WATER DOG RESERVOIR",
+        "Water Dog Reservoir"
       ]
     },
     {
@@ -137019,11 +137071,12 @@
     {
       "key": "atlas-853",
       "atlas_id": 853,
-      "name": "WILLOW CREEK RESERVOIR",
-      "normalized_name": "willow creek reservoir",
+      "name": "Willow Creek Res",
+      "normalized_name": "willow creek res",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=853",
-      "latest_report_date": "2026-06-12",
+      "latest_report_date": "2026-08-14",
       "stocking_dates": [
+        "2026-08-14",
         "2026-06-12",
         "2025-10-31",
         "2025-10-24",
@@ -137058,7 +137111,56 @@
         "2015-05-19",
         "2015-05-05"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 34,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=853"
+        ],
+        "errors": []
+      },
+      "lat": 40.14714092253551,
+      "lng": -105.94995383335569,
+      "watercode": "70956",
+      "atlas_name": "Willow Creek Reservoir",
+      "alternate_name": "Willow Creek Reservoir",
+      "property_name": "Arapaho NRA",
+      "county": "Grand",
+      "location_type": "Water Body",
+      "elevation_ft": 8134,
+      "boating": "Non-motorized",
+      "access_ease": "Easy",
+      "fishing_pressure": "Medium",
+      "family_friendly": "Yes",
+      "rustic": "No",
+      "ice_fishing": "Yes",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout and Sub-catchables",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Willow Creek Reservoir+\"Grand County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//40.1471,-105.95",
+      "property_url": "https://www.fs.usda.gov/activity/arp/recreation/fishing",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-853-2026-08-14",
+          "stocking_date": "2026-08-14",
+          "water_name": "Willow Creek Res",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "238244a5fe0ee683a5a51c6e",
           "stocking_date": "2026-06-12",
@@ -137291,54 +137393,11 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 33,
       "archive_event_count": 33,
       "archive_first_date": "2015-05-05",
       "archive_last_date": "2026-06-12",
-      "species": [
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Willow Creek Reservoir",
-      "lat": 40.14714092253551,
-      "lng": -105.94995383335569,
-      "watercode": "70956",
-      "atlas_name": "Willow Creek Reservoir",
-      "alternate_name": "Willow Creek Reservoir",
-      "property_name": "Arapaho NRA",
-      "county": "Grand",
-      "location_type": "Water Body",
-      "elevation_ft": 8134,
-      "boating": "Non-motorized",
-      "access_ease": "Easy",
-      "fishing_pressure": "Medium",
-      "family_friendly": "Yes",
-      "rustic": "No",
-      "ice_fishing": "Yes",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout and Sub-catchables",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Willow Creek Reservoir+\"Grand County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//40.1471,-105.95",
-      "property_url": "https://www.fs.usda.gov/activity/arp/recreation/fishing",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
-      "species_watercode": "70956",
-      "stocking_name_aliases": [
-        "WILLOW CREEK RESERVOIR",
-        "Willow Creek Reservoir"
-      ]
+      "species_watercode": "70956"
     },
     {
       "key": "atlas-765",
