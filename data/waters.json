@@ -1,26 +1,26 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-08-22T14:05:47.218590+00:00",
+  "generated_at": "2026-08-29T13:40:01.867242+00:00",
   "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
   "summary": {
-    "stocking_events": 9985,
-    "unique_atlas_ids": 29,
+    "stocking_events": 9990,
+    "unique_atlas_ids": 30,
     "matched_waters": 1193,
     "unmatched_events": 0,
-    "historical_events": 9985,
-    "new_historical_events": 19,
-    "latest_report_date": "2026-08-21",
+    "historical_events": 9990,
+    "new_historical_events": 5,
+    "latest_report_date": "2026-08-28",
     "latest_report_events": 5,
     "latest_report_unique_waters": 5,
     "waters_with_species": 370,
     "unique_species": 34,
-    "current_report_events": 37,
+    "current_report_events": 42,
     "archive_events": 9948,
     "archive_events_matched": 8653,
     "stocking_history_waters": 589,
     "unmapped_stocking_waters": 92,
     "archive_unique_atlas_ids": 522,
-    "archive_only_waters_added": 342,
+    "archive_only_waters_added": 341,
     "archive_unresolved_waters": 151,
     "archive_unmatched_names": 270,
     "archive_ambiguous_names": 0,
@@ -4853,8 +4853,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "88333",
       "stocking_name_aliases": [
-        "Alexander Lake",
-        "ALEXANDER LAKE"
+        "ALEXANDER LAKE",
+        "Alexander Lake"
       ]
     },
     {
@@ -9445,8 +9445,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "59976",
       "stocking_name_aliases": [
-        "ARVADA RESERVOIR",
-        "Arvada Reservoir"
+        "Arvada Reservoir",
+        "ARVADA RESERVOIR"
       ]
     },
     {
@@ -11213,8 +11213,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53772",
       "stocking_name_aliases": [
-        "BARKER RESERVOIR",
-        "Barker Reservoir"
+        "Barker Reservoir",
+        "BARKER RESERVOIR"
       ]
     },
     {
@@ -11702,8 +11702,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53796",
       "stocking_name_aliases": [
-        "Barr Lake",
-        "BARR LAKE"
+        "BARR LAKE",
+        "Barr Lake"
       ]
     },
     {
@@ -13740,8 +13740,9 @@
       "name": "Beaver Creek Reservoir",
       "normalized_name": "beaver creek reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=396",
-      "latest_report_date": "2026-08-21",
+      "latest_report_date": "2026-08-28",
       "stocking_dates": [
+        "2026-08-28",
         "2026-08-21",
         "2026-08-14",
         "2026-08-07",
@@ -13792,8 +13793,8 @@
         "2017-06-23",
         "2017-04-18"
       ],
-      "current_event_count": 3,
-      "historical_event_count": 49,
+      "current_event_count": 4,
+      "historical_event_count": 50,
       "match_method": "manual-override",
       "match_score": 1.0,
       "species": [
@@ -13831,6 +13832,12 @@
       "atlas_data_source": "reviewed-manual-override",
       "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-396-2026-08-28",
+          "stocking_date": "2026-08-28",
+          "water_name": "Beaver Creek Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "current-396-2026-08-21",
           "stocking_date": "2026-08-21",
@@ -14874,8 +14881,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82026",
       "stocking_name_aliases": [
-        "Beckwith Reservoir",
-        "BECKWITH RESERVOIR"
+        "BECKWITH RESERVOIR",
+        "Beckwith Reservoir"
       ]
     },
     {
@@ -15237,8 +15244,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53936",
       "stocking_name_aliases": [
-        "BELLAIRE LAKE",
-        "Bellaire Lake"
+        "Bellaire Lake",
+        "BELLAIRE LAKE"
       ]
     },
     {
@@ -15550,8 +15557,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "52427",
       "stocking_name_aliases": [
-        "BERKELEY LAKE",
-        "Berkeley Lake"
+        "Berkeley Lake",
+        "BERKELEY LAKE"
       ]
     },
     {
@@ -16318,8 +16325,9 @@
       "name": "Big Meadows Reservoir",
       "normalized_name": "big meadows reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=545",
-      "latest_report_date": "2026-08-21",
+      "latest_report_date": "2026-08-28",
       "stocking_dates": [
+        "2026-08-28",
         "2026-08-21",
         "2026-08-07",
         "2025-10-31",
@@ -16377,8 +16385,8 @@
         "2015-06-16",
         "2015-05-19"
       ],
-      "current_event_count": 2,
-      "historical_event_count": 56,
+      "current_event_count": 3,
+      "historical_event_count": 57,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -16421,6 +16429,12 @@
       "atlas_data_source": "network",
       "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-545-2026-08-28",
+          "stocking_date": "2026-08-28",
+          "water_name": "Big Meadows Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "current-545-2026-08-21",
           "stocking_date": "2026-08-21",
@@ -17471,8 +17485,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "57679",
       "stocking_name_aliases": [
-        "Bittersweet Lake",
-        "BITTERSWEET LAKE"
+        "BITTERSWEET LAKE",
+        "Bittersweet Lake"
       ]
     },
     {
@@ -21796,8 +21810,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79409",
       "stocking_name_aliases": [
-        "Brush Hollow Reservoir",
-        "BRUSH HOLLOW RESERVOIR"
+        "BRUSH HOLLOW RESERVOIR",
+        "Brush Hollow Reservoir"
       ]
     },
     {
@@ -22361,8 +22375,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81492",
       "stocking_name_aliases": [
-        "Buena Vista Kids Pond",
-        "BUENA VISTA KIDS POND"
+        "BUENA VISTA KIDS POND",
+        "Buena Vista Kids Pond"
       ]
     },
     {
@@ -23491,8 +23505,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "65676",
       "stocking_name_aliases": [
-        "CAMP HALE POND",
-        "Camp Hale pond"
+        "Camp Hale pond",
+        "CAMP HALE POND"
       ]
     },
     {
@@ -26186,8 +26200,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "57100",
       "stocking_name_aliases": [
-        "Centennial Park Lake",
-        "CENTENNIAL PARK LAKE"
+        "CENTENNIAL PARK LAKE",
+        "Centennial Park Lake"
       ]
     },
     {
@@ -26662,8 +26676,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81909",
       "stocking_name_aliases": [
-        "CHALK CREEK LAKE",
-        "Chalk Creek Lake"
+        "Chalk Creek Lake",
+        "CHALK CREEK LAKE"
       ]
     },
     {
@@ -26946,8 +26960,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "54281",
       "stocking_name_aliases": [
-        "CHAMBERS LAKE",
-        "Chambers Lake"
+        "Chambers Lake",
+        "CHAMBERS LAKE"
       ]
     },
     {
@@ -28286,8 +28300,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "52580",
       "stocking_name_aliases": [
-        "CHERRY CREEK RESERVOIR",
-        "Cherry Creek Reservoir"
+        "Cherry Creek Reservoir",
+        "CHERRY CREEK RESERVOIR"
       ]
     },
     {
@@ -32891,8 +32905,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "97736",
       "stocking_name_aliases": [
-        "CONFLUENCE LAKE",
-        "Confluence Lake"
+        "Confluence Lake",
+        "CONFLUENCE LAKE"
       ]
     },
     {
@@ -42050,8 +42064,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "54673",
       "stocking_name_aliases": [
-        "DOWDY LAKE",
-        "Dowdy Lake"
+        "Dowdy Lake",
+        "DOWDY LAKE"
       ]
     },
     {
@@ -44005,8 +44019,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "54712",
       "stocking_name_aliases": [
-        "Echo Lake",
-        "ECHO LAKE"
+        "ECHO LAKE",
+        "Echo Lake"
       ]
     },
     {
@@ -46569,8 +46583,8 @@
       "species_watercode": "54825",
       "stocking_name_aliases": [
         "Evergreen Lake",
-        "Evergreen Reservoir",
-        "EVERGREEN RESERVOIR"
+        "EVERGREEN RESERVOIR",
+        "Evergreen Reservoir"
       ]
     },
     {
@@ -49783,8 +49797,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79853",
       "stocking_name_aliases": [
-        "FRANTZ LAKE",
-        "Frantz Lake"
+        "Frantz Lake",
+        "FRANTZ LAKE"
       ]
     },
     {
@@ -50913,8 +50927,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "66731",
       "stocking_name_aliases": [
-        "FRUITA RESERVOIR #3",
-        "Fruita Reservoir #3"
+        "Fruita Reservoir #3",
+        "FRUITA RESERVOIR #3"
       ]
     },
     {
@@ -51948,8 +51962,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56970",
       "stocking_name_aliases": [
-        "Georgetown Lake",
-        "GEORGETOWN LAKE"
+        "GEORGETOWN LAKE",
+        "Georgetown Lake"
       ]
     },
     {
@@ -53116,8 +53130,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "72582",
       "stocking_name_aliases": [
-        "GRANBY CITY POND",
-        "Granby City pond"
+        "Granby City pond",
+        "GRANBY CITY POND"
       ]
     },
     {
@@ -54457,8 +54471,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82711",
       "stocking_name_aliases": [
-        "GREEN MOUNTAIN FALLS LAKE",
-        "Green Mountain Falls Lake"
+        "Green Mountain Falls Lake",
+        "GREEN MOUNTAIN FALLS LAKE"
       ]
     },
     {
@@ -55874,8 +55888,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "72722",
       "stocking_name_aliases": [
-        "GYPSUM PONDS",
-        "Gypsum Ponds"
+        "Gypsum Ponds",
+        "GYPSUM PONDS"
       ]
     },
     {
@@ -56086,8 +56100,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "67151",
       "stocking_name_aliases": [
-        "Hahns Peak Lake",
-        "HAHNS PEAK LAKE"
+        "HAHNS PEAK LAKE",
+        "Hahns Peak Lake"
       ]
     },
     {
@@ -60066,8 +60080,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79803",
       "stocking_name_aliases": [
-        "Horseshoe Reservoir",
-        "HORSESHOE RESERVOIR"
+        "HORSESHOE RESERVOIR",
+        "Horseshoe Reservoir"
       ]
     },
     {
@@ -60915,8 +60929,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "74283",
       "stocking_name_aliases": [
-        "HUDSON TOWN POND",
-        "Hudson Town Pond"
+        "Hudson Town Pond",
+        "HUDSON TOWN POND"
       ]
     },
     {
@@ -63760,8 +63774,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "90720",
       "stocking_name_aliases": [
-        "Jackson Gulch Reservoir",
-        "JACKSON GULCH RESERVOIR"
+        "JACKSON GULCH RESERVOIR",
+        "Jackson Gulch Reservoir"
       ]
     },
     {
@@ -65290,8 +65304,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "90756",
       "stocking_name_aliases": [
-        "Joe Moore Reservoir",
-        "JOE MOORE RESERVOIR"
+        "JOE MOORE RESERVOIR",
+        "Joe Moore Reservoir"
       ]
     },
     {
@@ -71183,8 +71197,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81579",
       "stocking_name_aliases": [
-        "Las Animas Pond",
-        "LAS ANIMAS POND"
+        "LAS ANIMAS POND",
+        "Las Animas Pond"
       ]
     },
     {
@@ -73747,8 +73761,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91075",
       "stocking_name_aliases": [
-        "Lost Lake Slough",
-        "LOST LAKE SLOUGH"
+        "LOST LAKE SLOUGH",
+        "Lost Lake Slough"
       ]
     },
     {
@@ -75470,8 +75484,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79839",
       "stocking_name_aliases": [
-        "Manitou Reservoir",
-        "MANITOU RESERVOIR"
+        "MANITOU RESERVOIR",
+        "Manitou Reservoir"
       ]
     },
     {
@@ -76066,8 +76080,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "68266",
       "stocking_name_aliases": [
-        "MAROON LAKE",
-        "Maroon Lake"
+        "Maroon Lake",
+        "MAROON LAKE"
       ]
     },
     {
@@ -81183,8 +81197,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91304",
       "stocking_name_aliases": [
-        "MIX LAKE",
-        "Mix Lake"
+        "Mix Lake",
+        "MIX LAKE"
       ]
     },
     {
@@ -84857,8 +84871,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "68836",
       "stocking_name_aliases": [
-        "NEVERSWEAT RESERVOIR",
-        "Neversweat Reservoir"
+        "Neversweat Reservoir",
+        "NEVERSWEAT RESERVOIR"
       ]
     },
     {
@@ -86781,8 +86795,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "61476",
       "stocking_name_aliases": [
-        "North Lake Park Pond",
-        "NORTH LAKE PARK POND"
+        "NORTH LAKE PARK POND",
+        "North Lake Park Pond"
       ]
     },
     {
@@ -89590,8 +89604,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79649",
       "stocking_name_aliases": [
-        "ORDWAY RESERVOIR",
-        "Ordway Reservoir"
+        "Ordway Reservoir",
+        "ORDWAY RESERVOIR"
       ]
     },
     {
@@ -91373,8 +91387,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "73166",
       "stocking_name_aliases": [
-        "Parachute Pond",
-        "PARACHUTE POND"
+        "PARACHUTE POND",
+        "Parachute Pond"
       ]
     },
     {
@@ -91976,8 +91990,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "91671",
       "stocking_name_aliases": [
-        "Pastorius Reservoir",
-        "PASTORIUS RESERVOIR"
+        "PASTORIUS RESERVOIR",
+        "Pastorius Reservoir"
       ]
     },
     {
@@ -92247,8 +92261,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81506",
       "stocking_name_aliases": [
-        "PATHFINDER PARK POND",
-        "Pathfinder Park Pond"
+        "Pathfinder Park Pond",
+        "PATHFINDER PARK POND"
       ]
     },
     {
@@ -92618,8 +92632,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "94025",
       "stocking_name_aliases": [
-        "PERICLES POND",
-        "Pericles Pond"
+        "Pericles Pond",
+        "PERICLES POND"
       ]
     },
     {
@@ -95721,8 +95735,8 @@
       "boating": "Motor boats",
       "stocked_description": "No",
       "stocking_name_aliases": [
-        "Pothole Lake #2 (upper)",
-        "Pothole Lake #2 (Upper)"
+        "Pothole Lake #2 (Upper)",
+        "Pothole Lake #2 (upper)"
       ]
     },
     {
@@ -97081,8 +97095,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81606",
       "stocking_name_aliases": [
-        "Pueblo City Park Lake",
-        "PUEBLO CITY PARK LAKE"
+        "PUEBLO CITY PARK LAKE",
+        "Pueblo City Park Lake"
       ]
     },
     {
@@ -97868,8 +97882,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82595",
       "stocking_name_aliases": [
-        "PUEBLO WEST POND",
-        "Pueblo West Pond"
+        "Pueblo West Pond",
+        "PUEBLO WEST POND"
       ]
     },
     {
@@ -99387,8 +99401,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79942",
       "stocking_name_aliases": [
-        "RAMPART RESERVOIR",
-        "Rampart Reservoir"
+        "Rampart Reservoir",
+        "RAMPART RESERVOIR"
       ]
     },
     {
@@ -103261,8 +103275,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "61301",
       "stocking_name_aliases": [
-        "RIVERSIDE PARK LAKE",
-        "Riverside Park Lake"
+        "Riverside Park Lake",
+        "RIVERSIDE PARK LAKE"
       ]
     },
     {
@@ -104133,8 +104147,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "90285",
       "stocking_name_aliases": [
-        "RIVERWAY POND",
-        "Riverway Pond"
+        "Riverway Pond",
+        "RIVERWAY POND"
       ]
     },
     {
@@ -105346,8 +105360,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "59053",
       "stocking_name_aliases": [
-        "ROBERTS LAKE",
-        "Roberts Lake"
+        "Roberts Lake",
+        "ROBERTS LAKE"
       ]
     },
     {
@@ -105958,11 +105972,12 @@
     {
       "key": "atlas-640",
       "atlas_id": 640,
-      "name": "ROSEMONT RESERVOIR",
+      "name": "Rosemont Reservoir",
       "normalized_name": "rosemont reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=640",
-      "latest_report_date": "2025-09-05",
+      "latest_report_date": "2026-08-28",
       "stocking_dates": [
+        "2026-08-28",
         "2025-09-05",
         "2025-08-15",
         "2024-05-30",
@@ -106003,7 +106018,58 @@
         "2015-06-30",
         "2015-06-23"
       ],
+      "current_event_count": 1,
+      "historical_event_count": 41,
+      "match_method": "atlas-id",
+      "match_score": 1.0,
+      "species": [
+        "Trout: Cutbow",
+        "Trout: Cutthroat",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat",
+        "Trout: Splake"
+      ],
+      "species_status": "available",
+      "species_source_layer": 2,
+      "atlas_species_metadata": {
+        "fields_examined": [],
+        "detail_urls": [
+          "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=640"
+        ],
+        "errors": []
+      },
+      "lat": 38.72769720159136,
+      "lng": -104.96037836804413,
+      "watercode": "82608",
+      "atlas_name": "Rosemont Reservoir",
+      "alternate_name": "Rosemont Reservoir",
+      "property_name": "Rosemont Reservoir SWA",
+      "county": "Teller",
+      "location_type": "Water Body",
+      "elevation_ft": 9659,
+      "boating": "None",
+      "access_ease": "Medium",
+      "fishing_pressure": "Medium",
+      "family_friendly": "No",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "stocked_description": "Catchable trout and Sub-catchables",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Rosemont Reservoir+\"Teller County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//38.7306,-104.9502",
+      "property_url": "https://cpw.state.co.us/swa/Rosemont%20Reservoir%20SWA",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "atlas_layer": 59,
+      "atlas_data_source": "network",
+      "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-640-2026-08-28",
+          "stocking_date": "2026-08-28",
+          "water_name": "Rosemont Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "c084974243444a91a5f2900a",
           "stocking_date": "2025-09-05",
@@ -106285,50 +106351,9 @@
           "source_kind": "archive"
         }
       ],
-      "current_event_count": 0,
-      "historical_event_count": 40,
       "archive_event_count": 40,
       "archive_first_date": "2015-06-23",
       "archive_last_date": "2025-09-05",
-      "species": [
-        "Trout: Cutbow",
-        "Trout: Cutthroat",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat",
-        "Trout: Splake"
-      ],
-      "species_status": "available",
-      "atlas_species_metadata": {
-        "note": "Species enrichment is deferred until the water appears in a current report."
-      },
-      "canonical_name": "Rosemont Reservoir",
-      "lat": 38.72769720159136,
-      "lng": -104.96037836804413,
-      "watercode": "82608",
-      "atlas_name": "Rosemont Reservoir",
-      "alternate_name": "Rosemont Reservoir",
-      "property_name": "Rosemont Reservoir SWA",
-      "county": "Teller",
-      "location_type": "Water Body",
-      "elevation_ft": 9659,
-      "boating": "None",
-      "access_ease": "Medium",
-      "fishing_pressure": "Medium",
-      "family_friendly": "No",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "stocked_description": "Catchable trout and Sub-catchables",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Rosemont Reservoir+\"Teller County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//38.7306,-104.9502",
-      "property_url": "https://cpw.state.co.us/swa/Rosemont%20Reservoir%20SWA",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "atlas_layer": 59,
-      "atlas_data_source": "cache-fresh",
-      "atlas_errors": [],
-      "match_method": "atlas-id",
-      "match_score": 1.0,
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82608"
     },
@@ -107832,8 +107857,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "79714",
       "stocking_name_aliases": [
-        "Runyon Lake",
-        "RUNYON LAKE"
+        "RUNYON LAKE",
+        "Runyon Lake"
       ]
     },
     {
@@ -108799,8 +108824,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "42919",
       "stocking_name_aliases": [
-        "San Juan River #2",
-        "SAN JUAN RIVER #2"
+        "SAN JUAN RIVER #2",
+        "San Juan River #2"
       ]
     },
     {
@@ -110083,8 +110108,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82191",
       "stocking_name_aliases": [
-        "Sands Lake",
-        "SANDS LAKE"
+        "SANDS LAKE",
+        "Sands Lake"
       ]
     },
     {
@@ -111298,8 +111323,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81180",
       "stocking_name_aliases": [
-        "Schryver Park Pond",
-        "SCHRYVER PARK POND"
+        "SCHRYVER PARK POND",
+        "Schryver Park Pond"
       ]
     },
     {
@@ -111682,8 +111707,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53644",
       "stocking_name_aliases": [
-        "SEVERANCE CITY POND",
-        "Severance City Pond"
+        "Severance City Pond",
+        "SEVERANCE CITY POND"
       ]
     },
     {
@@ -111991,8 +112016,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56425",
       "stocking_name_aliases": [
-        "SEYMOUR RESERVOIR",
-        "Seymour Reservoir"
+        "Seymour Reservoir",
+        "SEYMOUR RESERVOIR"
       ]
     },
     {
@@ -112543,8 +112568,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "96548",
       "stocking_name_aliases": [
-        "SHAVANO POND",
-        "Shavano Pond"
+        "Shavano Pond",
+        "SHAVANO POND"
       ]
     },
     {
@@ -113157,8 +113182,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "52768",
       "stocking_name_aliases": [
-        "SHELDON LAKE",
-        "Sheldon Lake"
+        "Sheldon Lake",
+        "SHELDON LAKE"
       ]
     },
     {
@@ -115257,8 +115282,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53493",
       "stocking_name_aliases": [
-        "Sloans Lake",
-        "SLOANS LAKE"
+        "SLOANS LAKE",
+        "Sloans Lake"
       ]
     },
     {
@@ -116889,8 +116914,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "82228",
       "stocking_name_aliases": [
-        "Quail Lake",
-        "QUAIL LAKE"
+        "QUAIL LAKE",
+        "Quail Lake"
       ]
     },
     {
@@ -117113,8 +117138,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "60210",
       "stocking_name_aliases": [
-        "Eaglewatch Lake",
-        "EAGLEWATCH LAKE"
+        "EAGLEWATCH LAKE",
+        "Eaglewatch Lake"
       ]
     },
     {
@@ -120664,8 +120689,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53532",
       "stocking_name_aliases": [
-        "STANDLEY LAKE",
-        "Standley Lake"
+        "Standley Lake",
+        "STANDLEY LAKE"
       ]
     },
     {
@@ -122816,8 +122841,9 @@
       "name": "Taylor Reservoir",
       "normalized_name": "taylor reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=104",
-      "latest_report_date": "2026-08-07",
+      "latest_report_date": "2026-08-28",
       "stocking_dates": [
+        "2026-08-28",
         "2026-08-07",
         "2026-06-26",
         "2026-05-29",
@@ -122930,8 +122956,8 @@
         "2015-05-26",
         "2015-05-19"
       ],
-      "current_event_count": 1,
-      "historical_event_count": 111,
+      "current_event_count": 2,
+      "historical_event_count": 112,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -122976,6 +123002,12 @@
       "atlas_data_source": "network",
       "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-104-2026-08-28",
+          "stocking_date": "2026-08-28",
+          "water_name": "Taylor Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "current-104-2026-08-07",
           "stocking_date": "2026-08-07",
@@ -124316,8 +124348,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "92534",
       "stocking_name_aliases": [
-        "TELLURIDE KIDS POND",
-        "Telluride Kids Pond"
+        "Telluride Kids Pond",
+        "TELLURIDE KIDS POND"
       ]
     },
     {
@@ -125599,8 +125631,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56691",
       "stocking_name_aliases": [
-        "TIAGO LAKE",
-        "Tiago Lake"
+        "Tiago Lake",
+        "TIAGO LAKE"
       ]
     },
     {
@@ -127138,8 +127170,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81517",
       "stocking_name_aliases": [
-        "Trinidad Central Park Lake",
-        "TRINIDAD CENTRAL PARK LAKE"
+        "TRINIDAD CENTRAL PARK LAKE",
+        "Trinidad Central Park Lake"
       ]
     },
     {
@@ -127631,8 +127663,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81911",
       "stocking_name_aliases": [
-        "Trinidad Reservoir",
-        "TRINIDAD RESERVOIR"
+        "TRINIDAD RESERVOIR",
+        "Trinidad Reservoir"
       ]
     },
     {
@@ -128792,8 +128824,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81226",
       "stocking_name_aliases": [
-        "Turks Pond",
-        "TURKS POND"
+        "TURKS POND",
+        "Turks Pond"
       ]
     },
     {
@@ -131252,8 +131284,9 @@
       "name": "Vallecito Reservoir",
       "normalized_name": "vallecito reservoir",
       "atlas_url": "http://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=421",
-      "latest_report_date": "2026-08-14",
+      "latest_report_date": "2026-08-28",
       "stocking_dates": [
+        "2026-08-28",
         "2026-08-14",
         "2026-08-07",
         "2025-09-05",
@@ -131325,8 +131358,8 @@
         "2015-10-13",
         "2015-09-29"
       ],
-      "current_event_count": 2,
-      "historical_event_count": 70,
+      "current_event_count": 3,
+      "historical_event_count": 71,
       "match_method": "atlas-id",
       "match_score": 1.0,
       "species": [
@@ -131373,6 +131406,12 @@
       "atlas_data_source": "network",
       "atlas_errors": [],
       "stocking_events": [
+        {
+          "event_id": "current-421-2026-08-28",
+          "stocking_date": "2026-08-28",
+          "water_name": "Vallecito Reservoir",
+          "source_kind": "current-report"
+        },
         {
           "event_id": "current-421-2026-08-14",
           "stocking_date": "2026-08-14",
@@ -132362,8 +132401,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53582",
       "stocking_name_aliases": [
-        "Viele Lake",
-        "VIELE LAKE"
+        "VIELE LAKE",
+        "Viele Lake"
       ]
     },
     {
@@ -132882,8 +132921,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "56919",
       "stocking_name_aliases": [
-        "Wailers Pond",
-        "WAILERS POND"
+        "WAILERS POND",
+        "Wailers Pond"
       ]
     },
     {
@@ -133417,8 +133456,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "81656",
       "stocking_name_aliases": [
-        "Walsenburg Kids Pond",
-        "WALSENBURG KIDS POND"
+        "WALSENBURG KIDS POND",
+        "Walsenburg Kids Pond"
       ]
     },
     {
@@ -133868,8 +133907,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "92976",
       "stocking_name_aliases": [
-        "Ward Creek Reservoir",
-        "WARD CREEK RESERVOIR"
+        "WARD CREEK RESERVOIR",
+        "Ward Creek Reservoir"
       ]
     },
     {
@@ -134296,8 +134335,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "70730",
       "stocking_name_aliases": [
-        "WATER DOG RESERVOIR",
-        "Water Dog Reservoir"
+        "Water Dog Reservoir",
+        "WATER DOG RESERVOIR"
       ]
     },
     {
@@ -134850,8 +134889,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "93031",
       "stocking_name_aliases": [
-        "WEIR AND JOHNSON RESERVOIR",
-        "Weir and Johnson Reservoir"
+        "Weir and Johnson Reservoir",
+        "WEIR AND JOHNSON RESERVOIR"
       ]
     },
     {
@@ -137734,8 +137773,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "70982",
       "stocking_name_aliases": [
-        "WILMOR POND",
-        "Wilmor Pond"
+        "Wilmor Pond",
+        "WILMOR POND"
       ]
     },
     {
@@ -138119,8 +138158,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "53645",
       "stocking_name_aliases": [
-        "Windsor Reservoir",
-        "WINDSOR RESERVOIR"
+        "WINDSOR RESERVOIR",
+        "Windsor Reservoir"
       ]
     },
     {
@@ -139201,8 +139240,8 @@
       "species_data_source": "Colorado Fishing Atlas IdentifyFishingPlacesDB.aspx",
       "species_watercode": "83128",
       "stocking_name_aliases": [
-        "Wrights Lake",
-        "WRIGHTS LAKE"
+        "WRIGHTS LAKE",
+        "Wrights Lake"
       ]
     },
     {

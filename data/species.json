@@ -1,9 +1,68 @@
 {
-  "generated_at": "2026-08-22T14:05:47.218590+00:00",
+  "generated_at": "2026-08-29T13:40:01.867242+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
   "waters_with_species": [
+    {
+      "atlas_id": 421,
+      "watercode": "92902",
+      "name": "Vallecito Reservoir",
+      "species": [
+        "Bass: Smallmouth",
+        "Perch: Walleye",
+        "Pike: Northern",
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 104,
+      "watercode": "92510",
+      "name": "Taylor Reservoir",
+      "species": [
+        "Pike: Northern",
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 640,
+      "watercode": "82608",
+      "name": "Rosemont Reservoir",
+      "species": [
+        "Trout: Cutbow",
+        "Trout: Cutthroat",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat",
+        "Trout: Splake"
+      ]
+    },
+    {
+      "atlas_id": 545,
+      "watercode": "88597",
+      "name": "Big Meadows Reservoir",
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 396,
+      "watercode": "88511",
+      "name": "Beaver Creek Reservoir",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
     {
       "atlas_id": 201,
       "watercode": "71926",
@@ -41,47 +100,12 @@
       ]
     },
     {
-      "atlas_id": 545,
-      "watercode": "88597",
-      "name": "Big Meadows Reservoir",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutthroat",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 396,
-      "watercode": "88511",
-      "name": "Beaver Creek Reservoir",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 853,
       "watercode": "70956",
       "name": "Willow Creek Res",
       "species": [
         "Trout: Brown",
         "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 421,
-      "watercode": "92902",
-      "name": "Vallecito Reservoir",
-      "species": [
-        "Bass: Smallmouth",
-        "Perch: Walleye",
-        "Pike: Northern",
-        "Salmon: Kokanee",
-        "Trout: Brook",
-        "Trout: Brown",
         "Trout: Rainbow"
       ]
     },
@@ -218,18 +242,6 @@
       "watercode": "96722",
       "name": "Tincup Pond",
       "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 104,
-      "watercode": "92510",
-      "name": "Taylor Reservoir",
-      "species": [
-        "Pike: Northern",
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Lake",
         "Trout: Rainbow"
       ]
     },
@@ -1749,18 +1761,6 @@
       "name": "SCHRYVER PARK POND",
       "species": [
         "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 640,
-      "watercode": "82608",
-      "name": "ROSEMONT RESERVOIR",
-      "species": [
-        "Trout: Cutbow",
-        "Trout: Cutthroat",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat",
-        "Trout: Splake"
       ]
     },
     {
