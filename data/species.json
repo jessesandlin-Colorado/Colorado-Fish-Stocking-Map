@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T13:40:01.867242+00:00",
+  "generated_at": "2026-09-03T02:23:41.796823+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
@@ -19,6 +19,32 @@
       ]
     },
     {
+      "atlas_id": 593,
+      "watercode": "56831",
+      "name": "Urad Mine Lake",
+      "species": [
+        "Trout: Brook",
+        "Trout: Rainbow",
+        "Trout: Tiger"
+      ]
+    },
+    {
+      "atlas_id": 513,
+      "watercode": "56691",
+      "name": "Tiago Lake",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 150,
+      "watercode": "56653",
+      "name": "Teal Lake",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 104,
       "watercode": "92510",
       "name": "Taylor Reservoir",
@@ -27,6 +53,14 @@
         "Salmon: Kokanee",
         "Trout: Brown",
         "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 249,
+      "watercode": "57807",
+      "name": "Slough Pond",
+      "species": [
         "Trout: Rainbow"
       ]
     },
@@ -40,6 +74,14 @@
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat",
         "Trout: Splake"
+      ]
+    },
+    {
+      "atlas_id": 248,
+      "watercode": "57819",
+      "name": "Kriley Pond",
+      "species": [
+        "Trout: Rainbow"
       ]
     },
     {
@@ -1720,29 +1762,11 @@
       ]
     },
     {
-      "atlas_id": 150,
-      "watercode": "56653",
-      "name": "Browns Creek",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 3,
       "watercode": "65119",
       "name": "BEAVER LAKE",
       "species": [
         "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 593,
-      "watercode": "56831",
-      "name": "URAD MINE LAKE",
-      "species": [
-        "Trout: Brook",
-        "Trout: Rainbow",
-        "Trout: Tiger"
       ]
     },
     {
@@ -1831,30 +1855,6 @@
         "Trout: Lake",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 513,
-      "watercode": "56691",
-      "name": "TIAGO LAKE",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 249,
-      "watercode": "57807",
-      "name": "SLOUGH POND",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 248,
-      "watercode": "57819",
-      "name": "KRILEY POND",
-      "species": [
-        "Trout: Rainbow"
       ]
     },
     {
