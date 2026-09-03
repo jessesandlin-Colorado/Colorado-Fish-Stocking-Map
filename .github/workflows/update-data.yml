@@ -1,6 +1,7 @@
 name: Refresh CPW data
 
 on:
+  # Use workflow_dispatch for an out-of-cycle refresh so the run starts from current main.
   workflow_dispatch:
   push:
     paths:
