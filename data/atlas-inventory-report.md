@@ -1,6 +1,6 @@
 # Colorado Fishing Atlas inventory comparison
 
-Generated: 2026-09-03T02:28:36.859007+00:00
+Generated: 2026-09-05T16:19:51.254787+00:00
 
 ## Executive summary
 
