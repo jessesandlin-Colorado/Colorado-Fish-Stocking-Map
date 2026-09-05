@@ -1,6 +1,7 @@
 (() => {
   const mobile = window.matchMedia('(max-width: 820px)');
   const standalone = () => window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  const nativeApp = () => Boolean(window.Capacitor?.isNativePlatform?.());
   const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
   let installPrompt = null;
 
@@ -16,7 +17,7 @@
   }
 
   function installCard() {
-    if (!mobile.matches || standalone()) return;
+    if (!mobile.matches || standalone() || nativeApp()) return;
     const intro = document.querySelector('.mobile-app-intro');
     if (!intro || intro.querySelector('.pwa-install-card')) return;
     const card = document.createElement('section');
