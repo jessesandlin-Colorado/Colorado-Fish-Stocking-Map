@@ -336,5 +336,18 @@
     "critical_findings": 0,
     "warning_findings": 0,
     "status": "success"
+  },
+  {
+    "run_id": "6f47a7ff6ef4",
+    "generated_at": "2026-09-19T17:08:24.810135+00:00",
+    "source_url": "https://cpw.state.co.us/activities/fishing/fishing-awards-and-records/fish-stocking-report",
+    "rows_downloaded": 24,
+    "new_events_added": 24,
+    "historical_events_total": 177,
+    "matched_unique_waters": 22,
+    "unmatched_events": 2,
+    "critical_findings": 0,
+    "warning_findings": 1,
+    "status": "success-with-warnings"
   }
 ]
