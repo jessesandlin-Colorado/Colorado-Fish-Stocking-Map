@@ -43,7 +43,9 @@ jobs:
           restore-keys: |
             atlas-cache-${{ runner.os }}-
       - name: Snapshot curated water identities
-        run: cp data/waters.json .cache/prior-waters.json
+        run: |
+          mkdir -p .cache
+          cp data/waters.json .cache/prior-waters.json
       - name: Check whether the 2026 archive needs a one-time import
         id: archive_check
         shell: bash
