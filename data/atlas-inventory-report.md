@@ -1,15 +1,15 @@
 # Colorado Fishing Atlas inventory comparison
 
-Generated: 2026-09-19T17:33:10.250918+00:00
+Generated: 2026-09-26T17:29:38.453753+00:00
 
 ## Executive summary
 
 - **1,287** visible Atlas fishing-point records were retrieved.
 - They represent **1,201 unique WATERCODEs** after duplicate consolidation.
-- **345** Atlas WATERCODEs are already represented in the project.
-- **856** Atlas WATERCODEs are not represented in the project's stocking-derived group.
-- Project coverage is **28.7%** of the Atlas inventory by WATERCODE.
-- **843** Atlas-only waters are provisionally rated high or medium priority for import.
+- **344** Atlas WATERCODEs are already represented in the project.
+- **857** Atlas WATERCODEs are not represented in the project's stocking-derived group.
+- Project coverage is **28.6%** of the Atlas inventory by WATERCODE.
+- **844** Atlas-only waters are provisionally rated high or medium priority for import.
 - **0** Atlas records lack a WATERCODE and require separate manual review.
 
 > "Atlas-only" means no matching WATERCODE was found in the project's 2014-present stocking-derived dataset. It should be labeled **Stocking history unknown / no project stocking record found**, not "never stocked."
@@ -19,13 +19,13 @@ Generated: 2026-09-19T17:33:10.250918+00:00
 | Classification | Count |
 |---|---:|
 | exclude/private-review | 13 |
-| import-high-priority | 843 |
+| import-high-priority | 844 |
 
 ## Fishery classifications
 
 | Classification | Count |
 |---|---:|
-| Coldwater | 591 |
+| Coldwater | 592 |
 | Mixed coldwater/warmwater | 35 |
 | Warmwater | 230 |
 
@@ -34,7 +34,7 @@ Generated: 2026-09-19T17:33:10.250918+00:00
 | Classification | Count |
 |---|---:|
 | private-indicated | 13 |
-| public-indicated | 843 |
+| public-indicated | 844 |
 
 Access classifications are screening indicators only. Users must still verify legal access, closures, and regulations with CPW and the land manager.
 
@@ -43,7 +43,7 @@ Access classifications are screening indicators only. Users must still verify le
 | Classification | Count |
 |---|---:|
 | Stream or River | 309 |
-| Water Body | 547 |
+| Water Body | 548 |
 
 ## Suggested import policy
 

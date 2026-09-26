@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T17:33:10.250918+00:00",
+  "generated_at": "2026-09-26T17:29:38.453753+00:00",
   "sources": {
     "atlas_inventory": "https://ndismaps.nrel.colostate.edu/arcgis/rest/services/FishingAtlas/FishingAtlas_Data/MapServer/2/query",
     "atlas_species": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
@@ -13,33 +13,33 @@
     "score": "0-100 transparent heuristic favoring official species, sportfish, public/access indicators, survey links, and family/access attributes; private indicators are penalized."
   },
   "summary": {
-    "generated_at": "2026-09-19T17:33:10.250918+00:00",
+    "generated_at": "2026-09-26T17:29:38.453753+00:00",
     "atlas_feature_records": 1287,
     "atlas_unique_watercodes": 1201,
-    "project_waters": 797,
-    "project_unique_watercodes": 347,
-    "atlas_watercodes_already_in_project": 345,
-    "atlas_only_unique_watercodes": 856,
+    "project_waters": 796,
+    "project_unique_watercodes": 346,
+    "atlas_watercodes_already_in_project": 344,
+    "atlas_only_unique_watercodes": 857,
     "atlas_records_without_watercode": 0,
     "duplicate_watercode_groups": 50,
     "species_lookup_failures": 0,
-    "project_coverage_of_atlas_percent": 28.7,
+    "project_coverage_of_atlas_percent": 28.6,
     "recommendations": {
       "exclude/private-review": 13,
-      "import-high-priority": 843
+      "import-high-priority": 844
     },
     "water_types": {
       "Stream or River": 309,
-      "Water Body": 547
+      "Water Body": 548
     },
     "fishery_types": {
-      "Coldwater": 591,
+      "Coldwater": 592,
       "Mixed coldwater/warmwater": 35,
       "Warmwater": 230
     },
     "access_classes": {
       "private-indicated": 13,
-      "public-indicated": 843
+      "public-indicated": 844
     },
     "top_counties": {
       "Boulder": 92,
@@ -59,9 +59,9 @@
       "Jackson": 22,
       "Arapahoe": 21,
       "Hinsdale": 16,
+      "Rio Blanco": 15,
       "Routt": 15,
-      "Douglas": 15,
-      "Lake": 14
+      "Douglas": 15
     },
     "top_species": {
       "Trout: Cutthroat": 313,
@@ -99,7 +99,8 @@
       "Drum: Freshwater": 5,
       "Trout: Golden": 5,
       "Bass: Striped": 1,
-      "Catfish: Yellow Bullhead": 1
+      "Catfish: Yellow Bullhead": 1,
+      "Trout: Unspecified": 1
     }
   },
   "atlas_only_waters": [
@@ -24733,6 +24734,55 @@
       "duplicate_atlas_records": 0,
       "species": [
         "Trout: Brook"
+      ],
+      "species_error": null,
+      "access_class": "public-indicated",
+      "access_basis": "Public-land/property indicator or official property URL is present",
+      "fishery_type": "Coldwater",
+      "import_score": 82,
+      "score_reasons": [
+        "official species list",
+        "sportfish present",
+        "public access indicated",
+        "easy access",
+        "survey/report available",
+        "driving link available"
+      ],
+      "recommendation": "import-high-priority",
+      "stocking_status": "no-project-stocking-record-found"
+    },
+    {
+      "objectid": 710,
+      "atlas_id": 1769,
+      "watercode": "73626",
+      "name": "Scenery Pond",
+      "alternate_name": "Scenery Pond",
+      "property_name": "Colorow Mountain State Wildlife Area",
+      "county": "Rio Blanco",
+      "location_type": "Water Body",
+      "lat": 40.16556032103874,
+      "lng": -108.11561011045545,
+      "elevation_ft": 6616,
+      "boating": "None",
+      "access_ease": "Easy",
+      "fishing_pressure": "Low",
+      "family_friendly": "No",
+      "rustic": "No",
+      "ice_fishing": "No",
+      "accessible_pier": "No",
+      "atlas_stocked_description": "No",
+      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Scenery Pond+\"Rio Blanco County\"+Colorado",
+      "driving_url": "https://www.google.com/maps/dir//40.1656,-108.1156",
+      "property_url": "https://cpw.state.co.us/swa/Colorow%20Mountain%20SWA",
+      "gold_medal": false,
+      "special_opportunity": null,
+      "show": 1,
+      "noshow_reason": null,
+      "quality": null,
+      "spot_url": "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1769",
+      "duplicate_atlas_records": 0,
+      "species": [
+        "Trout: Unspecified"
       ],
       "species_error": null,
       "access_class": "public-indicated",
@@ -50165,37 +50215,6 @@
       "noshow_reason": "Confirmed public - Town of Rangely",
       "quality": null,
       "spot_url": "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=832",
-      "duplicate_atlas_records": 0
-    },
-    {
-      "objectid": 710,
-      "atlas_id": 1769,
-      "watercode": "73626",
-      "name": "Scenery Pond",
-      "alternate_name": "Scenery Pond",
-      "property_name": "Colorow Mountain State Wildlife Area",
-      "county": "Rio Blanco",
-      "location_type": "Water Body",
-      "lat": 40.16556032103874,
-      "lng": -108.11561011045545,
-      "elevation_ft": 6616,
-      "boating": "None",
-      "access_ease": "Easy",
-      "fishing_pressure": "Low",
-      "family_friendly": "No",
-      "rustic": "No",
-      "ice_fishing": "No",
-      "accessible_pier": "No",
-      "atlas_stocked_description": "No",
-      "survey_url": "https://www.google.com/search?q=\"fishing report\"+Scenery Pond+\"Rio Blanco County\"+Colorado",
-      "driving_url": "https://www.google.com/maps/dir//40.1656,-108.1156",
-      "property_url": "https://cpw.state.co.us/swa/Colorow%20Mountain%20SWA",
-      "gold_medal": false,
-      "special_opportunity": null,
-      "show": 1,
-      "noshow_reason": null,
-      "quality": null,
-      "spot_url": "https://ndismaps.nrel.colostate.edu/fishingatlas/index.aspx?keyword=fspot&value=1769",
       "duplicate_atlas_records": 0
     },
     {

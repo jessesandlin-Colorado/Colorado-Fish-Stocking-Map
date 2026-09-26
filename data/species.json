@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T17:28:44.809137+00:00",
+  "generated_at": "2026-09-26T17:24:40.805941+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
@@ -76,14 +76,6 @@
       "name": "Sleepycat Pond",
       "species": [
         "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1769,
-      "watercode": "73626",
-      "name": "Scenery Pond",
-      "species": [
-        "Trout: Unspecified"
       ]
     },
     {
