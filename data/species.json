@@ -1,9 +1,85 @@
 {
-  "generated_at": "2026-09-26T17:24:40.805941+00:00",
+  "generated_at": "2026-10-03T17:34:38.025639+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
   "waters_with_species": [
+    {
+      "atlas_id": 380,
+      "watercode": "79409",
+      "name": "Brush Hollow Reservoir",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Walleye",
+        "Sunfish: Green",
+        "Trout: Cutbow",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 203,
+      "watercode": "96548",
+      "name": "Shavano Pond",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 62,
+      "watercode": "96695",
+      "name": "Ridgway Reservoir",
+      "species": [
+        "Bass: Smallmouth",
+        "Perch: Yellow",
+        "Salmon: Kokanee",
+        "Sunfish: Green",
+        "Trout: Brown",
+        "Trout: Rainbow",
+        "Trout: Splake"
+      ]
+    },
+    {
+      "atlas_id": 204,
+      "watercode": "94025",
+      "name": "Pericles Pond",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 176,
+      "watercode": "79839",
+      "name": "Manitou Reservoir",
+      "species": [
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 545,
+      "watercode": "88597",
+      "name": "Big Meadows Reservoir",
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutthroat",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 396,
+      "watercode": "88511",
+      "name": "Beaver Creek Reservoir",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
     {
       "atlas_id": 823,
       "watercode": "54506",
@@ -71,11 +147,58 @@
       ]
     },
     {
+      "atlas_id": 201,
+      "watercode": "71926",
+      "name": "Fetcher City Pond",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 18,
+      "watercode": "65723",
+      "name": "Casey Pond",
+      "species": [
+        "Pike: Northern",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 739,
+      "watercode": "80212",
+      "name": "Blue Lake",
+      "species": [
+        "Trout: Brook",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 397,
+      "watercode": "53974",
+      "name": "Big Creek Lake Lower",
+      "species": [
+        "Pike: Tiger Muskie",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 663,
       "watercode": "70019",
       "name": "Sleepycat Pond",
       "species": [
         "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1769,
+      "watercode": "73626",
+      "name": "Scenery Pond",
+      "species": [
+        "Trout: Unspecified"
       ]
     },
     {
@@ -844,17 +967,6 @@
       ]
     },
     {
-      "atlas_id": 396,
-      "watercode": "88511",
-      "name": "Beaver Creek Reservoir",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brook",
-        "Trout: Brown",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 805,
       "watercode": "81799",
       "name": "BLACK HOLE AT TWO BUTTES",
@@ -864,30 +976,6 @@
         "Sunfish: Bluegill",
         "Sunfish: Green",
         "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 545,
-      "watercode": "88597",
-      "name": "BIG MEADOWS RESERVOIR",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutthroat",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 62,
-      "watercode": "96695",
-      "name": "Arkansas River",
-      "species": [
-        "Bass: Smallmouth",
-        "Perch: Yellow",
-        "Salmon: Kokanee",
-        "Sunfish: Green",
-        "Trout: Brown",
-        "Trout: Rainbow",
-        "Trout: Splake"
       ]
     },
     {
@@ -1123,15 +1211,6 @@
       ]
     },
     {
-      "atlas_id": 176,
-      "watercode": "79839",
-      "name": "MANITOU RESERVOIR",
-      "species": [
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 434,
       "watercode": "68153",
       "name": "MACK MESA LAKE",
@@ -1343,22 +1422,6 @@
       ]
     },
     {
-      "atlas_id": 380,
-      "watercode": "79409",
-      "name": "BRUSH HOLLOW RESERVOIR",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Walleye",
-        "Sunfish: Green",
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
       "atlas_id": 542,
       "watercode": "82026",
       "name": "BECKWITH RESERVOIR",
@@ -1482,22 +1545,6 @@
       ]
     },
     {
-      "atlas_id": 203,
-      "watercode": "96548",
-      "name": "SHAVANO POND",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 204,
-      "watercode": "94025",
-      "name": "PERICLES POND",
-      "species": [
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 415,
       "watercode": "79865",
       "name": "MONUMENT RESERVOIR",
@@ -1530,16 +1577,6 @@
       "species": [
         "Bass: Largemouth",
         "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 739,
-      "watercode": "80212",
-      "name": "BLUE LAKE",
-      "species": [
-        "Trout: Brook",
-        "Trout: Cutbow",
         "Trout: Rainbow"
       ]
     },
@@ -1603,14 +1640,6 @@
         "Trout: Cutthroat",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 201,
-      "watercode": "71926",
-      "name": "FETCHER CITY POND",
-      "species": [
-        "Trout: Rainbow"
       ]
     },
     {
@@ -1856,15 +1885,6 @@
       ]
     },
     {
-      "atlas_id": 18,
-      "watercode": "65723",
-      "name": "CASEY POND",
-      "species": [
-        "Pike: Northern",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 763,
       "watercode": "81492",
       "name": "BUENA VISTA KIDS POND",
@@ -1872,18 +1892,6 @@
         "Trout: Cutbow",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 397,
-      "watercode": "53974",
-      "name": "BIG CREEK LAKE LOWER",
-      "species": [
-        "Pike: Tiger Muskie",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Lake",
-        "Trout: Rainbow"
       ]
     },
     {
