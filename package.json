@@ -1,0 +1,33 @@
+{
+  "name": "cofish-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Native iOS and Android packaging for COFish",
+  "scripts": {
+    "mobile:prepare": "node scripts/prepare_mobile_web.mjs",
+    "mobile:sync": "npm run mobile:prepare && cap sync",
+    "mobile:add:ios": "npm run mobile:prepare && cap add ios && node scripts/configure_native_projects.mjs ios",
+    "mobile:add:android": "npm run mobile:prepare && cap add android && node scripts/configure_native_projects.mjs android",
+    "mobile:open:ios": "npm run mobile:sync && cap open ios",
+    "mobile:open:android": "npm run mobile:sync && cap open android",
+    "mobile:doctor": "cap doctor"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.0",
+    "@capacitor/app": "8.1.1",
+    "@capacitor/core": "8.5.0",
+    "@capacitor/geolocation": "8.2.0",
+    "@capacitor/ios": "8.5.0",
+    "@capacitor/share": "8.0.1",
+    "@capacitor/splash-screen": "8.0.2",
+    "@capacitor/status-bar": "8.0.3",
+    "leaflet": "1.9.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
