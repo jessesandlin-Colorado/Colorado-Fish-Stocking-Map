@@ -3,15 +3,15 @@
 This is a conservative second-pass review of waters absent by WATERCODE from the stocking-derived project.
 Name and coordinate matching is used to catch likely aliases; access classifications remain screening decisions, not legal determinations.
 
-- Atlas-only records reviewed: **856**
-- Public import candidates: **696**
+- Atlas-only records reviewed: **851**
+- Public import candidates: **690**
 
 ## Classification counts
 
 | Classification | Count |
 |---|---:|
-| import-public-confirmed | 696 |
-| hold-likely-existing-water | 149 |
+| import-public-confirmed | 690 |
+| hold-likely-existing-water | 150 |
 | exclude-private-review | 11 |
 
 ## Recommended policy

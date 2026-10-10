@@ -1,13 +1,13 @@
 {
   "archive_events_read": 9948,
-  "archive_events_matched": 8662,
+  "archive_events_matched": 8787,
   "archive_events_matched_by_atlas_id": 9434,
-  "archive_events_matched_by_normalized_name": 52,
+  "archive_events_matched_by_normalized_name": 102,
   "archive_unique_atlas_ids": 522,
-  "existing_live_waters": 33,
-  "archive_only_waters_added": 340,
-  "combined_waters": 789,
-  "unmapped_waters_added": 416,
+  "existing_live_waters": 55,
+  "archive_only_waters_added": 323,
+  "combined_waters": 769,
+  "unmapped_waters_added": 391,
   "archive_events_displayed": 9948,
   "unmatched_names": [
     {
@@ -41,11 +41,6 @@
       "event_count": 1
     },
     {
-      "normalized_name": "anticline lake",
-      "sample_name": "Anticline Lake",
-      "event_count": 5
-    },
-    {
       "normalized_name": "applebaugh pond",
       "sample_name": "Applebaugh Pond",
       "event_count": 1
@@ -54,11 +49,6 @@
       "normalized_name": "arkansas river 3b",
       "sample_name": "Arkansas River #3b",
       "event_count": 4
-    },
-    {
-      "normalized_name": "arvada reservoir",
-      "sample_name": "Arvada Reservoir",
-      "event_count": 3
     },
     {
       "normalized_name": "aurora reservoir",
@@ -83,11 +73,6 @@
     {
       "normalized_name": "bear creek lake",
       "sample_name": "Bear Creek Lake",
-      "event_count": 1
-    },
-    {
-      "normalized_name": "bear creek reservoir",
-      "sample_name": "Bear Creek Reservoir",
       "event_count": 1
     },
     {
@@ -168,11 +153,6 @@
     {
       "normalized_name": "boyd lake",
       "sample_name": "Boyd Lake",
-      "event_count": 2
-    },
-    {
-      "normalized_name": "breeze pond",
-      "sample_name": "Breeze Pond",
       "event_count": 2
     },
     {
@@ -336,11 +316,6 @@
       "event_count": 3
     },
     {
-      "normalized_name": "dillon reservoir",
-      "sample_name": "Dillon Reservoir",
-      "event_count": 2
-    },
-    {
       "normalized_name": "dolores river 4",
       "sample_name": "Dolores River #4",
       "event_count": 1
@@ -406,16 +381,6 @@
       "event_count": 3
     },
     {
-      "normalized_name": "flatiron reservoir",
-      "sample_name": "Flatiron Reservoir",
-      "event_count": 2
-    },
-    {
-      "normalized_name": "fountain lake",
-      "sample_name": "Fountain Lake",
-      "event_count": 3
-    },
-    {
       "normalized_name": "fountian lake",
       "sample_name": "Fountian Lake",
       "event_count": 1
@@ -429,11 +394,6 @@
       "normalized_name": "fraser lions club pond",
       "sample_name": "Fraser Lions Club Pond",
       "event_count": 2
-    },
-    {
-      "normalized_name": "fruita red rocks lake",
-      "sample_name": "Fruita Red Rocks Lake",
-      "event_count": 1
     },
     {
       "normalized_name": "fruita reservoir 3",
@@ -676,11 +636,6 @@
       "event_count": 2
     },
     {
-      "normalized_name": "lon hagler reservoir",
-      "sample_name": "Lon Hagler Reservoir",
-      "event_count": 2
-    },
-    {
       "normalized_name": "lost lake",
       "sample_name": "Lost Lake",
       "event_count": 1
@@ -734,11 +689,6 @@
       "normalized_name": "mckee lake",
       "sample_name": "Mckee Lake",
       "event_count": 2
-    },
-    {
-      "normalized_name": "mcmurry park lake",
-      "sample_name": "McMurry Park Lake",
-      "event_count": 1
     },
     {
       "normalized_name": "mcphee reservoir",
@@ -876,16 +826,6 @@
       "event_count": 2
     },
     {
-      "normalized_name": "pathfinder park pond",
-      "sample_name": "Pathfinder Park Pond",
-      "event_count": 3
-    },
-    {
-      "normalized_name": "pike view reservoir",
-      "sample_name": "Pike View Reservoir",
-      "event_count": 3
-    },
-    {
       "normalized_name": "pine valley",
       "sample_name": "Pine Valley",
       "event_count": 1
@@ -909,11 +849,6 @@
       "normalized_name": "pothole lake 2 upper",
       "sample_name": "Pothole Lake #2 (Upper)",
       "event_count": 2
-    },
-    {
-      "normalized_name": "prospect lake",
-      "sample_name": "Prospect Lake",
-      "event_count": 3
     },
     {
       "normalized_name": "prospect lale",
@@ -944,11 +879,6 @@
       "normalized_name": "purdy mesa reservoir",
       "sample_name": "Purdy Mesa Reservoir",
       "event_count": 1
-    },
-    {
-      "normalized_name": "quail lake",
-      "sample_name": "Quail Lake",
-      "event_count": 3
     },
     {
       "normalized_name": "quartz creek",
@@ -1011,11 +941,6 @@
       "event_count": 3
     },
     {
-      "normalized_name": "runyon lake",
-      "sample_name": "Runyon Lake",
-      "event_count": 7
-    },
-    {
       "normalized_name": "salida hydro pond 2",
       "sample_name": "Salida Hydro Pond #2",
       "event_count": 1
@@ -1049,11 +974,6 @@
       "normalized_name": "schryver park pond",
       "sample_name": "Schryver Park Pond",
       "event_count": 2
-    },
-    {
-      "normalized_name": "severance city pond",
-      "sample_name": "Severance City Pond",
-      "event_count": 1
     },
     {
       "normalized_name": "severence city pond",
@@ -1151,11 +1071,6 @@
       "event_count": 1
     },
     {
-      "normalized_name": "sunset lake",
-      "sample_name": "Sunset Lake",
-      "event_count": 2
-    },
-    {
       "normalized_name": "sylvan lake",
       "sample_name": "Sylvan Lake",
       "event_count": 2
@@ -1174,16 +1089,6 @@
       "normalized_name": "telluride kids pond",
       "sample_name": "Telluride Kids Pond",
       "event_count": 1
-    },
-    {
-      "normalized_name": "thomas reservoir",
-      "sample_name": "Thomas Reservoir",
-      "event_count": 3
-    },
-    {
-      "normalized_name": "thornton gravel lake 2",
-      "sample_name": "Thornton Gravel Lake #2",
-      "event_count": 3
     },
     {
       "normalized_name": "thornton gravel lake 3",
@@ -1380,14 +1285,6 @@
         "Dorothy Lake"
       ],
       "event_count": 3
-    },
-    {
-      "atlas_id": 79,
-      "names": [
-        "FLATIRON RESERVOIR",
-        "Flatiron Reservoir"
-      ],
-      "event_count": 31
     },
     {
       "atlas_id": 81,
@@ -1611,13 +1508,6 @@
       "event_count": 7
     },
     {
-      "atlas_id": 290,
-      "names": [
-        "Golden Gravel Pond #3"
-      ],
-      "event_count": 19
-    },
-    {
       "atlas_id": 293,
       "names": [
         "Golden Gravel Pond #1"
@@ -1693,13 +1583,6 @@
       "event_count": 6
     },
     {
-      "atlas_id": 372,
-      "names": [
-        "McMurry Park Lake"
-      ],
-      "event_count": 3
-    },
-    {
       "atlas_id": 373,
       "names": [
         "AVERY LAKE",
@@ -1746,26 +1629,11 @@
       "event_count": 2
     },
     {
-      "atlas_id": 437,
-      "names": [
-        "Riverbend Pond #2"
-      ],
-      "event_count": 2
-    },
-    {
       "atlas_id": 443,
       "names": [
         "Prospect Pond #2 North"
       ],
       "event_count": 1
-    },
-    {
-      "atlas_id": 444,
-      "names": [
-        "Prospect Pond #3",
-        "Prospect Pond #3 South"
-      ],
-      "event_count": 4
     },
     {
       "atlas_id": 445,
@@ -1878,16 +1746,6 @@
         "North Platte River #B2"
       ],
       "event_count": 1
-    },
-    {
-      "atlas_id": 614,
-      "names": [
-        "SAN MIGUEL RIVER #3",
-        "San Miguel R #3",
-        "San Miguel River",
-        "San Miguel River #3"
-      ],
-      "event_count": 16
     },
     {
       "atlas_id": 617,
