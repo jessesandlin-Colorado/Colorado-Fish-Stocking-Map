@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T18:01:40.142713+00:00",
+  "generated_at": "2026-10-17T16:39:38.030344+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
@@ -49,20 +49,6 @@
         "Bass: Largemouth",
         "Crappie: Black",
         "Perch: Yellow"
-      ]
-    },
-    {
-      "atlas_id": 444,
-      "watercode": "58075",
-      "name": "Prospect Pond #3 South",
-      "species": [
-        "Bass: Largemouth",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Crappie: Unspecified",
-        "Perch: Yellow",
-        "Sunfish: Bluegill"
       ]
     },
     {
@@ -497,6 +483,14 @@
       "name": "Sleepycat Pond",
       "species": [
         "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1769,
+      "watercode": "73626",
+      "name": "Scenery Pond",
+      "species": [
+        "Trout: Unspecified"
       ]
     },
     {

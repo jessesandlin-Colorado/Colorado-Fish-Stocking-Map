@@ -1,6 +1,6 @@
 # Colorado Fishing Atlas inventory comparison
 
-Generated: 2026-10-10T18:06:16.361181+00:00
+Generated: 2026-10-17T16:44:16.364934+00:00
 
 ## Executive summary
 
@@ -25,9 +25,9 @@ Generated: 2026-10-10T18:06:16.361181+00:00
 
 | Classification | Count |
 |---|---:|
-| Coldwater | 590 |
+| Coldwater | 589 |
 | Mixed coldwater/warmwater | 34 |
-| Warmwater | 227 |
+| Warmwater | 228 |
 
 ## Access indicators
 
