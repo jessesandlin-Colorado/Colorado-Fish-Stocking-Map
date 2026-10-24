@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T23:10:10.936349+00:00",
+  "generated_at": "2026-10-24T04:40:05.229100+00:00",
   "source": "Colorado Division of Water Resources HydroBase REST API",
   "source_url": "https://dwr.state.co.us/tools/stations",
   "summary": {
@@ -22,16 +22,12 @@
       "current": {
         "value": 248.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 142.0
-        },
         {
           "date": "2026-09-25",
           "value": 141.0
@@ -164,18 +160,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ARKPUECO"
       },
       "current": {
-        "value": 152.0,
+        "value": 147.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 117.0
-        },
         {
           "date": "2026-09-25",
           "value": 124.0
@@ -308,18 +300,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/DOLDOLCO"
       },
       "current": {
-        "value": 3560.0,
+        "value": 2760.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 138.0
-        },
         {
           "date": "2026-09-25",
           "value": 209.0
@@ -452,18 +440,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/PLACHACO"
       },
       "current": {
-        "value": 0.48,
+        "value": 0.54,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 0.61
-        },
         {
           "date": "2026-09-25",
           "value": 0.66
@@ -598,16 +582,12 @@
       "current": {
         "value": 137.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 214.0
-        },
         {
           "date": "2026-09-25",
           "value": 296.0
@@ -740,18 +720,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/PLAGEOCO"
       },
       "current": {
-        "value": 75.9,
+        "value": 74.5,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 68.8
-        },
         {
           "date": "2026-09-25",
           "value": 68.8
@@ -884,18 +860,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ANIALPCO"
       },
       "current": {
-        "value": 10800.0,
+        "value": 9550.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 756.0
-        },
         {
           "date": "2026-09-25",
           "value": 1480.0
@@ -1028,18 +1000,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/SANPAGCO"
       },
       "current": {
-        "value": 6540.0,
+        "value": 5500.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 253.0
-        },
         {
           "date": "2026-09-25",
           "value": 620.0
@@ -1172,18 +1140,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CLAFTCCO"
       },
       "current": {
-        "value": 48.9,
+        "value": 47.1,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 47.4
-        },
         {
           "date": "2026-09-25",
           "value": 46.4
@@ -1318,16 +1282,12 @@
       "current": {
         "value": 14.3,
         "units": "CFS",
-        "measured_at": "2026-10-23T17:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 23.6
-        },
         {
           "date": "2026-09-25",
           "value": 23.6
@@ -1460,18 +1420,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CLAFTCCO"
       },
       "current": {
-        "value": 48.9,
+        "value": 47.1,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 47.4
-        },
         {
           "date": "2026-09-25",
           "value": 46.4
@@ -1604,18 +1560,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/SLABAXCO"
       },
       "current": {
-        "value": 155.0,
+        "value": 143.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 25.7
-        },
         {
           "date": "2026-09-25",
           "value": 30.5
@@ -1750,16 +1702,12 @@
       "current": {
         "value": 248.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 142.0
-        },
         {
           "date": "2026-09-25",
           "value": 141.0
@@ -1892,18 +1840,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/DOLDOLCO"
       },
       "current": {
-        "value": 3560.0,
+        "value": 2760.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 138.0
-        },
         {
           "date": "2026-09-25",
           "value": 209.0
@@ -2036,18 +1980,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/BLUGRECO"
       },
       "current": {
-        "value": 172.0,
+        "value": 163.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 225.0
-        },
         {
           "date": "2026-09-25",
           "value": 196.0
@@ -2182,16 +2122,12 @@
       "current": {
         "value": 57.4,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 53.9
-        },
         {
           "date": "2026-09-25",
           "value": 53.9
@@ -2326,16 +2262,12 @@
       "current": {
         "value": 1.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T15:00:00-06:00",
+        "measured_at": "2026-10-23T21:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 0.9
-        },
         {
           "date": "2026-09-25",
           "value": 0.93
@@ -2468,18 +2400,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/BOCOROCO"
       },
       "current": {
-        "value": 16.0,
+        "value": 11.8,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 17.2
-        },
         {
           "date": "2026-09-25",
           "value": 17.4
@@ -2612,18 +2540,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/BOCPINCO"
       },
       "current": {
-        "value": 24.5,
+        "value": 23.6,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 24.2
-        },
         {
           "date": "2026-09-25",
           "value": 28.0
@@ -2785,16 +2709,12 @@
       "current": {
         "value": 0.86,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:10:00-06:00",
+        "measured_at": "2026-10-23T21:10:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 0.75
-        },
         {
           "date": "2026-09-25",
           "value": 0.78
@@ -2927,18 +2847,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/PLAGRACO"
       },
       "current": {
-        "value": 143.0,
+        "value": 140.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 226.0
-        },
         {
           "date": "2026-09-25",
           "value": 288.0
@@ -3071,18 +2987,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/LARRIVCO"
       },
       "current": {
-        "value": 22.2,
+        "value": 20.5,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 25.0
-        },
         {
           "date": "2026-09-25",
           "value": 25.0
@@ -3215,18 +3127,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/MICWLDCO"
       },
       "current": {
-        "value": 7.54,
+        "value": 7.24,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 6.45
-        },
         {
           "date": "2026-09-25",
           "value": 6.94
@@ -3359,18 +3267,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/PLAGRACO"
       },
       "current": {
-        "value": 143.0,
+        "value": 140.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 226.0
-        },
         {
           "date": "2026-09-25",
           "value": 288.0
@@ -3503,18 +3407,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CLANSECO"
       },
       "current": {
-        "value": 11.0,
+        "value": 12.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 2.26
-        },
         {
           "date": "2026-09-25",
           "value": 2.39
@@ -3647,18 +3547,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CLANSECO"
       },
       "current": {
-        "value": 11.0,
+        "value": 12.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 2.26
-        },
         {
           "date": "2026-09-25",
           "value": 2.39
@@ -3793,16 +3689,12 @@
       "current": {
         "value": 4.9,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 7.14
-        },
         {
           "date": "2026-09-25",
           "value": 7.32
@@ -3937,16 +3829,12 @@
       "current": {
         "value": 1.1,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 0.58
-        },
         {
           "date": "2026-09-25",
           "value": 0.62
@@ -4081,16 +3969,12 @@
       "current": {
         "value": 0.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 0.18
-        },
         {
           "date": "2026-09-25",
           "value": 0.18
@@ -4223,18 +4107,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/BTNFDRCO"
       },
       "current": {
-        "value": 12.0,
+        "value": 11.5,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 14.9
-        },
         {
           "date": "2026-09-25",
           "value": 16.2
@@ -4421,18 +4301,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/BTNFDRCO"
       },
       "current": {
-        "value": 12.0,
+        "value": 11.5,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 14.9
-        },
         {
           "date": "2026-09-25",
           "value": 16.2
@@ -4567,16 +4443,12 @@
       "current": {
         "value": 1.37,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 1.86
-        },
         {
           "date": "2026-09-25",
           "value": 1.56
@@ -4709,18 +4581,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/BIGUPPCO"
       },
       "current": {
-        "value": 53.8,
+        "value": 29.4,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 11.7
-        },
         {
           "date": "2026-09-25",
           "value": 11.8
@@ -4853,18 +4721,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/BULLCRCO"
       },
       "current": {
-        "value": 3.56,
+        "value": 2.99,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 5.32
-        },
         {
           "date": "2026-09-25",
           "value": 5.44
@@ -4997,18 +4861,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CANNEWCO"
       },
       "current": {
-        "value": 124.0,
+        "value": 120.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 19.6
-        },
         {
           "date": "2026-09-25",
           "value": 20.4
@@ -5168,18 +5028,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/COLGLECO"
       },
       "current": {
-        "value": 1630.0,
+        "value": 1570.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 1270.0
-        },
         {
           "date": "2026-09-25",
           "value": 1380.0
@@ -5312,18 +5168,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/COLDOTCO"
       },
       "current": {
-        "value": 646.0,
+        "value": 653.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 744.0
-        },
         {
           "date": "2026-09-25",
           "value": 762.0
@@ -5456,18 +5308,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/COLBAKCO"
       },
       "current": {
-        "value": 12.6,
+        "value": 12.3,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 12.2
-        },
         {
           "date": "2026-09-25",
           "value": 12.3
@@ -5600,18 +5448,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CRYAVACO"
       },
       "current": {
-        "value": 304.0,
+        "value": 275.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 72.0
-        },
         {
           "date": "2026-09-25",
           "value": 74.8
@@ -5744,18 +5588,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ELKNEWCO"
       },
       "current": {
-        "value": 43.8,
+        "value": 42.6,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 1.46
-        },
         {
           "date": "2026-09-25",
           "value": 1.81
@@ -5888,18 +5728,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ELKMILCO"
       },
       "current": {
-        "value": 104.0,
+        "value": 100.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 79.6
-        },
         {
           "date": "2026-09-25",
           "value": 67.4
@@ -6034,16 +5870,12 @@
       "current": {
         "value": 2.73,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T21:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 6.59
-        },
         {
           "date": "2026-09-25",
           "value": 6.87
@@ -6178,16 +6010,12 @@
       "current": {
         "value": 46.6,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 124.0
-        },
         {
           "date": "2026-09-25",
           "value": 124.0
@@ -6320,18 +6148,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/FRYMERCO"
       },
       "current": {
-        "value": 60.3,
+        "value": 57.5,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 35.7
-        },
         {
           "date": "2026-09-25",
           "value": 35.0
@@ -6466,16 +6290,12 @@
       "current": {
         "value": 9.09,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 3.17
-        },
         {
           "date": "2026-09-25",
           "value": 3.08
@@ -6608,18 +6428,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/KANJUNCO"
       },
       "current": {
-        "value": 53.9,
+        "value": 49.3,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 1.2
-        },
         {
           "date": "2026-09-25",
           "value": 2.94
@@ -6752,18 +6568,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/COLCATCO"
       },
       "current": {
-        "value": 431.0,
+        "value": 428.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 578.0
-        },
         {
           "date": "2026-09-25",
           "value": 563.0
@@ -6896,18 +6708,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/COLKRECO"
       },
       "current": {
-        "value": 405.0,
+        "value": 402.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 566.0
-        },
         {
           "date": "2026-09-25",
           "value": 547.0
@@ -7040,18 +6848,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/COLPARCO"
       },
       "current": {
-        "value": 178.2,
+        "value": 176.1,
         "units": "CFS",
-        "measured_at": "2026-10-23T15:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 271.0
-        },
         {
           "date": "2026-09-25",
           "value": 281.0
@@ -7184,18 +6988,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/NORINLET"
       },
       "current": {
-        "value": 10.11,
+        "value": 10.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 12.5
-        },
         {
           "date": "2026-09-25",
           "value": 12.5
@@ -7328,18 +7128,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ROAGLECO"
       },
       "current": {
-        "value": 864.0,
+        "value": 816.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 435.0
-        },
         {
           "date": "2026-09-25",
           "value": 445.0
@@ -7472,18 +7268,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ROAEMMCO"
       },
       "current": {
-        "value": 292.0,
+        "value": 306.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 254.0
-        },
         {
           "date": "2026-09-25",
           "value": 256.0
@@ -7618,16 +7410,12 @@
       "current": {
         "value": null,
         "units": "CFS",
-        "measured_at": "2026-10-23T17:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": "Ssn"
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 12.9
-        },
         {
           "date": "2026-09-25",
           "value": 13.8
@@ -7756,18 +7544,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/YAMELKCO"
       },
       "current": {
-        "value": 205.0,
+        "value": 202.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 117.0
-        },
         {
           "date": "2026-09-25",
           "value": 112.0
@@ -7900,18 +7684,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/WSDRAVCO"
       },
       "current": {
-        "value": 5.09,
+        "value": 3.78,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 0.0
-        },
         {
           "date": "2026-09-25",
           "value": 0.0
@@ -8044,18 +7824,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/GORUPPCO"
       },
       "current": {
-        "value": 3.51,
+        "value": 3.33,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 3.89
-        },
         {
           "date": "2026-09-25",
           "value": 4.21
@@ -8188,18 +7964,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/PINSTBCO"
       },
       "current": {
-        "value": 10.5,
+        "value": 9.94,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 8.8
-        },
         {
           "date": "2026-09-25",
           "value": 9.05
@@ -8332,18 +8104,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ERIRGRCO"
       },
       "current": {
-        "value": 33.6,
+        "value": 33.3,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 30.7
-        },
         {
           "date": "2026-09-25",
           "value": 31.3
@@ -8478,16 +8246,12 @@
       "current": {
         "value": 1.08,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": "Bkw"
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 42.7
-        },
         {
           "date": "2026-09-25",
           "value": 48.6
@@ -8620,18 +8384,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/FRYIVLCO"
       },
       "current": {
-        "value": 12.5,
+        "value": 11.8,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 10.8
-        },
         {
           "date": "2026-09-25",
           "value": 11.5
@@ -8764,18 +8524,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ARKGRNCO"
       },
       "current": {
-        "value": 92.0,
+        "value": 86.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 89.1
-        },
         {
           "date": "2026-09-25",
           "value": 93.9
@@ -8916,10 +8672,6 @@
         "review_status": "Ssn"
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 3.48
-        },
         {
           "date": "2026-09-25",
           "value": 4.5
@@ -9075,18 +8827,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/HURREDCO"
       },
       "current": {
-        "value": 200.0,
+        "value": 190.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 14.5
-        },
         {
           "date": "2026-09-25",
           "value": 17.1
@@ -9221,16 +8969,12 @@
       "current": {
         "value": 19.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 10.6
-        },
         {
           "date": "2026-09-25",
           "value": 12.0
@@ -9372,10 +9116,6 @@
       },
       "trend": [
         {
-          "date": "2026-09-24",
-          "value": 4.16
-        },
-        {
           "date": "2026-09-25",
           "value": 6.9
         },
@@ -9512,10 +9252,6 @@
       },
       "trend": [
         {
-          "date": "2026-09-24",
-          "value": 77.9
-        },
-        {
           "date": "2026-09-25",
           "value": 79.5
         },
@@ -9565,16 +9301,12 @@
       "current": {
         "value": 87.2,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T22:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 65.3
-        },
         {
           "date": "2026-09-25",
           "value": 65.1
@@ -9716,10 +9448,6 @@
       },
       "trend": [
         {
-          "date": "2026-09-24",
-          "value": 7.41
-        },
-        {
           "date": "2026-09-25",
           "value": 11.2
         },
@@ -9856,10 +9584,6 @@
       },
       "trend": [
         {
-          "date": "2026-09-24",
-          "value": 232.0
-        },
-        {
           "date": "2026-09-25",
           "value": 262.0
         },
@@ -9936,16 +9660,12 @@
       "current": {
         "value": 33.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 11.4
-        },
         {
           "date": "2026-09-25",
           "value": 17.1
@@ -10078,18 +9798,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/ANTABMCO"
       },
       "current": {
-        "value": 335.0,
+        "value": 296.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 50.7
-        },
         {
           "date": "2026-09-25",
           "value": 51.8
@@ -10249,18 +9965,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CIMCIMCO"
       },
       "current": {
-        "value": 23.7,
+        "value": 22.2,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 28.5
-        },
         {
           "date": "2026-09-25",
           "value": 28.9
@@ -10393,18 +10105,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CONMOGCO"
       },
       "current": {
-        "value": 3590.0,
+        "value": 3790.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 176.0
-        },
         {
           "date": "2026-09-25",
           "value": 167.0
@@ -10537,18 +10245,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/CONPLACO"
       },
       "current": {
-        "value": 157.0,
+        "value": 155.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 24.9
-        },
         {
           "date": "2026-09-25",
           "value": 107.0
@@ -10681,18 +10385,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/GUNDELCO"
       },
       "current": {
-        "value": 1920.0,
+        "value": 1540.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 462.0
-        },
         {
           "date": "2026-09-25",
           "value": 483.0
@@ -10825,18 +10525,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/PINAVACO"
       },
       "current": {
-        "value": 2260.0,
+        "value": 1950.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 163.0
-        },
         {
           "date": "2026-09-25",
           "value": 789.0
@@ -10969,18 +10665,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/OHIBALCO"
       },
       "current": {
-        "value": 74.5,
+        "value": 71.6,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 14.2
-        },
         {
           "date": "2026-09-25",
           "value": 25.5
@@ -11113,18 +10805,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/RIODELCO"
       },
       "current": {
-        "value": 10500.0,
+        "value": 9760.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 429.0
-        },
         {
           "date": "2026-09-25",
           "value": 587.0
@@ -11257,18 +10945,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/RIOWAGCO"
       },
       "current": {
-        "value": 4480.0,
+        "value": 3530.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 355.0
-        },
         {
           "date": "2026-09-25",
           "value": 716.0
@@ -11403,16 +11087,12 @@
       "current": {
         "value": 55.2,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 70.0
-        },
         {
           "date": "2026-09-25",
           "value": 70.0
@@ -11547,16 +11227,12 @@
       "current": {
         "value": 202.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 28.7
-        },
         {
           "date": "2026-09-25",
           "value": 34.5
@@ -11689,18 +11365,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/LAJCAPCO"
       },
       "current": {
-        "value": 181.0,
+        "value": 144.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T22:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 7.3
-        },
         {
           "date": "2026-09-25",
           "value": 8.3
@@ -11835,16 +11507,12 @@
       "current": {
         "value": 5.77,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 5.05
-        },
         {
           "date": "2026-09-25",
           "value": 5.04
@@ -11979,16 +11647,12 @@
       "current": {
         "value": 40.9,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:45:00-06:00",
+        "measured_at": "2026-10-23T21:45:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 52.9
-        },
         {
           "date": "2026-09-25",
           "value": 49.7
@@ -12121,18 +11785,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/SMGPLACO"
       },
       "current": {
-        "value": 1100.0,
+        "value": 974.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:05:00-06:00",
+        "measured_at": "2026-10-23T22:05:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 150.0
-        },
         {
           "date": "2026-09-25",
           "value": 207.0
@@ -12265,18 +11925,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/4004260A"
       },
       "current": {
-        "value": 0.88,
+        "value": 0.82,
         "units": "CFS",
-        "measured_at": "2026-10-23T17:00:00-06:00",
+        "measured_at": "2026-10-23T22:00:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 0.93
-        },
         {
           "date": "2026-09-25",
           "value": 0.89
@@ -12409,18 +12065,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/EAGMILCO"
       },
       "current": {
-        "value": 114.0,
+        "value": 116.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:15:00-06:00",
+        "measured_at": "2026-10-23T21:15:00-06:00",
         "parameter": "DISCHRG",
         "flag": "U",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 93.5
-        },
         {
           "date": "2026-09-25",
           "value": 91.6
@@ -12553,18 +12205,14 @@
         "official_url": "https://dwr.state.co.us/Tools/Stations/WHIBUFCO"
       },
       "current": {
-        "value": 284.0,
+        "value": 296.0,
         "units": "CFS",
-        "measured_at": "2026-10-23T16:30:00-06:00",
+        "measured_at": "2026-10-23T21:30:00-06:00",
         "parameter": "DISCHRG",
         "flag": "O",
         "review_status": null
       },
       "trend": [
-        {
-          "date": "2026-09-24",
-          "value": 199.0
-        },
         {
           "date": "2026-09-25",
           "value": 200.0
