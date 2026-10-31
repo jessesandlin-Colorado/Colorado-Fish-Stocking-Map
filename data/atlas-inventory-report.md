@@ -1,15 +1,15 @@
 # Colorado Fishing Atlas inventory comparison
 
-Generated: 2026-10-24T17:16:07.523252+00:00
+Generated: 2026-10-31T18:18:57.242313+00:00
 
 ## Executive summary
 
 - **1,287** visible Atlas fishing-point records were retrieved.
 - They represent **1,201 unique WATERCODEs** after duplicate consolidation.
-- **355** Atlas WATERCODEs are already represented in the project.
-- **846** Atlas WATERCODEs are not represented in the project's stocking-derived group.
-- Project coverage is **29.6%** of the Atlas inventory by WATERCODE.
-- **833** Atlas-only waters are provisionally rated high or medium priority for import.
+- **354** Atlas WATERCODEs are already represented in the project.
+- **847** Atlas WATERCODEs are not represented in the project's stocking-derived group.
+- Project coverage is **29.5%** of the Atlas inventory by WATERCODE.
+- **835** Atlas-only waters are provisionally rated high or medium priority for import.
 - **0** Atlas records lack a WATERCODE and require separate manual review.
 
 > "Atlas-only" means no matching WATERCODE was found in the project's 2014-present stocking-derived dataset. It should be labeled **Stocking history unknown / no project stocking record found**, not "never stocked."
@@ -18,23 +18,23 @@ Generated: 2026-10-24T17:16:07.523252+00:00
 
 | Classification | Count |
 |---|---:|
-| exclude/private-review | 13 |
-| import-high-priority | 833 |
+| exclude/private-review | 12 |
+| import-high-priority | 835 |
 
 ## Fishery classifications
 
 | Classification | Count |
 |---|---:|
 | Coldwater | 589 |
-| Mixed coldwater/warmwater | 33 |
-| Warmwater | 224 |
+| Mixed coldwater/warmwater | 32 |
+| Warmwater | 226 |
 
 ## Access indicators
 
 | Classification | Count |
 |---|---:|
-| private-indicated | 13 |
-| public-indicated | 833 |
+| private-indicated | 12 |
+| public-indicated | 835 |
 
 Access classifications are screening indicators only. Users must still verify legal access, closures, and regulations with CPW and the land manager.
 
@@ -42,7 +42,7 @@ Access classifications are screening indicators only. Users must still verify le
 
 | Classification | Count |
 |---|---:|
-| Stream or River | 307 |
+| Stream or River | 308 |
 | Water Body | 539 |
 
 ## Suggested import policy

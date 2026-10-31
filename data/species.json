@@ -1,9 +1,194 @@
 {
-  "generated_at": "2026-10-24T17:11:07.241559+00:00",
+  "generated_at": "2026-10-31T18:14:32.271442+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
   "waters_with_species": [
+    {
+      "atlas_id": 1615,
+      "watercode": "66235",
+      "name": "Snooks Bottom Lake",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 550,
+      "watercode": "52768",
+      "name": "Sheldon Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Sunfish: Pumpkinseed",
+        "Trout: Cutbow",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 1614,
+      "watercode": "66080",
+      "name": "Roan's Pothole",
+      "species": [
+        "Catfish: Black Bullhead",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 284,
+      "watercode": "55928",
+      "name": "Pinewood Reservoir",
+      "species": [
+        "Pike: Tiger Muskie",
+        "Trout: Brown",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1613,
+      "watercode": "66082",
+      "name": "Old Orchard",
+      "species": [
+        "Catfish: Black Bullhead",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 348,
+      "watercode": "79527",
+      "name": "Midwestern Farms Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Bass: Wiper",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Saugeye",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 450,
+      "watercode": "55562",
+      "name": "Lon Hagler Reservoir",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Unspecified",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Pike: Tiger Muskie",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 47,
+      "watercode": "81579",
+      "name": "Las Animas Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Crappie: Unspecified",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow",
+        "Trout: Unspecified"
+      ]
+    },
+    {
+      "atlas_id": 357,
+      "watercode": "79728",
+      "name": "Jacksons Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1611,
+      "watercode": "65887",
+      "name": "Fruita Red Rocks Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Crappie: Black",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 79,
+      "watercode": "54851",
+      "name": "Flatiron Reservoir",
+      "species": [
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 859,
+      "watercode": "81529",
+      "name": "Clay Creek Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 325,
+      "watercode": "60739",
+      "name": "Boulder Kids Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 410,
+      "watercode": "58328",
+      "name": "Weneka Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Saugeye",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
     {
       "atlas_id": 824,
       "watercode": "53644",
@@ -26,6 +211,18 @@
       ]
     },
     {
+      "atlas_id": 78,
+      "watercode": "71718",
+      "name": "Rifle Pond, South",
+      "species": [
+        "Bass: Largemouth",
+        "Carp: Common",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 423,
       "watercode": "69422",
       "name": "Rifle Gap Reservoir",
@@ -42,18 +239,34 @@
       ]
     },
     {
-      "atlas_id": 1342,
-      "watercode": "53172",
-      "name": "North Jayhawker Pond",
+      "atlas_id": 675,
+      "watercode": "73166",
+      "name": "Parachute Pond",
+      "species": [
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 153,
+      "watercode": "79651",
+      "name": "Palmer Lake",
+      "species": [
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 163,
+      "watercode": "79601",
+      "name": "Monument Lake",
       "species": [
         "Bass: Largemouth",
         "Catfish: Channel",
-        "Crappie: Black",
-        "Crappie: White",
         "Perch: Yellow",
-        "Pike: Tiger Muskie",
+        "Pike: Northern",
         "Sunfish: Bluegill",
-        "Sunfish: Green"
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
       ]
     },
     {
@@ -72,6 +285,21 @@
       ]
     },
     {
+      "atlas_id": 539,
+      "watercode": "79550",
+      "name": "Kinney Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Saugeye",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 1706,
       "watercode": "74283",
       "name": "Hudson Town Pond",
@@ -82,6 +310,25 @@
         "Sunfish: Green",
         "Sunfish: Redear",
         "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 155,
+      "watercode": "79517",
+      "name": "Hougo SWA Pond #2",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Sunfish: Bluegill",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1349,
+      "watercode": "82807",
+      "name": "Homestead Ranch Park Pond",
+      "species": [
+        "Catfish: Channel"
       ]
     },
     {
@@ -117,6 +364,19 @@
       ]
     },
     {
+      "atlas_id": 523,
+      "watercode": "60537",
+      "name": "Harper Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Perch: Saugeye",
+        "Perch: Yellow",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 469,
       "watercode": "56970",
       "name": "Georgetown Lake",
@@ -127,12 +387,17 @@
       ]
     },
     {
-      "atlas_id": 1441,
-      "watercode": "19871",
-      "name": "Crystal River",
+      "atlas_id": 85,
+      "watercode": "56420",
+      "name": "Aurora Reservoir",
       "species": [
-        "Trout: Brown",
-        "Trout: Mountain Whitefish",
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Bass: Wiper",
+        "Catfish: Channel",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
         "Trout: Rainbow"
       ]
     },
@@ -178,14 +443,6 @@
         "Trout: Brown",
         "Trout: Cutbow",
         "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 235,
-      "watercode": "58089",
-      "name": "St. Vrain State Park Yellow Legs",
-      "species": [
-        "Catfish: Channel"
       ]
     },
     {
@@ -301,18 +558,6 @@
       ]
     },
     {
-      "atlas_id": 325,
-      "watercode": "60739",
-      "name": "Boulder Kids Pond",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 614,
       "watercode": "46866",
       "name": "San Miguel River",
@@ -351,20 +596,6 @@
       ]
     },
     {
-      "atlas_id": 444,
-      "watercode": "58075",
-      "name": "Prospect Pond #3 South",
-      "species": [
-        "Bass: Largemouth",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Crappie: Unspecified",
-        "Perch: Yellow",
-        "Sunfish: Bluegill"
-      ]
-    },
-    {
       "atlas_id": 372,
       "watercode": "57655",
       "name": "McMurry Park Lake",
@@ -373,24 +604,6 @@
         "Catfish: Channel",
         "Crappie: Black",
         "Sunfish: Bluegill"
-      ]
-    },
-    {
-      "atlas_id": 450,
-      "watercode": "55562",
-      "name": "Lon Hagler reservoir",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Unspecified",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Pike: Tiger Muskie",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
       ]
     },
     {
@@ -405,16 +618,6 @@
         "Perch: Saugeye",
         "Perch: Walleye",
         "Sunfish: Bluegill",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 79,
-      "watercode": "54851",
-      "name": "Flatiron Reservoir",
-      "species": [
-        "Trout: Brown",
         "Trout: Cutbow",
         "Trout: Rainbow"
       ]
@@ -559,18 +762,6 @@
       ]
     },
     {
-      "atlas_id": 1611,
-      "watercode": "65887",
-      "name": "Fruita Red Rocks",
-      "species": [
-        "Bass: Largemouth",
-        "Crappie: Black",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 39,
       "watercode": "66274",
       "name": "Dillon Reservoir",
@@ -702,40 +893,6 @@
       ]
     },
     {
-      "atlas_id": 1614,
-      "watercode": "66080",
-      "name": "Roans Pothole",
-      "species": [
-        "Catfish: Black Bullhead",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 78,
-      "watercode": "71718",
-      "name": "Rifle Pond South",
-      "species": [
-        "Bass: Largemouth",
-        "Carp: Common",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1613,
-      "watercode": "66082",
-      "name": "Old Orchard",
-      "species": [
-        "Catfish: Black Bullhead",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 201,
       "watercode": "71926",
       "name": "Fetcher City Pond",
@@ -780,6 +937,14 @@
       "name": "Sleepycat Pond",
       "species": [
         "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 1769,
+      "watercode": "73626",
+      "name": "Scenery Pond",
+      "species": [
+        "Trout: Unspecified"
       ]
     },
     {
@@ -913,6 +1078,21 @@
       ]
     },
     {
+      "atlas_id": 235,
+      "watercode": "58091",
+      "name": "St. Vrain Sandpiper Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Carp: Common",
+        "Catfish: Black Bullhead",
+        "Crappie: Black",
+        "Perch: Saugeye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 233,
       "watercode": "58087",
       "name": "St Vrain State Park",
@@ -951,24 +1131,6 @@
         "Trout: Brown",
         "Trout: Cutbow",
         "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 348,
-      "watercode": "79527",
-      "name": "Midwestern Farms Pond",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Bass: Wiper",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Saugeye",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
       ]
     },
     {
@@ -1038,20 +1200,6 @@
       ]
     },
     {
-      "atlas_id": 47,
-      "watercode": "81579",
-      "name": "LAS ANIMAS POND",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Crappie: Unspecified",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow",
-        "Trout: Unspecified"
-      ]
-    },
-    {
       "atlas_id": 439,
       "watercode": "79803",
       "name": "HORSESHOE RESERVOIR",
@@ -1118,21 +1266,6 @@
       ]
     },
     {
-      "atlas_id": 85,
-      "watercode": "56420",
-      "name": "AURORA RESERVOIR",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Bass: Wiper",
-        "Catfish: Channel",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 362,
       "watercode": "73902",
       "name": "Stagecoach Reservoir",
@@ -1148,29 +1281,6 @@
       "name": "PINE VALLEY RANCH LAKE",
       "species": [
         "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 153,
-      "watercode": "79651",
-      "name": "PALMER LAKE",
-      "species": [
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 163,
-      "watercode": "79601",
-      "name": "MONUMENT LAKE",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Perch: Yellow",
-        "Pike: Northern",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
       ]
     },
     {
@@ -1199,21 +1309,6 @@
       "species": [
         "Bass: Largemouth",
         "Catfish: Channel",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 539,
-      "watercode": "79550",
-      "name": "KINNEY LAKE",
-      "species": [
-        "Bass: Largemouth",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Saugeye",
         "Sunfish: Bluegill",
         "Sunfish: Green",
         "Trout: Rainbow"
@@ -1304,19 +1399,6 @@
       ]
     },
     {
-      "atlas_id": 859,
-      "watercode": "81529",
-      "name": "CLAY CREEK POND",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 805,
       "watercode": "81799",
       "name": "BLACK HOLE AT TWO BUTTES",
@@ -1370,21 +1452,6 @@
       ]
     },
     {
-      "atlas_id": 410,
-      "watercode": "58328",
-      "name": "WANEKA LAKE",
-      "species": [
-        "Bass: Largemouth",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Saugeye",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 251,
       "watercode": "53582",
       "name": "VIELE LAKE",
@@ -1396,36 +1463,6 @@
         "Crappie: Unspecified",
         "Perch: Yellow",
         "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 550,
-      "watercode": "52768",
-      "name": "SHELDON LAKE",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Sunfish: Pumpkinseed",
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 523,
-      "watercode": "60537",
-      "name": "Harper Lake",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Perch: Saugeye",
-        "Perch: Yellow",
         "Sunfish: Green",
         "Trout: Rainbow"
       ]
@@ -1475,14 +1512,6 @@
         "Perch: Yellow",
         "Sunfish: Bluegill",
         "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 675,
-      "watercode": "73166",
-      "name": "PARACHUTE POND",
-      "species": [
         "Trout: Rainbow"
       ]
     },
@@ -2311,30 +2340,6 @@
         "Bass: Largemouth",
         "Catfish: Channel",
         "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 357,
-      "watercode": "79728",
-      "name": "JACKSONS POND",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 1615,
-      "watercode": "66235",
-      "name": "SNOOKS BOTTOM LAKE",
-      "species": [
         "Trout: Rainbow"
       ]
     },
@@ -3398,17 +3403,6 @@
       "atlas_id": 1778,
       "watercode": "58272",
       "name": "Hugo SWA Pond #5",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 155,
-      "watercode": "79517",
-      "name": "Hugo SWA Pond #2",
       "species": [
         "Bass: Largemouth",
         "Catfish: Channel",

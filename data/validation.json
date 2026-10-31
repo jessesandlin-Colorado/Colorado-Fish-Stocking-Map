@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-24T16:47:33.060991+00:00",
+  "generated_at": "2026-10-31T17:51:53.743894+00:00",
   "summary": {
-    "stocking_events": 81,
-    "unique_atlas_ids": 77,
-    "matched_waters": 74,
-    "unmatched_events": 3,
-    "historical_events": 234,
-    "new_historical_events": 23,
-    "latest_report_date": "2026-10-23",
-    "latest_report_events": 10,
-    "latest_report_unique_waters": 10,
-    "waters_with_species": 74,
-    "unique_species": 30
+    "stocking_events": 105,
+    "unique_atlas_ids": 94,
+    "matched_waters": 87,
+    "unmatched_events": 7,
+    "historical_events": 258,
+    "new_historical_events": 24,
+    "latest_report_date": "2026-10-30",
+    "latest_report_events": 14,
+    "latest_report_unique_waters": 14,
+    "waters_with_species": 87,
+    "unique_species": 29
   },
   "findings": [
     {
       "level": "warning",
       "code": "unmatched-events",
-      "message": "3 current events remain unmatched."
+      "message": "7 current events remain unmatched."
     }
   ]
 }
