@@ -72,39 +72,49 @@
     };
   }
 
+  function currentPosition(options) {
+    const nativeGeolocation = window.Capacitor?.isNativePlatform?.() && window.Capacitor?.Plugins?.Geolocation;
+    if (nativeGeolocation?.getCurrentPosition) return nativeGeolocation.getCurrentPosition(options);
+    return new Promise((resolve, reject) => navigator.geolocation.getCurrentPosition(resolve, reject, options));
+  }
+
   function initializeLocationTools() {
     const useLocation = document.getElementById('useMyLocation');
     const zipForm = document.getElementById('zipForm');
     const clearLocation = document.getElementById('clearLocation');
 
-    useLocation?.addEventListener('click', () => {
-      if (!navigator.geolocation) {
+    useLocation?.addEventListener('click', async () => {
+      const nativeGeolocation = window.Capacitor?.isNativePlatform?.() && window.Capacitor?.Plugins?.Geolocation;
+      if (!nativeGeolocation && !navigator.geolocation) {
         updateControls('This browser does not support location services.', true);
         return;
       }
       useLocation.disabled = true;
       updateControls('Requesting your location…');
-      navigator.geolocation.getCurrentPosition(
-        position => {
-          useLocation.disabled = false;
-          setPlanningLocation(
-            position.coords.latitude,
-            position.coords.longitude,
-            'your current location',
-            position.coords.accuracy
-          );
-        },
-        error => {
-          useLocation.disabled = false;
-          const messages = {
-            1: 'Location permission was denied. You can still enter a ZIP code.',
-            2: 'Your location could not be determined. Try a ZIP code instead.',
-            3: 'The location request timed out. Try again or enter a ZIP code.'
-          };
-          updateControls(messages[error.code] || 'Your location could not be determined.', true);
-        },
-        { enableHighAccuracy: false, timeout: 12000, maximumAge: 300000 }
-      );
+      try {
+        const position = await currentPosition({
+          enableHighAccuracy: false,
+          timeout: 12000,
+          maximumAge: 300000
+        });
+        setPlanningLocation(
+          position.coords.latitude,
+          position.coords.longitude,
+          'your current location',
+          position.coords.accuracy
+        );
+      } catch (error) {
+        const messages = {
+          1: 'Location permission was denied. You can still enter a ZIP code.',
+          2: 'Your location could not be determined. Try a ZIP code instead.',
+          3: 'The location request timed out. Try again or enter a ZIP code.',
+          OS_PLUG_GLOC_0003: 'Location permission was denied. You can still enter a ZIP code.',
+          OS_PLUG_GLOC_0004: 'Location access is restricted. You can still enter a ZIP code.'
+        };
+        updateControls(messages[error.code] || 'Your location could not be determined.', true);
+      } finally {
+        useLocation.disabled = false;
+      }
     });
 
     zipForm?.addEventListener('submit', async event => {
