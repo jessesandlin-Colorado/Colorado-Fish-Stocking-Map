@@ -1,9 +1,155 @@
 {
-  "generated_at": "2026-10-31T18:14:32.271442+00:00",
+  "generated_at": "2026-11-07T18:17:08.602473+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
   "waters_with_species": [
+    {
+      "atlas_id": 46,
+      "watercode": "70989",
+      "name": "Wolford Mountain Reservoir",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 670,
+      "watercode": "81226",
+      "name": "Turks Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Wiper",
+        "Carp: Common",
+        "Catfish: Black Bullhead",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Saugeye",
+        "Perch: Walleye",
+        "Sunfish: Bluegill",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 412,
+      "watercode": "70437",
+      "name": "Sylvan Lake",
+      "species": [
+        "Trout: Brook",
+        "Trout: Brown",
+        "Trout: Rainbow",
+        "Trout: Snake River Cutthroat"
+      ]
+    },
+    {
+      "atlas_id": 851,
+      "watercode": "79714",
+      "name": "Runyon Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Carp: Common",
+        "Catfish: Black Bullhead",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Saugeye",
+        "Perch: Walleye",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 261,
+      "watercode": "82595",
+      "name": "Pueblo West Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Sunfish: Bluegill",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 433,
+      "watercode": "53227",
+      "name": "McCall Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Wiper",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 668,
+      "watercode": "72722",
+      "name": "Gypsum Ponds",
+      "species": [
+        "Crappie: Black",
+        "Perch: Yellow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 83,
+      "watercode": "66971",
+      "name": "Grand Lake",
+      "species": [
+        "Salmon: Kokanee",
+        "Trout: Brown",
+        "Trout: Cutbow",
+        "Trout: Cutthroat",
+        "Trout: Lake",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 805,
+      "watercode": "81799",
+      "name": "Black Hole at Two Buttes",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 540,
+      "watercode": "81238",
+      "name": "Anticline Lake",
+      "species": [
+        "Bass: Smallmouth",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Crappie: White",
+        "Sunfish: Bluegill",
+        "Trout: Cutbow",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 362,
+      "watercode": "73902",
+      "name": "Stagecoach Reservoir",
+      "species": [
+        "Perch: Walleye",
+        "Pike: Northern",
+        "Trout: Rainbow"
+      ]
+    },
     {
       "atlas_id": 1615,
       "watercode": "66235",
@@ -256,6 +402,21 @@
       ]
     },
     {
+      "atlas_id": 1342,
+      "watercode": "53172",
+      "name": "North Jayhawker Pond",
+      "species": [
+        "Bass: Largemouth",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Crappie: White",
+        "Perch: Yellow",
+        "Pike: Tiger Muskie",
+        "Sunfish: Bluegill",
+        "Sunfish: Green"
+      ]
+    },
+    {
       "atlas_id": 163,
       "watercode": "79601",
       "name": "Monument Lake",
@@ -387,6 +548,16 @@
       ]
     },
     {
+      "atlas_id": 1441,
+      "watercode": "19871",
+      "name": "Crystal River",
+      "species": [
+        "Trout: Brown",
+        "Trout: Mountain Whitefish",
+        "Trout: Rainbow"
+      ]
+    },
+    {
       "atlas_id": 85,
       "watercode": "56420",
       "name": "Aurora Reservoir",
@@ -446,6 +617,14 @@
       ]
     },
     {
+      "atlas_id": 235,
+      "watercode": "58089",
+      "name": "St. Vrain State Park Yellow Legs",
+      "species": [
+        "Catfish: Channel"
+      ]
+    },
+    {
       "atlas_id": 234,
       "watercode": "58090",
       "name": "St Vrain State Park Pintail Pond",
@@ -501,23 +680,6 @@
       ]
     },
     {
-      "atlas_id": 433,
-      "watercode": "53227",
-      "name": "McCall Lake",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Wiper",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 294,
       "watercode": "57830",
       "name": "KOA Lake Boulder",
@@ -567,25 +729,6 @@
       ]
     },
     {
-      "atlas_id": 851,
-      "watercode": "79714",
-      "name": "Runyon Lake",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Carp: Common",
-        "Catfish: Black Bullhead",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Saugeye",
-        "Perch: Walleye",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 437,
       "watercode": "57756",
       "name": "Riverbend Pond #2",
@@ -593,6 +736,20 @@
         "Bass: Largemouth",
         "Crappie: Black",
         "Perch: Yellow"
+      ]
+    },
+    {
+      "atlas_id": 444,
+      "watercode": "58075",
+      "name": "Prospect Pond #3 South",
+      "species": [
+        "Bass: Largemouth",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Crappie: Unspecified",
+        "Perch: Yellow",
+        "Sunfish: Bluegill"
       ]
     },
     {
@@ -629,20 +786,6 @@
       "species": [
         "Trout: Rainbow",
         "Trout: Unspecified"
-      ]
-    },
-    {
-      "atlas_id": 540,
-      "watercode": "81238",
-      "name": "Anticline Lake",
-      "species": [
-        "Bass: Smallmouth",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Crappie: White",
-        "Sunfish: Bluegill",
-        "Trout: Cutbow",
-        "Trout: Rainbow"
       ]
     },
     {
@@ -940,14 +1083,6 @@
       ]
     },
     {
-      "atlas_id": 1769,
-      "watercode": "73626",
-      "name": "Scenery Pond",
-      "species": [
-        "Trout: Unspecified"
-      ]
-    },
-    {
       "atlas_id": 810,
       "watercode": "66022",
       "name": "Craig City Pond",
@@ -1075,21 +1210,6 @@
         "Trout: Cutbow",
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
-      "atlas_id": 235,
-      "watercode": "58091",
-      "name": "St. Vrain Sandpiper Pond",
-      "species": [
-        "Bass: Largemouth",
-        "Carp: Common",
-        "Catfish: Black Bullhead",
-        "Crappie: Black",
-        "Perch: Saugeye",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow"
       ]
     },
     {
@@ -1233,45 +1353,12 @@
       ]
     },
     {
-      "atlas_id": 46,
-      "watercode": "70989",
-      "name": "WOLFORD MOUNTAIN RES",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Rainbow",
-        "Trout: Snake River Cutthroat"
-      ]
-    },
-    {
       "atlas_id": 147,
       "watercode": "54508",
       "name": "COWDREY LAKE",
       "species": [
         "Trout: Brown",
         "Trout: Cutbow",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 261,
-      "watercode": "82595",
-      "name": "PUEBLO WEST POND",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 362,
-      "watercode": "73902",
-      "name": "Stagecoach Reservoir",
-      "species": [
-        "Perch: Walleye",
-        "Pike: Northern",
         "Trout: Rainbow"
       ]
     },
@@ -1356,23 +1443,6 @@
       ]
     },
     {
-      "atlas_id": 670,
-      "watercode": "81226",
-      "name": "TURKS POND",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Wiper",
-        "Carp: Common",
-        "Catfish: Black Bullhead",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Saugeye",
-        "Perch: Walleye",
-        "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
       "atlas_id": 407,
       "watercode": "61298",
       "name": "HINE LAKE",
@@ -1395,31 +1465,6 @@
         "Perch: Yellow",
         "Sunfish: Bluegill",
         "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 805,
-      "watercode": "81799",
-      "name": "BLACK HOLE AT TWO BUTTES",
-      "species": [
-        "Bass: Largemouth",
-        "Catfish: Channel",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 83,
-      "watercode": "66971",
-      "name": "GRAND LAKE",
-      "species": [
-        "Salmon: Kokanee",
-        "Trout: Brown",
-        "Trout: Cutbow",
-        "Trout: Cutthroat",
-        "Trout: Lake",
         "Trout: Rainbow"
       ]
     },
@@ -1464,16 +1509,6 @@
         "Perch: Yellow",
         "Sunfish: Bluegill",
         "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 668,
-      "watercode": "72722",
-      "name": "GYPSUM PONDS",
-      "species": [
-        "Crappie: Black",
-        "Perch: Yellow",
         "Trout: Rainbow"
       ]
     },
