@@ -1,15 +1,15 @@
 # Colorado Fishing Atlas inventory comparison
 
-Generated: 2026-11-07T18:22:08.735913+00:00
+Generated: 2026-11-14T19:13:50.642986+00:00
 
 ## Executive summary
 
 - **1,287** visible Atlas fishing-point records were retrieved.
 - They represent **1,201 unique WATERCODEs** after duplicate consolidation.
-- **358** Atlas WATERCODEs are already represented in the project.
-- **843** Atlas WATERCODEs are not represented in the project's stocking-derived group.
-- Project coverage is **29.8%** of the Atlas inventory by WATERCODE.
-- **831** Atlas-only waters are provisionally rated high or medium priority for import.
+- **344** Atlas WATERCODEs are already represented in the project.
+- **857** Atlas WATERCODEs are not represented in the project's stocking-derived group.
+- Project coverage is **28.6%** of the Atlas inventory by WATERCODE.
+- **844** Atlas-only waters are provisionally rated high or medium priority for import.
 - **0** Atlas records lack a WATERCODE and require separate manual review.
 
 > "Atlas-only" means no matching WATERCODE was found in the project's 2014-present stocking-derived dataset. It should be labeled **Stocking history unknown / no project stocking record found**, not "never stocked."
@@ -18,23 +18,23 @@ Generated: 2026-11-07T18:22:08.735913+00:00
 
 | Classification | Count |
 |---|---:|
-| exclude/private-review | 12 |
-| import-high-priority | 831 |
+| exclude/private-review | 13 |
+| import-high-priority | 844 |
 
 ## Fishery classifications
 
 | Classification | Count |
 |---|---:|
-| Coldwater | 588 |
-| Mixed coldwater/warmwater | 32 |
-| Warmwater | 223 |
+| Coldwater | 592 |
+| Mixed coldwater/warmwater | 35 |
+| Warmwater | 230 |
 
 ## Access indicators
 
 | Classification | Count |
 |---|---:|
-| private-indicated | 12 |
-| public-indicated | 831 |
+| private-indicated | 13 |
+| public-indicated | 844 |
 
 Access classifications are screening indicators only. Users must still verify legal access, closures, and regulations with CPW and the land manager.
 
@@ -42,8 +42,8 @@ Access classifications are screening indicators only. Users must still verify le
 
 | Classification | Count |
 |---|---:|
-| Stream or River | 307 |
-| Water Body | 536 |
+| Stream or River | 309 |
+| Water Body | 548 |
 
 ## Suggested import policy
 

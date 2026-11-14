@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-07T18:09:11.998292+00:00",
+  "generated_at": "2026-11-14T18:47:36.668589+00:00",
   "summary": {
-    "stocking_events": 116,
-    "unique_atlas_ids": 102,
-    "matched_waters": 98,
-    "unmatched_events": 4,
-    "historical_events": 269,
-    "new_historical_events": 11,
-    "latest_report_date": "2026-11-06",
-    "latest_report_events": 10,
-    "latest_report_unique_waters": 10,
-    "waters_with_species": 98,
-    "unique_species": 30
+    "stocking_events": 13,
+    "unique_atlas_ids": 12,
+    "matched_waters": 12,
+    "unmatched_events": 0,
+    "historical_events": 272,
+    "new_historical_events": 3,
+    "latest_report_date": "2026-11-13",
+    "latest_report_events": 3,
+    "latest_report_unique_waters": 3,
+    "waters_with_species": 12,
+    "unique_species": 22
   },
   "findings": [
     {
       "level": "warning",
-      "code": "unmatched-events",
-      "message": "4 current events remain unmatched."
+      "code": "rolling-window-reset",
+      "message": "Current CPW report window fell from 116 to 13 rows; accepted because the report is current, all waters matched, and history was preserved (269 to 272 events)."
     }
   ]
 }

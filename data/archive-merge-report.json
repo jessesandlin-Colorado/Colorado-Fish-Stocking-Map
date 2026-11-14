@@ -1,13 +1,13 @@
 {
   "archive_events_read": 9948,
-  "archive_events_matched": 8941,
+  "archive_events_matched": 8665,
   "archive_events_matched_by_atlas_id": 9434,
-  "archive_events_matched_by_normalized_name": 168,
+  "archive_events_matched_by_normalized_name": 33,
   "archive_unique_atlas_ids": 522,
-  "existing_live_waters": 98,
-  "archive_only_waters_added": 287,
-  "combined_waters": 736,
-  "unmapped_waters_added": 351,
+  "existing_live_waters": 12,
+  "archive_only_waters_added": 360,
+  "combined_waters": 801,
+  "unmapped_waters_added": 429,
   "archive_events_displayed": 9948,
   "unmatched_names": [
     {
@@ -51,6 +51,21 @@
       "event_count": 4
     },
     {
+      "normalized_name": "arvada reservoir",
+      "sample_name": "Arvada Reservoir",
+      "event_count": 3
+    },
+    {
+      "normalized_name": "aurora reservoir",
+      "sample_name": "Aurora Reservoir",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "axial basin",
+      "sample_name": "Axial Basin",
+      "event_count": 1
+    },
+    {
       "normalized_name": "barker reservoir",
       "sample_name": "Barker Reservoir",
       "event_count": 1
@@ -68,6 +83,11 @@
     {
       "normalized_name": "bear creek lake",
       "sample_name": "Bear Creek Lake",
+      "event_count": 1
+    },
+    {
+      "normalized_name": "bear creek reservoir",
+      "sample_name": "Bear Creek Reservoir",
       "event_count": 1
     },
     {
@@ -94,6 +114,11 @@
       "normalized_name": "berkeley lake",
       "sample_name": "Berkeley Lake",
       "event_count": 2
+    },
+    {
+      "normalized_name": "berry creek pond",
+      "sample_name": "Berry Creek Pond",
+      "event_count": 1
     },
     {
       "normalized_name": "big buckhorn lake",
@@ -136,8 +161,23 @@
       "event_count": 1
     },
     {
+      "normalized_name": "blue lake",
+      "sample_name": "Blue Lake",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "boulder kids pond",
+      "sample_name": "Boulder Kids Pond",
+      "event_count": 1
+    },
+    {
       "normalized_name": "boyd lake",
       "sample_name": "Boyd Lake",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "breeze pond",
+      "sample_name": "Breeze Pond",
       "event_count": 2
     },
     {
@@ -146,14 +186,29 @@
       "event_count": 1
     },
     {
+      "normalized_name": "brush hollow reservoir",
+      "sample_name": "Brush Hollow Reservoir",
+      "event_count": 5
+    },
+    {
       "normalized_name": "buena vista kids pond",
       "sample_name": "Buena Vista Kids Pond",
+      "event_count": 1
+    },
+    {
+      "normalized_name": "camp hale pond",
+      "sample_name": "Camp Hale pond",
       "event_count": 1
     },
     {
       "normalized_name": "carter reservoir",
       "sample_name": "Carter Reservoir",
       "event_count": 6
+    },
+    {
+      "normalized_name": "casey pond",
+      "sample_name": "Casey Pond",
+      "event_count": 2
     },
     {
       "normalized_name": "catamount reservoir south",
@@ -191,6 +246,11 @@
       "event_count": 2
     },
     {
+      "normalized_name": "cherry creek reservoir",
+      "sample_name": "Cherry Creek Reservoir",
+      "event_count": 2
+    },
+    {
       "normalized_name": "chipeta lake",
       "sample_name": "Chipeta Lake",
       "event_count": 4
@@ -201,9 +261,19 @@
       "event_count": 1
     },
     {
+      "normalized_name": "circle park pond",
+      "sample_name": "Circle park pond",
+      "event_count": 1
+    },
+    {
       "normalized_name": "city park lake",
       "sample_name": "City Park Lake",
       "event_count": 2
+    },
+    {
+      "normalized_name": "clay creek pond",
+      "sample_name": "Clay Creek Pond",
+      "event_count": 1
     },
     {
       "normalized_name": "clear creek reservoir",
@@ -223,6 +293,11 @@
     {
       "normalized_name": "columbia reservoir",
       "sample_name": "Columbia Reservoir",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "confluence lake",
+      "sample_name": "Confluence Lake",
       "event_count": 2
     },
     {
@@ -256,6 +331,11 @@
       "event_count": 1
     },
     {
+      "normalized_name": "craig city pond",
+      "sample_name": "Craig City Pond",
+      "event_count": 1
+    },
+    {
       "normalized_name": "craig justice pond",
       "sample_name": "Craig Justice Pond",
       "event_count": 1
@@ -284,6 +364,11 @@
       "normalized_name": "deweese reservoir",
       "sample_name": "DeWeese Reservoir",
       "event_count": 3
+    },
+    {
+      "normalized_name": "dillon reservoir",
+      "sample_name": "Dillon Reservoir",
+      "event_count": 2
     },
     {
       "normalized_name": "dolores river 4",
@@ -341,6 +426,16 @@
       "event_count": 1
     },
     {
+      "normalized_name": "estes lake",
+      "sample_name": "Estes Lake",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "evergreen lake",
+      "sample_name": "Evergreen Lake",
+      "event_count": 1
+    },
+    {
       "normalized_name": "evergreen reservoir",
       "sample_name": "Evergreen Reservoir",
       "event_count": 1
@@ -349,6 +444,16 @@
       "normalized_name": "fairplay kids pond",
       "sample_name": "Fairplay Kids Pond",
       "event_count": 3
+    },
+    {
+      "normalized_name": "fetcher city pond",
+      "sample_name": "Fetcher City Pond",
+      "event_count": 1
+    },
+    {
+      "normalized_name": "flatiron reservoir",
+      "sample_name": "Flatiron Reservoir",
+      "event_count": 2
     },
     {
       "normalized_name": "fountian lake",
@@ -366,9 +471,19 @@
       "event_count": 2
     },
     {
+      "normalized_name": "fruita red rocks lake",
+      "sample_name": "Fruita Red Rocks Lake",
+      "event_count": 1
+    },
+    {
       "normalized_name": "fruita reservoir 3",
       "sample_name": "Fruita Reservoir #3",
       "event_count": 1
+    },
+    {
+      "normalized_name": "georgetown lake",
+      "sample_name": "Georgetown Lake",
+      "event_count": 2
     },
     {
       "normalized_name": "glacier springs retention pond",
@@ -416,6 +531,11 @@
       "event_count": 2
     },
     {
+      "normalized_name": "harper lake",
+      "sample_name": "Harper Lake",
+      "event_count": 1
+    },
+    {
       "normalized_name": "harvey gap",
       "sample_name": "Harvey Gap",
       "event_count": 1
@@ -441,6 +561,11 @@
       "event_count": 1
     },
     {
+      "normalized_name": "homestead ranch park pond",
+      "sample_name": "Homestead Ranch Park Pond",
+      "event_count": 1
+    },
+    {
       "normalized_name": "horseshoe reservoir",
       "sample_name": "Horseshoe Reservoir",
       "event_count": 1
@@ -459,6 +584,11 @@
       "normalized_name": "hotel twin lake",
       "sample_name": "Hotel Twin Lake",
       "event_count": 1
+    },
+    {
+      "normalized_name": "hudson town pond",
+      "sample_name": "Hudson Town Pond",
+      "event_count": 2
     },
     {
       "normalized_name": "hugo swa pond 2",
@@ -489,6 +619,11 @@
       "normalized_name": "jackson gulch reservoir",
       "sample_name": "Jackson Gulch Reservoir",
       "event_count": 3
+    },
+    {
+      "normalized_name": "jackson s pond",
+      "sample_name": "Jackson's Pond",
+      "event_count": 1
     },
     {
       "normalized_name": "jayhawker 1",
@@ -526,6 +661,11 @@
       "event_count": 1
     },
     {
+      "normalized_name": "kinney lake",
+      "sample_name": "Kinney Lake",
+      "event_count": 2
+    },
+    {
       "normalized_name": "kiser slough reservoir",
       "sample_name": "Kiser Slough Reservoir",
       "event_count": 1
@@ -539,6 +679,11 @@
       "normalized_name": "kitson reservoir",
       "sample_name": "Kitson Reservoir",
       "event_count": 1
+    },
+    {
+      "normalized_name": "koa lake boulder",
+      "sample_name": "KOA Lake Boulder",
+      "event_count": 2
     },
     {
       "normalized_name": "kriely pond",
@@ -566,6 +711,16 @@
       "event_count": 1
     },
     {
+      "normalized_name": "las animas pond",
+      "sample_name": "Las Animas Pond",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "lon hagler reservoir",
+      "sample_name": "Lon Hagler Reservoir",
+      "event_count": 2
+    },
+    {
       "normalized_name": "lost lake",
       "sample_name": "Lost Lake",
       "event_count": 1
@@ -584,6 +739,11 @@
       "normalized_name": "manitou reseroir",
       "sample_name": "Manitou Reseroir",
       "event_count": 1
+    },
+    {
+      "normalized_name": "manitou reservoir",
+      "sample_name": "Manitou Reservoir",
+      "event_count": 2
     },
     {
       "normalized_name": "mann nyholt lake",
@@ -616,6 +776,11 @@
       "event_count": 2
     },
     {
+      "normalized_name": "mcmurry park lake",
+      "sample_name": "McMurry Park Lake",
+      "event_count": 1
+    },
+    {
       "normalized_name": "mcphee reservoir",
       "sample_name": "McPhee Reservoir",
       "event_count": 1
@@ -624,6 +789,11 @@
       "normalized_name": "meredith reservoir",
       "sample_name": "Meredith Reservoir",
       "event_count": 1
+    },
+    {
+      "normalized_name": "midwestern farms pond",
+      "sample_name": "Midwestern Farms Pond",
+      "event_count": 3
     },
     {
       "normalized_name": "milavec reservoir",
@@ -644,6 +814,11 @@
       "normalized_name": "mix lake",
       "sample_name": "Mix Lake",
       "event_count": 1
+    },
+    {
+      "normalized_name": "monument lake",
+      "sample_name": "Monument Lake",
+      "event_count": 5
     },
     {
       "normalized_name": "monument reservoir",
@@ -681,6 +856,11 @@
       "event_count": 3
     },
     {
+      "normalized_name": "north lake park pond",
+      "sample_name": "North Lake Park Pond",
+      "event_count": 3
+    },
+    {
       "normalized_name": "northgate pond 1",
       "sample_name": "Northgate Pond #1",
       "event_count": 1
@@ -696,14 +876,19 @@
       "event_count": 1
     },
     {
-      "normalized_name": "old pond",
-      "sample_name": "Old Pond",
+      "normalized_name": "nottingham lake",
+      "sample_name": "Nottingham Lake",
       "event_count": 2
     },
     {
-      "normalized_name": "ordway reservoir",
-      "sample_name": "Ordway Reservoir",
-      "event_count": 4
+      "normalized_name": "old orchard",
+      "sample_name": "Old Orchard",
+      "event_count": 1
+    },
+    {
+      "normalized_name": "old pond",
+      "sample_name": "Old Pond",
+      "event_count": 2
     },
     {
       "normalized_name": "overland reservoir",
@@ -721,14 +906,44 @@
       "event_count": 1
     },
     {
+      "normalized_name": "palmer lake",
+      "sample_name": "Palmer Lake",
+      "event_count": 4
+    },
+    {
+      "normalized_name": "parachute pond",
+      "sample_name": "Parachute Pond",
+      "event_count": 1
+    },
+    {
       "normalized_name": "pastorius reservoir",
       "sample_name": "Pastorius Reservoir",
       "event_count": 2
     },
     {
+      "normalized_name": "pathfinder park pond",
+      "sample_name": "Pathfinder Park Pond",
+      "event_count": 3
+    },
+    {
+      "normalized_name": "pericles pond",
+      "sample_name": "Pericles Pond",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "pike view reservoir",
+      "sample_name": "Pike View Reservoir",
+      "event_count": 3
+    },
+    {
       "normalized_name": "pine valley",
       "sample_name": "Pine Valley",
       "event_count": 1
+    },
+    {
+      "normalized_name": "pinewood reservoir",
+      "sample_name": "Pinewood Reservoir",
+      "event_count": 2
     },
     {
       "normalized_name": "pitkin kids pond",
@@ -746,6 +961,11 @@
       "event_count": 2
     },
     {
+      "normalized_name": "prospect lake",
+      "sample_name": "Prospect Lake",
+      "event_count": 3
+    },
+    {
       "normalized_name": "prospect lale",
       "sample_name": "Prospect Lale",
       "event_count": 1
@@ -761,9 +981,19 @@
       "event_count": 2
     },
     {
+      "normalized_name": "pueblo reservoir",
+      "sample_name": "Pueblo Reservoir",
+      "event_count": 3
+    },
+    {
       "normalized_name": "purdy mesa reservoir",
       "sample_name": "Purdy Mesa Reservoir",
       "event_count": 1
+    },
+    {
+      "normalized_name": "quail lake",
+      "sample_name": "Quail Lake",
+      "event_count": 3
     },
     {
       "normalized_name": "quartz creek",
@@ -791,6 +1021,11 @@
       "event_count": 1
     },
     {
+      "normalized_name": "ridgway reservoir",
+      "sample_name": "Ridgway Reservoir",
+      "event_count": 9
+    },
+    {
       "normalized_name": "rio grande reservoir",
       "sample_name": "Rio Grande Reservoir",
       "event_count": 2
@@ -811,9 +1046,19 @@
       "event_count": 2
     },
     {
+      "normalized_name": "roans pothole",
+      "sample_name": "Roans Pothole",
+      "event_count": 1
+    },
+    {
       "normalized_name": "roaring judy ponds",
       "sample_name": "Roaring Judy Ponds",
       "event_count": 3
+    },
+    {
+      "normalized_name": "roberts lake",
+      "sample_name": "Roberts Lake",
+      "event_count": 1
     },
     {
       "normalized_name": "rocky mountain lake",
@@ -828,6 +1073,11 @@
     {
       "normalized_name": "san isabel",
       "sample_name": "San Isabel",
+      "event_count": 1
+    },
+    {
+      "normalized_name": "san isabel lake",
+      "sample_name": "San Isabel Lake",
       "event_count": 1
     },
     {
@@ -856,6 +1106,11 @@
       "event_count": 2
     },
     {
+      "normalized_name": "severance city pond",
+      "sample_name": "Severance City Pond",
+      "event_count": 1
+    },
+    {
       "normalized_name": "severence city pond",
       "sample_name": "Severence City Pond",
       "event_count": 1
@@ -864,6 +1119,16 @@
       "normalized_name": "seymour reservoir",
       "sample_name": "Seymour Reservoir",
       "event_count": 2
+    },
+    {
+      "normalized_name": "shavano pond",
+      "sample_name": "Shavano Pond",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "sheldon lake",
+      "sample_name": "Sheldon Lake",
+      "event_count": 3
     },
     {
       "normalized_name": "skaguay reservoir",
@@ -926,6 +1191,11 @@
       "event_count": 2
     },
     {
+      "normalized_name": "st vrain state park pintail pond",
+      "sample_name": "St. Vrain State Park — Pintail Pond",
+      "event_count": 1
+    },
+    {
       "normalized_name": "st vrain state park sandpiper",
       "sample_name": "St. Vrain State Park - Sandpiper",
       "event_count": 2
@@ -941,9 +1211,24 @@
       "event_count": 1
     },
     {
+      "normalized_name": "sunset lake",
+      "sample_name": "Sunset Lake",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "sweetwater lake",
+      "sample_name": "Sweetwater Lake",
+      "event_count": 2
+    },
+    {
       "normalized_name": "tarryall reservoir",
       "sample_name": "Tarryall Reservoir",
       "event_count": 6
+    },
+    {
+      "normalized_name": "taylor reservoir",
+      "sample_name": "Taylor Reservoir",
+      "event_count": 7
     },
     {
       "normalized_name": "teal lake",
@@ -956,9 +1241,24 @@
       "event_count": 1
     },
     {
+      "normalized_name": "thomas reservoir",
+      "sample_name": "Thomas Reservoir",
+      "event_count": 3
+    },
+    {
+      "normalized_name": "thornton gravel lake 2",
+      "sample_name": "Thornton Gravel Lake #2",
+      "event_count": 3
+    },
+    {
       "normalized_name": "thornton gravel lake 3",
       "sample_name": "Thornton Gravel Lake #3",
       "event_count": 3
+    },
+    {
+      "normalized_name": "tiago lake",
+      "sample_name": "Tiago Lake",
+      "event_count": 1
     },
     {
       "normalized_name": "tincup pond",
@@ -973,6 +1273,11 @@
     {
       "normalized_name": "trinidad central park lake",
       "sample_name": "Trinidad Central Park Lake",
+      "event_count": 2
+    },
+    {
+      "normalized_name": "trinidad reservoir",
+      "sample_name": "Trinidad Reservoir",
       "event_count": 2
     },
     {
@@ -1031,6 +1336,11 @@
       "event_count": 1
     },
     {
+      "normalized_name": "waneka lake",
+      "sample_name": "Waneka Lake",
+      "event_count": 1
+    },
+    {
       "normalized_name": "ward creek reservoir",
       "sample_name": "Ward Creek Reservoir",
       "event_count": 1
@@ -1044,6 +1354,11 @@
       "normalized_name": "water dog reservoir",
       "sample_name": "Water Dog Reservoir",
       "event_count": 1
+    },
+    {
+      "normalized_name": "webster lake",
+      "sample_name": "Webster Lake",
+      "event_count": 3
     },
     {
       "normalized_name": "weir and johnson reservoir",
@@ -1066,9 +1381,19 @@
       "event_count": 1
     },
     {
+      "normalized_name": "wilmor pond",
+      "sample_name": "Wilmor Pond",
+      "event_count": 1
+    },
+    {
       "normalized_name": "wilmore pond",
       "sample_name": "Wilmore Pond",
       "event_count": 1
+    },
+    {
+      "normalized_name": "windsor reservoir",
+      "sample_name": "Windsor Reservoir",
+      "event_count": 2
     },
     {
       "normalized_name": "wright lake",
@@ -1120,6 +1445,14 @@
         "Dorothy Lake"
       ],
       "event_count": 3
+    },
+    {
+      "atlas_id": 79,
+      "names": [
+        "FLATIRON RESERVOIR",
+        "Flatiron Reservoir"
+      ],
+      "event_count": 31
     },
     {
       "atlas_id": 81,
@@ -1250,6 +1583,14 @@
       "event_count": 1
     },
     {
+      "atlas_id": 234,
+      "names": [
+        "St Vrain State Park Pintail Pond",
+        "St. Vrain State Park Pintail Pond"
+      ],
+      "event_count": 4
+    },
+    {
       "atlas_id": 241,
       "names": [
         "UNION RESERVOIR",
@@ -1317,6 +1658,14 @@
       "event_count": 7
     },
     {
+      "atlas_id": 284,
+      "names": [
+        "PINEWOOD RESERVOIR",
+        "Pinewood Reservoir"
+      ],
+      "event_count": 31
+    },
+    {
       "atlas_id": 286,
       "names": [
         "MANN-NYHOLT LAKE",
@@ -1327,11 +1676,26 @@
       "event_count": 7
     },
     {
+      "atlas_id": 290,
+      "names": [
+        "Golden Gravel Pond #3"
+      ],
+      "event_count": 19
+    },
+    {
       "atlas_id": 293,
       "names": [
         "Golden Gravel Pond #1"
       ],
       "event_count": 3
+    },
+    {
+      "atlas_id": 294,
+      "names": [
+        "KOA Lake - Boulder",
+        "KOA Lake Boulder"
+      ],
+      "event_count": 10
     },
     {
       "atlas_id": 299,
@@ -1394,6 +1758,13 @@
       "event_count": 6
     },
     {
+      "atlas_id": 372,
+      "names": [
+        "McMurry Park Lake"
+      ],
+      "event_count": 3
+    },
+    {
       "atlas_id": 373,
       "names": [
         "AVERY LAKE",
@@ -1432,11 +1803,26 @@
       "event_count": 2
     },
     {
+      "atlas_id": 437,
+      "names": [
+        "Riverbend Pond #2"
+      ],
+      "event_count": 2
+    },
+    {
       "atlas_id": 443,
       "names": [
         "Prospect Pond #2 North"
       ],
       "event_count": 1
+    },
+    {
+      "atlas_id": 444,
+      "names": [
+        "Prospect Pond #3",
+        "Prospect Pond #3 South"
+      ],
+      "event_count": 4
     },
     {
       "atlas_id": 445,
@@ -1549,6 +1935,16 @@
         "North Platte River #B2"
       ],
       "event_count": 1
+    },
+    {
+      "atlas_id": 614,
+      "names": [
+        "SAN MIGUEL RIVER #3",
+        "San Miguel R #3",
+        "San Miguel River",
+        "San Miguel River #3"
+      ],
+      "event_count": 16
     },
     {
       "atlas_id": 617,
@@ -1868,11 +2264,34 @@
       "event_count": 1
     },
     {
+      "atlas_id": 1342,
+      "names": [
+        "JAYHAWKER POND #1",
+        "Jayhawker Pond #1"
+      ],
+      "event_count": 3
+    },
+    {
       "atlas_id": 1344,
       "names": [
         "DENNY LAKE"
       ],
       "event_count": 1
+    },
+    {
+      "atlas_id": 1349,
+      "names": [
+        "Homestead Ranch Park Pond"
+      ],
+      "event_count": 4
+    },
+    {
+      "atlas_id": 1352,
+      "names": [
+        "MEEKER KIDS POND",
+        "Meeker Kids Pond"
+      ],
+      "event_count": 3
     },
     {
       "atlas_id": 1353,
@@ -1923,6 +2342,14 @@
         "South Platte River"
       ],
       "event_count": 1
+    },
+    {
+      "atlas_id": 1441,
+      "names": [
+        "Crystal River",
+        "Crystal River #2"
+      ],
+      "event_count": 11
     },
     {
       "atlas_id": 1452,
