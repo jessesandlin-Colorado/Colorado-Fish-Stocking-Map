@@ -1,9 +1,43 @@
 {
-  "generated_at": "2026-11-14T19:08:59.241544+00:00",
+  "generated_at": "2026-11-21T20:32:43.030653+00:00",
   "status": "available",
   "source": "https://ndismaps.nrel.colostate.edu/FishingAtlas/IdentifyFishingPlacesDB.aspx",
   "note": "Current species are read from the official Colorado Fishing Atlas using key=<WATERCODE>&filename=tblMasterSpecies. Reviewed Atlas records without a WATERCODE are preserved separately.",
   "waters_with_species": [
+    {
+      "atlas_id": 507,
+      "watercode": "53190",
+      "name": "Main Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Carp: Common",
+        "Crappie: Black",
+        "Perch: Saugeye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Sunfish: Pumpkinseed",
+        "Trout: Rainbow"
+      ]
+    },
+    {
+      "atlas_id": 76,
+      "watercode": "52491",
+      "name": "Boyd Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Smallmouth",
+        "Bass: White",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Crappie: Unspecified",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Trout: Rainbow"
+      ]
+    },
     {
       "atlas_id": 851,
       "watercode": "79714",
@@ -38,6 +72,23 @@
         "Trout: Rainbow",
         "Trout: Snake River Cutthroat",
         "Trout: Unspecified"
+      ]
+    },
+    {
+      "atlas_id": 433,
+      "watercode": "53227",
+      "name": "McCall Lake",
+      "species": [
+        "Bass: Largemouth",
+        "Bass: Wiper",
+        "Carp: Common",
+        "Catfish: Channel",
+        "Crappie: Black",
+        "Perch: Walleye",
+        "Perch: Yellow",
+        "Sunfish: Bluegill",
+        "Sunfish: Green",
+        "Trout: Rainbow"
       ]
     },
     {
@@ -104,23 +155,6 @@
         "Bass: Largemouth",
         "Catfish: Channel",
         "Sunfish: Bluegill",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 433,
-      "watercode": "53227",
-      "name": "McCall Lake",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Wiper",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
-        "Sunfish: Green",
         "Trout: Rainbow"
       ]
     },
@@ -277,24 +311,6 @@
         "Pike: Tiger Muskie",
         "Sunfish: Bluegill",
         "Sunfish: Green",
-        "Trout: Rainbow"
-      ]
-    },
-    {
-      "atlas_id": 76,
-      "watercode": "52491",
-      "name": "Boyd Lake",
-      "species": [
-        "Bass: Largemouth",
-        "Bass: Smallmouth",
-        "Bass: White",
-        "Carp: Common",
-        "Catfish: Channel",
-        "Crappie: Black",
-        "Crappie: Unspecified",
-        "Perch: Walleye",
-        "Perch: Yellow",
-        "Sunfish: Bluegill",
         "Trout: Rainbow"
       ]
     },

@@ -1,13 +1,13 @@
 {
   "archive_events_read": 9948,
-  "archive_events_matched": 8665,
+  "archive_events_matched": 8682,
   "archive_events_matched_by_atlas_id": 9434,
-  "archive_events_matched_by_normalized_name": 33,
+  "archive_events_matched_by_normalized_name": 35,
   "archive_unique_atlas_ids": 522,
-  "existing_live_waters": 12,
-  "archive_only_waters_added": 360,
-  "combined_waters": 801,
-  "unmapped_waters_added": 429,
+  "existing_live_waters": 14,
+  "archive_only_waters_added": 359,
+  "combined_waters": 800,
+  "unmapped_waters_added": 427,
   "archive_events_displayed": 9948,
   "unmatched_names": [
     {
@@ -169,11 +169,6 @@
       "normalized_name": "boulder kids pond",
       "sample_name": "Boulder Kids Pond",
       "event_count": 1
-    },
-    {
-      "normalized_name": "boyd lake",
-      "sample_name": "Boyd Lake",
-      "event_count": 2
     },
     {
       "normalized_name": "breeze pond",
@@ -1883,14 +1878,6 @@
         "Trickle Park Reservoir"
       ],
       "event_count": 8
-    },
-    {
-      "atlas_id": 507,
-      "names": [
-        "MAIN LAKE",
-        "Main Lake"
-      ],
-      "event_count": 15
     },
     {
       "atlas_id": 538,
